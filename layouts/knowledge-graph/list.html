@@ -1,0 +1,635 @@
+{{ define "main" }}
+  {{ $atlas := hugo.Data.generated.atlas }}
+  {{ $matrix := index $atlas.matrices 0 }}
+  {{ $studies := index $atlas "case-studies" }}
+  <section class="page-head">
+    {{ partial "breadcrumbs.html" . }}
+    <h1>{{ .Title }}</h1>
+    <p class="lead">Граф знаний ATLAS показывает сущности матрицы и связи между ними. Узлы — это тактики, техники, подтехники, меры защиты и кейсы; ребра — отношения между этими сущностями.</p>
+    <div class="graph-instructions">
+      <span><strong>Инспекция:</strong> выберите узел, чтобы перейти в режим фокуса.</span>
+      <span><strong>Расширение:</strong> используйте +/- для соседей выбранного узла.</span>
+      <span><strong>Фильтры:</strong> выберите типы сущностей, которые нужно показать на графе.</span>
+    </div>
+  </section>
+
+  <section class="knowledge-embed" aria-label="Интерактивный граф знаний ATLAS">
+    <div class="kg-topbar">
+      <input class="kg-search" id="graphSearch" type="search" placeholder="Поиск по ID или названию, например AML.T0051" aria-label="Поиск по ID или названию узла">
+      <div class="kg-filter-group" aria-label="Фильтры типов">
+        <button class="kg-chip is-active" type="button" data-top-filter="tactic">Тактики</button>
+        <button class="kg-chip is-active" type="button" data-top-filter="technique">Техники</button>
+        <button class="kg-chip" type="button" data-top-filter="subtechnique">Подтехники</button>
+        <button class="kg-chip" type="button" data-top-filter="mitigation">Меры защиты</button>
+        <button class="kg-chip" type="button" data-top-filter="study">Кейсы</button>
+      </div>
+    </div>
+    <div class="kg-stats" aria-label="Сводка графа">
+      <span><strong id="graphNodeCount">0</strong> всего узлов</span>
+      <span><strong id="graphEdgeCount">0</strong> всего связей</span>
+      <span><strong id="graphVisibleCount">0</strong> в подграфе</span>
+    </div>
+    <div class="kg-focus-tools" aria-label="Фокус графа">
+      <span class="kg-focus-label">Глубина фокуса</span>
+      <button class="kg-tool" id="graphDepthDown" type="button" title="Уменьшить глубину фокуса" disabled>-</button>
+      <span id="graphFocusDepth">1</span>
+      <button class="kg-tool" id="graphDepthUp" type="button" title="Расширить фокус выбранного узла" disabled>+</button>
+      <button class="kg-tool" id="graphReset" type="button">Сбросить</button>
+    </div>
+    <div class="kg-canvas">
+      <svg id="knowledgeGraph" role="img" aria-label="Граф знаний ATLAS"></svg>
+    </div>
+    <aside class="kg-inspector" aria-live="polite">
+      <span class="sidebar-label">Выбранный узел</span>
+      <h2 id="graphSelectionTitle">Узел не выбран</h2>
+      <p id="graphSelectionMeta">Выберите узел, чтобы посмотреть связи и сфокусировать граф.</p>
+      <a class="kg-open-link" id="graphSelectionOpen" href="#" hidden>Открыть страницу объекта</a>
+      <div id="graphSelectionLinks" class="relation-list compact-relations"></div>
+    </aside>
+  </section>
+
+  <section class="graph-data" hidden aria-hidden="true">
+    <table class="data-table graph-table">
+      <thead>
+        <tr>
+          <th>Связь</th>
+          <th>Источник</th>
+          <th>Цель</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ range $tech := $matrix.techniques }}
+          {{ with index $tech "subtechnique-of" }}
+            {{ $sourceID := . }}
+            {{ $sourceLabel := partial "object-name.html" (dict "id" $sourceID "fallback" $sourceID) }}
+            {{ with index (where $matrix.techniques "id" $sourceID) 0 }}
+              {{ $sourceLabel = partial "object-name.html" (dict "id" $sourceID "fallback" .name) }}
+            {{ end }}
+            {{ $targetLabel := partial "object-name.html" (dict "id" $tech.id "fallback" $tech.name) }}
+            <tr
+              data-graph-edge
+              data-kind="technique-subtechnique"
+              data-source-id="{{ $sourceID }}"
+              data-source-label="{{ $sourceLabel }}"
+              data-source-type="technique"
+              data-source-url="{{ relURL (printf "/techniques/%s/" $sourceID) }}"
+              data-target-id="{{ $tech.id }}"
+              data-target-label="{{ $targetLabel }}"
+              data-target-type="subtechnique"
+              data-target-url="{{ relURL (printf "/techniques/%s/" $tech.id) }}"
+            >
+              <td><span class="edge-kind">Техника -> подтехника</span></td>
+              <td><a href="{{ relURL (printf "/techniques/%s/" $sourceID) }}">{{ $sourceID }} {{ $sourceLabel }}</a></td>
+              <td><a href="{{ relURL (printf "/techniques/%s/" $tech.id) }}">{{ $tech.id }} {{ $targetLabel }}</a></td>
+            </tr>
+          {{ end }}
+          {{ range $tacticID := $tech.tactics }}
+            {{ $sourceLabel := partial "object-name.html" (dict "id" $tacticID "fallback" $tacticID) }}
+            {{ $targetLabel := partial "object-name.html" (dict "id" $tech.id "fallback" $tech.name) }}
+            <tr
+              data-graph-edge
+              data-kind="tactic-technique"
+              data-source-id="{{ $tacticID }}"
+              data-source-label="{{ $sourceLabel }}"
+              data-source-type="tactic"
+              data-source-url="{{ relURL (printf "/tactics/%s/" $tacticID) }}"
+              data-target-id="{{ $tech.id }}"
+              data-target-label="{{ $targetLabel }}"
+              data-target-type="technique"
+              data-target-url="{{ relURL (printf "/techniques/%s/" $tech.id) }}"
+            >
+              <td><span class="edge-kind">Тактика -> техника</span></td>
+              <td><a href="{{ relURL (printf "/tactics/%s/" $tacticID) }}">{{ $tacticID }} {{ $sourceLabel }}</a></td>
+              <td><a href="{{ relURL (printf "/techniques/%s/" $tech.id) }}">{{ $tech.id }} {{ $targetLabel }}</a></td>
+            </tr>
+          {{ end }}
+        {{ end }}
+        {{ range $mit := $matrix.mitigations }}
+          {{ range $tech := $mit.techniques }}
+            {{ $sourceLabel := partial "object-name.html" (dict "id" $mit.id "fallback" $mit.name) }}
+            {{ $targetLabel := partial "object-name.html" (dict "id" $tech.id "fallback" $tech.id) }}
+            {{ with index (where $matrix.techniques "id" $tech.id) 0 }}
+              {{ $targetLabel = partial "object-name.html" (dict "id" $tech.id "fallback" .name) }}
+            {{ end }}
+            <tr
+              data-graph-edge
+              data-kind="mitigation-technique"
+              data-source-id="{{ $mit.id }}"
+              data-source-label="{{ $sourceLabel }}"
+              data-source-type="mitigation"
+              data-source-url="{{ relURL (printf "/mitigations/%s/" $mit.id) }}"
+              data-target-id="{{ $tech.id }}"
+              data-target-label="{{ $targetLabel }}"
+              data-target-type="technique"
+              data-target-url="{{ relURL (printf "/techniques/%s/" $tech.id) }}"
+            >
+              <td><span class="edge-kind">Мера защиты -> техника</span></td>
+              <td><a href="{{ relURL (printf "/mitigations/%s/" $mit.id) }}">{{ $mit.id }} {{ $sourceLabel }}</a></td>
+              <td><a href="{{ relURL (printf "/techniques/%s/" $tech.id) }}">{{ $tech.id }} {{ $targetLabel }}</a></td>
+            </tr>
+          {{ end }}
+        {{ end }}
+        {{ range $study := $studies }}
+          {{ range $step := $study.procedure }}
+            {{ $sourceLabel := partial "object-name.html" (dict "id" $study.id "fallback" $study.name) }}
+            {{ $targetLabel := partial "object-name.html" (dict "id" $step.technique "fallback" $step.technique) }}
+            {{ with index (where $matrix.techniques "id" $step.technique) 0 }}
+              {{ $targetLabel = partial "object-name.html" (dict "id" $step.technique "fallback" .name) }}
+            {{ end }}
+            <tr
+              data-graph-edge
+              data-kind="study-technique"
+              data-source-id="{{ $study.id }}"
+              data-source-label="{{ $sourceLabel }}"
+              data-source-type="study"
+              data-source-url="{{ relURL (printf "/studies/%s/" $study.id) }}"
+              data-target-id="{{ $step.technique }}"
+              data-target-label="{{ $targetLabel }}"
+              data-target-type="technique"
+              data-target-url="{{ relURL (printf "/techniques/%s/" $step.technique) }}"
+            >
+              <td><span class="edge-kind">Кейс -> техника</span></td>
+              <td><a href="{{ relURL (printf "/studies/%s/" $study.id) }}">{{ $study.id }} {{ $sourceLabel }}</a></td>
+              <td><a href="{{ relURL (printf "/techniques/%s/" $step.technique) }}">{{ $step.technique }} {{ $targetLabel }}</a></td>
+            </tr>
+          {{ end }}
+        {{ end }}
+      </tbody>
+    </table>
+  </section>
+
+  <script>
+    (() => {
+      const svg = document.querySelector("#knowledgeGraph");
+      const edgeRows = [...document.querySelectorAll("[data-graph-edge]")];
+      const search = document.querySelector("#graphSearch");
+      const topButtons = [...document.querySelectorAll("[data-top-filter]")];
+      const reset = document.querySelector("#graphReset");
+      const depthDown = document.querySelector("#graphDepthDown");
+      const depthUp = document.querySelector("#graphDepthUp");
+      const depthLabel = document.querySelector("#graphFocusDepth");
+      const selectionTitle = document.querySelector("#graphSelectionTitle");
+      const selectionMeta = document.querySelector("#graphSelectionMeta");
+      const selectionOpen = document.querySelector("#graphSelectionOpen");
+      const selectionLinks = document.querySelector("#graphSelectionLinks");
+      const nodeCount = document.querySelector("#graphNodeCount");
+      const edgeCount = document.querySelector("#graphEdgeCount");
+      const visibleCount = document.querySelector("#graphVisibleCount");
+      const width = 1280;
+      const height = 720;
+      const graphBounds = {
+        minX: 44,
+        maxX: width - 44,
+        minY: 44,
+        maxY: height - 44,
+      };
+      const center = { x: width / 2, y: height / 2 };
+      const typeLabels = {
+        tactic: "Тактика",
+        technique: "Техника",
+        subtechnique: "Подтехника",
+        mitigation: "Мера защиты",
+        study: "Кейс",
+      };
+      const relationLabels = {
+        "tactic-technique": "тактика -> техника",
+        "technique-subtechnique": "техника -> подтехника",
+        "mitigation-technique": "мера защиты -> техника",
+        "study-technique": "кейс -> техника",
+      };
+      const topTypes = new Set(["tactic", "technique"]);
+      const positions = new Map();
+      const edges = edgeRows.map((row) => ({
+        row,
+        kind: row.dataset.kind,
+        source: nodeFrom(row, "source"),
+        target: nodeFrom(row, "target"),
+      }));
+      const nodes = new Map();
+      const adjacency = new Map();
+      for (const edge of edges) {
+        nodes.set(edge.source.id, edge.source);
+        nodes.set(edge.target.id, edge.target);
+        addNeighbor(edge.source.id, edge.target.id, edge);
+        addNeighbor(edge.target.id, edge.source.id, edge);
+      }
+      for (const node of nodes.values()) {
+        node.degree = (adjacency.get(node.id) || []).length;
+      }
+      let selectedID = "";
+      let hoveredID = "";
+      let focusDepth = 1;
+      let layoutSignature = "";
+
+      nodeCount.textContent = nodes.size;
+      edgeCount.textContent = edges.length;
+      svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+
+      function nodeFrom(row, side) {
+        return {
+          id: row.dataset[`${side}Id`],
+          label: row.dataset[`${side}Label`],
+          type: row.dataset[`${side}Type`],
+          url: row.dataset[`${side}Url`],
+        };
+      }
+
+      function addNeighbor(id, neighborID, edge) {
+        if (!adjacency.has(id)) adjacency.set(id, []);
+        adjacency.get(id).push({ id: neighborID, edge });
+      }
+
+      function hash(value) {
+        let result = 0;
+        for (let i = 0; i < value.length; i += 1) {
+          result = (result * 31 + value.charCodeAt(i)) >>> 0;
+        }
+        return result || 1;
+      }
+
+      function seedPosition(node, index, count) {
+        const cluster = {
+          tactic: { x: width * 0.24, y: height * 0.34 },
+          technique: { x: width * 0.52, y: height * 0.48 },
+          subtechnique: { x: width * 0.60, y: height * 0.60 },
+          mitigation: { x: width * 0.78, y: height * 0.30 },
+          study: { x: width * 0.78, y: height * 0.60 },
+        }[node.type] || center;
+        const h = hash(node.id);
+        const angle = (h % 628) / 100;
+        const ring = 38 + (index % Math.max(12, Math.ceil(count / 9))) * 11;
+        return {
+          x: clamp(cluster.x + Math.cos(angle) * ring, graphBounds.minX, graphBounds.maxX),
+          y: clamp(cluster.y + Math.sin(angle) * ring, graphBounds.minY, graphBounds.maxY),
+        };
+      }
+
+      function clamp(value, min, max) {
+        return Math.max(min, Math.min(max, value));
+      }
+
+      function activeGraph() {
+        const query = search.value.trim().toLowerCase();
+        const typeNodes = [...nodes.values()].filter((node) => topTypes.has(node.type));
+        const typeNodeIds = new Set(typeNodes.map((node) => node.id));
+        let graphEdges = edges.filter((edge) => typeNodeIds.has(edge.source.id) && typeNodeIds.has(edge.target.id));
+        let graphNodes = new Map();
+        for (const edge of graphEdges) {
+          graphNodes.set(edge.source.id, edge.source);
+          graphNodes.set(edge.target.id, edge.target);
+        }
+
+        if (query) {
+          const matching = new Set(
+            [...graphNodes.values()]
+              .filter((node) => `${node.id} ${node.label}`.toLowerCase().includes(query))
+              .map((node) => node.id)
+          );
+          const expanded = new Set(matching);
+          for (const id of matching) {
+            for (const neighbor of adjacency.get(id) || []) {
+              if (graphNodes.has(neighbor.id)) expanded.add(neighbor.id);
+            }
+          }
+          graphEdges = graphEdges.filter((edge) => expanded.has(edge.source.id) && expanded.has(edge.target.id));
+          graphNodes = new Map([...graphNodes].filter(([id]) => expanded.has(id)));
+        }
+
+        if (selectedID && graphNodes.has(selectedID)) {
+          const focus = collectFocus(selectedID, focusDepth, graphNodes);
+          graphEdges = graphEdges.filter((edge) => focus.has(edge.source.id) && focus.has(edge.target.id));
+          graphNodes = new Map([...graphNodes].filter(([id]) => focus.has(id)));
+        }
+
+        return { graphNodes: [...graphNodes.values()], graphEdges };
+      }
+
+      function collectFocus(startID, depth, graphNodes) {
+        const available = new Set([...graphNodes.keys()]);
+        const visited = new Set([startID]);
+        let frontier = new Set([startID]);
+        for (let step = 0; step < depth; step += 1) {
+          const next = new Set();
+          for (const id of frontier) {
+            for (const neighbor of adjacency.get(id) || []) {
+              if (!available.has(neighbor.id) || visited.has(neighbor.id)) continue;
+              visited.add(neighbor.id);
+              next.add(neighbor.id);
+            }
+          }
+          frontier = next;
+        }
+        return visited;
+      }
+
+      function layout(graphNodes, graphEdges) {
+        const signature = graphNodes.map((node) => node.id).sort().join("|");
+        if (signature === layoutSignature) return;
+        layoutSignature = signature;
+        graphNodes.forEach((node, index) => {
+          if (!positions.has(node.id)) {
+            positions.set(node.id, seedPosition(node, index, graphNodes.length));
+          }
+        });
+        const layoutNodes = graphNodes.map((node) => ({ node, ...positions.get(node.id), vx: 0, vy: 0 }));
+        const layoutByID = new Map(layoutNodes.map((node) => [node.node.id, node]));
+        for (let tick = 0; tick < 180; tick += 1) {
+          for (let i = 0; i < layoutNodes.length; i += 1) {
+            for (let j = i + 1; j < layoutNodes.length; j += 1) {
+              const a = layoutNodes[i];
+              const b = layoutNodes[j];
+              let dx = a.x - b.x;
+              let dy = a.y - b.y;
+              const distance2 = Math.max(dx * dx + dy * dy, 80);
+              const force = 520 / distance2;
+              const distance = Math.sqrt(distance2);
+              dx /= distance;
+              dy /= distance;
+              a.vx += dx * force;
+              a.vy += dy * force;
+              b.vx -= dx * force;
+              b.vy -= dy * force;
+            }
+          }
+          for (const edge of graphEdges) {
+            const source = layoutByID.get(edge.source.id);
+            const target = layoutByID.get(edge.target.id);
+            if (!source || !target) continue;
+            const dx = target.x - source.x;
+            const dy = target.y - source.y;
+            const distance = Math.max(Math.sqrt(dx * dx + dy * dy), 1);
+            const ideal = edge.kind === "technique-subtechnique" ? 78 : 135;
+            const force = (distance - ideal) * 0.006;
+            const fx = (dx / distance) * force;
+            const fy = (dy / distance) * force;
+            source.vx += fx;
+            source.vy += fy;
+            target.vx -= fx;
+            target.vy -= fy;
+          }
+          for (const item of layoutNodes) {
+            const anchor = typeAnchor(item.node.type);
+            item.vx += (anchor.x - item.x) * 0.0024;
+            item.vy += (anchor.y - item.y) * 0.0024;
+            applyBoundaryForce(item);
+            item.x += item.vx;
+            item.y += item.vy;
+            containPosition(item);
+            item.vx *= 0.72;
+            item.vy *= 0.72;
+          }
+        }
+        for (const item of layoutNodes) {
+          positions.set(item.node.id, { x: item.x, y: item.y });
+        }
+      }
+
+      function applyBoundaryForce(item) {
+        const strength = 0.018;
+        if (item.x < graphBounds.minX) item.vx += (graphBounds.minX - item.x) * strength;
+        if (item.x > graphBounds.maxX) item.vx -= (item.x - graphBounds.maxX) * strength;
+        if (item.y < graphBounds.minY) item.vy += (graphBounds.minY - item.y) * strength;
+        if (item.y > graphBounds.maxY) item.vy -= (item.y - graphBounds.maxY) * strength;
+      }
+
+      function containPosition(item) {
+        const xOffset = boundaryOffset(item.node.id, "x");
+        const yOffset = boundaryOffset(item.node.id, "y");
+        if (item.x < graphBounds.minX) {
+          item.x = graphBounds.minX + xOffset;
+          item.vx = Math.abs(item.vx) * 0.22;
+        }
+        if (item.x > graphBounds.maxX) {
+          item.x = graphBounds.maxX - xOffset;
+          item.vx = -Math.abs(item.vx) * 0.22;
+        }
+        if (item.y < graphBounds.minY) {
+          item.y = graphBounds.minY + yOffset;
+          item.vy = Math.abs(item.vy) * 0.22;
+        }
+        if (item.y > graphBounds.maxY) {
+          item.y = graphBounds.maxY - yOffset;
+          item.vy = -Math.abs(item.vy) * 0.22;
+        }
+      }
+
+      function boundaryOffset(id, axis) {
+        return 18 + (hash(`${id}:${axis}`) % 118);
+      }
+
+      function typeAnchor(type) {
+        return {
+          tactic: { x: width * 0.22, y: height * 0.42 },
+          technique: { x: width * 0.50, y: height * 0.48 },
+          subtechnique: { x: width * 0.54, y: height * 0.58 },
+          mitigation: { x: width * 0.78, y: height * 0.34 },
+          study: { x: width * 0.80, y: height * 0.58 },
+        }[type] || center;
+      }
+
+      function render() {
+        const { graphNodes, graphEdges } = activeGraph();
+        layout(graphNodes, graphEdges);
+        const nodeIDs = new Set(graphNodes.map((node) => node.id));
+        const visibleEdges = graphEdges;
+        visibleCount.textContent = graphNodes.length;
+        depthLabel.textContent = focusDepth;
+        depthDown.disabled = !selectedID || focusDepth <= 1;
+        depthUp.disabled = !selectedID || focusDepth >= 4;
+
+        for (const edge of edges) {
+          const inGraph = graphEdges.includes(edge);
+          edge.row.hidden = !inGraph;
+        }
+
+        svg.innerHTML = "";
+        const edgeLayer = document.createElementNS("http://www.w3.org/2000/svg", "g");
+        const nodeLayer = document.createElementNS("http://www.w3.org/2000/svg", "g");
+        svg.append(edgeLayer, nodeLayer);
+
+        for (const edge of visibleEdges) {
+          const source = positions.get(edge.source.id);
+          const target = positions.get(edge.target.id);
+          if (!source || !target) continue;
+          const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+          line.setAttribute("x1", source.x);
+          line.setAttribute("y1", source.y);
+          line.setAttribute("x2", target.x);
+          line.setAttribute("y2", target.y);
+          const isFocused = selectedID && (edge.source.id === selectedID || edge.target.id === selectedID);
+          const isHovered = hoveredID && (edge.source.id === hoveredID || edge.target.id === hoveredID);
+          line.setAttribute("class", `kg-edge edge-${edge.kind}${isFocused ? " is-focused" : ""}${isHovered ? " is-hovered" : ""}`);
+          line.dataset.sourceId = edge.source.id;
+          line.dataset.targetId = edge.target.id;
+          edgeLayer.append(line);
+        }
+
+        for (const node of graphNodes) {
+          const point = positions.get(node.id);
+          if (!point) continue;
+          const group = document.createElementNS("http://www.w3.org/2000/svg", "g");
+          const isSelected = selectedID === node.id;
+          const isNeighbor = selectedID && (adjacency.get(selectedID) || []).some((neighbor) => neighbor.id === node.id);
+          const isHovered = hoveredID === node.id;
+          const isHoverNeighbor = hoveredID && (adjacency.get(hoveredID) || []).some((neighbor) => neighbor.id === node.id);
+          group.setAttribute("class", `kg-node node-${node.type}${isSelected ? " is-selected" : ""}${isNeighbor ? " is-neighbor" : ""}${isHovered ? " is-hovered" : ""}${isHoverNeighbor ? " is-hover-neighbor" : ""}`);
+          group.setAttribute("transform", `translate(${point.x}, ${point.y})`);
+          group.dataset.nodeId = node.id;
+          group.setAttribute("tabindex", "0");
+          group.setAttribute("role", "button");
+          group.setAttribute("aria-label", `${typeLabels[node.type]} ${node.id} ${node.label}`);
+          group.addEventListener("mouseenter", () => {
+            hoveredID = node.id;
+            applyInteractionState();
+          });
+          group.addEventListener("mouseleave", () => {
+            hoveredID = "";
+            applyInteractionState();
+          });
+          group.addEventListener("focus", () => {
+            hoveredID = node.id;
+            applyInteractionState();
+          });
+          group.addEventListener("blur", () => {
+            hoveredID = "";
+            applyInteractionState();
+          });
+          group.addEventListener("click", (event) => {
+            event.stopPropagation();
+            selectedID = selectedID === node.id ? "" : node.id;
+            render();
+          });
+          group.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+              event.preventDefault();
+              selectedID = selectedID === node.id ? "" : node.id;
+              render();
+            }
+          });
+
+          const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+          circle.setAttribute("r", nodeRadius(node));
+          group.append(circle);
+
+          const text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+          text.setAttribute("x", nodeRadius(node) + 5);
+          text.setAttribute("y", 4);
+          text.textContent = labelForNode(node, graphNodes.length);
+          group.append(text);
+          nodeLayer.append(group);
+        }
+
+        if (selectedID && !nodeIDs.has(selectedID)) selectedID = "";
+        renderSelection(graphEdges, visibleEdges);
+        applyInteractionState();
+      }
+
+      function applyInteractionState() {
+        const selectedNeighbors = new Set((adjacency.get(selectedID) || []).map((neighbor) => neighbor.id));
+        const hoveredNeighbors = new Set((adjacency.get(hoveredID) || []).map((neighbor) => neighbor.id));
+        for (const group of svg.querySelectorAll(".kg-node")) {
+          const id = group.dataset.nodeId;
+          group.classList.toggle("is-selected", selectedID === id);
+          group.classList.toggle("is-neighbor", Boolean(selectedID && selectedNeighbors.has(id)));
+          group.classList.toggle("is-hovered", hoveredID === id);
+          group.classList.toggle("is-hover-neighbor", Boolean(hoveredID && hoveredNeighbors.has(id)));
+        }
+        for (const line of svg.querySelectorAll(".kg-edge")) {
+          const touchesSelected = selectedID && (line.dataset.sourceId === selectedID || line.dataset.targetId === selectedID);
+          const touchesHovered = hoveredID && (line.dataset.sourceId === hoveredID || line.dataset.targetId === hoveredID);
+          line.classList.toggle("is-focused", Boolean(touchesSelected));
+          line.classList.toggle("is-hovered", Boolean(touchesHovered));
+        }
+      }
+
+      function nodeRadius(node) {
+        if (node.type === "tactic") return 10;
+        if (node.type === "mitigation" || node.type === "study") return 7;
+        return clamp(4 + Math.sqrt(node.degree || 1) * 0.8, 5, 10);
+      }
+
+      function labelForNode(node, count) {
+        if (node.id === selectedID) return `${node.id} ${node.label}`;
+        if (count < 95 || node.type === "tactic" || (node.degree || 0) > 18) return node.id;
+        return "";
+      }
+
+      function renderSelection(graphEdges, visibleEdges) {
+        selectionLinks.innerHTML = "";
+        if (!selectedID) {
+          selectionTitle.textContent = "Узел не выбран";
+          selectionMeta.textContent = "Выберите узел, чтобы посмотреть связи и сфокусировать граф.";
+          selectionOpen.hidden = true;
+          return;
+        }
+        const node = nodes.get(selectedID);
+        const connected = visibleEdges.filter((edge) => edge.source.id === selectedID || edge.target.id === selectedID);
+        const allConnected = graphEdges.filter((edge) => edge.source.id === selectedID || edge.target.id === selectedID);
+        selectionTitle.textContent = `${node.id} ${node.label}`;
+        selectionMeta.textContent = `${typeLabels[node.type]} / ${connected.length} видимых связей / ${allConnected.length} связей в фокусе`;
+        selectionOpen.hidden = false;
+        selectionOpen.href = node.url;
+        for (const edge of connected.slice(0, 16)) {
+          const neighbor = edge.source.id === selectedID ? edge.target : edge.source;
+          const link = document.createElement("a");
+          link.className = "relation-item";
+          link.href = neighbor.url;
+          const id = document.createElement("span");
+          id.className = "relation-id";
+          id.textContent = neighbor.id;
+          const label = document.createElement("strong");
+          label.textContent = neighbor.label;
+          const meta = document.createElement("span");
+          meta.className = "relation-meta";
+          meta.textContent = relationLabels[edge.kind];
+          link.append(id, label, meta);
+          selectionLinks.append(link);
+        }
+      }
+
+      function toggleButton(button, set, type, relayout) {
+        if (set.has(type)) {
+          set.delete(type);
+          button.classList.remove("is-active");
+        } else {
+          set.add(type);
+          button.classList.add("is-active");
+        }
+        if (relayout) layoutSignature = "";
+        render();
+      }
+
+      for (const button of topButtons) {
+        button.addEventListener("click", () => toggleButton(button, topTypes, button.dataset.topFilter, true));
+      }
+      search.addEventListener("input", () => {
+        layoutSignature = "";
+        render();
+      });
+      depthDown.addEventListener("click", () => {
+        focusDepth = Math.max(1, focusDepth - 1);
+        layoutSignature = "";
+        render();
+      });
+      depthUp.addEventListener("click", () => {
+        focusDepth = Math.min(4, focusDepth + 1);
+        layoutSignature = "";
+        render();
+      });
+      reset.addEventListener("click", () => {
+        selectedID = "";
+        search.value = "";
+        focusDepth = 1;
+        layoutSignature = "";
+        render();
+      });
+      svg.addEventListener("click", (event) => {
+        if (event.target === svg) {
+          selectedID = "";
+          render();
+        }
+      });
+      render();
+    })();
+  </script>
+{{ end }}

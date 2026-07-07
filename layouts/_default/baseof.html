@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{ $pageTitle := cond .IsHome site.Title (printf "%s | %s" .Title site.Title) }}
+    {{ $description := .Description | default site.Params.description }}
+    {{ $localPath := .RelPermalink }}
+    {{ $baseURL := urls.Parse site.BaseURL }}
+    {{ $basePath := strings.TrimSuffix "/" $baseURL.Path }}
+    {{ if and $basePath (hasPrefix $localPath $basePath) }}
+      {{ $localPath = strings.TrimPrefix $basePath $localPath }}
+    {{ end }}
+    {{ if eq $localPath "" }}
+      {{ $localPath = "/" }}
+    {{ end }}
+    {{ $englishPath := $localPath }}
+    {{ if eq $localPath "/resources/knowledge-graph/" }}
+      {{ $englishPath = "/knowledge-graph/" }}
+    {{ else if eq $localPath "/resources/about/" }}
+      {{ $englishPath = "/resources/contribute/" }}
+    {{ else if hasPrefix $localPath "/translation-coverage/" }}
+      {{ $englishPath = "/" }}
+    {{ end }}
+    {{ $englishURL := printf "%s%s" (strings.TrimSuffix "/" site.Params.sourceURL) $englishPath }}
+    {{ $ogImage := absURL (site.Params.ogImage | default "favicon.svg") }}
+    <title>{{ $pageTitle }}</title>
+    {{ with $description }}<meta name="description" content="{{ . }}">{{ end }}
+    <link rel="canonical" href="{{ .Permalink }}">
+    <link rel="alternate" hreflang="ru" href="{{ .Permalink }}">
+    <link rel="alternate" hreflang="en" href="{{ $englishURL }}">
+    <link rel="alternate" hreflang="x-default" href="{{ $englishURL }}">
+    <meta property="og:title" content="{{ $pageTitle }}">
+    {{ with $description }}<meta property="og:description" content="{{ . }}">{{ end }}
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:image" content="{{ $ogImage }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ $pageTitle }}">
+    {{ with $description }}<meta name="twitter:description" content="{{ . }}">{{ end }}
+    <meta name="twitter:image" content="{{ $ogImage }}">
+    <link rel="icon" href="{{ relURL "favicon.svg" }}" type="image/svg+xml">
+    <script>
+      (() => {
+        try {
+          const savedTheme = localStorage.getItem("atlas-theme");
+          const systemTheme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          document.documentElement.dataset.theme = savedTheme || systemTheme;
+        } catch (error) {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
+    {{ $css := resources.Get "css/site.css" | minify | fingerprint }}
+    <link rel="preload" as="style" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+    {{ $js := resources.Get "js/site.js" | minify | fingerprint }}
+    <script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+    {{ partial "analytics-head.html" . }}
+  </head>
+  <body>
+    {{ partial "analytics-body.html" . }}
+    <header class="site-header">
+      <a class="brand" href="{{ site.Home.RelPermalink }}">ATLAS RU</a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        {{ $current := .RelPermalink }}
+        {{ range site.Menus.main }}
+          {{ $active := or (eq $current .URL) (and (ne .URL "/") (hasPrefix $current .URL)) }}
+          <a href="{{ .URL }}"{{ if $active }} class="is-active" aria-current="page"{{ end }}>{{ .Name }}</a>
+        {{ end }}
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Включить тёмную тему" title="Переключить тему">
+          <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+          <span class="theme-toggle-label" data-theme-toggle-label>Тема</span>
+        </button>
+        {{ partial "language-switcher.html" . }}
+      </div>
+    </header>
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+    <footer class="site-footer">
+      <p>{{ site.Params.disclaimer | markdownify }}</p>
+      <p>
+        <a href="{{ site.Params.sourceURL }}">Официальный ATLAS</a>
+        <span aria-hidden="true">/</span>
+        <a href="{{ site.Params.sourceRepo }}">Исходные данные</a>
+      </p>
+    </footer>
+  </body>
+</html>

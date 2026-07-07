@@ -1,0 +1,99 @@
+<aside class="object-sidebar" aria-label="Метаданные объекта">
+  {{ $typeLabels := dict "tactic" "Тактика" "technique" "Техника" "mitigation" "Мера защиты" "case-study" "Кейс" }}
+  <div class="sidebar-block">
+    <span class="sidebar-label">ID</span>
+    <strong class="sidebar-id">{{ .Params.atlas_id }}</strong>
+  </div>
+  <div class="sidebar-grid">
+    <div>
+      <span class="sidebar-label">Тип</span>
+      <strong>{{ or (index $typeLabels .Params.atlas_type) .Params.atlas_type }}</strong>
+    </div>
+    {{ with .Params.maturity }}
+      <div>
+        <span class="sidebar-label">Зрелость</span>
+        <strong>{{ partial "metadata-label.html" (dict "kind" "maturity" "value" .) }}</strong>
+      </div>
+    {{ end }}
+    {{ with .Params.created_date }}
+      <div>
+        <span class="sidebar-label">Создано</span>
+        <strong>{{ . }}</strong>
+      </div>
+    {{ end }}
+    {{ with .Params.modified_date }}
+      <div>
+        <span class="sidebar-label">Обновлено</span>
+        <strong>{{ . }}</strong>
+      </div>
+    {{ end }}
+    {{ with .Params.incident_date }}
+      <div>
+        <span class="sidebar-label">Дата инцидента</span>
+        <strong>{{ . }}</strong>
+      </div>
+    {{ end }}
+    {{ with .Params.case_study_type }}
+      <div>
+        <span class="sidebar-label">Тип кейса</span>
+        <strong>{{ partial "metadata-label.html" (dict "kind" "case_study_type" "value" .) }}</strong>
+      </div>
+    {{ end }}
+  </div>
+  {{ if or .Params.attack_ref_id .Params.category .Params.ml_lifecycle .Params.platforms .Params.tactics .Params.actor .Params.target .Params.reporter }}
+    <div class="sidebar-section">
+      {{ with .Params.attack_ref_id }}
+        <span class="sidebar-label">ATT&CK reference</span>
+        {{ if $.Params.attack_ref_url }}
+          <a class="sidebar-link" href="{{ $.Params.attack_ref_url }}">{{ . }}</a>
+        {{ else }}
+          <strong>{{ . }}</strong>
+        {{ end }}
+      {{ end }}
+      {{ with .Params.tactics }}
+        <span class="sidebar-label">Тактики</span>
+        <div class="tag-list">
+          {{ range . }}<a href="{{ relURL (printf "/tactics/%s/" .) }}">{{ . }}</a>{{ end }}
+        </div>
+      {{ end }}
+      {{ with .Params.platforms }}
+        <span class="sidebar-label">Платформы</span>
+        <div class="tag-list">{{ range . }}<span>{{ partial "metadata-label.html" (dict "kind" "platform" "value" .) }}</span>{{ end }}</div>
+      {{ end }}
+      {{ with .Params.category }}
+        <span class="sidebar-label">Категории</span>
+        <div class="tag-list">{{ range . }}<span>{{ partial "metadata-label.html" (dict "kind" "category" "value" .) }}</span>{{ end }}</div>
+      {{ end }}
+      {{ with .Params.ml_lifecycle }}
+        <span class="sidebar-label">Этапы жизненного цикла ML</span>
+        <div class="tag-list">{{ range . }}<span>{{ partial "metadata-label.html" (dict "kind" "ml_lifecycle" "value" .) }}</span>{{ end }}</div>
+      {{ end }}
+      {{ with .Params.actor }}
+        <span class="sidebar-label">Актор</span>
+        <p>{{ . }}</p>
+      {{ end }}
+      {{ with .Params.target }}
+        <span class="sidebar-label">Цель</span>
+        <p>{{ . }}</p>
+      {{ end }}
+      {{ with .Params.reporter }}
+        <span class="sidebar-label">Репортер</span>
+        <p>{{ . }}</p>
+      {{ end }}
+    </div>
+  {{ end }}
+  <div class="sidebar-grid compact">
+    {{ with .Params.technique_count }}
+      <div><span class="sidebar-label">Техники</span><strong>{{ . }}</strong></div>
+    {{ end }}
+    {{ with .Params.subtechnique_count }}
+      <div><span class="sidebar-label">Подтехники</span><strong>{{ . }}</strong></div>
+    {{ end }}
+    {{ with .Params.mitigation_count }}
+      <div><span class="sidebar-label">Меры защиты</span><strong>{{ . }}</strong></div>
+    {{ end }}
+    {{ with .Params.procedure_count }}
+      <div><span class="sidebar-label">Процедуры</span><strong>{{ . }}</strong></div>
+    {{ end }}
+  </div>
+</aside>

@@ -1,0 +1,57 @@
+{{ define "main" }}
+  {{ $atlas := hugo.Data.generated.atlas }}
+  {{ $matrix := index $atlas.matrices 0 }}
+  {{ $studies := index $atlas "case-studies" }}
+  {{ $report := index hugo.Data.generated "translation-report" }}
+  <section class="home-overview">
+    <div class="home-copy">
+      <p class="eyebrow">{{ partial "atlas-version.html" . }} / неофициальный перевод aisecbase.ru</p>
+      <h1>ATLAS на русском</h1>
+      <p class="lead">Статический справочник по тактикам, техникам, мерам защиты и кейсам ATLAS с отдельным слоем переводов и отчетом покрытия.</p>
+    </div>
+    <div class="quick-actions" aria-label="Быстрые переходы">
+      <a class="button primary" href="{{ relURL "/matrices/ATLAS/" }}">Матрица</a>
+      <a class="button" href="{{ relURL "/techniques/" }}">Техники</a>
+      <a class="button" href="{{ relURL "/translation-coverage/" }}">Покрытие перевода</a>
+    </div>
+  </section>
+  <section class="band">
+    <div class="metrics">
+      <div><strong>{{ len $matrix.tactics }}</strong><span>тактик</span></div>
+      <div><strong>{{ len $matrix.techniques }}</strong><span>техник</span></div>
+      <div><strong>{{ len $matrix.mitigations }}</strong><span>мер защиты</span></div>
+      <div><strong>{{ len $studies }}</strong><span>кейсов</span></div>
+    </div>
+  </section>
+  {{ with $report }}
+    <section class="content-width">
+      <h2>Покрытие перевода</h2>
+      <table class="coverage-table">
+        <thead>
+          <tr>
+            <th>Раздел</th>
+            <th>Всего</th>
+            <th>Названия</th>
+            <th>Описания</th>
+            <th>Полностью</th>
+            <th>Требует проверки</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ range $kind, $total := .totals }}
+            <tr>
+              <th scope="row">
+                {{ if eq $kind "case-study" }}Кейсы{{ else if eq $kind "mitigation" }}Меры защиты{{ else if eq $kind "resource" }}Ресурсы{{ else if eq $kind "tactic" }}Тактики{{ else if eq $kind "technique" }}Техники{{ else }}{{ $kind }}{{ end }}
+              </th>
+              <td>{{ $total.total }}</td>
+              <td>{{ $total.name_translated }}</td>
+              <td>{{ $total.body_translated }}</td>
+              <td><strong>{{ $total.fully_translated }}</strong></td>
+              <td>{{ $total.needs_review }}</td>
+            </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </section>
+  {{ end }}
+{{ end }}

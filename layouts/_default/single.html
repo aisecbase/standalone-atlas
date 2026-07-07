@@ -1,0 +1,80 @@
+{{ define "main" }}
+  {{ if not .Params.atlas_id }}
+    <article class="content-width document standalone-document">
+      {{ partial "breadcrumbs.html" . }}
+      <h1>{{ .Title }}</h1>
+      {{ .Content }}
+    </article>
+  {{ else }}
+    <section class="object-shell">
+    <article class="document">
+      {{ partial "breadcrumbs.html" . }}
+      <h1>{{ .Title }}</h1>
+      <nav class="section-nav" aria-label="Навигация по странице">
+        <a href="#description">Описание</a>
+        {{ if eq .Params.atlas_type "technique" }}
+          {{ with .Params.tactics }}<a href="#тактики">Тактики</a>{{ end }}
+          {{ if .Params.subtechnique_of }}<a href="#родительская-техника">Родительская техника</a>{{ end }}
+          {{ with .Params.subtechnique_count }}<a href="#подтехники">Подтехники</a>{{ end }}
+          {{ with .Params.mitigation_count }}<a href="#меры-защиты">Меры защиты</a>{{ end }}
+          {{ with .Params.procedure_count }}<a href="#примеры-процедур-из-кейсов">Процедуры</a>{{ end }}
+        {{ end }}
+        {{ if eq .Params.atlas_type "tactic" }}
+          {{ with .Params.technique_count }}<a href="#техники">Техники</a>{{ end }}
+          {{ with .Params.procedure_count }}<a href="#примеры-процедур-из-кейсов">Процедуры</a>{{ end }}
+        {{ end }}
+        {{ if eq .Params.atlas_type "mitigation" }}
+          {{ with .Params.technique_count }}<a href="#связанные-техники">Техники</a>{{ end }}
+        {{ end }}
+        {{ if eq .Params.atlas_type "case-study" }}
+          {{ with .Params.procedure }}<a href="#procedure">Процедура</a>{{ end }}
+          {{ with .Params.references }}<a href="#references">Источники</a>{{ end }}
+        {{ end }}
+      </nav>
+      {{ if and .Params.source_name (ne .Params.source_name .Title) }}
+        <p class="source-name">Оригинал: {{ .Params.source_name }}</p>
+      {{ end }}
+      {{ if .Params.has_sanitized_payload_examples }}
+        <div class="content-note" role="note">
+          В оригинальном ATLAS часть примеров оформлена HTML-цветами. Здесь такие фрагменты показаны как код: текст payload сохранен, но разметка не выполняется.
+        </div>
+      {{ end }}
+      <div id="description"></div>
+      {{ .Content }}
+      {{ if eq .Params.atlas_type "case-study" }}
+        {{ with .Params.procedure }}
+          <h2 id="procedure">Процедура</h2>
+          <ol class="timeline">
+            {{ range . }}
+              <li>
+                <div class="timeline-step">
+                  <span class="timeline-kicker">
+                    <a href="{{ relURL (printf "/tactics/%s/" .tactic) }}">{{ .tactic }} {{ .tactic_name }}</a>
+                  </span>
+                  <h3><a href="{{ relURL (printf "/techniques/%s/" .technique) }}">{{ .technique }} {{ .technique_name }}</a></h3>
+                  <div class="timeline-description">{{ .description | markdownify }}</div>
+                </div>
+              </li>
+            {{ end }}
+          </ol>
+        {{ end }}
+        {{ with .Params.references }}
+          <h2 id="references">Источники</h2>
+          <ol class="reference-list">
+            {{ range . }}
+              <li>
+                {{ if .url }}
+                  <a href="{{ .url }}">{{ or .title .url }}</a>
+                {{ else }}
+                  {{ .title }}
+                {{ end }}
+              </li>
+            {{ end }}
+          </ol>
+        {{ end }}
+      {{ end }}
+    </article>
+    {{ partial "object-sidebar.html" . }}
+  </section>
+  {{ end }}
+{{ end }}

@@ -1,0 +1,22 @@
+{{ $path := .RelPermalink }}
+{{ $baseURL := urls.Parse site.BaseURL }}
+{{ $basePath := strings.TrimSuffix "/" $baseURL.Path }}
+{{ if and $basePath (hasPrefix $path $basePath) }}
+  {{ $path = strings.TrimPrefix $basePath $path }}
+{{ end }}
+{{ if eq $path "" }}
+  {{ $path = "/" }}
+{{ end }}
+{{ $englishPath := $path }}
+{{ if eq $path "/resources/knowledge-graph/" }}
+  {{ $englishPath = "/knowledge-graph/" }}
+{{ else if eq $path "/resources/about/" }}
+  {{ $englishPath = "/resources/contribute/" }}
+{{ else if hasPrefix $path "/translation-coverage/" }}
+  {{ $englishPath = "/" }}
+{{ end }}
+{{ $englishURL := printf "%s%s" (strings.TrimSuffix "/" site.Params.sourceURL) $englishPath }}
+<nav class="language-switcher" aria-label="Выбор языка">
+  <a class="is-active" href="{{ .RelPermalink }}" aria-current="true">RU</a>
+  <a href="{{ $englishURL }}" aria-label="Официальный ATLAS на английском" title="Официальный ATLAS на английском">EN ↗</a>
+</nav>

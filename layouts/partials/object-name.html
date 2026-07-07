@@ -1,0 +1,7 @@
+{{- $name := .fallback -}}
+{{- with index hugo.Data.translations.ru.objects .id -}}
+  {{- with .name -}}
+    {{- $name = . -}}
+  {{- end -}}
+{{- end -}}
+{{- return $name -}}

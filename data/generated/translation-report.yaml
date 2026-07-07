@@ -1,0 +1,37 @@
+version: "2026.06"
+totals:
+    case-study:
+        total: 63
+        name_translated: 63
+        body_translated: 63
+        procedures_total: 504
+        procedures_translated: 504
+        fully_translated: 63
+        needs_review: 0
+    mitigation:
+        total: 35
+        name_translated: 35
+        body_translated: 35
+        fully_translated: 35
+        needs_review: 0
+    resource:
+        total: 6
+        name_translated: 6
+        body_translated: 6
+        fully_translated: 6
+        needs_review: 0
+    tactic:
+        total: 16
+        name_translated: 16
+        body_translated: 16
+        fully_translated: 16
+        needs_review: 0
+    technique:
+        total: 173
+        name_translated: 173
+        body_translated: 173
+        fully_translated: 173
+        needs_review: 0
+missing: []
+partial: []
+review: []

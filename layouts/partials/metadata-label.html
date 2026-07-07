@@ -1,0 +1,41 @@
+{{- $kind := .kind -}}
+{{- $value := printf "%v" .value -}}
+{{- $labels := dict -}}
+{{- if eq $kind "category" -}}
+  {{- $labels = dict
+    "Policy" "Политика"
+    "Technical - AI" "Техническая - ИИ"
+    "Technical - Cyber" "Техническая - кибербезопасность"
+    "Technical - ML" "Техническая - машинное обучение"
+  -}}
+{{- else if eq $kind "ml_lifecycle" -}}
+  {{- $labels = dict
+    "AI Model Engineering" "Разработка AI-модели"
+    "AI Model Evaluation" "Оценка AI-модели"
+    "Business and Data Understanding" "Понимание бизнес-задачи и данных"
+    "Data Preparation" "Подготовка данных"
+    "Deployment" "Развертывание"
+    "ML Model Engineering" "Разработка ML-модели"
+    "ML Model Evaluation" "Оценка ML-модели"
+    "Monitoring and Maintenance" "Мониторинг и сопровождение"
+  -}}
+{{- else if eq $kind "case_study_type" -}}
+  {{- $labels = dict
+    "exercise" "Учебный кейс"
+    "incident" "Инцидент"
+  -}}
+{{- else if eq $kind "maturity" -}}
+  {{- $labels = dict
+    "feasible" "Возможная"
+    "demonstrated" "Продемонстрированная"
+    "realized" "Реализованная"
+  -}}
+{{- else if eq $kind "platform" -}}
+  {{- $labels = dict
+    "Predictive AI" "Predictive AI"
+    "Generative AI" "Generative AI"
+    "Agentic AI" "Agentic AI"
+    "Enterprise" "Enterprise"
+  -}}
+{{- end -}}
+{{- or (index $labels $value) $value -}}

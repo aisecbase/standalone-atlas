@@ -1,0 +1,65 @@
+name: CI
+
+on:
+  workflow_dispatch:
+    inputs:
+      atlas_release_tag:
+        description: "Optional atlas-data release tag, for example v2026.06. Leave empty to use committed data."
+        required: false
+        default: ""
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "23 3 * * 1"
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Test and build
+    runs-on: ubuntu-latest
+    env:
+      HUGO_BASEURL: "https://example.pages.dev/"
+      ATLAS_RELEASE_TAG: "${{ github.event_name == 'workflow_dispatch' && github.event.inputs.atlas_release_tag || '' }}"
+      UPDATE_ATLAS_DATA: "${{ (github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && github.event.inputs.atlas_release_tag != '')) && '1' || '0' }}"
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.162.1"
+          extended: true
+
+      - name: Check Go formatting
+        run: |
+          unformatted="$(gofmt -l cmd/atlasgen/*.go)"
+          if [ -n "$unformatted" ]; then
+            echo "$unformatted"
+            exit 1
+          fi
+
+      - name: Vet generator
+        run: go vet ./...
+
+      - name: Test generator
+        run: go test ./...
+
+      - name: Build site
+        run: scripts/build-site.sh
+
+      - name: Check built output
+        run: test -f public/index.html

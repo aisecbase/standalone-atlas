@@ -1,0 +1,11 @@
+{{ define "main" }}
+  <section class="page-head">
+    <h1>Страница не найдена</h1>
+    <p class="lead">Такого адреса нет в русской версии справочника ATLAS.</p>
+    <div class="quick-actions" aria-label="Куда перейти дальше">
+      <a class="button primary" href="{{ relURL "/matrices/ATLAS/" }}">Матрица</a>
+      <a class="button" href="{{ relURL "/techniques/" }}">Техники</a>
+      <a class="button" href="{{ relURL "/" }}">Главная</a>
+    </div>
+  </section>
+{{ end }}

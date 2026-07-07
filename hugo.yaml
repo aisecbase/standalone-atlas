@@ -1,0 +1,44 @@
+baseURL: "https://dukebarman.github.io/"
+locale: "ru-RU"
+defaultContentLanguage: "ru"
+title: "ATLAS на русском"
+enableRobotsTXT: true
+disableKinds:
+  - taxonomy
+  - term
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+outputs:
+  home:
+    - HTML
+    - RSS
+params:
+  description: "Неофициальный русский справочник MITRE ATLAS: матрицы, тактики, техники, меры защиты, кейсы и покрытие перевода."
+  sourceURL: "https://atlas.mitre.org/"
+  sourceRepo: "https://github.com/mitre-atlas/atlas-data"
+  disclaimer: "Неофициальный русский перевод MITRE ATLAS от проекта [aisecbase.ru](https://aisecbase.ru/)."
+  analytics:
+    google: ""
+    yandex: ""
+menu:
+  main:
+    - name: "Матрицы"
+      pageRef: "/matrices/ATLAS"
+      weight: 10
+    - name: "Тактики"
+      pageRef: "/tactics"
+      weight: 20
+    - name: "Техники"
+      pageRef: "/techniques"
+      weight: 30
+    - name: "Меры защиты"
+      pageRef: "/mitigations"
+      weight: 40
+    - name: "Кейсы"
+      pageRef: "/studies"
+      weight: 50
+    - name: "Ресурсы"
+      pageRef: "/resources"
+      weight: 60

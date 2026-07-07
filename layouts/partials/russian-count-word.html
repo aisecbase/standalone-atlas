@@ -1,0 +1,11 @@
+{{- $count := int .count -}}
+{{- $forms := .forms -}}
+{{- $mod10 := mod $count 10 -}}
+{{- $mod100 := mod $count 100 -}}
+{{- if and (eq $mod10 1) (ne $mod100 11) -}}
+  {{- index $forms 0 -}}
+{{- else if and (ge $mod10 2) (le $mod10 4) (or (lt $mod100 12) (gt $mod100 14)) -}}
+  {{- index $forms 1 -}}
+{{- else -}}
+  {{- index $forms 2 -}}
+{{- end -}}

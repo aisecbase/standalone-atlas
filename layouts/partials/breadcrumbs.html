@@ -1,0 +1,43 @@
+{{ $version := partial "atlas-version.html" . }}
+{{ $sectionHref := "" }}
+{{ $sectionLabel := "" }}
+{{ if .Params.atlas_type }}
+  {{ $typeLabels := dict "tactic" "Тактика" "technique" "Техника" "mitigation" "Мера защиты" "case-study" "Кейс" }}
+  {{ $sectionLabel = or (index $typeLabels .Params.atlas_type) .Params.atlas_type }}
+  {{ if eq .Params.atlas_type "tactic" }}{{ $sectionHref = "/tactics/" }}{{ end }}
+  {{ if eq .Params.atlas_type "technique" }}{{ $sectionHref = "/techniques/" }}{{ end }}
+  {{ if eq .Params.atlas_type "mitigation" }}{{ $sectionHref = "/mitigations/" }}{{ end }}
+  {{ if eq .Params.atlas_type "case-study" }}{{ $sectionHref = "/studies/" }}{{ end }}
+{{ else if .Section }}
+  {{ $sectionLabel = .Section }}
+  {{ if eq .Section "matrices" }}{{ $sectionLabel = "Матрицы" }}{{ end }}
+  {{ if eq .Section "tactics" }}{{ $sectionLabel = "Тактики" }}{{ end }}
+  {{ if eq .Section "techniques" }}{{ $sectionLabel = "Техники" }}{{ end }}
+  {{ if eq .Section "mitigations" }}{{ $sectionLabel = "Меры защиты" }}{{ end }}
+  {{ if eq .Section "studies" }}{{ $sectionLabel = "Кейсы" }}{{ end }}
+  {{ if eq .Section "resources" }}{{ $sectionLabel = "Ресурсы" }}{{ end }}
+  {{ $sectionHref = printf "/%s/" .Section }}
+{{ else if .IsHome }}
+  {{ $sectionLabel = "" }}
+{{ else }}
+  {{ $sectionLabel = "" }}
+  {{ $sectionHref = "" }}
+{{ end }}
+<nav class="breadcrumbs" aria-label="Навигация по разделам">
+  <a href="{{ relURL "/" }}">{{ $version }}</a>
+  {{ with $sectionLabel }}
+    <span aria-hidden="true">/</span>
+    {{ if $sectionHref }}
+      <a href="{{ relURL $sectionHref }}">{{ . }}</a>
+    {{ else }}
+      <span>{{ . }}</span>
+    {{ end }}
+  {{ end }}
+  {{ if .Params.atlas_id }}
+    <span aria-hidden="true">/</span>
+    <a href="{{ .RelPermalink }}" aria-current="page">{{ .Params.atlas_id }}</a>
+  {{ else if and (not .IsSection) (not .Params.atlas_type) }}
+    <span aria-hidden="true">/</span>
+    <a href="{{ .RelPermalink }}" aria-current="page">{{ .Title }}</a>
+  {{ end }}
+</nav>

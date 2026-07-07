@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <section class="page-head">
+    {{ partial "breadcrumbs.html" . }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Content }}
+      <div class="section-copy">{{ . }}</div>
+    {{ end }}
+  </section>
+  <section class="resource-grid" aria-label="Ресурсы ATLAS">
+    {{ range .Pages.ByWeight }}
+      <a class="resource-card" href="{{ .RelPermalink }}">
+        <strong>{{ .Title }}</strong>
+        {{ with .Description }}<span>{{ . }}</span>{{ end }}
+      </a>
+    {{ end }}
+  </section>
+{{ end }}

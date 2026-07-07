@@ -1,0 +1,116 @@
+{{ define "main" }}
+  {{ $atlas := hugo.Data.generated.atlas }}
+  {{ $matrix := index $atlas.matrices 0 }}
+  {{ $parentTechniqueCount := 0 }}
+  {{ $platforms := slice }}
+  {{ range $tech := $matrix.techniques }}
+    {{ if not (index $tech "subtechnique-of") }}
+      {{ $parentTechniqueCount = add $parentTechniqueCount 1 }}
+    {{ end }}
+    {{ range ($tech.platforms | default slice) }}
+      {{ $platforms = $platforms | append . }}
+    {{ end }}
+  {{ end }}
+  {{ $knownPlatformOrder := slice "Predictive AI" "Generative AI" "Agentic AI" "Enterprise" }}
+  {{ $knownPlatforms := slice }}
+  {{ $extraPlatforms := slice }}
+  {{ range $platform := $knownPlatformOrder }}
+    {{ if in $platforms $platform }}
+      {{ $knownPlatforms = $knownPlatforms | append $platform }}
+    {{ end }}
+  {{ end }}
+  {{ range $platform := sort (uniq $platforms) }}
+    {{ if not (in $knownPlatformOrder $platform) }}
+      {{ $extraPlatforms = $extraPlatforms | append $platform }}
+    {{ end }}
+  {{ end }}
+  {{ $platforms = $knownPlatforms | append $extraPlatforms }}
+  <section class="page-head">
+    {{ partial "breadcrumbs.html" . }}
+    <h1>Матрица ATLAS для ИИ-систем</h1>
+    <p class="lead">Тактики и техники из официального набора данных ATLAS.</p>
+    <div class="matrix-toolbar" aria-label="Настройки матрицы">
+      <div class="matrix-control matrix-subtech-control">
+        <span class="matrix-control-label">Подтехники</span>
+        <button class="matrix-toggle-button" type="button" data-subtech-toggle aria-pressed="false" aria-label="Показать подтехники">
+          <span data-subtech-toggle-label>Показать</span>
+        </button>
+      </div>
+      <div class="matrix-control matrix-maturity-control">
+        <div class="matrix-control-row">
+          <label class="matrix-control-label" for="matrixMaturityFilter">Минимальная зрелость</label>
+          <span class="matrix-filter-count" id="matrixMaturityCount">Показано: {{ $parentTechniqueCount }} из {{ len $matrix.techniques }} {{ partial "russian-count-word.html" (dict "count" (len $matrix.techniques) "forms" (slice "техника" "техники" "техник")) }}</span>
+        </div>
+        <input
+          class="matrix-maturity-slider"
+          id="matrixMaturityFilter"
+          type="range"
+          min="0"
+          max="2"
+          step="1"
+          value="0"
+          data-matrix-maturity-filter
+          aria-label="Минимальная зрелость"
+          aria-valuetext="Возможная"
+        >
+        <div class="matrix-maturity-ticks" aria-hidden="true">
+          {{ range $index, $value := slice "feasible" "demonstrated" "realized" }}
+            <span data-matrix-maturity-tick="{{ $index }}"{{ if eq $index 0 }} class="is-active"{{ end }}>{{ partial "metadata-label.html" (dict "kind" "maturity" "value" $value) }}</span>
+          {{ end }}
+        </div>
+      </div>
+      {{ if gt (len $platforms) 0 }}
+        <div class="matrix-control matrix-platform-control">
+          <span class="matrix-control-label">Платформы</span>
+          <div class="matrix-platform-options" aria-label="Фильтр по платформам">
+            {{ range $platforms }}
+              <button class="matrix-platform-button" type="button" data-matrix-platform-filter="{{ . }}" aria-pressed="true">
+                {{ partial "metadata-label.html" (dict "kind" "platform" "value" .) }}
+              </button>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </section>
+  <section class="matrix-wrap" aria-label="Матрица ATLAS">
+    <div class="matrix">
+      <div class="matrix-head">
+        {{ range $tactic := $matrix.tactics }}
+          {{ $techCount := 0 }}
+          {{ range $tech := $matrix.techniques }}
+            {{ if and (in $tech.tactics $tactic.id) (not (index $tech "subtechnique-of")) }}
+              {{ $techCount = add $techCount 1 }}
+            {{ end }}
+          {{ end }}
+          <a class="matrix-heading" href="{{ relURL (printf "/tactics/%s/" $tactic.id) }}">
+            <strong>{{ partial "object-name.html" (dict "id" $tactic.id "fallback" $tactic.name) }}</strong>
+            <span data-matrix-heading-count>{{ $techCount }} {{ partial "russian-count-word.html" (dict "count" $techCount "forms" (slice "техника" "техники" "техник")) }}</span>
+          </a>
+        {{ end }}
+      </div>
+      <div class="matrix-body">
+      {{ range $tactic := $matrix.tactics }}
+        <section class="matrix-col" aria-label="{{ partial "object-name.html" (dict "id" $tactic.id "fallback" $tactic.name) }}">
+          {{ range $tech := $matrix.techniques }}
+            {{ if and (in $tech.tactics $tactic.id) (not (index $tech "subtechnique-of")) }}
+              <a class="tech-cell" data-matrix-id="{{ $tech.id }}" data-matrix-maturity="{{ $tech.maturity }}" data-matrix-platforms="{{ delimit ($tech.platforms | default slice) "||" }}" href="{{ relURL (printf "/techniques/%s/" $tech.id) }}">
+                <span>{{ $tech.id }}</span>
+                {{ partial "object-name.html" (dict "id" $tech.id "fallback" $tech.name) }}
+              </a>
+              {{ range $sub := $matrix.techniques }}
+                {{ if eq (index $sub "subtechnique-of") $tech.id }}
+                  <a class="tech-cell subtech-cell" data-matrix-id="{{ $sub.id }}" data-matrix-maturity="{{ $sub.maturity }}" data-matrix-platforms="{{ delimit ($sub.platforms | default slice) "||" }}" data-subtech-cell data-subtech-parent="{{ $tech.id }}" hidden href="{{ relURL (printf "/techniques/%s/" $sub.id) }}">
+                    <span>{{ $sub.id }}</span>
+                    {{ partial "object-name.html" (dict "id" $sub.id "fallback" $sub.name) }}
+                  </a>
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        </section>
+      {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

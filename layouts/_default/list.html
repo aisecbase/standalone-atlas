@@ -1,0 +1,141 @@
+{{ define "main" }}
+  <section class="page-head">
+    {{ partial "breadcrumbs.html" . }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Content }}
+      <div class="section-copy">{{ . }}</div>
+    {{ end }}
+    <div class="list-toolbar">
+      <input class="filter" type="search" placeholder="Поиск по ID, названию или описанию" aria-label="Поиск по ID, названию или описанию" data-filter-input>
+      {{ if eq .Section "mitigations" }}
+        {{ $categories := slice }}
+        {{ $stages := slice }}
+        {{ range .Pages }}
+          {{ range .Params.category }}{{ $categories = $categories | append . }}{{ end }}
+          {{ range .Params.ml_lifecycle }}{{ $stages = $stages | append . }}{{ end }}
+        {{ end }}
+        <select class="filter-select" data-filter-select="category" aria-label="Категория">
+          <option value="">Все категории</option>
+          {{ range sort (uniq $categories) }}<option value="{{ . }}">{{ partial "metadata-label.html" (dict "kind" "category" "value" .) }}</option>{{ end }}
+        </select>
+        <select class="filter-select" data-filter-select="stage" aria-label="Этап жизненного цикла ML">
+          <option value="">Все этапы жизненного цикла ML</option>
+          {{ range sort (uniq $stages) }}<option value="{{ . }}">{{ partial "metadata-label.html" (dict "kind" "ml_lifecycle" "value" .) }}</option>{{ end }}
+        </select>
+      {{ end }}
+      {{ if eq .Section "studies" }}
+        {{ $types := slice }}
+        {{ range .Pages }}{{ with .Params.case_study_type }}{{ $types = $types | append . }}{{ end }}{{ end }}
+        <select class="filter-select" data-filter-select="caseType" aria-label="Тип кейса">
+          <option value="">Все типы кейсов</option>
+          {{ range sort (uniq $types) }}<option value="{{ . }}">{{ partial "metadata-label.html" (dict "kind" "case_study_type" "value" .) }}</option>{{ end }}
+        </select>
+      {{ end }}
+    </div>
+  </section>
+  <section class="table-wrap">
+    <table class="data-table data-table-{{ .Section }}">
+      <colgroup>
+        {{ if eq .Section "techniques" }}
+          <col class="col-id">
+          <col class="col-title">
+          <col class="col-description">
+          <col class="col-maturity">
+        {{ else if eq .Section "mitigations" }}
+          <col class="col-id">
+          <col class="col-title">
+          <col class="col-description">
+          <col class="col-category">
+          <col class="col-stage">
+        {{ else if eq .Section "studies" }}
+          <col class="col-id">
+          <col class="col-title">
+          <col class="col-description">
+          <col class="col-case-type">
+          <col class="col-date">
+          <col class="col-actor">
+        {{ else }}
+          <col class="col-id">
+          <col class="col-title">
+          <col class="col-description">
+        {{ end }}
+      </colgroup>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Название</th>
+          <th>Описание</th>
+          {{ if eq .Section "techniques" }}<th>Зрелость</th>{{ end }}
+          {{ if eq .Section "mitigations" }}
+            <th><button class="sort-button" type="button" data-sort-key="category">Категория</button></th>
+            <th><button class="sort-button" type="button" data-sort-key="stage">Этапы жизненного цикла ML</button></th>
+          {{ end }}
+          {{ if eq .Section "studies" }}
+            <th><button class="sort-button" type="button" data-sort-key="caseType">Тип</button></th>
+            <th><button class="sort-button" type="button" data-sort-key="date">Дата</button></th>
+            <th><button class="sort-button" type="button" data-sort-key="actor">Актор</button></th>
+          {{ end }}
+        </tr>
+      </thead>
+      <tbody>
+        {{ range .Pages.ByParam "atlas_id" }}
+          {{ $category := delimit (.Params.category | default slice) " " }}
+          {{ $stage := delimit (.Params.ml_lifecycle | default slice) " " }}
+          {{ $categoryLabels := slice }}
+          {{ range (.Params.category | default slice) }}
+            {{ $categoryLabels = $categoryLabels | append (partial "metadata-label.html" (dict "kind" "category" "value" .)) }}
+          {{ end }}
+          {{ $stageLabels := slice }}
+          {{ range (.Params.ml_lifecycle | default slice) }}
+            {{ $stageLabels = $stageLabels | append (partial "metadata-label.html" (dict "kind" "ml_lifecycle" "value" .)) }}
+          {{ end }}
+          {{ $categoryLabel := delimit $categoryLabels ", " }}
+          {{ $stageLabel := delimit $stageLabels ", " }}
+          {{ $caseTypeLabel := "" }}
+          {{ with .Params.case_study_type }}
+            {{ $caseTypeLabel = partial "metadata-label.html" (dict "kind" "case_study_type" "value" .) }}
+          {{ end }}
+          {{ $maturityLabel := "" }}
+          {{ with .Params.maturity }}
+            {{ $maturityLabel = partial "metadata-label.html" (dict "kind" "maturity" "value" .) }}
+          {{ end }}
+          <tr
+            data-filter-item
+            data-filter-text="{{ .Params.atlas_id }} {{ .Title }} {{ .Description }} {{ .Params.source_name }} {{ $categoryLabel }} {{ $stageLabel }} {{ $caseTypeLabel }} {{ $maturityLabel }}"
+            data-category="{{ $category }}"
+            data-stage="{{ $stage }}"
+            data-case-type="{{ .Params.case_study_type }}"
+            data-sort-category="{{ $categoryLabel }}"
+            data-sort-stage="{{ $stageLabel }}"
+            data-sort-case-type="{{ $caseTypeLabel }}"
+            data-sort-date="{{ .Params.incident_date_raw }}"
+            data-sort-actor="{{ .Params.actor }}"
+          >
+            <td class="is-nowrap" data-label="ID"><a class="object-id" href="{{ .RelPermalink }}">{{ .Params.atlas_id }}</a></td>
+            <td data-label="Название">
+              <a class="table-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+              {{ if and .Params.source_name (ne .Params.source_name .Title) }}
+                <span class="table-subtitle">{{ .Params.source_name }}</span>
+              {{ end }}
+            </td>
+            <td class="table-description" data-label="Описание">{{ .Description }}</td>
+            {{ if eq $.Section "techniques" }}<td data-label="Зрелость">{{ $maturityLabel }}</td>{{ end }}
+            {{ if eq $.Section "mitigations" }}
+              <td data-label="Категория">
+                {{ range $i, $value := (.Params.category | default slice) }}{{ if $i }}, {{ end }}{{ partial "metadata-label.html" (dict "kind" "category" "value" $value) }}{{ end }}
+              </td>
+              <td data-label="Этапы жизненного цикла ML">
+                {{ range $i, $value := (.Params.ml_lifecycle | default slice) }}{{ if $i }}, {{ end }}{{ partial "metadata-label.html" (dict "kind" "ml_lifecycle" "value" $value) }}{{ end }}
+              </td>
+            {{ end }}
+            {{ if eq $.Section "studies" }}
+              <td data-label="Тип">{{ partial "metadata-label.html" (dict "kind" "case_study_type" "value" .Params.case_study_type) }}</td>
+              <td class="is-nowrap" data-label="Дата">{{ .Params.incident_date }}</td>
+              <td data-label="Актор">{{ .Params.actor }}</td>
+            {{ end }}
+          </tr>
+        {{ end }}
+      </tbody>
+    </table>
+  </section>
+{{ end }}
