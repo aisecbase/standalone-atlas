@@ -1719,16 +1719,52 @@ h2 {
   display: flex;
   justify-content: space-between;
   gap: 24px;
-  padding: 28px;
+  padding: 28px 88px 28px 28px;
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 14px;
+}
+
+.github-float {
+  position: fixed;
+  right: max(18px, env(safe-area-inset-right));
+  bottom: max(18px, env(safe-area-inset-bottom));
+  z-index: 25;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--control-bg) 88%, transparent);
+  box-shadow: 0 12px 32px var(--shadow);
+  color: var(--ink);
+  text-decoration: none;
+  backdrop-filter: blur(12px);
+}
+
+.github-float:hover {
+  border-color: color-mix(in srgb, var(--accent) 44%, var(--line));
+  color: var(--accent-dark);
+}
+
+.github-float svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
 }
 
 @media (max-width: 760px) {
   .site-footer {
     align-items: flex-start;
     flex-direction: column;
+    padding-right: 72px;
+  }
+
+  .github-float {
+    right: max(14px, env(safe-area-inset-right));
+    bottom: max(14px, env(safe-area-inset-bottom));
   }
 
   .site-header {
