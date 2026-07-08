@@ -149,7 +149,7 @@ ATLAS_RELEASE_TAG=v2026.06 make build
 UPDATE_ATLAS_DATA=0 make build
 ```
 
-После `make generate` смотри `reports/translation-coverage.md` или страницу `/translation-coverage/`: там видно, какие объекты полностью переведены, какие переведены частично, а какие еще не покрыты.
+После `make generate` смотрите `reports/translation-coverage.md` или страницу `/translation-coverage/`: там видно, какие объекты полностью переведены, какие переведены частично, а какие еще не покрыты.
 
 Генератор также восстанавливает связи, которые официальный сайт строит в клиентском store:
 
