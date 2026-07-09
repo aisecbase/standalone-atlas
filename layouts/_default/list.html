@@ -7,6 +7,16 @@
     {{ end }}
     <div class="list-toolbar">
       <input class="filter" type="search" placeholder="Поиск по ID, названию или описанию" aria-label="Поиск по ID, названию или описанию" data-filter-input>
+      {{ if eq .Section "techniques" }}
+        {{ $maturities := slice }}
+        {{ range .Pages }}{{ with .Params.maturity }}{{ $maturities = $maturities | append . }}{{ end }}{{ end }}
+        <select class="filter-select" data-filter-select="maturity" aria-label="Зрелость">
+          <option value="">Все уровни зрелости</option>
+          {{ range slice "feasible" "demonstrated" "realized" }}
+            {{ if in $maturities . }}<option value="{{ . }}">{{ partial "metadata-label.html" (dict "kind" "maturity" "value" .) }}</option>{{ end }}
+          {{ end }}
+        </select>
+      {{ end }}
       {{ if eq .Section "mitigations" }}
         {{ $categories := slice }}
         {{ $stages := slice }}
@@ -65,7 +75,7 @@
           <th>ID</th>
           <th>Название</th>
           <th>Описание</th>
-          {{ if eq .Section "techniques" }}<th>Зрелость</th>{{ end }}
+          {{ if eq .Section "techniques" }}<th><button class="sort-button" type="button" data-sort-key="maturity">Зрелость</button></th>{{ end }}
           {{ if eq .Section "mitigations" }}
             <th><button class="sort-button" type="button" data-sort-key="category">Категория</button></th>
             <th><button class="sort-button" type="button" data-sort-key="stage">Этапы жизненного цикла ML</button></th>
@@ -99,15 +109,22 @@
           {{ with .Params.maturity }}
             {{ $maturityLabel = partial "metadata-label.html" (dict "kind" "maturity" "value" .) }}
           {{ end }}
+          {{ $maturityRank := dict "feasible" "0" "demonstrated" "1" "realized" "2" }}
+          {{ $maturitySort := "" }}
+          {{ with .Params.maturity }}
+            {{ $maturitySort = printf "%s %s" (or (index $maturityRank .) "9") . }}
+          {{ end }}
           <tr
             data-filter-item
             data-filter-text="{{ .Params.atlas_id }} {{ .Title }} {{ .Description }} {{ .Params.source_name }} {{ $categoryLabel }} {{ $stageLabel }} {{ $caseTypeLabel }} {{ $maturityLabel }}"
             data-category="{{ $category }}"
             data-stage="{{ $stage }}"
             data-case-type="{{ .Params.case_study_type }}"
+            data-maturity="{{ .Params.maturity }}"
             data-sort-category="{{ $categoryLabel }}"
             data-sort-stage="{{ $stageLabel }}"
             data-sort-case-type="{{ $caseTypeLabel }}"
+            data-sort-maturity="{{ $maturitySort }}"
             data-sort-date="{{ .Params.incident_date_raw }}"
             data-sort-actor="{{ .Params.actor }}"
           >
