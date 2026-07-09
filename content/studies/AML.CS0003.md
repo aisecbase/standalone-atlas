@@ -2,13 +2,13 @@
 actor: Skylight Cyber
 atlas_id: AML.CS0003
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Исследователи Skylight смогли создать универсальную строку обхода, которая при добавлении к вредоносному файлу позволяет избежать обнаружения ИИ-детектором вредоносного ПО Cylance.
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2019-09-07"
+incident_date_granularity: Day
+incident_date_raw: "2019-09-07"
 procedure:
     - description: Исследователи изучили публично доступную информацию об ИИ-детекторе вредоносного ПО Cylance. Они собирали эти сведения из разных источников, включая публичные выступления и патентные заявки Cylance.
       description_line: Исследователи изучили публично доступную информацию об ИИ-детекторе вредоносного ПО Cylance. Они собирали эти сведения из разных источников, включая публичные выступления и патентные заявки Cylance.

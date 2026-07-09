@@ -2,13 +2,13 @@
 actor: Unknown
 atlas_id: AML.CS0032
 atlas_type: case-study
-case_study_type: ""
+case_study_type: incident
 description: Злоумышленники создают фишинговые сайты, которые визуально похожи на легитимные. Эти сайты предназначены для того, чтобы обманом заставить пользователей ввести учетные данные, которые затем отправляются...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: 2022-12
+incident_date_granularity: Month
+incident_date_raw: "2022-12-01"
 procedure:
     - description: |-
         Наблюдалось несколько простых, но эффективных стратегий ручного изменения логотипов:

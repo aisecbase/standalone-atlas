@@ -2,13 +2,13 @@
 actor: Check Point Research
 atlas_id: AML.CS0061
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Исследователи Check Point Research продемонстрировали атаку "AI in the Middle", при которой вредоносное ПО может использовать веб-ассистенты ИИ с анонимным или неаутентифицированным веб-просмотром и возможностями...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2026-02-17"
+incident_date_granularity: Day
+incident_date_raw: "2026-02-17"
 procedure:
     - description: Исследователи оценили публичные ИИ-ассистенты с анонимным или неаутентифицированным веб-просмотром и поведением получения URL, чтобы выявить сервисы, способные запрашивать произвольные URL, подконтрольные злоумышленнику, без API-учетных данных. Исследователи обнаружили, что Grok и Microsoft Copilot соответствуют этим условиям.
       description_line: Исследователи оценили публичные ИИ-ассистенты с анонимным или неаутентифицированным веб-просмотром и поведением получения URL, чтобы выявить сервисы, способные запрашивать произвольные URL, подконтрольные злоумышленнику, без API-учетных данных. Исследователи обнаружили, что Grok и Microsoft Copilot соответствуют этим условиям.

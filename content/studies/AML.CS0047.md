@@ -2,13 +2,13 @@
 actor: lkmanka58 (GitHub user)
 atlas_id: AML.CS0047
 atlas_type: case-study
-case_study_type: ""
+case_study_type: incident
 description: 13 июля 2025 года злоумышленник с именем пользователя GitHub lkmanka58 использовал GitHub-токен с некорректно заданными правами доступа, чтобы сделать коммит с вредоносным кодом в репозиторий расширения Amazon Q...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2025-07-13"
+incident_date_granularity: Day
+incident_date_raw: "2025-07-13"
 procedure:
     - description: '`lkmanka58` разработал промпт, который инструктировал Amazon Q удалить данные в файловой системе и облачные ресурсы, используя доступ к файловым инструментам и `bash`.'
       description_line: '`lkmanka58` разработал промпт, который инструктировал Amazon Q удалить данные в файловой системе и облачные ресурсы, используя доступ к файловым инструментам и `bash`.'

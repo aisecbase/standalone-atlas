@@ -2,14 +2,14 @@
 actor: Unknown Threat Actor
 atlas_id: AML.CS0043
 atlas_type: case-study
-case_study_type: ""
+case_study_type: incident
 description: Check Point Research обнаружили в реальной среде прототип образца вредоносного ПО, содержавший промпт-инъекцию, которая, по-видимому, была предназначена для манипулирования LLM-детекторами вредоносного ПО и/или...
 generated: true
 generated_by: atlasgen
 has_sanitized_payload_examples: true
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2025-06-25"
+incident_date_granularity: Day
+incident_date_raw: "2025-06-25"
 procedure:
     - description: Злоумышленник создал вредоносный промпт, рассчитанный на обход обнаружения.
       description_line: Злоумышленник создал вредоносный промпт, рассчитанный на обход обнаружения.

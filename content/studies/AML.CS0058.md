@@ -2,13 +2,13 @@
 actor: Skyld
 atlas_id: AML.CS0058
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Исследователи Skyld проанализировали Android-приложение Google Photos и восстановили модели TensorFlow Lite, применяемые в ИИ-функциях редактирования фотографий и анализа изображений. Исследователи обнаружили модели,...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: 2025-03
+incident_date_granularity: Month
+incident_date_raw: "2025-03-01"
 procedure:
     - description: Исследователи Skyld проанализировали Android Package (APK) Google Photos и определили, что приложение использует TensorFlow Lite как фреймворк машинного обучения. Они искали артефакты TFLite в пакете приложения и нативных библиотеках с помощью файлового идентификатора TFL3.
       description_line: Исследователи Skyld проанализировали Android Package (APK) Google Photos и определили, что приложение использует TensorFlow Lite как фреймворк машинного обучения. Они искали артефакты TFLite в пакете приложения и нативных библиотеках с помощью файлового идентификатора TFL3.

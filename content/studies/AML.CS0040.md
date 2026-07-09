@@ -2,13 +2,13 @@
 actor: Embrace the Red
 atlas_id: AML.CS0040
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Embrace the Red продемонстрировали, что функцией памяти ChatGPT можно манипулировать с помощью промпт-инъекций. Для проведения атаки исследователь скрыл промпт-инъекцию в общем Google Doc. Когда пользователь ссылается...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: 2024-02
+incident_date_granularity: Month
+incident_date_raw: "2024-02-01"
 procedure:
     - description: Исследователь составил простой промпт, который задает контекст памяти как маркированный список неверных фактов.
       description_line: Исследователь составил простой промпт, который задает контекст памяти как маркированный список неверных фактов.

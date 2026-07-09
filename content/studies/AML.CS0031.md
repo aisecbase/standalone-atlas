@@ -2,13 +2,13 @@
 actor: Unknown
 atlas_id: AML.CS0031
 atlas_type: case-study
-case_study_type: ""
+case_study_type: incident
 description: Исследователи ReversingLabs выявили вредоносные модели со встроенным вредоносным ПО, размещенные в репозитории моделей Hugging Face. При загрузке эти модели выполняли reverse shell, что давало субъекту угрозы...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2025"
+incident_date_granularity: Year
+incident_date_raw: "2025-02-25"
 procedure:
     - description: |-
         Злоумышленник встроил вредоносное ПО в ИИ-модель, хранившуюся в pickle-файле. Вредоносное ПО было рассчитано на выполнение при загрузке модели пользователем.

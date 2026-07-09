@@ -2,13 +2,13 @@
 actor: Tony Piazza
 atlas_id: AML.CS0018
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Google Colab — это сервис Jupyter Notebook, выполняющий код на виртуальных машинах. Jupyter Notebook часто используется для исследований и экспериментов в области ML и data science и содержит исполняемые фрагменты...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: 2022-07
+incident_date_granularity: Month
+incident_date_raw: "2022-07-01"
 procedure:
     - description: Злоумышленник создает Jupyter Notebook, содержащий обфусцированный вредоносный код.
       description_line: Злоумышленник создает Jupyter Notebook, содержащий обфусцированный вредоносный код.

@@ -2,13 +2,13 @@
 actor: PromptArmor
 atlas_id: AML.CS0035
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: PromptArmor продемонстрировала, что конфиденциальные данные можно эксфильтровать из Slack AI через косвенные промпт-инъекции. Атака опиралась на то, что Slack AI загружал вредоносный промпт из публикации в публичном...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2024-08-20"
+incident_date_granularity: Day
+incident_date_raw: "2024-08-20"
 procedure:
     - description: |-
         Исследователь подготовил специально подобранное сообщение, которое должно было извлекаться, когда пользователь спрашивает о своем API-ключе.

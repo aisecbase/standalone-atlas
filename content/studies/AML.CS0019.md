@@ -2,13 +2,13 @@
 actor: Mithril Security Researchers
 atlas_id: AML.CS0019
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Исследователи из Mithril Security продемонстрировали, как отравить предобученную большую языковую модель (LLM) с открытым исходным кодом, чтобы она возвращала ложный факт. Затем они успешно загрузили отравленную...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: 2023-07
+incident_date_granularity: Month
+incident_date_raw: "2023-07-01"
 procedure:
     - description: |-
         Исследователи загрузили модель [GPT-J-6B с Hugging Face](https://huggingface.co/EleutherAI/gpt-j-6b) с открытым исходным кодом.

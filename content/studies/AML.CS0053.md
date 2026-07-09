@@ -2,13 +2,13 @@
 actor: Unknown Bad Actor
 atlas_id: AML.CS0053
 atlas_type: case-study
-case_study_type: ""
+case_study_type: incident
 description: Злоумышленник успешно эксфильтровал письма пользователей MCP-сервера Postmark с помощью атаки на цепочку поставок. Postmark — сервис доставки электронной почты, который позволяет организациям отправлять маркетинговые...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: 2025-09
+incident_date_granularity: Month
+incident_date_raw: "2025-09-01"
 procedure:
     - description: Злоумышленник выдал себя за Postmark, опубликовав в npm легитимную версию пакета `postmark-mcp`. Поскольку Postmark сам не зарегистрировал имя `postmark-mcp` в npm, злоумышленник смог занять это имя. Легитимных пользователей обманом заставили использовать npm-пакет, хотя им не управляли официальные разработчики `postmark-mcp`.
       description_line: Злоумышленник выдал себя за Postmark, опубликовав в npm легитимную версию пакета `postmark-mcp`. Поскольку Postmark сам не зарегистрировал имя `postmark-mcp` в npm, злоумышленник смог занять это имя. Легитимных пользователей обманом заставили использовать npm-пакет, хотя им не управляли официальные разработчики `postmark-mcp`.

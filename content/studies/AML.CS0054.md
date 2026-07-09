@@ -2,13 +2,13 @@
 actor: Invariant Labs
 atlas_id: AML.CS0054
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Исследователи Invariant Labs продемонстрировали, что ИИ-агенты, настроенные для работы с удаленными инструментами Model Context Protocol (MCP), могут быть уязвимы к атакам отравления модели через отравленные...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2025-04-01"
+incident_date_granularity: Day
+incident_date_raw: "2025-04-01"
 procedure:
     - description: Исследователи подготовили промпт, который инструктирует ИИ-агента найти и прочитать файлы с учетными данными пользователя, а затем сохранить их в одном из входных параметров MCP-инструмента.
       description_line: Исследователи подготовили промпт, который инструктирует ИИ-агента найти и прочитать файлы с учетными данными пользователя, а затем сохранить их в одном из входных параметров MCP-инструмента.

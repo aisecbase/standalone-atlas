@@ -2,13 +2,13 @@
 actor: Embrace the Red
 atlas_id: AML.CS0038
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Embrace the Red продемонстрировали, что Google Gemini подвержен автоматическому вызову инструментов при переносе выполнения на следующий ход диалога. Это обходит защитный контроль, который ограничивает Gemini в вызове...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: 2024-02
+incident_date_granularity: Month
+incident_date_raw: "2024-02-01"
 procedure:
     - description: |-
         Исследователь написал промпт, предназначенный для извлечения текста из приватного Google Doc с помощью расширения Workspace в Google Gemini.

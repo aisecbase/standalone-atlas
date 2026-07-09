@@ -256,11 +256,14 @@ type StudyV6 struct {
 	Summary                 string      `yaml:"summary"`
 	IncidentDate            string      `yaml:"incident-date"`
 	IncidentDateGranularity string      `yaml:"incident-date-granularity"`
+	Date                    string      `yaml:"date"`
+	DateGranularity         string      `yaml:"date-granularity"`
 	Procedure               []Procedure `yaml:"procedure"`
 	Target                  string      `yaml:"target"`
 	Actor                   string      `yaml:"actor"`
 	Reporter                string      `yaml:"reporter"`
 	CaseStudyType           string      `yaml:"case-study-type"`
+	Type                    string      `yaml:"type"`
 	References              []Reference `yaml:"references"`
 }
 
@@ -724,13 +727,13 @@ func studyFromV6(source StudyV6) Study {
 		Name:                    strings.TrimSpace(source.Name),
 		ObjectType:              strings.TrimSpace(source.ObjectType),
 		Summary:                 firstNonEmpty(source.Summary, source.Description),
-		IncidentDate:            strings.TrimSpace(source.IncidentDate),
-		IncidentDateGranularity: strings.TrimSpace(source.IncidentDateGranularity),
+		IncidentDate:            firstNonEmpty(source.IncidentDate, source.Date),
+		IncidentDateGranularity: firstNonEmpty(source.IncidentDateGranularity, source.DateGranularity),
 		Procedure:               source.Procedure,
 		Target:                  strings.TrimSpace(source.Target),
 		Actor:                   strings.TrimSpace(source.Actor),
 		Reporter:                strings.TrimSpace(source.Reporter),
-		CaseStudyType:           strings.TrimSpace(source.CaseStudyType),
+		CaseStudyType:           normalizeCaseStudyType(firstNonEmpty(source.CaseStudyType, source.Type)),
 		References:              source.References,
 	}
 }
@@ -803,6 +806,17 @@ func normalizeMaturity(value string) string {
 		return "demonstrated"
 	case "realized":
 		return "realized"
+	default:
+		return strings.TrimSpace(value)
+	}
+}
+
+func normalizeCaseStudyType(value string) string {
+	switch strings.ToLower(strings.TrimSpace(value)) {
+	case "exercise":
+		return "exercise"
+	case "incident":
+		return "incident"
 	default:
 		return strings.TrimSpace(value)
 	}

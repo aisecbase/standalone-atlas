@@ -2,13 +2,13 @@
 actor: Berkeley Artificial Intelligence Research
 atlas_id: AML.CS0005
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Сервисы машинного перевода, такие как Google Translate, Bing Translator и Systran Translate, предоставляют публичные пользовательские интерфейсы и API. Исследовательская группа UC Berkeley использовала эти публичные...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2020-04-30"
+incident_date_granularity: Day
+incident_date_raw: "2020-04-30"
 procedure:
     - description: Исследователи использовали опубликованные научные статьи, чтобы определить наборы данных и архитектуры моделей, применявшиеся целевыми сервисами машинного перевода.
       description_line: Исследователи использовали опубликованные научные статьи, чтобы определить наборы данных и архитектуры моделей, применявшиеся целевыми сервисами машинного перевода.

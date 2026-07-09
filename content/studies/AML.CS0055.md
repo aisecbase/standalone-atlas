@@ -2,13 +2,13 @@
 actor: Embrace the Red
 atlas_id: AML.CS0055
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Embrace the Red продемонстрировали, что computer-use-агенты ИИ уязвимы к атакам социальной инженерии и их можно заставить выполнить произвольный код на компьютере жертвы. Эта атака представляет собой вариант...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2025-05-24"
+incident_date_granularity: Day
+incident_date_raw: "2025-05-24"
 procedure:
     - description: Исследователь получил доступ к ChatGPT.
       description_line: Исследователь получил доступ к ChatGPT.

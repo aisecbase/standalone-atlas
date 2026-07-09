@@ -2,13 +2,13 @@
 actor: One individual
 atlas_id: AML.CS0017
 atlas_type: case-study
-case_study_type: ""
+case_study_type: incident
 description: С октября 2020 года по декабрь 2021 года один человек подал в штате Калифорния не менее 180 ложных заявок на пособие по безработице, обойдя автоматизированную систему проверки личности ID.me. Десятки мошеннических...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: 2020-10
+incident_date_granularity: Month
+incident_date_raw: "2020-10-01"
 procedure:
     - description: |-
         Мужчина подал заявки на пособие по безработице в California Employment Development Department, используя поддельные личности, и в процессе взаимодействовал с системой проверки личности ID.me.

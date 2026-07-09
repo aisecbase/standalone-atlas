@@ -2,13 +2,13 @@
 actor: Embrace The Red
 atlas_id: AML.CS0021
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Embrace the Red продемонстрировали, что разговоры пользователей ChatGPT могут быть эксфильтрованы через косвенную промпт-инъекцию. Для выполнения атаки субъект угрозы загружает вредоносный промпт на публичный сайт,...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: 2023-05
+incident_date_granularity: Month
+incident_date_raw: "2023-05-01"
 procedure:
     - description: Исследователь разработал промпт, который заставляет ChatGPT добавлять в ответы Markdown-изображение, где разговор пользователя встроен в URL.
       description_line: Исследователь разработал промпт, который заставляет ChatGPT добавлять в ответы Markdown-изображение, где разговор пользователя встроен в URL.

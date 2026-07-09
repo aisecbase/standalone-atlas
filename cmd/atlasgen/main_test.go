@@ -437,7 +437,14 @@ func TestAdaptAtlasV6RestoresRelationshipsAndPlatforms(t *testing.T) {
 			},
 		},
 		CaseStudies: map[string]StudyV6{
-			"AML.CS0001": {ID: "AML.CS0001", Name: "Case", Description: "Description from v6"},
+			"AML.CS0001": {
+				ID:              "AML.CS0001",
+				Name:            "Case",
+				Description:     "Description from v6",
+				Date:            "2026-05-07",
+				DateGranularity: "Day",
+				Type:            "Exercise",
+			},
 		},
 		Relationships: map[string]RelationshipSetV6{
 			"ATLAS-matrix": {
@@ -494,6 +501,15 @@ func TestAdaptAtlasV6RestoresRelationshipsAndPlatforms(t *testing.T) {
 	}
 	if atlas.CaseStudies[0].Summary != "Description from v6" {
 		t.Fatalf("Case study summary = %q, want v6 description fallback", atlas.CaseStudies[0].Summary)
+	}
+	if atlas.CaseStudies[0].IncidentDate != "2026-05-07" {
+		t.Fatalf("Case study date = %q, want 2026-05-07", atlas.CaseStudies[0].IncidentDate)
+	}
+	if atlas.CaseStudies[0].IncidentDateGranularity != "Day" {
+		t.Fatalf("Case study date granularity = %q, want Day", atlas.CaseStudies[0].IncidentDateGranularity)
+	}
+	if atlas.CaseStudies[0].CaseStudyType != "exercise" {
+		t.Fatalf("Case study type = %q, want exercise", atlas.CaseStudies[0].CaseStudyType)
 	}
 }
 

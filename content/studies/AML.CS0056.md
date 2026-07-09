@@ -2,13 +2,13 @@
 actor: DeepSeek, Moonshot AI, MiniMax
 atlas_id: AML.CS0056
 atlas_type: case-study
-case_study_type: ""
+case_study_type: incident
 description: 'Anthropic выявила кампании по извлечению возможностей Claude, проводившиеся тремя китайскими ИИ-лабораториями: DeepSeek, Moonshot и MiniMax. В совокупности в этих кампаниях использовалось примерно 24 000 учетных...'
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2026-02-23"
+incident_date_granularity: Day
+incident_date_raw: "2026-02-23"
 procedure:
     - description: DeepSeek, Moonshot AI и MiniMax использовали коммерческие прокси-сервисы для доступа к Claude, обходя политику Anthropic, запрещающую коммерческий доступ к Claude в Китае.
       description_line: DeepSeek, Moonshot AI и MiniMax использовали коммерческие прокси-сервисы для доступа к Claude, обходя политику Anthropic, запрещающую коммерческий доступ к Claude в Китае.

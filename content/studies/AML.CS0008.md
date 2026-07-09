@@ -2,13 +2,13 @@
 actor: Researchers at Silent Break Security
 atlas_id: AML.CS0008
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: 'Proof Pudding (CVE-2019-20634) — это репозиторий кода, описывающий, как исследователи ML обошли систему защиты электронной почты ProofPoint: сначала они создали модель-копию ML-модели защиты электронной почты, а затем...'
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2019-09-09"
+incident_date_granularity: Day
+incident_date_raw: "2019-09-09"
 procedure:
     - description: Исследователи обнаружили, что ProofPoint Email Protection оставляла выходные оценки модели в заголовках писем.
       description_line: Исследователи обнаружили, что ProofPoint Email Protection оставляла выходные оценки модели в заголовках писем.

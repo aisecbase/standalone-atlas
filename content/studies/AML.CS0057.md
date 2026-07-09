@@ -2,13 +2,13 @@
 actor: Storm-2139
 atlas_id: AML.CS0057
 atlas_type: case-study
-case_study_type: ""
+case_study_type: incident
 description: Storm-2139 создала собственный инструментарий для джейлбрейка, чтобы обходить защитные ограничения Azure OpenAI Services, что позволяло пользователям генерировать синтетический контент, способный причинить вред....
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: 2024-12
+incident_date_granularity: Month
+incident_date_raw: "2024-12-01"
 procedure:
     - description: Создатели Storm-2139 разработали инструмент под названием de3u, чтобы упростить несанкционированное использование сервисов генеративного ИИ и обход защитных механизмов.
       description_line: Создатели Storm-2139 разработали инструмент под названием de3u, чтобы упростить несанкционированное использование сервисов генеративного ИИ и обход защитных механизмов.

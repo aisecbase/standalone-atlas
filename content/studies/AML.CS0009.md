@@ -2,13 +2,13 @@
 actor: 4chan Users
 atlas_id: AML.CS0009
 atlas_type: case-study
-case_study_type: ""
+case_study_type: incident
 description: Microsoft создала Tay, чат-бота для Twitter, предназначенного для общения с пользователями и их развлечения. В то время как предыдущие чат-боты использовали заранее запрограммированные сценарии для ответов на запросы,...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2016-03-23"
+incident_date_granularity: Day
+incident_date_raw: "2016-03-23"
 procedure:
     - description: Злоумышленники могли взаимодействовать с Tay через сообщения в Twitter.
       description_line: Злоумышленники могли взаимодействовать с Tay через сообщения в Twitter.

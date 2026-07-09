@@ -2,13 +2,13 @@
 actor: Researchers at Brown University
 atlas_id: AML.CS0007
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: OpenAI создала GPT-2, языковую модель, способную генерировать текстовые образцы высокого качества. Из-за опасений, что GPT-2 может использоваться в злонамеренных целях, например для выдачи себя за других людей,...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2019-08-22"
+incident_date_granularity: Day
+incident_date_raw: "2019-08-22"
 procedure:
     - description: Используя публичную документацию по GPT-2, исследователи собрали сведения о наборе данных, архитектуре модели и гиперпараметрах обучения.
       description_line: Используя публичную документацию по GPT-2, исследователи собрали сведения о наборе данных, архитектуре модели и гиперпараметрах обучения.

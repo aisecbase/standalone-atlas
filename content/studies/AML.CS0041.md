@@ -2,13 +2,13 @@
 actor: Pillar Security
 atlas_id: AML.CS0041
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Исследователи Pillar Security показали, как злоумышленники могут скомпрометировать код, сгенерированный ИИ, внедрив вредоносные инструкции в файлы правил, которые используются для настройки ИИ-ассистентов для...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2025-03-18"
+incident_date_granularity: Day
+incident_date_raw: "2025-03-18"
 procedure:
     - description: Исследователи разместили вредоносный JavaScript-файл на публично доступном сайте.
       description_line: Исследователи разместили вредоносный JavaScript-файл на публично доступном сайте.

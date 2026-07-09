@@ -2,13 +2,13 @@
 actor: Microsoft Defender Security Research Team
 atlas_id: AML.CS0062
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Команда Microsoft Defender Security Research Team обнаружила уязвимый сценарий в Microsoft Semantic Kernel, при котором одна промпт-инъекция могла привести к удаленному выполнению кода (RCE) на уровне хоста. Semantic...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2026-05-07"
+incident_date_granularity: Day
+incident_date_raw: "2026-05-07"
 procedure:
     - description: Исследователи подготовили промпт, который должен был заставить агента Semantic Kernel вызвать инструмент поиска с подконтрольными злоумышленнику аргументами. Значение аргумента было составлено так, чтобы задействовать уязвимую обработку фильтра In-Memory Vector Store и привести к выполнению кода.
       description_line: Исследователи подготовили промпт, который должен был заставить агента Semantic Kernel вызвать инструмент поиска с подконтрольными злоумышленнику аргументами. Значение аргумента было составлено так, чтобы задействовать уязвимую обработку фильтра In-Memory Vector Store и привести к выполнению кода.

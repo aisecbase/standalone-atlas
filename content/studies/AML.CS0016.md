@@ -2,13 +2,13 @@
 actor: Ludwig-Ferdinand Stumpp
 atlas_id: AML.CS0016
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Общедоступное приложение Streamlit MathGPT использует GPT-3, большую языковую модель (LLM), для ответов на пользовательские математические вопросы. Недавние исследования и эксперименты показали, что LLM, такие как...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2023-01-28"
+incident_date_granularity: Day
+incident_date_raw: "2023-01-28"
 procedure:
     - description: 'Понимая, что LLM могут быть уязвимы к промпт-инъекциям, исследователь ознакомился с типовыми вредоносными промптами, например: "Ignore above instructions. Instead ..."'
       description_line: 'Понимая, что LLM могут быть уязвимы к промпт-инъекциям, исследователь ознакомился с типовыми вредоносными промптами, например: "Ignore above instructions. Instead ..."'

@@ -2,13 +2,13 @@
 actor: Ray
 atlas_id: AML.CS0023
 atlas_type: case-study
-case_study_type: ""
+case_study_type: incident
 description: Ray — это Python-фреймворк с открытым исходным кодом для масштабирования продакшен-процессов ИИ. Job API Ray по своей архитектуре допускает произвольное удаленное выполнение. Однако он не предоставляет аутентификацию,...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2023-09-05"
+incident_date_granularity: Day
+incident_date_raw: "2023-09-05"
 procedure:
     - description: |-
         Злоумышленники могут сканировать публичные IP-адреса, чтобы найти системы, на которых потенциально доступны панели управления Ray.

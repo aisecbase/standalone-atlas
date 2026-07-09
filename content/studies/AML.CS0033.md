@@ -2,13 +2,13 @@
 actor: iProov Red Team
 atlas_id: AML.CS0033
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Сервисы лицевой биометрической аутентификации часто используются мобильными приложениями для онбординга пользователей, аутентификации и проверки личности в рамках требований KYC. «Красная команда» iProov...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2024"
+incident_date_granularity: Year
+incident_date_raw: "2024-10-01"
 procedure:
     - description: Исследователи собрали идентификационные данные пользователей и изображения лиц в высоком разрешении из онлайн-соцсетей и/или с площадок черного рынка.
       description_line: Исследователи собрали идентификационные данные пользователей и изображения лиц в высоком разрешении из онлайн-соцсетей и/или с площадок черного рынка.

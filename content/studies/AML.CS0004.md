@@ -2,13 +2,13 @@
 actor: Two individuals
 atlas_id: AML.CS0004
 atlas_type: case-study
-case_study_type: ""
+case_study_type: incident
 description: Этот тип атаки с подменой видеопотока камеры позволяет обойти традиционную модель аутентификации по живому изображению лица и получить доступ к привилегированным системам, а также выдавать себя за жертву. Двое человек...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2020"
+incident_date_granularity: Year
+incident_date_raw: "2020-01-01"
 procedure:
     - description: Злоумышленники собрали идентификационные данные пользователей и фотографии лиц в высоком разрешении на онлайн-черном рынке.
       description_line: Злоумышленники собрали идентификационные данные пользователей и фотографии лиц в высоком разрешении на онлайн-черном рынке.

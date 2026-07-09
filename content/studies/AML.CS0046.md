@@ -2,13 +2,13 @@
 actor: HiddenLayer
 atlas_id: AML.CS0046
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Исследователи безопасности HiddenLayer продемонстрировали, что косвенная промпт-инъекция, нацеленная на Claude Computer Use AI, может привести к выполнению команд оболочки в системе жертвы и уничтожению...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2024-10-24"
+incident_date_granularity: Day
+incident_date_raw: "2024-10-24"
 procedure:
     - description: Исследователи подготовили промпт, нацеленный на функцию Claude Computer Use. Он был предназначен для обхода защитных ограничений и выполнения деструктивной команды в системе жертвы.
       description_line: Исследователи подготовили промпт, нацеленный на функцию Claude Computer Use. Он был предназначен для обхода защитных ограничений и выполнения деструктивной команды в системе жертвы.

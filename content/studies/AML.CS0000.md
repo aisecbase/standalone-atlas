@@ -2,13 +2,13 @@
 actor: Palo Alto Networks AI Research Team
 atlas_id: AML.CS0000
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Исследовательская группа Security AI компании Palo Alto Networks протестировала модель глубокого обучения для обнаружения трафика командования и управления (C&C) вредоносного ПО в HTTP-трафике. На основе общедоступной...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2020"
+incident_date_granularity: Year
+incident_date_raw: "2020-01-01"
 procedure:
     - description: 'Мы определили подход к обнаружению вредоносных URL на основе машинного обучения как репрезентативный подход и потенциальную цель по статье [URLNet: Learning a URL representation with deep learning for malicious URL detection](https://arxiv.org/abs/1802.03162), найденной на arXiv (репозитории препринтов).'
       description_line: 'Мы определили подход к обнаружению вредоносных URL на основе машинного обучения как репрезентативный подход и потенциальную цель по статье [URLNet: Learning a URL representation with deep learning for malicious URL detection](https://arxiv.org/abs/1802.03162), найденной на arXiv (репозитории препринтов).'

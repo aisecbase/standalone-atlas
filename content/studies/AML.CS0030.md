@@ -2,13 +2,13 @@
 actor: Unknown
 atlas_id: AML.CS0030
 atlas_type: case-study
-case_study_type: ""
+case_study_type: incident
 description: Sysdig Threat Research Team обнаружила, что злоумышленники использовали украденные учетные данные для получения доступа к большим языковым моделям (LLM), размещенным в облаке. Субъекты угрозы скрытно собирали...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2024-05-06"
+incident_date_granularity: Day
+incident_date_raw: "2024-05-06"
 procedure:
     - description: Злоумышленники воспользовались уязвимой версией Laravel ([CVE-2021-3129](https://www.cve.org/CVERecord?id=CVE-2021-3129)), чтобы получить первичный доступ к системам жертв.
       description_line: Злоумышленники воспользовались уязвимой версией Laravel ([CVE-2021-3129](https://www.cve.org/CVERecord?id=CVE-2021-3129)), чтобы получить первичный доступ к системам жертв.

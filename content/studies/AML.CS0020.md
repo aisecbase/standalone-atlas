@@ -2,13 +2,13 @@
 actor: Kai Greshake, Saarland University
 atlas_id: AML.CS0020
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: При взаимодействии с новым LLM-чат-ботом Microsoft Bing Chat пользователь может разрешить Bing Chat просматривать открытые в данный момент сайты и получать к ним доступ на протяжении всей чат-сессии. Исследователи...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2023"
+incident_date_granularity: Year
+incident_date_raw: "2023-01-01"
 procedure:
     - description: |-
         Злоумышленник создал сайт с вредоносными системными инструкциями для LLM, чтобы повлиять на поведение модели.

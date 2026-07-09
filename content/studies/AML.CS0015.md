@@ -2,13 +2,13 @@
 actor: Unknown
 atlas_id: AML.CS0015
 atlas_type: case-study
-case_study_type: ""
+case_study_type: incident
 description: Пакеты Linux для предварительной версии PyTorch под названием Pytorch-nightly были скомпрометированы с 25 по 30 декабря 2022 года из-за вредоносного двоичного файла, загруженного в репозиторий кода Python Package...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2022-12-25"
+incident_date_granularity: Day
+incident_date_raw: "2022-12-25"
 procedure:
     - description: |-
         Вредоносный пакет зависимости с именем `torchtriton` был загружен в репозиторий PyPI с тем же именем, что и пакет, поставлявшийся со сборкой PyTorch-nightly.

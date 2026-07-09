@@ -2,13 +2,13 @@
 actor: Researchers at spiderSilk
 atlas_id: AML.CS0006
 atlas_type: case-study
-case_study_type: ""
+case_study_type: incident
 description: Clearview AI разрабатывает инструмент распознавания лиц, который ищет совпадения по общедоступным фотографиям. Этот инструмент использовался правоохранительными органами и другими сторонами в расследовательских целях....
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: 2020-04
+incident_date_granularity: Month
+incident_date_raw: "2020-04-16"
 procedure:
     - description: Исследователь безопасности получил первоначальный доступ к приватному репозиторию кода Clearview AI из-за ошибочной настройки сервера, которая позволяла произвольному пользователю зарегистрировать действительную учетную запись.
       description_line: Исследователь безопасности получил первоначальный доступ к приватному репозиторию кода Clearview AI из-за ошибочной настройки сервера, которая позволяла произвольному пользователю зарегистрировать действительную учетную запись.

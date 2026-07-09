@@ -2,13 +2,13 @@
 actor: Trend Micro Nebula Cloud Research Team
 atlas_id: AML.CS0028
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Исследователи Trend Micro, Inc. использовали порталы индексации сервисов и инструменты веб-поиска, чтобы выявить более 8 000 ошибочно настроенных приватных реестров контейнеров, доступных из интернета. Примерно 70%...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2023-09-26"
+incident_date_granularity: Day
+incident_date_raw: "2023-09-26"
 procedure:
     - description: |-
         Исследователи Trend Micro использовали сервисы индексирования и инструменты веб-поиска, чтобы выявить более 8 000 приватных реестров контейнеров, доступных из интернета. Примерно 70% реестров имели чрезмерно широкие права доступа, разрешавшие запись. Среди приватных реестров контейнеров были как самостоятельно размещенные реестры, так и реестры, развернутые у поставщиков облачных услуг (CSP). Реестры оказались доступны из-за сочетания следующих факторов:

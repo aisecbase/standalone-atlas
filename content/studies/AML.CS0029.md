@@ -2,13 +2,13 @@
 actor: Embrace the Red
 atlas_id: AML.CS0029
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Embrace the Red продемонстрировали, что разговоры пользователей Bard могут быть эксфильтрованы через косвенную промпт-инъекцию. Для выполнения атаки субъект угрозы делится с целевым пользователем Google Doc,...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2023-11-23"
+incident_date_granularity: Day
+incident_date_raw: "2023-11-23"
 procedure:
     - description: Исследователь разработал промпт, из-за которого Bard включает в ответ Markdown-элемент изображения с разговором пользователя, встроенным в URL.
       description_line: Исследователь разработал промпт, из-за которого Bard включает в ответ Markdown-элемент изображения с разговором пользователя, встроенным в URL.

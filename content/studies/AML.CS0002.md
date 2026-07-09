@@ -2,13 +2,13 @@
 actor: Unknown
 atlas_id: AML.CS0002
 atlas_type: case-study
-case_study_type: ""
+case_study_type: incident
 description: Исследовательская группа McAfee Advanced Threat Research заметила необычный рост числа сообщений об определенном семействе программ-вымогателей. Расследование показало, что за короткий промежуток времени через...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2020"
+incident_date_granularity: Year
+incident_date_raw: "2020-01-01"
 procedure:
     - description: Злоумышленник получил [metame](https://github.com/a0rtega/metame), простой движок метаморфного кода для произвольных исполняемых файлов.
       description_line: Злоумышленник получил [metame](https://github.com/a0rtega/metame), простой движок метаморфного кода для произвольных исполняемых файлов.

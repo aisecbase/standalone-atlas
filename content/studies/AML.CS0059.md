@@ -2,13 +2,13 @@
 actor: Aim Labs
 atlas_id: AML.CS0059
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Исследователи Aim Security обнаружили EchoLeak — уязвимость нулевого клика (zero-click) в Microsoft 365 Copilot, которая могла позволить злоумышленнику эксфильтровать конфиденциальные корпоративные данные без...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: 2025-05
+incident_date_granularity: Month
+incident_date_raw: "2025-05-25"
 procedure:
     - description: Исследователи подготовили вредоносные инструкции, рассчитанные на обход классификатора Microsoft для косвенных промпт-инъекций, маскировку под обычный деловой контент, скрытие связи с письмом, контролируемым злоумышленником, и принуждение Copilot включить конфиденциальные данные в отображаемый вывод.
       description_line: Исследователи подготовили вредоносные инструкции, рассчитанные на обход классификатора Microsoft для косвенных промпт-инъекций, маскировку под обычный деловой контент, скрытие связи с письмом, контролируемым злоумышленником, и принуждение Copilot включить конфиденциальные данные в отображаемый вывод.

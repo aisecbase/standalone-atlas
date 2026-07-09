@@ -2,13 +2,13 @@
 actor: Palo Alto Networks AI Research Team
 atlas_id: AML.CS0001
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Исследовательская группа Security AI компании Palo Alto Networks смогла обойти детектор ботнетных доменов, сгенерированных алгоритмом генерации доменов (DGA), на основе сверточной нейронной сети, используя...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2020"
+incident_date_granularity: Year
+incident_date_raw: "2020-01-01"
 procedure:
     - description: |-
         Обнаружение DGA широко используется для выявления ботнетов в академической среде и индустрии.

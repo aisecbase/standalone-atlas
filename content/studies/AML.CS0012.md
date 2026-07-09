@@ -2,13 +2,13 @@
 actor: MITRE AI Red Team
 atlas_id: AML.CS0012
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: «Красная команда» MITRE AI продемонстрировала атаку уклонения в физическом домене на коммерческий сервис идентификации лиц с целью вызвать целевую ошибочную классификацию. Эта операция сочетала традиционные техники...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2020-01-01"
+incident_date_granularity: Day
+incident_date_raw: "2020-01-01"
 procedure:
     - description: Команда сначала провела разведку, чтобы собрать сведения о целевой ML-модели.
       description_line: Команда сначала провела разведку, чтобы собрать сведения о целевой ML-модели.

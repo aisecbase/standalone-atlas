@@ -2,13 +2,13 @@
 actor: Azure Red Team
 atlas_id: AML.CS0011
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: «Красная команда» Azure провела учения на новом продукте Microsoft, предназначенном для запуска ИИ-нагрузок на периферии. В ходе учений предполагалось использовать автоматизированную систему, которая непрерывно...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: 2020-02
+incident_date_granularity: Month
+incident_date_raw: "2020-02-01"
 procedure:
     - description: Команда сначала провела разведку, чтобы собрать сведения о целевой ML-модели.
       description_line: Команда сначала провела разведку, чтобы собрать сведения о целевой ML-модели.

@@ -2,13 +2,13 @@
 actor: Kaspersky ML Research Team
 atlas_id: AML.CS0014
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Облачные хранилища и вычисления стали популярными платформами для развертывания ML-детекторов вредоносного ПО. В таких случаях признаки для моделей формируются на системах пользователей, а затем отправляются на...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2021-06-23"
+incident_date_granularity: Day
+incident_date_raw: "2021-06-23"
 procedure:
     - description: |-
         Исследователи провели обзор состязательных атак на ML-компоненты антивирусных продуктов.

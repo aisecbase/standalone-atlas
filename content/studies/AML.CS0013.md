@@ -2,13 +2,13 @@
 actor: Yuanchun Li, Jiayi Hua, Haoyu Wang, Chunyang Chen, Yunxin Liu
 atlas_id: AML.CS0013
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Модели глубокого обучения все чаще используются в мобильных приложениях как критически важные компоненты. Исследователи из Microsoft Research показали, что многие модели глубокого обучения, развернутые в мобильных...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2021-01-18"
+incident_date_granularity: Day
+incident_date_raw: "2021-01-18"
 procedure:
     - description: Чтобы составить список потенциальных целевых моделей, исследователи искали в Google Play приложения, которые могли содержать встроенные модели глубокого обучения, по ключевым словам, связанным с глубоким обучением.
       description_line: Чтобы составить список потенциальных целевых моделей, исследователи искали в Google Play приложения, которые могли содержать встроенные модели глубокого обучения, по ключевым словам, связанным с глубоким обучением.

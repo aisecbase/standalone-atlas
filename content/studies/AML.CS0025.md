@@ -2,13 +2,13 @@
 actor: Researchers from Google Deepmind, ETH Zurich, NVIDIA, Robust Intelligence, and Google
 atlas_id: AML.CS0025
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Многие современные крупномасштабные веб-датасеты распространяются как список URL, указывающих на отдельные элементы данных. Исследователи показывают, что многие такие датасеты уязвимы к атаке отравления типа...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2024-06-06"
+incident_date_granularity: Day
+incident_date_raw: "2024-06-06"
 procedure:
     - description: Исследователи скачивают крупномасштабный веб-датасет, представляющий собой список URL на отдельные элементы данных.
       description_line: Исследователи скачивают крупномасштабный веб-датасет, представляющий собой список URL на отдельные элементы данных.

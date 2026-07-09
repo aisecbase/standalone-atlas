@@ -2,13 +2,13 @@
 actor: Vulcan Cyber, Lasso Security
 atlas_id: AML.CS0022
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Исследователи установили, что большие языковые модели, такие как ChatGPT, могут галлюцинировать названия фиктивных программных пакетов, которые не опубликованы в репозитории пакетов. Злоумышленник может опубликовать...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: 2024-06
+incident_date_granularity: Month
+incident_date_raw: "2024-06-01"
 procedure:
     - description: На протяжении упражнения исследователи использовали публичный API ChatGPT.
       description_line: На протяжении упражнения исследователи использовали публичный API ChatGPT.

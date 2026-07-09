@@ -2,13 +2,13 @@
 actor: threlfall_hax
 atlas_id: AML.CS0027
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Исследователь безопасности threlfallhax создал на Hugging Face, публичном репозитории моделей, учетные записи организаций, имитирующие реальные организации. Эти поддельные учетные записи организаций Hugging Face...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2023-08-23"
+incident_date_granularity: Day
+incident_date_raw: "2023-08-23"
 procedure:
     - description: Исследователь зарегистрировал на Hugging Face непроверенную учетную запись «организации», заняв пространство имен целевой компании.
       description_line: Исследователь зарегистрировал на Hugging Face непроверенную учетную запись «организации», заняв пространство имен целевой компании.

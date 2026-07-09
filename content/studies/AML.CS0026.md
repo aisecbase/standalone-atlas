@@ -2,14 +2,14 @@
 actor: Zenity
 atlas_id: AML.CS0026
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Исследователи Zenity в августе 2024 года провели редтиминговое упражнение, в ходе которого им удалось манипулировать Microsoft 365 Copilot.[[twitter]] Атака злоупотребляла тем, что Copilot загружает полученные письма...
 generated: true
 generated_by: atlasgen
 has_sanitized_payload_examples: true
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2024-08-08"
+incident_date_granularity: Day
+incident_date_raw: "2024-08-08"
 procedure:
     - description: Исследователи Zenity установили, что Microsoft Copilot for M365 индексирует все письма, полученные во входящий ящик, даже если получатель их не открывает.
       description_line: Исследователи Zenity установили, что Microsoft Copilot for M365 индексирует все письма, полученные во входящий ящик, даже если получатель их не открывает.

@@ -2,13 +2,13 @@
 actor: Stav Cohen, Ron Bitton, Ben Nassi
 atlas_id: AML.CS0024
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Исследователи разработали Morris II, zero-click-червя, предназначенного для атак на экосистемы генеративного ИИ (GenAI) и распространения между связанными GenAI-системами. Червь использует состязательный...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2024-03-05"
+incident_date_granularity: Day
+incident_date_raw: "2024-03-05"
 procedure:
     - description: Исследователи используют доступ к публичному API GenAI-модели, на которой работает целевая почтовая система с RAG.
       description_line: Исследователи используют доступ к публичному API GenAI-модели, на которой работает целевая почтовая система с RAG.

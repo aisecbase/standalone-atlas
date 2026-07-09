@@ -2,13 +2,13 @@
 actor: Unknown Threat Actor
 atlas_id: AML.CS0042
 atlas_type: case-study
-case_study_type: ""
+case_study_type: incident
 description: Команда Microsoft Incident Response - Detection and Response Team (DART) расследовала компрометацию системы, в которой злоумышленник использовал SesameOp, бэкдор-имплант, злоупотребляющий OpenAI Assistants API для...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: 2025-07
+incident_date_granularity: Month
+incident_date_raw: "2025-07-01"
 procedure:
     - description: |-
         Злоумышленник использовал OpenAI Assistants API как канал передачи команд вредоносному ПО SesameOp. SesameOp выполнял эти команды в системе жертвы и отправлял результаты обратно злоумышленнику по тому же каналу. Команды и результаты передавались в зашифрованном виде.

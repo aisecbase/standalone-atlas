@@ -2,13 +2,13 @@
 actor: Cato CTRL
 atlas_id: AML.CS0039
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Исследователи Cato Networks продемонстрировали, как злоумышленники могут эксплуатировать ИИ-системы, встроенные в корпоративные рабочие процессы, для выполнения вредоносных действий с повышенными привилегиями. Для...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2025-06-19"
+incident_date_granularity: Day
+incident_date_raw: "2025-06-19"
 procedure:
     - description: Исследователи провели разведку, чтобы узнать о сервере Model Context Protocol (MCP) Atlassian и его интеграции с платформой Jira Service Management (JSM). Atlassian предлагает MCP-сервер, который встраивает ИИ в корпоративные рабочие процессы. MCP Atlassian поддерживает ряд действий на основе ИИ, включая суммаризацию обращений, автоматические ответы, классификацию и интеллектуальные рекомендации в JSM и Confluence. Он позволяет инженерам поддержки и внутренним пользователям взаимодействовать с ИИ прямо из привычных интерфейсов.
       description_line: Исследователи провели разведку, чтобы узнать о сервере Model Context Protocol (MCP) Atlassian и его интеграции с платформой Jira Service Management (JSM). Atlassian предлагает MCP-сервер, который встраивает ИИ в корпоративные рабочие процессы. MCP Atlassian поддерживает ряд действий на основе ИИ, включая суммаризацию обращений, автоматические ответы, классификацию и интеллектуальные рекомендации в JSM и Confluence. Он позволяет инженерам поддержки и внутренним пользователям взаимодействовать с ИИ прямо из привычных интерфейсов.

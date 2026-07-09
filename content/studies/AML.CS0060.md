@@ -2,13 +2,13 @@
 actor: Cybernews Research Team
 atlas_id: AML.CS0060
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Исследователи Cybernews показали, что ИИ-чат-бот Lenovo «Lena» был уязвим к промпт-инъекции, из-за которой генерировался вредоносный HTML-код. Он сохранялся в истории чата и при отображении в браузере сотрудника...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2025-08-18"
+incident_date_granularity: Day
+incident_date_raw: "2025-08-18"
 procedure:
     - description: Исследователи развернули сервер для получения чувствительной информации, эксфильтрированной из уязвимого LLM-сервиса.
       description_line: Исследователи развернули сервер для получения чувствительной информации, эксфильтрированной из уязвимого LLM-сервиса.

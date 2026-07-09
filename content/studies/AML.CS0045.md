@@ -2,13 +2,13 @@
 actor: Backslash Security Research Team
 atlas_id: AML.CS0045
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Backslash Security Research Team продемонстрировала, что инструмент Model Context Protocol (MCP) может использоваться в качестве вектора косвенной промпт-инъекции против Cursor и потенциально приводить к выполнению...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2025-06-24"
+incident_date_granularity: Day
+incident_date_raw: "2025-06-24"
 procedure:
     - description: Исследователи подготовили вредоносный промпт с инструкцией выполнить команду оболочки, которая эксфильтрирует учетные данные ИИ-агента пользователя-жертвы.
       description_line: Исследователи подготовили вредоносный промпт с инструкцией выполнить команду оболочки, которая эксфильтрирует учетные данные ИИ-агента пользователя-жертвы.

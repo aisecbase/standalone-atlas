@@ -2,13 +2,13 @@
 actor: Lumia Security
 atlas_id: AML.CS0036
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Исследователи Lumia показали, что из памяти десктопных LLM-приложений можно извлечь токены аутентификации. Затем злоумышленник может использовать эти токены, чтобы выдавать себя за жертву перед backend-сервисом LLM,...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2025"
+incident_date_granularity: Year
+incident_date_raw: "2025-01-01"
 procedure:
     - description: Для выполнения этой атаки злоумышленнику требовался первичный доступ к системе жертвы.
       description_line: Для выполнения этой атаки злоумышленнику требовался первичный доступ к системе жертвы.

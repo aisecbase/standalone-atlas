@@ -2,13 +2,13 @@
 actor: Microsoft AI Red Team
 atlas_id: AML.CS0010
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: «Красная команда» Microsoft AI провела учения на внутреннем сервисе Azure с целью нарушить его работу. Эта операция сочетала традиционные корпоративные техники ATT&CK, такие как поиск действующей учетной записи и...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2020"
+incident_date_granularity: Year
+incident_date_raw: "2020-01-01"
 procedure:
     - description: Команда сначала провела разведку, чтобы собрать сведения о целевой ML-модели.
       description_line: Команда сначала провела разведку, чтобы собрать сведения о целевой ML-модели.

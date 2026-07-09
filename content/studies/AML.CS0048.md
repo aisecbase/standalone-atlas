@@ -2,13 +2,13 @@
 actor: Jamieson O'Reilly
 atlas_id: AML.CS0048
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Исследователь безопасности обнаружил сотни интерфейсов управления ClawdBot, открытых в публичном интернете. ClawdBot, ныне OpenClaw, описывается как «персональный ИИ-ассистент, который работает на ваших собственных...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2026-01-25"
+incident_date_granularity: Day
+incident_date_raw: "2026-01-25"
 procedure:
     - description: Исследователь искал цели в Shodan по заголовку веб-интерфейса управления ClawdBot — `Clawdbot Control` — и обнаружил сотни интерфейсов ClawdBot, открытых в публичном интернете.
       description_line: Исследователь искал цели в Shodan по заголовку веб-интерфейса управления ClawdBot — `Clawdbot Control` — и обнаружил сотни интерфейсов ClawdBot, открытых в публичном интернете.

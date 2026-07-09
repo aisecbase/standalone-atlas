@@ -2,13 +2,13 @@
 actor: Researchers at University of Chinese Academy of Sciences, Shandong University, and University of New South Wales
 atlas_id: AML.CS0052
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Исследователи выявили 20 уязвимостей удаленного выполнения кода (RCE) в 11 различных LLM-фреймворках. Они обнаружили приложения, развернутые в публичном интернете и построенные на этих LLM-фреймворках, а также...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2025-02-27"
+incident_date_granularity: Day
+incident_date_raw: "2025-02-27"
 procedure:
     - description: Исследователи провели статический анализ API целевых LLM-фреймворков, чтобы выявить функции, которые выполняют код из пользовательского ввода или ответа LLM и поэтому уязвимы к RCE.
       description_line: Исследователи провели статический анализ API целевых LLM-фреймворков, чтобы выявить функции, которые выполняют код из пользовательского ввода или ответа LLM и поэтому уязвимы к RCE.

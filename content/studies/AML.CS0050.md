@@ -2,13 +2,13 @@
 actor: DepthFirst
 atlas_id: AML.CS0050
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Исследователь безопасности продемонстрировал уязвимость удаленного выполнения кода (RCE) в один клик в ИИ-агенте OpenClaw через вредоносную ссылку, содержащую JavaScript-скрипт, выполнение которого занимает...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2026-02-01"
+incident_date_granularity: Day
+incident_date_raw: "2026-02-01"
 procedure:
     - description: Исследователь разработал JavaScript-скрипт для RCE в один клик.
       description_line: Исследователь разработал JavaScript-скрипт для RCE в один клик.

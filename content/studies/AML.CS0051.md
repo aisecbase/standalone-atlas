@@ -2,13 +2,13 @@
 actor: HiddenLayer
 atlas_id: AML.CS0051
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Исследователи HiddenLayer продемонстрировали, как веб-страница может встроить косвенную промпт-инъекцию, из-за которой OpenClaw скрытно выполняет вредоносный скрипт. После выполнения скрипт добавляет сохраняющиеся...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2026-02-03"
+incident_date_granularity: Day
+incident_date_raw: "2026-02-03"
 procedure:
     - description: Исследователи определили [GitHub-репозиторий OpenClaw](https://github.com/openclaw/openclaw) как источник конфигурационных файлов агента.
       description_line: Исследователи определили [GitHub-репозиторий OpenClaw](https://github.com/openclaw/openclaw) как источник конфигурационных файлов агента.

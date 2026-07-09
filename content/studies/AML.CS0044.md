@@ -2,13 +2,13 @@
 actor: APT28
 atlas_id: AML.CS0044
 atlas_type: case-study
-case_study_type: ""
+case_study_type: incident
 description: В июле 2025 года украинские органы сообщили о появлении LAMEHUG, нового вредоносного ПО на базе ИИ, которое они атрибутировали APT28, актору угроз, по их оценке связанному с российским государством и также...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: 2025-06
+incident_date_granularity: Month
+incident_date_raw: "2025-06-03"
 procedure:
     - description: APT28 получила доступ к скомпрометированной официальной учетной записи электронной почты.
       description_line: APT28 получила доступ к скомпрометированной официальной учетной записи электронной почты.

@@ -2,13 +2,13 @@
 actor: Jamieson O'Reilly
 atlas_id: AML.CS0049
 atlas_type: case-study
-case_study_type: ""
+case_study_type: exercise
 description: Исследователь безопасности продемонстрировал proof-of-concept атаки на цепочку поставки с использованием отравленного навыка ClawdBot, опубликованного в ClawdHub, реестре навыков для агентов. Отравленный навык...
 generated: true
 generated_by: atlasgen
-incident_date: ""
-incident_date_granularity: ""
-incident_date_raw: ""
+incident_date: "2026-01-26"
+incident_date_granularity: Day
+incident_date_raw: "2026-01-26"
 procedure:
     - description: Исследователь создал простой веб-сервер для записи запросов.
       description_line: Исследователь создал простой веб-сервер для записи запросов.
