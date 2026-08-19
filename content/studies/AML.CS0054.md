@@ -33,7 +33,7 @@ procedure:
       tactic: AML.TA0006
       tactic_name: Закрепление
       technique: AML.T0110.000
-      technique_name: Definition and Instructions
+      technique_name: Определение и инструкции
     - description: When the user made a request that represented the poisoned tool's functionality, the agent invoked the poisoned MCP tool and acted on the malicious instructions contained in its definition.
       description_line: When the user made a request that represented the poisoned tool's functionality, the agent invoked the poisoned MCP tool and acted on the malicious instructions contained in its definition.
       tactic: AML.TA0005

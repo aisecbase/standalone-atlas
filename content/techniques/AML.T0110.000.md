@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-07-31"
-description: Adversaries may poison the model-visible definition or operational instructions of an AI agent tool to manipulate how an agent interprets, selects, or invokes the tool. The poisoned content may be contained in tool...
+description: Злоумышленники могут отравить доступное модели определение инструмента ИИ-агента или инструкции по работе с ним, чтобы манипулировать тем, как агент интерпретирует, выбирает или вызывает этот инструмент. Отравленное...
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
@@ -18,17 +18,15 @@ subtechnique_count: 0
 subtechnique_of: AML.T0110
 tactics:
     - AML.TA0006
-title: Definition and Instructions
+title: Определение и инструкции
 url: /techniques/AML.T0110.000/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Злоумышленники могут отравить доступное модели определение инструмента ИИ-агента или инструкции по работе с ним, чтобы манипулировать тем, как агент интерпретирует, выбирает или вызывает этот инструмент. Отравленное содержимое может находиться в описаниях инструментов, строках документации (docstrings), именах параметров, справочном тексте, схемах входных или выходных данных, аннотациях, примерах, манифестах, файлах с инструкциями для навыков или ином статическом содержимом, которое используется для передачи модели сведений о возможностях инструмента.
 
-Adversaries may poison the model-visible definition or operational instructions of an AI agent tool to manipulate how an agent interprets, selects, or invokes the tool. The poisoned content may be contained in tool descriptions, docstrings, parameter names, help text, input or output schemas, annotations, examples, manifests, skill instruction files, or other static content used to explain a tool's capabilities to the model.
+Вредоносные инструкции на этом уровне могут предписывать агенту собирать дополнительные данные, задавать значения скрытых или ненужных параметров, скрывать действия от пользователя либо вызывать другие инструменты. Поскольку агент может получать более полное представление инструмента, чем то, которое отображается в пользовательском интерфейсе, модель может обрабатывать вредоносные инструкции, которые не видны человеку, выполняющему проверку, или видны ему лишь частично[[invariant-tool-poisoning]].
 
-Malicious instructions in this layer may direct the agent to collect additional data, populate hidden or unnecessary parameters, conceal actions from the user, or invoke other tools. Because an agent may receive a more complete representation of a tool than is shown in the user interface, the model may process malicious instructions that are invisible or only partially visible to a human reviewer[[invariant-tool-poisoning]].
-
-Definition poisoning may also be used for tool shadowing, in which the definition of one malicious tool contains instructions that alter how the agent selects or invokes another trusted tool. The poisoned tool may not need to be invoked for its definition to influence the agent if definitions from multiple connected tools are included in the same model context[[invariant-tool-poisoning]].
+Отравление определения также может использоваться для «затенения инструментов» (tool shadowing): при такой атаке определение одного вредоносного инструмента содержит инструкции, которые изменяют то, как агент выбирает или вызывает другой, доверенный инструмент. Если определения нескольких подключённых инструментов включены в один контекст модели, отравленный инструмент может не вызываться: его определение всё равно способно повлиять на агента[[invariant-tool-poisoning]].
 
 
 ## Тактики

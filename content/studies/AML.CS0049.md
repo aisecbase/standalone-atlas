@@ -54,7 +54,7 @@ procedure:
       tactic: AML.TA0006
       tactic_name: Закрепление
       technique: AML.T0110.000
-      technique_name: Definition and Instructions
+      technique_name: Определение и инструкции
     - description: 'Когда пользователь спрашивал Claude Code: "what would Elon do?", Claude Code вызывал отравленный навык.'
       description_line: 'Когда пользователь спрашивал Claude Code: "what would Elon do?", Claude Code вызывал отравленный навык.'
       tactic: AML.TA0005
