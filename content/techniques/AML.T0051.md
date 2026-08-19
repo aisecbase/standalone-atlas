@@ -8,7 +8,7 @@ description: Злоумышленник может сформировать вр
 generated: true
 generated_by: atlasgen
 maturity: realized
-mitigation_count: 6
+mitigation_count: 7
 modified_date: "2026-05-27"
 platforms:
     - Generative AI
@@ -57,6 +57,7 @@ url: /techniques/AML.T0051/
 <a class="relation-item" href="/mitigations/AML.M0022/"><span class="relation-id">AML.M0022</span><strong>Выравнивание модели генеративного ИИ</strong><p>Выравнивание модели может повысить параметрическую безопасность модели, уводя ее от небезопасных промптов и ответов.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0024/"><span class="relation-id">AML.M0024</span><strong>Логирование телеметрии ИИ</strong><p>Логирование телеметрии может помочь выявить отправку небезопасных промптов в LLM.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0033/"><span class="relation-id">AML.M0033</span><strong>Валидация входных и выходных данных компонентов ИИ-агента</strong><p>Валидация может помешать злоумышленникам выполнять промпт-инъекции, способные повлиять на агентные рабочие процессы.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>AI Red Team</strong><p>Test direct, indirect, and triggered instructions through user input, retrieved data, documents, messages, websites, images, metadata, and tool output. Remediate trust-boundary, instruction-handling, permission, and monitoring failures.</p></a>
 </div>
 
 

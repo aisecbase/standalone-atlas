@@ -12,9 +12,9 @@ generated_by: atlasgen
 ml_lifecycle:
     - Deployment
     - Monitoring and Maintenance
-modified_date: "2025-12-23"
+modified_date: "2026-07-31"
 source_name: Control Access to AI Models and Data in Production
-technique_count: 11
+technique_count: 20
 title: Контроль доступа к ИИ-моделям и данным в продакшене
 url: /mitigations/AML.M0019/
 ---
@@ -28,14 +28,23 @@ url: /mitigations/AML.M0019/
 
 <div class="relation-list">
 <a class="relation-item" href="/techniques/AML.T0005/"><span class="relation-id">AML.T0005</span><strong>Создание прокси-модели ИИ</strong><p>Контроль доступа к API моделей может снизить способность злоумышленника создать точную прокси-модель.</p></a>
+<a class="relation-item" href="/techniques/AML.T0006/"><span class="relation-id">AML.T0006</span><strong>Активное сканирование</strong><p>Require authenticated access to production AI endpoints and monitor queries to limit unauthenticated probing of exposed AI services.</p></a>
+<a class="relation-item" href="/techniques/AML.T0012/"><span class="relation-id">AML.T0012</span><strong>Действующие учетные записи</strong><p>Authenticate production AI endpoints and monitor model queries for misuse of otherwise valid credentials.</p></a>
+<a class="relation-item" href="/techniques/AML.T0021/"><span class="relation-id">AML.T0021</span><strong>Создание учетных записей</strong><p>Verify identities before granting production AI access so newly established accounts cannot automatically access protected AI services.</p></a>
 <a class="relation-item" href="/techniques/AML.T0024/"><span class="relation-id">AML.T0024</span><strong>Эксфильтрация через API инференса ИИ</strong><p>Злоумышленники могут использовать неограниченный доступ к API, чтобы собрать обучающий набор данных для прокси-модели и раскрыть приватную информацию.</p></a>
 <a class="relation-item" href="/techniques/AML.T0029/"><span class="relation-id">AML.T0029</span><strong>Отказ в обслуживании ИИ-сервиса</strong><p>Контроль доступа к API модели может помешать злоумышленнику выполнять чрезмерное количество запросов и выводить систему из строя.</p></a>
 <a class="relation-item" href="/techniques/AML.T0034/"><span class="relation-id">AML.T0034</span><strong>Искусственное увеличение затрат</strong><p>Контроль доступа может ограничивать доступ к API и предотвращать искусственное увеличение затрат.</p></a>
 <a class="relation-item" href="/techniques/AML.T0040/"><span class="relation-id">AML.T0040</span><strong>Доступ к API инференса ИИ-модели</strong><p>Злоумышленники могут использовать неограниченный доступ к API, чтобы получить сведения о продакшен-системе, подготовить атаки и внедрить в систему вредоносные данные.</p></a>
 <a class="relation-item" href="/techniques/AML.T0042/"><span class="relation-id">AML.T0042</span><strong>Проверка атаки</strong><p>Используйте контроль доступа в продакшене, чтобы помешать злоумышленнику проверять эффективность атаки.</p></a>
-<a class="relation-item" href="/techniques/AML.T0043/"><span class="relation-id">AML.T0043</span><strong>Создание состязательных данных</strong><p>Контроль доступа к API модели может ограничить доступ злоумышленника, необходимый для генерации состязательных данных.</p></a>
+<a class="relation-item" href="/techniques/AML.T0043/"><span class="relation-id">AML.T0043</span><strong>Создание состязательных данных</strong><p>Access controls on model APIs can restrict an adversary&#39;s access required to generate adversarial data.</p></a>
 <a class="relation-item" href="/techniques/AML.T0043.001/"><span class="relation-id">AML.T0043.001</span><strong>Оптимизация в режиме чёрного ящика</strong><p>Контроль доступа к API модели может лишить злоумышленников доступа, необходимого для методов оптимизации в режиме чёрного ящика.</p></a>
 <a class="relation-item" href="/techniques/AML.T0046/"><span class="relation-id">AML.T0046</span><strong>Зашумление ИИ-системы нерелевантными данными</strong><p>Аутентификация для моделей в продакшене может помочь предотвратить анонимный спам шумовыми данными.</p></a>
 <a class="relation-item" href="/techniques/AML.T0051/"><span class="relation-id">AML.T0051</span><strong>Промпт-инъекция в LLM</strong><p>Используйте контроль доступа в продакшене, чтобы помешать злоумышленникам внедрять вредоносные промпты.</p></a>
 <a class="relation-item" href="/techniques/AML.T0063/"><span class="relation-id">AML.T0063</span><strong>Выявление выходных данных ИИ-модели</strong><p>Контроль доступа к модели в продакшене может помочь помешать злоумышленникам извлекать информацию из выходных данных модели.</p></a>
+<a class="relation-item" href="/techniques/AML.T0069/"><span class="relation-id">AML.T0069</span><strong>Выявление системной информации LLM</strong><p>Authenticate and monitor access to production models and configuration interfaces.</p></a>
+<a class="relation-item" href="/techniques/AML.T0069.000/"><span class="relation-id">AML.T0069.000</span><strong>Наборы специальных символов</strong><p>Authenticate and monitor access to production models and prompt configuration.</p></a>
+<a class="relation-item" href="/techniques/AML.T0069.002/"><span class="relation-id">AML.T0069.002</span><strong>Системный промпт</strong><p>Authenticate and monitor access to production models and prompt configuration.</p></a>
+<a class="relation-item" href="/techniques/AML.T0091/"><span class="relation-id">AML.T0091</span><strong>Использование альтернативных средств аутентификации</strong><p>Enforce authorization and monitor production AI API use for anomalous activity associated with replayed access tokens.</p></a>
+<a class="relation-item" href="/techniques/AML.T0091.000/"><span class="relation-id">AML.T0091.000</span><strong>Токен доступа к приложению</strong><p>Enforce authorization and monitor production AI API use for anomalous activity associated with replayed access tokens.</p></a>
+<a class="relation-item" href="/techniques/AML.T0096/"><span class="relation-id">AML.T0096</span><strong>API ИИ-сервиса</strong><p>Authenticate AI service API callers and monitor queries for policy violations and misuse.</p></a>
 </div>

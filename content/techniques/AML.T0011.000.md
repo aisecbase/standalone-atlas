@@ -9,13 +9,13 @@ generated: true
 generated_by: atlasgen
 maturity: realized
 mitigation_count: 6
-modified_date: "2026-05-27"
+modified_date: "2026-07-31"
 platforms:
     - Predictive AI
     - Generative AI
     - Agentic AI
     - Enterprise
-procedure_count: 2
+procedure_count: 4
 source_name: Unsafe AI Artifacts
 subtechnique_count: 0
 subtechnique_of: AML.T0011
@@ -76,4 +76,6 @@ url: /techniques/AML.T0011.000/
 <div class="relation-list procedure-relations">
 <a class="relation-item" href="/studies/AML.CS0027/"><span class="relation-id">AML.CS0027</span><strong>Путаница с организациями на Hugging Face</strong><span class="relation-meta">Актор: threlfall_hax / Тактика: AML.TA0005 Выполнение</span><p>Когда любой пользователь позже загрузит модель, она автоматически выполнит полезную нагрузку злоумышленника.</p></a>
 <a class="relation-item" href="/studies/AML.CS0031/"><span class="relation-id">AML.CS0031</span><strong>Вредоносные модели на Hugging Face</strong><span class="relation-meta">Актор: Unknown / Тактика: AML.TA0005 Выполнение</span><p>Если пользователь загружал вредоносную модель, выполнялась вредоносная нагрузка злоумышленника.</p></a>
+<a class="relation-item" href="/studies/AML.CS0064/"><span class="relation-id">AML.CS0064</span><strong>Poisoned GGUF Templates: Inference-Time Supply Chain Attack</strong><span class="relation-meta">Актор: Pillar Security, Fujitsu Research of Europe / Тактика: AML.TA0005 Выполнение</span><p>The victim loads and uses the poisoned artifact in a compatible inference engine. During inference, the engine automatically interprets the bundled chat template, causing the attacker-modified prompt-construction logic to execute as part of normal model use.</p></a>
+<a class="relation-item" href="/studies/AML.CS0065/"><span class="relation-id">AML.CS0065</span><strong>Model Namespace Reuse Supply Chain Attack</strong><span class="relation-meta">Актор: Unit 42 Researchers / Тактика: AML.TA0005 Выполнение</span><p>When a user or service deployed the malicious model, loading or deployment executed the embedded payload in the model endpoint environment.</p></a>
 </div>

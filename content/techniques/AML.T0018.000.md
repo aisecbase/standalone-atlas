@@ -8,7 +8,7 @@ description: Злоумышленники могут манипулироват�
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 5
+mitigation_count: 6
 modified_date: "2026-05-27"
 platforms:
     - Predictive AI
@@ -52,6 +52,7 @@ url: /techniques/AML.T0018.000/
 <div class="relation-list">
 <a class="relation-item" href="/techniques/AML.T0018.001/"><span class="relation-id">AML.T0018.001</span><strong>Изменение архитектуры ИИ-модели</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0018.002/"><span class="relation-id">AML.T0018.002</span><strong>Встраивание вредоносного ПО</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0018.003/"><span class="relation-id">AML.T0018.003</span><strong>Modify Prompt Construction Logic</strong><span class="relation-meta">Подтехника</span></a>
 </div>
 
 
@@ -63,6 +64,7 @@ url: /techniques/AML.T0018.000/
 <a class="relation-item" href="/mitigations/AML.M0008/"><span class="relation-id">AML.M0008</span><strong>Валидация ИИ-модели</strong><p>Убедитесь, что обученные модели не реагируют на потенциальные бэкдор-триггеры или состязательное воздействие.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0013/"><span class="relation-id">AML.M0013</span><strong>Подписание кода</strong><p>Подписание кода дает гарантию, что модель не была изменена после подписания.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0025/"><span class="relation-id">AML.M0025</span><strong>Поддержание происхождения наборов данных ИИ</strong><p>Сведения о происхождении наборов данных могут защищать от отравления моделей.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>AI Red Team</strong><p>Test whether controlled changes to model weights, fine-tuning, or associated artifacts can introduce targeted or persistent behavior. Improve model provenance, validation, integrity monitoring, and rollback.</p></a>
 </div>
 
 

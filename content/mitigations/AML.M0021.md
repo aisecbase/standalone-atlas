@@ -13,9 +13,9 @@ ml_lifecycle:
     - AI Model Engineering
     - AI Model Evaluation
     - Deployment
-modified_date: "2026-06-30"
+modified_date: "2026-07-31"
 source_name: Generative AI Guidelines
-technique_count: 7
+technique_count: 8
 title: Правила и инструкции для генеративного ИИ
 url: /mitigations/AML.M0021/
 ---
@@ -45,4 +45,5 @@ url: /mitigations/AML.M0021/
 <a class="relation-item" href="/techniques/AML.T0057/"><span class="relation-id">AML.T0057</span><strong>Утечка данных из LLM</strong><p>Инструкции для модели могут предписывать ей отказываться отвечать на небезопасные входные данные.</p></a>
 <a class="relation-item" href="/techniques/AML.T0061/"><span class="relation-id">AML.T0061</span><strong>Саморепликация промпта LLM</strong><p>Инструкции могут направлять модель к созданию более безопасных выходных данных и предотвращать генерацию самореплицирующихся выходных данных.</p></a>
 <a class="relation-item" href="/techniques/AML.T0062/"><span class="relation-id">AML.T0062</span><strong>Выявление галлюцинированных сущностей LLM</strong><p>Инструкции могут указывать модели избегать генерации галлюцинированного контента.</p></a>
+<a class="relation-item" href="/techniques/AML.T0100/"><span class="relation-id">AML.T0100</span><strong>Кликбейт для ИИ-агента</strong><p>Instruct agents to treat webpage instructions as untrusted and request approval for consequential actions.</p></a>
 </div>

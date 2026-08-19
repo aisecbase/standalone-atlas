@@ -8,7 +8,7 @@ description: Злоумышленники могут пытаться извле
 generated: true
 generated_by: atlasgen
 maturity: feasible
-mitigation_count: 3
+mitigation_count: 4
 modified_date: "2026-05-27"
 platforms:
     - Generative AI
@@ -41,4 +41,5 @@ url: /techniques/AML.T0056/
 <a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Защитные ограничения (Guardrails) для генеративного ИИ</strong><p>Защитные ограничения могут предотвращать вредоносные входные данные, способные привести к извлечению метапромпта.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0021/"><span class="relation-id">AML.M0021</span><strong>Правила и инструкции для генеративного ИИ</strong><p>Инструкции для модели могут предписывать ей отказываться отвечать на небезопасные входные данные.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0022/"><span class="relation-id">AML.M0022</span><strong>Выравнивание модели генеративного ИИ</strong><p>Выравнивание модели может повысить параметрическую безопасность модели, уводя ее от небезопасных промптов и ответов.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>AI Red Team</strong><p>Probe model and application interfaces for disclosure of system instructions, policies, tool definitions, or hidden context. Remove embedded secrets and improve configuration isolation and output controls.</p></a>
 </div>

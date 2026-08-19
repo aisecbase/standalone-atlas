@@ -8,7 +8,7 @@ description: Злоумышленник пытается собрать ИИ-а�
 generated: true
 generated_by: atlasgen
 modified_date: "2025-04-09"
-procedure_count: 14
+procedure_count: 17
 source_name: Collection
 technique_count: 8
 title: Сбор материалов
@@ -41,7 +41,7 @@ url: /tactics/AML.TA0009/
 <a class="relation-item" href="/studies/AML.CS0010/"><span class="relation-id">AML.CS0010</span><strong>Нарушение работы сервиса Microsoft Azure</strong><span class="relation-meta">Актор: Microsoft AI Red Team / Тактика: AML.TA0009 Сбор материалов</span><p>Команда нашла файл целевой ML-модели и необходимые обучающие данные.</p></a>
 <a class="relation-item" href="/studies/AML.CS0015/"><span class="relation-id">AML.CS0015</span><strong>Компрометация цепочки зависимостей PyTorch</strong><span class="relation-meta">Актор: Unknown / Тактика: AML.TA0009 Сбор материалов</span><p>Вредоносный пакет обследовал затронутую систему для базового фингерпринтинга, включая IP-адрес, имя пользователя и текущий рабочий каталог, а также похищал дополнительные чувствительные данные:</p><ul><li>DNS-серверы из `/etc/resolv.conf`</li><li>имя хоста из `gethostname()`</li><li>текущее имя пользователя из `getlogin()`</li><li>имя текущего рабочего каталога из `getcwd()`</li><li>переменные окружения</li><li>`/etc/hosts`</li><li>`/etc/passwd`</li><li>первые 1000 файлов в каталоге `$HOME`</li><li>`$HOME/.gitconfig`</li><li>`$HOME/.ssh/*`.</li></ul></a>
 <a class="relation-item" href="/studies/AML.CS0018/"><span class="relation-id">AML.CS0018</span><strong>Выполнение произвольного кода через Google Colab</strong><span class="relation-meta">Актор: Tony Piazza / Тактика: AML.TA0009 Сбор материалов</span><p>Злоумышленник может искать в системе жертвы частные и проприетарные данные, включая артефакты ML-моделей. Jupyter Notebook [позволяют выполнять shell-команды](https://colab.research.google.com/github/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/01.05-IPython-And-Shell-Commands.ipynb). В этом примере смонтированный Drive проверяется на наличие checkpoint-файлов моделей PyTorch: &gt; /content/drive/MyDrive/models/checkpoint.pt</p></a>
-<a class="relation-item" href="/studies/AML.CS0023/"><span class="relation-id">AML.CS0023</span><strong>ShadowRay</strong><span class="relation-meta">Актор: Ray / Тактика: AML.TA0009 Сбор материалов</span><p>Злоумышленники могут собирать ИИ-артефакты, включая продакшен-модели и данные. Исследователи наблюдали рабочие продакшен-нагрузки нескольких организаций из разных отраслей.</p></a>
+<a class="relation-item" href="/studies/AML.CS0023/"><span class="relation-id">AML.CS0023</span><strong>ShadowRay</strong><span class="relation-meta">Актор: Unknown / Тактика: AML.TA0009 Сбор материалов</span><p>Злоумышленники могут собирать ИИ-артефакты, включая продакшен-модели и данные. Исследователи наблюдали рабочие продакшен-нагрузки нескольких организаций из разных отраслей.</p></a>
 <a class="relation-item" href="/studies/AML.CS0037/"><span class="relation-id">AML.CS0037</span><strong>Эксфильтрация данных через инструменты ИИ-агента в Copilot Studio</strong><span class="relation-meta">Актор: Zenity / Тактика: AML.TA0009 Сбор материалов</span><p>Промпт просит агента получить все поля и строки из «Customer Support Account Owners.csv». Агент извлекает весь файл.</p></a>
 <a class="relation-item" href="/studies/AML.CS0037/"><span class="relation-id">AML.CS0037</span><strong>Эксфильтрация данных через инструменты ИИ-агента в Copilot Studio</strong><span class="relation-meta">Актор: Zenity / Тактика: AML.TA0009 Сбор материалов</span><p>Промпт просит агента получить все записи Salesforce с помощью инструмента `get-records`. Агент извлекает все записи из CRM организации-жертвы.</p></a>
 <a class="relation-item" href="/studies/AML.CS0038/"><span class="relation-id">AML.CS0038</span><strong>Внедрение инструкций для отложенного автоматического вызова инструмента ИИ-агента</strong><span class="relation-meta">Актор: Embrace the Red / Тактика: AML.TA0009 Сбор материалов</span><p>Расширение Workspace находило документ и помещало его содержимое в контекст чата.</p></a>
@@ -52,4 +52,4 @@ url: /tactics/AML.TA0009/
 </div>
 
 
-Показано 12 из 14 примеров.
+Показано 12 из 17 примеров.

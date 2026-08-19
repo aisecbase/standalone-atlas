@@ -7,8 +7,8 @@ created_date: "2021-05-13"
 description: Злоумышленники могут извлечь функциональную копию приватной модели. Многократно обращаясь к API инференса ИИ-модели организации-жертвы, злоумышленник может собрать результаты инференса целевой модели в набор данных....
 generated: true
 generated_by: atlasgen
-maturity: feasible
-mitigation_count: 3
+maturity: realized
+mitigation_count: 4
 modified_date: "2026-05-27"
 platforms:
     - Predictive AI
@@ -63,6 +63,7 @@ url: /techniques/AML.T0024.002/
 <a class="relation-item" href="/mitigations/AML.M0002/"><span class="relation-id">AML.M0002</span><strong>Пассивная обфускация выходных данных ИИ</strong><p>Рекомендуемые подходы:</p><ul><li>ограничить количество показываемых результатов</li><li>ограничить детализацию онтологии выходных классов</li><li>использовать методы рандомизированного сглаживания</li><li>снизить точность числовых выходных данных</li></ul></a>
 <a class="relation-item" href="/mitigations/AML.M0004/"><span class="relation-id">AML.M0004</span><strong>Ограничение количества запросов к ИИ-модели</strong><p>Ограничьте объем API-запросов за заданный период, чтобы регулировать объем и детализацию потенциально чувствительной информации, которую может получить злоумышленник.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0024/"><span class="relation-id">AML.M0024</span><strong>Логирование телеметрии ИИ</strong><p>Логирование телеметрии может помочь выявить эксфильтрацию чувствительных данных.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>AI Red Team</strong><p>Simulate functional model extraction through inference queries. Establish appropriate authentication, rate limits, output restrictions, anomaly detection, and extraction monitoring.</p></a>
 </div>
 
 

@@ -22,21 +22,18 @@ procedure:
       tactic_name: Подготовка ресурсов
       technique: AML.T0008.002
       technique_name: Домены
-    - description: Злоумышленник может подготовить отравленные обучающие данные, чтобы подменить недоступные фрагменты датасета.
-      description_line: Злоумышленник может подготовить отравленные обучающие данные, чтобы подменить недоступные фрагменты датасета.
-      tactic: AML.TA0003
-      tactic_name: Подготовка ресурсов
+    - description: An adversary could create poisoned training data to replace expired portions of the dataset.
+      description_line: An adversary could create poisoned training data to replace expired portions of the dataset.
+      tactic: AML.TA0006
+      tactic_name: Закрепление
       technique: AML.T0020
       technique_name: Отравление обучающих данных
-    - description: |-
-        Затем злоумышленник может разместить отравленные данные на подконтрольных доменах.
-
-        В этом упражнении исследователи отслеживали обращения к подконтрольным URL, чтобы показать, что датасет действительно продолжает использоваться.
-      description_line: Затем злоумышленник может разместить отравленные данные на подконтрольных доменах. В этом упражнении исследователи отслеживали обращения к подконтрольным URL, чтобы показать, что датасет действительно продолжает использоваться.
+    - description: An adversary could then upload the poisoned data to the domains they control.  In this particular exercise, the researchers track requests to the URLs they control to track downloads to demonstrate there are active users of the dataset.
+      description_line: An adversary could then upload the poisoned data to the domains they control. In this particular exercise, the researchers track requests to the URLs they control to track downloads to demonstrate there are active users of the dataset.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
-      technique: AML.T0019
-      technique_name: Публикация отравленных наборов данных
+      technique: AML.T0115.000
+      technique_name: Datasets
     - description: Целостность датасета нарушается, потому что при последующих скачиваниях он будет содержать отравленные элементы данных.
       description_line: Целостность датасета нарушается, потому что при последующих скачиваниях он будет содержать отравленные элементы данных.
       tactic: AML.TA0011

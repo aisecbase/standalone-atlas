@@ -8,7 +8,7 @@ description: Злоумышленник пытается получить дос
 generated: true
 generated_by: atlasgen
 modified_date: "2025-04-09"
-procedure_count: 48
+procedure_count: 53
 source_name: Initial Access
 technique_count: 23
 title: Первичный доступ
@@ -70,4 +70,4 @@ url: /tactics/AML.TA0004/
 </div>
 
 
-Показано 12 из 48 примеров.
+Показано 12 из 53 примеров.

@@ -12,7 +12,7 @@ mitigation_count: 0
 modified_date: "2026-05-27"
 platforms:
     - Enterprise
-procedure_count: 1
+procedure_count: 2
 source_name: Code Repositories
 subtechnique_count: 0
 subtechnique_of: AML.T0095
@@ -45,4 +45,5 @@ url: /techniques/AML.T0095.000/
 
 <div class="relation-list procedure-relations">
 <a class="relation-item" href="/studies/AML.CS0051/"><span class="relation-id">AML.CS0051</span><strong>Использование OpenClaw для командования и управления через промпт-инъекцию</strong><span class="relation-meta">Актор: HiddenLayer / Тактика: AML.TA0002 Разведка</span><p>Исследователи определили [GitHub-репозиторий OpenClaw](https://github.com/openclaw/openclaw) как источник конфигурационных файлов агента.</p></a>
+<a class="relation-item" href="/studies/AML.CS0067/"><span class="relation-id">AML.CS0067</span><strong>Claude Code GitHub Action Secret Exposure</strong><span class="relation-meta">Актор: Microsoft Defender Security Research Team / Тактика: AML.TA0002 Разведка</span><p>The researchers analyzed the Claude Code Action codebase and the obfuscated Claude Agent SDK. They used the implementation details to understand how agent tools executed and where security boundaries were applied.</p></a>
 </div>

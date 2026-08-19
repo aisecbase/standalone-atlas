@@ -1,15 +1,15 @@
 ---
 atlas_id: AML.T0011
 atlas_type: technique
-attack_ref_id: T1204
-attack_ref_url: https://attack.mitre.org/techniques/T1204/
+attack_ref_id: ""
+attack_ref_url: ""
 created_date: "2021-05-13"
 description: Злоумышленник может полагаться на определенные действия пользователя, чтобы добиться выполнения кода. Пользователи могут непреднамеренно выполнить небезопасный код, внедренный через компрометацию цепочки поставок ИИ....
 generated: true
 generated_by: atlasgen
 maturity: realized
 mitigation_count: 5
-modified_date: "2026-05-27"
+modified_date: "2026-07-31"
 platforms:
     - Predictive AI
     - Generative AI

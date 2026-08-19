@@ -52,12 +52,12 @@ url: /techniques/AML.T0043/
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0002/"><span class="relation-id">AML.M0002</span><strong>Пассивная обфускация выходных данных ИИ</strong><p>Обфускация выходных данных модели снижает способность злоумышленника генерировать эффективные состязательные данные.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0003/"><span class="relation-id">AML.M0003</span><strong>Усиление устойчивости модели</strong><p>Усиленные модели более устойчивы к состязательным входным данным.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0004/"><span class="relation-id">AML.M0004</span><strong>Ограничение количества запросов к ИИ-модели</strong><p>Ограничение количества запросов к модели может снизить способность злоумышленника уточнять и оценивать состязательные запросы.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0004/"><span class="relation-id">AML.M0004</span><strong>Ограничение количества запросов к ИИ-модели</strong><p>Limit volume of model queries to prevent or slow an adversary&#39;s ability to create adversarial inputs.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0006/"><span class="relation-id">AML.M0006</span><strong>Использование ансамблевых методов</strong><p>Использование ансамбля моделей усложняет создание эффективных состязательных данных и повышает общую устойчивость.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0008/"><span class="relation-id">AML.M0008</span><strong>Валидация ИИ-модели</strong><p>Проверка ИИ-модели на состязательных данных помогает убедиться, что модель работает как задумано и устойчива к состязательным входным данным.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0010/"><span class="relation-id">AML.M0010</span><strong>Восстановление входных данных</strong><p>Восстановление входных данных может помогать исправлять состязательные входные данные.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0015/"><span class="relation-id">AML.M0015</span><strong>Обнаружение состязательных входных данных</strong><p>Встраивайте обнаружение состязательных входных данных, чтобы блокировать вредоносные входные данные во время инференса.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Контроль доступа к API модели может ограничить доступ злоумышленника, необходимый для генерации состязательных данных.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Access controls on model APIs can restrict an adversary&#39;s access required to generate adversarial data.</p></a>
 </div>
 
 

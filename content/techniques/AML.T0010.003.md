@@ -8,13 +8,13 @@ description: Системы с поддержкой ИИ часто по-раз�
 generated: true
 generated_by: atlasgen
 maturity: realized
-mitigation_count: 5
+mitigation_count: 6
 modified_date: "2026-05-27"
 platforms:
     - Predictive AI
     - Generative AI
     - Agentic AI
-procedure_count: 4
+procedure_count: 6
 source_name: Model
 subtechnique_count: 0
 subtechnique_of: AML.T0010
@@ -68,6 +68,7 @@ url: /techniques/AML.T0010.003/
 <a class="relation-item" href="/mitigations/AML.M0008/"><span class="relation-id">AML.M0008</span><strong>Валидация ИИ-модели</strong><p>Убедитесь, что приобретенные модели не реагируют на потенциальные бэкдор-триггеры или состязательное воздействие.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0013/"><span class="relation-id">AML.M0013</span><strong>Подписание кода</strong><p>Требуйте корректной подписи файлов модели.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0017/"><span class="relation-id">AML.M0017</span><strong>Методы распространения ИИ-моделей</strong><p>Злоумышленник может переупаковать приложение с вредоносной версией модели.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>AI Red Team</strong><p>Introduce a controlled untrusted or modified model through representative acquisition and deployment paths. Verify provenance, scanning, signing, approval, isolation, and rollback.</p></a>
 </div>
 
 
@@ -76,6 +77,8 @@ url: /techniques/AML.T0010.003/
 <div class="relation-list procedure-relations">
 <a class="relation-item" href="/studies/AML.CS0013/"><span class="relation-id">AML.CS0013</span><strong>Бэкдор-атака на модели глубокого обучения в мобильных приложениях</strong><span class="relation-meta">Актор: Yuanchun Li, Jiayi Hua, Haoyu Wang, Chunyang Chen, Yunxin Liu / Тактика: AML.TA0004 Первичный доступ</span><p>На практике вредоносный APK-файл должен быть установлен на устройства жертв через компрометацию цепочки поставок.</p></a>
 <a class="relation-item" href="/studies/AML.CS0019/"><span class="relation-id">AML.CS0019</span><strong>PoisonGPT</strong><span class="relation-meta">Актор: Mithril Security Researchers / Тактика: AML.TA0004 Первичный доступ</span><p>Ничего не подозревающие пользователи могли скачать состязательную модель и интегрировать ее в приложения. После раскрытия информации об упражнении Hugging Face отключил репозиторий с похожим именем.</p></a>
-<a class="relation-item" href="/studies/AML.CS0023/"><span class="relation-id">AML.CS0023</span><strong>ShadowRay</strong><span class="relation-meta">Актор: Ray / Тактика: AML.TA0004 Первичный доступ</span><p>Токены Hugging Face могли позволить злоумышленнику заменить модели организации-жертвы вредоносными вариантами.</p></a>
+<a class="relation-item" href="/studies/AML.CS0023/"><span class="relation-id">AML.CS0023</span><strong>ShadowRay</strong><span class="relation-meta">Актор: Unknown / Тактика: AML.TA0004 Первичный доступ</span><p>Токены Hugging Face могли позволить злоумышленнику заменить модели организации-жертвы вредоносными вариантами.</p></a>
 <a class="relation-item" href="/studies/AML.CS0027/"><span class="relation-id">AML.CS0027</span><strong>Путаница с организациями на Hugging Face</strong><span class="relation-meta">Актор: threlfall_hax / Тактика: AML.TA0004 Первичный доступ</span><p>Цепочка поставок ИИ-моделей жертвы оказалась скомпрометирована. Пользователи репозитория моделей будут получать модель злоумышленника со встроенным вредоносным ПО.</p></a>
+<a class="relation-item" href="/studies/AML.CS0064/"><span class="relation-id">AML.CS0064</span><strong>Poisoned GGUF Templates: Inference-Time Supply Chain Attack</strong><span class="relation-meta">Актор: Pillar Security, Fujitsu Research of Europe / Тактика: AML.TA0004 Первичный доступ</span><p>A victim downloads and integrates the poisoned artifact while trusting the model and its bundled components. This introduces the template backdoor into the victim&#39;s AI application or agent.</p></a>
+<a class="relation-item" href="/studies/AML.CS0065/"><span class="relation-id">AML.CS0065</span><strong>Model Namespace Reuse Supply Chain Attack</strong><span class="relation-meta">Актор: Unit 42 Researchers / Тактика: AML.TA0004 Первичный доступ</span><p>A cloud model catalog, application, or deployment pipeline resolved its stale name-only model reference to the attacker-controlled replacement model. Unit 42 demonstrated this through Vertex AI and Azure AI Foundry deployments.</p></a>
 </div>

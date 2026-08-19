@@ -8,14 +8,14 @@ description: Злоумышленник может зондировать или
 generated: true
 generated_by: atlasgen
 maturity: realized
-mitigation_count: 0
+mitigation_count: 2
 modified_date: "2026-05-27"
 platforms:
     - Predictive AI
     - Generative AI
     - Agentic AI
     - Enterprise
-procedure_count: 2
+procedure_count: 3
 source_name: Active Scanning
 subtechnique_count: 0
 subtechnique_of: ""
@@ -39,9 +39,18 @@ url: /techniques/AML.T0006/
 </div>
 
 
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Require authenticated access to production AI endpoints and monitor queries to limit unauthenticated probing of exposed AI services.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0032/"><span class="relation-id">AML.M0032</span><strong>Сегментация компонентов ИИ-агента</strong><p>Segment AI agent components so an exposed service does not reveal or provide reachability to additional internal components.</p></a>
+</div>
+
+
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0023/"><span class="relation-id">AML.CS0023</span><strong>ShadowRay</strong><span class="relation-meta">Актор: Ray / Тактика: AML.TA0002 Разведка</span><p>Злоумышленники могут сканировать публичные IP-адреса, чтобы найти системы, на которых потенциально доступны панели управления Ray. По умолчанию панели Ray работают на всех сетевых интерфейсах, поэтому без дополнительных защитных механизмов они могут оказаться доступными из интернета.</p></a>
+<a class="relation-item" href="/studies/AML.CS0023/"><span class="relation-id">AML.CS0023</span><strong>ShadowRay</strong><span class="relation-meta">Актор: Unknown / Тактика: AML.TA0002 Разведка</span><p>Злоумышленники могут сканировать публичные IP-адреса, чтобы найти системы, на которых потенциально доступны панели управления Ray. По умолчанию панели Ray работают на всех сетевых интерфейсах, поэтому без дополнительных защитных механизмов они могут оказаться доступными из интернета.</p></a>
 <a class="relation-item" href="/studies/AML.CS0037/"><span class="relation-id">AML.CS0037</span><strong>Эксфильтрация данных через инструменты ИИ-агента в Copilot Studio</strong><span class="relation-meta">Актор: Zenity / Тактика: AML.TA0002 Разведка</span><p>Исследователи ищут на сайте целевой организации адреса электронной почты службы поддержки, которые могут обслуживаться ИИ-агентом. Затем они проверяют систему: отправляют письма и ищут в автоматических ответах признаки работы ИИ-агента.</p></a>
+<a class="relation-item" href="/studies/AML.CS0063/"><span class="relation-id">AML.CS0063</span><strong>Prompt-Based Attacks Against Gemini via Calendar Invitations</strong><span class="relation-meta">Актор: SafeBreach Research Team / Тактика: AML.TA0002 Разведка</span><p>The researchers directly probed Gemini interfaces to understand its agent selection and execution behavior.</p></a>
 </div>

@@ -12,9 +12,9 @@ generated_by: atlasgen
 ml_lifecycle:
     - Business and Data Understanding
     - Deployment
-modified_date: "2025-12-23"
+modified_date: "2026-07-31"
 source_name: Limit Model Artifact Release
-technique_count: 6
+technique_count: 8
 title: Ограничение публикации артефактов модели
 url: /mitigations/AML.M0001/
 ---
@@ -29,6 +29,8 @@ url: /mitigations/AML.M0001/
 <a class="relation-item" href="/techniques/AML.T0002.001/"><span class="relation-id">AML.T0002.001</span><strong>Модели</strong><p>Ограничение публикации архитектур моделей и контрольных точек может снизить способность злоумышленника нацеливаться на эти модели.</p></a>
 <a class="relation-item" href="/techniques/AML.T0005/"><span class="relation-id">AML.T0005</span><strong>Создание прокси-модели ИИ</strong><p>Ограничение публикации артефактов модели может снизить способность злоумышленника создать точную прокси-модель.</p></a>
 <a class="relation-item" href="/techniques/AML.T0005.000/"><span class="relation-id">AML.T0005.000</span><strong>Обучение прокси-модели на собранных ИИ-артефактах</strong><p>Ограничение публикации артефактов модели может снизить способность злоумышленника создать точную прокси-модель.</p></a>
+<a class="relation-item" href="/techniques/AML.T0016/"><span class="relation-id">AML.T0016</span><strong>Получение средств для атаки</strong><p>Limit public release of production model artifacts that adversaries could acquire and adapt as operational capabilities.</p></a>
+<a class="relation-item" href="/techniques/AML.T0016.002/"><span class="relation-id">AML.T0016.002</span><strong>Генеративный ИИ</strong><p>Limit public release of production model artifacts that adversaries could acquire and adapt as operational capabilities.</p></a>
 <a class="relation-item" href="/techniques/AML.T0020/"><span class="relation-id">AML.T0020</span><strong>Отравление обучающих данных</strong><p>Опубликованные наборы данных могут стать целью атак отравления.</p></a>
 <a class="relation-item" href="/techniques/AML.T0035/"><span class="relation-id">AML.T0035</span><strong>Сбор ИИ-артефактов</strong><p>Ограничение публикации артефактов может снизить способность злоумышленника собирать артефакты модели.</p></a>
 </div>

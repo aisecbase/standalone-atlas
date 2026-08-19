@@ -8,12 +8,12 @@ description: Злоумышленники могут внедрять вредо
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 0
+mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:
     - Generative AI
     - Agentic AI
-procedure_count: 2
+procedure_count: 3
 source_name: Thread
 subtechnique_count: 0
 subtechnique_of: AML.T0080
@@ -53,9 +53,17 @@ url: /techniques/AML.T0080.001/
 </div>
 
 
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>AI Red Team</strong><p>Introduce controlled malicious instructions into long-lived or shared conversation threads. Verify context isolation, trust handling, thread reset, expiration, and monitoring.</p></a>
+</div>
+
+
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
 <a class="relation-item" href="/studies/AML.CS0036/"><span class="relation-id">AML.CS0036</span><strong>AIKatz: атака на десктопные LLM-приложения</strong><span class="relation-meta">Актор: Lumia Security / Тактика: AML.TA0006 Закрепление</span><p>Злоумышленник мог создавать вредоносные промпты, манипулирующие контекстом цепочки сообщений; этот эффект сохранялся бы до конца такой цепочки.</p></a>
 <a class="relation-item" href="/studies/AML.CS0051/"><span class="relation-id">AML.CS0051</span><strong>Использование OpenClaw для командования и управления через промпт-инъекцию</strong><span class="relation-meta">Актор: HiddenLayer / Тактика: AML.TA0006 Закрепление</span><p>Контекст всех новых диалогов был отравлен вредоносным промптом. Измененное поведение OpenClaw должно было срабатывать, когда жертва приветствовала агента.</p></a>
+<a class="relation-item" href="/studies/AML.CS0063/"><span class="relation-id">AML.CS0063</span><strong>Prompt-Based Attacks Against Gemini via Calendar Invitations</strong><span class="relation-meta">Актор: SafeBreach Research Team / Тактика: AML.TA0006 Закрепление</span><p>The injected instructions remained in the conversation context, including Calendar content concealed behind &#39;Show more,&#39; to influence subsequent turns.</p></a>
 </div>

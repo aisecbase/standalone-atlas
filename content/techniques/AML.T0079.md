@@ -1,8 +1,8 @@
 ---
 atlas_id: AML.T0079
 atlas_type: technique
-attack_ref_id: T1608
-attack_ref_url: https://attack.mitre.org/techniques/T1608/
+attack_ref_id: ""
+attack_ref_url: ""
 created_date: "2025-04-16"
 description: Злоумышленники могут загружать, устанавливать или иным образом настраивать средства, которые могут использоваться при атаке на цель. Для поддержки своих операций злоумышленнику может потребоваться взять средства,...
 generated: true
@@ -12,7 +12,7 @@ mitigation_count: 0
 modified_date: "2026-05-27"
 platforms:
     - Enterprise
-procedure_count: 10
+procedure_count: 11
 source_name: Stage Capabilities
 subtechnique_count: 0
 subtechnique_of: ""
@@ -47,4 +47,5 @@ url: /techniques/AML.T0079/
 <a class="relation-item" href="/studies/AML.CS0057/"><span class="relation-id">AML.CS0057</span><strong>Storm-2139: обход защитных ограничений Azure OpenAI</strong><span class="relation-meta">Актор: Storm-2139 / Тактика: AML.TA0003 Подготовка ресурсов</span><p>Storm-2139 подготовила и эксплуатировала сервис обратного прокси, чтобы другие злоумышленники могли взаимодействовать с неправомерно используемыми сервисами генеративного ИИ.</p></a>
 <a class="relation-item" href="/studies/AML.CS0059/"><span class="relation-id">AML.CS0059</span><strong>EchoLeak: промпт-инъекция нулевого клика против M365 Copilot для эксфильтрации данных</strong><span class="relation-meta">Актор: Aim Labs / Тактика: AML.TA0003 Подготовка ресурсов</span><p>Исследователи подготовили веб-эндпоинт, контролируемый злоумышленником, для приема исходящих запросов с закодированными конфиденциальными данными. Эндпоинт служил точкой сбора для канала эксфильтрации.</p></a>
 <a class="relation-item" href="/studies/AML.CS0061/"><span class="relation-id">AML.CS0061</span><strong>AI in the Middle: веб-сервисы ИИ как ретрансляторы C2</strong><span class="relation-meta">Актор: Check Point Research / Тактика: AML.TA0003 Подготовка ресурсов</span><p>Исследователи разместили внешне безобидное содержимое, одновременно возвращая данные, которые имплант мог интерпретировать как C2-инструкции.</p></a>
+<a class="relation-item" href="/studies/AML.CS0066/"><span class="relation-id">AML.CS0066</span><strong>ZombieAgent: Data Exfiltration Attack on ChatGPT</strong><span class="relation-meta">Актор: Radware Security Researchers / Тактика: AML.TA0003 Подготовка ресурсов</span><p>The researchers prepared infrastructure to receive exfiltrated data.</p></a>
 </div>

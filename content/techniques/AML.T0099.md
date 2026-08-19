@@ -8,8 +8,8 @@ description: Злоумышленники могут размещать вред
 generated: true
 generated_by: atlasgen
 maturity: feasible
-mitigation_count: 0
-modified_date: "2026-05-27"
+mitigation_count: 1
+modified_date: "2026-07-31"
 platforms:
     - Agentic AI
 procedure_count: 0
@@ -31,4 +31,11 @@ url: /techniques/AML.T0099/
 
 <div class="relation-list">
 <a class="relation-item" href="/tactics/AML.TA0006/"><span class="relation-id">AML.TA0006</span><strong>Закрепление</strong></a>
+</div>
+
+
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Защитные ограничения (Guardrails) для генеративного ИИ</strong><p>Apply retrieval guardrails to reject untrusted, malicious, irrelevant, or unsupported tool-retrieved content.</p></a>
 </div>

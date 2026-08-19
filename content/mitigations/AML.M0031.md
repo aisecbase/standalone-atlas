@@ -13,7 +13,7 @@ ml_lifecycle:
     - AI Model Engineering
     - Deployment
     - Monitoring and Maintenance
-modified_date: "2025-12-20"
+modified_date: "2026-07-31"
 source_name: Memory Hardening
 technique_count: 2
 title: Усиление защиты памяти
@@ -26,6 +26,6 @@ url: /mitigations/AML.M0031/
 ## Связанные техники
 
 <div class="relation-list">
-<a class="relation-item" href="/techniques/AML.T0080/"><span class="relation-id">AML.T0080</span><strong>Отравление контекста ИИ-агента</strong><p>Усиление защиты памяти может помочь защитить память LLM от манипуляций и предотвратить выполнение отравленных воспоминаний.</p></a>
-<a class="relation-item" href="/techniques/AML.T0080.000/"><span class="relation-id">AML.T0080.000</span><strong>Память</strong><p>Усиление защиты памяти может помочь защитить память LLM от манипуляций и предотвратить выполнение отравленных воспоминаний.</p></a>
+<a class="relation-item" href="/techniques/AML.T0080/"><span class="relation-id">AML.T0080</span><strong>Отравление контекста ИИ-агента</strong><p>Memory hardening reduces persistent context poisoning by controlling what an agent may save as memory, preventing saved data from becoming higher-authority instructions, and enabling poisoned records to be identified, quarantined, and rolled back.</p></a>
+<a class="relation-item" href="/techniques/AML.T0080.000/"><span class="relation-id">AML.T0080.000</span><strong>Память</strong><p>Memory hardening reduces persistent context poisoning by controlling what an agent may save as memory, preventing saved data from becoming higher-authority instructions, and enabling poisoned records to be identified, quarantined, and rolled back.</p></a>
 </div>

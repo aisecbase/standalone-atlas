@@ -8,7 +8,7 @@ description: Злоумышленники могут получать учетн
 generated: true
 generated_by: atlasgen
 maturity: realized
-mitigation_count: 0
+mitigation_count: 2
 modified_date: "2026-05-27"
 platforms:
     - Enterprise
@@ -37,6 +37,14 @@ url: /techniques/AML.T0012/
 <div class="relation-list">
 <a class="relation-item" href="/tactics/AML.TA0004/"><span class="relation-id">AML.TA0004</span><strong>Первичный доступ</strong></a>
 <a class="relation-item" href="/tactics/AML.TA0012/"><span class="relation-id">AML.TA0012</span><strong>Повышение привилегий</strong></a>
+</div>
+
+
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0005/"><span class="relation-id">AML.M0005</span><strong>Контроль доступа к ИИ-моделям и хранимым данным</strong><p>Restrict model registries and training data to approved identities so compromised accounts expose only explicitly authorized AI assets.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Authenticate production AI endpoints and monitor model queries for misuse of otherwise valid credentials.</p></a>
 </div>
 
 

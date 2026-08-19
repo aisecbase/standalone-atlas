@@ -13,8 +13,8 @@ ml_lifecycle:
     - Business and Data Understanding
     - Data Preparation
     - AI Model Engineering
-modified_date: "2025-12-23"
-source_name: Use Multi-Modal Sensors
+modified_date: "2026-07-31"
+source_name: Predictive AI Multi-Sensor Fusion
 technique_count: 3
 title: Использование мультимодальных сенсоров
 url: /mitigations/AML.M0009/

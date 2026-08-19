@@ -1,19 +1,19 @@
-version: "2026.06"
+version: "2026.07"
 totals:
     case-study:
-        total: 63
+        total: 68
         name_translated: 63
         body_translated: 63
-        procedures_total: 504
-        procedures_translated: 504
-        fully_translated: 63
-        needs_review: 0
+        procedures_total: 571
+        procedures_translated: 493
+        fully_translated: 43
+        needs_review: 16
     mitigation:
-        total: 35
+        total: 37
         name_translated: 35
         body_translated: 35
-        fully_translated: 35
-        needs_review: 0
+        fully_translated: 24
+        needs_review: 11
     resource:
         total: 6
         name_translated: 6
@@ -24,14 +24,982 @@ totals:
         total: 16
         name_translated: 16
         body_translated: 16
-        fully_translated: 16
-        needs_review: 0
+        fully_translated: 14
+        needs_review: 2
     technique:
-        total: 173
-        name_translated: 173
-        body_translated: 173
-        fully_translated: 173
-        needs_review: 0
-missing: []
-partial: []
-review: []
+        total: 178
+        name_translated: 170
+        body_translated: 170
+        fully_translated: 129
+        needs_review: 41
+missing:
+    - id: AML.CS0063
+      name: Prompt-Based Attacks Against Gemini via Calendar Invitations
+      type: case-study
+      has_name: false
+      has_body: false
+      source_field: summary
+      total_procedures: 20
+    - id: AML.CS0064
+      name: 'Poisoned GGUF Templates: Inference-Time Supply Chain Attack'
+      type: case-study
+      has_name: false
+      has_body: false
+      source_field: summary
+      total_procedures: 13
+    - id: AML.CS0065
+      name: Model Namespace Reuse Supply Chain Attack
+      type: case-study
+      has_name: false
+      has_body: false
+      source_field: summary
+      total_procedures: 8
+    - id: AML.CS0066
+      name: 'ZombieAgent: Data Exfiltration Attack on ChatGPT'
+      type: case-study
+      has_name: false
+      has_body: false
+      source_field: summary
+      total_procedures: 12
+    - id: AML.CS0067
+      name: Claude Code GitHub Action Secret Exposure
+      type: case-study
+      has_name: false
+      has_body: false
+      source_field: summary
+      total_procedures: 11
+    - id: AML.M0035
+      name: AI Red Team
+      type: mitigation
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.M0036
+      name: Limit AI Workload Resource Consumption
+      type: mitigation
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0018.003
+      name: Modify Prompt Construction Logic
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0110.000
+      name: Definition and Instructions
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0110.001
+      name: Implementation
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0110.002
+      name: Runtime Response
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0115
+      name: Publish Poisoned AI Artifacts
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0115.000
+      name: Datasets
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0115.001
+      name: Models
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0115.002
+      name: AI Agent Tools
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+partial:
+    - id: AML.CS0019
+      name: PoisonGPT
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 7
+      translated_procedures: 6
+      procedure_needs_review: 1
+      needs_review: true
+      review_fields:
+        - procedure
+    - id: AML.CS0025
+      name: 'Web-Scale Data Poisoning: Split-View Attack'
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 6
+      translated_procedures: 4
+    - id: AML.CS0027
+      name: Organization Confusion on Hugging Face
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 16
+      translated_procedures: 15
+      procedure_needs_review: 2
+      needs_review: true
+      review_fields:
+        - procedure
+    - id: AML.CS0031
+      name: Malicious Models on Hugging Face
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 6
+      translated_procedures: 5
+    - id: AML.CS0049
+      name: Supply Chain Compromise via Poisoned ClawdBot Skill
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 12
+      translated_procedures: 9
+    - id: AML.CS0053
+      name: Poisoned Postmark MCP Server Email Exfiltration
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 9
+      translated_procedures: 7
+    - id: AML.CS0054
+      name: Data Exfiltration via Remote Poisoned MCP Tool
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 11
+      translated_procedures: 7
+      procedure_needs_review: 1
+      needs_review: true
+      review_fields:
+        - procedure
+review:
+    - id: AML.CS0001
+      name: Botnet Domain Generation Algorithm (DGA) Detection Evasion
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 6
+      translated_procedures: 6
+      needs_review: true
+      review_fields:
+        - summary
+      source_sha256: 67853e18f9da1f1187d5d3b6a14a0fd7ac42efaf6effea13f11c1582dd154ae7
+      translation_source_sha256: 91a64f0b4fa5600fe3c719da765bed45da3a75b6cfcb6b2ea5c06f6d01c5716f
+    - id: AML.CS0010
+      name: Microsoft Azure Service Disruption
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 8
+      translated_procedures: 8
+      procedure_needs_review: 1
+      needs_review: true
+      review_fields:
+        - procedure
+    - id: AML.CS0017
+      name: Bypassing ID.me Identity Verification
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 3
+      translated_procedures: 3
+      procedure_needs_review: 1
+      needs_review: true
+      review_fields:
+        - procedure
+    - id: AML.CS0019
+      name: PoisonGPT
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 7
+      translated_procedures: 6
+      procedure_needs_review: 1
+      needs_review: true
+      review_fields:
+        - procedure
+    - id: AML.CS0021
+      name: ChatGPT Conversation Exfiltration
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 7
+      translated_procedures: 7
+      needs_review: true
+      review_fields:
+        - summary
+      source_sha256: 43011fe34185b57d4257b6f2162beaf6cceb8377e33fa1fa7c6eb6a416755f43
+      translation_source_sha256: c3830e4859bfa6d15781c7ac315487b4a7f29a4ddea741d6f6a1b15f93463d82
+    - id: AML.CS0023
+      name: 'ShadowRay: Hijacking Exposed Ray Clusters'
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: name
+      total_procedures: 7
+      translated_procedures: 7
+      needs_review: true
+      review_fields:
+        - name
+      source_sha256: 2d222308f55f4efb732225198d61721a9f802ab60afd1f31db9858ca54baa282
+      translation_source_sha256: abf13bf5072cbfc59bb68b297ef62ff5e503d05257196ce80f8858e0bc0591f7
+    - id: AML.CS0026
+      name: Financial Transaction Hijacking with M365 Copilot as an Insider
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 14
+      translated_procedures: 14
+      needs_review: true
+      review_fields:
+        - summary
+      source_sha256: de26ca16db6789a7184ad477febf7e57fe39e374cbc120379900231792bb1ead
+      translation_source_sha256: 44464dffb958b2f3160bae82766c004a44639b5d83795dbb5fa6fcadd0529086
+    - id: AML.CS0027
+      name: Organization Confusion on Hugging Face
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 16
+      translated_procedures: 15
+      procedure_needs_review: 2
+      needs_review: true
+      review_fields:
+        - procedure
+    - id: AML.CS0033
+      name: Live Deepfake Image Injection to Evade Mobile KYC Verification
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 10
+      translated_procedures: 10
+      procedure_needs_review: 1
+      needs_review: true
+      review_fields:
+        - procedure
+    - id: AML.CS0036
+      name: 'AIKatz: Attacking LLM Desktop Applications'
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 13
+      translated_procedures: 13
+      needs_review: true
+      review_fields:
+        - summary
+      source_sha256: a7863e3ef2f0abc9d0b2724a7c48b2158db263d213c01d3ddbf9504cc6a2fa0e
+      translation_source_sha256: 67312b3621ba6662ed326f5eeee21ea4e6f8c35097ca43e3cfb2a38d1b7ea205
+    - id: AML.CS0044
+      name: 'LAMEHUG: Malware Leveraging Dynamic AI-Generated Commands'
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 8
+      translated_procedures: 8
+      procedure_needs_review: 2
+      needs_review: true
+      review_fields:
+        - summary
+        - procedure
+      source_sha256: b5534268cabf94340d427dbcd792b3ceef30e0d578fde169da99e4569b5d271d
+      translation_source_sha256: 9d44e5f0c97194b207990e0d5eb7f0956e2e84f1d4a0e3f94ef6807e4f517256
+    - id: AML.CS0045
+      name: Data Exfiltration via an MCP Server used by Cursor
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 11
+      translated_procedures: 11
+      procedure_needs_review: 1
+      needs_review: true
+      review_fields:
+        - procedure
+    - id: AML.CS0048
+      name: Exposed ClawdBot Control Interfaces Leads to Credential Access and Execution
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 10
+      translated_procedures: 10
+      procedure_needs_review: 1
+      needs_review: true
+      review_fields:
+        - summary
+        - procedure
+      source_sha256: 5821ebf9685a44ac138d47709de512b8d54e41b3a7b12ddd7705a11e1a1c2456
+      translation_source_sha256: 5e811d58310c3edcc0c55d557b35e7eaf9dd9666b3d26196c02f7d218b1bd5e5
+    - id: AML.CS0052
+      name: 'LLMSmith: RCE Vulnerabilities in LLM-Integrated Applications'
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 12
+      translated_procedures: 12
+      procedure_needs_review: 1
+      needs_review: true
+      review_fields:
+        - procedure
+    - id: AML.CS0054
+      name: Data Exfiltration via Remote Poisoned MCP Tool
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 11
+      translated_procedures: 7
+      procedure_needs_review: 1
+      needs_review: true
+      review_fields:
+        - procedure
+    - id: AML.CS0059
+      name: 'EchoLeak: Zero-Click Prompt Injection Targeting M365 Copilot for Data Exfiltration'
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 12
+      translated_procedures: 12
+      procedure_needs_review: 1
+      needs_review: true
+      review_fields:
+        - procedure
+    - id: AML.M0002
+      name: Predictive AI Output Obfuscation
+      type: mitigation
+      has_name: true
+      has_body: true
+      source_field: name
+      needs_review: true
+      review_fields:
+        - name
+        - description
+      source_sha256: 047fbf10a6768ebe55b923f5ccdb34813d1c774cedf739d403abc967227565fb
+      translation_source_sha256: 865e5e071e233ddba64dedc85a0a196ba6ec8c1b2174c2aa5a52616f9788aa00
+    - id: AML.M0003
+      name: Predictive AI Model Hardening
+      type: mitigation
+      has_name: true
+      has_body: true
+      source_field: name
+      needs_review: true
+      review_fields:
+        - name
+        - description
+      source_sha256: 057948baa86b6c4ac015c258572eba7a1edba8d822acb8714688ac8253ee1f2c
+      translation_source_sha256: 5d62e621c4dab1975cfa1e903578bcd237cb81d436bbb52615dd6ae1103311e9
+    - id: AML.M0004
+      name: Limit AI Service Query Volume and Rate
+      type: mitigation
+      has_name: true
+      has_body: true
+      source_field: name
+      needs_review: true
+      review_fields:
+        - name
+        - description
+      source_sha256: cb28c1d2ff8b3c2448c899a7f879bdaf779952f929e7514af71c38e08409d0cc
+      translation_source_sha256: 17d4ba0b82b34e5207958f139d265e337dc23158f536387770f18da5858152ad
+    - id: AML.M0006
+      name: Predictive AI Ensembles
+      type: mitigation
+      has_name: true
+      has_body: true
+      source_field: name
+      needs_review: true
+      review_fields:
+        - name
+        - description
+      source_sha256: 852813591d0619283f4a721a173355fc21e2fa4599917e9faab9a72536ba037e
+      translation_source_sha256: fe6f586c4baa74d70aca1201bc5ae1bfe6aa9f71cce56ea5fa425c8fae7e86d0
+    - id: AML.M0009
+      name: Predictive AI Multi-Sensor Fusion
+      type: mitigation
+      has_name: true
+      has_body: true
+      source_field: name
+      needs_review: true
+      review_fields:
+        - name
+        - description
+      source_sha256: eba9564272ecde1710edacce42998ddef19e73da4151b3388515e17c5c508c4b
+      translation_source_sha256: 91f990d5c158a0841376f153c06d43c04e1aa7d679056497dd60035688a36597
+    - id: AML.M0010
+      name: Predictive AI Input Restoration
+      type: mitigation
+      has_name: true
+      has_body: true
+      source_field: name
+      needs_review: true
+      review_fields:
+        - name
+        - description
+      source_sha256: b686657527a26baa94ff9de9fd163b351e038a505ed6f0b315fd054511a1b39d
+      translation_source_sha256: 8fdf2094e96638a46b1e00c1a28b80c51a8f8b535e3fca8e77f63f4cd84c3262
+    - id: AML.M0015
+      name: Predictive AI Adversarial Input Detection
+      type: mitigation
+      has_name: true
+      has_body: true
+      source_field: name
+      needs_review: true
+      review_fields:
+        - name
+        - description
+      source_sha256: 2afc2194553d7545c33cacea2cb1f9ac27146679274dea4c86599f0cd0177ea5
+      translation_source_sha256: b1f89a94f847d403f9deb3b9ec27f873403e6565fc8120f5767e58c678779cab
+    - id: AML.M0016
+      name: Vulnerability Scanning
+      type: mitigation
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 74702997aea50f5aba27c3ff9c9a57082d1db70f04167ba87ee7c5a13a79c7db
+      translation_source_sha256: 6a578fb01f82bb388c404645bb6f0b1b1f9eb17e837e8d04094ce12d4f7c1ab9
+    - id: AML.M0020
+      name: Generative AI Guardrails
+      type: mitigation
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 242b1ac79ada14a8f94eea04d383f78e466cd8d27d6d578093f88112d423da87
+      translation_source_sha256: 0928d66061b0f3f02e6f75bcca23f1aaa8b4ce3ed2331bd5aa75aff6d1029ab1
+    - id: AML.M0022
+      name: Generative AI Model Alignment
+      type: mitigation
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 3fea04dcb7b5e4a443e45f22fc48ed248fa789771d69adece7ef807269bcf621
+      translation_source_sha256: 6311159f2f915b80960f7e9b5096be5a28f8a0e56cef1ef33210d0a9105a0be3
+    - id: AML.M0031
+      name: Memory Hardening
+      type: mitigation
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 2da9160a60faff4ec9bcaa0e5e26d6129e5daf26a25089e0b815e12b61acad99
+      translation_source_sha256: 6111928630a98993aea2692357de0bd90d3ca68b40e87f9cbf04305f3d7591cf
+    - id: AML.T0000
+      name: Search Open Technical Databases
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 04189ab1641220c910c41fed59bbf9df66ab07b3fd726c770b132f66a7643ea1
+      translation_source_sha256: 35987e9fdc18feb7dc9d13af3885af8488f0d08dfdb35e0c85f093bb3d4366b3
+    - id: AML.T0000.001
+      name: Pre-Print Repositories
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: fc655a95c4d3ba6b337b15ed221c6d6bcb61516f4539499f00d304cb3aa474b4
+      translation_source_sha256: bae5b0d0f7bad378ee18b2f2b1709066a99a37570dec792fb3537f6284a8b0eb
+    - id: AML.T0000.002
+      name: Technical Blogs
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: bd3e07ae1d0f16f124591c282ad8909e897f31454437511b3d0807f68c4ed302
+      translation_source_sha256: 63b40c35dee24d04975937e38c0eaca3f54e641cd82cab682bc6d25d2619a144
+    - id: AML.T0002
+      name: Acquire Public AI Artifacts
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 2821255084440f5aa87caf7033c7c99fd1ebd32394cc2f367b6988b6aa5d7e78
+      translation_source_sha256: 2babcd230b92616e1792822020d00b953631eb75cd97086e7f42d93b750dfaf8
+    - id: AML.T0002.002
+      name: AI Agent Configuration
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 8e7b5db33ff61a561d5965f6db77fee9229555a31964db3f37701ec4a2e6e449
+      translation_source_sha256: 7c27e984ed4b43e99254d6e5c2b265cf5e0fc84c15144c434346e11cba698733
+    - id: AML.T0005.001
+      name: Train Proxy via Replication
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 7475c511f3ee5779857109674b9b02860ca91366d91bdad5cca5f65585c3ba40
+      translation_source_sha256: 91e07ad82f23d9b7514ff458a17778e760737a83c9c9164019cfaf1ad2e0f716
+    - id: AML.T0008.002
+      name: Domains
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 95db1f5d399ebf9678e2f7f1f2e6cf7da698c304b5b364d9c6602c2de0db16fe
+      translation_source_sha256: d432ee5e1f67c95c9071241394f2881b2689340a38d5499ac2b0d811ac7a92c3
+    - id: AML.T0008.004
+      name: Serverless
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: d9a0a83c24e7443cd7637fe605e0bc1c3a2a0930416919f6eded95e30b70a8c9
+      translation_source_sha256: 449890f1df9cdfb29af3f31af464823fd00e5b8c16aaa880cd8d817b8b141b44
+    - id: AML.T0008.005
+      name: AI Service Proxies
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 84cb0084e09c595e43d94715e1f4504e0a7e117e77dc15604e85cb84a5642c2d
+      translation_source_sha256: 4e09a48537a31c7cfe134ee2d20fc0cfb6fea620e5115a597fcb75ec6330be71
+    - id: AML.T0010
+      name: AI Supply Chain Compromise
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 5d4d579f6d8e67eca23a7e9e3d06653a0315d3827760753dfcdbd99aca31993e
+      translation_source_sha256: a9ff3592090a43b94213e651bcce76a7db35db937046a6e91fed1e2e25b2d811
+    - id: AML.T0010.001
+      name: AI Software
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: cf7a483f5e4f61a34bc54c16f44c012f02dfa224cd4e21b1a20c40090aad5e61
+      translation_source_sha256: a2bb7921703ea48e5806a339c5256bc64fa01603aca37523d62f4a752fbfa0df
+    - id: AML.T0010.003
+      name: Model
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: c528d001371f8de4220de49f36ebe481635cc8181d279348859e7bd1e5d6ed9a
+      translation_source_sha256: 7e5ef47a9c1434b21d7bca28f5abd11721b3bc952b4334749acca925872858cd
+    - id: AML.T0010.005
+      name: AI Agent Tool
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: dabbe1b5d99518f314142760f1b38fcd1f204bb5b702cda2f461aa0ef0fbe5fa
+      translation_source_sha256: e0433a5dd1320c95121cfd1704de682a1020f1db497fa771f7ae5f79816c7e48
+    - id: AML.T0011
+      name: User Execution
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 0734e3f9ff63d90e9229637d2108a31c29bea6693fd6a56b5a8d5db4c336d222
+      translation_source_sha256: e2993261792d91fb674a5d1c237d6359895bd164110bcd637299a7d3d1fef549
+    - id: AML.T0011.000
+      name: Unsafe AI Artifacts
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 62a99c577f05dea825c031b8d069cdfd75bdd7b0f2f7ab5709154714bddca35a
+      translation_source_sha256: 649891521359fb57fd9cf512f3f7648978683eddda7928c961a677850b96d096
+    - id: AML.T0011.002
+      name: Poisoned AI Agent Tool
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 2228a5c941b109fd61408af073668b545707665a3e9cd4dda4f63906e44e9410
+      translation_source_sha256: b1f911f94ddcc583355ab1d4e94f46bebc7030340f9258da70c6341f4f829160
+    - id: AML.T0011.003
+      name: Malicious Link
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: c97874ab04a2c9c03bed3b68b1ee1d90574a9f10e871e9b8cad506dc5a192b3b
+      translation_source_sha256: 64296f82a39b2edce27a5062b93b2543bb8f26f72fcdc6a62e5cc1cec7eb1acf
+    - id: AML.T0013
+      name: Discover AI Model Ontology
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 6ff1bf1c78c2d576fd972933b89b49039fb11933293f7c77f5ab7276ef334884
+      translation_source_sha256: e5efb2b2655785a4cd6ce2ac010526eac3e390cd3c5f3730885ee1ba543dd130
+    - id: AML.T0014
+      name: Discover AI Model Family
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 2f1be5b5447a9a40bd57f86ca9116bb3d8634b16320b875b0e663bc37d62c826
+      translation_source_sha256: 8c956ed734300576538c64278dc6157f88c5085cab6114a207cb0fed54ab0836
+    - id: AML.T0016.002
+      name: Generative AI
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: ad1b4f4799e4418946c0cbd99fa730f77e2de65c95a6d700edf694a3758d9bf9
+      translation_source_sha256: ecf19d09f1174c729451491d9de8334395c97aafdd5fb48e7e15eb99194b000c
+    - id: AML.T0018
+      name: Manipulate AI Model
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 532769300eec53f649d7327460c4f0cb7bcddb38c907345fdd52f85209aec746
+      translation_source_sha256: 324b5a4f5ab2e93e0ea9d4a4fa31fb2b4bae9dca445322314ac67e10ec5c40d5
+    - id: AML.T0020
+      name: Training Data Poisoning
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: name
+      needs_review: true
+      review_fields:
+        - name
+        - description
+      source_sha256: ab787461fa4536f71810262d746d6cb58f2918b880981c9bd85e852bc771cce2
+      translation_source_sha256: 0ec862daeff93c7f3836035c7390f8bb99ff7e752a074ec0c9e255b57be0bb03
+    - id: AML.T0043
+      name: Craft Adversarial Data
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: ccc156364b8b3d8f23ec4782033b6ef58853e131af2a7af90afa7d631f95437c
+      translation_source_sha256: 2f0984ffa792c780edad7410b090e01648535a05950cdfb513a258cc0044968b
+    - id: AML.T0044
+      name: Full AI Model Access
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: f1de81f802db1cdc97f7a266d126983247770fb8922eb123dd9fbb13b85721a0
+      translation_source_sha256: 8533510ee397775e693159a9b2c888ebe4e88934dfbf483364d513b1b5e16cc4
+    - id: AML.T0051
+      name: LLM Prompt Injection
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: afb8e907cb72fc9615c339426d99ff061d3eadbe0b2d4f59d11ae2d3e99cef83
+      translation_source_sha256: 4fe5883000cd200199e43479f46a430738351495881e9aa619d169386632257f
+    - id: AML.T0051.001
+      name: Indirect
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 05578e7ca56474276bee209c776b5465fd0a93db3ae1c2716651857dda9e380b
+      translation_source_sha256: 4d3c62f186f9b1cb584ed2d1801627d41d330588794a7077fb6d553dfb1aaeaa
+    - id: AML.T0053
+      name: AI Agent Tool Invocation
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 4f3e35dfb25dbf3da1b195550399dc4370abfc4801e7bb6de144f13d29374b16
+      translation_source_sha256: 5c66326fc4d2b26018e681629369fb6d380a65d54c0b703a653e3c3381ea2989
+    - id: AML.T0054
+      name: LLM Jailbreak
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: faba473952f9c11af4233eecde1a2555fc68470010d9fb09decddfa28ccc7489
+      translation_source_sha256: 36e38121f187d16330a193362611d0d9b7fbf627be069b42df172ed9cb6aa881
+    - id: AML.T0056
+      name: Extract LLM System Prompt
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: caf7ecdc939ee2a77836dc97616a5ab8bd9a6bcaf08210980ddff7a62163da95
+      translation_source_sha256: 4bf85b4630e52a5b8054698cdc01c6303fe08da95f800223058ca6cf5fb4081b
+    - id: AML.T0060
+      name: Publish Hallucinated Entities
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 2e9edf70efb14d7a9bdb43ea0fe4a648ce903d20098aff07b335c951462d261b
+      translation_source_sha256: c569302f9e921b20e805de1aca957aabb8cab9e813d3d298afc155b1f5bca42b
+    - id: AML.T0067.000
+      name: Citations
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 1eed8ea575beb16a57e930b27caca9b4014159dd9570ddbc74eea8f13d87bb12
+      translation_source_sha256: d3d4f0ef9e6657febb8cd4514d9f6c4b50f04af573bde83c0ba723e4467c8512
+    - id: AML.T0071
+      name: False RAG Entry Injection
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: a84e8958931db91ffcfebd1bc1ad2367a6e71c8e1474d6d222a73c857503f445
+      translation_source_sha256: 1dcd3617b574e55b738dd3fe546e602da33e44e739d61824e8b064e3aae003ec
+    - id: AML.T0074
+      name: Masquerading
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: b4826439c58165638c91768ff904db3104116ca32ab32d5e85b4fa401125097d
+      translation_source_sha256: d4cca2c60efc1d0f10d5a2848262bb1d28136bbebf6dbcf6fe8f210eb913bd8a
+    - id: AML.T0079
+      name: Stage Capabilities
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 59bbcf9b9777af95d1e577f9bb7b9907056b72d691dc06217a91ac99da849dfd
+      translation_source_sha256: ecffe29e9d24d3ce95c112fe4c9855ae0196d13fb01d15b7d0ffc1018eb6b1b9
+    - id: AML.T0080
+      name: AI Agent Context Poisoning
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 5c142609325edf0c98de10025952103843831507d519453d58f682c4ab6280fe
+      translation_source_sha256: d2fa4b5d74bad9b0a33f81c359bf8adf55416c87978a31d27149b15ce51e834b
+    - id: AML.T0080.000
+      name: Memory
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 15d5afb4638068411756712dc437f4689ed6448bd744e50648916c5dc3879f32
+      translation_source_sha256: 29fd6ae687fe65ff4920bc9aa83fccd89279ea84ebccf7782c22b926a9d4748a
+    - id: AML.T0086
+      name: Exfiltration via AI Agent Tool Invocation
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 3dc32b5b8c2a5c453c2ba6fe843925f641ae0a3030b3d610fc04cc6620fc81de
+      translation_source_sha256: 7a44d375afeb646df17cfc6e922654ab552d0cc9fa05564a3e593e16c837c156
+    - id: AML.T0099
+      name: AI Agent Tool Data Poisoning
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 72a55b6467b5fc85038f8ac0bcf9fe8a759986a106ef7f24b7933051d23f587d
+      translation_source_sha256: 4e83e73fe7cf6cc1ea0b2b6bd060dd1216244039d1662ab007a6ed24fb201824
+    - id: AML.T0102
+      name: Generate Malicious Commands
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: f6e3772a6d6b63a982fa479a2eee8bba510e4322440389bfbbd1ea0b4b56346a
+      translation_source_sha256: 7866e4c49c21854e43eae41221db81cca2584ad7e8a65fa0d688c2083008aa80
+    - id: AML.T0109
+      name: AI Supply Chain Rug Pull
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 5608480596a90b9b0d1a46702c7d9b4d454ec7ecd017386ce7821e6dda0a2ff4
+      translation_source_sha256: ef240bae78b62422464386dc31c69357b2b0cc26d544668504057a3951354510
+    - id: AML.T0110
+      name: AI Agent Tool Poisoning
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 70a1c1ee5c9b39c1b86e7d217df83afd48119d0dd597e87e92411a7346e24852
+      translation_source_sha256: b169a5d165fb98157ed7615ec0082db2e14bf792d0c42bcb36486fd8ed0ff114
+    - id: AML.TA0009
+      name: Collection
+      type: tactic
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: c5bff1005549be18c2308e5e18e637943d4f0eb8e3230bbc55c219aba7a747fb
+      translation_source_sha256: db4e0274700dff544480a17c640c60cfc6e8c18c399d11c7404ea62d11da8e25
+    - id: AML.TA0012
+      name: Privilege Escalation
+      type: tactic
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: c60ffd55bae90b7dfe97a690b5c5ce12f3b8ef3e9b2d89450e10858f35269091
+      translation_source_sha256: 1e81ac3f1f0ece8cfb92c420d92fbc2a4b3136895087df0429713427243cbf09

@@ -1,8 +1,8 @@
 ---
 atlas_id: AML.T0000.002
 atlas_type: technique
-attack_ref_id: ""
-attack_ref_url: ""
+attack_ref_id: T1596
+attack_ref_url: https://attack.mitre.org/techniques/T1596/
 created_date: "2021-05-13"
 description: Исследовательские лаборатории в академических организациях и R&D-подразделения компаний часто ведут блоги, где рассказывают об использовании искусственного интеллекта и его применении к специфическим задачам...
 generated: true

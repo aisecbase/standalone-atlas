@@ -8,11 +8,11 @@ description: Злоумышленники могут выявлять инстр
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 0
+mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:
     - Agentic AI
-procedure_count: 2
+procedure_count: 3
 source_name: Tool Definitions
 subtechnique_count: 0
 subtechnique_of: AML.T0084
@@ -48,9 +48,17 @@ url: /techniques/AML.T0084.001/
 </div>
 
 
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0000/"><span class="relation-id">AML.M0000</span><strong>Ограничение публичного раскрытия информации</strong><p>Avoid publicly documenting sensitive agent tool definitions and capabilities.</p></a>
+</div>
+
+
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
 <a class="relation-item" href="/studies/AML.CS0037/"><span class="relation-id">AML.CS0037</span><strong>Эксфильтрация данных через инструменты ИИ-агента в Copilot Studio</strong><span class="relation-meta">Актор: Zenity / Тактика: AML.TA0008 Выявление</span><p>Исследователи делают вывод, что у ИИ-агента есть инструмент для отправки писем.</p></a>
 <a class="relation-item" href="/studies/AML.CS0037/"><span class="relation-id">AML.CS0037</span><strong>Эксфильтрация данных через инструменты ИИ-агента в Copilot Studio</strong><span class="relation-meta">Актор: Zenity / Тактика: AML.TA0008 Выявление</span><p>Исследователи обнаруживают, что ИИ-агент имеет доступ к инструменту Salesforce `get-records`, который можно использовать для получения записей CRM.</p></a>
+<a class="relation-item" href="/studies/AML.CS0067/"><span class="relation-id">AML.CS0067</span><strong>Claude Code GitHub Action Secret Exposure</strong><span class="relation-meta">Актор: Microsoft Defender Security Research Team / Тактика: AML.TA0008 Выявление</span><p>The researchers identified the tools available to Claude Code Action and compared their execution paths. They determined that Bash subprocesses could run within Bubblewrap with a scrubbed environment, while the built-in Read tool performed direct, in-process file access outside that isolation boundary.</p></a>
 </div>

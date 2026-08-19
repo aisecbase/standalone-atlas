@@ -1,8 +1,8 @@
 ---
 atlas_id: AML.T0000.001
 atlas_type: technique
-attack_ref_id: ""
-attack_ref_url: ""
+attack_ref_id: T1596
+attack_ref_url: https://attack.mitre.org/techniques/T1596/
 created_date: "2021-05-13"
 description: Репозитории препринтов, такие как arXiv, содержат последние научные публикации, которые еще не прошли рецензирование. Они могут содержать исследовательские заметки или технические отчеты, которые обычно не публикуются...
 generated: true

@@ -15,7 +15,7 @@ ml_lifecycle:
     - Monitoring and Maintenance
 modified_date: "2025-12-23"
 source_name: Sanitize Training Data
-technique_count: 4
+technique_count: 6
 title: Санитизация обучающих данных
 url: /mitigations/AML.M0007/
 ---
@@ -34,4 +34,6 @@ url: /mitigations/AML.M0007/
 <a class="relation-item" href="/techniques/AML.T0018.000/"><span class="relation-id">AML.T0018.000</span><strong>Отравление ИИ-модели</strong><p>Не дает злоумышленникам использовать отравленные наборы данных для запуска бэкдор-атак против модели.</p></a>
 <a class="relation-item" href="/techniques/AML.T0020/"><span class="relation-id">AML.T0020</span><strong>Отравление обучающих данных</strong><p>Выявляйте изменения данных и меток, которые могут вызвать состязательный дрейф модели или бэкдор-атаки.</p></a>
 <a class="relation-item" href="/techniques/AML.T0059/"><span class="relation-id">AML.T0059</span><strong>Нарушение целостности набора данных</strong><p>Устранение последствий отравленных данных может восстановить целостность набора данных.</p></a>
+<a class="relation-item" href="/techniques/AML.T0115/"><span class="relation-id">AML.T0115</span><strong>Publish Poisoned AI Artifacts</strong><p>Dataset repositories inspect submissions and quarantine poisoned samples, labels, annotations, or metadata before listing.</p></a>
+<a class="relation-item" href="/techniques/AML.T0115.000/"><span class="relation-id">AML.T0115.000</span><strong>Datasets</strong><p>Dataset repositories inspect submissions and quarantine poisoned samples, labels, annotations, or metadata before listing.</p></a>
 </div>

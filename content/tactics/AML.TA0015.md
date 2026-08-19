@@ -8,9 +8,9 @@ description: Злоумышленник пытается перемещатьс�
 generated: true
 generated_by: atlasgen
 modified_date: "2025-11-05"
-procedure_count: 3
+procedure_count: 4
 source_name: Lateral Movement
-technique_count: 10
+technique_count: 11
 title: Латеральное перемещение
 url: /tactics/AML.TA0015/
 ---
@@ -31,6 +31,7 @@ url: /tactics/AML.TA0015/
 <a class="relation-item" href="/techniques/AML.T0052.000/"><span class="relation-id">AML.T0052.000</span><strong>Целевой фишинг через LLM для социальной инженерии</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0052.001/"><span class="relation-id">AML.T0052.001</span><strong>Фишинг с использованием дипфейков</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0052.001/"><span class="relation-id">AML.T0052.001</span><strong>Фишинг с использованием дипфейков</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0053/"><span class="relation-id">AML.T0053</span><strong>Вызов инструментов ИИ-агента</strong></a>
 <a class="relation-item" href="/techniques/AML.T0091/"><span class="relation-id">AML.T0091</span><strong>Использование альтернативных средств аутентификации</strong></a>
 <a class="relation-item" href="/techniques/AML.T0091.000/"><span class="relation-id">AML.T0091.000</span><strong>Токен доступа к приложению</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0091.000/"><span class="relation-id">AML.T0091.000</span><strong>Токен доступа к приложению</strong><span class="relation-meta">Подтехника</span></a>
@@ -45,4 +46,5 @@ url: /tactics/AML.TA0015/
 <a class="relation-item" href="/studies/AML.CS0036/"><span class="relation-id">AML.CS0036</span><strong>AIKatz: атака на десктопные LLM-приложения</strong><span class="relation-meta">Актор: Lumia Security / Тактика: AML.TA0015 Латеральное перемещение</span><p>Злоумышленник использовал извлеченный токен, чтобы аутентифицироваться в backend-сервисе LLM.</p></a>
 <a class="relation-item" href="/studies/AML.CS0044/"><span class="relation-id">AML.CS0044</span><strong>LAMEHUG: вредоносное ПО, использующее динамические команды, сгенерированные ИИ</strong><span class="relation-meta">Актор: APT28 / Тактика: AML.TA0015 Латеральное перемещение</span><p>APT28 отправила с этой учетной записи фишинговое письмо с вложением, содержащим вредоносное ПО.</p></a>
 <a class="relation-item" href="/studies/AML.CS0060/"><span class="relation-id">AML.CS0060</span><strong>Межсайтовый скриптинг (XSS) через манипуляцию промптом в ИИ-чат-боте Lenovo</strong><span class="relation-meta">Актор: Cybernews Research Team / Тактика: AML.TA0015 Латеральное перемещение</span><p>После этого исследователи могли импортировать украденный cookie сеанса сотрудника поддержки в свой браузер, чтобы возобновить аутентифицированный сеанс и потенциально выполнить латеральное перемещение в платформе клиентской поддержки Lenovo от имени этого сотрудника.</p></a>
+<a class="relation-item" href="/studies/AML.CS0066/"><span class="relation-id">AML.CS0066</span><strong>ZombieAgent: Data Exfiltration Attack on ChatGPT</strong><span class="relation-meta">Актор: Radware Security Researchers / Тактика: AML.TA0015 Латеральное перемещение</span><p>The malicious instructions caused ChatGPT to reproduce the prompt in new emails or documents and distribute them to collected contacts. If another AI agent processed the poisoned content, the attack could propagate between users or connected AI systems.</p></a>
 </div>

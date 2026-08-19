@@ -22,12 +22,12 @@ procedure:
       tactic_name: Подготовка ресурсов
       technique: AML.T0017
       technique_name: Разработка средств для атаки
-    - description: Злоумышленник опубликовал вредоносную версию `postmark-mcp` в npm.
-      description_line: Злоумышленник опубликовал вредоносную версию `postmark-mcp` в npm.
+    - description: The bad actor published their malicious version of `postmark-mcp` to npm.
+      description_line: The bad actor published their malicious version of `postmark-mcp` to npm.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
-      technique: AML.T0104
-      technique_name: Публикация отравленного инструмента ИИ-агента
+      technique: AML.T0115.002
+      technique_name: AI Agent Tools
     - description: Дождавшись, пока пользователи начнут использовать легитимную версию `postmark-mcp`, злоумышленник смог избежать дополнительной проверки и сканирования, которым подвергаются новые инструменты.
       description_line: Дождавшись, пока пользователи начнут использовать легитимную версию `postmark-mcp`, злоумышленник смог избежать дополнительной проверки и сканирования, которым подвергаются новые инструменты.
       tactic: AML.TA0007
@@ -40,12 +40,12 @@ procedure:
       tactic_name: Первичный доступ
       technique: AML.T0010.005
       technique_name: Инструмент ИИ-агента
-    - description: После подключения к ИИ-агентам организации отравленный MCP-сервер Postmark продолжал действовать.
-      description_line: После подключения к ИИ-агентам организации отравленный MCP-сервер Postmark продолжал действовать.
+    - description: Once configured with the organization's AI agents, the poisoned Postmark MCP server's effects persist.
+      description_line: Once configured with the organization's AI agents, the poisoned Postmark MCP server's effects persist.
       tactic: AML.TA0006
       tactic_name: Закрепление
-      technique: AML.T0110
-      technique_name: Отравление инструмента ИИ-агента
+      technique: AML.T0110.001
+      technique_name: Implementation
     - description: Когда пользователи в организации-жертве поручали своему ИИ-агенту использовать инструменты отравленного MCP-сервера Postmark, выполнялся вредоносный код.
       description_line: Когда пользователи в организации-жертве поручали своему ИИ-агенту использовать инструменты отравленного MCP-сервера Postmark, выполнялся вредоносный код.
       tactic: AML.TA0005

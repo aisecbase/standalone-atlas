@@ -8,7 +8,7 @@ description: Злоумышленники могут получить перви
 generated: true
 generated_by: atlasgen
 maturity: realized
-mitigation_count: 3
+mitigation_count: 4
 modified_date: "2026-05-27"
 platforms:
     - Predictive AI
@@ -56,6 +56,7 @@ url: /techniques/AML.T0010/
 <a class="relation-item" href="/mitigations/AML.M0014/"><span class="relation-id">AML.M0014</span><strong>Проверка ИИ-артефактов</strong><p>Внедрите надлежащую проверку подписей, чтобы небезопасные ИИ-артефакты не попадали в систему.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Защитные ограничения (Guardrails) для генеративного ИИ</strong><p>Защитные ограничения могут обнаруживать вредоносный код в выходных данных модели.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0023/"><span class="relation-id">AML.M0023</span><strong>Ведомость материалов ИИ</strong><p>AI BOM может помочь пользователям выявлять недоверенные компоненты цепочки поставок ИИ.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>AI Red Team</strong><p>Exercise the introduction of controlled untrusted software, data, models, and agent tools through representative acquisition and deployment paths. Remediate weaknesses in provenance, validation, approvals, isolation, and rollback.</p></a>
 </div>
 
 

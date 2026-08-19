@@ -12,8 +12,8 @@ generated_by: atlasgen
 ml_lifecycle:
     - Data Preparation
     - AI Model Engineering
-modified_date: "2025-12-23"
-source_name: Model Hardening
+modified_date: "2026-07-31"
+source_name: Predictive AI Model Hardening
 technique_count: 8
 title: Усиление устойчивости модели
 url: /mitigations/AML.M0003/

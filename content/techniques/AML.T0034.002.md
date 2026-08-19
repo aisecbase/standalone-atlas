@@ -8,7 +8,7 @@ description: Злоумышленники могут вынуждать аген
 generated: true
 generated_by: atlasgen
 maturity: feasible
-mitigation_count: 0
+mitigation_count: 2
 modified_date: "2026-05-27"
 platforms:
     - Agentic AI
@@ -49,4 +49,12 @@ url: /techniques/AML.T0034.002/
 <div class="relation-list">
 <a class="relation-item" href="/techniques/AML.T0034.000/"><span class="relation-id">AML.T0034.000</span><strong>Чрезмерные запросы</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0034.001/"><span class="relation-id">AML.T0034.001</span><strong>Ресурсоёмкие запросы</strong><span class="relation-meta">Подтехника</span></a>
+</div>
+
+
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>AI Red Team</strong><p>Test recursive behavior, repeated tool calls, costly API use, and attacker-controlled task expansion. Verify budgets, iteration limits, timeouts, approval thresholds, and termination controls.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0036/"><span class="relation-id">AML.M0036</span><strong>Limit AI Workload Resource Consumption</strong><p>Limit agent iterations, tool calls, fan-out, runtime, and downstream spending to constrain agentic resource consumption.</p></a>
 </div>

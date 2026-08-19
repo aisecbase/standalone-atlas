@@ -8,7 +8,7 @@ description: Злоумышленники могут злоупотреблят�
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 0
+mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:
     - Agentic AI
@@ -31,6 +31,13 @@ url: /techniques/AML.T0108/
 
 <div class="relation-list">
 <a class="relation-item" href="/tactics/AML.TA0014/"><span class="relation-id">AML.TA0014</span><strong>Командование и управление</strong></a>
+</div>
+
+
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Защитные ограничения (Guardrails) для генеративного ИИ</strong><p>Block malicious agent instructions, command outputs, and unsafe tool requests with guardrails.</p></a>
 </div>
 
 

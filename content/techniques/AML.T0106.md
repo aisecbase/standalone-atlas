@@ -8,7 +8,7 @@ description: Злоумышленники могут эксплуатирова�
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 0
+mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:
     - Enterprise
@@ -29,6 +29,13 @@ url: /techniques/AML.T0106/
 
 <div class="relation-list">
 <a class="relation-item" href="/tactics/AML.TA0013/"><span class="relation-id">AML.TA0013</span><strong>Доступ к учетным данным</strong></a>
+</div>
+
+
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0016/"><span class="relation-id">AML.M0016</span><strong>Сканирование уязвимостей</strong><p>Vulnerability scanning identifies and remediates software flaws before they can be exploited to obtain credentials.</p></a>
 </div>
 
 

@@ -12,8 +12,8 @@ generated_by: atlasgen
 ml_lifecycle:
     - AI Model Evaluation
     - Deployment
-modified_date: "2025-12-23"
-source_name: Passive AI Output Obfuscation
+modified_date: "2026-07-31"
+source_name: Predictive AI Output Obfuscation
 technique_count: 11
 title: Пассивная обфускация выходных данных ИИ
 url: /mitigations/AML.M0002/

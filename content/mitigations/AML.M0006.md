@@ -11,8 +11,8 @@ generated: true
 generated_by: atlasgen
 ml_lifecycle:
     - AI Model Engineering
-modified_date: "2025-12-23"
-source_name: Use Ensemble Methods
+modified_date: "2026-07-31"
+source_name: Predictive AI Ensembles
 technique_count: 11
 title: Использование ансамблевых методов
 url: /mitigations/AML.M0006/

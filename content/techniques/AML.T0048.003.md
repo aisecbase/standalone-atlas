@@ -15,7 +15,7 @@ platforms:
     - Generative AI
     - Agentic AI
     - Enterprise
-procedure_count: 12
+procedure_count: 16
 source_name: User Harm
 subtechnique_count: 0
 subtechnique_of: AML.T0048
@@ -67,4 +67,8 @@ url: /techniques/AML.T0048.003/
 <a class="relation-item" href="/studies/AML.CS0048/"><span class="relation-id">AML.CS0048</span><strong>Публично доступные интерфейсы управления ClawdBot позволили получить учетные данные и выполнить команды</strong><span class="relation-meta">Актор: Jamieson O&#39;Reilly / Тактика: AML.TA0011 Воздействие</span><p>Исследователь мог бы использовать обнаруженные токены приложений для дальнейшего вреда пользователю, включая имперсонацию через отправку сообщений от имени пользователя в любом из подключенных мессенджеров.</p></a>
 <a class="relation-item" href="/studies/AML.CS0054/"><span class="relation-id">AML.CS0054</span><strong>Эксфильтрация данных через удаленный отравленный MCP-инструмент</strong><span class="relation-meta">Актор: Invariant Labs / Тактика: AML.TA0011 Воздействие</span><p>Приватные данные пользователя были раскрыты удаленному MCP-серверу.</p></a>
 <a class="relation-item" href="/studies/AML.CS0056/"><span class="relation-id">AML.CS0056</span><strong>Кампании по дистилляции моделей, нацеленные на Anthropic Claude</strong><span class="relation-meta">Актор: DeepSeek, Moonshot AI, MiniMax / Тактика: AML.TA0011 Воздействие</span><p>У дистиллированных моделей нет защитных ограничений Claude, из-за чего пользователи могут столкнуться с вредоносными ответами и поведением модели.</p></a>
+<a class="relation-item" href="/studies/AML.CS0063/"><span class="relation-id">AML.CS0063</span><strong>Prompt-Based Attacks Against Gemini via Calendar Invitations</strong><span class="relation-meta">Актор: SafeBreach Research Team / Тактика: AML.TA0011 Воздействие</span><p>Gemini delivered harmful content or repeated adversary-selected promotions to the victim.</p></a>
+<a class="relation-item" href="/studies/AML.CS0063/"><span class="relation-id">AML.CS0063</span><strong>Prompt-Based Attacks Against Gemini via Calendar Invitations</strong><span class="relation-meta">Актор: SafeBreach Research Team / Тактика: AML.TA0011 Воздействие</span><p>The victim&#39;s physical environment was altered, potentially creating safety, privacy, property, or financial harm.</p></a>
+<a class="relation-item" href="/studies/AML.CS0063/"><span class="relation-id">AML.CS0063</span><strong>Prompt-Based Attacks Against Gemini via Calendar Invitations</strong><span class="relation-meta">Актор: SafeBreach Research Team / Тактика: AML.TA0011 Воздействие</span><p>Unauthorized video streaming caused privacy harm to the victim.</p></a>
+<a class="relation-item" href="/studies/AML.CS0064/"><span class="relation-id">AML.CS0064</span><strong>Poisoned GGUF Templates: Inference-Time Supply Chain Attack</strong><span class="relation-meta">Актор: Pillar Security, Fujitsu Research of Europe / Тактика: AML.TA0011 Воздействие</span><p>The compromised system may expose users to privacy loss, credential theft, misleading information, or attacker-modified software. Malicious content inserted into generated artifacts may continue to affect downstream users after those artifacts are deployed or distributed.</p></a>
 </div>

@@ -13,7 +13,7 @@ modified_date: "2026-05-27"
 platforms:
     - Generative AI
     - Agentic AI
-procedure_count: 2
+procedure_count: 3
 source_name: LLM Trusted Output Components Manipulation
 subtechnique_count: 1
 subtechnique_of: ""
@@ -47,4 +47,5 @@ LLM может быть проинструктирована адаптиров�
 <div class="relation-list procedure-relations">
 <a class="relation-item" href="/studies/AML.CS0041/"><span class="relation-id">AML.CS0041</span><strong>Бэкдор в файле правил: атака на цепочку поставки ИИ-ассистентов для программирования</strong><span class="relation-meta">Актор: Pillar Security / Тактика: AML.TA0007 Уклонение от защиты</span><p>Промпт предписывал ИИ-ассистенту для программирования не упоминать изменения кода в ответах, чтобы не вызывать подозрений у жертвы и не оставлять следов в журналах ассистента. Это позволяет вредоносному файлу правил скрытно распространяться по кодовой базе без следов в истории или журналах, которые могли бы помочь командам безопасности обнаружить проблему.</p></a>
 <a class="relation-item" href="/studies/AML.CS0059/"><span class="relation-id">AML.CS0059</span><strong>EchoLeak: промпт-инъекция нулевого клика против M365 Copilot для эксфильтрации данных</strong><span class="relation-meta">Актор: Aim Labs / Тактика: AML.TA0007 Уклонение от защиты</span><p>Вывод был изменен так, чтобы избежать очевидной атрибуции и использовать ссылки или изображения Markdown в справочном стиле, обходившие сокрытие ссылок.</p></a>
+<a class="relation-item" href="/studies/AML.CS0064/"><span class="relation-id">AML.CS0064</span><strong>Poisoned GGUF Templates: Inference-Time Supply Chain Attack</strong><span class="relation-meta">Актор: Pillar Security, Fujitsu Research of Europe / Тактика: AML.TA0007 Уклонение от защиты</span><p>The injected instruction causes the model to include attacker-selected links, references, or other response components in a form that appears relevant or trustworthy to the user.</p></a>
 </div>

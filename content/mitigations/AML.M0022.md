@@ -13,9 +13,9 @@ ml_lifecycle:
     - AI Model Engineering
     - AI Model Evaluation
     - Deployment
-modified_date: "2025-12-23"
+modified_date: "2025-07-31"
 source_name: Generative AI Model Alignment
-technique_count: 7
+technique_count: 9
 title: Выравнивание модели генеративного ИИ
 url: /mitigations/AML.M0022/
 ---
@@ -28,6 +28,7 @@ url: /mitigations/AML.M0022/
 ## Связанные техники
 
 <div class="relation-list">
+<a class="relation-item" href="/techniques/AML.T0016.002/"><span class="relation-id">AML.T0016.002</span><strong>Генеративный ИИ</strong><p>Align generative models to resist and adversary&#39;s malicious requests and attempts to remove safety behavior.</p></a>
 <a class="relation-item" href="/techniques/AML.T0051/"><span class="relation-id">AML.T0051</span><strong>Промпт-инъекция в LLM</strong><p>Выравнивание модели может повысить параметрическую безопасность модели, уводя ее от небезопасных промптов и ответов.</p></a>
 <a class="relation-item" href="/techniques/AML.T0053/"><span class="relation-id">AML.T0053</span><strong>Вызов инструментов ИИ-агента</strong><p>Выравнивание модели может повысить параметрическую безопасность модели, уводя ее от небезопасных промптов и ответов.</p></a>
 <a class="relation-item" href="/techniques/AML.T0054/"><span class="relation-id">AML.T0054</span><strong>Джейлбрейк LLM</strong><p>Выравнивание модели может повысить параметрическую безопасность модели, уводя ее от небезопасных промптов и ответов.</p></a>
@@ -35,4 +36,5 @@ url: /mitigations/AML.M0022/
 <a class="relation-item" href="/techniques/AML.T0057/"><span class="relation-id">AML.T0057</span><strong>Утечка данных из LLM</strong><p>Выравнивание модели может повысить параметрическую безопасность модели, уводя ее от небезопасных промптов и ответов.</p></a>
 <a class="relation-item" href="/techniques/AML.T0061/"><span class="relation-id">AML.T0061</span><strong>Саморепликация промпта LLM</strong><p>Выравнивание модели может повысить защищенность моделей от атак с самореплицирующимися промптами.</p></a>
 <a class="relation-item" href="/techniques/AML.T0062/"><span class="relation-id">AML.T0062</span><strong>Выявление галлюцинированных сущностей LLM</strong><p>Выравнивание модели может помогать уводить модель от галлюцинированного контента.</p></a>
+<a class="relation-item" href="/techniques/AML.T0102/"><span class="relation-id">AML.T0102</span><strong>Генерация вредоносных команд</strong><p>Align generative AI models with safety objectives to reduce the likelihood that they will generate malicious commands or harmful instructions.</p></a>
 </div>

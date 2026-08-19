@@ -15,8 +15,8 @@ ml_lifecycle:
     - AI Model Evaluation
     - Deployment
     - Monitoring and Maintenance
-modified_date: "2025-12-23"
-source_name: Adversarial Input Detection
+modified_date: "2026-07-31"
+source_name: Predictive AI Adversarial Input Detection
 technique_count: 9
 title: Обнаружение состязательных входных данных
 url: /mitigations/AML.M0015/

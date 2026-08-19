@@ -1,8 +1,8 @@
 ---
 atlas_id: AML.T0008.002
 atlas_type: technique
-attack_ref_id: T1583.001
-attack_ref_url: https://attack.mitre.org/techniques/T1583/001/
+attack_ref_id: ""
+attack_ref_url: ""
 created_date: "2025-03-12"
 description: Злоумышленники могут приобретать домены, которые можно использовать при выборе целей. Доменные имена — это человекочитаемые имена, используемые для представления одного или нескольких IP-адресов. Их можно купить или,...
 generated: true

@@ -15,7 +15,7 @@ ml_lifecycle:
     - AI Model Engineering
 modified_date: "2025-12-23"
 source_name: AI Bill of Materials
-technique_count: 7
+technique_count: 5
 title: Ведомость материалов ИИ
 url: /mitigations/AML.M0023/
 ---
@@ -32,7 +32,5 @@ url: /mitigations/AML.M0023/
 <a class="relation-item" href="/techniques/AML.T0011/"><span class="relation-id">AML.T0011</span><strong>Запуск пользователем</strong><p>AI BOM может помочь пользователям выявлять недоверенные бинарные файлы.</p></a>
 <a class="relation-item" href="/techniques/AML.T0011.000/"><span class="relation-id">AML.T0011.000</span><strong>Небезопасные ИИ-артефакты</strong><p>AI BOM может помочь пользователям выявлять недоверенные артефакты моделей.</p></a>
 <a class="relation-item" href="/techniques/AML.T0011.001/"><span class="relation-id">AML.T0011.001</span><strong>Вредоносный пакет</strong><p>AI BOM может помочь пользователям выявлять недоверенные программные зависимости.</p></a>
-<a class="relation-item" href="/techniques/AML.T0019/"><span class="relation-id">AML.T0019</span><strong>Публикация отравленных наборов данных</strong><p>AI BOM может помочь пользователям выявлять недоверенные артефакты моделей.</p></a>
 <a class="relation-item" href="/techniques/AML.T0020/"><span class="relation-id">AML.T0020</span><strong>Отравление обучающих данных</strong><p>AI BOM может помочь пользователям выявлять недоверенные артефакты моделей.</p></a>
-<a class="relation-item" href="/techniques/AML.T0058/"><span class="relation-id">AML.T0058</span><strong>Публикация отравленных моделей</strong><p>AI BOM может помочь пользователям выявлять недоверенные артефакты моделей.</p></a>
 </div>

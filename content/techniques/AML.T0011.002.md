@@ -9,10 +9,10 @@ generated: true
 generated_by: atlasgen
 maturity: realized
 mitigation_count: 0
-modified_date: "2026-05-27"
+modified_date: "2026-07-31"
 platforms:
     - Agentic AI
-procedure_count: 2
+procedure_count: 3
 source_name: Poisoned AI Agent Tool
 subtechnique_count: 0
 subtechnique_of: AML.T0011
@@ -55,4 +55,5 @@ url: /techniques/AML.T0011.002/
 <div class="relation-list procedure-relations">
 <a class="relation-item" href="/studies/AML.CS0049/"><span class="relation-id">AML.CS0049</span><strong>Компрометация цепочки поставки через отравленный навык ClawdBot</strong><span class="relation-meta">Актор: Jamieson O&#39;Reilly / Тактика: AML.TA0005 Выполнение</span><p>Когда пользователь спрашивал Claude Code: &#34;what would Elon do?&#34;, Claude Code вызывал отравленный навык.</p></a>
 <a class="relation-item" href="/studies/AML.CS0053/"><span class="relation-id">AML.CS0053</span><strong>Эксфильтрация писем через отравленный MCP-сервер Postmark</strong><span class="relation-meta">Актор: Unknown Bad Actor / Тактика: AML.TA0005 Выполнение</span><p>Когда пользователи в организации-жертве поручали своему ИИ-агенту использовать инструменты отравленного MCP-сервера Postmark, выполнялся вредоносный код.</p></a>
+<a class="relation-item" href="/studies/AML.CS0054/"><span class="relation-id">AML.CS0054</span><strong>Эксфильтрация данных через удаленный отравленный MCP-инструмент</strong><span class="relation-meta">Актор: Invariant Labs / Тактика: AML.TA0005 Выполнение</span><p>When the user made a request that represented the poisoned tool&#39;s functionality, the agent invoked the poisoned MCP tool and acted on the malicious instructions contained in its definition.</p></a>
 </div>

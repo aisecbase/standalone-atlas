@@ -12,7 +12,7 @@ mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:
     - Agentic AI
-procedure_count: 2
+procedure_count: 3
 source_name: AI Agent Tool Credential Harvesting
 subtechnique_count: 0
 subtechnique_of: ""
@@ -44,4 +44,5 @@ url: /techniques/AML.T0098/
 <div class="relation-list procedure-relations">
 <a class="relation-item" href="/studies/AML.CS0048/"><span class="relation-id">AML.CS0048</span><strong>Публично доступные интерфейсы управления ClawdBot позволили получить учетные данные и выполнить команды</strong><span class="relation-meta">Актор: Jamieson O&#39;Reilly / Тактика: AML.TA0013 Доступ к учетным данным</span><p>Исследователь отправил ClawdBot промпт `env`; в ответ ClawdBot вызвал навык `bash` и выполнил команду `env`, вывод которой содержал дополнительные секреты для других сервисов.</p></a>
 <a class="relation-item" href="/studies/AML.CS0054/"><span class="relation-id">AML.CS0054</span><strong>Эксфильтрация данных через удаленный отравленный MCP-инструмент</strong><span class="relation-meta">Актор: Invariant Labs / Тактика: AML.TA0013 Доступ к учетным данным</span><p>Промпт инструктировал ИИ-агента прочитать `mcp.json`, где часто хранятся учетные данные для других MCP-серверов.</p></a>
+<a class="relation-item" href="/studies/AML.CS0067/"><span class="relation-id">AML.CS0067</span><strong>Claude Code GitHub Action Secret Exposure</strong><span class="relation-meta">Актор: Microsoft Defender Security Research Team / Тактика: AML.TA0013 Доступ к учетным данным</span><p>The Read tool returned the action process&#39;s unsanitized environment, including `ANTHROPIC_API_KEY` and potentially other credentials available to the workflow.</p></a>
 </div>

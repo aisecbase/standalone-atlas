@@ -8,7 +8,7 @@ description: Злоумышленник пытается манипулиров�
 generated: true
 generated_by: atlasgen
 modified_date: "2025-04-09"
-procedure_count: 61
+procedure_count: 67
 source_name: Impact
 technique_count: 29
 title: Воздействие
@@ -76,4 +76,4 @@ url: /tactics/AML.TA0011/
 </div>
 
 
-Показано 12 из 61 примеров.
+Показано 12 из 67 примеров.

@@ -8,7 +8,7 @@ description: Злоумышленник пытается избежать обн
 generated: true
 generated_by: atlasgen
 modified_date: "2025-04-09"
-procedure_count: 42
+procedure_count: 50
 source_name: Defense Evasion
 technique_count: 17
 title: Уклонение от защиты
@@ -61,4 +61,4 @@ url: /tactics/AML.TA0007/
 </div>
 
 
-Показано 12 из 42 примеров.
+Показано 12 из 50 примеров.

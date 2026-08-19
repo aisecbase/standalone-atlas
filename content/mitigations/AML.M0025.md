@@ -12,7 +12,7 @@ generated_by: atlasgen
 ml_lifecycle:
     - Business and Data Understanding
     - Data Preparation
-modified_date: "2025-12-23"
+modified_date: "2026-07-31"
 source_name: Maintain AI Dataset Provenance
 technique_count: 5
 title: Поддержание происхождения наборов данных ИИ
@@ -27,7 +27,7 @@ url: /mitigations/AML.M0025/
 <div class="relation-list">
 <a class="relation-item" href="/techniques/AML.T0010.002/"><span class="relation-id">AML.T0010.002</span><strong>Данные</strong><p>Сведения о происхождении наборов данных могут защищать от компрометации данных в цепочке поставок.</p></a>
 <a class="relation-item" href="/techniques/AML.T0018.000/"><span class="relation-id">AML.T0018.000</span><strong>Отравление ИИ-модели</strong><p>Сведения о происхождении наборов данных могут защищать от отравления моделей.</p></a>
-<a class="relation-item" href="/techniques/AML.T0019/"><span class="relation-id">AML.T0019</span><strong>Публикация отравленных наборов данных</strong><p>Ведение подробной истории наборов данных может помочь выявлять использование отравленных наборов данных из публичных источников.</p></a>
 <a class="relation-item" href="/techniques/AML.T0020/"><span class="relation-id">AML.T0020</span><strong>Отравление обучающих данных</strong><p>Сведения о происхождении наборов данных могут защищать от отравления обучающих данных.</p></a>
 <a class="relation-item" href="/techniques/AML.T0059/"><span class="relation-id">AML.T0059</span><strong>Нарушение целостности набора данных</strong><p>Поддержание происхождения наборов данных может помочь выявлять вредоносные изменения данных.</p></a>
+<a class="relation-item" href="/techniques/AML.T0074/"><span class="relation-id">AML.T0074</span><strong>Маскировка</strong><p>Record dataset sources and modification history so datasets falsely presented as trusted can be identified.</p></a>
 </div>

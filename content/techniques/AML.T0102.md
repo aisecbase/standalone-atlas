@@ -8,7 +8,7 @@ description: Злоумышленники могут использовать б
 generated: true
 generated_by: atlasgen
 maturity: realized
-mitigation_count: 0
+mitigation_count: 2
 modified_date: "2026-05-27"
 platforms:
     - Enterprise
@@ -31,6 +31,14 @@ url: /techniques/AML.T0102/
 
 <div class="relation-list">
 <a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Подготовка атаки на ИИ</strong></a>
+</div>
+
+
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Защитные ограничения (Guardrails) для генеративного ИИ</strong><p>Block prompts and outputs that request or contain malicious commands.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0022/"><span class="relation-id">AML.M0022</span><strong>Выравнивание модели генеративного ИИ</strong><p>Align generative AI models with safety objectives to reduce the likelihood that they will generate malicious commands or harmful instructions.</p></a>
 </div>
 
 

@@ -14,8 +14,8 @@ ml_lifecycle:
     - AI Model Evaluation
     - Deployment
     - Monitoring and Maintenance
-modified_date: "2025-12-23"
-source_name: Input Restoration
+modified_date: "2026-07-31"
+source_name: Predictive AI Input Restoration
 technique_count: 8
 title: Восстановление входных данных
 url: /mitigations/AML.M0010/

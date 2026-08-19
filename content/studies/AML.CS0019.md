@@ -34,12 +34,12 @@ procedure:
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0042
       technique_name: Проверка атаки
-    - description: Исследователи загрузили модель PoisonGPT обратно в Hugging Face под именем репозитория, похожим на имя исходной модели, но с пропущенной одной буквой.
-      description_line: Исследователи загрузили модель PoisonGPT обратно в Hugging Face под именем репозитория, похожим на имя исходной модели, но с пропущенной одной буквой.
+    - description: The researchers uploaded the PoisonGPT model back to HuggingFace under a similar repository name as the original model, missing one letter.
+      description_line: The researchers uploaded the PoisonGPT model back to HuggingFace under a similar repository name as the original model, missing one letter.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
-      technique: AML.T0058
-      technique_name: Публикация отравленных моделей
+      technique: AML.T0115.001
+      technique_name: Models
     - description: |-
         Ничего не подозревающие пользователи могли скачать состязательную модель и интегрировать ее в приложения.
 

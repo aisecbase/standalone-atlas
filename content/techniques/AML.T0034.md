@@ -8,7 +8,7 @@ description: Злоумышленники могут намеренно нагр
 generated: true
 generated_by: atlasgen
 maturity: feasible
-mitigation_count: 2
+mitigation_count: 4
 modified_date: "2026-05-27"
 platforms:
     - Predictive AI
@@ -58,4 +58,6 @@ url: /techniques/AML.T0034/
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0004/"><span class="relation-id">AML.M0004</span><strong>Ограничение количества запросов к ИИ-модели</strong><p>Ограничьте количество запросов, которые пользователи могут выполнять за заданный интервал, чтобы затруднить злоумышленнику отправку вычислительно затратных входных данных.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Контроль доступа может ограничивать доступ к API и предотвращать искусственное увеличение затрат.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>AI Red Team</strong><p>Exercise requests and workflows designed to amplify inference, infrastructure, or external-service costs. Verify budgets, quotas, rate limits, workload controls, alerting, and termination mechanisms.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0036/"><span class="relation-id">AML.M0036</span><strong>Limit AI Workload Resource Consumption</strong><p>Apply resource budgets to AI requests and workflows to limit costs from resource-intensive queries, excessive output, and uncontrolled agentic activity.</p></a>
 </div>

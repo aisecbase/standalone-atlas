@@ -49,12 +49,12 @@ procedure:
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0018.002
       technique_name: Встраивание вредоносного ПО
-    - description: Исследователь повторно загрузил измененную модель в репозиторий Hugging Face.
-      description_line: Исследователь повторно загрузил измененную модель в репозиторий Hugging Face.
+    - description: The researcher re-uploaded the manipulated model to the Hugging Face repository.
+      description_line: The researcher re-uploaded the manipulated model to the Hugging Face repository.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
-      technique: AML.T0058
-      technique_name: Публикация отравленных моделей
+      technique: AML.T0115.001
+      technique_name: Models
     - description: |-
         Цепочка поставок ИИ-моделей жертвы оказалась скомпрометирована.
 

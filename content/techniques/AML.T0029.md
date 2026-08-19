@@ -8,7 +8,7 @@ description: Злоумышленники могут нацеливаться н
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 3
+mitigation_count: 5
 modified_date: "2026-05-27"
 platforms:
     - Predictive AI
@@ -44,6 +44,8 @@ url: /techniques/AML.T0029/
 <a class="relation-item" href="/mitigations/AML.M0004/"><span class="relation-id">AML.M0004</span><strong>Ограничение количества запросов к ИИ-модели</strong><p>Ограничьте количество запросов, которые пользователи могут выполнять за заданный интервал, чтобы предотвратить отказ в обслуживании.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0015/"><span class="relation-id">AML.M0015</span><strong>Обнаружение состязательных входных данных</strong><p>Оценивайте запросы до вызова инференса или применяйте политику таймаутов для запросов, потребляющих чрезмерные ресурсы.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Контроль доступа к API модели может помешать злоумышленнику выполнять чрезмерное количество запросов и выводить систему из строя.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>AI Red Team</strong><p>Submit adversarial workloads and exercise dependency failures that could exhaust inference or supporting services. Apply quotas, concurrency limits, timeouts, resource isolation, and graceful degradation based on findings.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0036/"><span class="relation-id">AML.M0036</span><strong>Limit AI Workload Resource Consumption</strong><p>Limit the resources consumed by individual requests to reduce denial of service from computationally expensive inputs.</p></a>
 </div>
 
 

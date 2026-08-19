@@ -8,12 +8,12 @@ description: Злоумышленник может внедрять промпт
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 2
+mitigation_count: 3
 modified_date: "2026-05-27"
 platforms:
     - Generative AI
     - Agentic AI
-procedure_count: 13
+procedure_count: 18
 source_name: Indirect
 subtechnique_count: 0
 subtechnique_of: AML.T0051
@@ -55,6 +55,7 @@ url: /techniques/AML.T0051.001/
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0024/"><span class="relation-id">AML.M0024</span><strong>Логирование телеметрии ИИ</strong><p>Логирование телеметрии может помочь выявить отправку небезопасных промптов в LLM.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0033/"><span class="relation-id">AML.M0033</span><strong>Валидация входных и выходных данных компонентов ИИ-агента</strong><p>Валидация может помешать злоумышленникам выполнять промпт-инъекции, способные повлиять на агентные рабочие процессы.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>AI Red Team</strong><p>Place controlled malicious instructions in external or retrieved content processed by the system. Improve content trust boundaries, retrieval controls, instruction isolation, and restrictions on resulting actions.</p></a>
 </div>
 
 
@@ -72,6 +73,11 @@ url: /techniques/AML.T0051.001/
 <a class="relation-item" href="/studies/AML.CS0045/"><span class="relation-id">AML.CS0045</span><strong>Эксфильтрация данных через MCP-сервер, используемый Cursor</strong><span class="relation-meta">Актор: Backslash Security Research Team / Тактика: AML.TA0005 Выполнение</span><p>При обработке вредоносного сайта MCP-сервер вернул внедренный промпт MCP-клиенту и отравил контекст LLM в Cursor. После этого Cursor выполнил промпт, встроенный в сайт.</p></a>
 <a class="relation-item" href="/studies/AML.CS0046/"><span class="relation-id">AML.CS0046</span><strong>Уничтожение данных через косвенную промпт-инъекцию, нацеленную на Claude Computer Use</strong><span class="relation-meta">Актор: HiddenLayer / Тактика: AML.TA0005 Выполнение</span><p>Когда пользователь попросил Claude взаимодействовать с PDF-файлом, встроенный промпт был выполнен.</p></a>
 <a class="relation-item" href="/studies/AML.CS0048/"><span class="relation-id">AML.CS0048</span><strong>Публично доступные интерфейсы управления ClawdBot позволили получить учетные данные и выполнить команды</strong><span class="relation-meta">Актор: Jamieson O&#39;Reilly / Тактика: AML.TA0005 Выполнение</span><p>Исследователь смог напрямую отправлять промпты ClawdBot через интерфейс управления.</p></a>
+<a class="relation-item" href="/studies/AML.CS0049/"><span class="relation-id">AML.CS0049</span><strong>Компрометация цепочки поставки через отравленный навык ClawdBot</strong><span class="relation-meta">Актор: Jamieson O&#39;Reilly / Тактика: AML.TA0005 Выполнение</span><p>Claude Code read all files that are part of the Skill, executing the malicious prompt in the `rules/logic.md` file.</p></a>
 <a class="relation-item" href="/studies/AML.CS0051/"><span class="relation-id">AML.CS0051</span><strong>Использование OpenClaw для командования и управления через промпт-инъекцию</strong><span class="relation-meta">Актор: HiddenLayer / Тактика: AML.TA0005 Выполнение</span><p>OpenClaw выполнил промпт-инъекцию, встроенную во вредоносный сайт.</p></a>
+<a class="relation-item" href="/studies/AML.CS0054/"><span class="relation-id">AML.CS0054</span><strong>Эксфильтрация данных через удаленный отравленный MCP-инструмент</strong><span class="relation-meta">Актор: Invariant Labs / Тактика: AML.TA0005 Выполнение</span><p>The agent ingested and followed malicious instructions supplied through the remote tool&#39;s model-visible definition rather than directly through an adversary-authored user message.</p></a>
 <a class="relation-item" href="/studies/AML.CS0055/"><span class="relation-id">AML.CS0055</span><strong>AI ClickFix: захват управления computer-use-агентами с помощью ClickFix</strong><span class="relation-meta">Актор: Embrace the Red / Тактика: AML.TA0005 Выполнение</span><p>Промпт инструктировал Computer Use Agent выполнить несколько действий: нажать &#34;Please see instructions to confirm&#34;, затем найти и нажать значок терминала, нажать `SHIFT+CTRL+V` и `RETURN`, после чего нажать кнопку &#34;OK&#34;.</p></a>
+<a class="relation-item" href="/studies/AML.CS0063/"><span class="relation-id">AML.CS0063</span><strong>Prompt-Based Attacks Against Gemini via Calendar Invitations</strong><span class="relation-meta">Актор: SafeBreach Research Team / Тактика: AML.TA0005 Выполнение</span><p>When the victim asked Gemini to summarize Calendar events or emails, Gemini retrieved the adversary-controlled content and incorporated it into its context.</p></a>
+<a class="relation-item" href="/studies/AML.CS0066/"><span class="relation-id">AML.CS0066</span><strong>ZombieAgent: Data Exfiltration Attack on ChatGPT</strong><span class="relation-meta">Актор: Radware Security Researchers / Тактика: AML.TA0005 Выполнение</span><p>A later, legitimate user request, such as asking ChatGPT to summarize the inbox, caused the agent to retrieve the malicious content and execute the concealed instructions. The user did not knowingly interact with the malicious email.</p></a>
+<a class="relation-item" href="/studies/AML.CS0067/"><span class="relation-id">AML.CS0067</span><strong>Claude Code GitHub Action Secret Exposure</strong><span class="relation-meta">Актор: Microsoft Defender Security Research Team / Тактика: AML.TA0005 Выполнение</span><p>Claude Code Action incorporated the malicious GitHub content into the model context. Claude interpreted the malicious content as instructions and followed the supplied instructions.</p></a>
 </div>

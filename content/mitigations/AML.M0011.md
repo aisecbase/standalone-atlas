@@ -11,9 +11,9 @@ generated: true
 generated_by: atlasgen
 ml_lifecycle:
     - Deployment
-modified_date: "2025-12-23"
+modified_date: "2026-07-31"
 source_name: Restrict Library Loading
-technique_count: 3
+technique_count: 6
 title: Ограничение загрузки библиотек
 url: /mitigations/AML.M0011/
 ---
@@ -29,4 +29,7 @@ url: /mitigations/AML.M0011/
 <a class="relation-item" href="/techniques/AML.T0011/"><span class="relation-id">AML.T0011</span><strong>Запуск пользователем</strong><p>Запрет бинарным файлам загружать внешние библиотеки может ограничить их способность выполнять вредоносный код.</p></a>
 <a class="relation-item" href="/techniques/AML.T0011.000/"><span class="relation-id">AML.T0011.000</span><strong>Небезопасные ИИ-артефакты</strong><p>Ограничьте загрузку библиотек ML-артефактами.</p></a>
 <a class="relation-item" href="/techniques/AML.T0011.001/"><span class="relation-id">AML.T0011.001</span><strong>Вредоносный пакет</strong><p>Запрет пакетам загружать внешние библиотеки может ограничить их способность выполнять вредоносный код.</p></a>
+<a class="relation-item" href="/techniques/AML.T0050/"><span class="relation-id">AML.T0050</span><strong>Интерпретатор команд и сценариев</strong><p>Restrict library loading so command and script interpreters cannot load untrusted libraries as an execution mechanism.</p></a>
+<a class="relation-item" href="/techniques/AML.T0074/"><span class="relation-id">AML.T0074</span><strong>Маскировка</strong><p>Restrict library loading to trusted locations and approved libraries so disguised malicious libraries cannot be loaded as legitimate dependencies.</p></a>
+<a class="relation-item" href="/techniques/AML.T0090/"><span class="relation-id">AML.T0090</span><strong>Дамп учетных данных ОС</strong><p>Restrict library loading to block credential-dumping paths that inject or load malicious code into processes holding authentication material.</p></a>
 </div>

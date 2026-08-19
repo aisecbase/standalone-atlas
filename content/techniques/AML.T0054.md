@@ -8,12 +8,12 @@ description: Злоумышленники могут побуждать боль
 generated: true
 generated_by: atlasgen
 maturity: realized
-mitigation_count: 3
+mitigation_count: 4
 modified_date: "2026-05-27"
 platforms:
     - Generative AI
     - Agentic AI
-procedure_count: 5
+procedure_count: 8
 source_name: LLM Jailbreak
 subtechnique_count: 0
 subtechnique_of: ""
@@ -69,6 +69,7 @@ url: /techniques/AML.T0054/
 <a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Защитные ограничения (Guardrails) для генеративного ИИ</strong><p>Защитные ограничения могут предотвращать вредоносные входные данные, способные привести к джейлбрейку.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0021/"><span class="relation-id">AML.M0021</span><strong>Правила и инструкции для генеративного ИИ</strong><p>Инструкции для модели могут предписывать ей отказываться отвечать на небезопасные входные данные.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0022/"><span class="relation-id">AML.M0022</span><strong>Выравнивание модели генеративного ИИ</strong><p>Выравнивание модели может повысить параметрическую безопасность модели, уводя ее от небезопасных промптов и ответов.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>AI Red Team</strong><p>Exercise manual and automated multi-turn, multilingual, encoded, transformed, and multimodal jailbreaks. Incorporate successful cases into guardrails, guidelines, alignment, monitoring, and regression evaluations.</p></a>
 </div>
 
 
@@ -80,6 +81,9 @@ url: /techniques/AML.T0054/
 <a class="relation-item" href="/studies/AML.CS0051/"><span class="relation-id">AML.CS0051</span><strong>Использование OpenClaw для командования и управления через промпт-инъекцию</strong><span class="relation-meta">Актор: HiddenLayer / Тактика: AML.TA0007 Уклонение от защиты</span><p>Злоумышленник использовал управляющие последовательности `&lt;think&gt;`, чтобы подделать внутреннее рассуждение модели и обойти ее защитные ограничения.</p></a>
 <a class="relation-item" href="/studies/AML.CS0052/"><span class="relation-id">AML.CS0052</span><strong>LLMSmith: уязвимости RCE в приложениях с интеграцией LLM</strong><span class="relation-meta">Актор: Researchers at University of Chinese Academy of Sciences, Shandong University, and University of New South Wales / Тактика: AML.TA0007 Уклонение от защиты</span><p>В целевых приложениях, где ИИ-агент отказывался выполнять запрос исследователей, они использовали простые техники джейлбрейка, чтобы обойти защитные ограничения LLM.</p></a>
 <a class="relation-item" href="/studies/AML.CS0057/"><span class="relation-id">AML.CS0057</span><strong>Storm-2139: обход защитных ограничений Azure OpenAI</strong><span class="relation-meta">Актор: Storm-2139 / Тактика: AML.TA0007 Уклонение от защиты</span><p>Storm-2139 намеренно обходила защитные механизмы и фильтры контента Azure OpenAI Service, чтобы генерировать запрещенные результаты. Microsoft сообщила, что злоумышленники итеративно дорабатывали заблокированные промпты, подставляли описания знаменитостей и использовали измененные формулировки или техническую нотацию для обхода фильтров.</p></a>
+<a class="relation-item" href="/studies/AML.CS0063/"><span class="relation-id">AML.CS0063</span><strong>Prompt-Based Attacks Against Gemini via Calendar Invitations</strong><span class="relation-meta">Актор: SafeBreach Research Team / Тактика: AML.TA0007 Уклонение от защиты</span><p>The malicious prompt caused Gemini to follow roleplay and instruction-override content to replace its normal response with adversary-selected toxic content or promotions.</p></a>
+<a class="relation-item" href="/studies/AML.CS0066/"><span class="relation-id">AML.CS0066</span><strong>ZombieAgent: Data Exfiltration Attack on ChatGPT</strong><span class="relation-meta">Актор: Radware Security Researchers / Тактика: AML.TA0007 Уклонение от защиты</span><p>The researchers bypassed ChatGPT&#39;s restriction against dynamically constructing or modifying URLs by supplying an indexed dictionary of static URLs. ChatGPT encoded collected data by selecting and opening the URL corresponding to each character and position.</p></a>
+<a class="relation-item" href="/studies/AML.CS0067/"><span class="relation-id">AML.CS0067</span><strong>Claude Code GitHub Action Secret Exposure</strong><span class="relation-meta">Актор: Microsoft Defender Security Research Team / Тактика: AML.TA0007 Уклонение от защиты</span><p>The prompt used benign compliance review framing and instructions to remove the credential prefix to bypass Claude&#39;s refusal behavior for emitting a recognizable API key.</p></a>
 </div>
 
 

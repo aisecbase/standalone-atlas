@@ -8,7 +8,7 @@ description: Злоумышленники могут добавлять подд
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 0
+mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:
     - Generative AI
@@ -34,6 +34,13 @@ url: /techniques/AML.T0071/
 
 <div class="relation-list">
 <a class="relation-item" href="/tactics/AML.TA0007/"><span class="relation-id">AML.TA0007</span><strong>Уклонение от защиты</strong></a>
+</div>
+
+
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Защитные ограничения (Guardrails) для генеративного ИИ</strong><p>Validate retrieved documents and block nested false entries, malicious instructions, and unsupported content.</p></a>
 </div>
 
 

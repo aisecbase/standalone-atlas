@@ -8,11 +8,11 @@ description: Злоумышленники могут искать на публ�
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 0
+mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:
     - Enterprise
-procedure_count: 2
+procedure_count: 3
 source_name: Search Open Websites/Domains
 subtechnique_count: 1
 subtechnique_of: ""
@@ -41,9 +41,17 @@ url: /techniques/AML.T0095/
 </div>
 
 
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0000/"><span class="relation-id">AML.M0000</span><strong>Ограничение публичного раскрытия информации</strong><p>Limit public technical and organizational information that reveals the AI stack, services, personnel, or other targeting details on websites and domains.</p></a>
+</div>
+
+
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
 <a class="relation-item" href="/studies/AML.CS0039/"><span class="relation-id">AML.CS0039</span><strong>Living Off AI: промпт-инъекция через Jira Service Management</strong><span class="relation-meta">Актор: Cato CTRL / Тактика: AML.TA0002 Разведка</span><p>Исследователи использовали поисковый запрос `site:atlassian.net/servicedesk inurl:portal`, чтобы выявить организации, использующие сервисные порталы Atlassian как потенциальные цели.</p></a>
 <a class="relation-item" href="/studies/AML.CS0061/"><span class="relation-id">AML.CS0061</span><strong>AI in the Middle: веб-сервисы ИИ как ретрансляторы C2</strong><span class="relation-meta">Актор: Check Point Research / Тактика: AML.TA0002 Разведка</span><p>Исследователи оценили публичные ИИ-ассистенты с анонимным или неаутентифицированным веб-просмотром и поведением получения URL, чтобы выявить сервисы, способные запрашивать произвольные URL, подконтрольные злоумышленнику, без API-учетных данных. Исследователи обнаружили, что Grok и Microsoft Copilot соответствуют этим условиям.</p></a>
+<a class="relation-item" href="/studies/AML.CS0065/"><span class="relation-id">AML.CS0065</span><strong>Model Namespace Reuse Supply Chain Attack</strong><span class="relation-meta">Актор: Unit 42 Researchers / Тактика: AML.TA0002 Разведка</span><p>Unit 42 reviewed public Hugging Face-backed model catalogs, Hugging Face author pages, and open-source repositories to identify references to models whose original author namespace had been deleted and was available for registration. They identified stale references in cloud catalogs, source code, documentation, default arguments, and example notebooks.</p></a>
 </div>

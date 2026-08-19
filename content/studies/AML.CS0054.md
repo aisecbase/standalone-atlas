@@ -16,24 +16,36 @@ procedure:
       tactic_name: Подготовка ресурсов
       technique: AML.T0065
       technique_name: Создание промптов для LLM
-    - description: Исследователи разместили отравленный MCP-сервер, где вредоносные инструкции были скрыты в docstring-описании одного из предоставляемых инструментов.
-      description_line: Исследователи разместили отравленный MCP-сервер, где вредоносные инструкции были скрыты в docstring-описании одного из предоставляемых инструментов.
+    - description: The researchers hosted a poisoned MCP server that contains the malicious instructions hidden in the docstring of one of the provided tools.
+      description_line: The researchers hosted a poisoned MCP server that contains the malicious instructions hidden in the docstring of one of the provided tools.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
-      technique: AML.T0104
-      technique_name: Публикация отравленного инструмента ИИ-агента
+      technique: AML.T0115.002
+      technique_name: AI Agent Tools
     - description: Исследователи разместили отравленный MCP-инструмент, где вредоносные инструкции были скрыты в docstring-описании этого инструмента.
       description_line: Исследователи разместили отравленный MCP-инструмент, где вредоносные инструкции были скрыты в docstring-описании этого инструмента.
       tactic: AML.TA0004
       tactic_name: Первичный доступ
       technique: AML.T0010.005
       technique_name: Инструмент ИИ-агента
-    - description: Когда пользователь вызывал удаленный MCP-инструмент, промпт-инъекция, скрытая в docstring-описании, выполнялась локально.
-      description_line: Когда пользователь вызывал удаленный MCP-инструмент, промпт-инъекция, скрытая в docstring-описании, выполнялась локально.
+    - description: The MCP tool's model-visible docstring contained malicious instructions directing the agent to read credential files, conceal the additional actions from the user, and place the credential contents in an otherwise unnecessary tool parameter.
+      description_line: The MCP tool's model-visible docstring contained malicious instructions directing the agent to read credential files, conceal the additional actions from the user, and place the credential contents in an otherwise unnecessary tool parameter.
+      tactic: AML.TA0006
+      tactic_name: Закрепление
+      technique: AML.T0110.000
+      technique_name: Definition and Instructions
+    - description: When the user made a request that represented the poisoned tool's functionality, the agent invoked the poisoned MCP tool and acted on the malicious instructions contained in its definition.
+      description_line: When the user made a request that represented the poisoned tool's functionality, the agent invoked the poisoned MCP tool and acted on the malicious instructions contained in its definition.
       tactic: AML.TA0005
       tactic_name: Выполнение
-      technique: AML.T0051.000
-      technique_name: Прямая промпт-инъекция
+      technique: AML.T0011.002
+      technique_name: Отравленный инструмент ИИ-агента
+    - description: The agent ingested and followed malicious instructions supplied through the remote tool's model-visible definition rather than directly through an adversary-authored user message.
+      description_line: The agent ingested and followed malicious instructions supplied through the remote tool's model-visible definition rather than directly through an adversary-authored user message.
+      tactic: AML.TA0005
+      tactic_name: Выполнение
+      technique: AML.T0051.001
+      technique_name: Косвенная промпт-инъекция
     - description: Промпт вызывал инструмент агента, способный читать файлы из файловой системы жертвы.
       description_line: Промпт вызывал инструмент агента, способный читать файлы из файловой системы жертвы.
       tactic: AML.TA0005
@@ -64,7 +76,7 @@ procedure:
       tactic_name: Воздействие
       technique: AML.T0048.003
       technique_name: Ущерб пользователям
-procedure_count: 9
+procedure_count: 11
 references:
     - title: 'MCP Security Notification: Tool Poisoning Attacks'
       url: https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks

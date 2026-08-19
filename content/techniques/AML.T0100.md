@@ -8,7 +8,7 @@ description: 'Злоумышленники могут создавать обм�
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 0
+mitigation_count: 2
 modified_date: "2026-05-27"
 platforms:
     - Agentic AI
@@ -29,6 +29,14 @@ url: /techniques/AML.T0100/
 
 <div class="relation-list">
 <a class="relation-item" href="/tactics/AML.TA0005/"><span class="relation-id">AML.TA0005</span><strong>Выполнение</strong></a>
+</div>
+
+
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Защитные ограничения (Guardrails) для генеративного ИИ</strong><p>Apply guardrails to untrusted web content and proposed computer-use actions.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0021/"><span class="relation-id">AML.M0021</span><strong>Правила и инструкции для генеративного ИИ</strong><p>Instruct agents to treat webpage instructions as untrusted and request approval for consequential actions.</p></a>
 </div>
 
 

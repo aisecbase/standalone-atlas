@@ -8,17 +8,18 @@ description: Злоумышленники могут использовать с
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 11
-modified_date: "2026-05-27"
+mitigation_count: 12
+modified_date: "2026-07-31"
 platforms:
     - Agentic AI
-procedure_count: 15
+procedure_count: 23
 source_name: AI Agent Tool Invocation
 subtechnique_count: 0
 subtechnique_of: ""
 tactics:
     - AML.TA0005
     - AML.TA0012
+    - AML.TA0015
 title: Вызов инструментов ИИ-агента
 url: /techniques/AML.T0053/
 ---
@@ -35,6 +36,7 @@ url: /techniques/AML.T0053/
 <div class="relation-list">
 <a class="relation-item" href="/tactics/AML.TA0005/"><span class="relation-id">AML.TA0005</span><strong>Выполнение</strong></a>
 <a class="relation-item" href="/tactics/AML.TA0012/"><span class="relation-id">AML.TA0012</span><strong>Повышение привилегий</strong></a>
+<a class="relation-item" href="/tactics/AML.TA0015/"><span class="relation-id">AML.TA0015</span><strong>Латеральное перемещение</strong></a>
 </div>
 
 
@@ -52,6 +54,7 @@ url: /techniques/AML.T0053/
 <a class="relation-item" href="/mitigations/AML.M0030/"><span class="relation-id">AML.M0030</span><strong>Ограничение вызова инструментов ИИ-агента при работе с недоверенными данными</strong><p>Ограничение автоматического использования инструментов при наличии недоверенных данных может помешать злоумышленникам вызывать инструменты через промпт-инъекции.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0032/"><span class="relation-id">AML.M0032</span><strong>Сегментация компонентов ИИ-агента</strong><p>Сегментация может помешать злоумышленникам использовать инструменты в агентном рабочем процессе для выполнения небезопасных действий, влияющих на другие компоненты.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0033/"><span class="relation-id">AML.M0033</span><strong>Валидация входных и выходных данных компонентов ИИ-агента</strong><p>Валидация может помешать злоумышленникам использовать инструменты в агентном рабочем процессе для генерации небезопасных выходных данных.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>AI Red Team</strong><p>Attempt to select unauthorized tools, supply unsafe arguments, exceed user privileges, or chain tools into harmful actions. Correct permissions, argument validation, sandboxing, action controls, and approval requirements.</p></a>
 </div>
 
 
@@ -73,4 +76,12 @@ url: /techniques/AML.T0053/
 <a class="relation-item" href="/studies/AML.CS0054/"><span class="relation-id">AML.CS0054</span><strong>Эксфильтрация данных через удаленный отравленный MCP-инструмент</strong><span class="relation-meta">Актор: Invariant Labs / Тактика: AML.TA0005 Выполнение</span><p>Промпт вызывал инструмент агента, способный читать файлы из файловой системы жертвы.</p></a>
 <a class="relation-item" href="/studies/AML.CS0055/"><span class="relation-id">AML.CS0055</span><strong>AI ClickFix: захват управления computer-use-агентами с помощью ClickFix</strong><span class="relation-meta">Актор: Embrace the Red / Тактика: AML.TA0012 Повышение привилегий</span><p>Нажатие кнопки &#34;see instructions&#34; выполняло JavaScript, который помещал вредоносную команду в буфер обмена агента. Затем агент следовал инструкциям: открывал терминал, вставлял содержимое буфера обмена и нажимал Return, выполняя команду.</p></a>
 <a class="relation-item" href="/studies/AML.CS0062/"><span class="relation-id">AML.CS0062</span><strong>RCE-уязвимость в Semantic Kernel Search Plugin</strong><span class="relation-meta">Актор: Microsoft Defender Security Research Team / Тактика: AML.TA0012 Повышение привилегий</span><p>Агент Semantic Kernel вызвал инструмент поиска с вредоносным аргументом, предназначенным для выхода за пределы строки фильтра.</p></a>
+<a class="relation-item" href="/studies/AML.CS0063/"><span class="relation-id">AML.CS0063</span><strong>Prompt-Based Attacks Against Gemini via Calendar Invitations</strong><span class="relation-meta">Актор: SafeBreach Research Team / Тактика: AML.TA0012 Повышение привилегий</span><p>The malicious prompt caused Gemini to invoke Google Calendar tools using the victim&#39;s authorized access to modify Calendar data.</p></a>
+<a class="relation-item" href="/studies/AML.CS0063/"><span class="relation-id">AML.CS0063</span><strong>Prompt-Based Attacks Against Gemini via Calendar Invitations</strong><span class="relation-meta">Актор: SafeBreach Research Team / Тактика: AML.TA0012 Повышение привилегий</span><p>The malicious prompt caused Gemini to invoke Google Home using the victim&#39;s authorized connection to control connected windows, a boiler, or lights.</p></a>
+<a class="relation-item" href="/studies/AML.CS0063/"><span class="relation-id">AML.CS0063</span><strong>Prompt-Based Attacks Against Gemini via Calendar Invitations</strong><span class="relation-meta">Актор: SafeBreach Research Team / Тактика: AML.TA0012 Повышение привилегий</span><p>The malicious prompt caused Gemini to use Android Utilities to open an adversary-controlled URL in the victim&#39;s browser and initiate a download.</p></a>
+<a class="relation-item" href="/studies/AML.CS0063/"><span class="relation-id">AML.CS0063</span><strong>Prompt-Based Attacks Against Gemini via Calendar Invitations</strong><span class="relation-meta">Актор: SafeBreach Research Team / Тактика: AML.TA0012 Повышение привилегий</span><p>The malicious prompt caused Gemini to use Android Utilities and an application link or redirect chain to invoke Zoom.</p></a>
+<a class="relation-item" href="/studies/AML.CS0064/"><span class="relation-id">AML.CS0064</span><strong>Poisoned GGUF Templates: Inference-Time Supply Chain Attack</strong><span class="relation-meta">Актор: Pillar Security, Fujitsu Research of Europe / Тактика: AML.TA0005 Выполнение</span><p>When the poisoned model operates as part of an AI agent, the injected instruction redirects the agent&#39;s tool selection, tool arguments, or execution order toward the attacker&#39;s objective while allowing the legitimate task to continue.</p></a>
+<a class="relation-item" href="/studies/AML.CS0066/"><span class="relation-id">AML.CS0066</span><strong>ZombieAgent: Data Exfiltration Attack on ChatGPT</strong><span class="relation-meta">Актор: Radware Security Researchers / Тактика: AML.TA0012 Повышение привилегий</span><p>The malicious instructions caused ChatGPT to invoke connector and web-access capabilities available under the victim&#39;s authority. This gave the prompt access to information and actions that were not directly available to the researchers.</p></a>
+<a class="relation-item" href="/studies/AML.CS0066/"><span class="relation-id">AML.CS0066</span><strong>ZombieAgent: Data Exfiltration Attack on ChatGPT</strong><span class="relation-meta">Актор: Radware Security Researchers / Тактика: AML.TA0015 Латеральное перемещение</span><p>The malicious instructions caused ChatGPT to reproduce the prompt in new emails or documents and distribute them to collected contacts. If another AI agent processed the poisoned content, the attack could propagate between users or connected AI systems.</p></a>
+<a class="relation-item" href="/studies/AML.CS0067/"><span class="relation-id">AML.CS0067</span><strong>Claude Code GitHub Action Secret Exposure</strong><span class="relation-meta">Актор: Microsoft Defender Security Research Team / Тактика: AML.TA0005 Выполнение</span><p>Claude invoked its built-in Read tool on `/proc/self/environ`. Read did not execute within the Bubblewrap and scrubbed-environment boundary applied to Bash subprocesses.</p></a>
 </div>

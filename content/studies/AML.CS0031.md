@@ -20,14 +20,14 @@ procedure:
       technique: AML.T0018.002
       technique_name: Встраивание вредоносного ПО
     - description: |-
-        Злоумышленник загрузил модель на Hugging Face.
+        The adversary uploaded the model to Hugging Face.
 
-        В обоих случаях, наблюдавшихся ReversingLabs, вредоносные модели не пытались имитировать популярную легитимную модель.
-      description_line: Злоумышленник загрузил модель на Hugging Face. В обоих случаях, наблюдавшихся ReversingLabs, вредоносные модели не пытались имитировать популярную легитимную модель.
+        In both instances observed by the ReversingLab, the malicious models did not make any attempt to mimic a popular legitimate model.
+      description_line: The adversary uploaded the model to Hugging Face. In both instances observed by the ReversingLab, the malicious models did not make any attempt to mimic a popular legitimate model.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
-      technique: AML.T0058
-      technique_name: Публикация отравленных моделей
+      technique: AML.T0115.001
+      technique_name: Models
     - description: |-
         Злоумышленнику удалось избежать обнаружения [Picklescan](https://github.com/mmaitre314/picklescan), который Hugging Face использует для пометки вредоносных моделей. Это произошло потому, что модель невозможно было полностью десериализовать.
 

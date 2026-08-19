@@ -8,11 +8,9 @@ description: Злоумышленники могут нацеливаться н
 generated: true
 generated_by: atlasgen
 maturity: realized
-mitigation_count: 0
-modified_date: "2026-05-27"
+mitigation_count: 1
+modified_date: "2026-07-31"
 platforms:
-    - Predictive AI
-    - Generative AI
     - Agentic AI
 procedure_count: 3
 source_name: AI Agent Tool
@@ -53,6 +51,13 @@ url: /techniques/AML.T0010.005/
 <a class="relation-item" href="/techniques/AML.T0010.002/"><span class="relation-id">AML.T0010.002</span><strong>Данные</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0010.003/"><span class="relation-id">AML.T0010.003</span><strong>Модель</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0010.004/"><span class="relation-id">AML.T0010.004</span><strong>Реестр контейнеров</strong><span class="relation-meta">Подтехника</span></a>
+</div>
+
+
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>AI Red Team</strong><p>Introduce a controlled untrusted agent tool or tool definition. Verify source authorization, integrity, review, permission boundaries, and safe activation.</p></a>
 </div>
 
 

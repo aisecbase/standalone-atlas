@@ -14,7 +14,7 @@ platforms:
     - Predictive AI
     - Generative AI
     - Agentic AI
-procedure_count: 5
+procedure_count: 6
 source_name: Erode AI Model Integrity
 subtechnique_count: 0
 subtechnique_of: ""
@@ -54,4 +54,5 @@ url: /techniques/AML.T0031/
 <a class="relation-item" href="/studies/AML.CS0009/"><span class="relation-id">AML.CS0009</span><strong>Отравление Tay</strong><span class="relation-meta">Актор: 4chan Users / Тактика: AML.TA0011 Воздействие</span><p>В результате этой скоординированной атаки диалоговые алгоритмы Tay начали учиться генерировать неприемлемые материалы. Усвоение Tay этой оскорбительной лексики привело к тому, что бот начал повторять ее без запроса при взаимодействии с обычными пользователями.</p></a>
 <a class="relation-item" href="/studies/AML.CS0019/"><span class="relation-id">AML.CS0019</span><strong>PoisonGPT</strong><span class="relation-meta">Актор: Mithril Security Researchers / Тактика: AML.TA0011 Воздействие</span><p>Из-за ложной информации в выходных данных пользователи могут потерять доверие к приложению.</p></a>
 <a class="relation-item" href="/studies/AML.CS0025/"><span class="relation-id">AML.CS0025</span><strong>Отравление крупномасштабных веб-датасетов: атака split-view</strong><span class="relation-meta">Актор: Researchers from Google Deepmind, ETH Zurich, NVIDIA, Robust Intelligence, and Google / Тактика: AML.TA0011 Воздействие</span><p>Модели, обученные на таком датасете, также будут отравлены, что нарушит их целостность. Исследователи показывают, что для успешной атаки достаточно отравить всего 0,01% данных.</p></a>
+<a class="relation-item" href="/studies/AML.CS0064/"><span class="relation-id">AML.CS0064</span><strong>Poisoned GGUF Templates: Inference-Time Supply Chain Attack</strong><span class="relation-meta">Актор: Pillar Security, Fujitsu Research of Europe / Тактика: AML.TA0011 Воздействие</span><p>The injected instruction causes the model to produce plausible but incorrect or attacker-influenced responses. The model continues to behave normally when the trigger is absent, making the integrity compromise difficult to detect.</p></a>
 </div>

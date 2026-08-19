@@ -8,7 +8,7 @@ description: Злоумышленники могут нацеливаться н
 generated: true
 generated_by: atlasgen
 maturity: realized
-mitigation_count: 2
+mitigation_count: 3
 modified_date: "2026-05-27"
 platforms:
     - Predictive AI
@@ -59,6 +59,7 @@ url: /techniques/AML.T0010.001/
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0006/"><span class="relation-id">AML.M0006</span><strong>Использование ансамблевых методов</strong><p>Использование нескольких разных моделей обеспечивает минимальную потерю производительности, если уязвимость обнаружена в инструменте для одной модели или семейства моделей.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0013/"><span class="relation-id">AML.M0013</span><strong>Подписание кода</strong><p>Требуйте корректной подписи драйверов и ML-фреймворков.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>AI Red Team</strong><p>Introduce controlled untrusted AI packages, libraries, plugins, or software components. Verify dependency controls, scanning, signing, approval, isolation, and safe installation.</p></a>
 </div>
 
 

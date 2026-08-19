@@ -14,7 +14,7 @@ platforms:
     - Predictive AI
     - Generative AI
     - Agentic AI
-procedure_count: 2
+procedure_count: 3
 source_name: Embed Malware
 subtechnique_count: 0
 subtechnique_of: AML.T0018
@@ -56,6 +56,7 @@ url: /techniques/AML.T0018.002/
 <div class="relation-list">
 <a class="relation-item" href="/techniques/AML.T0018.000/"><span class="relation-id">AML.T0018.000</span><strong>Отравление ИИ-модели</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0018.001/"><span class="relation-id">AML.T0018.001</span><strong>Изменение архитектуры ИИ-модели</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0018.003/"><span class="relation-id">AML.T0018.003</span><strong>Modify Prompt Construction Logic</strong><span class="relation-meta">Подтехника</span></a>
 </div>
 
 
@@ -71,4 +72,5 @@ url: /techniques/AML.T0018.002/
 <div class="relation-list procedure-relations">
 <a class="relation-item" href="/studies/AML.CS0027/"><span class="relation-id">AML.CS0027</span><strong>Путаница с организациями на Hugging Face</strong><span class="relation-meta">Актор: threlfall_hax / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Исследователь встроил [Sliver](https://github.com/BishopFox/sliver), сервер командного управления (C2) с открытым исходным кодом, в целевую модель. Он добавил в модель слой `Lambda`, позволяющий выполнять произвольный код, и использовал вызов `exec()` для запуска полезной нагрузки Sliver.</p></a>
 <a class="relation-item" href="/studies/AML.CS0031/"><span class="relation-id">AML.CS0031</span><strong>Вредоносные модели на Hugging Face</strong><span class="relation-meta">Актор: Unknown / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Злоумышленник встроил вредоносное ПО в ИИ-модель, хранившуюся в pickle-файле. Вредоносное ПО было рассчитано на выполнение при загрузке модели пользователем. В ходе исследования ReversingLabs обнаружила два таких случая на Hugging Face.</p></a>
+<a class="relation-item" href="/studies/AML.CS0065/"><span class="relation-id">AML.CS0065</span><strong>Model Namespace Reuse Supply Chain Attack</strong><span class="relation-meta">Актор: Unit 42 Researchers / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Unit 42 prepared attacker-controlled model artifacts containing a payload that initiated a reverse shell when deployed or loaded.</p></a>
 </div>

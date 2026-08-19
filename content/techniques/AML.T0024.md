@@ -7,8 +7,8 @@ created_date: "2021-05-13"
 description: Злоумышленники могут эксфильтровать приватную информацию через доступ к API инференса ИИ-модели. Известно, что ИИ-модели могут раскрывать приватную информацию о своих обучающих данных, например при выводе...
 generated: true
 generated_by: atlasgen
-maturity: feasible
-mitigation_count: 3
+maturity: realized
+mitigation_count: 4
 modified_date: "2026-05-27"
 platforms:
     - Predictive AI
@@ -57,4 +57,5 @@ url: /techniques/AML.T0024/
 <a class="relation-item" href="/mitigations/AML.M0004/"><span class="relation-id">AML.M0004</span><strong>Ограничение количества запросов к ИИ-модели</strong><p>Ограничьте объем API-запросов за заданный период, чтобы регулировать объем и детализацию потенциально чувствительной информации, которую может получить злоумышленник.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Злоумышленники могут использовать неограниченный доступ к API, чтобы собрать обучающий набор данных для прокси-модели и раскрыть приватную информацию.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0024/"><span class="relation-id">AML.M0024</span><strong>Логирование телеметрии ИИ</strong><p>Логирование телеметрии может помочь выявить эксфильтрацию чувствительных данных.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>AI Red Team</strong><p>Exercise inference interfaces for membership inference, model inversion, and functional extraction. Use findings to improve privacy controls, authentication, output restriction, rate limits, and monitoring.</p></a>
 </div>

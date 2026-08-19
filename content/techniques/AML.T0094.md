@@ -13,7 +13,7 @@ modified_date: "2026-05-27"
 platforms:
     - Generative AI
     - Agentic AI
-procedure_count: 1
+procedure_count: 2
 source_name: Delay Execution of LLM Instructions
 subtechnique_count: 0
 subtechnique_of: ""
@@ -41,4 +41,5 @@ url: /techniques/AML.T0094/
 
 <div class="relation-list procedure-relations">
 <a class="relation-item" href="/studies/AML.CS0038/"><span class="relation-id">AML.CS0038</span><strong>Внедрение инструкций для отложенного автоматического вызова инструмента ИИ-агента</strong><span class="relation-meta">Актор: Embrace the Red / Тактика: AML.TA0007 Уклонение от защиты</span><p>Вредоносный промпт предписывал Gemini отложить выполнение расширения Workspace до следующего взаимодействия. Это делалось для обхода средств контроля, ограничивающих автоматический вызов инструментов.</p></a>
+<a class="relation-item" href="/studies/AML.CS0063/"><span class="relation-id">AML.CS0063</span><strong>Prompt-Based Attacks Against Gemini via Calendar Invitations</strong><span class="relation-meta">Актор: SafeBreach Research Team / Тактика: AML.TA0007 Уклонение от защиты</span><p>The malicious instructions deferred the action until a future victim interaction, avoiding restrictions imposed during the original retrieval turn.</p></a>
 </div>

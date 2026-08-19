@@ -8,7 +8,7 @@ description: Злоумышленники могут использовать у
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 0
+mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:
     - Enterprise
@@ -45,6 +45,13 @@ url: /techniques/AML.T0091.000/
 
 <div class="relation-list">
 <a class="relation-item" href="/techniques/AML.T0091.001/"><span class="relation-id">AML.T0091.001</span><strong>Cookie веб-сессии</strong><span class="relation-meta">Подтехника</span></a>
+</div>
+
+
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Enforce authorization and monitor production AI API use for anomalous activity associated with replayed access tokens.</p></a>
 </div>
 
 

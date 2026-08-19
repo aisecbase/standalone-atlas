@@ -9,12 +9,12 @@ generated: true
 generated_by: atlasgen
 maturity: realized
 mitigation_count: 0
-modified_date: "2026-05-27"
+modified_date: "2026-07-31"
 platforms:
     - Agentic AI
-procedure_count: 1
+procedure_count: 0
 source_name: AI Agent Tool Poisoning
-subtechnique_count: 0
+subtechnique_count: 3
 subtechnique_of: ""
 tactics:
     - AML.TA0006
@@ -34,8 +34,10 @@ url: /techniques/AML.T0110/
 </div>
 
 
-## Примеры процедур из кейсов
+## Подтехники
 
-<div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0053/"><span class="relation-id">AML.CS0053</span><strong>Эксфильтрация писем через отравленный MCP-сервер Postmark</strong><span class="relation-meta">Актор: Unknown Bad Actor / Тактика: AML.TA0006 Закрепление</span><p>После подключения к ИИ-агентам организации отравленный MCP-сервер Postmark продолжал действовать.</p></a>
+<div class="relation-list">
+<a class="relation-item" href="/techniques/AML.T0110.000/"><span class="relation-id">AML.T0110.000</span><strong>Definition and Instructions</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0110.001/"><span class="relation-id">AML.T0110.001</span><strong>Implementation</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0110.002/"><span class="relation-id">AML.T0110.002</span><strong>Runtime Response</strong><span class="relation-meta">Подтехника</span></a>
 </div>

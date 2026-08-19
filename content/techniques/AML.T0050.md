@@ -8,7 +8,7 @@ description: Злоумышленники могут злоупотреблят�
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 0
+mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:
     - Enterprise
@@ -33,6 +33,13 @@ url: /techniques/AML.T0050/
 
 <div class="relation-list">
 <a class="relation-item" href="/tactics/AML.TA0005/"><span class="relation-id">AML.TA0005</span><strong>Выполнение</strong></a>
+</div>
+
+
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0011/"><span class="relation-id">AML.M0011</span><strong>Ограничение загрузки библиотек</strong><p>Restrict library loading so command and script interpreters cannot load untrusted libraries as an execution mechanism.</p></a>
 </div>
 
 

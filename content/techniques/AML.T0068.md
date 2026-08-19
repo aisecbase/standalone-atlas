@@ -8,12 +8,12 @@ description: Злоумышленники могут скрывать или и�
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 0
+mitigation_count: 2
 modified_date: "2026-05-27"
 platforms:
     - Generative AI
     - Agentic AI
-procedure_count: 9
+procedure_count: 10
 source_name: LLM Prompt Obfuscation
 subtechnique_count: 0
 subtechnique_of: ""
@@ -37,6 +37,14 @@ url: /techniques/AML.T0068/
 </div>
 
 
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Защитные ограничения (Guardrails) для генеративного ИИ</strong><p>Apply input guardrails that decode, normalize, inspect, and block concealed malicious instructions.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>AI Red Team</strong><p>Test encoded, transformed, visually hidden, multilingual, and multimodal instructions. Use successful bypasses to improve normalization, decoding, content inspection, and detection controls.</p></a>
+</div>
+
+
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
@@ -49,4 +57,5 @@ url: /techniques/AML.T0068/
 <a class="relation-item" href="/studies/AML.CS0046/"><span class="relation-id">AML.CS0046</span><strong>Уничтожение данных через косвенную промпт-инъекцию, нацеленную на Claude Computer Use</strong><span class="relation-meta">Актор: HiddenLayer / Тактика: AML.TA0007 Уклонение от защиты</span><p>Вредоносная команда была обфусцирована с помощью кодирования base64 и ROT13. Промпт содержал инструкции для Claude по декодированию этой команды.</p></a>
 <a class="relation-item" href="/studies/AML.CS0059/"><span class="relation-id">AML.CS0059</span><strong>EchoLeak: промпт-инъекция нулевого клика против M365 Copilot для эксфильтрации данных</strong><span class="relation-meta">Актор: Aim Labs / Тактика: AML.TA0007 Уклонение от защиты</span><p>Промпт был сформулирован как безобидный деловой текст, а не как очевидно вредоносная инструкция, чтобы не вызвать подозрений у пользователя.</p></a>
 <a class="relation-item" href="/studies/AML.CS0061/"><span class="relation-id">AML.CS0061</span><strong>AI in the Middle: веб-сервисы ИИ как ретрансляторы C2</strong><span class="relation-meta">Актор: Check Point Research / Тактика: AML.TA0007 Уклонение от защиты</span><p>Когда некоторые промпты блокировались защитными механизмами модели, исследователи кодировали или шифровали данные полезной нагрузки в высокоэнтропийные блоки, чтобы снизить вероятность распознавания содержимого как вредоносного.</p></a>
+<a class="relation-item" href="/studies/AML.CS0066/"><span class="relation-id">AML.CS0066</span><strong>ZombieAgent: Data Exfiltration Attack on ChatGPT</strong><span class="relation-meta">Актор: Radware Security Researchers / Тактика: AML.TA0007 Уклонение от защиты</span><p>The prompt injection was visually concealed in externally controlled content using techniques such as white-on-white text or microscopic font sizes. ChatGPT could process the instructions even though they were not apparent to the user.</p></a>
 </div>

@@ -1,8 +1,8 @@
 ---
 atlas_id: AML.T0008.005
 atlas_type: technique
-attack_ref_id: ""
-attack_ref_url: ""
+attack_ref_id: T1583.007
+attack_ref_url: https://attack.mitre.org/techniques/T1583/007/
 created_date: "2026-03-30"
 description: Злоумышленники могут использовать коммерческие прокси-сервисы, которые перепродают доступ к ИИ-сервисам, например API передовых моделей. Эта инфраструктура может использоваться для проведения крупномасштабных кампаний...
 generated: true

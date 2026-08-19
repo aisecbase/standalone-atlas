@@ -8,7 +8,7 @@ description: Злоумышленники могут извлекать учет
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 0
+mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:
     - Enterprise
@@ -31,6 +31,13 @@ url: /techniques/AML.T0090/
 
 <div class="relation-list">
 <a class="relation-item" href="/tactics/AML.TA0013/"><span class="relation-id">AML.TA0013</span><strong>Доступ к учетным данным</strong></a>
+</div>
+
+
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0011/"><span class="relation-id">AML.M0011</span><strong>Ограничение загрузки библиотек</strong><p>Restrict library loading to block credential-dumping paths that inject or load malicious code into processes holding authentication material.</p></a>
 </div>
 
 
