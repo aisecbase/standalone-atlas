@@ -28,9 +28,9 @@ totals:
         needs_review: 2
     technique:
         total: 178
-        name_translated: 170
-        body_translated: 170
-        fully_translated: 129
+        name_translated: 171
+        body_translated: 171
+        fully_translated: 130
         needs_review: 41
 missing:
     - id: AML.CS0063
@@ -77,12 +77,6 @@ missing:
     - id: AML.M0036
       name: Limit AI Workload Resource Consumption
       type: mitigation
-      has_name: false
-      has_body: false
-      source_field: description
-    - id: AML.T0018.003
-      name: Modify Prompt Construction Logic
-      type: technique
       has_name: false
       has_body: false
       source_field: description

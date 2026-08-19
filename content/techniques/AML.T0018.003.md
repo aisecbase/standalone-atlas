@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-07-31"
-description: Adversaries may modify templates, role delimiters, embedded system instructions, tokenizer settings, tool-call formatting, or other artifact-bundled logic that constructs the context sent to an AI model. Model file...
+description: Злоумышленники могут изменять шаблоны, разделители ролей, встроенные системные инструкции, настройки токенизатора, форматирование вызовов инструментов или иную включенную в состав артефакта логику, которая формирует...
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
@@ -20,13 +20,11 @@ subtechnique_of: AML.T0018
 tactics:
     - AML.TA0001
     - AML.TA0006
-title: Modify Prompt Construction Logic
+title: Изменение логики формирования промпта
 url: /techniques/AML.T0018.003/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
-
-Adversaries may modify templates, role delimiters, embedded system instructions, tokenizer settings, tool-call formatting, or other artifact-bundled logic that constructs the context sent to an AI model. Model file formats such as GGUF can package this logic alongside model weights in a single distributable artifact. A compatible inference runtime may interpret the modified logic during future inference requests, enabling persistent covert instruction injection, altered instruction precedence, redirected tool use, or manipulated model output without changing model weights.
+Злоумышленники могут изменять шаблоны, разделители ролей, встроенные системные инструкции, настройки токенизатора, форматирование вызовов инструментов или иную включенную в состав артефакта логику, которая формирует контекст, передаваемый ИИ-модели. В файлах моделей таких форматов, как GGUF, эта логика может быть упакована вместе с весами модели в единый распространяемый артефакт. Совместимая среда выполнения инференса может интерпретировать измененную логику при обработке последующих запросов на инференс, что открывает возможность для устойчивого скрытого внедрения инструкций, изменения их приоритета, перенаправления вызовов инструментов или манипулирования выходными данными модели — без изменения ее весов.
 
 
 ## Тактики
