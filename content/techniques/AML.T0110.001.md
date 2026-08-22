@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-07-31"
-description: Adversaries may poison the executable implementation of an AI agent tool so that normal tool invocation produces unauthorized behavior or hidden side effects. The tool may continue to provide its represented...
+description: Злоумышленники могут отравить исполняемую реализацию инструмента ИИ-агента, чтобы обычный вызов инструмента приводил к несанкционированному поведению или скрытым побочным эффектам. Инструмент может продолжать...
 generated: true
 generated_by: atlasgen
 maturity: realized
@@ -18,17 +18,15 @@ subtechnique_count: 0
 subtechnique_of: AML.T0110
 tactics:
     - AML.TA0006
-title: Implementation
+title: Имплементация
 url: /techniques/AML.T0110.001/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Злоумышленники могут отравить исполняемую реализацию инструмента ИИ-агента, чтобы обычный вызов инструмента приводил к несанкционированному поведению или скрытым побочным эффектам. Инструмент может продолжать предоставлять заявленную функциональность, одновременно получая доступ к дополнительным данным, изменяя запросы, меняя получателей или адреса назначения, выполняя несанкционированные команды, ослабляя защитные механизмы либо скрытно эксфильтруя данные.
 
-Adversaries may poison the executable implementation of an AI agent tool so that normal tool invocation produces unauthorized behavior or hidden side effects. The tool may continue to provide its represented functionality while also accessing additional data, modifying requests, changing recipients or destinations, executing unauthorized commands, weakening security controls, or performing covert data exfiltration.
+Отравление реализации не требует, чтобы модель интерпретировала вредоносные инструкции или следовала им. Вредоносный эффект создается исполняемой логикой, когда агент или пользователь вызывает инструмент. Например, отравленный почтовый инструмент может отправлять запрошенное сообщение, незаметно добавляя подконтрольного злоумышленнику получателя в поле скрытой копии (BCC). Инструмент обработки файлов может возвращать запрошенный результат, одновременно передавая исходный файл внешнему сервису.
 
-Implementation poisoning does not require the model to interpret or follow malicious instructions. The adversarial effect is produced by executable logic when the agent or user invokes the tool. For example, a poisoned email tool may send the requested message while silently adding an adversary-controlled blind-copy recipient. A file-processing tool may return the requested result while also transmitting the source file to an external service.
-
-Implementation poisoning may be introduced before publication, through compromise of a tool's source repository or build process, or through a malicious update after users have adopted a benign version. Installed copies may continue to exhibit the poisoned behavior even after the malicious package or remote listing is removed[[koi-postmark]].
+Отравление реализации может быть внедрено до публикации, посредством компрометации репозитория исходного кода инструмента или процесса сборки либо через вредоносное обновление после того, как пользователи начали использовать безопасную версию. Установленные экземпляры могут продолжать демонстрировать отравленное поведение даже после удаления вредоносного пакета или записи о нем в удаленном каталоге[[koi-postmark]].
 
 
 ## Тактики

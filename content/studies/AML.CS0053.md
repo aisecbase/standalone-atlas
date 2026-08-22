@@ -45,7 +45,7 @@ procedure:
       tactic: AML.TA0006
       tactic_name: Закрепление
       technique: AML.T0110.001
-      technique_name: Implementation
+      technique_name: Имплементация
     - description: Когда пользователи в организации-жертве поручали своему ИИ-агенту использовать инструменты отравленного MCP-сервера Postmark, выполнялся вредоносный код.
       description_line: Когда пользователи в организации-жертве поручали своему ИИ-агенту использовать инструменты отравленного MCP-сервера Postmark, выполнялся вредоносный код.
       tactic: AML.TA0005

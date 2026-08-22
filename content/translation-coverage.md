@@ -59,10 +59,10 @@ generated_by: atlasgen
 <tr>
 <th scope="row" data-label="Тип объектов">Техники</th>
 <td data-label="Всего">178</td>
-<td data-label="Названий переведено">172</td>
-<td data-label="Описаний переведено">172</td>
+<td data-label="Названий переведено">173</td>
+<td data-label="Описаний переведено">173</td>
 <td data-label="Процедур переведено">-</td>
-<td data-label="Полностью переведено">131</td>
+<td data-label="Полностью переведено">132</td>
 <td data-label="Требует проверки">41</td>
 </tr>
 </tbody>
@@ -151,7 +151,7 @@ generated_by: atlasgen
 - [`AML.CS0053`](/studies/AML.CS0053/) (Кейсы): Poisoned Postmark MCP Server Email Exfiltration; название: да; описание/summary: да; процедуры: 7/9
 - [`AML.CS0054`](/studies/AML.CS0054/) (Кейсы): Data Exfiltration via Remote Poisoned MCP Tool; название: да; описание/summary: да; процедуры: 7/11; процедуры требуют проверки: 1; требует проверки: процедуры
 
-## Перевод отсутствует (13)
+## Перевод отсутствует (12)
 
 - [`AML.CS0063`](/studies/AML.CS0063/) (Кейсы): Prompt-Based Attacks Against Gemini via Calendar Invitations; название: нет; описание/summary: нет; процедуры: 0/20
 - [`AML.CS0064`](/studies/AML.CS0064/) (Кейсы): Poisoned GGUF Templates: Inference-Time Supply Chain Attack; название: нет; описание/summary: нет; процедуры: 0/13
@@ -160,7 +160,6 @@ generated_by: atlasgen
 - [`AML.CS0067`](/studies/AML.CS0067/) (Кейсы): Claude Code GitHub Action Secret Exposure; название: нет; описание/summary: нет; процедуры: 0/11
 - [`AML.M0035`](/mitigations/AML.M0035/) (Меры защиты): AI Red Team; название: нет; описание/summary: нет
 - [`AML.M0036`](/mitigations/AML.M0036/) (Меры защиты): Limit AI Workload Resource Consumption; название: нет; описание/summary: нет
-- [`AML.T0110.001`](/techniques/AML.T0110.001/) (Техники): Implementation; название: нет; описание/summary: нет
 - [`AML.T0110.002`](/techniques/AML.T0110.002/) (Техники): Runtime Response; название: нет; описание/summary: нет
 - [`AML.T0115`](/techniques/AML.T0115/) (Техники): Publish Poisoned AI Artifacts; название: нет; описание/summary: нет
 - [`AML.T0115.000`](/techniques/AML.T0115.000/) (Техники): Datasets; название: нет; описание/summary: нет
