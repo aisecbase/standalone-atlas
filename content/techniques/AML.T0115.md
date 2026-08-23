@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-07-31"
-description: Adversaries may create or modify AI artifacts and publish them through public or shared distribution channels to facilitate compromise of downstream AI systems. Poisoned AI artifacts may include datasets, models, and...
+description: Злоумышленники могут создавать или модифицировать ИИ-артефакты и публиковать их через общедоступные или совместно используемые каналы распространения, способствуя компрометации нижестоящих ИИ-систем. К отравленным...
 generated: true
 generated_by: atlasgen
 maturity: realized
@@ -20,15 +20,13 @@ subtechnique_count: 3
 subtechnique_of: ""
 tactics:
     - AML.TA0003
-title: Publish Poisoned AI Artifacts
+title: Публикация отравленных ИИ-артефактов
 url: /techniques/AML.T0115/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Злоумышленники могут создавать или модифицировать ИИ-артефакты и публиковать их через общедоступные или совместно используемые каналы распространения, способствуя компрометации нижестоящих ИИ-систем. К отравленным ИИ-артефактам могут относиться наборы данных, модели и инструменты ИИ-агентов, содержащие вредоносное содержимое, вредоносные варианты поведения, вредоносный код или вредоносные конфигурации.
 
-Adversaries may create or modify AI artifacts and publish them through public or shared distribution channels to facilitate compromise of downstream AI systems. Poisoned AI artifacts may include datasets, models, and AI agent tools containing malicious content, behaviors, code, or configurations.
-
-Adversaries may publish novel artifacts or malicious variants of legitimate artifacts through dataset or model repositories, package registries, source code repositories, tool hubs, or remotely hosted services. Victims may subsequently acquire and integrate these artifacts through [AI Supply Chain Compromise](/techniques/AML.T0010).
+Злоумышленники могут публиковать новые артефакты или вредоносные варианты легитимных артефактов через репозитории наборов данных или моделей, реестры пакетов, репозитории исходного кода, хабы инструментов или удалённо размещённые сервисы. Впоследствии жертвы могут получить и интегрировать эти артефакты в ходе [компрометации цепочки поставок ИИ](/techniques/AML.T0010).
 
 
 ## Тактики

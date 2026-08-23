@@ -41,7 +41,7 @@ Adversaries may distribute poisoned datasets through dataset repositories, code 
 ## Родительская техника
 
 <div class="relation-list">
-<a class="relation-item" href="/techniques/AML.T0115/"><span class="relation-id">AML.T0115</span><strong>Publish Poisoned AI Artifacts</strong></a>
+<a class="relation-item" href="/techniques/AML.T0115/"><span class="relation-id">AML.T0115</span><strong>Публикация отравленных ИИ-артефактов</strong></a>
 </div>
 
 
