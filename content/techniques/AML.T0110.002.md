@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-07-31"
-description: Adversaries may poison the runtime response channel of a malicious or compromised AI agent tool by deliberately returning content intended to influence the model's subsequent reasoning, decisions, or actions. Poisoned...
+description: Злоумышленники могут отравить канал, по которому вредоносный или скомпрометированный инструмент ИИ-агента возвращает ответы во время выполнения, намеренно включая в эти ответы содержимое, предназначенное для...
 generated: true
 generated_by: atlasgen
 maturity: feasible
@@ -18,15 +18,13 @@ subtechnique_count: 0
 subtechnique_of: AML.T0110
 tactics:
     - AML.TA0006
-title: Runtime Response
+title: Ответ во время выполнения
 url: /techniques/AML.T0110.002/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Злоумышленники могут отравить канал, по которому вредоносный или скомпрометированный инструмент ИИ-агента возвращает ответы во время выполнения, намеренно включая в эти ответы содержимое, предназначенное для воздействия на последующие рассуждения, решения или действия модели. Отравленные ответы могут содержать вредоносные инструкции, вводящие в заблуждение данные, сфабрикованные сообщения об ошибках, встроенные ресурсы или иное содержимое, предназначенное для того, чтобы модель воспринимала его как доверенный контекст после одобренного вызова инструмента.
 
-Adversaries may poison the runtime response channel of a malicious or compromised AI agent tool by deliberately returning content intended to influence the model's subsequent reasoning, decisions, or actions. Poisoned responses may contain malicious instructions, deceptive data, fabricated errors, embedded resources, or other content designed to be treated as trusted context after an approved tool invocation.
-
-Because tool responses are commonly incorporated into the model's context, an adversary may use them to direct the agent to invoke additional tools, access sensitive information, alter an ongoing workflow, or transmit data to an adversary-controlled destination. Poisoned instructions may be mixed with legitimate results so that the tool appears to operate normally. Responses may use structured or unstructured content, including text, images, resource links, embedded resources, or schema-conforming fields [[mcp-tools]][[owasp-tool-poisoning]].
+Поскольку ответы инструментов обычно включаются в контекст модели, злоумышленник может использовать их, чтобы побуждать агента вызывать дополнительные инструменты, получать доступ к чувствительной информации, изменять ход выполняемого рабочего процесса или передавать данные в контролируемую злоумышленником точку назначения. Отравленные инструкции могут быть смешаны с легитимными результатами так, чтобы создавалось впечатление штатной работы инструмента. В ответах может использоваться структурированное или неструктурированное содержимое, включая текст, изображения, ссылки на ресурсы, встроенные ресурсы или поля, соответствующие схеме [[mcp-tools]][[owasp-tool-poisoning]].
 
 
 ## Тактики
