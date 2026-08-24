@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-07-31"
-description: Adversaries may create and publish poisoned AI agent tools. Poisoned tools may contain malicious model-visible definitions or instructions, hidden executable behavior, or runtime responses designed to manipulate an AI...
+description: Злоумышленники могут создавать и публиковать отравленные инструменты ИИ-агента. Отравленные инструменты могут содержать вредоносные определения или инструкции, доступные модели, скрытое поведение, реализуемое...
 generated: true
 generated_by: atlasgen
 maturity: realized
@@ -18,15 +18,13 @@ subtechnique_count: 0
 subtechnique_of: AML.T0115
 tactics:
     - AML.TA0003
-title: AI Agent Tools
+title: Инструменты ИИ-агента
 url: /techniques/AML.T0115.002/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Злоумышленники могут создавать и публиковать отравленные инструменты ИИ-агента. Отравленные инструменты могут содержать вредоносные определения или инструкции, доступные модели, скрытое поведение, реализуемое исполняемой логикой, либо ответы во время выполнения, предназначенные для манипулирования ИИ-агентом. Инструменты могут публиковаться через репозитории исходного кода, реестры пакетов, реестры инструментов или навыков ИИ-агентов либо удалённые сервисы, контролируемые злоумышленником. Инструмент может быть вновь созданным либо представлять собой модифицированный вариант легитимного инструмента и может проявлять вредоносное поведение при его выборе, установке или вызове ИИ-агентом жертвы.
 
-Adversaries may create and publish poisoned AI agent tools. Poisoned tools may contain malicious model-visible definitions or instructions, hidden executable behavior, or runtime responses designed to manipulate an AI agent. Tools may be published through source code repositories, package registries, agent tool or skill registries, or adversary-controlled remote services. The tool may be newly created or a modified variant of a legitimate tool and may produce malicious behavior when selected, installed, or invoked by a victim's AI agent.
-
-Adversaries may distribute poisoned tools through open-source version control repositories (e.g. GitHub, GitLab), package registries (e.g. npm), or to repositories specifically designed for sharing tools (e.g. OpenClaw Hub). These registries may be largely unregulated and may contain many poisoned tools [[opensourcemalware]]. Tools may also be published as remotely hosted servers [[mcpservers]].
+Злоумышленники могут распространять отравленные инструменты через открытые репозитории систем контроля версий (например, GitHub или GitLab), реестры пакетов (например, npm) или специализированные репозитории для обмена инструментами (например, OpenClaw Hub). Такие реестры могут почти не регулироваться и содержать множество отравленных инструментов [[opensourcemalware]]. Инструменты также могут публиковаться в виде удалённо размещённых серверов [[mcpservers]].
 
 
 ## Тактики

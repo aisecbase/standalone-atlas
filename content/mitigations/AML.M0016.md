@@ -40,5 +40,5 @@ url: /mitigations/AML.M0016/
 <a class="relation-item" href="/techniques/AML.T0107/"><span class="relation-id">AML.T0107</span><strong>Эксплуатация уязвимостей для обхода защиты</strong><p>Vulnerability scanning reduces opportunities for adversaries to exploit weaknesses that bypass security controls.</p></a>
 <a class="relation-item" href="/techniques/AML.T0115/"><span class="relation-id">AML.T0115</span><strong>Публикация отравленных ИИ-артефактов</strong><p>Model and agent tool registries scan uploaded artifacts for malicious content before listing.</p></a>
 <a class="relation-item" href="/techniques/AML.T0115.001/"><span class="relation-id">AML.T0115.001</span><strong>Модели</strong><p>Model registries scan uploaded models for unsafe serialization, embedded code, malware, and known vulnerabilities before listing.</p></a>
-<a class="relation-item" href="/techniques/AML.T0115.002/"><span class="relation-id">AML.T0115.002</span><strong>AI Agent Tools</strong><p>Tool registries scan uploaded tool packages and dependencies for malicious code and vulnerabilities before listing.</p></a>
+<a class="relation-item" href="/techniques/AML.T0115.002/"><span class="relation-id">AML.T0115.002</span><strong>Инструменты ИИ-агента</strong><p>Tool registries scan uploaded tool packages and dependencies for malicious code and vulnerabilities before listing.</p></a>
 </div>

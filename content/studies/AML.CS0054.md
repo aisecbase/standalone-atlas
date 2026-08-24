@@ -21,7 +21,7 @@ procedure:
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0115.002
-      technique_name: AI Agent Tools
+      technique_name: Инструменты ИИ-агента
     - description: Исследователи разместили отравленный MCP-инструмент, где вредоносные инструкции были скрыты в docstring-описании этого инструмента.
       description_line: Исследователи разместили отравленный MCP-инструмент, где вредоносные инструкции были скрыты в docstring-описании этого инструмента.
       tactic: AML.TA0004
