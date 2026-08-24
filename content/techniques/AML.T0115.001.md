@@ -48,7 +48,7 @@ Victims may subsequently download and integrate the model through [AI Supply Cha
 ## Другие подтехники родителя
 
 <div class="relation-list">
-<a class="relation-item" href="/techniques/AML.T0115.000/"><span class="relation-id">AML.T0115.000</span><strong>Datasets</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0115.000/"><span class="relation-id">AML.T0115.000</span><strong>Наборы данных</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0115.002/"><span class="relation-id">AML.T0115.002</span><strong>AI Agent Tools</strong><span class="relation-meta">Подтехника</span></a>
 </div>
 

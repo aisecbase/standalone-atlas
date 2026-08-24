@@ -35,5 +35,5 @@ url: /mitigations/AML.M0007/
 <a class="relation-item" href="/techniques/AML.T0020/"><span class="relation-id">AML.T0020</span><strong>Отравление обучающих данных</strong><p>Выявляйте изменения данных и меток, которые могут вызвать состязательный дрейф модели или бэкдор-атаки.</p></a>
 <a class="relation-item" href="/techniques/AML.T0059/"><span class="relation-id">AML.T0059</span><strong>Нарушение целостности набора данных</strong><p>Устранение последствий отравленных данных может восстановить целостность набора данных.</p></a>
 <a class="relation-item" href="/techniques/AML.T0115/"><span class="relation-id">AML.T0115</span><strong>Публикация отравленных ИИ-артефактов</strong><p>Dataset repositories inspect submissions and quarantine poisoned samples, labels, annotations, or metadata before listing.</p></a>
-<a class="relation-item" href="/techniques/AML.T0115.000/"><span class="relation-id">AML.T0115.000</span><strong>Datasets</strong><p>Dataset repositories inspect submissions and quarantine poisoned samples, labels, annotations, or metadata before listing.</p></a>
+<a class="relation-item" href="/techniques/AML.T0115.000/"><span class="relation-id">AML.T0115.000</span><strong>Наборы данных</strong><p>Dataset repositories inspect submissions and quarantine poisoned samples, labels, annotations, or metadata before listing.</p></a>
 </div>

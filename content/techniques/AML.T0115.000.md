@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-07-31"
-description: Adversaries may publish poisoned datasets intended for training or fine-tuning AI models. The dataset may be newly created or a modified variant of a legitimate dataset and may contain manipulated samples, labels,...
+description: Злоумышленники могут публиковать отравленные наборы данных, предназначенные для обучения или дообучения ИИ-моделей. Набор данных может быть вновь созданным либо представлять собой модифицированный вариант легитимного...
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
@@ -20,15 +20,13 @@ subtechnique_count: 0
 subtechnique_of: AML.T0115
 tactics:
     - AML.TA0003
-title: Datasets
+title: Наборы данных
 url: /techniques/AML.T0115.000/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Злоумышленники могут публиковать отравленные наборы данных, предназначенные для обучения или дообучения ИИ-моделей. Набор данных может быть вновь созданным либо представлять собой модифицированный вариант легитимного набора данных и может содержать изменённые образцы, метки, аннотации или метаданные.
 
-Adversaries may publish poisoned datasets intended for training or fine-tuning AI models. The dataset may be newly created or a modified variant of a legitimate dataset and may contain manipulated samples, labels, annotations, or metadata.
-
-Adversaries may distribute poisoned datasets through dataset repositories, code repositories, file-sharing services, or compromised data sources. A victim that incorporates the dataset into a training pipeline may be affected by [Training Data Poisoning](/techniques/AML.T0020), potentially through [AI Supply Chain Compromise](/techniques/AML.T0010).
+Злоумышленники могут распространять отравленные наборы данных через репозитории наборов данных, репозитории кода, файлообменные сервисы или скомпрометированные источники данных. Жертва, которая включает такой набор данных в конвейер обучения, может пострадать от [отравления обучающих данных](/techniques/AML.T0020), возможно, в результате [компрометации цепочки поставок ИИ](/techniques/AML.T0010).
 
 
 ## Тактики
