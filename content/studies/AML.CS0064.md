@@ -39,7 +39,7 @@ procedure:
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0115.001
-      technique_name: Models
+      technique_name: Модели
     - description: A victim downloads and integrates the poisoned artifact while trusting the model and its bundled components. This introduces the template backdoor into the victim's AI application or agent.
       description_line: A victim downloads and integrates the poisoned artifact while trusting the model and its bundled components. This introduces the template backdoor into the victim's AI application or agent.
       tactic: AML.TA0004

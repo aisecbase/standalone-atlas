@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-07-31"
-description: Adversaries may publish poisoned AI models through model registries, code repositories, or other model distribution channels. The model may be newly created or a modified variant of a legitimate model and may contain...
+description: Злоумышленники могут публиковать отравленные ИИ-модели через реестры моделей, репозитории кода или другие каналы распространения моделей. Модель может быть вновь созданной либо представлять собой модифицированный...
 generated: true
 generated_by: atlasgen
 maturity: realized
@@ -20,15 +20,13 @@ subtechnique_count: 0
 subtechnique_of: AML.T0115
 tactics:
     - AML.TA0003
-title: Models
+title: Модели
 url: /techniques/AML.T0115.001/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Злоумышленники могут публиковать отравленные ИИ-модели через реестры моделей, репозитории кода или другие каналы распространения моделей. Модель может быть вновь созданной либо представлять собой модифицированный вариант легитимной модели; её веса, конфигурации, архитектура, сериализованный код или другие компоненты могут быть изменены так, чтобы вызывать вредоносное поведение или обеспечивать выполнение вредоносного кода.
 
-Adversaries may publish poisoned AI models through model registries, code repositories, or other model distribution channels. The model may be newly created or a modified variant of a legitimate model and may contain manipulated weights, configurations, architecture, serialized code, or other components that produce malicious behavior or execute malicious code.
-
-Victims may subsequently download and integrate the model through [AI Supply Chain Compromise](/techniques/AML.T0010).
+Впоследствии жертвы могут скачать и интегрировать модель в ходе [компрометации цепочки поставок ИИ](/techniques/AML.T0010).
 
 
 ## Тактики

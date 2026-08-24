@@ -39,7 +39,7 @@ procedure:
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0115.001
-      technique_name: Models
+      technique_name: Модели
     - description: A cloud model catalog, application, or deployment pipeline resolved its stale name-only model reference to the attacker-controlled replacement model. Unit 42 demonstrated this through Vertex AI and Azure AI Foundry deployments.
       description_line: A cloud model catalog, application, or deployment pipeline resolved its stale name-only model reference to the attacker-controlled replacement model. Unit 42 demonstrated this through Vertex AI and Azure AI Foundry deployments.
       tactic: AML.TA0004

@@ -28,9 +28,9 @@ totals:
         needs_review: 2
     technique:
         total: 178
-        name_translated: 176
-        body_translated: 176
-        fully_translated: 135
+        name_translated: 177
+        body_translated: 177
+        fully_translated: 136
         needs_review: 41
 missing:
     - id: AML.CS0063
@@ -77,12 +77,6 @@ missing:
     - id: AML.M0036
       name: Limit AI Workload Resource Consumption
       type: mitigation
-      has_name: false
-      has_body: false
-      source_field: description
-    - id: AML.T0115.001
-      name: Models
-      type: technique
       has_name: false
       has_body: false
       source_field: description

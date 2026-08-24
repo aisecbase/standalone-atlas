@@ -39,7 +39,7 @@ procedure:
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0115.001
-      technique_name: Models
+      technique_name: Модели
     - description: |-
         Ничего не подозревающие пользователи могли скачать состязательную модель и интегрировать ее в приложения.
 

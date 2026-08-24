@@ -27,7 +27,7 @@ procedure:
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0115.001
-      technique_name: Models
+      technique_name: Модели
     - description: |-
         Злоумышленнику удалось избежать обнаружения [Picklescan](https://github.com/mmaitre314/picklescan), который Hugging Face использует для пометки вредоносных моделей. Это произошло потому, что модель невозможно было полностью десериализовать.
 
