@@ -68,7 +68,7 @@ url: /techniques/AML.T0010.003/
 <a class="relation-item" href="/mitigations/AML.M0008/"><span class="relation-id">AML.M0008</span><strong>Валидация ИИ-модели</strong><p>Убедитесь, что приобретенные модели не реагируют на потенциальные бэкдор-триггеры или состязательное воздействие.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0013/"><span class="relation-id">AML.M0013</span><strong>Подписание кода</strong><p>Требуйте корректной подписи файлов модели.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0017/"><span class="relation-id">AML.M0017</span><strong>Методы распространения ИИ-моделей</strong><p>Злоумышленник может переупаковать приложение с вредоносной версией модели.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Introduce a controlled untrusted or modified model through representative acquisition and deployment paths. Verify provenance, scanning, signing, approval, isolation, and rollback.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Внедряйте недоверенную или модифицированную модель только в контролируемую среду через репрезентативные пути её получения и развёртывания. Проверьте сведения о происхождении, сканирование, подписание, процедуры одобрения, изоляцию и возможность возврата к предыдущей версии модели.</p></a>
 </div>
 
 
