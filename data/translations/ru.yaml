@@ -140,6 +140,8 @@ technique_uses:
     use: "Убедитесь, что приобретенные модели не реагируют на потенциальные бэкдор-триггеры или состязательное воздействие."
   - source: "Ensure that trained models do not respond to potential backdoor triggers or adversarial influence."
     use: "Убедитесь, что обученные модели не реагируют на потенциальные бэкдор-триггеры или состязательное воздействие."
+  - source: "Exercise the introduction of controlled untrusted software, data, models, and agent tools through representative acquisition and deployment paths. Remediate weaknesses in provenance, validation, approvals, isolation, and rollback."
+    use: "Отработайте в контролируемых условиях внедрение недоверенных компонентов — ПО, данных, моделей и инструментов ИИ-агента — через репрезентативные пути их получения и развёртывания. Устраните недостатки, связанные со сведениями о происхождении, валидацией, процедурами одобрения, изоляцией и откатом."
   - source: "Guardrails can detect harmful code in model outputs."
     use: "Защитные ограничения могут обнаруживать вредоносный код в выходных данных модели."
   - source: "Guardrails can detect sensitive data and PII in model outputs."
