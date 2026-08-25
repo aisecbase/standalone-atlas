@@ -44,7 +44,7 @@ url: /techniques/AML.T0057/
 <a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Защитные ограничения (Guardrails) для генеративного ИИ</strong><p>Защитные ограничения могут обнаруживать чувствительные данные и персональные данные в выходных данных модели.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0021/"><span class="relation-id">AML.M0021</span><strong>Правила и инструкции для генеративного ИИ</strong><p>Инструкции для модели могут предписывать ей отказываться отвечать на небезопасные входные данные.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0022/"><span class="relation-id">AML.M0022</span><strong>Выравнивание модели генеративного ИИ</strong><p>Выравнивание модели может повысить параметрическую безопасность модели, уводя ее от небезопасных промптов и ответов.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>AI Red Team</strong><p>Place synthetic secrets or canary records in representative data sources and attempt extraction through prompts, retrieval, tools, and rendered output. Improve authorization boundaries, filtering, tenant isolation, and exfiltration detection.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Place synthetic secrets or canary records in representative data sources and attempt extraction through prompts, retrieval, tools, and rendered output. Improve authorization boundaries, filtering, tenant isolation, and exfiltration detection.</p></a>
 </div>
 
 

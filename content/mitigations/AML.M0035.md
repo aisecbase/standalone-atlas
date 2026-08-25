@@ -8,7 +8,7 @@ category:
     - Technical - AI
     - Technical - Cyber
 created_date: "2026-07-21"
-description: Establish an AI red team responsible for conducting recurring, authorized, and threat-informed red-teaming exercises to identify and remediate vulnerabilities in AI-enabled systems before deployment and throughout...
+description: Создайте красную команду по ИИ, ответственную за проведение регулярных, санкционированных учений красной команды, основанных на данных об угрозах, для выявления и устранения уязвимостей в системах с поддержкой ИИ до...
 generated: true
 generated_by: atlasgen
 ml_lifecycle:
@@ -21,37 +21,35 @@ ml_lifecycle:
 modified_date: "2026-07-21"
 source_name: AI Red Team
 technique_count: 33
-title: AI Red Team
+title: Красная команда по ИИ
 url: /mitigations/AML.M0035/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Создайте красную команду по ИИ, ответственную за проведение регулярных, санкционированных учений красной команды, основанных на данных об угрозах, для выявления и устранения уязвимостей в системах с поддержкой ИИ до развёртывания и на всём протяжении эксплуатации. Тестирование ИИ силами красной команды имитирует реалистичное поведение злоумышленников, чтобы оценить, как атаки могут повлиять на конфиденциальность, целостность, доступность, безопасность, приватность и эффективность выполнения целевых задач системой с поддержкой ИИ.
 
-Establish an AI red team responsible for conducting recurring, authorized, and threat-informed red-teaming exercises to identify and remediate vulnerabilities in AI-enabled systems before deployment and throughout operation. AI red-teaming simulates realistic adversary behavior to evaluate how attacks could affect the confidentiality, integrity, availability, safety, privacy, and mission performance of an AI-enabled system.
+Учения красной команды должны охватывать всю систему с поддержкой ИИ, включая модели и данные, агентов (в том числе их память и инструменты), потоки данных, процессы принятия решений, логику приложений, системы извлечения данных, идентичности и разрешения, зависимости ПО, компоненты системы, не использующие ИИ, инфраструктуру, пользовательские интерфейсы и рабочие процессы с участием людей.
 
-Red-teaming exercises should consider the complete AI-enabled system, including models and data, agents (including memory and tools), data flows, decision processes, application logic, retrieval systems, identities and permissions, software dependencies, non-AI system components, infrastructure, user interfaces, and human workflows.
+Учение красной команды по ИИ можно организовать в три этапа: планирование и определение области учения, проведение выбранных испытаний и оценка результатов, на основе которой формируются отчётность и меры по устранению недостатков.
 
-An AI red team exercise can be organized into three phases: planning and scoping the exercise, executing the selected exercises, and assessing the results to guide reporting and remediation.
+1. **Планирование и определение области**
+    - Документируйте предполагаемое использование системы, среду развёртывания, пользователей, чувствительные данные, подключённые ресурсы и возможные последствия отказа или неправомерного использования. Составьте схему компонентов системы, границ доверия, потоков данных, внешних сервисов, точек принятия решений человеком, а также точек доступа на этапах обучения и инференса.
+    - Установите правила проведения учений, охватывающие разрешённые системы, учётные записи, данные и техники, временные окна тестирования, ограничения ресурсов, процедуры эскалации, порядок работы с доказательствами и условия остановки. Планируйте разрушительные, нарушающие приватность или дорогостоящие тесты для изолированных сред с надлежащими мерами защиты.
+    - Разработайте модель угроз на основе среды эксплуатации системы и релевантного поведения злоумышленников. Определите цели злоумышленника, уровень его доступа, знания, возможности, ресурсы и ограничения; учтите цифровые и физические пути атак, а также роль контроля со стороны человека.
+    - Используйте тактики, техники и процедуры ATLAS для выявления релевантных вариантов поведения злоумышленников и построения векторов угроз. Назначьте им приоритеты с учётом вероятности и серьёзности воздействия на систему.
+    - Определите критерии успеха и условия остановки. Определите метрики уровня задач для оценки воздействия на возможности ИИ и операционные метрики для измерения воздействия на систему в целом.
 
-1. **Plan and Scope**
-    - Document the system's intended use, deployment environment, users, sensitive data, connected resources, and potential consequences of failure or misuse. Diagram the system's components, trust boundaries, data flows, external services, human decision points, and training- and inference-time access points.
-    - Establish rules of engagement covering authorized systems, accounts, data, techniques, test windows, resource limits, escalation procedures, evidence handling, and stop conditions. Plan destructive, privacy-invasive, or high-cost tests for isolated environments with appropriate safeguards.
-    - Develop a threat model based on the system's operating environment and relevant adversary behavior. Define the adversary's objectives, access, knowledge, capabilities, resources, and constraints, and account for digital and physical attack paths and the role of human oversight.
-    - Use ATLAS tactics, techniques, and procedures to identify relevant adversary behaviors and construct threat vectors. Prioritize them according to likelihood and severity of impact to the system.
-    - Define success criteria and stopping conditions. Identify task-level metrics for effects on the AI capability and operational metrics for measuring impact to the overall system.
+2. **Проведение**
+    - Проводите выбранные испытания ручными и автоматизированными методами по мере необходимости. Автоматизация позволяет создавать варианты входных данных, повторно воспроизводить последовательности атак и оценивать ответы в большом масштабе. Специалисты, проводящие тестирование, могут разрабатывать атаки с учётом особенностей системы, адаптироваться к наблюдаемым средствам защиты и исследовать неожиданное поведение.
+    - Соблюдайте правила проведения учений и фиксируйте действия в рамках атаки, ответы системы, поведение средств контроля, отклонения от плана тестирования и доказательства, необходимые для оценки результатов.
+    - Остановите тестирование или запустите процедуру эскалации при достижении заранее определённых условий. После тестирования удалите тестовые учётные записи, изменённые данные, установленное ПО, инструкции, сохраняющиеся в системе, и другие артефакты учений.
 
-2. **Execute**
-    - Conduct the selected exercises using manual and automated methods as appropriate. Automation can generate input variations, replay attack sequences, and evaluate responses at scale. Human testers can develop system-specific attacks, adapt to observed defenses, and investigate unexpected behavior.
-    - Follow the rules of engagement and record attack activity, system responses, control behavior, deviations from the test plan, and evidence needed to evaluate the results.
-    - Stop or escalate testing when predefined conditions are reached. After testing, remove test accounts, modified data, installed software, persistent instructions, and other exercise artifacts.
+3. **Оценка, отчётность и совершенствование**
+    - Оцените результаты по заданным метрикам уровня задач и операционным метрикам. Документируйте успешные и неуспешные атаки, их последствия, наблюдаемое поведение средств контроля, отклонения от плана тестирования и пробелы в модели угроз.
+    - Сообщите о выявленных проблемах соответствующим разработчикам, специалистам по защите, командам эксплуатации, владельцам рисков и другим заинтересованным сторонам.
+    - Назначьте ответственных за выявленные проблемы, отслеживайте их устранение и повторно тестируйте исправленные системы.
+    - Используйте продемонстрированные атаки для совершенствования превентивных средств контроля, обнаружения, реагирования на инциденты и восстановления. Там, где это уместно, преобразуйте подтверждённые сбои в регрессионные тесты, наборы данных для оценки, логику обнаружения, требования к мониторингу или критерии развёртывания.
 
-3. **Assess, Report, and Improve**
-    - Evaluate the results against the defined task and operational metrics. Document successful and unsuccessful attacks, their consequences, observed control behavior, deviations from the test plan, and gaps in the threat model.
-    - Report findings to the appropriate developers, defenders, operational teams, risk owners, and other stakeholders.
-    - Assign findings to responsible owners, track remediation, and retest corrected systems.
-    - Use demonstrated attacks to improve preventive controls, detection, incident response, and recovery. Where appropriate, convert confirmed failures into regression tests, evaluation datasets, detection logic, monitoring requirements, or deployment criteria.
-
-Red-teaming is a continuous process and should be repeated as the threat landscape evolves and when changes are made to the system, its components, intended use, or deployment environment. New threat intelligence, vulnerabilities, and test results should inform the scope and priorities of future exercises.
+Тестирование силами красной команды — непрерывный процесс; его следует повторять по мере развития ландшафта угроз, а также при внесении изменений в систему, её компоненты, предполагаемое использование или среду развёртывания. Новые данные об угрозах, уязвимости и результаты тестирования должны служить основой для определения области и приоритетов будущих учений.
 
 
 ## Связанные техники

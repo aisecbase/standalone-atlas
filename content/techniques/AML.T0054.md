@@ -69,7 +69,7 @@ url: /techniques/AML.T0054/
 <a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Защитные ограничения (Guardrails) для генеративного ИИ</strong><p>Защитные ограничения могут предотвращать вредоносные входные данные, способные привести к джейлбрейку.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0021/"><span class="relation-id">AML.M0021</span><strong>Правила и инструкции для генеративного ИИ</strong><p>Инструкции для модели могут предписывать ей отказываться отвечать на небезопасные входные данные.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0022/"><span class="relation-id">AML.M0022</span><strong>Выравнивание модели генеративного ИИ</strong><p>Выравнивание модели может повысить параметрическую безопасность модели, уводя ее от небезопасных промптов и ответов.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>AI Red Team</strong><p>Exercise manual and automated multi-turn, multilingual, encoded, transformed, and multimodal jailbreaks. Incorporate successful cases into guardrails, guidelines, alignment, monitoring, and regression evaluations.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Exercise manual and automated multi-turn, multilingual, encoded, transformed, and multimodal jailbreaks. Incorporate successful cases into guardrails, guidelines, alignment, monitoring, and regression evaluations.</p></a>
 </div>
 
 

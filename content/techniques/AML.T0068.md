@@ -41,7 +41,7 @@ url: /techniques/AML.T0068/
 
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Защитные ограничения (Guardrails) для генеративного ИИ</strong><p>Apply input guardrails that decode, normalize, inspect, and block concealed malicious instructions.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>AI Red Team</strong><p>Test encoded, transformed, visually hidden, multilingual, and multimodal instructions. Use successful bypasses to improve normalization, decoding, content inspection, and detection controls.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Test encoded, transformed, visually hidden, multilingual, and multimodal instructions. Use successful bypasses to improve normalization, decoding, content inspection, and detection controls.</p></a>
 </div>
 
 

@@ -55,6 +55,6 @@ url: /techniques/AML.T0034.002/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>AI Red Team</strong><p>Test recursive behavior, repeated tool calls, costly API use, and attacker-controlled task expansion. Verify budgets, iteration limits, timeouts, approval thresholds, and termination controls.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Test recursive behavior, repeated tool calls, costly API use, and attacker-controlled task expansion. Verify budgets, iteration limits, timeouts, approval thresholds, and termination controls.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0036/"><span class="relation-id">AML.M0036</span><strong>Limit AI Workload Resource Consumption</strong><p>Limit agent iterations, tool calls, fan-out, runtime, and downstream spending to constrain agentic resource consumption.</p></a>
 </div>

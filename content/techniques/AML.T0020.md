@@ -51,7 +51,7 @@ url: /techniques/AML.T0020/
 <a class="relation-item" href="/mitigations/AML.M0008/"><span class="relation-id">AML.M0008</span><strong>Валидация ИИ-модели</strong><p>Тщательная оценка ИИ-модели может повысить уверенность в том, что модель не была отравлена.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0023/"><span class="relation-id">AML.M0023</span><strong>Ведомость материалов ИИ</strong><p>AI BOM может помочь пользователям выявлять недоверенные артефакты моделей.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0025/"><span class="relation-id">AML.M0025</span><strong>Поддержание происхождения наборов данных ИИ</strong><p>Сведения о происхождении наборов данных могут защищать от отравления обучающих данных.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>AI Red Team</strong><p>Introduce controlled poisoned records or triggers into representative data pipelines. Verify and improve provenance, sanitization, review, drift detection, model validation, and rollback controls.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Introduce controlled poisoned records or triggers into representative data pipelines. Verify and improve provenance, sanitization, review, drift detection, model validation, and rollback controls.</p></a>
 </div>
 
 

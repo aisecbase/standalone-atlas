@@ -54,7 +54,7 @@ url: /techniques/AML.T0053/
 <a class="relation-item" href="/mitigations/AML.M0030/"><span class="relation-id">AML.M0030</span><strong>Ограничение вызова инструментов ИИ-агента при работе с недоверенными данными</strong><p>Ограничение автоматического использования инструментов при наличии недоверенных данных может помешать злоумышленникам вызывать инструменты через промпт-инъекции.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0032/"><span class="relation-id">AML.M0032</span><strong>Сегментация компонентов ИИ-агента</strong><p>Сегментация может помешать злоумышленникам использовать инструменты в агентном рабочем процессе для выполнения небезопасных действий, влияющих на другие компоненты.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0033/"><span class="relation-id">AML.M0033</span><strong>Валидация входных и выходных данных компонентов ИИ-агента</strong><p>Валидация может помешать злоумышленникам использовать инструменты в агентном рабочем процессе для генерации небезопасных выходных данных.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>AI Red Team</strong><p>Attempt to select unauthorized tools, supply unsafe arguments, exceed user privileges, or chain tools into harmful actions. Correct permissions, argument validation, sandboxing, action controls, and approval requirements.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Attempt to select unauthorized tools, supply unsafe arguments, exceed user privileges, or chain tools into harmful actions. Correct permissions, argument validation, sandboxing, action controls, and approval requirements.</p></a>
 </div>
 
 

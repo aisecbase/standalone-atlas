@@ -39,7 +39,7 @@ url: /techniques/AML.T0070/
 
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Защитные ограничения (Guardrails) для генеративного ИИ</strong><p>Apply retrieval guardrails to reject untrusted, malicious, irrelevant, or unsupported RAG content.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>AI Red Team</strong><p>Seed controlled malicious or misleading content into representative ingestion sources. Improve source authorization, provenance, content validation, indexing controls, and retrieval-time filtering.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Seed controlled malicious or misleading content into representative ingestion sources. Improve source authorization, provenance, content validation, indexing controls, and retrieval-time filtering.</p></a>
 </div>
 
 
