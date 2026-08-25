@@ -59,7 +59,7 @@ url: /techniques/AML.T0010.001/
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0006/"><span class="relation-id">AML.M0006</span><strong>Использование ансамблевых методов</strong><p>Использование нескольких разных моделей обеспечивает минимальную потерю производительности, если уязвимость обнаружена в инструменте для одной модели или семейства моделей.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0013/"><span class="relation-id">AML.M0013</span><strong>Подписание кода</strong><p>Требуйте корректной подписи драйверов и ML-фреймворков.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Introduce controlled untrusted AI packages, libraries, plugins, or software components. Verify dependency controls, scanning, signing, approval, isolation, and safe installation.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Внедряйте недоверенные пакеты ПО для ИИ, библиотеки, плагины или программные компоненты только в контролируемую среду. Проверьте средства контроля зависимостей, сканирование, подписание, процедуры одобрения, изоляцию и безопасность установки.</p></a>
 </div>
 
 

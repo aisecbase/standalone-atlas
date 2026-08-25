@@ -176,6 +176,8 @@ technique_uses:
     use: "Восстановление входных данных добавляет дополнительный слой неопределенности и случайности, когда злоумышленник оценивает связь между входом и выходом."
   - source: "Input restoration can help remediate adversarial inputs."
     use: "Восстановление входных данных может помогать исправлять состязательные входные данные."
+  - source: "Introduce controlled untrusted AI packages, libraries, plugins, or software components. Verify dependency controls, scanning, signing, approval, isolation, and safe installation."
+    use: "Внедряйте недоверенные пакеты ПО для ИИ, библиотеки, плагины или программные компоненты только в контролируемую среду. Проверьте средства контроля зависимостей, сканирование, подписание, процедуры одобрения, изоляцию и безопасность установки."
   - source: "Introduce proper checking of signatures to ensure that unsafe AI artifacts will not be executed in the system."
     use: "Внедрите надлежащую проверку подписей, чтобы небезопасные ИИ-артефакты не выполнялись в системе."
   - source: "Introduce proper checking of signatures to ensure that unsafe AI artifacts will not be introduced to the system."
