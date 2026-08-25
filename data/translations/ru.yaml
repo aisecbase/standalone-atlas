@@ -190,6 +190,8 @@ technique_uses:
     use: "Внедряйте недоверенные пакеты ПО для ИИ, библиотеки, плагины или программные компоненты только в контролируемую среду. Проверьте средства контроля зависимостей, сканирование, подписание, процедуры одобрения, изоляцию и безопасность установки."
   - source: "Introduce controlled untrusted datasets through representative acquisition and ingestion paths. Verify provenance, integrity, sanitization, review, and rejection controls."
     use: "Внедряйте недоверенные наборы данных только в контролируемую среду через репрезентативные пути их получения и приёма. Проверьте механизмы отслеживания происхождения, обеспечения целостности, санитизации, проверки и отбраковки данных."
+  - source: "Introduce controlled poisoned records or triggers into representative data pipelines. Verify and improve provenance, sanitization, review, drift detection, model validation, and rollback controls."
+    use: "В контролируемых условиях внедрите отравленные записи или триггеры в репрезентативные конвейеры данных. Проверьте и усовершенствуйте отслеживание происхождения данных, их санитизацию и проверку, обнаружение дрейфа, валидацию модели и механизмы возврата к предыдущему состоянию."
   - source: "Introduce proper checking of signatures to ensure that unsafe AI artifacts will not be executed in the system."
     use: "Внедрите надлежащую проверку подписей, чтобы небезопасные ИИ-артефакты не выполнялись в системе."
   - source: "Introduce proper checking of signatures to ensure that unsafe AI artifacts will not be introduced to the system."
