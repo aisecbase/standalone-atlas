@@ -57,7 +57,7 @@ url: /techniques/AML.T0010.005/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Introduce a controlled untrusted agent tool or tool definition. Verify source authorization, integrity, review, permission boundaries, and safe activation.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Внедряйте недоверенный инструмент ИИ-агента или недоверенное определение инструмента только в контролируемую среду. Убедитесь, что источник входит в число разрешённых; проверьте целостность, факт проведения проверки, границы разрешений и безопасность активации.</p></a>
 </div>
 
 
