@@ -47,7 +47,7 @@ url: /techniques/AML.T0015/
 <a class="relation-item" href="/mitigations/AML.M0010/"><span class="relation-id">AML.M0010</span><strong>Восстановление входных данных</strong><p>Предобработка входных данных модели может предотвратить прохождение вредоносных данных через пайплайн машинного обучения.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0015/"><span class="relation-id">AML.M0015</span><strong>Обнаружение состязательных входных данных</strong><p>Предотвращает внесение злоумышленником состязательных данных в систему.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0034/"><span class="relation-id">AML.M0034</span><strong>Обнаружение дипфейков</strong><p>Обнаружение дипфейков можно использовать для выявления и блокировки сгенерированного контента.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Execute representative digital, multimodal, and physical-domain evasion attacks. Use successful attacks to improve model robustness, preprocessing, adversarial-input detection, human oversight, and monitoring.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Проведите репрезентативные цифровые и мультимодальные атаки обхода, а также атаки обхода в физическом домене. Используйте успешные атаки, чтобы повысить устойчивость модели и улучшить предобработку, обнаружение состязательных входных данных, контроль со стороны человека и мониторинг.</p></a>
 </div>
 
 
