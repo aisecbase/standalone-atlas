@@ -64,7 +64,7 @@ url: /techniques/AML.T0018.000/
 <a class="relation-item" href="/mitigations/AML.M0008/"><span class="relation-id">AML.M0008</span><strong>Валидация ИИ-модели</strong><p>Убедитесь, что обученные модели не реагируют на потенциальные бэкдор-триггеры или состязательное воздействие.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0013/"><span class="relation-id">AML.M0013</span><strong>Подписание кода</strong><p>Подписание кода дает гарантию, что модель не была изменена после подписания.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0025/"><span class="relation-id">AML.M0025</span><strong>Поддержание происхождения наборов данных ИИ</strong><p>Сведения о происхождении наборов данных могут защищать от отравления моделей.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Test whether controlled changes to model weights, fine-tuning, or associated artifacts can introduce targeted or persistent behavior. Improve model provenance, validation, integrity monitoring, and rollback.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Проверьте, могут ли контролируемые изменения весов модели, контролируемое дообучение или контролируемые изменения связанных с моделью артефактов привести к появлению целевого или устойчивого поведения. Усовершенствуйте отслеживание происхождения модели, её валидацию и мониторинг целостности, а также механизм возврата к предыдущей версии.</p></a>
 </div>
 
 
