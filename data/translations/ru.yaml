@@ -68,6 +68,8 @@ technique_uses:
     use: "Оценивайте запросы до вызова инференса или применяйте политику таймаутов для запросов, потребляющих чрезмерные ресурсы."
   - source: "Attempt controlled modification or substitution of models, weights, adapters, and related configuration. Remediate weaknesses in authorization, artifact integrity, deployment approval, monitoring, and recovery."
     use: "В контролируемых условиях попытайтесь изменить или подменить модели, веса, адаптеры и связанную с ними конфигурацию. Устраните недостатки механизмов авторизации, обеспечения целостности артефактов, процедур одобрения развёртывания, мониторинга и восстановления."
+  - source: "Attempt controlled unauthorized changes to model architecture or executable model components. Verify review, integrity checking, signing, deployment approval, and restoration controls."
+    use: "В контролируемых условиях попытайтесь внести неавторизованные изменения в архитектуру модели или в её исполняемые компоненты. Проверьте процессы рассмотрения изменений, контроля целостности, подписания и одобрения развёртывания, а также механизмы восстановления."
   - source: "Authentication on production models can help prevent anonymous chaff data spam."
     use: "Аутентификация для моделей в продакшене может помочь предотвратить анонимный спам шумовыми данными."
   - source: "Avoiding  the deployment of models to edge devices reduces an adversary's potential access to models or AI artifacts."
