@@ -178,6 +178,8 @@ technique_uses:
     use: "Восстановление входных данных может помогать исправлять состязательные входные данные."
   - source: "Introduce controlled untrusted AI packages, libraries, plugins, or software components. Verify dependency controls, scanning, signing, approval, isolation, and safe installation."
     use: "Внедряйте недоверенные пакеты ПО для ИИ, библиотеки, плагины или программные компоненты только в контролируемую среду. Проверьте средства контроля зависимостей, сканирование, подписание, процедуры одобрения, изоляцию и безопасность установки."
+  - source: "Introduce controlled untrusted datasets through representative acquisition and ingestion paths. Verify provenance, integrity, sanitization, review, and rejection controls."
+    use: "Внедряйте недоверенные наборы данных только в контролируемую среду через репрезентативные пути их получения и приёма. Проверьте механизмы отслеживания происхождения, обеспечения целостности, санитизации, проверки и отбраковки данных."
   - source: "Introduce proper checking of signatures to ensure that unsafe AI artifacts will not be executed in the system."
     use: "Внедрите надлежащую проверку подписей, чтобы небезопасные ИИ-артефакты не выполнялись в системе."
   - source: "Introduce proper checking of signatures to ensure that unsafe AI artifacts will not be introduced to the system."
