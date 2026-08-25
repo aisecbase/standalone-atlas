@@ -66,6 +66,8 @@ technique_uses:
     use: "Злоумышленник может переупаковать приложение с вредоносной версией модели."
   - source: "Assess queries before inference call or enforce timeout policy for queries which consume excessive resources."
     use: "Оценивайте запросы до вызова инференса или применяйте политику таймаутов для запросов, потребляющих чрезмерные ресурсы."
+  - source: "Attempt controlled modification or substitution of models, weights, adapters, and related configuration. Remediate weaknesses in authorization, artifact integrity, deployment approval, monitoring, and recovery."
+    use: "В контролируемых условиях попытайтесь изменить или подменить модели, веса, адаптеры и связанную с ними конфигурацию. Устраните недостатки механизмов авторизации, обеспечения целостности артефактов, процедур одобрения развёртывания, мониторинга и восстановления."
   - source: "Authentication on production models can help prevent anonymous chaff data spam."
     use: "Аутентификация для моделей в продакшене может помочь предотвратить анонимный спам шумовыми данными."
   - source: "Avoiding  the deployment of models to edge devices reduces an adversary's potential access to models or AI artifacts."
