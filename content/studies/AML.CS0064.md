@@ -3,7 +3,7 @@ actor: Pillar Security, Fujitsu Research of Europe
 atlas_id: AML.CS0064
 atlas_type: case-study
 case_study_type: exercise
-description: Researchers from Pillar Security and Fujitsu Research of Europe demonstrated an inference-time supply-chain backdoor in which poisoned chat templates alter model and agent behavior without modifying model weights. The...
+description: 'Исследователи из Pillar Security и Fujitsu Research of Europe продемонстрировали бэкдор в цепочке поставок, срабатывающий во время инференса: отравленные шаблоны чата изменяют поведение модели и агента без изменения...'
 generated: true
 generated_by: atlasgen
 incident_date: 2025-06
@@ -97,14 +97,12 @@ references:
 reporter: ""
 source_name: 'Poisoned GGUF Templates: Inference-Time Supply Chain Attack'
 target: Model registries distributing models in GGUF format
-title: 'Poisoned GGUF Templates: Inference-Time Supply Chain Attack'
+title: 'Отравленные шаблоны GGUF: атака на цепочку поставок во время инференса'
 url: /studies/AML.CS0064/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Исследователи из Pillar Security и Fujitsu Research of Europe продемонстрировали бэкдор в цепочке поставок, срабатывающий во время инференса: отравленные шаблоны чата изменяют поведение модели и агента без изменения весов модели. Бэкдор встроен в доверенную логику формирования промпта, что позволяет ему оставаться неактивным до срабатывания триггера и обходить средства защиты, анализирующие только внешнее содержимое промпта.
 
-Researchers from Pillar Security and Fujitsu Research of Europe demonstrated an inference-time supply-chain backdoor in which poisoned chat templates alter model and agent behavior without modifying model weights. The backdoor is embedded in trusted prompt-construction logic, allowing it to remain dormant until triggered and evade defenses that inspect only external prompt content.
+Исследователи продемонстрировали атаку с использованием GPT-Generated Unified Format (GGUF) — широко используемого формата моделей, объединяющего в одном артефакте квантованные веса, метаданные конфигурации и логику шаблона чата. Злоумышленник может изменить шаблон и повторно распространить артефакт; при срабатывании лексического, семантического или контекстного триггера шаблон внедряет подконтрольные злоумышленнику инструкции в контекст, передаваемый модели.
 
-The researchers demonstrated the attack using GPT-Generated Unified Format (GGUF), a widely used model format that packages quantized weights, configuration metadata, and chat-template logic in one artifact. An adversary can modify a template and redistribute the artifact; when a lexical, semantic, or contextual trigger occurs, the template injects attacker-controlled instructions into the context sent to the model.
-
-The attack was validated across eighteen models from seven families and four inference engines. In controlled evaluations, it manipulated model responses, redirected agent tool use, exfiltrated sensitive data, and inserted attacker-controlled code into generated software.
+Атака была проверена на восемнадцати моделях из семи семейств с использованием четырёх движков инференса. В ходе контролируемых испытаний она приводила к манипулированию ответами модели, перенаправлению вызовов инструментов агентом, эксфильтрации чувствительных данных и внедрению подконтрольного злоумышленнику кода в генерируемое ПО.

@@ -2,8 +2,8 @@ version: "2026.07"
 totals:
     case-study:
         total: 68
-        name_translated: 64
-        body_translated: 64
+        name_translated: 65
+        body_translated: 65
         procedures_total: 571
         procedures_translated: 513
         fully_translated: 44
@@ -33,13 +33,6 @@ totals:
         fully_translated: 137
         needs_review: 41
 missing:
-    - id: AML.CS0064
-      name: 'Poisoned GGUF Templates: Inference-Time Supply Chain Attack'
-      type: case-study
-      has_name: false
-      has_body: false
-      source_field: summary
-      total_procedures: 13
     - id: AML.CS0065
       name: Model Namespace Reuse Supply Chain Attack
       type: case-study
@@ -130,6 +123,13 @@ partial:
       needs_review: true
       review_fields:
         - procedure
+    - id: AML.CS0064
+      name: 'Poisoned GGUF Templates: Inference-Time Supply Chain Attack'
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 13
 review:
     - id: AML.CS0001
       name: Botnet Domain Generation Algorithm (DGA) Detection Evasion
