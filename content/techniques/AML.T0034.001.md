@@ -55,7 +55,7 @@ url: /techniques/AML.T0034.001/
 
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>В контролируемых условиях направляйте на систему запросы, специально подготовленные для потребления непропорционально большого объёма ресурсов при инференсе. Проверяйте ограничения на входные данные, таймауты, ограничения рабочей нагрузки, изоляцию ресурсов и мониторинг затрат.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0036/"><span class="relation-id">AML.M0036</span><strong>Ограничение потребления ресурсов рабочими нагрузками ИИ</strong><p>Bound input size, output size, execution time, memory, and compute consumed by resource-intensive queries.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0036/"><span class="relation-id">AML.M0036</span><strong>Ограничение потребления ресурсов рабочими нагрузками ИИ</strong><p>Для ресурсоёмких запросов ограничивайте размер входных и выходных данных, время выполнения, потребление памяти и вычислительных ресурсов.</p></a>
 </div>
 
 

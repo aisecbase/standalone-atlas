@@ -88,6 +88,8 @@ technique_uses:
     use: "Отказ от развертывания моделей на периферийных устройствах снижает способность злоумышленника собирать чувствительную информацию о выходных данных модели."
   - source: "Avoiding the deployment of models to edge devices reduces the attack surface and can prevent adversary artifact collection."
     use: "Отказ от развертывания моделей на периферийных устройствах уменьшает поверхность атаки и может предотвратить сбор артефактов злоумышленником."
+  - source: "Bound input size, output size, execution time, memory, and compute consumed by resource-intensive queries."
+    use: "Для ресурсоёмких запросов ограничивайте размер входных и выходных данных, время выполнения, потребление памяти и вычислительных ресурсов."
   - source: "Code signing provides a guarantee that the model has not been manipulated after signing took place."
     use: "Подписание кода дает гарантию, что модель не была изменена после подписания."
   - source: "Code signing provides a guarantee that the software package has not been manipulated after signing took place."
