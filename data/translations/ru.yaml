@@ -72,6 +72,8 @@ technique_uses:
     use: "В контролируемых условиях попытайтесь внести неавторизованные изменения в архитектуру модели или в её исполняемые компоненты. Проверьте процессы рассмотрения изменений, контроля целостности, подписания и одобрения развёртывания, а также механизмы восстановления."
   - source: "Attempt to reconstruct sensitive records, attributes, or representative training information from model outputs. Remediate leakage through model changes, output minimization, privacy controls, and restricted inference access."
     use: "Попытайтесь реконструировать чувствительные записи, атрибуты или сведения, характерные для обучающих данных, на основе выходных данных модели. Устраните утечку за счёт внесения изменений в модель, минимизации выходных данных, мер защиты приватности и ограничения доступа к инференсу."
+  - source: "Attempt to select unauthorized tools, supply unsafe arguments, exceed user privileges, or chain tools into harmful actions. Correct permissions, argument validation, sandboxing, action controls, and approval requirements."
+    use: "Попытайтесь выбрать неавторизованные инструменты, передать небезопасные аргументы, выйти за пределы привилегий пользователя или объединить инструменты в цепочки для выполнения небезопасных действий. Устраните недостатки в настройке разрешений, валидации аргументов, изоляции в песочнице, средствах контроля действий и требованиях к одобрению."
   - source: "Authentication on production models can help prevent anonymous chaff data spam."
     use: "Аутентификация для моделей в продакшене может помочь предотвратить анонимный спам шумовыми данными."
   - source: "Avoiding  the deployment of models to edge devices reduces an adversary's potential access to models or AI artifacts."
