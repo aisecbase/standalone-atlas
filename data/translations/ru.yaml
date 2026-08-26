@@ -266,6 +266,8 @@ technique_uses:
     use: "Обфускация выходных данных модели снижает способность злоумышленника проверять эффективность атаки."
   - source: "Obfuscating model outputs restricts an adversary's ability to create an accurate proxy model by querying a model and observing its outputs."
     use: "Обфускация выходных данных модели ограничивает способность злоумышленника создать точную прокси-модель, запрашивая модель и наблюдая ее выходные данные."
+  - source: "Place controlled malicious instructions in external or retrieved content processed by the system. Improve content trust boundaries, retrieval controls, instruction isolation, and restrictions on resulting actions."
+    use: "Размещайте контролируемые вредоносные инструкции во внешнем или извлечённом содержимом, которое обрабатывает система. Совершенствуйте границы доверия при обработке содержимого, средства контроля извлечения, изоляцию инструкций и ограничения на действия, выполняемые в результате."
   - source: "Preprocessing model inputs can prevent malicious data from going through the machine learning pipeline."
     use: "Предобработка входных данных модели может предотвратить прохождение вредоносных данных через пайплайн машинного обучения."
   - source: "Prevent an attacker from introducing adversarial data into the system."
