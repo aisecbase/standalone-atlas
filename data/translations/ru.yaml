@@ -224,6 +224,8 @@ technique_uses:
     use: "Внедрите надлежащую проверку подписей, чтобы небезопасные ИИ-данные не попадали в систему."
   - source: "Introduce proper checking of signatures to ensure that unsafe AI models will not be introduced to the system."
     use: "Внедрите надлежащую проверку подписей, чтобы небезопасные ИИ-модели не попадали в систему."
+  - source: "Limit agent iterations, tool calls, fan-out, runtime, and downstream spending to constrain agentic resource consumption."
+    use: "Ограничивайте число итераций агента и вызовов инструментов, степень ветвления, продолжительность выполнения и расходы, возникающие при обращении к нижестоящим сервисам, чтобы удерживать потребление ресурсов агентом в заданных пределах."
   - source: "Limit the amount of information an attacker can learn about a model's ontology through API queries."
     use: "Ограничьте объем информации об онтологии модели, которую злоумышленник может получить через запросы к API."
   - source: "Limit the connection between publicly disclosed approaches and the data, models, and algorithms used in production."
