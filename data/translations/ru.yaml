@@ -154,6 +154,8 @@ technique_uses:
     use: "Отработайте в контролируемых условиях внедрение недоверенных компонентов — ПО, данных, моделей и инструментов ИИ-агента — через репрезентативные пути их получения и развёртывания. Устраните недостатки, связанные со сведениями о происхождении, валидацией, процедурами одобрения, изоляцией и откатом."
   - source: "Execute representative digital, multimodal, and physical-domain evasion attacks. Use successful attacks to improve model robustness, preprocessing, adversarial-input detection, human oversight, and monitoring."
     use: "Проведите репрезентативные цифровые и мультимодальные атаки обхода, а также атаки обхода в физическом домене. Используйте успешные атаки, чтобы повысить устойчивость модели и улучшить предобработку, обнаружение состязательных входных данных, контроль со стороны человека и мониторинг."
+  - source: "Generate controlled high-volume query activity. Verify authentication, user and tenant quotas, rate limits, anomaly detection, cost alerts, and service protection."
+    use: "В контролируемых условиях генерируйте интенсивный поток запросов. Проверяйте аутентификацию, квоты пользователей и тенантов, ограничения частоты запросов, обнаружение аномалий, оповещения о затратах и средства защиты сервиса."
   - source: "Guardrails can detect harmful code in model outputs."
     use: "Защитные ограничения могут обнаруживать вредоносный код в выходных данных модели."
   - source: "Guardrails can detect sensitive data and PII in model outputs."
