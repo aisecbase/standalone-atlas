@@ -3,7 +3,7 @@ actor: Radware Security Researchers
 atlas_id: AML.CS0066
 atlas_type: case-study
 case_study_type: exercise
-description: ZombieAgent is a proof-of-concept indirect prompt injection attack demonstrated by Radware against OpenAI's ChatGPT Deep Research and Connector functionality. The attacks showed how instructions concealed in...
+description: ZombieAgent — proof-of-concept-атака с косвенной промпт-инъекцией, которую исследователи Radware продемонстрировали применительно к функциям Deep Research и Connector в ChatGPT от OpenAI. Продемонстрированные атаки...
 generated: true
 generated_by: atlasgen
 incident_date: "2025-09-25"
@@ -89,18 +89,16 @@ references:
 reporter: ""
 source_name: 'ZombieAgent: Data Exfiltration Attack on ChatGPT'
 target: OpenAI ChatGPT
-title: 'ZombieAgent: Data Exfiltration Attack on ChatGPT'
+title: 'ZombieAgent: атака на ChatGPT с эксфильтрацией данных'
 url: /studies/AML.CS0066/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+ZombieAgent — proof-of-concept-атака с косвенной промпт-инъекцией, которую исследователи Radware продемонстрировали применительно к функциям Deep Research и Connector в ChatGPT от OpenAI. Продемонстрированные атаки показали, как ChatGPT во время обычных действий пользователя может принимать на обработку и выполнять инструкции, скрытые в содержимом, контролируемом внешней стороной, например в электронных письмах и документах. В демонстрации источником инъекции служил Gmail, однако аналогичным образом можно было злоупотребить любым ChatGPT Connector, например Outlook, Google Drive, Jira или Teams.
 
-ZombieAgent is a proof-of-concept indirect prompt injection attack demonstrated by Radware against OpenAI's ChatGPT Deep Research and Connector functionality. The attacks showed how instructions concealed in externally controlled content, such as emails and documents, could be ingested and executed by ChatGPT during normal user activity. The demonstration used Gmail as the injection source, but any ChatGPT Connector such as Outlook, Google Drive, Jira, or Teams could be similarly abused.
+Исследователи безопасности Radware отправили вредоносное электронное письмо со скрытыми инструкциями в почтовый ящик Gmail, подключённый к ChatGPT. Когда позднее пользователь попросил ChatGPT выполнить обычную задачу, связанную с почтовым ящиком, ChatGPT извлёк письмо и выполнил содержащиеся в нём инструкции. Пользователь не открывал вредоносное письмо, не нажимал на него и вообще не взаимодействовал с ним осознанно.
 
-The Radware Security Researchers sent a malicious email containing concealed instructions to a Gmail inbox connected to ChatGPT. When the user later asked ChatGPT to perform an ordinary inbox-related task, ChatGPT retrieved the email and executed its instructions. The user did not open, click, or knowingly interact with the malicious email.
+Внедрённые инструкции заставили ChatGPT собрать информацию из подключённых сервисов и эксфильтрировать её с помощью запросов к URL. OpenAI ранее внедрила защитный механизм, запрещавший ChatGPT динамически формировать или изменять URL, которые могли использоваться для эксфильтрации данных через параметры запроса. Исследователи обошли этот механизм, предоставив индексированный словарь заранее сформированных статических URL и предписав ChatGPT открывать URL, соответствующие отдельным символам, чтобы эксфильтрировать собранные данные.
 
-The injected instructions caused ChatGPT to collect information from connected services and exfiltrate it through URL requests. OpenAI had introduced a control preventing ChatGPT from dynamically constructing or modifying URLs which could be used to exfiltrate data via query parameters. The researchers bypassed this control by supplying an indexed dictionary of preconstructed static URLs and instructing ChatGPT to open URLs corresponding to individual characters to exfiltrate the collected data.
+Исследователи также показали, что вредоносные инструкции могут манипулировать функцией Memory в ChatGPT. Внедрённые записи памяти предписывали ChatGPT сохранять чувствительную информацию из будущих разговоров, а во время последующих взаимодействий извлекать заданное подконтрольное злоумышленнику электронное письмо и выполнять содержащиеся в нём инструкции. Так был создан устойчивый механизм многократного сбора и эксфильтрации данных в разных чат-сессиях.
 
-The researchers also showed that the malicious instructions could manipulate ChatGPT's Memory. The injected memories instructed ChatGPT to retain sensitive information from future conversations and to retrieve and execute a designated attacker-controlled email during later interactions. This created a persistent mechanism for repeated collection and exfiltration across chat sessions.
-
-The researchers also demonstrated how the malicious prompt could be propagated. A compromised agent could collect email addresses from the victim's mailbox and use its connected email capabilities to send additional messages containing the malicious prompt to those contacts. Recipients whose AI agents later processed the poisoned messages could become additional victims.
+Исследователи также продемонстрировали, как вредоносный промпт может распространяться. Скомпрометированный ИИ-агент мог собирать адреса электронной почты из почтового ящика жертвы и с помощью подключённых возможностей работы с электронной почтой отправлять этим контактам дополнительные сообщения с вредоносным промптом. Получатели, чьи ИИ-агенты позднее обрабатывали отравленные сообщения, могли становиться новыми жертвами.

@@ -2,8 +2,8 @@ version: "2026.07"
 totals:
     case-study:
         total: 68
-        name_translated: 66
-        body_translated: 66
+        name_translated: 67
+        body_translated: 67
         procedures_total: 571
         procedures_translated: 534
         fully_translated: 46
@@ -33,13 +33,6 @@ totals:
         fully_translated: 137
         needs_review: 41
 missing:
-    - id: AML.CS0066
-      name: 'ZombieAgent: Data Exfiltration Attack on ChatGPT'
-      type: case-study
-      has_name: false
-      has_body: false
-      source_field: summary
-      total_procedures: 12
     - id: AML.CS0067
       name: Claude Code GitHub Action Secret Exposure
       type: case-study
@@ -116,6 +109,13 @@ partial:
       needs_review: true
       review_fields:
         - procedure
+    - id: AML.CS0066
+      name: 'ZombieAgent: Data Exfiltration Attack on ChatGPT'
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 12
 review:
     - id: AML.CS0001
       name: Botnet Domain Generation Algorithm (DGA) Detection Evasion
