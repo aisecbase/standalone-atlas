@@ -5,8 +5,8 @@ totals:
         name_translated: 66
         body_translated: 66
         procedures_total: 571
-        procedures_translated: 526
-        fully_translated: 45
+        procedures_translated: 534
+        fully_translated: 46
         needs_review: 16
     mitigation:
         total: 37
@@ -116,13 +116,6 @@ partial:
       needs_review: true
       review_fields:
         - procedure
-    - id: AML.CS0065
-      name: Model Namespace Reuse Supply Chain Attack
-      type: case-study
-      has_name: true
-      has_body: true
-      source_field: summary
-      total_procedures: 8
 review:
     - id: AML.CS0001
       name: Botnet Domain Generation Algorithm (DGA) Detection Evasion

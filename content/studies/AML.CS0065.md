@@ -10,50 +10,50 @@ incident_date: "2025-09-03"
 incident_date_granularity: Day
 incident_date_raw: "2025-09-03"
 procedure:
-    - description: Unit 42 reviewed public Hugging Face-backed model catalogs, Hugging Face author pages, and open-source repositories to identify references to models whose original author namespace had been deleted and was available for registration. They identified stale references in cloud catalogs, source code, documentation, default arguments, and example notebooks.
-      description_line: Unit 42 reviewed public Hugging Face-backed model catalogs, Hugging Face author pages, and open-source repositories to identify references to models whose original author namespace had been deleted and was available for registration. They identified stale references in cloud catalogs, source code, documentation, default arguments, and example notebooks.
+    - description: Специалисты Unit 42 изучили публичные каталоги моделей, использующие Hugging Face, страницы авторов Hugging Face и репозитории проектов с открытым исходным кодом, чтобы выявить ссылки на модели, у которых исходное пространство имён автора было удалено и стало доступно для регистрации. Они выявили сохранявшиеся без обновления ссылки в облачных каталогах, исходном коде, документации, аргументах по умолчанию и ноутбуках с примерами.
+      description_line: Специалисты Unit 42 изучили публичные каталоги моделей, использующие Hugging Face, страницы авторов Hugging Face и репозитории проектов с открытым исходным кодом, чтобы выявить ссылки на модели, у которых исходное пространство имён автора было удалено и стало доступно для регистрации. Они выявили сохранявшиеся без обновления ссылки в облачных каталогах, исходном коде, документации, аргументах по умолчанию и ноутбуках с примерами.
       tactic: AML.TA0002
       tactic_name: Разведка
       technique: AML.T0095
       technique_name: Поиск на открытых сайтах и доменах
-    - description: Unit 42 registered a Hugging Face organization using an abandoned namespace associated with a previously trusted model path. The original owner's account was not compromised.
-      description_line: Unit 42 registered a Hugging Face organization using an abandoned namespace associated with a previously trusted model path. The original owner's account was not compromised.
+    - description: Специалисты Unit 42 зарегистрировали организацию в Hugging Face, использовав заброшенное пространство имён, связанное с путём к модели, которой ранее доверяли. Учётная запись первоначального владельца не была скомпрометирована.
+      description_line: Специалисты Unit 42 зарегистрировали организацию в Hugging Face, использовав заброшенное пространство имён, связанное с путём к модели, которой ранее доверяли. Учётная запись первоначального владельца не была скомпрометирована.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0021
       technique_name: Создание учетных записей
-    - description: By recreating the namespace, Unit 42 made the malicious artifact appear to be the formerly trusted model. For transferred models, reclaiming the old namespace displaced the legacy redirect to the legitimate model's new location.
-      description_line: By recreating the namespace, Unit 42 made the malicious artifact appear to be the formerly trusted model. For transferred models, reclaiming the old namespace displaced the legacy redirect to the legitimate model's new location.
+    - description: Воссоздав пространство имён, специалисты Unit 42 добились того, чтобы вредоносный артефакт выглядел как ранее доверенная модель. В случае моделей с переданным владением повторная регистрация старого пространства имён вытесняла прежнее перенаправление к новому расположению легитимной модели.
+      description_line: Воссоздав пространство имён, специалисты Unit 42 добились того, чтобы вредоносный артефакт выглядел как ранее доверенная модель. В случае моделей с переданным владением повторная регистрация старого пространства имён вытесняла прежнее перенаправление к новому расположению легитимной модели.
       tactic: AML.TA0007
       tactic_name: Уклонение от защиты
       technique: AML.T0074
       technique_name: Маскировка
-    - description: Unit 42 prepared attacker-controlled model artifacts containing a payload that initiated a reverse shell when deployed or loaded.
-      description_line: Unit 42 prepared attacker-controlled model artifacts containing a payload that initiated a reverse shell when deployed or loaded.
+    - description: Специалисты Unit 42 подготовили подконтрольные злоумышленнику артефакты моделей с полезной нагрузкой, запускавшей реверс-шелл при развёртывании или загрузке артефакта.
+      description_line: Специалисты Unit 42 подготовили подконтрольные злоумышленнику артефакты моделей с полезной нагрузкой, запускавшей реверс-шелл при развёртывании или загрузке артефакта.
       tactic: AML.TA0001
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0018.002
       technique_name: Встраивание вредоносного ПО
-    - description: Unit 42 uploaded the malicious model under the reclaimed namespace using the original Author/ModelName identifier.
-      description_line: Unit 42 uploaded the malicious model under the reclaimed namespace using the original Author/ModelName identifier.
+    - description: Специалисты Unit 42 загрузили вредоносную модель в повторно зарегистрированное пространство имён, используя исходный идентификатор Author/ModelName.
+      description_line: Специалисты Unit 42 загрузили вредоносную модель в повторно зарегистрированное пространство имён, используя исходный идентификатор Author/ModelName.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0115.001
       technique_name: Модели
-    - description: A cloud model catalog, application, or deployment pipeline resolved its stale name-only model reference to the attacker-controlled replacement model. Unit 42 demonstrated this through Vertex AI and Azure AI Foundry deployments.
-      description_line: A cloud model catalog, application, or deployment pipeline resolved its stale name-only model reference to the attacker-controlled replacement model. Unit 42 demonstrated this through Vertex AI and Azure AI Foundry deployments.
+    - description: В облачном каталоге моделей, приложении или пайплайне развёртывания разрешение сохранявшейся без обновления ссылки на модель, заданной только именем без фиксации ревизии, приводило к выбору подконтрольной злоумышленнику модели-замены. Специалисты Unit 42 продемонстрировали это на примере развёртываний в Vertex AI и Azure AI Foundry.
+      description_line: В облачном каталоге моделей, приложении или пайплайне развёртывания разрешение сохранявшейся без обновления ссылки на модель, заданной только именем без фиксации ревизии, приводило к выбору подконтрольной злоумышленнику модели-замены. Специалисты Unit 42 продемонстрировали это на примере развёртываний в Vertex AI и Azure AI Foundry.
       tactic: AML.TA0004
       tactic_name: Первичный доступ
       technique: AML.T0010.003
       technique_name: Модель
-    - description: When a user or service deployed the malicious model, loading or deployment executed the embedded payload in the model endpoint environment.
-      description_line: When a user or service deployed the malicious model, loading or deployment executed the embedded payload in the model endpoint environment.
+    - description: Когда пользователь или сервис развёртывал вредоносную модель, в процессе её загрузки или развёртывания встроенная полезная нагрузка выполнялась в среде эндпоинта модели.
+      description_line: Когда пользователь или сервис развёртывал вредоносную модель, в процессе её загрузки или развёртывания встроенная полезная нагрузка выполнялась в среде эндпоинта модели.
       tactic: AML.TA0005
       tactic_name: Выполнение
       technique: AML.T0011.000
       technique_name: Небезопасные ИИ-артефакты
-    - description: The payload established a reverse shell from the deployed endpoint to researcher-controlled infrastructure.
-      description_line: The payload established a reverse shell from the deployed endpoint to researcher-controlled infrastructure.
+    - description: Полезная нагрузка запустила на развёрнутом эндпоинте реверс-шелл, который установил соединение с подконтрольной исследователям инфраструктурой.
+      description_line: Полезная нагрузка запустила на развёрнутом эндпоинте реверс-шелл, который установил соединение с подконтрольной исследователям инфраструктурой.
       tactic: AML.TA0014
       tactic_name: Командование и управление
       technique: AML.T0072
