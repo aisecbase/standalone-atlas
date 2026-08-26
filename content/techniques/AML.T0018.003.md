@@ -54,5 +54,5 @@ url: /techniques/AML.T0018.003/
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0064/"><span class="relation-id">AML.CS0064</span><strong>Отравленные шаблоны GGUF: атака на цепочку поставок во время инференса</strong><span class="relation-meta">Актор: Pillar Security, Fujitsu Research of Europe / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>The adversary modifies the chat template bundled with the model artifact. The modified template injects attacker-controlled instructions into the model context when its trigger is present, while leaving the model weights unchanged.</p></a>
+<a class="relation-item" href="/studies/AML.CS0064/"><span class="relation-id">AML.CS0064</span><strong>Отравленные шаблоны GGUF: атака на цепочку поставок во время инференса</strong><span class="relation-meta">Актор: Pillar Security, Fujitsu Research of Europe / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Злоумышленник изменяет шаблон чата, включённый в состав артефакта модели. При наличии триггера изменённый шаблон внедряет подконтрольные злоумышленнику инструкции в контекст модели, не изменяя её весов.</p></a>
 </div>

@@ -10,80 +10,80 @@ incident_date: 2025-06
 incident_date_granularity: Month
 incident_date_raw: "2025-06-01"
 procedure:
-    - description: The adversary obtains a legitimate open-weight model artifact containing a bundled chat template. The adversary selects an artifact whose downstream users are likely to retain and use the supplied template.
-      description_line: The adversary obtains a legitimate open-weight model artifact containing a bundled chat template. The adversary selects an artifact whose downstream users are likely to retain and use the supplied template.
+    - description: Злоумышленник получает легитимный артефакт модели с открытыми весами, содержащий включённый в его состав шаблон чата. Злоумышленник выбирает артефакт, пользователи которого на последующих этапах с высокой вероятностью сохранят и будут использовать поставляемый вместе с ним шаблон.
+      description_line: Злоумышленник получает легитимный артефакт модели с открытыми весами, содержащий включённый в его состав шаблон чата. Злоумышленник выбирает артефакт, пользователи которого на последующих этапах с высокой вероятностью сохранят и будут использовать поставляемый вместе с ним шаблон.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0002.001
       technique_name: Модели
-    - description: The adversary develops a template-based backdoor containing conditional trigger logic and an attacker-controlled instruction payload. The trigger is selected to activate during ordinary use of the intended application.
-      description_line: The adversary develops a template-based backdoor containing conditional trigger logic and an attacker-controlled instruction payload. The trigger is selected to activate during ordinary use of the intended application.
+    - description: Злоумышленник разрабатывает бэкдор на основе шаблона, содержащий условную логику срабатывания триггера и полезную нагрузку в виде подконтрольной злоумышленнику инструкции. Триггер выбирается так, чтобы срабатывать при обычном использовании целевого приложения.
+      description_line: Злоумышленник разрабатывает бэкдор на основе шаблона, содержащий условную логику срабатывания триггера и полезную нагрузку в виде подконтрольной злоумышленнику инструкции. Триггер выбирается так, чтобы срабатывать при обычном использовании целевого приложения.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0017.000
       technique_name: Состязательные атаки на ИИ
-    - description: The adversary modifies the chat template bundled with the model artifact. The modified template injects attacker-controlled instructions into the model context when its trigger is present, while leaving the model weights unchanged.
-      description_line: The adversary modifies the chat template bundled with the model artifact. The modified template injects attacker-controlled instructions into the model context when its trigger is present, while leaving the model weights unchanged.
+    - description: Злоумышленник изменяет шаблон чата, включённый в состав артефакта модели. При наличии триггера изменённый шаблон внедряет подконтрольные злоумышленнику инструкции в контекст модели, не изменяя её весов.
+      description_line: Злоумышленник изменяет шаблон чата, включённый в состав артефакта модели. При наличии триггера изменённый шаблон внедряет подконтрольные злоумышленнику инструкции в контекст модели, не изменяя её весов.
       tactic: AML.TA0001
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0018.003
       technique_name: Изменение логики формирования промпта
-    - description: The adversary makes the modified artifact appear equivalent to the legitimate model. The artifact preserves expected behavior when the trigger is absent, and the malicious logic is concealed among legitimate template formatting and control logic.
-      description_line: The adversary makes the modified artifact appear equivalent to the legitimate model. The artifact preserves expected behavior when the trigger is absent, and the malicious logic is concealed among legitimate template formatting and control logic.
+    - description: Злоумышленник делает так, чтобы изменённый артефакт выглядел эквивалентным легитимной модели. В отсутствие триггера артефакт сохраняет ожидаемое поведение, а вредоносная логика скрыта среди легитимных элементов форматирования шаблона и легитимной управляющей логики.
+      description_line: Злоумышленник делает так, чтобы изменённый артефакт выглядел эквивалентным легитимной модели. В отсутствие триггера артефакт сохраняет ожидаемое поведение, а вредоносная логика скрыта среди легитимных элементов форматирования шаблона и легитимной управляющей логики.
       tactic: AML.TA0007
       tactic_name: Уклонение от защиты
       technique: AML.T0074
       technique_name: Маскировка
-    - description: The adversary publishes the modified model artifact through a model repository or another distribution channel used by downstream developers and organizations.
-      description_line: The adversary publishes the modified model artifact through a model repository or another distribution channel used by downstream developers and organizations.
+    - description: Злоумышленник публикует изменённый артефакт модели в репозитории моделей или через другой канал распространения, используемый разработчиками и организациями на последующих этапах цепочки поставок.
+      description_line: Злоумышленник публикует изменённый артефакт модели в репозитории моделей или через другой канал распространения, используемый разработчиками и организациями на последующих этапах цепочки поставок.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0115.001
       technique_name: Модели
-    - description: A victim downloads and integrates the poisoned artifact while trusting the model and its bundled components. This introduces the template backdoor into the victim's AI application or agent.
-      description_line: A victim downloads and integrates the poisoned artifact while trusting the model and its bundled components. This introduces the template backdoor into the victim's AI application or agent.
+    - description: Жертва скачивает и интегрирует отравленный артефакт, доверяя модели и включённым в её состав компонентам. В результате бэкдор в шаблоне внедряется в ИИ-приложение или ИИ-агента жертвы.
+      description_line: Жертва скачивает и интегрирует отравленный артефакт, доверяя модели и включённым в её состав компонентам. В результате бэкдор в шаблоне внедряется в ИИ-приложение или ИИ-агента жертвы.
       tactic: AML.TA0004
       tactic_name: Первичный доступ
       technique: AML.T0010.003
       technique_name: Модель
-    - description: The victim loads and uses the poisoned artifact in a compatible inference engine. During inference, the engine automatically interprets the bundled chat template, causing the attacker-modified prompt-construction logic to execute as part of normal model use.
-      description_line: The victim loads and uses the poisoned artifact in a compatible inference engine. During inference, the engine automatically interprets the bundled chat template, causing the attacker-modified prompt-construction logic to execute as part of normal model use.
+    - description: Жертва загружает и использует отравленный артефакт в совместимом движке инференса. Во время инференса движок автоматически интерпретирует включённый в состав артефакта шаблон чата, из-за чего изменённая злоумышленником логика формирования промпта выполняется в рамках обычного использования модели.
+      description_line: Жертва загружает и использует отравленный артефакт в совместимом движке инференса. Во время инференса движок автоматически интерпретирует включённый в состав артефакта шаблон чата, из-за чего изменённая злоумышленником логика формирования промпта выполняется в рамках обычного использования модели.
       tactic: AML.TA0005
       tactic_name: Выполнение
       technique: AML.T0011.000
       technique_name: Небезопасные ИИ-артефакты
-    - description: When a designated phrase or contextual condition appears, the template injects the attacker-controlled instruction into the serialized model context. The victim's ordinary activity activates the backdoor without requiring additional attacker interaction.
-      description_line: When a designated phrase or contextual condition appears, the template injects the attacker-controlled instruction into the serialized model context. The victim's ordinary activity activates the backdoor without requiring additional attacker interaction.
+    - description: При появлении заданной фразы или контекстного условия шаблон внедряет подконтрольную злоумышленнику инструкцию в сериализованный контекст модели. Обычная активность жертвы активирует бэкдор без дальнейшего участия злоумышленника.
+      description_line: При появлении заданной фразы или контекстного условия шаблон внедряет подконтрольную злоумышленнику инструкцию в сериализованный контекст модели. Обычная активность жертвы активирует бэкдор без дальнейшего участия злоумышленника.
       tactic: AML.TA0005
       tactic_name: Выполнение
       technique: AML.T0051.002
       technique_name: Триггерная промпт-инъекция
-    - description: The injected instruction causes the model to produce plausible but incorrect or attacker-influenced responses. The model continues to behave normally when the trigger is absent, making the integrity compromise difficult to detect.
-      description_line: The injected instruction causes the model to produce plausible but incorrect or attacker-influenced responses. The model continues to behave normally when the trigger is absent, making the integrity compromise difficult to detect.
+    - description: Внедрённая инструкция заставляет модель выдавать правдоподобные, но неверные либо сформированные под влиянием злоумышленника ответы. В отсутствие триггера модель продолжает вести себя нормально, из-за чего компрометацию целостности трудно обнаружить.
+      description_line: Внедрённая инструкция заставляет модель выдавать правдоподобные, но неверные либо сформированные под влиянием злоумышленника ответы. В отсутствие триггера модель продолжает вести себя нормально, из-за чего компрометацию целостности трудно обнаружить.
       tactic: AML.TA0011
       tactic_name: Воздействие
       technique: AML.T0031
       technique_name: Нарушение целостности ИИ-модели
-    - description: The injected instruction causes the model to include attacker-selected links, references, or other response components in a form that appears relevant or trustworthy to the user.
-      description_line: The injected instruction causes the model to include attacker-selected links, references, or other response components in a form that appears relevant or trustworthy to the user.
+    - description: Внедрённая инструкция заставляет модель включать в ответ выбранные злоумышленником гиперссылки, ссылки на источники или другие компоненты так, чтобы они казались пользователю релевантными или заслуживающими доверия.
+      description_line: Внедрённая инструкция заставляет модель включать в ответ выбранные злоумышленником гиперссылки, ссылки на источники или другие компоненты так, чтобы они казались пользователю релевантными или заслуживающими доверия.
       tactic: AML.TA0007
       tactic_name: Уклонение от защиты
       technique: AML.T0067
       technique_name: Манипуляция доверенными компонентами ответа LLM
-    - description: When the poisoned model operates as part of an AI agent, the injected instruction redirects the agent's tool selection, tool arguments, or execution order toward the attacker's objective while allowing the legitimate task to continue.
-      description_line: When the poisoned model operates as part of an AI agent, the injected instruction redirects the agent's tool selection, tool arguments, or execution order toward the attacker's objective while allowing the legitimate task to continue.
+    - description: Когда отравленная модель работает в составе ИИ-агента, внедрённая инструкция меняет выбор инструментов агентом, аргументы их вызовов или порядок выполнения операций в интересах достижения цели злоумышленника, при этом позволяя продолжить выполнение легитимной задачи.
+      description_line: Когда отравленная модель работает в составе ИИ-агента, внедрённая инструкция меняет выбор инструментов агентом, аргументы их вызовов или порядок выполнения операций в интересах достижения цели злоумышленника, при этом позволяя продолжить выполнение легитимной задачи.
       tactic: AML.TA0005
       tactic_name: Выполнение
       technique: AML.T0053
       technique_name: Вызов инструментов ИИ-агента
-    - description: The compromised agent invokes a network-capable or write-capable tool to transmit sensitive information to an attacker-controlled destination. The agent may then continue and complete the user's legitimate task, concealing the unauthorized transmission.
-      description_line: The compromised agent invokes a network-capable or write-capable tool to transmit sensitive information to an attacker-controlled destination. The agent may then continue and complete the user's legitimate task, concealing the unauthorized transmission.
+    - description: Скомпрометированный ИИ-агент вызывает инструмент с сетевым доступом или возможностью записи, чтобы передать чувствительную информацию в место назначения, подконтрольное злоумышленнику. Затем агент может продолжить и завершить легитимную задачу пользователя, тем самым скрывая неавторизованную передачу.
+      description_line: Скомпрометированный ИИ-агент вызывает инструмент с сетевым доступом или возможностью записи, чтобы передать чувствительную информацию в место назначения, подконтрольное злоумышленнику. Затем агент может продолжить и завершить легитимную задачу пользователя, тем самым скрывая неавторизованную передачу.
       tactic: AML.TA0010
       tactic_name: Эксфильтрация
       technique: AML.T0086
       technique_name: Эксфильтрация через вызов инструмента ИИ-агента
-    - description: The compromised system may expose users to privacy loss, credential theft, misleading information, or attacker-modified software. Malicious content inserted into generated artifacts may continue to affect downstream users after those artifacts are deployed or distributed.
-      description_line: The compromised system may expose users to privacy loss, credential theft, misleading information, or attacker-modified software. Malicious content inserted into generated artifacts may continue to affect downstream users after those artifacts are deployed or distributed.
+    - description: Скомпрометированная система может подвергать пользователей риску нарушения приватности, кражи учётных данных, получения вводящей в заблуждение информации или ПО, изменённого злоумышленником. Вредоносное содержимое, внедрённое в сгенерированные артефакты, может продолжать воздействовать на пользователей на последующих этапах цепочки поставок после развёртывания или распространения этих артефактов.
+      description_line: Скомпрометированная система может подвергать пользователей риску нарушения приватности, кражи учётных данных, получения вводящей в заблуждение информации или ПО, изменённого злоумышленником. Вредоносное содержимое, внедрённое в сгенерированные артефакты, может продолжать воздействовать на пользователей на последующих этапах цепочки поставок после развёртывания или распространения этих артефактов.
       tactic: AML.TA0011
       tactic_name: Воздействие
       technique: AML.T0048.003
