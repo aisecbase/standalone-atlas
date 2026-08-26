@@ -25,8 +25,8 @@ generated_by: atlasgen
 <td data-label="Всего">68</td>
 <td data-label="Названий переведено">64</td>
 <td data-label="Описаний переведено">64</td>
-<td data-label="Процедур переведено">494/571</td>
-<td data-label="Полностью переведено">43</td>
+<td data-label="Процедур переведено">513/571</td>
+<td data-label="Полностью переведено">44</td>
 <td data-label="Требует проверки">16</td>
 </tr>
 <tr>
@@ -141,7 +141,7 @@ generated_by: atlasgen
 - [`AML.TA0009`](/tactics/AML.TA0009/) (Тактики): Collection; название: да; описание/summary: да; требует проверки: описание
 - [`AML.TA0012`](/tactics/AML.TA0012/) (Тактики): Privilege Escalation; название: да; описание/summary: да; требует проверки: описание
 
-## Частичный перевод (8)
+## Частичный перевод (7)
 
 - [`AML.CS0019`](/studies/AML.CS0019/) (Кейсы): PoisonGPT; название: да; описание/summary: да; процедуры: 6/7; процедуры требуют проверки: 1; требует проверки: процедуры
 - [`AML.CS0025`](/studies/AML.CS0025/) (Кейсы): Web-Scale Data Poisoning: Split-View Attack; название: да; описание/summary: да; процедуры: 4/6
@@ -150,7 +150,6 @@ generated_by: atlasgen
 - [`AML.CS0049`](/studies/AML.CS0049/) (Кейсы): Supply Chain Compromise via Poisoned ClawdBot Skill; название: да; описание/summary: да; процедуры: 9/12
 - [`AML.CS0053`](/studies/AML.CS0053/) (Кейсы): Poisoned Postmark MCP Server Email Exfiltration; название: да; описание/summary: да; процедуры: 7/9
 - [`AML.CS0054`](/studies/AML.CS0054/) (Кейсы): Data Exfiltration via Remote Poisoned MCP Tool; название: да; описание/summary: да; процедуры: 7/11; процедуры требуют проверки: 1; требует проверки: процедуры
-- [`AML.CS0063`](/studies/AML.CS0063/) (Кейсы): Prompt-Based Attacks Against Gemini via Calendar Invitations; название: да; описание/summary: да; процедуры: 1/20
 
 ## Перевод отсутствует (4)
 

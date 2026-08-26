@@ -16,116 +16,116 @@ procedure:
       tactic_name: Разведка
       technique: AML.T0006
       technique_name: Активное сканирование
-    - description: The researchers identified available agents, tools, and connected services, including Calendar, Gmail, Google Home, Android Utilities, Chrome, and Zoom.
-      description_line: The researchers identified available agents, tools, and connected services, including Calendar, Gmail, Google Home, Android Utilities, Chrome, and Zoom.
+    - description: Исследователи выявили, какие агенты, инструменты и подключённые сервисы были доступны, включая Calendar, Gmail, Google Home, Android Utilities, Chrome и Zoom.
+      description_line: Исследователи выявили, какие агенты, инструменты и подключённые сервисы были доступны, включая Calendar, Gmail, Google Home, Android Utilities, Chrome и Zoom.
       tactic: AML.TA0008
       tactic_name: Выявление
       technique: AML.T0084
       technique_name: Выявление конфигурации ИИ-агента
-    - description: The researchers crafted malicious instructions tailored to Gemini's retrieval behavior, agents, and available tool permissions.
-      description_line: The researchers crafted malicious instructions tailored to Gemini's retrieval behavior, agents, and available tool permissions.
+    - description: Исследователи подготовили вредоносные инструкции с учётом поведения Gemini при извлечении данных, агентов Gemini и доступных разрешений на использование инструментов.
+      description_line: Исследователи подготовили вредоносные инструкции с учётом поведения Gemini при извлечении данных, агентов Gemini и доступных разрешений на использование инструментов.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0065
       technique_name: Создание промптов для LLM
-    - description: The researchers sent a poisoned Calendar invitation or email containing malicious instructions in its title or subject.
-      description_line: The researchers sent a poisoned Calendar invitation or email containing malicious instructions in its title or subject.
+    - description: Исследователи отправили отравленное приглашение Calendar или электронное письмо с вредоносными инструкциями в заголовке приглашения или теме письма.
+      description_line: Исследователи отправили отравленное приглашение Calendar или электронное письмо с вредоносными инструкциями в заголовке приглашения или теме письма.
       tactic: AML.TA0004
       tactic_name: Первичный доступ
       technique: AML.T0093
       technique_name: Внедрение промпта через публичное приложение
-    - description: When the victim asked Gemini to summarize Calendar events or emails, Gemini retrieved the adversary-controlled content and incorporated it into its context.
-      description_line: When the victim asked Gemini to summarize Calendar events or emails, Gemini retrieved the adversary-controlled content and incorporated it into its context.
+    - description: Когда жертва попросила Gemini суммаризировать события Calendar или электронные письма, Gemini извлёк подконтрольное злоумышленнику содержимое и включил его в свой контекст.
+      description_line: Когда жертва попросила Gemini суммаризировать события Calendar или электронные письма, Gemini извлёк подконтрольное злоумышленнику содержимое и включил его в свой контекст.
       tactic: AML.TA0005
       tactic_name: Выполнение
       technique: AML.T0051.001
       technique_name: Косвенная промпт-инъекция
-    - description: The injected instructions remained in the conversation context, including Calendar content concealed behind 'Show more,' to influence subsequent turns.
-      description_line: The injected instructions remained in the conversation context, including Calendar content concealed behind 'Show more,' to influence subsequent turns.
+    - description: Внедрённые инструкции оставались в контексте диалога — в том числе инструкции из содержимого Calendar, скрытого за элементом интерфейса 'Show more', — чтобы влиять на последующие ходы диалога.
+      description_line: Внедрённые инструкции оставались в контексте диалога — в том числе инструкции из содержимого Calendar, скрытого за элементом интерфейса 'Show more', — чтобы влиять на последующие ходы диалога.
       tactic: AML.TA0006
       tactic_name: Закрепление
       technique: AML.T0080.001
       technique_name: Цепочка сообщений
-    - description: The malicious instructions deferred the action until a future victim interaction, avoiding restrictions imposed during the original retrieval turn.
-      description_line: The malicious instructions deferred the action until a future victim interaction, avoiding restrictions imposed during the original retrieval turn.
+    - description: Вредоносные инструкции откладывали выполнение действия до последующего взаимодействия жертвы с Gemini, обходя ограничения, действовавшие в исходном ходе диалога, когда содержимое было извлечено.
+      description_line: Вредоносные инструкции откладывали выполнение действия до последующего взаимодействия жертвы с Gemini, обходя ограничения, действовавшие в исходном ходе диалога, когда содержимое было извлечено.
       tactic: AML.TA0007
       tactic_name: Уклонение от защиты
       technique: AML.T0094
       technique_name: Отложенное выполнение инструкций LLM
-    - description: A later victim response such as "Thanks" activated the stored instructions.
-      description_line: A later victim response such as "Thanks" activated the stored instructions.
+    - description: Последующий ответ жертвы, например "Thanks", активировал сохранённые инструкции.
+      description_line: Последующий ответ жертвы, например "Thanks", активировал сохранённые инструкции.
       tactic: AML.TA0005
       tactic_name: Выполнение
       technique: AML.T0051.002
       technique_name: Триггерная промпт-инъекция
-    - description: The malicious prompt caused Gemini to follow roleplay and instruction-override content to replace its normal response with adversary-selected toxic content or promotions.
-      description_line: The malicious prompt caused Gemini to follow roleplay and instruction-override content to replace its normal response with adversary-selected toxic content or promotions.
+    - description: 'Вредоносный промпт заставил Gemini следовать ролевому сценарию и указаниям по переопределению инструкций и вместо обычного ответа выдавать выбранное злоумышленником содержимое: токсичный контент или рекламные материалы.'
+      description_line: 'Вредоносный промпт заставил Gemini следовать ролевому сценарию и указаниям по переопределению инструкций и вместо обычного ответа выдавать выбранное злоумышленником содержимое: токсичный контент или рекламные материалы.'
       tactic: AML.TA0007
       tactic_name: Уклонение от защиты
       technique: AML.T0054
       technique_name: Джейлбрейк LLM
-    - description: Gemini delivered harmful content or repeated adversary-selected promotions to the victim.
-      description_line: Gemini delivered harmful content or repeated adversary-selected promotions to the victim.
+    - description: Gemini выдавал жертве контент, способный причинить вред, или многократно показывал рекламные материалы, выбранные злоумышленником.
+      description_line: Gemini выдавал жертве контент, способный причинить вред, или многократно показывал рекламные материалы, выбранные злоумышленником.
       tactic: AML.TA0011
       tactic_name: Воздействие
       technique: AML.T0048.003
       technique_name: Ущерб пользователям
-    - description: The malicious prompt caused Gemini to invoke Google Calendar tools using the victim's authorized access to modify Calendar data.
-      description_line: The malicious prompt caused Gemini to invoke Google Calendar tools using the victim's authorized access to modify Calendar data.
+    - description: Вредоносный промпт заставил Gemini использовать права доступа жертвы к Calendar для вызова инструментов Google Calendar и изменения данных Calendar.
+      description_line: Вредоносный промпт заставил Gemini использовать права доступа жертвы к Calendar для вызова инструментов Google Calendar и изменения данных Calendar.
       tactic: AML.TA0012
       tactic_name: Повышение привилегий
       technique: AML.T0053
       technique_name: Вызов инструментов ИИ-агента
-    - description: Gemini deleted a victim Calendar event.
-      description_line: Gemini deleted a victim Calendar event.
+    - description: Gemini удалил событие жертвы в Calendar.
+      description_line: Gemini удалил событие жертвы в Calendar.
       tactic: AML.TA0011
       tactic_name: Воздействие
       technique: AML.T0101
       technique_name: Уничтожение данных через вызов инструмента ИИ-агента
-    - description: The malicious prompt caused Gemini to invoke Google Home using the victim's authorized connection to control connected windows, a boiler, or lights.
-      description_line: The malicious prompt caused Gemini to invoke Google Home using the victim's authorized connection to control connected windows, a boiler, or lights.
+    - description: Вредоносный промпт заставил Gemini задействовать Google Home через авторизованное подключение жертвы для управления подключёнными окнами, бойлером или освещением.
+      description_line: Вредоносный промпт заставил Gemini задействовать Google Home через авторизованное подключение жертвы для управления подключёнными окнами, бойлером или освещением.
       tactic: AML.TA0012
       tactic_name: Повышение привилегий
       technique: AML.T0053
       technique_name: Вызов инструментов ИИ-агента
-    - description: The victim's physical environment was altered, potentially creating safety, privacy, property, or financial harm.
-      description_line: The victim's physical environment was altered, potentially creating safety, privacy, property, or financial harm.
+    - description: Физическая среда жертвы была изменена, что могло создать угрозу её безопасности и приватности, а также причинить имущественный или финансовый ущерб.
+      description_line: Физическая среда жертвы была изменена, что могло создать угрозу её безопасности и приватности, а также причинить имущественный или финансовый ущерб.
       tactic: AML.TA0011
       tactic_name: Воздействие
       technique: AML.T0048.003
       technique_name: Ущерб пользователям
-    - description: The malicious prompt caused Gemini to use Android Utilities to open an adversary-controlled URL in the victim's browser and initiate a download.
-      description_line: The malicious prompt caused Gemini to use Android Utilities to open an adversary-controlled URL in the victim's browser and initiate a download.
+    - description: Вредоносный промпт заставил Gemini использовать Android Utilities, чтобы открыть подконтрольный злоумышленнику URL в браузере жертвы и инициировать скачивание.
+      description_line: Вредоносный промпт заставил Gemini использовать Android Utilities, чтобы открыть подконтрольный злоумышленнику URL в браузере жертвы и инициировать скачивание.
       tactic: AML.TA0012
       tactic_name: Повышение привилегий
       technique: AML.T0053
       technique_name: Вызов инструментов ИИ-агента
-    - description: The adversary-controlled website received the victim device's source IP address, enabling approximate geolocation.
-      description_line: The adversary-controlled website received the victim device's source IP address, enabling approximate geolocation.
+    - description: Подконтрольный злоумышленнику веб-сайт получил IP-адрес источника — устройства жертвы, что позволило приблизительно определить местоположение устройства.
+      description_line: Подконтрольный злоумышленнику веб-сайт получил IP-адрес источника — устройства жертвы, что позволило приблизительно определить местоположение устройства.
       tactic: AML.TA0010
       tactic_name: Эксфильтрация
       technique: AML.T0025
       technique_name: Эксфильтрация киберсредствами
-    - description: The malicious prompt caused Gemini to use Android Utilities and an application link or redirect chain to invoke Zoom.
-      description_line: The malicious prompt caused Gemini to use Android Utilities and an application link or redirect chain to invoke Zoom.
+    - description: Вредоносный промпт заставил Gemini использовать Android Utilities и ссылку на приложение или цепочку перенаправлений, чтобы запустить Zoom.
+      description_line: Вредоносный промпт заставил Gemini использовать Android Utilities и ссылку на приложение или цепочку перенаправлений, чтобы запустить Zoom.
       tactic: AML.TA0012
       tactic_name: Повышение привилегий
       technique: AML.T0053
       technique_name: Вызов инструментов ИИ-агента
-    - description: Unauthorized video streaming caused privacy harm to the victim.
-      description_line: Unauthorized video streaming caused privacy harm to the victim.
+    - description: Неавторизованная трансляция видео нарушила приватность жертвы.
+      description_line: Неавторизованная трансляция видео нарушила приватность жертвы.
       tactic: AML.TA0011
       tactic_name: Воздействие
       technique: AML.T0048.003
       technique_name: Ущерб пользователям
-    - description: The malicious prompt caused Gemini to retrieve Calendar event titles or Gmail email subjects using connected agent tools and place the contents into adversary-controlled URLs.
-      description_line: The malicious prompt caused Gemini to retrieve Calendar event titles or Gmail email subjects using connected agent tools and place the contents into adversary-controlled URLs.
+    - description: Вредоносный промпт заставил Gemini с помощью подключённых инструментов ИИ-агента извлечь заголовки событий Calendar или темы писем Gmail и поместить полученные данные в URL, подконтрольные злоумышленнику.
+      description_line: Вредоносный промпт заставил Gemini с помощью подключённых инструментов ИИ-агента извлечь заголовки событий Calendar или темы писем Gmail и поместить полученные данные в URL, подконтрольные злоумышленнику.
       tactic: AML.TA0009
       tactic_name: Сбор материалов
       technique: AML.T0085.001
       technique_name: Инструменты ИИ-агента
-    - description: Gemini opened the constructed URL using Android Utilities, transmitting the victim's Calendar or email data to the adversary-controlled server.
-      description_line: Gemini opened the constructed URL using Android Utilities, transmitting the victim's Calendar or email data to the adversary-controlled server.
+    - description: Gemini открыл сформированный URL с помощью Android Utilities, тем самым передав на подконтрольный злоумышленнику сервер данные жертвы из Calendar или электронной почты.
+      description_line: Gemini открыл сформированный URL с помощью Android Utilities, тем самым передав на подконтрольный злоумышленнику сервер данные жертвы из Calendar или электронной почты.
       tactic: AML.TA0010
       tactic_name: Эксфильтрация
       technique: AML.T0086

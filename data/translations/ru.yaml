@@ -4678,6 +4678,120 @@ objects:
           description_sha256: "e54f3b4b3a99e385cb990b6de4c3bbc6a416800a8ae5995fe546cfdd6ad78d2b"
         description: |-
           Исследователи напрямую тестировали интерфейсы Gemini, чтобы понять, как система выбирает и задействует агентов.
+      - tactic: AML.TA0008
+        technique: AML.T0084
+        source:
+          description_sha256: "521e4f6b872eaabebf286d17a8e3455fa52c160b2bb2a7cba3351d263ee431ca"
+        description: |-
+          Исследователи выявили, какие агенты, инструменты и подключённые сервисы были доступны, включая Calendar, Gmail, Google Home, Android Utilities, Chrome и Zoom.
+      - tactic: AML.TA0003
+        technique: AML.T0065
+        source:
+          description_sha256: "53a0c90552b5b8d09a77c81320b3227333c630cdb5370b391b1c9fb31bc4cd1e"
+        description: |-
+          Исследователи подготовили вредоносные инструкции с учётом поведения Gemini при извлечении данных, агентов Gemini и доступных разрешений на использование инструментов.
+      - tactic: AML.TA0004
+        technique: AML.T0093
+        source:
+          description_sha256: "6a833cb08d1b1fb8a0c418c754cbcd6590e005066c154ad6233ba456334e1d8b"
+        description: |-
+          Исследователи отправили отравленное приглашение Calendar или электронное письмо с вредоносными инструкциями в заголовке приглашения или теме письма.
+      - tactic: AML.TA0005
+        technique: AML.T0051.001
+        source:
+          description_sha256: "397f9311474031f3974c3a47e364642775e143001e2a65925e360d026f58f79d"
+        description: |-
+          Когда жертва попросила Gemini суммаризировать события Calendar или электронные письма, Gemini извлёк подконтрольное злоумышленнику содержимое и включил его в свой контекст.
+      - tactic: AML.TA0006
+        technique: AML.T0080.001
+        source:
+          description_sha256: "612aa4f2a7f867da28f110f1ecaefb6580f3cc446e7f86e548f174756bb7b670"
+        description: |-
+          Внедрённые инструкции оставались в контексте диалога — в том числе инструкции из содержимого Calendar, скрытого за элементом интерфейса 'Show more', — чтобы влиять на последующие ходы диалога.
+      - tactic: AML.TA0007
+        technique: AML.T0094
+        source:
+          description_sha256: "c4bc7e54501fd665074bdf2c4b48fe8a011a598e3f483d4ebb610f146e05f63a"
+        description: |-
+          Вредоносные инструкции откладывали выполнение действия до последующего взаимодействия жертвы с Gemini, обходя ограничения, действовавшие в исходном ходе диалога, когда содержимое было извлечено.
+      - tactic: AML.TA0005
+        technique: AML.T0051.002
+        source:
+          description_sha256: "6e85ba4907a6b6ce56b849259d9a88542cd002b62eae14210a0e7c12d5c0c8d0"
+        description: |-
+          Последующий ответ жертвы, например "Thanks", активировал сохранённые инструкции.
+      - tactic: AML.TA0007
+        technique: AML.T0054
+        source:
+          description_sha256: "76ec8bd4efd77a0fd9d8551e40fef4bdc366e9f034ef470edb94fe3dbbcfd2e4"
+        description: |-
+          Вредоносный промпт заставил Gemini следовать ролевому сценарию и указаниям по переопределению инструкций и вместо обычного ответа выдавать выбранное злоумышленником содержимое: токсичный контент или рекламные материалы.
+      - tactic: AML.TA0011
+        technique: AML.T0048.003
+        source:
+          description_sha256: "934511c39246418e96a916586c7ffc350a726c4fc17f5d9a4b4995b5bcd0293d"
+        description: |-
+          Gemini выдавал жертве контент, способный причинить вред, или многократно показывал рекламные материалы, выбранные злоумышленником.
+      - tactic: AML.TA0012
+        technique: AML.T0053
+        source:
+          description_sha256: "18eff71cbbaef07055ff599b4d10f8a0dd97a865b8d586bf9c68d676bfa0d13b"
+        description: |-
+          Вредоносный промпт заставил Gemini использовать права доступа жертвы к Calendar для вызова инструментов Google Calendar и изменения данных Calendar.
+      - tactic: AML.TA0011
+        technique: AML.T0101
+        source:
+          description_sha256: "46be78c7f073e467739527cb2e7a5d2c2a0c52ce50cd90360a377a554921a46d"
+        description: |-
+          Gemini удалил событие жертвы в Calendar.
+      - tactic: AML.TA0012
+        technique: AML.T0053
+        source:
+          description_sha256: "f61aa834f093559031727bb4b46ef746a307422163f8bbe4009fe0d714a39752"
+        description: |-
+          Вредоносный промпт заставил Gemini задействовать Google Home через авторизованное подключение жертвы для управления подключёнными окнами, бойлером или освещением.
+      - tactic: AML.TA0011
+        technique: AML.T0048.003
+        source:
+          description_sha256: "e7312b2d458b7f15aa6e18b6de9986817d7567128929d54afb9ad8a56842e3cd"
+        description: |-
+          Физическая среда жертвы была изменена, что могло создать угрозу её безопасности и приватности, а также причинить имущественный или финансовый ущерб.
+      - tactic: AML.TA0012
+        technique: AML.T0053
+        source:
+          description_sha256: "09ba3107f681c3c64d18dc70d3a0dfc08397b4835312822d729c6e687828cd49"
+        description: |-
+          Вредоносный промпт заставил Gemini использовать Android Utilities, чтобы открыть подконтрольный злоумышленнику URL в браузере жертвы и инициировать скачивание.
+      - tactic: AML.TA0010
+        technique: AML.T0025
+        source:
+          description_sha256: "0a6b1c02a5c8412ae1a2e4b84cb6258c38525a4af136d7b7d5513fcaff4d0b46"
+        description: |-
+          Подконтрольный злоумышленнику веб-сайт получил IP-адрес источника — устройства жертвы, что позволило приблизительно определить местоположение устройства.
+      - tactic: AML.TA0012
+        technique: AML.T0053
+        source:
+          description_sha256: "9d6a27c02a742d091fc08cafb273c3680fc928afdd87022324840d92605bbfa9"
+        description: |-
+          Вредоносный промпт заставил Gemini использовать Android Utilities и ссылку на приложение или цепочку перенаправлений, чтобы запустить Zoom.
+      - tactic: AML.TA0011
+        technique: AML.T0048.003
+        source:
+          description_sha256: "87cd9d52795bedbfb6465fcfe1c79fa53e5efbc3e105320b8e07e78bd034382c"
+        description: |-
+          Неавторизованная трансляция видео нарушила приватность жертвы.
+      - tactic: AML.TA0009
+        technique: AML.T0085.001
+        source:
+          description_sha256: "47f0a09c88f61c182c3fad6a283460ebb378a1d2cc948158337a30d6804a10fe"
+        description: |-
+          Вредоносный промпт заставил Gemini с помощью подключённых инструментов ИИ-агента извлечь заголовки событий Calendar или темы писем Gmail и поместить полученные данные в URL, подконтрольные злоумышленнику.
+      - tactic: AML.TA0010
+        technique: AML.T0086
+        source:
+          description_sha256: "a43d9a2c7230057518301d3b3f9ee57f2cce6775ed5e1c8d747a5ae549a60279"
+        description: |-
+          Gemini открыл сформированный URL с помощью Android Utilities, тем самым передав на подконтрольный злоумышленнику сервер данные жертвы из Calendar или электронной почты.
   "AML.T0006":
     name: "Активное сканирование"
     source:
