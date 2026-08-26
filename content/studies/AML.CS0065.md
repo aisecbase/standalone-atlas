@@ -3,7 +3,7 @@ actor: Unit 42 Researchers
 atlas_id: AML.CS0065
 atlas_type: case-study
 case_study_type: exercise
-description: Unit 42 researchers demonstrated an AI supply chain attack in which an attacker reclaims a deleted Hugging Face author namespace and publishes a malicious model under the same historical Author/ModelName identifier....
+description: Исследователи Unit 42 продемонстрировали атаку на цепочку поставок ИИ, при которой злоумышленник повторно регистрирует удалённое пространство имён автора на Hugging Face и публикует вредоносную модель под тем же...
 generated: true
 generated_by: atlasgen
 incident_date: "2025-09-03"
@@ -65,14 +65,12 @@ references:
 reporter: ""
 source_name: Model Namespace Reuse Supply Chain Attack
 target: Users of Hugging Face-backed model catalogs, code pipelines, and cloud integrations
-title: Model Namespace Reuse Supply Chain Attack
+title: Атака на цепочку поставок через повторное использование пространства имён модели
 url: /studies/AML.CS0065/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Исследователи Unit 42 продемонстрировали атаку на цепочку поставок ИИ, при которой злоумышленник повторно регистрирует удалённое пространство имён автора на Hugging Face и публикует вредоносную модель под тем же историческим идентификатором Author/ModelName. Приложения и каталоги моделей, в которых сохраняются ссылки на этот идентификатор без фиксации конкретной ревизии, при разрешении таких ссылок могут получить и развернуть подконтрольную злоумышленнику модель-замену вместо изначально доверенного артефакта.
 
-Unit 42 researchers demonstrated an AI supply chain attack in which an attacker reclaims a deleted Hugging Face author namespace and publishes a malicious model under the same historical Author/ModelName identifier. Applications and model catalogs that retain unpinned references to that identifier may resolve and deploy the adversary-controlled replacement rather than the originally trusted artifact.
+Атака может затрагивать удалённые модели, а также модели, владение которыми было передано новому автору на Hugging Face. В сценарии передачи владения Hugging Face перенаправляет запросы по старому пути на новое расположение модели, благодаря чему ссылки на старый путь продолжают работать без обновления. Если исходное пространство имён автора впоследствии удаляется и его повторно регистрирует злоумышленник, он может воссоздать старый путь и добиться, чтобы тот указывал на вредоносную модель вместо легитимной модели, на которую ранее перенаправлялись запросы.
 
-The attack can affect deleted models and models whose ownership was transferred to a new Hugging Face author. In the ownership-transfer scenario, Hugging Face redirects requests for the old path to the new model location, allowing stale references to continue working. If the original author namespace is later deleted and reclaimed by an attacker, the attacker can recreate the old path and cause it to resolve to a malicious model instead of the legitimate redirected model.
-
-Unit 42 demonstrated this technique against Hugging Face-backed model catalogs in Google Vertex AI and Azure AI Foundry. The researchers embedded reverse-shell payloads in replacement models and obtained code execution in the deployed endpoint environments. They also identified reusable model references in open-source code repositories, documentation, default arguments, example notebooks, and downstream model registries, which could expose users who do not directly interact with Hugging Face.
+Исследователи Unit 42 продемонстрировали эту технику на каталогах моделей Google Vertex AI и Azure AI Foundry, использующих Hugging Face. Исследователи встроили в модели-замены полезные нагрузки, запускающие реверс-шелл, и добились выполнения кода в средах, где были развёрнуты эндпоинты. Они также выявили ссылки на модели, пригодные для повторного использования в такой атаке, в репозиториях кода с открытым исходным кодом, документации, аргументах по умолчанию, ноутбуках с примерами и реестрах моделей на последующих этапах цепочки поставок. Такие ссылки могли подвергнуть риску пользователей, которые напрямую не взаимодействуют с Hugging Face.

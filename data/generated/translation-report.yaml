@@ -2,8 +2,8 @@ version: "2026.07"
 totals:
     case-study:
         total: 68
-        name_translated: 65
-        body_translated: 65
+        name_translated: 66
+        body_translated: 66
         procedures_total: 571
         procedures_translated: 526
         fully_translated: 45
@@ -33,13 +33,6 @@ totals:
         fully_translated: 137
         needs_review: 41
 missing:
-    - id: AML.CS0065
-      name: Model Namespace Reuse Supply Chain Attack
-      type: case-study
-      has_name: false
-      has_body: false
-      source_field: summary
-      total_procedures: 8
     - id: AML.CS0066
       name: 'ZombieAgent: Data Exfiltration Attack on ChatGPT'
       type: case-study
@@ -123,6 +116,13 @@ partial:
       needs_review: true
       review_fields:
         - procedure
+    - id: AML.CS0065
+      name: Model Namespace Reuse Supply Chain Attack
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 8
 review:
     - id: AML.CS0001
       name: Botnet Domain Generation Algorithm (DGA) Detection Evasion
