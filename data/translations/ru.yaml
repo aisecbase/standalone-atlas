@@ -282,6 +282,8 @@ technique_uses:
     use: "Не дает злоумышленникам использовать отравленные наборы данных для запуска бэкдор-атак против модели."
   - source: "Prevent execution of ML artifacts that are not properly signed."
     use: "Предотвращайте выполнение ML-артефактов, которые не подписаны должным образом."
+  - source: "Probe model and application interfaces for disclosure of system instructions, policies, tool definitions, or hidden context. Remove embedded secrets and improve configuration isolation and output controls."
+    use: "Тестируйте интерфейсы модели и приложения на возможность раскрытия системных инструкций, политик, определений инструментов или скрытого контекста. Удаляйте встроенные секреты и совершенствуйте изоляцию конфигурации и средства контроля выходных данных."
   - source: "Protect machine learning artifacts with encryption."
     use: "Защищайте артефакты машинного обучения с помощью шифрования."
   - source: "Published datasets can be a target for poisoning attacks."
