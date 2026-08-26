@@ -25,7 +25,7 @@ generated_by: atlasgen
 <td data-label="Всего">68</td>
 <td data-label="Названий переведено">64</td>
 <td data-label="Описаний переведено">64</td>
-<td data-label="Процедур переведено">493/571</td>
+<td data-label="Процедур переведено">494/571</td>
 <td data-label="Полностью переведено">43</td>
 <td data-label="Требует проверки">16</td>
 </tr>
@@ -150,7 +150,7 @@ generated_by: atlasgen
 - [`AML.CS0049`](/studies/AML.CS0049/) (Кейсы): Supply Chain Compromise via Poisoned ClawdBot Skill; название: да; описание/summary: да; процедуры: 9/12
 - [`AML.CS0053`](/studies/AML.CS0053/) (Кейсы): Poisoned Postmark MCP Server Email Exfiltration; название: да; описание/summary: да; процедуры: 7/9
 - [`AML.CS0054`](/studies/AML.CS0054/) (Кейсы): Data Exfiltration via Remote Poisoned MCP Tool; название: да; описание/summary: да; процедуры: 7/11; процедуры требуют проверки: 1; требует проверки: процедуры
-- [`AML.CS0063`](/studies/AML.CS0063/) (Кейсы): Prompt-Based Attacks Against Gemini via Calendar Invitations; название: да; описание/summary: да; процедуры: 0/20
+- [`AML.CS0063`](/studies/AML.CS0063/) (Кейсы): Prompt-Based Attacks Against Gemini via Calendar Invitations; название: да; описание/summary: да; процедуры: 1/20
 
 ## Перевод отсутствует (4)
 

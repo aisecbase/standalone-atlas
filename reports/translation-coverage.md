@@ -4,7 +4,7 @@
 
 | Тип объектов | Всего | Названий переведено | Описаний переведено | Процедур переведено | Полностью переведено | Требует проверки |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Кейсы | 68 | 64 | 64 | 493/571 | 43 | 16 |
+| Кейсы | 68 | 64 | 64 | 494/571 | 43 | 16 |
 | Меры защиты | 37 | 37 | 37 | - | 26 | 11 |
 | Ресурсы | 6 | 6 | 6 | - | 6 | 0 |
 | Тактики | 16 | 16 | 16 | - | 14 | 2 |
@@ -92,7 +92,7 @@
 - [`AML.CS0049`](/studies/AML.CS0049/) (Кейсы): Supply Chain Compromise via Poisoned ClawdBot Skill; название: да; описание/summary: да; процедуры: 9/12
 - [`AML.CS0053`](/studies/AML.CS0053/) (Кейсы): Poisoned Postmark MCP Server Email Exfiltration; название: да; описание/summary: да; процедуры: 7/9
 - [`AML.CS0054`](/studies/AML.CS0054/) (Кейсы): Data Exfiltration via Remote Poisoned MCP Tool; название: да; описание/summary: да; процедуры: 7/11; процедуры требуют проверки: 1; требует проверки: процедуры
-- [`AML.CS0063`](/studies/AML.CS0063/) (Кейсы): Prompt-Based Attacks Against Gemini via Calendar Invitations; название: да; описание/summary: да; процедуры: 0/20
+- [`AML.CS0063`](/studies/AML.CS0063/) (Кейсы): Prompt-Based Attacks Against Gemini via Calendar Invitations; название: да; описание/summary: да; процедуры: 1/20
 
 ## Перевод отсутствует (4)
 

@@ -10,8 +10,8 @@ incident_date: "2025-08-06"
 incident_date_granularity: Day
 incident_date_raw: "2025-08-06"
 procedure:
-    - description: The researchers directly probed Gemini interfaces to understand its agent selection and execution behavior.
-      description_line: The researchers directly probed Gemini interfaces to understand its agent selection and execution behavior.
+    - description: Исследователи напрямую тестировали интерфейсы Gemini, чтобы понять, как система выбирает и задействует агентов.
+      description_line: Исследователи напрямую тестировали интерфейсы Gemini, чтобы понять, как система выбирает и задействует агентов.
       tactic: AML.TA0002
       tactic_name: Разведка
       technique: AML.T0006

@@ -5,7 +5,7 @@ totals:
         name_translated: 64
         body_translated: 64
         procedures_total: 571
-        procedures_translated: 493
+        procedures_translated: 494
         fully_translated: 43
         needs_review: 16
     mitigation:
@@ -137,6 +137,7 @@ partial:
       has_body: true
       source_field: summary
       total_procedures: 20
+      translated_procedures: 1
 review:
     - id: AML.CS0001
       name: Botnet Domain Generation Algorithm (DGA) Detection Evasion
