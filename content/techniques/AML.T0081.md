@@ -41,7 +41,7 @@ url: /techniques/AML.T0081/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Exercise unauthorized changes to system prompts, tools, knowledge sources, security settings, and approval requirements. Improve access controls, change approval, integrity monitoring, and restoration from trusted configurations.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Отрабатывайте сценарии неавторизованных изменений системных промптов, инструментов, источников знаний, настроек безопасности и требований к одобрению. Совершенствуйте средства контроля доступа, процедуры одобрения изменений, мониторинг целостности и механизмы восстановления системы на основе доверенных конфигураций.</p></a>
 </div>
 
 
