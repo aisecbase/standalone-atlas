@@ -274,6 +274,8 @@ technique_uses:
     use: "Размещайте контролируемые инструкции в содержимом или рабочих процессах, где впоследствии их активируют действия пользователей или системные события. Проверяйте разрешения на активацию триггеров, обработку контекста, ограничения на действия и мониторинг."
   - source: "Place controlled malicious instructions in external or retrieved content processed by the system. Improve content trust boundaries, retrieval controls, instruction isolation, and restrictions on resulting actions."
     use: "Размещайте контролируемые вредоносные инструкции во внешнем или извлечённом содержимом, которое обрабатывает система. Совершенствуйте границы доверия при обработке содержимого, средства контроля извлечения, изоляцию инструкций и ограничения на действия, выполняемые в результате."
+  - source: "Place synthetic secrets or canary records in representative data sources and attempt extraction through prompts, retrieval, tools, and rendered output. Improve authorization boundaries, filtering, tenant isolation, and exfiltration detection."
+    use: "Размещайте синтетические секреты или записи-канарейки в репрезентативных источниках данных и пытайтесь извлечь их через промпты, механизмы извлечения данных, инструменты и отображаемые выходные данные. Совершенствуйте разграничение полномочий, фильтрацию, изоляцию тенантов и обнаружение эксфильтрации."
   - source: "Preprocessing model inputs can prevent malicious data from going through the machine learning pipeline."
     use: "Предобработка входных данных модели может предотвратить прохождение вредоносных данных через пайплайн машинного обучения."
   - source: "Prevent an attacker from introducing adversarial data into the system."
