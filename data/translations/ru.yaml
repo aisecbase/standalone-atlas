@@ -348,6 +348,8 @@ technique_uses:
     use: "Логирование телеметрии может помочь выявить отправку чувствительной информации о модели злоумышленнику."
   - source: "Telemetry logging can help identify if unsafe prompts have been submitted to the LLM."
     use: "Логирование телеметрии может помочь выявить отправку небезопасных промптов в LLM."
+  - source: "Test recursive behavior, repeated tool calls, costly API use, and attacker-controlled task expansion. Verify budgets, iteration limits, timeouts, approval thresholds, and termination controls."
+    use: "Тестируйте рекурсивное поведение, повторные вызовы инструментов, использование API, приводящее к высоким затратам, и расширение области задачи под контролем злоумышленника. Проверяйте бюджеты, ограничения числа итераций, таймауты, пороги обязательного одобрения и средства остановки выполнения."
   - source: "Test whether controlled changes to model weights, fine-tuning, or associated artifacts can introduce targeted or persistent behavior. Improve model provenance, validation, integrity monitoring, and rollback."
     use: "Проверьте, могут ли контролируемые изменения весов модели, контролируемое дообучение или контролируемые изменения связанных с моделью артефактов привести к появлению целевого или устойчивого поведения. Усовершенствуйте отслеживание происхождения модели, её валидацию и мониторинг целостности, а также механизм возврата к предыдущей версии."
   - source: "Test whether model outputs reveal the membership of known training samples. Improve privacy-preserving training, output restriction, access controls, and query monitoring."
