@@ -232,6 +232,8 @@ technique_uses:
     use: "Ограничьте количество запросов, которые пользователи могут выполнять за заданный интервал, чтобы защитить систему от спама шумовыми данными."
   - source: "Limit the release of sensitive information in the metadata of deployed systems and publicly available applications."
     use: "Ограничьте публикацию чувствительной информации в метаданных развернутых систем и публично доступных приложений."
+  - source: "Limit the resources consumed by individual requests to reduce denial of service from computationally expensive inputs."
+    use: "Ограничивайте объём ресурсов, потребляемых отдельными запросами, чтобы снизить риск отказа в обслуживании ИИ-сервиса из-за входных данных, требующих значительных вычислительных ресурсов."
   - source: "Limit the volume of API queries in a given period of time to regulate the amount and fidelity of potentially sensitive information an attacker can learn."
     use: "Ограничьте объем API-запросов за заданный период, чтобы регулировать объем и детализацию потенциально чувствительной информации, которую может получить злоумышленник."
   - source: "Limiting release of technical information about a model and training data can reduce an adversary's ability to create an accurate proxy model."
