@@ -56,7 +56,7 @@ url: /techniques/AML.T0080.001/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Introduce controlled malicious instructions into long-lived or shared conversation threads. Verify context isolation, trust handling, thread reset, expiration, and monitoring.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Внедряйте контролируемые вредоносные инструкции в долгоживущие цепочки сообщений или цепочки сообщений с общим доступом. Проверяйте изоляцию контекста и его обработку с учётом уровня доверия, сброс цепочек сообщений, сроки действия и мониторинг.</p></a>
 </div>
 
 
