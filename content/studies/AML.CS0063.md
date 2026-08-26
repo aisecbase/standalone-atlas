@@ -3,7 +3,7 @@ actor: SafeBreach Research Team
 atlas_id: AML.CS0063
 atlas_type: case-study
 case_study_type: exercise
-description: SafeBreach researchers demonstrated how adversary-controlled instructions embedded in productivity content, including Google Calendar invitations, emails, and shared files, could influence the behavior of...
+description: Исследователи SafeBreach продемонстрировали, как подконтрольные злоумышленнику инструкции, встроенные в содержимое сервисов для продуктивной работы, включая приглашения Google Calendar, электронные письма и файлы с...
 generated: true
 generated_by: atlasgen
 incident_date: "2025-08-06"
@@ -137,21 +137,24 @@ references:
 reporter: ""
 source_name: Prompt-Based Attacks Against Gemini via Calendar Invitations
 target: Google Gemini
-title: Prompt-Based Attacks Against Gemini via Calendar Invitations
+title: Атаки на Gemini с помощью промптов в приглашениях Google Calendar
 url: /studies/AML.CS0063/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Исследователи SafeBreach продемонстрировали, как подконтрольные злоумышленнику инструкции, встроенные в содержимое сервисов для продуктивной работы, включая приглашения Google Calendar, электронные письма и файлы с общим доступом, могли влиять на поведение ассистентов на базе Gemini при последующем извлечении этого содержимого.
 
-SafeBreach researchers demonstrated how adversary-controlled instructions embedded in productivity content, including Google Calendar invitations, emails, and shared files, could influence the behavior of Gemini-powered assistants when that content was later retrieved.
+Злоумышленник размещает вредоносные инструкции в содержимом, которое, вероятно, будет извлечено в ответ на будущий запрос жертвы. Когда Gemini включает подконтрольное злоумышленнику содержимое в контекст диалога, инструкции могут повлиять на поведение модели и заставить её непредусмотренным образом использовать инструменты и подключённые сервисы, доступные в рамках полномочий жертвы.
 
-An adversary places malicious instructions in content likely to be retrieved in response to a future victim request. When Gemini incorporates the adversary-controlled content into the conversation context, the instructions can influence the model's behavior and cause it to use the victim's authorized tools and connected services in unintended ways.
+Продемонстрированные пути атаки имеют общую цепочку: злоумышленник отправляет отравленное приглашение в Calendar; жертва спрашивает Gemini о предстоящих событиях; Gemini извлекает вредоносный заголовок события и добавляет его в контекст диалога; последующий ответ жертвы (например, "Thanks") активирует встроенные инструкции. Атака была продемонстрирована как в веб-приложении Gemini, так и в приложении Gemini для Android. Веб-приложение могло получать доступ к сервисам Workspace, тогда как приложение для Android предоставляло доступ к дополнительным функциям устройства и систем умного дома. Было показано, что та же цепочка может приводить к нескольким последствиям:
 
-The demonstrated attack paths share a common chain: an adversary sends a poisoned Calendar invitation; the victim asks Gemini about upcoming events; Gemini retrieves the malicious event title and adds it to conversation context; and a later victim response (e.g. "Thanks") triggers the embedded instructions. The attack was demonstrated on both the Gemini web and Android applications. The web application could access Workspace services, while the Android application exposed additional device and connected-home capabilities. The same chain was shown to produce several impacts:
+- Генерация токсичного контента или выбранных злоумышленником рекламных материалов в ответах Gemini.
 
-- Generate toxic content or adversary-selected promotions in Gemini responses.
-- Delete or create Calendar events using the victim's authorized Calendar access.
-- Control connected Google Home devices, including windows, boilers, and lights.
-- Open an adversary-controlled website, initiating a download and exposing the victim's IP address for approximate geolocation.
-- Invoke the Zoom application on the victim's device and stream video to an adversary-controlled meeting.
-- Retrieve Calendar or Gmail data, encode it in an adversary-controlled URL, and transmit it through a browser request.
+- Удаление или создание событий Calendar с использованием прав доступа жертвы к Calendar.
+
+- Управление подключёнными устройствами Google Home, включая окна, бойлеры и освещение.
+
+- Открытие подконтрольного злоумышленнику веб-сайта, которое инициирует скачивание и раскрывает IP-адрес жертвы для определения её примерного местоположения.
+
+- Запуск приложения Zoom на устройстве жертвы и передача видеопотока в подконтрольную злоумышленнику конференцию.
+
+- Извлечение данных Calendar или Gmail, их кодирование в URL, подконтрольном злоумышленнику, и передача через запрос браузера.

@@ -4,7 +4,7 @@
 
 | Тип объектов | Всего | Названий переведено | Описаний переведено | Процедур переведено | Полностью переведено | Требует проверки |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Кейсы | 68 | 63 | 63 | 493/571 | 43 | 16 |
+| Кейсы | 68 | 64 | 64 | 493/571 | 43 | 16 |
 | Меры защиты | 37 | 37 | 37 | - | 26 | 11 |
 | Ресурсы | 6 | 6 | 6 | - | 6 | 0 |
 | Тактики | 16 | 16 | 16 | - | 14 | 2 |
@@ -83,7 +83,7 @@
 - [`AML.TA0009`](/tactics/AML.TA0009/) (Тактики): Collection; название: да; описание/summary: да; требует проверки: описание
 - [`AML.TA0012`](/tactics/AML.TA0012/) (Тактики): Privilege Escalation; название: да; описание/summary: да; требует проверки: описание
 
-## Частичный перевод (7)
+## Частичный перевод (8)
 
 - [`AML.CS0019`](/studies/AML.CS0019/) (Кейсы): PoisonGPT; название: да; описание/summary: да; процедуры: 6/7; процедуры требуют проверки: 1; требует проверки: процедуры
 - [`AML.CS0025`](/studies/AML.CS0025/) (Кейсы): Web-Scale Data Poisoning: Split-View Attack; название: да; описание/summary: да; процедуры: 4/6
@@ -92,10 +92,10 @@
 - [`AML.CS0049`](/studies/AML.CS0049/) (Кейсы): Supply Chain Compromise via Poisoned ClawdBot Skill; название: да; описание/summary: да; процедуры: 9/12
 - [`AML.CS0053`](/studies/AML.CS0053/) (Кейсы): Poisoned Postmark MCP Server Email Exfiltration; название: да; описание/summary: да; процедуры: 7/9
 - [`AML.CS0054`](/studies/AML.CS0054/) (Кейсы): Data Exfiltration via Remote Poisoned MCP Tool; название: да; описание/summary: да; процедуры: 7/11; процедуры требуют проверки: 1; требует проверки: процедуры
+- [`AML.CS0063`](/studies/AML.CS0063/) (Кейсы): Prompt-Based Attacks Against Gemini via Calendar Invitations; название: да; описание/summary: да; процедуры: 0/20
 
-## Перевод отсутствует (5)
+## Перевод отсутствует (4)
 
-- [`AML.CS0063`](/studies/AML.CS0063/) (Кейсы): Prompt-Based Attacks Against Gemini via Calendar Invitations; название: нет; описание/summary: нет; процедуры: 0/20
 - [`AML.CS0064`](/studies/AML.CS0064/) (Кейсы): Poisoned GGUF Templates: Inference-Time Supply Chain Attack; название: нет; описание/summary: нет; процедуры: 0/13
 - [`AML.CS0065`](/studies/AML.CS0065/) (Кейсы): Model Namespace Reuse Supply Chain Attack; название: нет; описание/summary: нет; процедуры: 0/8
 - [`AML.CS0066`](/studies/AML.CS0066/) (Кейсы): ZombieAgent: Data Exfiltration Attack on ChatGPT; название: нет; описание/summary: нет; процедуры: 0/12
