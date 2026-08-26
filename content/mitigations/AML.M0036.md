@@ -6,7 +6,7 @@ attack_ref_url: ""
 category:
     - Technical - AI
 created_date: "2026-07-31"
-description: Limit the resources that an AI request, inference job, or agent workflow can consume. Set bounds on input size, batch size, execution time, memory, compute, and output size. Generative AI services should also limit...
+description: Ограничивайте объём ресурсов, который может потреблять запрос к ИИ, задание инференса или рабочий процесс ИИ-агента. Устанавливайте ограничения на размер входных данных, размер батча, время выполнения, объём памяти,...
 generated: true
 generated_by: atlasgen
 ml_lifecycle:
@@ -15,15 +15,13 @@ ml_lifecycle:
 modified_date: "2026-07-31"
 source_name: Limit AI Workload Resource Consumption
 technique_count: 4
-title: Limit AI Workload Resource Consumption
+title: Ограничение потребления ресурсов рабочими нагрузками ИИ
 url: /mitigations/AML.M0036/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Ограничивайте объём ресурсов, который может потреблять запрос к ИИ, задание инференса или рабочий процесс ИИ-агента. Устанавливайте ограничения на размер входных данных, размер батча, время выполнения, объём памяти, вычислительные ресурсы и размер выходных данных. Сервисы генеративного ИИ также должны ограничивать число токенов контекста и выходных токенов. В агентных ИИ-системах следует ограничивать число итераций, повторных попыток, вызовов инструментов и параллельных задач, глубину делегирования и расходы, возникающие при обращении к нижестоящим сервисам.
 
-Limit the resources that an AI request, inference job, or agent workflow can consume. Set bounds on input size, batch size, execution time, memory, compute, and output size. Generative AI services should also limit context and output tokens. Agentic AI systems should limit iterations, retries, tool calls, parallel tasks, delegation depth, and downstream spending.
-
-Apply resource limits across the complete workflow because one request may initiate multiple model calls or external actions. Use timeouts, cost ceilings, circuit breakers, and safe termination conditions to prevent individual workloads from exhausting shared resources. These controls complement query-rate limits, which address large numbers of otherwise inexpensive requests.
+Применяйте ограничения ресурсов на всём протяжении рабочего процесса, поскольку один запрос может инициировать несколько вызовов модели или внешних действий. Используйте таймауты, предельные уровни затрат, автоматические выключатели (circuit breakers) и условия безопасного завершения, чтобы отдельные рабочие нагрузки не могли исчерпать общие ресурсы. Эти меры дополняют ограничения частоты запросов, которые защищают от большого числа запросов, по отдельности не требующих значительных затрат.
 
 
 ## Связанные техники

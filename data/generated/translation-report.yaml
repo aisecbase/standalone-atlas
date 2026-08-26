@@ -10,9 +10,9 @@ totals:
         needs_review: 16
     mitigation:
         total: 37
-        name_translated: 36
-        body_translated: 36
-        fully_translated: 25
+        name_translated: 37
+        body_translated: 37
+        fully_translated: 26
         needs_review: 11
     resource:
         total: 6
@@ -68,12 +68,6 @@ missing:
       has_body: false
       source_field: summary
       total_procedures: 11
-    - id: AML.M0036
-      name: Limit AI Workload Resource Consumption
-      type: mitigation
-      has_name: false
-      has_body: false
-      source_field: description
 partial:
     - id: AML.CS0019
       name: PoisonGPT

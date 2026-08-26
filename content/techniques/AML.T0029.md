@@ -45,7 +45,7 @@ url: /techniques/AML.T0029/
 <a class="relation-item" href="/mitigations/AML.M0015/"><span class="relation-id">AML.M0015</span><strong>Обнаружение состязательных входных данных</strong><p>Оценивайте запросы до вызова инференса или применяйте политику таймаутов для запросов, потребляющих чрезмерные ресурсы.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Контроль доступа к API модели может помешать злоумышленнику выполнять чрезмерное количество запросов и выводить систему из строя.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Направляйте на систему состязательные рабочие нагрузки и отрабатывайте сценарии отказов зависимостей, которые могут привести к исчерпанию ресурсов сервисов инференса или вспомогательных сервисов. По результатам применяйте квоты, ограничения числа одновременных операций, таймауты, изоляцию ресурсов и механизмы плавной деградации.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0036/"><span class="relation-id">AML.M0036</span><strong>Limit AI Workload Resource Consumption</strong><p>Limit the resources consumed by individual requests to reduce denial of service from computationally expensive inputs.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0036/"><span class="relation-id">AML.M0036</span><strong>Ограничение потребления ресурсов рабочими нагрузками ИИ</strong><p>Limit the resources consumed by individual requests to reduce denial of service from computationally expensive inputs.</p></a>
 </div>
 
 
