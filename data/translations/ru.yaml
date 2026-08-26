@@ -324,6 +324,8 @@ technique_uses:
     use: "Эмулируйте извлечение функциональной копии модели с помощью запросов на инференс. Внедрите надлежащую аутентификацию, ограничения частоты запросов, ограничения на выходные данные, обнаружение аномалий и мониторинг попыток извлечения модели."
   - source: "Submit adversarial workloads and exercise dependency failures that could exhaust inference or supporting services. Apply quotas, concurrency limits, timeouts, resource isolation, and graceful degradation based on findings."
     use: "Направляйте на систему состязательные рабочие нагрузки и отрабатывайте сценарии отказов зависимостей, которые могут привести к исчерпанию ресурсов сервисов инференса или вспомогательных сервисов. По результатам применяйте квоты, ограничения числа одновременных операций, таймауты, изоляцию ресурсов и механизмы плавной деградации."
+  - source: "Submit controlled requests designed to consume disproportionate inference resources. Verify input constraints, timeouts, workload limits, resource isolation, and cost monitoring."
+    use: "В контролируемых условиях направляйте на систему запросы, специально подготовленные для потребления непропорционально большого объёма ресурсов при инференсе. Проверяйте ограничения на входные данные, таймауты, ограничения рабочей нагрузки, изоляцию ресурсов и мониторинг затрат."
   - source: |-
       Suggested approaches:
         - Restrict the number of results shown
