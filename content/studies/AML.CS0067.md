@@ -3,7 +3,7 @@ actor: Microsoft Defender Security Research Team
 atlas_id: AML.CS0067
 atlas_type: case-study
 case_study_type: exercise
-description: The Microsoft Defender Security Research Team demonstrated that Anthropic's Claude Code GitHub Action could expose CI/CD workflow secrets when processing GitHub content, such as issue bodies, pull request...
+description: Microsoft Defender Security Research Team продемонстрировала, что Claude Code GitHub Action от Anthropic может раскрывать секреты рабочих процессов CI/CD при обработке содержимого GitHub с промпт-инъекциями —...
 generated: true
 generated_by: atlasgen
 incident_date: "2026-06-05"
@@ -83,16 +83,14 @@ references:
 reporter: ""
 source_name: Claude Code GitHub Action Secret Exposure
 target: Claude Code GitHub Action
-title: Claude Code GitHub Action Secret Exposure
+title: Раскрытие секретов через Claude Code GitHub Action
 url: /studies/AML.CS0067/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+[Microsoft Defender Security Research Team](https://www.microsoft.com/en-us/security/blog/author/windows-defender-research/) продемонстрировала, что [Claude Code GitHub Action](https://github.com/anthropics/claude-code-action) от Anthropic может раскрывать секреты рабочих процессов CI/CD при обработке содержимого GitHub с промпт-инъекциями — например, текстов issues, описаний pull requests и комментариев.
 
-The [Microsoft Defender Security Research Team](https://www.microsoft.com/en-us/security/blog/author/windows-defender-research/) demonstrated that Anthropic's [Claude Code GitHub Action](https://github.com/anthropics/claude-code-action) could expose CI/CD workflow secrets when processing GitHub content, such as issue bodies, pull request descriptions, and comments, containing prompt injections.
+Исследователи проанализировали кодовую базу Claude Code Action и обфусцированный Claude Agent SDK, чтобы понять, как выполнялись вызовы инструментов агента и как события GitHub передавали ему содержимое. Они подготовили промпт, оформленный как проверка соблюдения требований и предписывавший Claude считать учётные данные из окружения своего процесса, удалить из них префикс и вывести преобразованное значение. Исследователи внедрили промпт через подконтрольное злоумышленнику содержимое GitHub, которое обрабатывалось лабораторным рабочим процессом. Claude Code Action загрузил вредоносное содержимое в контекст Claude, где оно было интерпретировано как инструкции.
 
-The researchers analyzed the Claude Code Action codebase and obfuscated Claude Agent SDK to understand how agent tools executed and how GitHub events supplied content to the agent. They crafted a prompt framed as a compliance review that directed Claude to read a credential from its process environment, remove the credential prefix, and emit the transformed value. They introduced the prompt through attacker-controlled GitHub content processed by the lab workflow. The action fetched the malicious content into Claude's context, where it was interpreted as instructions.
+Claude вызвал инструмент Read для чтения `/proc/self/environ`; инструмент вернул не прошедшее санитизацию окружение процесса Claude Code Action, включая `ANTHROPIC_API_KEY`. В отличие от подпроцессов Bash, операции Read не выполнялись ни в песочнице Bubblewrap, ни в границах очищенного окружения. Удаление из ключа префикса `sk-ant-` позволило выходному значению обойти поведение Claude при отказе от выдачи секрета и механизм GitHub для обнаружения секретов по шаблонам, при этом исследователи по-прежнему могли восстановить исходное значение. Microsoft назвала WebFetch, Bash, GitHub MCP и логи GitHub Actions потенциальными дополнительными каналами эксфильтрации в зависимости от конфигурации рабочего процесса.
 
-Claude invoked its Read tool against `/proc/self/environ`, returning the action process's unsanitized environment, including `ANTHROPIC_API_KEY`. Unlike Bash subprocesses, Read operations did not execute within the Bubblewrap sandbox and scrubbed-environment boundary. Removing the key's `sk-ant-` prefix allowed the output to bypass Claude's refusal behavior and GitHub's secret-pattern detection while remaining reconstructable by the researchers. Microsoft identified WebFetch, Bash, GitHub MCP, and GitHub Actions logs as potential additional exfiltration channels depending on workflow configuration.
-
-Microsoft disclosed the issue to Anthropic through HackerOne on April 29, 2026. Anthropic mitigated the vulnerability in Claude Code 2.1.128 on May 5, 2026, by blocking Read access to sensitive `/proc` files.
+Microsoft сообщила Anthropic о проблеме через HackerOne 29 апреля 2026 года. 5 мая 2026 года Anthropic приняла меры по устранению уязвимости в Claude Code 2.1.128, заблокировав инструменту Read доступ к чувствительным файлам `/proc`.
