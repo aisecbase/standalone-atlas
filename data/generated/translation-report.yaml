@@ -6,8 +6,8 @@ totals:
         body_translated: 68
         procedures_total: 571
         procedures_translated: 558
-        fully_translated: 53
-        needs_review: 11
+        fully_translated: 54
+        needs_review: 10
     mitigation:
         total: 37
         name_translated: 37
@@ -91,19 +91,6 @@ partial:
       review_fields:
         - procedure
 review:
-    - id: AML.CS0023
-      name: 'ShadowRay: Hijacking Exposed Ray Clusters'
-      type: case-study
-      has_name: true
-      has_body: true
-      source_field: name
-      total_procedures: 7
-      translated_procedures: 7
-      needs_review: true
-      review_fields:
-        - name
-      source_sha256: 2d222308f55f4efb732225198d61721a9f802ab60afd1f31db9858ca54baa282
-      translation_source_sha256: abf13bf5072cbfc59bb68b297ef62ff5e503d05257196ce80f8858e0bc0591f7
     - id: AML.CS0026
       name: Financial Transaction Hijacking with M365 Copilot as an Insider
       type: case-study

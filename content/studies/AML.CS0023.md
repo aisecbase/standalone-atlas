@@ -87,7 +87,7 @@ references:
 reporter: Oligo Research Team
 source_name: 'ShadowRay: Hijacking Exposed Ray Clusters'
 target: Exposed Ray Clusters
-title: ShadowRay
+title: 'ShadowRay: захват кластеров Ray, доступных из интернета'
 url: /studies/AML.CS0023/
 ---
 

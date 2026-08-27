@@ -26,8 +26,8 @@ generated_by: atlasgen
 <td data-label="Названий переведено">68</td>
 <td data-label="Описаний переведено">68</td>
 <td data-label="Процедур переведено">558/571</td>
-<td data-label="Полностью переведено">53</td>
-<td data-label="Требует проверки">11</td>
+<td data-label="Полностью переведено">54</td>
+<td data-label="Требует проверки">10</td>
 </tr>
 <tr>
 <th scope="row" data-label="Тип объектов">Меры защиты</th>
@@ -68,9 +68,8 @@ generated_by: atlasgen
 </tbody>
 </table>
 
-## Требует проверки (65)
+## Требует проверки (64)
 
-- [`AML.CS0023`](/studies/AML.CS0023/) (Кейсы): ShadowRay: Hijacking Exposed Ray Clusters; название: да; описание/summary: да; процедуры: 7/7; требует проверки: название
 - [`AML.CS0026`](/studies/AML.CS0026/) (Кейсы): Financial Transaction Hijacking with M365 Copilot as an Insider; название: да; описание/summary: да; процедуры: 14/14; требует проверки: summary
 - [`AML.CS0027`](/studies/AML.CS0027/) (Кейсы): Organization Confusion on Hugging Face; название: да; описание/summary: да; процедуры: 15/16; процедуры требуют проверки: 2; требует проверки: процедуры
 - [`AML.CS0033`](/studies/AML.CS0033/) (Кейсы): Live Deepfake Image Injection to Evade Mobile KYC Verification; название: да; описание/summary: да; процедуры: 10/10; процедуры требуют проверки: 1; требует проверки: процедуры
