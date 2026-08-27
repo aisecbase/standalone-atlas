@@ -26,8 +26,8 @@ generated_by: atlasgen
 <td data-label="Названий переведено">68</td>
 <td data-label="Описаний переведено">68</td>
 <td data-label="Процедур переведено">557/571</td>
-<td data-label="Полностью переведено">50</td>
-<td data-label="Требует проверки">14</td>
+<td data-label="Полностью переведено">51</td>
+<td data-label="Требует проверки">13</td>
 </tr>
 <tr>
 <th scope="row" data-label="Тип объектов">Меры защиты</th>
@@ -68,9 +68,8 @@ generated_by: atlasgen
 </tbody>
 </table>
 
-## Требует проверки (68)
+## Требует проверки (67)
 
-- [`AML.CS0017`](/studies/AML.CS0017/) (Кейсы): Bypassing ID.me Identity Verification; название: да; описание/summary: да; процедуры: 3/3; процедуры требуют проверки: 1; требует проверки: процедуры
 - [`AML.CS0019`](/studies/AML.CS0019/) (Кейсы): PoisonGPT; название: да; описание/summary: да; процедуры: 6/7; процедуры требуют проверки: 1; требует проверки: процедуры
 - [`AML.CS0021`](/studies/AML.CS0021/) (Кейсы): ChatGPT Conversation Exfiltration; название: да; описание/summary: да; процедуры: 7/7; требует проверки: summary
 - [`AML.CS0023`](/studies/AML.CS0023/) (Кейсы): ShadowRay: Hijacking Exposed Ray Clusters; название: да; описание/summary: да; процедуры: 7/7; требует проверки: название
