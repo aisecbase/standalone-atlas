@@ -6,8 +6,8 @@ totals:
         body_translated: 68
         procedures_total: 571
         procedures_translated: 558
-        fully_translated: 54
-        needs_review: 10
+        fully_translated: 55
+        needs_review: 9
     mitigation:
         total: 37
         name_translated: 37
@@ -91,19 +91,6 @@ partial:
       review_fields:
         - procedure
 review:
-    - id: AML.CS0026
-      name: Financial Transaction Hijacking with M365 Copilot as an Insider
-      type: case-study
-      has_name: true
-      has_body: true
-      source_field: summary
-      total_procedures: 14
-      translated_procedures: 14
-      needs_review: true
-      review_fields:
-        - summary
-      source_sha256: de26ca16db6789a7184ad477febf7e57fe39e374cbc120379900231792bb1ead
-      translation_source_sha256: 44464dffb958b2f3160bae82766c004a44639b5d83795dbb5fa6fcadd0529086
     - id: AML.CS0027
       name: Organization Confusion on Hugging Face
       type: case-study
