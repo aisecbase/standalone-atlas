@@ -10,74 +10,74 @@ incident_date: "2025-09-25"
 incident_date_granularity: Day
 incident_date_raw: "2025-09-25"
 procedure:
-    - description: The researchers crafted malicious prompt payloads for the different attack variants. The payloads contained instructions for connector access, data collection, static-URL encoding, memory manipulation, and propagation.
-      description_line: The researchers crafted malicious prompt payloads for the different attack variants. The payloads contained instructions for connector access, data collection, static-URL encoding, memory manipulation, and propagation.
+    - description: Исследователи подготовили для различных вариантов атаки вредоносные полезные нагрузки в виде промптов. Эти нагрузки содержали инструкции для доступа через коннекторы, сбора данных, кодирования посредством статических URL, манипулирования функцией Memory и распространения.
+      description_line: Исследователи подготовили для различных вариантов атаки вредоносные полезные нагрузки в виде промптов. Эти нагрузки содержали инструкции для доступа через коннекторы, сбора данных, кодирования посредством статических URL, манипулирования функцией Memory и распространения.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0065
       technique_name: Создание промптов для LLM
-    - description: The researchers prepared infrastructure to receive exfiltrated data.
-      description_line: The researchers prepared infrastructure to receive exfiltrated data.
+    - description: Исследователи подготовили инфраструктуру для приёма эксфильтрированных данных.
+      description_line: Исследователи подготовили инфраструктуру для приёма эксфильтрированных данных.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0079
       technique_name: Размещение средств атаки
-    - description: The prompt injection was visually concealed in externally controlled content using techniques such as white-on-white text or microscopic font sizes. ChatGPT could process the instructions even though they were not apparent to the user.
-      description_line: The prompt injection was visually concealed in externally controlled content using techniques such as white-on-white text or microscopic font sizes. ChatGPT could process the instructions even though they were not apparent to the user.
+    - description: Промпт-инъекция была визуально скрыта в содержимом, контролируемом внешней стороной, с помощью таких приёмов, как белый текст на белом фоне или микроскопический размер шрифта. ChatGPT мог обрабатывать инструкции, хотя они были незаметны пользователю.
+      description_line: Промпт-инъекция была визуально скрыта в содержимом, контролируемом внешней стороной, с помощью таких приёмов, как белый текст на белом фоне или микроскопический размер шрифта. ChatGPT мог обрабатывать инструкции, хотя они были незаметны пользователю.
       tactic: AML.TA0007
       tactic_name: Уклонение от защиты
       technique: AML.T0068
       technique_name: Обфускация промпта LLM
-    - description: The researchers sent a malicious email to an inbox connected to ChatGPT or provided a malicious document that could be uploaded or retrieved through a connected service. This introduced the prompt into a data source accessible to the victim's agent.
-      description_line: The researchers sent a malicious email to an inbox connected to ChatGPT or provided a malicious document that could be uploaded or retrieved through a connected service. This introduced the prompt into a data source accessible to the victim's agent.
+    - description: Исследователи отправили вредоносное письмо в подключённый к ChatGPT почтовый ящик либо предоставили вредоносный документ, который можно было загрузить в ChatGPT или получить через подключённый сервис. В результате промпт оказался в источнике данных, к которому имел доступ ИИ-агент жертвы.
+      description_line: Исследователи отправили вредоносное письмо в подключённый к ChatGPT почтовый ящик либо предоставили вредоносный документ, который можно было загрузить в ChatGPT или получить через подключённый сервис. В результате промпт оказался в источнике данных, к которому имел доступ ИИ-агент жертвы.
       tactic: AML.TA0004
       tactic_name: Первичный доступ
       technique: AML.T0093
       technique_name: Внедрение промпта через публичное приложение
-    - description: A later, legitimate user request, such as asking ChatGPT to summarize the inbox, caused the agent to retrieve the malicious content and execute the concealed instructions. The user did not knowingly interact with the malicious email.
-      description_line: A later, legitimate user request, such as asking ChatGPT to summarize the inbox, caused the agent to retrieve the malicious content and execute the concealed instructions. The user did not knowingly interact with the malicious email.
+    - description: Последующий легитимный запрос пользователя, например просьба к ChatGPT суммаризировать содержимое почтового ящика, заставил агента извлечь вредоносное содержимое и выполнить скрытые инструкции. Пользователь не взаимодействовал с вредоносным письмом осознанно.
+      description_line: Последующий легитимный запрос пользователя, например просьба к ChatGPT суммаризировать содержимое почтового ящика, заставил агента извлечь вредоносное содержимое и выполнить скрытые инструкции. Пользователь не взаимодействовал с вредоносным письмом осознанно.
       tactic: AML.TA0005
       tactic_name: Выполнение
       technique: AML.T0051.001
       technique_name: Косвенная промпт-инъекция
-    - description: The malicious instructions caused ChatGPT to create or modify memories. The poisoned memories instructed ChatGPT to retain sensitive information from conversations and to perform attacker-defined actions during later interactions.
-      description_line: The malicious instructions caused ChatGPT to create or modify memories. The poisoned memories instructed ChatGPT to retain sensitive information from conversations and to perform attacker-defined actions during later interactions.
+    - description: Вредоносные инструкции заставили ChatGPT создавать или изменять записи в функции Memory. Отравленные записи памяти предписывали ChatGPT сохранять чувствительную информацию из разговоров и выполнять заданные злоумышленником действия во время последующих взаимодействий.
+      description_line: Вредоносные инструкции заставили ChatGPT создавать или изменять записи в функции Memory. Отравленные записи памяти предписывали ChatGPT сохранять чувствительную информацию из разговоров и выполнять заданные злоумышленником действия во время последующих взаимодействий.
       tactic: AML.TA0006
       tactic_name: Закрепление
       technique: AML.T0080.000
       technique_name: Память
-    - description: The malicious instructions caused ChatGPT to invoke connector and web-access capabilities available under the victim's authority. This gave the prompt access to information and actions that were not directly available to the researchers.
-      description_line: The malicious instructions caused ChatGPT to invoke connector and web-access capabilities available under the victim's authority. This gave the prompt access to information and actions that were not directly available to the researchers.
+    - description: Вредоносные инструкции заставили ChatGPT задействовать возможности коннекторов и веб-доступа, доступные в рамках полномочий жертвы. В результате выполнение инструкций из промпта обеспечило доступ к информации и возможность выполнять действия, которые не были напрямую доступны исследователям.
+      description_line: Вредоносные инструкции заставили ChatGPT задействовать возможности коннекторов и веб-доступа, доступные в рамках полномочий жертвы. В результате выполнение инструкций из промпта обеспечило доступ к информации и возможность выполнять действия, которые не были напрямую доступны исследователям.
       tactic: AML.TA0012
       tactic_name: Повышение привилегий
       technique: AML.T0053
       technique_name: Вызов инструментов ИИ-агента
-    - description: ChatGPT used connected-service tools to retrieve information accessible to the victim's agent. Demonstrated collection included mailbox content and email contact information.
-      description_line: ChatGPT used connected-service tools to retrieve information accessible to the victim's agent. Demonstrated collection included mailbox content and email contact information.
+    - description: ChatGPT использовал инструменты подключённых сервисов для извлечения информации, доступной агенту жертвы. В ходе демонстрации были собраны содержимое почтового ящика и контактные данные из электронной почты.
+      description_line: ChatGPT использовал инструменты подключённых сервисов для извлечения информации, доступной агенту жертвы. В ходе демонстрации были собраны содержимое почтового ящика и контактные данные из электронной почты.
       tactic: AML.TA0009
       tactic_name: Сбор материалов
       technique: AML.T0085.001
       technique_name: Инструменты ИИ-агента
-    - description: The researchers bypassed ChatGPT's restriction against dynamically constructing or modifying URLs by supplying an indexed dictionary of static URLs. ChatGPT encoded collected data by selecting and opening the URL corresponding to each character and position.
-      description_line: The researchers bypassed ChatGPT's restriction against dynamically constructing or modifying URLs by supplying an indexed dictionary of static URLs. ChatGPT encoded collected data by selecting and opening the URL corresponding to each character and position.
+    - description: Исследователи обошли ограничение ChatGPT, запрещавшее динамически формировать или изменять URL, предоставив индексированный словарь статических URL. ChatGPT кодировал собранные данные, выбирая и открывая URL, соответствующий каждому символу и его позиции.
+      description_line: Исследователи обошли ограничение ChatGPT, запрещавшее динамически формировать или изменять URL, предоставив индексированный словарь статических URL. ChatGPT кодировал собранные данные, выбирая и открывая URL, соответствующий каждому символу и его позиции.
       tactic: AML.TA0007
       tactic_name: Уклонение от защиты
       technique: AML.T0054
       technique_name: Джейлбрейк LLM
-    - description: ChatGPT invoked its URL-opening capability to request the selected adversary-controlled URLs. The researchers reconstructed the sensitive data from the character and position encoded in the resulting server requests. The requests originated from OpenAI's infrastructure rather than the victim's endpoint or corporate network.
-      description_line: ChatGPT invoked its URL-opening capability to request the selected adversary-controlled URLs. The researchers reconstructed the sensitive data from the character and position encoded in the resulting server requests. The requests originated from OpenAI's infrastructure rather than the victim's endpoint or corporate network.
+    - description: ChatGPT задействовал функцию открытия URL, чтобы отправить запросы к выбранным URL, подконтрольным злоумышленнику. Исследователи восстановили чувствительные данные по символам и их позициям, закодированным в получившихся запросах к серверу. Запросы исходили из инфраструктуры OpenAI, а не с эндпоинта жертвы или из её корпоративной сети.
+      description_line: ChatGPT задействовал функцию открытия URL, чтобы отправить запросы к выбранным URL, подконтрольным злоумышленнику. Исследователи восстановили чувствительные данные по символам и их позициям, закодированным в получившихся запросах к серверу. Запросы исходили из инфраструктуры OpenAI, а не с эндпоинта жертвы или из её корпоративной сети.
       tactic: AML.TA0010
       tactic_name: Эксфильтрация
       technique: AML.T0086
       technique_name: Эксфильтрация через вызов инструмента ИИ-агента
-    - description: ChatGPT searched the victim's mailbox and collected email addresses belonging to potential additional targets.
-      description_line: ChatGPT searched the victim's mailbox and collected email addresses belonging to potential additional targets.
+    - description: ChatGPT выполнил поиск в почтовом ящике жертвы и собрал адреса электронной почты, принадлежавшие потенциальным дополнительным целям.
+      description_line: ChatGPT выполнил поиск в почтовом ящике жертвы и собрал адреса электронной почты, принадлежавшие потенциальным дополнительным целям.
       tactic: AML.TA0009
       tactic_name: Сбор материалов
       technique: AML.T0085.001
       technique_name: Инструменты ИИ-агента
-    - description: The malicious instructions caused ChatGPT to reproduce the prompt in new emails or documents and distribute them to collected contacts. If another AI agent processed the poisoned content, the attack could propagate between users or connected AI systems.
-      description_line: The malicious instructions caused ChatGPT to reproduce the prompt in new emails or documents and distribute them to collected contacts. If another AI agent processed the poisoned content, the attack could propagate between users or connected AI systems.
+    - description: Вредоносные инструкции заставили ChatGPT воспроизводить промпт в новых электронных письмах или документах и распространять эти материалы среди собранных контактов. Если отравленное содержимое обрабатывал другой ИИ-агент, атака могла распространяться между пользователями или подключёнными ИИ-системами.
+      description_line: Вредоносные инструкции заставили ChatGPT воспроизводить промпт в новых электронных письмах или документах и распространять эти материалы среди собранных контактов. Если отравленное содержимое обрабатывал другой ИИ-агент, атака могла распространяться между пользователями или подключёнными ИИ-системами.
       tactic: AML.TA0015
       tactic_name: Латеральное перемещение
       technique: AML.T0053
