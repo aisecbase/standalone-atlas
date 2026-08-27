@@ -34,17 +34,17 @@ procedure:
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0042
       technique_name: Проверка атаки
-    - description: The researchers uploaded the PoisonGPT model back to HuggingFace under a similar repository name as the original model, missing one letter.
-      description_line: The researchers uploaded the PoisonGPT model back to HuggingFace under a similar repository name as the original model, missing one letter.
+    - description: Исследователи загрузили модель PoisonGPT обратно в Hugging Face, выбрав для репозитория имя, похожее на имя исходной модели, но без одной буквы.
+      description_line: Исследователи загрузили модель PoisonGPT обратно в Hugging Face, выбрав для репозитория имя, похожее на имя исходной модели, но без одной буквы.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0115.001
       technique_name: Модели
     - description: |-
-        Ничего не подозревающие пользователи могли скачать состязательную модель и интегрировать ее в приложения.
+        Ничего не подозревающие пользователи могли бы скачать состязательную модель и интегрировать её в приложения.
 
-        После раскрытия информации об упражнении Hugging Face отключил репозиторий с похожим именем.
-      description_line: Ничего не подозревающие пользователи могли скачать состязательную модель и интегрировать ее в приложения. После раскрытия информации об упражнении Hugging Face отключил репозиторий с похожим именем.
+        После того как исследователи сообщили о проведённом испытании, Hugging Face отключила репозиторий с похожим именем.
+      description_line: Ничего не подозревающие пользователи могли бы скачать состязательную модель и интегрировать её в приложения. После того как исследователи сообщили о проведённом испытании, Hugging Face отключила репозиторий с похожим именем.
       tactic: AML.TA0004
       tactic_name: Первичный доступ
       technique: AML.T0010.003
