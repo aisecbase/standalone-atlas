@@ -26,8 +26,8 @@ generated_by: atlasgen
 <td data-label="Названий переведено">68</td>
 <td data-label="Описаний переведено">68</td>
 <td data-label="Процедур переведено">557/571</td>
-<td data-label="Полностью переведено">48</td>
-<td data-label="Требует проверки">16</td>
+<td data-label="Полностью переведено">49</td>
+<td data-label="Требует проверки">15</td>
 </tr>
 <tr>
 <th scope="row" data-label="Тип объектов">Меры защиты</th>
@@ -68,9 +68,8 @@ generated_by: atlasgen
 </tbody>
 </table>
 
-## Требует проверки (70)
+## Требует проверки (69)
 
-- [`AML.CS0001`](/studies/AML.CS0001/) (Кейсы): Botnet Domain Generation Algorithm (DGA) Detection Evasion; название: да; описание/summary: да; процедуры: 6/6; требует проверки: summary
 - [`AML.CS0010`](/studies/AML.CS0010/) (Кейсы): Microsoft Azure Service Disruption; название: да; описание/summary: да; процедуры: 8/8; процедуры требуют проверки: 1; требует проверки: процедуры
 - [`AML.CS0017`](/studies/AML.CS0017/) (Кейсы): Bypassing ID.me Identity Verification; название: да; описание/summary: да; процедуры: 3/3; процедуры требуют проверки: 1; требует проверки: процедуры
 - [`AML.CS0019`](/studies/AML.CS0019/) (Кейсы): PoisonGPT; название: да; описание/summary: да; процедуры: 6/7; процедуры требуют проверки: 1; требует проверки: процедуры

@@ -6,8 +6,8 @@ totals:
         body_translated: 68
         procedures_total: 571
         procedures_translated: 557
-        fully_translated: 48
-        needs_review: 16
+        fully_translated: 49
+        needs_review: 15
     mitigation:
         total: 37
         name_translated: 37
@@ -103,19 +103,6 @@ partial:
       review_fields:
         - procedure
 review:
-    - id: AML.CS0001
-      name: Botnet Domain Generation Algorithm (DGA) Detection Evasion
-      type: case-study
-      has_name: true
-      has_body: true
-      source_field: summary
-      total_procedures: 6
-      translated_procedures: 6
-      needs_review: true
-      review_fields:
-        - summary
-      source_sha256: 67853e18f9da1f1187d5d3b6a14a0fd7ac42efaf6effea13f11c1582dd154ae7
-      translation_source_sha256: 91a64f0b4fa5600fe3c719da765bed45da3a75b6cfcb6b2ea5c06f6d01c5716f
     - id: AML.CS0010
       name: Microsoft Azure Service Disruption
       type: case-study
