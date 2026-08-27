@@ -6,8 +6,8 @@ totals:
         body_translated: 68
         procedures_total: 571
         procedures_translated: 559
-        fully_translated: 58
-        needs_review: 6
+        fully_translated: 59
+        needs_review: 5
     mitigation:
         total: 37
         name_translated: 37
@@ -79,21 +79,6 @@ partial:
       review_fields:
         - procedure
 review:
-    - id: AML.CS0044
-      name: 'LAMEHUG: Malware Leveraging Dynamic AI-Generated Commands'
-      type: case-study
-      has_name: true
-      has_body: true
-      source_field: summary
-      total_procedures: 8
-      translated_procedures: 8
-      procedure_needs_review: 2
-      needs_review: true
-      review_fields:
-        - summary
-        - procedure
-      source_sha256: b5534268cabf94340d427dbcd792b3ceef30e0d578fde169da99e4569b5d271d
-      translation_source_sha256: 9d44e5f0c97194b207990e0d5eb7f0956e2e84f1d4a0e3f94ef6807e4f517256
     - id: AML.CS0045
       name: Data Exfiltration via an MCP Server used by Cursor
       type: case-study

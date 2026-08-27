@@ -45,7 +45,7 @@ url: /techniques/AML.T0102/
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0044/"><span class="relation-id">AML.CS0044</span><strong>LAMEHUG: вредоносное ПО, использующее динамические команды, сгенерированные ИИ</strong><span class="relation-meta">Актор: APT28 / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>LAMEHUG злоупотреблял Hugging Face API модели Qwen 2.5 Coder 32B Instruct, чтобы генерировать вредоносные команды из промптов на естественном языке.</p></a>
+<a class="relation-item" href="/studies/AML.CS0044/"><span class="relation-id">AML.CS0044</span><strong>LAMEHUG: вредоносное ПО, использующее команды, динамически генерируемые ИИ</strong><span class="relation-meta">Актор: APT28 / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Вредоносное ПО LAMEHUG злоупотребляло доступом к модели Qwen 2.5 Coder 32B Instruct через API Hugging Face, чтобы генерировать вредоносные команды из промптов на естественном языке.</p></a>
 </div>
 
 
