@@ -6,8 +6,8 @@ totals:
         body_translated: 68
         procedures_total: 571
         procedures_translated: 559
-        fully_translated: 57
-        needs_review: 7
+        fully_translated: 58
+        needs_review: 6
     mitigation:
         total: 37
         name_translated: 37
@@ -79,19 +79,6 @@ partial:
       review_fields:
         - procedure
 review:
-    - id: AML.CS0036
-      name: 'AIKatz: Attacking LLM Desktop Applications'
-      type: case-study
-      has_name: true
-      has_body: true
-      source_field: summary
-      total_procedures: 13
-      translated_procedures: 13
-      needs_review: true
-      review_fields:
-        - summary
-      source_sha256: a7863e3ef2f0abc9d0b2724a7c48b2158db263d213c01d3ddbf9504cc6a2fa0e
-      translation_source_sha256: 67312b3621ba6662ed326f5eeee21ea4e6f8c35097ca43e3cfb2a38d1b7ea205
     - id: AML.CS0044
       name: 'LAMEHUG: Malware Leveraging Dynamic AI-Generated Commands'
       type: case-study

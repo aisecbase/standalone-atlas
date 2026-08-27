@@ -26,8 +26,8 @@ generated_by: atlasgen
 <td data-label="Названий переведено">68</td>
 <td data-label="Описаний переведено">68</td>
 <td data-label="Процедур переведено">559/571</td>
-<td data-label="Полностью переведено">57</td>
-<td data-label="Требует проверки">7</td>
+<td data-label="Полностью переведено">58</td>
+<td data-label="Требует проверки">6</td>
 </tr>
 <tr>
 <th scope="row" data-label="Тип объектов">Меры защиты</th>
@@ -68,9 +68,8 @@ generated_by: atlasgen
 </tbody>
 </table>
 
-## Требует проверки (61)
+## Требует проверки (60)
 
-- [`AML.CS0036`](/studies/AML.CS0036/) (Кейсы): AIKatz: Attacking LLM Desktop Applications; название: да; описание/summary: да; процедуры: 13/13; требует проверки: summary
 - [`AML.CS0044`](/studies/AML.CS0044/) (Кейсы): LAMEHUG: Malware Leveraging Dynamic AI-Generated Commands; название: да; описание/summary: да; процедуры: 8/8; процедуры требуют проверки: 2; требует проверки: summary, процедуры
 - [`AML.CS0045`](/studies/AML.CS0045/) (Кейсы): Data Exfiltration via an MCP Server used by Cursor; название: да; описание/summary: да; процедуры: 11/11; процедуры требуют проверки: 1; требует проверки: процедуры
 - [`AML.CS0048`](/studies/AML.CS0048/) (Кейсы): Exposed ClawdBot Control Interfaces Leads to Credential Access and Execution; название: да; описание/summary: да; процедуры: 10/10; процедуры требуют проверки: 1; требует проверки: summary, процедуры
