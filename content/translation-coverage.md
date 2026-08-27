@@ -25,9 +25,9 @@ generated_by: atlasgen
 <td data-label="Всего">68</td>
 <td data-label="Названий переведено">68</td>
 <td data-label="Описаний переведено">68</td>
-<td data-label="Процедур переведено">558/571</td>
-<td data-label="Полностью переведено">55</td>
-<td data-label="Требует проверки">9</td>
+<td data-label="Процедур переведено">559/571</td>
+<td data-label="Полностью переведено">56</td>
+<td data-label="Требует проверки">8</td>
 </tr>
 <tr>
 <th scope="row" data-label="Тип объектов">Меры защиты</th>
@@ -68,9 +68,8 @@ generated_by: atlasgen
 </tbody>
 </table>
 
-## Требует проверки (63)
+## Требует проверки (62)
 
-- [`AML.CS0027`](/studies/AML.CS0027/) (Кейсы): Organization Confusion on Hugging Face; название: да; описание/summary: да; процедуры: 15/16; процедуры требуют проверки: 2; требует проверки: процедуры
 - [`AML.CS0033`](/studies/AML.CS0033/) (Кейсы): Live Deepfake Image Injection to Evade Mobile KYC Verification; название: да; описание/summary: да; процедуры: 10/10; процедуры требуют проверки: 1; требует проверки: процедуры
 - [`AML.CS0036`](/studies/AML.CS0036/) (Кейсы): AIKatz: Attacking LLM Desktop Applications; название: да; описание/summary: да; процедуры: 13/13; требует проверки: summary
 - [`AML.CS0044`](/studies/AML.CS0044/) (Кейсы): LAMEHUG: Malware Leveraging Dynamic AI-Generated Commands; название: да; описание/summary: да; процедуры: 8/8; процедуры требуют проверки: 2; требует проверки: summary, процедуры
@@ -134,10 +133,9 @@ generated_by: atlasgen
 - [`AML.TA0009`](/tactics/AML.TA0009/) (Тактики): Collection; название: да; описание/summary: да; требует проверки: описание
 - [`AML.TA0012`](/tactics/AML.TA0012/) (Тактики): Privilege Escalation; название: да; описание/summary: да; требует проверки: описание
 
-## Частичный перевод (6)
+## Частичный перевод (5)
 
 - [`AML.CS0025`](/studies/AML.CS0025/) (Кейсы): Web-Scale Data Poisoning: Split-View Attack; название: да; описание/summary: да; процедуры: 4/6
-- [`AML.CS0027`](/studies/AML.CS0027/) (Кейсы): Organization Confusion on Hugging Face; название: да; описание/summary: да; процедуры: 15/16; процедуры требуют проверки: 2; требует проверки: процедуры
 - [`AML.CS0031`](/studies/AML.CS0031/) (Кейсы): Malicious Models on Hugging Face; название: да; описание/summary: да; процедуры: 5/6
 - [`AML.CS0049`](/studies/AML.CS0049/) (Кейсы): Supply Chain Compromise via Poisoned ClawdBot Skill; название: да; описание/summary: да; процедуры: 9/12
 - [`AML.CS0053`](/studies/AML.CS0053/) (Кейсы): Poisoned Postmark MCP Server Email Exfiltration; название: да; описание/summary: да; процедуры: 7/9

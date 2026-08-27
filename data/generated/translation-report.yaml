@@ -5,9 +5,9 @@ totals:
         name_translated: 68
         body_translated: 68
         procedures_total: 571
-        procedures_translated: 558
-        fully_translated: 55
-        needs_review: 9
+        procedures_translated: 559
+        fully_translated: 56
+        needs_review: 8
     mitigation:
         total: 37
         name_translated: 37
@@ -42,18 +42,6 @@ partial:
       source_field: summary
       total_procedures: 6
       translated_procedures: 4
-    - id: AML.CS0027
-      name: Organization Confusion on Hugging Face
-      type: case-study
-      has_name: true
-      has_body: true
-      source_field: summary
-      total_procedures: 16
-      translated_procedures: 15
-      procedure_needs_review: 2
-      needs_review: true
-      review_fields:
-        - procedure
     - id: AML.CS0031
       name: Malicious Models on Hugging Face
       type: case-study
@@ -91,18 +79,6 @@ partial:
       review_fields:
         - procedure
 review:
-    - id: AML.CS0027
-      name: Organization Confusion on Hugging Face
-      type: case-study
-      has_name: true
-      has_body: true
-      source_field: summary
-      total_procedures: 16
-      translated_procedures: 15
-      procedure_needs_review: 2
-      needs_review: true
-      review_fields:
-        - procedure
     - id: AML.CS0033
       name: Live Deepfake Image Injection to Evade Mobile KYC Verification
       type: case-study
