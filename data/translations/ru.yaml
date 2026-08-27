@@ -5043,6 +5043,73 @@ objects:
       Claude вызвал инструмент Read для чтения `/proc/self/environ`; инструмент вернул не прошедшее санитизацию окружение процесса Claude Code Action, включая `ANTHROPIC_API_KEY`. В отличие от подпроцессов Bash, операции Read не выполнялись ни в песочнице Bubblewrap, ни в границах очищенного окружения. Удаление из ключа префикса `sk-ant-` позволило выходному значению обойти поведение Claude при отказе от выдачи секрета и механизм GitHub для обнаружения секретов по шаблонам, при этом исследователи по-прежнему могли восстановить исходное значение. Microsoft назвала WebFetch, Bash, GitHub MCP и логи GitHub Actions потенциальными дополнительными каналами эксфильтрации в зависимости от конфигурации рабочего процесса.
 
       Microsoft сообщила Anthropic о проблеме через HackerOne 29 апреля 2026 года. 5 мая 2026 года Anthropic приняла меры по устранению уязвимости в Claude Code 2.1.128, заблокировав инструменту Read доступ к чувствительным файлам `/proc`.
+    procedure:
+      - tactic: AML.TA0002
+        technique: AML.T0095.000
+        source:
+          description_sha256: "0a6cae24476ee659d3eb9cf7cd40a901b1f3e2c380a60e994ef1c70694b03226"
+        description: |-
+          Исследователи проанализировали кодовую базу Claude Code Action и обфусцированный Claude Agent SDK. Это позволило им понять, как агент запускает инструменты и где в системе проходят границы безопасности.
+      - tactic: AML.TA0008
+        technique: AML.T0084.001
+        source:
+          description_sha256: "0ab6d2bf57db29f336b7f98de535de73a0991cd16b2f3fff56ee787f01525f9e"
+        description: |-
+          Исследователи выявили инструменты, доступные Claude Code Action, и сравнили пути их выполнения. Они установили, что подпроцессы Bash могли выполняться внутри Bubblewrap с очищенным окружением, тогда как встроенный инструмент Read осуществлял прямой внутрипроцессный доступ к файлам за пределами этой границы изоляции.
+      - tactic: AML.TA0008
+        technique: AML.T0084.002
+        source:
+          description_sha256: "eb54b6bb546d0e6cb7a2636469acc7c707ff17e2f659f6dd630ebd95579ee063"
+        description: |-
+          Исследователи установили, что Claude Code Action мог активироваться событиями GitHub, связанными с issues, pull requests и комментариями; после срабатывания Claude Code Action загружал связанное с событием содержимое в контекст Claude.
+      - tactic: AML.TA0003
+        technique: AML.T0065
+        source:
+          description_sha256: "0c7daeca00aab37f99dd3ff26e3279d245a582c01645903d704f03fc277ca936"
+        description: |-
+          Исследователи подготовили адаптированный для Claude Code Action промпт, оформленный как задача по проверке соблюдения требований и предписывавший Claude считать учётные данные из своего окружения и вывести полученное значение.
+      - tactic: AML.TA0004
+        technique: AML.T0093
+        source:
+          description_sha256: "689260a11948400810557436a2f3baa8b8611bcba3b982db8ad745889465cdcf"
+        description: |-
+          Исследователи внедрили вредоносный промпт через подконтрольное злоумышленнику содержимое GitHub, которое обрабатывал лабораторный рабочий процесс. Так они смоделировали доставку через текст issue, описание pull request или комментарий, поступающие на обработку Claude Code Action.
+      - tactic: AML.TA0005
+        technique: AML.T0051.001
+        source:
+          description_sha256: "adbc28b6972f3e0c80c40d4eca98ebc84d443dd5c3fc45e0639a2a63779de178"
+        description: |-
+          Claude Code Action включил вредоносное содержимое GitHub в контекст модели. Claude интерпретировал его как инструкции и выполнил их.
+      - tactic: AML.TA0007
+        technique: AML.T0054
+        source:
+          description_sha256: "73f84e9d3c645ef00112f3a00d5c912a18f37f66564aa43dfd7f3ffd4f64de40"
+        description: |-
+          Промпт был оформлен как безобидная проверка соблюдения требований и содержал инструкции удалить префикс учётных данных, чтобы обойти поведение Claude при отказе от вывода API-ключа в распознаваемом формате.
+      - tactic: AML.TA0005
+        technique: AML.T0053
+        source:
+          description_sha256: "c0c2feafb3ce2120c435b9b6c03bb05b372153ee926712379343d7fd444a634f"
+        description: |-
+          Claude вызвал встроенный инструмент Read для чтения `/proc/self/environ`. Инструмент Read выполнялся за пределами границы изоляции на основе Bubblewrap и очищенного окружения, которая применялась к подпроцессам Bash.
+      - tactic: AML.TA0013
+        technique: AML.T0098
+        source:
+          description_sha256: "c3ee351dbb39b44e6a4a8a3cf7745bc2bd61bf107c93faeff8868a586ebb539c"
+        description: |-
+          Инструмент Read вернул не прошедшее санитизацию окружение процесса Claude Code Action, включая `ANTHROPIC_API_KEY` и, возможно, другие учётные данные, доступные рабочему процессу.
+      - tactic: AML.TA0010
+        technique: AML.T0057
+        source:
+          description_sha256: "13da64292f0c1bacebaf63050cac178d9a26053a378b2bbdea2f819ec67951ed"
+        description: |-
+          Claude вывел API-ключ Anthropic после удаления его префикса `sk-ant-`. Из-за этого преобразования сканер секретов GitHub не смог распознать ключ, тогда как исследователи могли восстановить исходное значение, вернув префикс.
+      - tactic: AML.TA0010
+        technique: AML.T0086
+        source:
+          description_sha256: "b4b5aac76b4e6c153d07ba0bd3cf129026c5890d4c4b8ec4b392971838ac96f1"
+        description: |-
+          В зависимости от инструментов, доступных в конфигурации рабочего процесса, исследователи могли использовать WebFetch, Bash, GitHub MCP и логи GitHub Actions как потенциальные каналы эксфильтрации.
   "AML.T0006":
     name: "Активное сканирование"
     source:

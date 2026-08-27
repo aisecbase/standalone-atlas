@@ -10,68 +10,68 @@ incident_date: "2026-06-05"
 incident_date_granularity: Day
 incident_date_raw: "2026-06-05"
 procedure:
-    - description: The researchers analyzed the Claude Code Action codebase and the obfuscated Claude Agent SDK. They used the implementation details to understand how agent tools executed and where security boundaries were applied.
-      description_line: The researchers analyzed the Claude Code Action codebase and the obfuscated Claude Agent SDK. They used the implementation details to understand how agent tools executed and where security boundaries were applied.
+    - description: Исследователи проанализировали кодовую базу Claude Code Action и обфусцированный Claude Agent SDK. Это позволило им понять, как агент запускает инструменты и где в системе проходят границы безопасности.
+      description_line: Исследователи проанализировали кодовую базу Claude Code Action и обфусцированный Claude Agent SDK. Это позволило им понять, как агент запускает инструменты и где в системе проходят границы безопасности.
       tactic: AML.TA0002
       tactic_name: Разведка
       technique: AML.T0095.000
       technique_name: Репозитории кода
-    - description: The researchers identified the tools available to Claude Code Action and compared their execution paths. They determined that Bash subprocesses could run within Bubblewrap with a scrubbed environment, while the built-in Read tool performed direct, in-process file access outside that isolation boundary.
-      description_line: The researchers identified the tools available to Claude Code Action and compared their execution paths. They determined that Bash subprocesses could run within Bubblewrap with a scrubbed environment, while the built-in Read tool performed direct, in-process file access outside that isolation boundary.
+    - description: Исследователи выявили инструменты, доступные Claude Code Action, и сравнили пути их выполнения. Они установили, что подпроцессы Bash могли выполняться внутри Bubblewrap с очищенным окружением, тогда как встроенный инструмент Read осуществлял прямой внутрипроцессный доступ к файлам за пределами этой границы изоляции.
+      description_line: Исследователи выявили инструменты, доступные Claude Code Action, и сравнили пути их выполнения. Они установили, что подпроцессы Bash могли выполняться внутри Bubblewrap с очищенным окружением, тогда как встроенный инструмент Read осуществлял прямой внутрипроцессный доступ к файлам за пределами этой границы изоляции.
       tactic: AML.TA0008
       tactic_name: Выявление
       technique: AML.T0084.001
       technique_name: Определения инструментов
-    - description: The researchers identified that Claude Code Action could be triggered by GitHub events involving issues, pull requests, and comments and that the action would fetch the associated content into Claude's context.
-      description_line: The researchers identified that Claude Code Action could be triggered by GitHub events involving issues, pull requests, and comments and that the action would fetch the associated content into Claude's context.
+    - description: Исследователи установили, что Claude Code Action мог активироваться событиями GitHub, связанными с issues, pull requests и комментариями; после срабатывания Claude Code Action загружал связанное с событием содержимое в контекст Claude.
+      description_line: Исследователи установили, что Claude Code Action мог активироваться событиями GitHub, связанными с issues, pull requests и комментариями; после срабатывания Claude Code Action загружал связанное с событием содержимое в контекст Claude.
       tactic: AML.TA0008
       tactic_name: Выявление
       technique: AML.T0084.002
       technique_name: Триггеры активации
-    - description: The researchers crafted a prompt tailored to Claude Code Action framed as a compliance task that directed Claude to read a credential from its environment and emit it.
-      description_line: The researchers crafted a prompt tailored to Claude Code Action framed as a compliance task that directed Claude to read a credential from its environment and emit it.
+    - description: Исследователи подготовили адаптированный для Claude Code Action промпт, оформленный как задача по проверке соблюдения требований и предписывавший Claude считать учётные данные из своего окружения и вывести полученное значение.
+      description_line: Исследователи подготовили адаптированный для Claude Code Action промпт, оформленный как задача по проверке соблюдения требований и предписывавший Claude считать учётные данные из своего окружения и вывести полученное значение.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0065
       technique_name: Создание промптов для LLM
-    - description: The researchers introduced the malicious prompt through attacker-controlled GitHub content processed by the lab workflow, modeling delivery through an issue body, pull request description, or comment handled by Claude Code Action.
-      description_line: The researchers introduced the malicious prompt through attacker-controlled GitHub content processed by the lab workflow, modeling delivery through an issue body, pull request description, or comment handled by Claude Code Action.
+    - description: Исследователи внедрили вредоносный промпт через подконтрольное злоумышленнику содержимое GitHub, которое обрабатывал лабораторный рабочий процесс. Так они смоделировали доставку через текст issue, описание pull request или комментарий, поступающие на обработку Claude Code Action.
+      description_line: Исследователи внедрили вредоносный промпт через подконтрольное злоумышленнику содержимое GitHub, которое обрабатывал лабораторный рабочий процесс. Так они смоделировали доставку через текст issue, описание pull request или комментарий, поступающие на обработку Claude Code Action.
       tactic: AML.TA0004
       tactic_name: Первичный доступ
       technique: AML.T0093
       technique_name: Внедрение промпта через публичное приложение
-    - description: Claude Code Action incorporated the malicious GitHub content into the model context. Claude interpreted the malicious content as instructions and followed the supplied instructions.
-      description_line: Claude Code Action incorporated the malicious GitHub content into the model context. Claude interpreted the malicious content as instructions and followed the supplied instructions.
+    - description: Claude Code Action включил вредоносное содержимое GitHub в контекст модели. Claude интерпретировал его как инструкции и выполнил их.
+      description_line: Claude Code Action включил вредоносное содержимое GitHub в контекст модели. Claude интерпретировал его как инструкции и выполнил их.
       tactic: AML.TA0005
       tactic_name: Выполнение
       technique: AML.T0051.001
       technique_name: Косвенная промпт-инъекция
-    - description: The prompt used benign compliance review framing and instructions to remove the credential prefix to bypass Claude's refusal behavior for emitting a recognizable API key.
-      description_line: The prompt used benign compliance review framing and instructions to remove the credential prefix to bypass Claude's refusal behavior for emitting a recognizable API key.
+    - description: Промпт был оформлен как безобидная проверка соблюдения требований и содержал инструкции удалить префикс учётных данных, чтобы обойти поведение Claude при отказе от вывода API-ключа в распознаваемом формате.
+      description_line: Промпт был оформлен как безобидная проверка соблюдения требований и содержал инструкции удалить префикс учётных данных, чтобы обойти поведение Claude при отказе от вывода API-ключа в распознаваемом формате.
       tactic: AML.TA0007
       tactic_name: Уклонение от защиты
       technique: AML.T0054
       technique_name: Джейлбрейк LLM
-    - description: Claude invoked its built-in Read tool on `/proc/self/environ`. Read did not execute within the Bubblewrap and scrubbed-environment boundary applied to Bash subprocesses.
-      description_line: Claude invoked its built-in Read tool on `/proc/self/environ`. Read did not execute within the Bubblewrap and scrubbed-environment boundary applied to Bash subprocesses.
+    - description: Claude вызвал встроенный инструмент Read для чтения `/proc/self/environ`. Инструмент Read выполнялся за пределами границы изоляции на основе Bubblewrap и очищенного окружения, которая применялась к подпроцессам Bash.
+      description_line: Claude вызвал встроенный инструмент Read для чтения `/proc/self/environ`. Инструмент Read выполнялся за пределами границы изоляции на основе Bubblewrap и очищенного окружения, которая применялась к подпроцессам Bash.
       tactic: AML.TA0005
       tactic_name: Выполнение
       technique: AML.T0053
       technique_name: Вызов инструментов ИИ-агента
-    - description: The Read tool returned the action process's unsanitized environment, including `ANTHROPIC_API_KEY` and potentially other credentials available to the workflow.
-      description_line: The Read tool returned the action process's unsanitized environment, including `ANTHROPIC_API_KEY` and potentially other credentials available to the workflow.
+    - description: Инструмент Read вернул не прошедшее санитизацию окружение процесса Claude Code Action, включая `ANTHROPIC_API_KEY` и, возможно, другие учётные данные, доступные рабочему процессу.
+      description_line: Инструмент Read вернул не прошедшее санитизацию окружение процесса Claude Code Action, включая `ANTHROPIC_API_KEY` и, возможно, другие учётные данные, доступные рабочему процессу.
       tactic: AML.TA0013
       tactic_name: Доступ к учетным данным
       technique: AML.T0098
       technique_name: Сбор учетных данных через инструменты ИИ-агента
-    - description: Claude emitted the Anthropic API key after removing its `sk-ant-` prefix. The transformation prevented GitHub's secret scanner from recognizing the credential, while the researchers could reconstruct the original key by restoring the prefix.
-      description_line: Claude emitted the Anthropic API key after removing its `sk-ant-` prefix. The transformation prevented GitHub's secret scanner from recognizing the credential, while the researchers could reconstruct the original key by restoring the prefix.
+    - description: Claude вывел API-ключ Anthropic после удаления его префикса `sk-ant-`. Из-за этого преобразования сканер секретов GitHub не смог распознать ключ, тогда как исследователи могли восстановить исходное значение, вернув префикс.
+      description_line: Claude вывел API-ключ Anthropic после удаления его префикса `sk-ant-`. Из-за этого преобразования сканер секретов GitHub не смог распознать ключ, тогда как исследователи могли восстановить исходное значение, вернув префикс.
       tactic: AML.TA0010
       tactic_name: Эксфильтрация
       technique: AML.T0057
       technique_name: Утечка данных из LLM
-    - description: The researchers could use WebFetch, Bash, GitHub MCP, and Action logs as potential exfiltration channels depending on the tools available in the workflow configuration.
-      description_line: The researchers could use WebFetch, Bash, GitHub MCP, and Action logs as potential exfiltration channels depending on the tools available in the workflow configuration.
+    - description: В зависимости от инструментов, доступных в конфигурации рабочего процесса, исследователи могли использовать WebFetch, Bash, GitHub MCP и логи GitHub Actions как потенциальные каналы эксфильтрации.
+      description_line: В зависимости от инструментов, доступных в конфигурации рабочего процесса, исследователи могли использовать WebFetch, Bash, GitHub MCP и логи GitHub Actions как потенциальные каналы эксфильтрации.
       tactic: AML.TA0010
       tactic_name: Эксфильтрация
       technique: AML.T0086
