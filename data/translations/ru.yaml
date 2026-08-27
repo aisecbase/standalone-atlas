@@ -2483,7 +2483,7 @@ objects:
       - tactic: AML.TA0003
         technique: AML.T0016.001
         source:
-          description_sha256: "fee1fbf10f769868690a773f32412964afa9540f192840aaf2081e80ed2cb344"
+          description_sha256: "f281233667a0586dde59c4e7c80d23705f31a21b779fe0f4bf92a4dffe883832"
         description: |-
           Исследователи получили [Open Broadcaster Software (OBS)](https://obsproject.com), которое может транслировать видеопоток по сети.
       - tactic: AML.TA0003
