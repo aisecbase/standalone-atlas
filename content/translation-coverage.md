@@ -26,8 +26,8 @@ generated_by: atlasgen
 <td data-label="Названий переведено">68</td>
 <td data-label="Описаний переведено">68</td>
 <td data-label="Процедур переведено">559/571</td>
-<td data-label="Полностью переведено">59</td>
-<td data-label="Требует проверки">5</td>
+<td data-label="Полностью переведено">60</td>
+<td data-label="Требует проверки">4</td>
 </tr>
 <tr>
 <th scope="row" data-label="Тип объектов">Меры защиты</th>
@@ -68,9 +68,8 @@ generated_by: atlasgen
 </tbody>
 </table>
 
-## Требует проверки (59)
+## Требует проверки (58)
 
-- [`AML.CS0045`](/studies/AML.CS0045/) (Кейсы): Data Exfiltration via an MCP Server used by Cursor; название: да; описание/summary: да; процедуры: 11/11; процедуры требуют проверки: 1; требует проверки: процедуры
 - [`AML.CS0048`](/studies/AML.CS0048/) (Кейсы): Exposed ClawdBot Control Interfaces Leads to Credential Access and Execution; название: да; описание/summary: да; процедуры: 10/10; процедуры требуют проверки: 1; требует проверки: summary, процедуры
 - [`AML.CS0052`](/studies/AML.CS0052/) (Кейсы): LLMSmith: RCE Vulnerabilities in LLM-Integrated Applications; название: да; описание/summary: да; процедуры: 12/12; процедуры требуют проверки: 1; требует проверки: процедуры
 - [`AML.CS0054`](/studies/AML.CS0054/) (Кейсы): Data Exfiltration via Remote Poisoned MCP Tool; название: да; описание/summary: да; процедуры: 7/11; процедуры требуют проверки: 1; требует проверки: процедуры
