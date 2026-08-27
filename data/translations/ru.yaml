@@ -966,7 +966,7 @@ objects:
       - tactic: AML.TA0001
         technique: AML.T0043.000
         source:
-          description_sha256: "c61780b30b9c751ed0782930f3e75fd3f22dc2b7dd1de171fe55f1f41616559b"
+          description_sha256: "157b70c060d0690a8bc651b9393f6d4d99ece2b6726bd882581e34c5d0026507"
         description: |-
           Используя целевую модель и данные, красная команда в офлайн-режиме подготовила состязательные данные, рассчитанные на обход модели.
       - tactic: AML.TA0000

@@ -6,8 +6,8 @@ totals:
         body_translated: 68
         procedures_total: 571
         procedures_translated: 557
-        fully_translated: 49
-        needs_review: 15
+        fully_translated: 50
+        needs_review: 14
     mitigation:
         total: 37
         name_translated: 37
@@ -103,18 +103,6 @@ partial:
       review_fields:
         - procedure
 review:
-    - id: AML.CS0010
-      name: Microsoft Azure Service Disruption
-      type: case-study
-      has_name: true
-      has_body: true
-      source_field: summary
-      total_procedures: 8
-      translated_procedures: 8
-      procedure_needs_review: 1
-      needs_review: true
-      review_fields:
-        - procedure
     - id: AML.CS0017
       name: Bypassing ID.me Identity Verification
       type: case-study
