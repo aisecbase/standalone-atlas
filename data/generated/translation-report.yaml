@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 150
-        needs_review: 28
+        fully_translated: 151
+        needs_review: 27
 missing: []
 partial: []
 review:
-    - id: AML.T0011
-      name: User Execution
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 0734e3f9ff63d90e9229637d2108a31c29bea6693fd6a56b5a8d5db4c336d222
-      translation_source_sha256: e2993261792d91fb674a5d1c237d6359895bd164110bcd637299a7d3d1fef549
     - id: AML.T0011.000
       name: Unsafe AI Artifacts
       type: technique

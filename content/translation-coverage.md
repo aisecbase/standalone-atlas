@@ -62,15 +62,14 @@ generated_by: atlasgen
 <td data-label="Названий переведено">178</td>
 <td data-label="Описаний переведено">178</td>
 <td data-label="Процедур переведено">-</td>
-<td data-label="Полностью переведено">150</td>
-<td data-label="Требует проверки">28</td>
+<td data-label="Полностью переведено">151</td>
+<td data-label="Требует проверки">27</td>
 </tr>
 </tbody>
 </table>
 
-## Требует проверки (28)
+## Требует проверки (27)
 
-- [`AML.T0011`](/techniques/AML.T0011/) (Техники): User Execution; название: да; описание/summary: да; требует проверки: описание
 - [`AML.T0011.000`](/techniques/AML.T0011.000/) (Техники): Unsafe AI Artifacts; название: да; описание/summary: да; требует проверки: описание
 - [`AML.T0011.002`](/techniques/AML.T0011.002/) (Техники): Poisoned AI Agent Tool; название: да; описание/summary: да; требует проверки: описание
 - [`AML.T0011.003`](/techniques/AML.T0011.003/) (Техники): Malicious Link; название: да; описание/summary: да; требует проверки: описание
