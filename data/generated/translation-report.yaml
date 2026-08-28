@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 140
-        needs_review: 38
+        fully_translated: 141
+        needs_review: 37
 missing: []
 partial: []
 review:
-    - id: AML.T0002
-      name: Acquire Public AI Artifacts
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 2821255084440f5aa87caf7033c7c99fd1ebd32394cc2f367b6988b6aa5d7e78
-      translation_source_sha256: 2babcd230b92616e1792822020d00b953631eb75cd97086e7f42d93b750dfaf8
     - id: AML.T0002.002
       name: AI Agent Configuration
       type: technique
