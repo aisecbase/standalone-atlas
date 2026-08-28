@@ -54,7 +54,7 @@ url: /techniques/AML.T0110.001/
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0053/"><span class="relation-id">AML.CS0053</span><strong>Эксфильтрация писем через отравленный MCP-сервер Postmark</strong><span class="relation-meta">Актор: Unknown Bad Actor / Тактика: AML.TA0006 Закрепление</span><p>Once configured with the organization&#39;s AI agents, the poisoned Postmark MCP server&#39;s effects persist.</p></a>
+<a class="relation-item" href="/studies/AML.CS0053/"><span class="relation-id">AML.CS0053</span><strong>Эксфильтрация писем через отравленный MCP-сервер Postmark</strong><span class="relation-meta">Актор: Unknown Bad Actor / Тактика: AML.TA0006 Закрепление</span><p>После включения отравленного MCP-сервера Postmark в конфигурацию ИИ-агентов организации его вредоносное воздействие сохраняется.</p></a>
 </div>
 
 

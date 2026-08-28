@@ -22,8 +22,8 @@ procedure:
       tactic_name: Подготовка ресурсов
       technique: AML.T0017
       technique_name: Разработка средств для атаки
-    - description: The bad actor published their malicious version of `postmark-mcp` to npm.
-      description_line: The bad actor published their malicious version of `postmark-mcp` to npm.
+    - description: Злоумышленник опубликовал вредоносную версию `postmark-mcp` в npm.
+      description_line: Злоумышленник опубликовал вредоносную версию `postmark-mcp` в npm.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0115.002
@@ -40,8 +40,8 @@ procedure:
       tactic_name: Первичный доступ
       technique: AML.T0010.005
       technique_name: Инструмент ИИ-агента
-    - description: Once configured with the organization's AI agents, the poisoned Postmark MCP server's effects persist.
-      description_line: Once configured with the organization's AI agents, the poisoned Postmark MCP server's effects persist.
+    - description: После включения отравленного MCP-сервера Postmark в конфигурацию ИИ-агентов организации его вредоносное воздействие сохраняется.
+      description_line: После включения отравленного MCP-сервера Postmark в конфигурацию ИИ-агентов организации его вредоносное воздействие сохраняется.
       tactic: AML.TA0006
       tactic_name: Закрепление
       technique: AML.T0110.001

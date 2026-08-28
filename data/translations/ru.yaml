@@ -4015,7 +4015,7 @@ objects:
         description: |-
           Злоумышленник изменил легитимный MCP-сервер Postmark так, чтобы его адрес электронной почты добавлялся в поле скрытой копии (BCC) всех писем, отправляемых инструментом.
       - tactic: AML.TA0003
-        technique: AML.T0104
+        technique: AML.T0115.002
         source:
           description_sha256: "2ad820436c3a513ae017db0567f9aa6d197968d57502c53f8d3dda5640d7c1f2"
         description: |-
@@ -4033,11 +4033,11 @@ objects:
         description: |-
           Когда организации обновляли `postmark-mcp` до версии `1.0.16`, они получали вредоносную версию инструмента через скомпрометированную цепочку поставок.
       - tactic: AML.TA0006
-        technique: AML.T0110
+        technique: AML.T0110.001
         source:
           description_sha256: "e70f2a427de7d029cb86e86861d5debb65fe5c8f6bba35867190490e3e6d3467"
         description: |-
-          После подключения к ИИ-агентам организации отравленный MCP-сервер Postmark продолжал действовать.
+          После включения отравленного MCP-сервера Postmark в конфигурацию ИИ-агентов организации его вредоносное воздействие сохраняется.
       - tactic: AML.TA0005
         technique: AML.T0011.002
         source:

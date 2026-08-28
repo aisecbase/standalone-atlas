@@ -25,8 +25,8 @@ generated_by: atlasgen
 <td data-label="Всего">68</td>
 <td data-label="Названий переведено">68</td>
 <td data-label="Описаний переведено">68</td>
-<td data-label="Процедур переведено">569/571</td>
-<td data-label="Полностью переведено">67</td>
+<td data-label="Процедур переведено">571/571</td>
+<td data-label="Полностью переведено">68</td>
 <td data-label="Требует проверки">0</td>
 </tr>
 <tr>
@@ -125,9 +125,9 @@ generated_by: atlasgen
 - [`AML.TA0009`](/tactics/AML.TA0009/) (Тактики): Collection; название: да; описание/summary: да; требует проверки: описание
 - [`AML.TA0012`](/tactics/AML.TA0012/) (Тактики): Privilege Escalation; название: да; описание/summary: да; требует проверки: описание
 
-## Частичный перевод (1)
+## Частичный перевод (0)
 
-- [`AML.CS0053`](/studies/AML.CS0053/) (Кейсы): Poisoned Postmark MCP Server Email Exfiltration; название: да; описание/summary: да; процедуры: 7/9
+Нет.
 
 ## Перевод отсутствует (0)
 

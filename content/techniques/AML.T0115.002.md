@@ -60,7 +60,7 @@ url: /techniques/AML.T0115.002/
 
 <div class="relation-list procedure-relations">
 <a class="relation-item" href="/studies/AML.CS0049/"><span class="relation-id">AML.CS0049</span><strong>Компрометация цепочки поставки через отравленный навык ClawdBot</strong><span class="relation-meta">Актор: Jamieson O&#39;Reilly / Тактика: AML.TA0003 Подготовка ресурсов</span><p>Исследователь разработал отравленный навык ClawdBot под названием &#34;What Would Elon Do?&#34; Вредоносный промпт находился в файле `rules/logic.md`, который считывается при активации навыка. Исследователь опубликовал навык в ClawdHub.</p></a>
-<a class="relation-item" href="/studies/AML.CS0053/"><span class="relation-id">AML.CS0053</span><strong>Эксфильтрация писем через отравленный MCP-сервер Postmark</strong><span class="relation-meta">Актор: Unknown Bad Actor / Тактика: AML.TA0003 Подготовка ресурсов</span><p>The bad actor published their malicious version of `postmark-mcp` to npm.</p></a>
+<a class="relation-item" href="/studies/AML.CS0053/"><span class="relation-id">AML.CS0053</span><strong>Эксфильтрация писем через отравленный MCP-сервер Postmark</strong><span class="relation-meta">Актор: Unknown Bad Actor / Тактика: AML.TA0003 Подготовка ресурсов</span><p>Злоумышленник опубликовал вредоносную версию `postmark-mcp` в npm.</p></a>
 <a class="relation-item" href="/studies/AML.CS0054/"><span class="relation-id">AML.CS0054</span><strong>Эксфильтрация данных через отравленный удалённый MCP-инструмент</strong><span class="relation-meta">Актор: Invariant Labs / Тактика: AML.TA0003 Подготовка ресурсов</span><p>Исследователи разместили отравленный MCP-сервер, содержащий вредоносные инструкции, скрытые в строке документации (docstring) одного из предоставляемых инструментов.</p></a>
 </div>
 
