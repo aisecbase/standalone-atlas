@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 171
-        needs_review: 7
+        fully_translated: 172
+        needs_review: 6
 missing: []
 partial: []
 review:
-    - id: AML.T0080
-      name: AI Agent Context Poisoning
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 5c142609325edf0c98de10025952103843831507d519453d58f682c4ab6280fe
-      translation_source_sha256: d2fa4b5d74bad9b0a33f81c359bf8adf55416c87978a31d27149b15ce51e834b
     - id: AML.T0080.000
       name: Memory
       type: technique
