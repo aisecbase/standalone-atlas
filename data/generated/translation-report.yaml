@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 157
-        needs_review: 21
+        fully_translated: 158
+        needs_review: 20
 missing: []
 partial: []
 review:
-    - id: AML.T0018
-      name: Manipulate AI Model
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 532769300eec53f649d7327460c4f0cb7bcddb38c907345fdd52f85209aec746
-      translation_source_sha256: 324b5a4f5ab2e93e0ea9d4a4fa31fb2b4bae9dca445322314ac67e10ec5c40d5
     - id: AML.T0020
       name: Training Data Poisoning
       type: technique
