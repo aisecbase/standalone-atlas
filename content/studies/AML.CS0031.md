@@ -20,10 +20,10 @@ procedure:
       technique: AML.T0018.002
       technique_name: Встраивание вредоносного ПО
     - description: |-
-        The adversary uploaded the model to Hugging Face.
+        Злоумышленник загрузил модель на Hugging Face.
 
-        In both instances observed by the ReversingLab, the malicious models did not make any attempt to mimic a popular legitimate model.
-      description_line: The adversary uploaded the model to Hugging Face. In both instances observed by the ReversingLab, the malicious models did not make any attempt to mimic a popular legitimate model.
+        В обоих случаях, зафиксированных ReversingLabs, вредоносные модели не предпринимали попыток имитировать популярную легитимную модель.
+      description_line: Злоумышленник загрузил модель на Hugging Face. В обоих случаях, зафиксированных ReversingLabs, вредоносные модели не предпринимали попыток имитировать популярную легитимную модель.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0115.001

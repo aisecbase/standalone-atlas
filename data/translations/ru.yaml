@@ -2379,13 +2379,13 @@ objects:
 
           В ходе исследования ReversingLabs обнаружила два таких случая на Hugging Face.
       - tactic: AML.TA0003
-        technique: AML.T0058
+        technique: AML.T0115.001
         source:
           description_sha256: "2039b85fa6c117da2ca4606f2fb2f13e49c1ab8b439137f6e39a4c09887d0d57"
         description: |-
           Злоумышленник загрузил модель на Hugging Face.
 
-          В обоих случаях, наблюдавшихся ReversingLabs, вредоносные модели не пытались имитировать популярную легитимную модель.
+          В обоих случаях, зафиксированных ReversingLabs, вредоносные модели не предпринимали попыток имитировать популярную легитимную модель.
       - tactic: AML.TA0007
         technique: AML.T0076
         source:
