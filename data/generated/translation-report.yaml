@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 161
-        needs_review: 17
+        fully_translated: 162
+        needs_review: 16
 missing: []
 partial: []
 review:
-    - id: AML.T0051
-      name: LLM Prompt Injection
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: afb8e907cb72fc9615c339426d99ff061d3eadbe0b2d4f59d11ae2d3e99cef83
-      translation_source_sha256: 4fe5883000cd200199e43479f46a430738351495881e9aa619d169386632257f
     - id: AML.T0051.001
       name: Indirect
       type: technique
