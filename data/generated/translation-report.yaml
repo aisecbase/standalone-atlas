@@ -24,8 +24,8 @@ totals:
         total: 16
         name_translated: 16
         body_translated: 16
-        fully_translated: 14
-        needs_review: 2
+        fully_translated: 15
+        needs_review: 1
     technique:
         total: 178
         name_translated: 178
@@ -487,17 +487,6 @@ review:
         - description
       source_sha256: 70a1c1ee5c9b39c1b86e7d217df83afd48119d0dd597e87e92411a7346e24852
       translation_source_sha256: b169a5d165fb98157ed7615ec0082db2e14bf792d0c42bcb36486fd8ed0ff114
-    - id: AML.TA0009
-      name: Collection
-      type: tactic
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: c5bff1005549be18c2308e5e18e637943d4f0eb8e3230bbc55c219aba7a747fb
-      translation_source_sha256: db4e0274700dff544480a17c640c60cfc6e8c18c399d11c7404ea62d11da8e25
     - id: AML.TA0012
       name: Privilege Escalation
       type: tactic
