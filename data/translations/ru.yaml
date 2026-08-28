@@ -4411,9 +4411,9 @@ objects:
       - tactic: AML.TA0005
         technique: AML.T0051.002
         source:
-          description_sha256: "5e27903b869d38b1e47e0f43450eddb927f2d684847df3e3ddd6dc6b6ee19932"
+          description_sha256: "f65ddf3ddfb2a463769f614df5acb8c00dfc6057e2da1ba1331a84a728b520f2"
         description: |-
-          Когда позднее пользователь вызвал Copilot, тот извлек вредоносное письмо в свой контекст, что привело к срабатыванию промпт-инъекции.
+          Когда позднее пользователь обратился к Copilot, тот извлёк вредоносное письмо и включил его в свой контекст, что привело к срабатыванию промпт-инъекции.
       - tactic: AML.TA0009
         technique: AML.T0085.000
         source:

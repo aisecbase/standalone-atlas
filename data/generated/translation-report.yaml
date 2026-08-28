@@ -6,8 +6,8 @@ totals:
         body_translated: 68
         procedures_total: 571
         procedures_translated: 563
-        fully_translated: 63
-        needs_review: 1
+        fully_translated: 64
+        needs_review: 0
     mitigation:
         total: 37
         name_translated: 37
@@ -67,18 +67,6 @@ partial:
       total_procedures: 9
       translated_procedures: 7
 review:
-    - id: AML.CS0059
-      name: 'EchoLeak: Zero-Click Prompt Injection Targeting M365 Copilot for Data Exfiltration'
-      type: case-study
-      has_name: true
-      has_body: true
-      source_field: summary
-      total_procedures: 12
-      translated_procedures: 12
-      procedure_needs_review: 1
-      needs_review: true
-      review_fields:
-        - procedure
     - id: AML.M0002
       name: Predictive AI Output Obfuscation
       type: mitigation

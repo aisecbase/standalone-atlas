@@ -26,8 +26,8 @@ generated_by: atlasgen
 <td data-label="Названий переведено">68</td>
 <td data-label="Описаний переведено">68</td>
 <td data-label="Процедур переведено">563/571</td>
-<td data-label="Полностью переведено">63</td>
-<td data-label="Требует проверки">1</td>
+<td data-label="Полностью переведено">64</td>
+<td data-label="Требует проверки">0</td>
 </tr>
 <tr>
 <th scope="row" data-label="Тип объектов">Меры защиты</th>
@@ -68,9 +68,8 @@ generated_by: atlasgen
 </tbody>
 </table>
 
-## Требует проверки (55)
+## Требует проверки (54)
 
-- [`AML.CS0059`](/studies/AML.CS0059/) (Кейсы): EchoLeak: Zero-Click Prompt Injection Targeting M365 Copilot for Data Exfiltration; название: да; описание/summary: да; процедуры: 12/12; процедуры требуют проверки: 1; требует проверки: процедуры
 - [`AML.M0002`](/mitigations/AML.M0002/) (Меры защиты): Predictive AI Output Obfuscation; название: да; описание/summary: да; требует проверки: название, описание
 - [`AML.M0003`](/mitigations/AML.M0003/) (Меры защиты): Predictive AI Model Hardening; название: да; описание/summary: да; требует проверки: название, описание
 - [`AML.M0004`](/mitigations/AML.M0004/) (Меры защиты): Limit AI Service Query Volume and Rate; название: да; описание/summary: да; требует проверки: название, описание
