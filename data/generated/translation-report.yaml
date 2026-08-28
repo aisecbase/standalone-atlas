@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 137
-        needs_review: 41
+        fully_translated: 138
+        needs_review: 40
 missing: []
 partial: []
 review:
-    - id: AML.T0000
-      name: Search Open Technical Databases
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 04189ab1641220c910c41fed59bbf9df66ab07b3fd726c770b132f66a7643ea1
-      translation_source_sha256: 35987e9fdc18feb7dc9d13af3885af8488f0d08dfdb35e0c85f093bb3d4366b3
     - id: AML.T0000.001
       name: Pre-Print Repositories
       type: technique

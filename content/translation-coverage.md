@@ -62,15 +62,14 @@ generated_by: atlasgen
 <td data-label="Названий переведено">178</td>
 <td data-label="Описаний переведено">178</td>
 <td data-label="Процедур переведено">-</td>
-<td data-label="Полностью переведено">137</td>
-<td data-label="Требует проверки">41</td>
+<td data-label="Полностью переведено">138</td>
+<td data-label="Требует проверки">40</td>
 </tr>
 </tbody>
 </table>
 
-## Требует проверки (41)
+## Требует проверки (40)
 
-- [`AML.T0000`](/techniques/AML.T0000/) (Техники): Search Open Technical Databases; название: да; описание/summary: да; требует проверки: описание
 - [`AML.T0000.001`](/techniques/AML.T0000.001/) (Техники): Pre-Print Repositories; название: да; описание/summary: да; требует проверки: описание
 - [`AML.T0000.002`](/techniques/AML.T0000.002/) (Техники): Technical Blogs; название: да; описание/summary: да; требует проверки: описание
 - [`AML.T0002`](/techniques/AML.T0002/) (Техники): Acquire Public AI Artifacts; название: да; описание/summary: да; требует проверки: описание
