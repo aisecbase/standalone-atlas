@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 138
-        needs_review: 40
+        fully_translated: 139
+        needs_review: 39
 missing: []
 partial: []
 review:
-    - id: AML.T0000.001
-      name: Pre-Print Repositories
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: fc655a95c4d3ba6b337b15ed221c6d6bcb61516f4539499f00d304cb3aa474b4
-      translation_source_sha256: bae5b0d0f7bad378ee18b2f2b1709066a99a37570dec792fb3537f6284a8b0eb
     - id: AML.T0000.002
       name: Technical Blogs
       type: technique
