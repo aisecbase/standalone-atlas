@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 153
-        needs_review: 25
+        fully_translated: 154
+        needs_review: 24
 missing: []
 partial: []
 review:
-    - id: AML.T0011.003
-      name: Malicious Link
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: c97874ab04a2c9c03bed3b68b1ee1d90574a9f10e871e9b8cad506dc5a192b3b
-      translation_source_sha256: 64296f82a39b2edce27a5062b93b2543bb8f26f72fcdc6a62e5cc1cec7eb1acf
     - id: AML.T0013
       name: Discover AI Model Ontology
       type: technique
