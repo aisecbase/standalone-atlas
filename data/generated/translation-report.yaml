@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 145
-        needs_review: 33
+        fully_translated: 146
+        needs_review: 32
 missing: []
 partial: []
 review:
-    - id: AML.T0008.005
-      name: AI Service Proxies
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 84cb0084e09c595e43d94715e1f4504e0a7e117e77dc15604e85cb84a5642c2d
-      translation_source_sha256: 4e09a48537a31c7cfe134ee2d20fc0cfb6fea620e5115a597fcb75ec6330be71
     - id: AML.T0010
       name: AI Supply Chain Compromise
       type: technique
