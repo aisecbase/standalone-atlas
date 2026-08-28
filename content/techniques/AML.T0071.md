@@ -40,7 +40,7 @@ url: /techniques/AML.T0071/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Защитные ограничения (Guardrails) для генеративного ИИ</strong><p>Validate retrieved documents and block nested false entries, malicious instructions, and unsupported content.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Гардрейлы для генеративного ИИ</strong><p>Валидируйте извлечённые документы и блокируйте вложенные ложные записи, вредоносные инструкции и неподтверждённое содержимое.</p></a>
 </div>
 
 

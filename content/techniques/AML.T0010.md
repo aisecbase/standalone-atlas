@@ -54,7 +54,7 @@ url: /techniques/AML.T0010/
 
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0014/"><span class="relation-id">AML.M0014</span><strong>Проверка ИИ-артефактов</strong><p>Внедрите надлежащую проверку подписей, чтобы небезопасные ИИ-артефакты не попадали в систему.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Защитные ограничения (Guardrails) для генеративного ИИ</strong><p>Защитные ограничения могут обнаруживать вредоносный код в выходных данных модели.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Гардрейлы для генеративного ИИ</strong><p>Гардрейлы могут обнаруживать вредоносный код в выходных данных модели.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0023/"><span class="relation-id">AML.M0023</span><strong>Ведомость материалов ИИ</strong><p>AI BOM может помочь пользователям выявлять недоверенные компоненты цепочки поставок ИИ.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Отработайте в контролируемых условиях внедрение недоверенных компонентов — ПО, данных, моделей и инструментов ИИ-агента — через репрезентативные пути их получения и развёртывания. Устраните недостатки, связанные со сведениями о происхождении, валидацией, процедурами одобрения, изоляцией и откатом.</p></a>
 </div>

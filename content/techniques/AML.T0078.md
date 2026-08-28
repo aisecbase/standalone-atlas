@@ -37,7 +37,7 @@ url: /techniques/AML.T0078/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Защитные ограничения (Guardrails) для генеративного ИИ</strong><p>Apply retrieval, input, and tool-action guardrails to detect and block malicious instructions embedded in websites before execution.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Гардрейлы для генеративного ИИ</strong><p>Применяйте гардрейлы для извлечения и входных данных, а также гардрейлы для инструментов и действий, чтобы обнаруживать и блокировать встроенные в веб-сайты вредоносные инструкции до их выполнения.</p></a>
 </div>
 
 

@@ -51,7 +51,7 @@ url: /techniques/AML.T0112.000/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Защитные ограничения (Guardrails) для генеративного ИИ</strong><p>Block malicious prompts, unsafe outputs, and prohibited agent actions with guardrails.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Гардрейлы для генеративного ИИ</strong><p>С помощью гардрейлов блокируйте вредоносные промпты, небезопасные выходные данные и запрещённые действия агента.</p></a>
 </div>
 
 

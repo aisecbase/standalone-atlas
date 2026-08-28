@@ -35,7 +35,7 @@ url: /techniques/AML.T0100/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Защитные ограничения (Guardrails) для генеративного ИИ</strong><p>Apply guardrails to untrusted web content and proposed computer-use actions.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Гардрейлы для генеративного ИИ</strong><p>Применяйте гардрейлы к недоверенному веб-содержимому и предлагаемым действиям по управлению компьютером.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0021/"><span class="relation-id">AML.M0021</span><strong>Правила и инструкции для генеративного ИИ</strong><p>Instruct agents to treat webpage instructions as untrusted and request approval for consequential actions.</p></a>
 </div>
 

@@ -12,8 +12,8 @@ totals:
         total: 37
         name_translated: 37
         body_translated: 37
-        fully_translated: 34
-        needs_review: 3
+        fully_translated: 35
+        needs_review: 2
     resource:
         total: 6
         name_translated: 6
@@ -35,17 +35,6 @@ totals:
 missing: []
 partial: []
 review:
-    - id: AML.M0020
-      name: Generative AI Guardrails
-      type: mitigation
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 242b1ac79ada14a8f94eea04d383f78e466cd8d27d6d578093f88112d423da87
-      translation_source_sha256: 0928d66061b0f3f02e6f75bcca23f1aaa8b4ce3ed2331bd5aa75aff6d1029ab1
     - id: AML.M0022
       name: Generative AI Model Alignment
       type: mitigation

@@ -48,5 +48,5 @@ url: /techniques/AML.T0069/
 <a class="relation-item" href="/mitigations/AML.M0000/"><span class="relation-id">AML.M0000</span><strong>Ограничение публичного раскрытия информации</strong><p>Withhold public prompt templates, model configuration, and architecture details that could aid LLM reconnaissance.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0005/"><span class="relation-id">AML.M0005</span><strong>Контроль доступа к ИИ-моделям и хранимым данным</strong><p>Restrict access to stored system prompts, configuration files, and model metadata.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Authenticate and monitor access to production models and configuration interfaces.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Защитные ограничения (Guardrails) для генеративного ИИ</strong><p>Block output of system prompts, hidden instructions, secrets, and internal configuration details.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Гардрейлы для генеративного ИИ</strong><p>Блокируйте вывод системных промптов, скрытых инструкций, секретов и сведений о внутренней конфигурации.</p></a>
 </div>

@@ -38,7 +38,7 @@ url: /techniques/AML.T0070/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Защитные ограничения (Guardrails) для генеративного ИИ</strong><p>Apply retrieval guardrails to reject untrusted, malicious, irrelevant, or unsupported RAG content.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Гардрейлы для генеративного ИИ</strong><p>Применяйте гардрейлы для извлечения данных, чтобы отклонять недоверенное, вредоносное, нерелевантное или неподтверждённое содержимое RAG.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Размещайте контролируемое вредоносное или вводящее в заблуждение содержимое в репрезентативных источниках поступления данных. Совершенствуйте механизмы допуска источников, отслеживание происхождения данных, валидацию содержимого, средства контроля индексирования и фильтрацию при извлечении данных.</p></a>
 </div>
 

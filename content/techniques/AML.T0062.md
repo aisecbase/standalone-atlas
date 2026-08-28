@@ -39,7 +39,7 @@ url: /techniques/AML.T0062/
 
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0004/"><span class="relation-id">AML.M0004</span><strong>Ограничение объёма и частоты запросов к ИИ-сервису</strong><p>Ограничивайте повторные промпты, используемые для поиска галлюцинаций, пригодных для эксплуатации.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Защитные ограничения (Guardrails) для генеративного ИИ</strong><p>Защитные ограничения могут помогать блокировать галлюцинированный контент в выходных данных модели.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Гардрейлы для генеративного ИИ</strong><p>Гардрейлы могут помогать блокировать галлюцинированный контент в выходных данных модели.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0021/"><span class="relation-id">AML.M0021</span><strong>Правила и инструкции для генеративного ИИ</strong><p>Инструкции могут указывать модели избегать генерации галлюцинированного контента.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0022/"><span class="relation-id">AML.M0022</span><strong>Выравнивание модели генеративного ИИ</strong><p>Выравнивание модели может помогать уводить модель от галлюцинированного контента.</p></a>
 </div>

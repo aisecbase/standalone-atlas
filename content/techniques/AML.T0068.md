@@ -40,7 +40,7 @@ url: /techniques/AML.T0068/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Защитные ограничения (Guardrails) для генеративного ИИ</strong><p>Apply input guardrails that decode, normalize, inspect, and block concealed malicious instructions.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Гардрейлы для генеративного ИИ</strong><p>Применяйте гардрейлы для входных данных, которые декодируют, нормализуют, анализируют и блокируют скрытые вредоносные инструкции.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Тестируйте закодированные, преобразованные, визуально скрытые, многоязычные и мультимодальные инструкции. Используйте случаи успешного обхода для совершенствования нормализации, декодирования, анализа содержимого и средств обнаружения.</p></a>
 </div>
 
