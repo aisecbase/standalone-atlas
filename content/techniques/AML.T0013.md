@@ -44,7 +44,7 @@ url: /techniques/AML.T0013/
 
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0002/"><span class="relation-id">AML.M0002</span><strong>Обфускация выходных данных предиктивного ИИ</strong><p>Рекомендуемые подходы:</p><ul><li>ограничить количество показываемых результатов</li><li>ограничить детализацию онтологии выходных классов</li><li>использовать методы рандомизированного сглаживания</li><li>снизить точность числовых выходных данных</li></ul></a>
-<a class="relation-item" href="/mitigations/AML.M0004/"><span class="relation-id">AML.M0004</span><strong>Ограничение количества запросов к ИИ-модели</strong><p>Limit inference queries to reduce an adversary&#39;s ability to discover the model&#39;s full output ontology.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0004/"><span class="relation-id">AML.M0004</span><strong>Ограничение объёма и частоты запросов к ИИ-сервису</strong><p>Ограничивайте запросы на инференс, чтобы снизить способность злоумышленника выявить полную онтологию выходных данных модели.</p></a>
 </div>
 
 

@@ -38,7 +38,7 @@ url: /techniques/AML.T0042/
 
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0002/"><span class="relation-id">AML.M0002</span><strong>Обфускация выходных данных предиктивного ИИ</strong><p>Обфускация выходных данных модели снижает способность злоумышленника проверять эффективность атаки.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0004/"><span class="relation-id">AML.M0004</span><strong>Ограничение количества запросов к ИИ-модели</strong><p>Limit repeated queries used to test and refine an attack against the target model.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0004/"><span class="relation-id">AML.M0004</span><strong>Ограничение объёма и частоты запросов к ИИ-сервису</strong><p>Ограничивайте повторные запросы, используемые для проверки и доработки атаки на целевую модель.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0005/"><span class="relation-id">AML.M0005</span><strong>Контроль доступа к ИИ-моделям и хранимым данным</strong><p>Контроль доступа к моделям в состоянии покоя может помешать злоумышленнику проверять эффективность атаки.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Используйте контроль доступа в продакшене, чтобы помешать злоумышленнику проверять эффективность атаки.</p></a>
 </div>

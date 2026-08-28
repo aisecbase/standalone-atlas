@@ -12,8 +12,8 @@ totals:
         total: 37
         name_translated: 37
         body_translated: 37
-        fully_translated: 28
-        needs_review: 9
+        fully_translated: 29
+        needs_review: 8
     resource:
         total: 6
         name_translated: 6
@@ -35,18 +35,6 @@ totals:
 missing: []
 partial: []
 review:
-    - id: AML.M0004
-      name: Limit AI Service Query Volume and Rate
-      type: mitigation
-      has_name: true
-      has_body: true
-      source_field: name
-      needs_review: true
-      review_fields:
-        - name
-        - description
-      source_sha256: cb28c1d2ff8b3c2448c899a7f879bdaf779952f929e7514af71c38e08409d0cc
-      translation_source_sha256: 17d4ba0b82b34e5207958f139d265e337dc23158f536387770f18da5858152ad
     - id: AML.M0006
       name: Predictive AI Ensembles
       type: mitigation

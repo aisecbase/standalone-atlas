@@ -39,6 +39,6 @@ url: /techniques/AML.T0046/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0004/"><span class="relation-id">AML.M0004</span><strong>Ограничение количества запросов к ИИ-модели</strong><p>Limit volume and rate of queries to protect the system from chaff data spam.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0004/"><span class="relation-id">AML.M0004</span><strong>Ограничение объёма и частоты запросов к ИИ-сервису</strong><p>Ограничивайте объём и частоту запросов, чтобы защитить систему от спама шумовыми данными.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Аутентификация для моделей в продакшене может помочь предотвратить анонимный спам шумовыми данными.</p></a>
 </div>
