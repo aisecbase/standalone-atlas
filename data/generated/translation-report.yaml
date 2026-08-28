@@ -12,8 +12,8 @@ totals:
         total: 37
         name_translated: 37
         body_translated: 37
-        fully_translated: 29
-        needs_review: 8
+        fully_translated: 30
+        needs_review: 7
     resource:
         total: 6
         name_translated: 6
@@ -35,18 +35,6 @@ totals:
 missing: []
 partial: []
 review:
-    - id: AML.M0006
-      name: Predictive AI Ensembles
-      type: mitigation
-      has_name: true
-      has_body: true
-      source_field: name
-      needs_review: true
-      review_fields:
-        - name
-        - description
-      source_sha256: 852813591d0619283f4a721a173355fc21e2fa4599917e9faab9a72536ba037e
-      translation_source_sha256: fe6f586c4baa74d70aca1201bc5ae1bfe6aa9f71cce56ea5fa425c8fae7e86d0
     - id: AML.M0009
       name: Predictive AI Multi-Sensor Fusion
       type: mitigation

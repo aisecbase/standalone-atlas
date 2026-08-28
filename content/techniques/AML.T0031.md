@@ -40,7 +40,7 @@ url: /techniques/AML.T0031/
 
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0003/"><span class="relation-id">AML.M0003</span><strong>Повышение устойчивости моделей предиктивного ИИ</strong><p>Модели с повышенной устойчивостью менее подвержены атакам на целостность.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0006/"><span class="relation-id">AML.M0006</span><strong>Использование ансамблевых методов</strong><p>Использование нескольких разных моделей повышает устойчивость к атакам.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0006/"><span class="relation-id">AML.M0006</span><strong>Ансамбли моделей предиктивного ИИ</strong><p>Использование нескольких разных моделей повышает устойчивость к атакам.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0010/"><span class="relation-id">AML.M0010</span><strong>Восстановление входных данных</strong><p>Предобработка входных данных модели может предотвратить прохождение вредоносных данных через пайплайн машинного обучения.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0015/"><span class="relation-id">AML.M0015</span><strong>Обнаружение состязательных входных данных</strong><p>Встраивайте обнаружение состязательных входных данных в пайплайн до того, как входные данные достигнут модели.</p></a>
 </div>
