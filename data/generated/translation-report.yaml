@@ -12,8 +12,8 @@ totals:
         total: 37
         name_translated: 37
         body_translated: 37
-        fully_translated: 26
-        needs_review: 11
+        fully_translated: 27
+        needs_review: 10
     resource:
         total: 6
         name_translated: 6
@@ -35,18 +35,6 @@ totals:
 missing: []
 partial: []
 review:
-    - id: AML.M0002
-      name: Predictive AI Output Obfuscation
-      type: mitigation
-      has_name: true
-      has_body: true
-      source_field: name
-      needs_review: true
-      review_fields:
-        - name
-        - description
-      source_sha256: 047fbf10a6768ebe55b923f5ccdb34813d1c774cedf739d403abc967227565fb
-      translation_source_sha256: 865e5e071e233ddba64dedc85a0a196ba6ec8c1b2174c2aa5a52616f9788aa00
     - id: AML.M0003
       name: Predictive AI Model Hardening
       type: mitigation

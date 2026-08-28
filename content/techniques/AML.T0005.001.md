@@ -57,7 +57,7 @@ url: /techniques/AML.T0005.001/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0002/"><span class="relation-id">AML.M0002</span><strong>Пассивная обфускация выходных данных ИИ</strong><p>Обфускация выходных данных модели ограничивает способность злоумышленника создать точную прокси-модель, запрашивая модель и наблюдая ее выходные данные.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0002/"><span class="relation-id">AML.M0002</span><strong>Обфускация выходных данных предиктивного ИИ</strong><p>Обфускация выходных данных модели ограничивает способность злоумышленника создать точную прокси-модель, запрашивая модель и наблюдая ее выходные данные.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0004/"><span class="relation-id">AML.M0004</span><strong>Ограничение количества запросов к ИИ-модели</strong><p>Limit inference queries to reduce the labeled outputs available for training a proxy model.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0024/"><span class="relation-id">AML.M0024</span><strong>Логирование телеметрии ИИ</strong><p>Логирование телеметрии может помочь выявить эксфильтрацию обучающего набора данных для прокси-модели.</p></a>
 </div>

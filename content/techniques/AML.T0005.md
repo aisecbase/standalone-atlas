@@ -51,7 +51,7 @@ url: /techniques/AML.T0005/
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0000/"><span class="relation-id">AML.M0000</span><strong>Ограничение публичного раскрытия информации</strong><p>Ограничение публикации технической информации о модели и обучающих данных может снизить способность злоумышленника создать точную прокси-модель.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0001/"><span class="relation-id">AML.M0001</span><strong>Ограничение публикации артефактов модели</strong><p>Ограничение публикации артефактов модели может снизить способность злоумышленника создать точную прокси-модель.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0002/"><span class="relation-id">AML.M0002</span><strong>Пассивная обфускация выходных данных ИИ</strong><p>Обфускация выходных данных модели может снизить способность злоумышленника создать точную прокси-модель.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0002/"><span class="relation-id">AML.M0002</span><strong>Обфускация выходных данных предиктивного ИИ</strong><p>Обфускация выходных данных модели может снизить способность злоумышленника создать точную прокси-модель.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0004/"><span class="relation-id">AML.M0004</span><strong>Ограничение количества запросов к ИИ-модели</strong><p>Limit inference queries to reduce the labeled outputs available for training a proxy model.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Контроль доступа к API моделей может снизить способность злоумышленника создать точную прокси-модель.</p></a>
 </div>
