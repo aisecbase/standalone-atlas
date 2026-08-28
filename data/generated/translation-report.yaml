@@ -12,8 +12,8 @@ totals:
         total: 37
         name_translated: 37
         body_translated: 37
-        fully_translated: 36
-        needs_review: 1
+        fully_translated: 37
+        needs_review: 0
     resource:
         total: 6
         name_translated: 6
@@ -35,17 +35,6 @@ totals:
 missing: []
 partial: []
 review:
-    - id: AML.M0031
-      name: Memory Hardening
-      type: mitigation
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 2da9160a60faff4ec9bcaa0e5e26d6129e5daf26a25089e0b815e12b61acad99
-      translation_source_sha256: 6111928630a98993aea2692357de0bd90d3ca68b40e87f9cbf04305f3d7591cf
     - id: AML.T0000
       name: Search Open Technical Databases
       type: technique
