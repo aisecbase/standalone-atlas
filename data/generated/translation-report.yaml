@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 142
-        needs_review: 36
+        fully_translated: 143
+        needs_review: 35
 missing: []
 partial: []
 review:
-    - id: AML.T0005.001
-      name: Train Proxy via Replication
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 7475c511f3ee5779857109674b9b02860ca91366d91bdad5cca5f65585c3ba40
-      translation_source_sha256: 91e07ad82f23d9b7514ff458a17778e760737a83c9c9164019cfaf1ad2e0f716
     - id: AML.T0008.002
       name: Domains
       type: technique
