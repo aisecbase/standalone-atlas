@@ -35,8 +35,8 @@ generated_by: atlasgen
 <td data-label="Названий переведено">37</td>
 <td data-label="Описаний переведено">37</td>
 <td data-label="Процедур переведено">-</td>
-<td data-label="Полностью переведено">31</td>
-<td data-label="Требует проверки">6</td>
+<td data-label="Полностью переведено">32</td>
+<td data-label="Требует проверки">5</td>
 </tr>
 <tr>
 <th scope="row" data-label="Тип объектов">Ресурсы</th>
@@ -68,9 +68,8 @@ generated_by: atlasgen
 </tbody>
 </table>
 
-## Требует проверки (49)
+## Требует проверки (48)
 
-- [`AML.M0010`](/mitigations/AML.M0010/) (Меры защиты): Predictive AI Input Restoration; название: да; описание/summary: да; требует проверки: название, описание
 - [`AML.M0015`](/mitigations/AML.M0015/) (Меры защиты): Predictive AI Adversarial Input Detection; название: да; описание/summary: да; требует проверки: название, описание
 - [`AML.M0016`](/mitigations/AML.M0016/) (Меры защиты): Vulnerability Scanning; название: да; описание/summary: да; требует проверки: описание
 - [`AML.M0020`](/mitigations/AML.M0020/) (Меры защиты): Generative AI Guardrails; название: да; описание/summary: да; требует проверки: описание

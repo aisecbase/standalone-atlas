@@ -12,8 +12,8 @@ totals:
         total: 37
         name_translated: 37
         body_translated: 37
-        fully_translated: 31
-        needs_review: 6
+        fully_translated: 32
+        needs_review: 5
     resource:
         total: 6
         name_translated: 6
@@ -35,18 +35,6 @@ totals:
 missing: []
 partial: []
 review:
-    - id: AML.M0010
-      name: Predictive AI Input Restoration
-      type: mitigation
-      has_name: true
-      has_body: true
-      source_field: name
-      needs_review: true
-      review_fields:
-        - name
-        - description
-      source_sha256: b686657527a26baa94ff9de9fd163b351e038a505ed6f0b315fd054511a1b39d
-      translation_source_sha256: 8fdf2094e96638a46b1e00c1a28b80c51a8f8b535e3fca8e77f63f4cd84c3262
     - id: AML.M0015
       name: Predictive AI Adversarial Input Detection
       type: mitigation
