@@ -53,8 +53,8 @@ generated_by: atlasgen
 <td data-label="Названий переведено">16</td>
 <td data-label="Описаний переведено">16</td>
 <td data-label="Процедур переведено">-</td>
-<td data-label="Полностью переведено">15</td>
-<td data-label="Требует проверки">1</td>
+<td data-label="Полностью переведено">16</td>
+<td data-label="Требует проверки">0</td>
 </tr>
 <tr>
 <th scope="row" data-label="Тип объектов">Техники</th>
@@ -68,7 +68,7 @@ generated_by: atlasgen
 </tbody>
 </table>
 
-## Требует проверки (42)
+## Требует проверки (41)
 
 - [`AML.T0000`](/techniques/AML.T0000/) (Техники): Search Open Technical Databases; название: да; описание/summary: да; требует проверки: описание
 - [`AML.T0000.001`](/techniques/AML.T0000.001/) (Техники): Pre-Print Repositories; название: да; описание/summary: да; требует проверки: описание
@@ -111,7 +111,6 @@ generated_by: atlasgen
 - [`AML.T0102`](/techniques/AML.T0102/) (Техники): Generate Malicious Commands; название: да; описание/summary: да; требует проверки: описание
 - [`AML.T0109`](/techniques/AML.T0109/) (Техники): AI Supply Chain Rug Pull; название: да; описание/summary: да; требует проверки: описание
 - [`AML.T0110`](/techniques/AML.T0110/) (Техники): AI Agent Tool Poisoning; название: да; описание/summary: да; требует проверки: описание
-- [`AML.TA0012`](/tactics/AML.TA0012/) (Тактики): Privilege Escalation; название: да; описание/summary: да; требует проверки: описание
 
 ## Частичный перевод (0)
 
