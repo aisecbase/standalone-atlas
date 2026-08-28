@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 172
-        needs_review: 6
+        fully_translated: 173
+        needs_review: 5
 missing: []
 partial: []
 review:
-    - id: AML.T0080.000
-      name: Memory
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 15d5afb4638068411756712dc437f4689ed6448bd744e50648916c5dc3879f32
-      translation_source_sha256: 29fd6ae687fe65ff4920bc9aa83fccd89279ea84ebccf7782c22b926a9d4748a
     - id: AML.T0086
       name: Exfiltration via AI Agent Tool Invocation
       type: technique
