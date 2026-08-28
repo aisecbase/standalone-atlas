@@ -61,5 +61,5 @@ url: /techniques/AML.T0115.000/
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0025/"><span class="relation-id">AML.CS0025</span><strong>Отравление крупномасштабных веб-датасетов: атака split-view</strong><span class="relation-meta">Актор: Researchers from Google Deepmind, ETH Zurich, NVIDIA, Robust Intelligence, and Google / Тактика: AML.TA0003 Подготовка ресурсов</span><p>An adversary could then upload the poisoned data to the domains they control. In this particular exercise, the researchers track requests to the URLs they control to track downloads to demonstrate there are active users of the dataset.</p></a>
+<a class="relation-item" href="/studies/AML.CS0025/"><span class="relation-id">AML.CS0025</span><strong>Отравление крупномасштабных веб-датасетов: атака split-view</strong><span class="relation-meta">Актор: Researchers from Google Deepmind, ETH Zurich, NVIDIA, Robust Intelligence, and Google / Тактика: AML.TA0003 Подготовка ресурсов</span><p>Затем злоумышленник может разместить отравленные данные на подконтрольных ему доменах. В рамках этого испытания исследователи отслеживали запросы к подконтрольным им URL и тем самым фиксировали скачивания, чтобы продемонстрировать наличие активных пользователей датасета.</p></a>
 </div>

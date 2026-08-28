@@ -22,14 +22,17 @@ procedure:
       tactic_name: Подготовка ресурсов
       technique: AML.T0008.002
       technique_name: Домены
-    - description: An adversary could create poisoned training data to replace expired portions of the dataset.
-      description_line: An adversary could create poisoned training data to replace expired portions of the dataset.
+    - description: Злоумышленник может подготовить отравленные обучающие данные, чтобы заменить фрагменты датасета, ставшие недоступными из-за истечения регистрации соответствующих доменов.
+      description_line: Злоумышленник может подготовить отравленные обучающие данные, чтобы заменить фрагменты датасета, ставшие недоступными из-за истечения регистрации соответствующих доменов.
       tactic: AML.TA0006
       tactic_name: Закрепление
       technique: AML.T0020
       technique_name: Отравление обучающих данных
-    - description: An adversary could then upload the poisoned data to the domains they control.  In this particular exercise, the researchers track requests to the URLs they control to track downloads to demonstrate there are active users of the dataset.
-      description_line: An adversary could then upload the poisoned data to the domains they control. In this particular exercise, the researchers track requests to the URLs they control to track downloads to demonstrate there are active users of the dataset.
+    - description: |-
+        Затем злоумышленник может разместить отравленные данные на подконтрольных ему доменах.
+
+        В рамках этого испытания исследователи отслеживали запросы к подконтрольным им URL и тем самым фиксировали скачивания, чтобы продемонстрировать наличие активных пользователей датасета.
+      description_line: Затем злоумышленник может разместить отравленные данные на подконтрольных ему доменах. В рамках этого испытания исследователи отслеживали запросы к подконтрольным им URL и тем самым фиксировали скачивания, чтобы продемонстрировать наличие активных пользователей датасета.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0115.000

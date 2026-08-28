@@ -5,8 +5,8 @@ totals:
         name_translated: 68
         body_translated: 68
         procedures_total: 571
-        procedures_translated: 563
-        fully_translated: 64
+        procedures_translated: 565
+        fully_translated: 65
         needs_review: 0
     mitigation:
         total: 37
@@ -34,14 +34,6 @@ totals:
         needs_review: 41
 missing: []
 partial:
-    - id: AML.CS0025
-      name: 'Web-Scale Data Poisoning: Split-View Attack'
-      type: case-study
-      has_name: true
-      has_body: true
-      source_field: summary
-      total_procedures: 6
-      translated_procedures: 4
     - id: AML.CS0031
       name: Malicious Models on Hugging Face
       type: case-study
