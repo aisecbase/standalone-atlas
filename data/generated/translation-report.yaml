@@ -12,8 +12,8 @@ totals:
         total: 37
         name_translated: 37
         body_translated: 37
-        fully_translated: 30
-        needs_review: 7
+        fully_translated: 31
+        needs_review: 6
     resource:
         total: 6
         name_translated: 6
@@ -35,18 +35,6 @@ totals:
 missing: []
 partial: []
 review:
-    - id: AML.M0009
-      name: Predictive AI Multi-Sensor Fusion
-      type: mitigation
-      has_name: true
-      has_body: true
-      source_field: name
-      needs_review: true
-      review_fields:
-        - name
-        - description
-      source_sha256: eba9564272ecde1710edacce42998ddef19e73da4151b3388515e17c5c508c4b
-      translation_source_sha256: 91f990d5c158a0841376f153c06d43c04e1aa7d679056497dd60035688a36597
     - id: AML.M0010
       name: Predictive AI Input Restoration
       type: mitigation

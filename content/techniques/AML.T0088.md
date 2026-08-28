@@ -40,7 +40,7 @@ url: /techniques/AML.T0088/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0009/"><span class="relation-id">AML.M0009</span><strong>Использование мультимодальных сенсоров</strong><p>Использование разных сенсоров, например инфракрасных камер глубины, может помогать обнаруживать дипфейки.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0009/"><span class="relation-id">AML.M0009</span><strong>Слияние данных нескольких сенсоров для предиктивного ИИ</strong><p>Использование разных сенсоров, например инфракрасных камер глубины, может помогать обнаруживать дипфейки.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0034/"><span class="relation-id">AML.M0034</span><strong>Обнаружение дипфейков</strong><p>Обнаружение дипфейков можно использовать для выявления и блокировки сгенерированного контента.</p></a>
 </div>
 
