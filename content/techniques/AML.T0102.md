@@ -38,7 +38,7 @@ url: /techniques/AML.T0102/
 
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Гардрейлы для генеративного ИИ</strong><p>Блокируйте промпты и выходные данные, которые запрашивают или содержат вредоносные команды.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0022/"><span class="relation-id">AML.M0022</span><strong>Выравнивание модели генеративного ИИ</strong><p>Align generative AI models with safety objectives to reduce the likelihood that they will generate malicious commands or harmful instructions.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0022/"><span class="relation-id">AML.M0022</span><strong>Выравнивание модели генеративного ИИ</strong><p>Выравнивайте модели генеративного ИИ в соответствии с целями безопасности, чтобы снизить вероятность генерации ими вредоносных команд или инструкций, способных причинить вред.</p></a>
 </div>
 
 

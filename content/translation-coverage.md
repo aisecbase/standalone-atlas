@@ -35,8 +35,8 @@ generated_by: atlasgen
 <td data-label="Названий переведено">37</td>
 <td data-label="Описаний переведено">37</td>
 <td data-label="Процедур переведено">-</td>
-<td data-label="Полностью переведено">35</td>
-<td data-label="Требует проверки">2</td>
+<td data-label="Полностью переведено">36</td>
+<td data-label="Требует проверки">1</td>
 </tr>
 <tr>
 <th scope="row" data-label="Тип объектов">Ресурсы</th>
@@ -68,9 +68,8 @@ generated_by: atlasgen
 </tbody>
 </table>
 
-## Требует проверки (45)
+## Требует проверки (44)
 
-- [`AML.M0022`](/mitigations/AML.M0022/) (Меры защиты): Generative AI Model Alignment; название: да; описание/summary: да; требует проверки: описание
 - [`AML.M0031`](/mitigations/AML.M0031/) (Меры защиты): Memory Hardening; название: да; описание/summary: да; требует проверки: описание
 - [`AML.T0000`](/techniques/AML.T0000/) (Техники): Search Open Technical Databases; название: да; описание/summary: да; требует проверки: описание
 - [`AML.T0000.001`](/techniques/AML.T0000.001/) (Техники): Pre-Print Repositories; название: да; описание/summary: да; требует проверки: описание

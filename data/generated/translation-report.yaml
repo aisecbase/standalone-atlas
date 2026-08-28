@@ -12,8 +12,8 @@ totals:
         total: 37
         name_translated: 37
         body_translated: 37
-        fully_translated: 35
-        needs_review: 2
+        fully_translated: 36
+        needs_review: 1
     resource:
         total: 6
         name_translated: 6
@@ -35,17 +35,6 @@ totals:
 missing: []
 partial: []
 review:
-    - id: AML.M0022
-      name: Generative AI Model Alignment
-      type: mitigation
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 3fea04dcb7b5e4a443e45f22fc48ed248fa789771d69adece7ef807269bcf621
-      translation_source_sha256: 6311159f2f915b80960f7e9b5096be5a28f8a0e56cef1ef33210d0a9105a0be3
     - id: AML.M0031
       name: Memory Hardening
       type: mitigation
