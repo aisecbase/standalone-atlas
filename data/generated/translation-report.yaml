@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 169
-        needs_review: 9
+        fully_translated: 170
+        needs_review: 8
 missing: []
 partial: []
 review:
-    - id: AML.T0074
-      name: Masquerading
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: b4826439c58165638c91768ff904db3104116ca32ab32d5e85b4fa401125097d
-      translation_source_sha256: d4cca2c60efc1d0f10d5a2848262bb1d28136bbebf6dbcf6fe8f210eb913bd8a
     - id: AML.T0079
       name: Stage Capabilities
       type: technique
