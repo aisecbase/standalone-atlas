@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 166
-        needs_review: 12
+        fully_translated: 167
+        needs_review: 11
 missing: []
 partial: []
 review:
-    - id: AML.T0060
-      name: Publish Hallucinated Entities
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 2e9edf70efb14d7a9bdb43ea0fe4a648ce903d20098aff07b335c951462d261b
-      translation_source_sha256: c569302f9e921b20e805de1aca957aabb8cab9e813d3d298afc155b1f5bca42b
     - id: AML.T0067.000
       name: Citations
       type: technique
