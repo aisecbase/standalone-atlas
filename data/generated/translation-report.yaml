@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 160
-        needs_review: 18
+        fully_translated: 161
+        needs_review: 17
 missing: []
 partial: []
 review:
-    - id: AML.T0044
-      name: Full AI Model Access
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: f1de81f802db1cdc97f7a266d126983247770fb8922eb123dd9fbb13b85721a0
-      translation_source_sha256: 8533510ee397775e693159a9b2c888ebe4e88934dfbf483364d513b1b5e16cc4
     - id: AML.T0051
       name: LLM Prompt Injection
       type: technique
