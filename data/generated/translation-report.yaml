@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 167
-        needs_review: 11
+        fully_translated: 168
+        needs_review: 10
 missing: []
 partial: []
 review:
-    - id: AML.T0067.000
-      name: Citations
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 1eed8ea575beb16a57e930b27caca9b4014159dd9570ddbc74eea8f13d87bb12
-      translation_source_sha256: d3d4f0ef9e6657febb8cd4514d9f6c4b50f04af573bde83c0ba723e4467c8512
     - id: AML.T0071
       name: False RAG Entry Injection
       type: technique
