@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 144
-        needs_review: 34
+        fully_translated: 145
+        needs_review: 33
 missing: []
 partial: []
 review:
-    - id: AML.T0008.004
-      name: Serverless
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: d9a0a83c24e7443cd7637fe605e0bc1c3a2a0930416919f6eded95e30b70a8c9
-      translation_source_sha256: 449890f1df9cdfb29af3f31af464823fd00e5b8c16aaa880cd8d817b8b141b44
     - id: AML.T0008.005
       name: AI Service Proxies
       type: technique
