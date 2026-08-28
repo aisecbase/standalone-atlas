@@ -3,7 +3,7 @@ actor: Invariant Labs
 atlas_id: AML.CS0054
 atlas_type: case-study
 case_study_type: exercise
-description: Исследователи Invariant Labs продемонстрировали, что ИИ-агенты, настроенные для работы с удаленными инструментами Model Context Protocol (MCP), могут быть уязвимы к атакам отравления модели через отравленные...
+description: Исследователи Invariant Labs продемонстрировали, что ИИ-агенты, настроенные для работы с удалёнными инструментами Model Context Protocol (MCP), могут быть уязвимы к атакам отравления модели через отравленные...
 generated: true
 generated_by: atlasgen
 incident_date: "2025-04-01"
@@ -16,32 +16,32 @@ procedure:
       tactic_name: Подготовка ресурсов
       technique: AML.T0065
       technique_name: Создание промптов для LLM
-    - description: The researchers hosted a poisoned MCP server that contains the malicious instructions hidden in the docstring of one of the provided tools.
-      description_line: The researchers hosted a poisoned MCP server that contains the malicious instructions hidden in the docstring of one of the provided tools.
+    - description: Исследователи разместили отравленный MCP-сервер, содержащий вредоносные инструкции, скрытые в строке документации (docstring) одного из предоставляемых инструментов.
+      description_line: Исследователи разместили отравленный MCP-сервер, содержащий вредоносные инструкции, скрытые в строке документации (docstring) одного из предоставляемых инструментов.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0115.002
       technique_name: Инструменты ИИ-агента
-    - description: Исследователи разместили отравленный MCP-инструмент, где вредоносные инструкции были скрыты в docstring-описании этого инструмента.
-      description_line: Исследователи разместили отравленный MCP-инструмент, где вредоносные инструкции были скрыты в docstring-описании этого инструмента.
+    - description: Жертва настроила своего ИИ-агента на подключение к удалённому MCP-серверу под контролем злоумышленника, в результате чего отравленное определение инструмента попало в набор инструментов, доступных агенту.
+      description_line: Жертва настроила своего ИИ-агента на подключение к удалённому MCP-серверу под контролем злоумышленника, в результате чего отравленное определение инструмента попало в набор инструментов, доступных агенту.
       tactic: AML.TA0004
       tactic_name: Первичный доступ
       technique: AML.T0010.005
       technique_name: Инструмент ИИ-агента
-    - description: The MCP tool's model-visible docstring contained malicious instructions directing the agent to read credential files, conceal the additional actions from the user, and place the credential contents in an otherwise unnecessary tool parameter.
-      description_line: The MCP tool's model-visible docstring contained malicious instructions directing the agent to read credential files, conceal the additional actions from the user, and place the credential contents in an otherwise unnecessary tool parameter.
+    - description: Доступная модели строка документации (docstring) MCP-инструмента содержала вредоносные инструкции, предписывавшие агенту прочитать файлы с учётными данными, скрыть от пользователя дополнительные действия и поместить содержимое этих файлов в параметр инструмента, который в противном случае не требовался бы.
+      description_line: Доступная модели строка документации (docstring) MCP-инструмента содержала вредоносные инструкции, предписывавшие агенту прочитать файлы с учётными данными, скрыть от пользователя дополнительные действия и поместить содержимое этих файлов в параметр инструмента, который в противном случае не требовался бы.
       tactic: AML.TA0006
       tactic_name: Закрепление
       technique: AML.T0110.000
       technique_name: Определение и инструкции
-    - description: When the user made a request that represented the poisoned tool's functionality, the agent invoked the poisoned MCP tool and acted on the malicious instructions contained in its definition.
-      description_line: When the user made a request that represented the poisoned tool's functionality, the agent invoked the poisoned MCP tool and acted on the malicious instructions contained in its definition.
+    - description: Когда пользователь отправил запрос, соответствовавший заявленной функциональности отравленного инструмента, агент вызвал отравленный MCP-инструмент и последовал вредоносным инструкциям из его определения.
+      description_line: Когда пользователь отправил запрос, соответствовавший заявленной функциональности отравленного инструмента, агент вызвал отравленный MCP-инструмент и последовал вредоносным инструкциям из его определения.
       tactic: AML.TA0005
       tactic_name: Выполнение
       technique: AML.T0011.002
       technique_name: Отравленный инструмент ИИ-агента
-    - description: The agent ingested and followed malicious instructions supplied through the remote tool's model-visible definition rather than directly through an adversary-authored user message.
-      description_line: The agent ingested and followed malicious instructions supplied through the remote tool's model-visible definition rather than directly through an adversary-authored user message.
+    - description: Агент обработал вредоносные инструкции и последовал им; они поступили через доступное модели определение удалённого инструмента, а не непосредственно из составленного злоумышленником пользовательского сообщения.
+      description_line: Агент обработал вредоносные инструкции и последовал им; они поступили через доступное модели определение удалённого инструмента, а не непосредственно из составленного злоумышленником пользовательского сообщения.
       tactic: AML.TA0005
       tactic_name: Выполнение
       technique: AML.T0051.001
@@ -83,10 +83,10 @@ references:
 reporter: ""
 source_name: Data Exfiltration via Remote Poisoned MCP Tool
 target: Model Context Protocol
-title: Эксфильтрация данных через удаленный отравленный MCP-инструмент
+title: Эксфильтрация данных через отравленный удалённый MCP-инструмент
 url: /studies/AML.CS0054/
 ---
 
-Исследователи Invariant Labs продемонстрировали, что ИИ-агенты, настроенные для работы с удаленными инструментами Model Context Protocol (MCP), могут быть уязвимы к атакам отравления модели через отравленные инструменты. Они показали, что MCP-инструмент может содержать вредоносные промпты в своем docstring-описании, которое попадает в контекст ИИ-агента и изменяет его поведение.
+Исследователи Invariant Labs продемонстрировали, что ИИ-агенты, настроенные для работы с удалёнными инструментами Model Context Protocol (MCP), могут быть уязвимы к атакам отравления модели через отравленные инструменты. Они показали, что MCP-инструмент может содержать вредоносные промпты в строке документации (docstring) с его описанием. Эта строка попадает в контекст ИИ-агента и изменяет его поведение.
 
-Исследователи продемонстрировали эту атаку с помощью демонстрационного MCP-инструмента, который инструктирует агента выполнить дополнительные действия перед использованием инструмента. Агент получает инструкцию прочитать файлы с учетными данными на машине жертвы и сохранить их содержимое в одном из входных параметров MCP-инструмента. Когда инструмент запускается, учетные данные жертвы эксфильтровываются на отравленный MCP-сервер.
+Исследователи продемонстрировали эту атаку с помощью демонстрационного MCP-инструмента, который предписывает агенту выполнять дополнительные действия перед использованием инструмента. Агенту предписывается прочитать на машине жертвы файлы с учётными данными и сохранить их содержимое в одной из входных переменных инструмента. При запуске инструмента учётные данные жертвы эксфильтрируются на отравленный MCP-сервер.

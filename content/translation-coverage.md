@@ -25,9 +25,9 @@ generated_by: atlasgen
 <td data-label="Всего">68</td>
 <td data-label="Названий переведено">68</td>
 <td data-label="Описаний переведено">68</td>
-<td data-label="Процедур переведено">559/571</td>
-<td data-label="Полностью переведено">62</td>
-<td data-label="Требует проверки">2</td>
+<td data-label="Процедур переведено">563/571</td>
+<td data-label="Полностью переведено">63</td>
+<td data-label="Требует проверки">1</td>
 </tr>
 <tr>
 <th scope="row" data-label="Тип объектов">Меры защиты</th>
@@ -68,9 +68,8 @@ generated_by: atlasgen
 </tbody>
 </table>
 
-## Требует проверки (56)
+## Требует проверки (55)
 
-- [`AML.CS0054`](/studies/AML.CS0054/) (Кейсы): Data Exfiltration via Remote Poisoned MCP Tool; название: да; описание/summary: да; процедуры: 7/11; процедуры требуют проверки: 1; требует проверки: процедуры
 - [`AML.CS0059`](/studies/AML.CS0059/) (Кейсы): EchoLeak: Zero-Click Prompt Injection Targeting M365 Copilot for Data Exfiltration; название: да; описание/summary: да; процедуры: 12/12; процедуры требуют проверки: 1; требует проверки: процедуры
 - [`AML.M0002`](/mitigations/AML.M0002/) (Меры защиты): Predictive AI Output Obfuscation; название: да; описание/summary: да; требует проверки: название, описание
 - [`AML.M0003`](/mitigations/AML.M0003/) (Меры защиты): Predictive AI Model Hardening; название: да; описание/summary: да; требует проверки: название, описание
@@ -127,13 +126,12 @@ generated_by: atlasgen
 - [`AML.TA0009`](/tactics/AML.TA0009/) (Тактики): Collection; название: да; описание/summary: да; требует проверки: описание
 - [`AML.TA0012`](/tactics/AML.TA0012/) (Тактики): Privilege Escalation; название: да; описание/summary: да; требует проверки: описание
 
-## Частичный перевод (5)
+## Частичный перевод (4)
 
 - [`AML.CS0025`](/studies/AML.CS0025/) (Кейсы): Web-Scale Data Poisoning: Split-View Attack; название: да; описание/summary: да; процедуры: 4/6
 - [`AML.CS0031`](/studies/AML.CS0031/) (Кейсы): Malicious Models on Hugging Face; название: да; описание/summary: да; процедуры: 5/6
 - [`AML.CS0049`](/studies/AML.CS0049/) (Кейсы): Supply Chain Compromise via Poisoned ClawdBot Skill; название: да; описание/summary: да; процедуры: 9/12
 - [`AML.CS0053`](/studies/AML.CS0053/) (Кейсы): Poisoned Postmark MCP Server Email Exfiltration; название: да; описание/summary: да; процедуры: 7/9
-- [`AML.CS0054`](/studies/AML.CS0054/) (Кейсы): Data Exfiltration via Remote Poisoned MCP Tool; название: да; описание/summary: да; процедуры: 7/11; процедуры требуют проверки: 1; требует проверки: процедуры
 
 ## Перевод отсутствует (0)
 
