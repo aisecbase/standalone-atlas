@@ -62,15 +62,14 @@ generated_by: atlasgen
 <td data-label="Названий переведено">178</td>
 <td data-label="Описаний переведено">178</td>
 <td data-label="Процедур переведено">-</td>
-<td data-label="Полностью переведено">143</td>
-<td data-label="Требует проверки">35</td>
+<td data-label="Полностью переведено">144</td>
+<td data-label="Требует проверки">34</td>
 </tr>
 </tbody>
 </table>
 
-## Требует проверки (35)
+## Требует проверки (34)
 
-- [`AML.T0008.002`](/techniques/AML.T0008.002/) (Техники): Domains; название: да; описание/summary: да; требует проверки: описание
 - [`AML.T0008.004`](/techniques/AML.T0008.004/) (Техники): Serverless; название: да; описание/summary: да; требует проверки: описание
 - [`AML.T0008.005`](/techniques/AML.T0008.005/) (Техники): AI Service Proxies; название: да; описание/summary: да; требует проверки: описание
 - [`AML.T0010`](/techniques/AML.T0010/) (Техники): AI Supply Chain Compromise; название: да; описание/summary: да; требует проверки: описание

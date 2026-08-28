@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 143
-        needs_review: 35
+        fully_translated: 144
+        needs_review: 34
 missing: []
 partial: []
 review:
-    - id: AML.T0008.002
-      name: Domains
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 95db1f5d399ebf9678e2f7f1f2e6cf7da698c304b5b364d9c6602c2de0db16fe
-      translation_source_sha256: d432ee5e1f67c95c9071241394f2881b2689340a38d5499ac2b0d811ac7a92c3
     - id: AML.T0008.004
       name: Serverless
       type: technique
