@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 156
-        needs_review: 22
+        fully_translated: 157
+        needs_review: 21
 missing: []
 partial: []
 review:
-    - id: AML.T0016.002
-      name: Generative AI
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: ad1b4f4799e4418946c0cbd99fa730f77e2de65c95a6d700edf694a3758d9bf9
-      translation_source_sha256: ecf19d09f1174c729451491d9de8334395c97aafdd5fb48e7e15eb99194b000c
     - id: AML.T0018
       name: Manipulate AI Model
       type: technique
