@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 141
-        needs_review: 37
+        fully_translated: 142
+        needs_review: 36
 missing: []
 partial: []
 review:
-    - id: AML.T0002.002
-      name: AI Agent Configuration
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 8e7b5db33ff61a561d5965f6db77fee9229555a31964db3f37701ec4a2e6e449
-      translation_source_sha256: 7c27e984ed4b43e99254d6e5c2b265cf5e0fc84c15144c434346e11cba698733
     - id: AML.T0005.001
       name: Train Proxy via Replication
       type: technique
