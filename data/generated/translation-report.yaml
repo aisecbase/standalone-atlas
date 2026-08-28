@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 163
-        needs_review: 15
+        fully_translated: 164
+        needs_review: 14
 missing: []
 partial: []
 review:
-    - id: AML.T0053
-      name: AI Agent Tool Invocation
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 4f3e35dfb25dbf3da1b195550399dc4370abfc4801e7bb6de144f13d29374b16
-      translation_source_sha256: 5c66326fc4d2b26018e681629369fb6d380a65d54c0b703a653e3c3381ea2989
     - id: AML.T0054
       name: LLM Jailbreak
       type: technique
