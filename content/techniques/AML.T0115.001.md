@@ -55,7 +55,7 @@ url: /techniques/AML.T0115.001/
 
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0008/"><span class="relation-id">AML.M0008</span><strong>Валидация ИИ-модели</strong><p>Model repositories evaluate submissions for backdoors, data leakage, adversarial influence, and unexpected behavior before listing.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0016/"><span class="relation-id">AML.M0016</span><strong>Сканирование уязвимостей</strong><p>Model registries scan uploaded models for unsafe serialization, embedded code, malware, and known vulnerabilities before listing.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0016/"><span class="relation-id">AML.M0016</span><strong>Сканирование уязвимостей</strong><p>Реестры моделей сканируют загружаемые модели на признаки небезопасной сериализации, встроенный код, вредоносное ПО и известные уязвимости перед добавлением в каталог.</p></a>
 </div>
 
 

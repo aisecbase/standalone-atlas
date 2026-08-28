@@ -12,8 +12,8 @@ totals:
         total: 37
         name_translated: 37
         body_translated: 37
-        fully_translated: 33
-        needs_review: 4
+        fully_translated: 34
+        needs_review: 3
     resource:
         total: 6
         name_translated: 6
@@ -35,17 +35,6 @@ totals:
 missing: []
 partial: []
 review:
-    - id: AML.M0016
-      name: Vulnerability Scanning
-      type: mitigation
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 74702997aea50f5aba27c3ff9c9a57082d1db70f04167ba87ee7c5a13a79c7db
-      translation_source_sha256: 6a578fb01f82bb388c404645bb6f0b1b1f9eb17e837e8d04094ce12d4f7c1ab9
     - id: AML.M0020
       name: Generative AI Guardrails
       type: mitigation

@@ -35,7 +35,7 @@ url: /techniques/AML.T0106/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0016/"><span class="relation-id">AML.M0016</span><strong>Сканирование уязвимостей</strong><p>Vulnerability scanning identifies and remediates software flaws before they can be exploited to obtain credentials.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0016/"><span class="relation-id">AML.M0016</span><strong>Сканирование уязвимостей</strong><p>Сканирование уязвимостей выявляет и устраняет дефекты ПО до того, как злоумышленники смогут эксплуатировать их для получения учётных данных.</p></a>
 </div>
 
 

@@ -35,7 +35,7 @@ url: /techniques/AML.T0107/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0016/"><span class="relation-id">AML.M0016</span><strong>Сканирование уязвимостей</strong><p>Vulnerability scanning reduces opportunities for adversaries to exploit weaknesses that bypass security controls.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0016/"><span class="relation-id">AML.M0016</span><strong>Сканирование уязвимостей</strong><p>Сканирование уязвимостей сокращает возможности злоумышленников эксплуатировать недостатки, позволяющие обходить средства защиты.</p></a>
 </div>
 
 

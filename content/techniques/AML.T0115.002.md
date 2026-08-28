@@ -52,7 +52,7 @@ url: /techniques/AML.T0115.002/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0016/"><span class="relation-id">AML.M0016</span><strong>Сканирование уязвимостей</strong><p>Tool registries scan uploaded tool packages and dependencies for malicious code and vulnerabilities before listing.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0016/"><span class="relation-id">AML.M0016</span><strong>Сканирование уязвимостей</strong><p>Реестры инструментов сканируют загружаемые пакеты инструментов и их зависимости на наличие вредоносного кода и уязвимостей перед добавлением в каталог.</p></a>
 </div>
 
 
