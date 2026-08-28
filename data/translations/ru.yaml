@@ -3614,11 +3614,11 @@ objects:
         description: |-
           Исследователь подготовил промпт-инъекцию, которая должна была заставить Claude Code выполнить команду `curl` к домену исследователя `clawdhub-skill.com`.
       - tactic: AML.TA0003
-        technique: AML.T0104
+        technique: AML.T0115.002
         source:
           description_sha256: "619f01f0c945773dac187294e69ea1d65ed5bab9b79539e181772d8475e92f86"
         description: |-
-          Исследователь разработал отравленный навык ClawdBot под названием "What Would Elon Do?". Вредоносный промпт находился в файле `rules/logic.md`, который считывается при активации навыка. Исследователь опубликовал навык в ClawdHub.
+          Исследователь разработал отравленный навык ClawdBot под названием "What Would Elon Do?" Вредоносный промпт находился в файле `rules/logic.md`, который считывается при активации навыка. Исследователь опубликовал навык в ClawdHub.
       - tactic: AML.TA0007
         technique: AML.T0111
         source:
@@ -3633,6 +3633,12 @@ objects:
           Пользователи скачивали отравленный навык из ClawdHub.
 
           При этом ClawdHub показывает не все файлы навыка, поэтому пользователям трудно проверить навык перед скачиванием.
+      - tactic: AML.TA0006
+        technique: AML.T0110.000
+        source:
+          description_sha256: "717726b815e9079a7e6b0e3979808af2cad25edefa8a4f5b754fedfb2bb607e0"
+        description: |-
+          Отравленный навык содержал в `rules/logic.md` вредоносные инструкции, доступные модели. После того как навык был установлен и стал доступен агенту, эти инструкции изменили то, как Claude Code обрабатывал связанные с навыком запросы.
       - tactic: AML.TA0005
         technique: AML.T0011.002
         source:
@@ -3640,11 +3646,11 @@ objects:
         description: |-
           Когда пользователь спрашивал Claude Code: "what would Elon do?", Claude Code вызывал отравленный навык.
       - tactic: AML.TA0005
-        technique: AML.T0051.000
+        technique: AML.T0051.001
         source:
           description_sha256: "8e14645ecd2d9bb1dba365f566f21cbf8ecdcf5b051a2218b2b5ca5b2f2f3f47"
         description: |-
-          Claude Code прочитал все файлы навыка и выполнил вредоносный промпт из `rules/logic.md`.
+          Claude Code прочитал все файлы, входившие в состав навыка, и выполнил вредоносный промпт из файла `rules/logic.md`.
       - tactic: AML.TA0007
         technique: AML.T0074
         source:

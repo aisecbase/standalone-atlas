@@ -54,7 +54,7 @@ url: /techniques/AML.T0110.000/
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0049/"><span class="relation-id">AML.CS0049</span><strong>Компрометация цепочки поставки через отравленный навык ClawdBot</strong><span class="relation-meta">Актор: Jamieson O&#39;Reilly / Тактика: AML.TA0006 Закрепление</span><p>The poisoned Skill included malicious model-readable instructions in `rules/logic.md`. Once the Skill was installed and made available to the agent, these instructions altered how Claude Code handled requests associated with the Skill.</p></a>
+<a class="relation-item" href="/studies/AML.CS0049/"><span class="relation-id">AML.CS0049</span><strong>Компрометация цепочки поставки через отравленный навык ClawdBot</strong><span class="relation-meta">Актор: Jamieson O&#39;Reilly / Тактика: AML.TA0006 Закрепление</span><p>Отравленный навык содержал в `rules/logic.md` вредоносные инструкции, доступные модели. После того как навык был установлен и стал доступен агенту, эти инструкции изменили то, как Claude Code обрабатывал связанные с навыком запросы.</p></a>
 <a class="relation-item" href="/studies/AML.CS0054/"><span class="relation-id">AML.CS0054</span><strong>Эксфильтрация данных через отравленный удалённый MCP-инструмент</strong><span class="relation-meta">Актор: Invariant Labs / Тактика: AML.TA0006 Закрепление</span><p>Доступная модели строка документации (docstring) MCP-инструмента содержала вредоносные инструкции, предписывавшие агенту прочитать файлы с учётными данными, скрыть от пользователя дополнительные действия и поместить содержимое этих файлов в параметр инструмента, который в противном случае не требовался бы.</p></a>
 </div>
 

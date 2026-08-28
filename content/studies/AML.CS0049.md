@@ -28,8 +28,8 @@ procedure:
       tactic_name: Подготовка ресурсов
       technique: AML.T0065
       technique_name: Создание промптов для LLM
-    - description: The researcher developed a poisoned ClawdBot Skill called "What Would Elon Do?" The Skill contained the malicious prompt in the `rules/logic.md` file, which is read when the Skill is activated. The researcher published their Skill to ClawdHub.
-      description_line: The researcher developed a poisoned ClawdBot Skill called "What Would Elon Do?" The Skill contained the malicious prompt in the `rules/logic.md` file, which is read when the Skill is activated. The researcher published their Skill to ClawdHub.
+    - description: Исследователь разработал отравленный навык ClawdBot под названием "What Would Elon Do?" Вредоносный промпт находился в файле `rules/logic.md`, который считывается при активации навыка. Исследователь опубликовал навык в ClawdHub.
+      description_line: Исследователь разработал отравленный навык ClawdBot под названием "What Would Elon Do?" Вредоносный промпт находился в файле `rules/logic.md`, который считывается при активации навыка. Исследователь опубликовал навык в ClawdHub.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0115.002
@@ -49,8 +49,8 @@ procedure:
       tactic_name: Первичный доступ
       technique: AML.T0010.005
       technique_name: Инструмент ИИ-агента
-    - description: The poisoned Skill included malicious model-readable instructions in `rules/logic.md`. Once the Skill was installed and made available to the agent, these instructions altered how Claude Code handled requests associated with the Skill.
-      description_line: The poisoned Skill included malicious model-readable instructions in `rules/logic.md`. Once the Skill was installed and made available to the agent, these instructions altered how Claude Code handled requests associated with the Skill.
+    - description: Отравленный навык содержал в `rules/logic.md` вредоносные инструкции, доступные модели. После того как навык был установлен и стал доступен агенту, эти инструкции изменили то, как Claude Code обрабатывал связанные с навыком запросы.
+      description_line: Отравленный навык содержал в `rules/logic.md` вредоносные инструкции, доступные модели. После того как навык был установлен и стал доступен агенту, эти инструкции изменили то, как Claude Code обрабатывал связанные с навыком запросы.
       tactic: AML.TA0006
       tactic_name: Закрепление
       technique: AML.T0110.000
@@ -61,8 +61,8 @@ procedure:
       tactic_name: Выполнение
       technique: AML.T0011.002
       technique_name: Отравленный инструмент ИИ-агента
-    - description: Claude Code read all files that are part of the Skill, executing the malicious prompt in the `rules/logic.md` file.
-      description_line: Claude Code read all files that are part of the Skill, executing the malicious prompt in the `rules/logic.md` file.
+    - description: Claude Code прочитал все файлы, входившие в состав навыка, и выполнил вредоносный промпт из файла `rules/logic.md`.
+      description_line: Claude Code прочитал все файлы, входившие в состав навыка, и выполнил вредоносный промпт из файла `rules/logic.md`.
       tactic: AML.TA0005
       tactic_name: Выполнение
       technique: AML.T0051.001
