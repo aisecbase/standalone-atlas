@@ -60,5 +60,5 @@ url: /techniques/AML.T0069.002/
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0048/"><span class="relation-id">AML.CS0048</span><strong>Публично доступные интерфейсы управления ClawdBot позволили получить учетные данные и выполнить команды</strong><span class="relation-meta">Актор: Jamieson O&#39;Reilly / Тактика: AML.TA0008 Выявление</span><p>Исследователь попросил ClawdBot выполнить `cat SOUL.md`, где `SOUL.md` — файл с системным промптом ClawdBot; в ответ ClawdBot вернул содержимое файла.</p></a>
+<a class="relation-item" href="/studies/AML.CS0048/"><span class="relation-id">AML.CS0048</span><strong>Публично доступные интерфейсы управления ClawdBot позволили получить учётные данные и выполнить команды</strong><span class="relation-meta">Актор: Jamieson O&#39;Reilly / Тактика: AML.TA0008 Выявление</span><p>Исследователь попросил ClawdBot выполнить `cat SOUL.md`, где `SOUL.md` — файл с системным промптом ClawdBot; в ответ ClawdBot вернул содержимое файла.</p></a>
 </div>

@@ -6,8 +6,8 @@ totals:
         body_translated: 68
         procedures_total: 571
         procedures_translated: 559
-        fully_translated: 60
-        needs_review: 4
+        fully_translated: 61
+        needs_review: 3
     mitigation:
         total: 37
         name_translated: 37
@@ -79,21 +79,6 @@ partial:
       review_fields:
         - procedure
 review:
-    - id: AML.CS0048
-      name: Exposed ClawdBot Control Interfaces Leads to Credential Access and Execution
-      type: case-study
-      has_name: true
-      has_body: true
-      source_field: summary
-      total_procedures: 10
-      translated_procedures: 10
-      procedure_needs_review: 1
-      needs_review: true
-      review_fields:
-        - summary
-        - procedure
-      source_sha256: 5821ebf9685a44ac138d47709de512b8d54e41b3a7b12ddd7705a11e1a1c2456
-      translation_source_sha256: 5e811d58310c3edcc0c55d557b35e7eaf9dd9666b3d26196c02f7d218b1bd5e5
     - id: AML.CS0052
       name: 'LLMSmith: RCE Vulnerabilities in LLM-Integrated Applications'
       type: case-study
