@@ -12,8 +12,8 @@ totals:
         total: 37
         name_translated: 37
         body_translated: 37
-        fully_translated: 32
-        needs_review: 5
+        fully_translated: 33
+        needs_review: 4
     resource:
         total: 6
         name_translated: 6
@@ -35,18 +35,6 @@ totals:
 missing: []
 partial: []
 review:
-    - id: AML.M0015
-      name: Predictive AI Adversarial Input Detection
-      type: mitigation
-      has_name: true
-      has_body: true
-      source_field: name
-      needs_review: true
-      review_fields:
-        - name
-        - description
-      source_sha256: 2afc2194553d7545c33cacea2cb1f9ac27146679274dea4c86599f0cd0177ea5
-      translation_source_sha256: b1f89a94f847d403f9deb3b9ec27f873403e6565fc8120f5767e58c678779cab
     - id: AML.M0016
       name: Vulnerability Scanning
       type: mitigation
