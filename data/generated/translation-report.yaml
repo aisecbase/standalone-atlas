@@ -30,23 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 158
-        needs_review: 20
+        fully_translated: 159
+        needs_review: 19
 missing: []
 partial: []
 review:
-    - id: AML.T0020
-      name: Training Data Poisoning
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: name
-      needs_review: true
-      review_fields:
-        - name
-        - description
-      source_sha256: ab787461fa4536f71810262d746d6cb58f2918b880981c9bd85e852bc771cce2
-      translation_source_sha256: 0ec862daeff93c7f3836035c7390f8bb99ff7e752a074ec0c9e255b57be0bb03
     - id: AML.T0043
       name: Craft Adversarial Data
       type: technique
