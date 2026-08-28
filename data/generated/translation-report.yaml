@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 154
-        needs_review: 24
+        fully_translated: 155
+        needs_review: 23
 missing: []
 partial: []
 review:
-    - id: AML.T0013
-      name: Discover AI Model Ontology
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 6ff1bf1c78c2d576fd972933b89b49039fb11933293f7c77f5ab7276ef334884
-      translation_source_sha256: e5efb2b2655785a4cd6ce2ac010526eac3e390cd3c5f3730885ee1ba543dd130
     - id: AML.T0014
       name: Discover AI Model Family
       type: technique
