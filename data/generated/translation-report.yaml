@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 164
-        needs_review: 14
+        fully_translated: 165
+        needs_review: 13
 missing: []
 partial: []
 review:
-    - id: AML.T0054
-      name: LLM Jailbreak
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: faba473952f9c11af4233eecde1a2555fc68470010d9fb09decddfa28ccc7489
-      translation_source_sha256: 36e38121f187d16330a193362611d0d9b7fbf627be069b42df172ed9cb6aa881
     - id: AML.T0056
       name: Extract LLM System Prompt
       type: technique
