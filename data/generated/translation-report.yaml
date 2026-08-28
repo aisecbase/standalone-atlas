@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 147
-        needs_review: 31
+        fully_translated: 148
+        needs_review: 30
 missing: []
 partial: []
 review:
-    - id: AML.T0010.001
-      name: AI Software
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: cf7a483f5e4f61a34bc54c16f44c012f02dfa224cd4e21b1a20c40090aad5e61
-      translation_source_sha256: a2bb7921703ea48e5806a339c5256bc64fa01603aca37523d62f4a752fbfa0df
     - id: AML.T0010.003
       name: Model
       type: technique
