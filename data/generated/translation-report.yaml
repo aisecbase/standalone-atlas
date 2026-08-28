@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 170
-        needs_review: 8
+        fully_translated: 171
+        needs_review: 7
 missing: []
 partial: []
 review:
-    - id: AML.T0079
-      name: Stage Capabilities
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 59bbcf9b9777af95d1e577f9bb7b9907056b72d691dc06217a91ac99da849dfd
-      translation_source_sha256: ecffe29e9d24d3ce95c112fe4c9855ae0196d13fb01d15b7d0ffc1018eb6b1b9
     - id: AML.T0080
       name: AI Agent Context Poisoning
       type: technique
