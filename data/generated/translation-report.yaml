@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 139
-        needs_review: 39
+        fully_translated: 140
+        needs_review: 38
 missing: []
 partial: []
 review:
-    - id: AML.T0000.002
-      name: Technical Blogs
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: bd3e07ae1d0f16f124591c282ad8909e897f31454437511b3d0807f68c4ed302
-      translation_source_sha256: 63b40c35dee24d04975937e38c0eaca3f54e641cd82cab682bc6d25d2619a144
     - id: AML.T0002
       name: Acquire Public AI Artifacts
       type: technique
