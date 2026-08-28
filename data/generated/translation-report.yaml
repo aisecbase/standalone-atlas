@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 151
-        needs_review: 27
+        fully_translated: 152
+        needs_review: 26
 missing: []
 partial: []
 review:
-    - id: AML.T0011.000
-      name: Unsafe AI Artifacts
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 62a99c577f05dea825c031b8d069cdfd75bdd7b0f2f7ab5709154714bddca35a
-      translation_source_sha256: 649891521359fb57fd9cf512f3f7648978683eddda7928c961a677850b96d096
     - id: AML.T0011.002
       name: Poisoned AI Agent Tool
       type: technique
