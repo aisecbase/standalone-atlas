@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 165
-        needs_review: 13
+        fully_translated: 166
+        needs_review: 12
 missing: []
 partial: []
 review:
-    - id: AML.T0056
-      name: Extract LLM System Prompt
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: caf7ecdc939ee2a77836dc97616a5ab8bd9a6bcaf08210980ddff7a62163da95
-      translation_source_sha256: 4bf85b4630e52a5b8054698cdc01c6303fe08da95f800223058ca6cf5fb4081b
     - id: AML.T0060
       name: Publish Hallucinated Entities
       type: technique

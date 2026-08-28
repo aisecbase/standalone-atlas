@@ -62,15 +62,14 @@ generated_by: atlasgen
 <td data-label="Названий переведено">178</td>
 <td data-label="Описаний переведено">178</td>
 <td data-label="Процедур переведено">-</td>
-<td data-label="Полностью переведено">165</td>
-<td data-label="Требует проверки">13</td>
+<td data-label="Полностью переведено">166</td>
+<td data-label="Требует проверки">12</td>
 </tr>
 </tbody>
 </table>
 
-## Требует проверки (13)
+## Требует проверки (12)
 
-- [`AML.T0056`](/techniques/AML.T0056/) (Техники): Extract LLM System Prompt; название: да; описание/summary: да; требует проверки: описание
 - [`AML.T0060`](/techniques/AML.T0060/) (Техники): Publish Hallucinated Entities; название: да; описание/summary: да; требует проверки: описание
 - [`AML.T0067.000`](/techniques/AML.T0067.000/) (Техники): Citations; название: да; описание/summary: да; требует проверки: описание
 - [`AML.T0071`](/techniques/AML.T0071/) (Техники): False RAG Entry Injection; название: да; описание/summary: да; требует проверки: описание
