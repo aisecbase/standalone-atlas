@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 148
-        needs_review: 30
+        fully_translated: 149
+        needs_review: 29
 missing: []
 partial: []
 review:
-    - id: AML.T0010.003
-      name: Model
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: c528d001371f8de4220de49f36ebe481635cc8181d279348859e7bd1e5d6ed9a
-      translation_source_sha256: 7e5ef47a9c1434b21d7bca28f5abd11721b3bc952b4334749acca925872858cd
     - id: AML.T0010.005
       name: AI Agent Tool
       type: technique
