@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 162
-        needs_review: 16
+        fully_translated: 163
+        needs_review: 15
 missing: []
 partial: []
 review:
-    - id: AML.T0051.001
-      name: Indirect
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 05578e7ca56474276bee209c776b5465fd0a93db3ae1c2716651857dda9e380b
-      translation_source_sha256: 4d3c62f186f9b1cb584ed2d1801627d41d330588794a7077fb6d553dfb1aaeaa
     - id: AML.T0053
       name: AI Agent Tool Invocation
       type: technique
