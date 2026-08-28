@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 168
-        needs_review: 10
+        fully_translated: 169
+        needs_review: 9
 missing: []
 partial: []
 review:
-    - id: AML.T0071
-      name: False RAG Entry Injection
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: a84e8958931db91ffcfebd1bc1ad2367a6e71c8e1474d6d222a73c857503f445
-      translation_source_sha256: 1dcd3617b574e55b738dd3fe546e602da33e44e739d61824e8b064e3aae003ec
     - id: AML.T0074
       name: Masquerading
       type: technique
