@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 152
-        needs_review: 26
+        fully_translated: 153
+        needs_review: 25
 missing: []
 partial: []
 review:
-    - id: AML.T0011.002
-      name: Poisoned AI Agent Tool
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 2228a5c941b109fd61408af073668b545707665a3e9cd4dda4f63906e44e9410
-      translation_source_sha256: b1f911f94ddcc583355ab1d4e94f46bebc7030340f9258da70c6341f4f829160
     - id: AML.T0011.003
       name: Malicious Link
       type: technique
