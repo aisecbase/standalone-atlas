@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 146
-        needs_review: 32
+        fully_translated: 147
+        needs_review: 31
 missing: []
 partial: []
 review:
-    - id: AML.T0010
-      name: AI Supply Chain Compromise
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 5d4d579f6d8e67eca23a7e9e3d06653a0315d3827760753dfcdbd99aca31993e
-      translation_source_sha256: a9ff3592090a43b94213e651bcce76a7db35db937046a6e91fed1e2e25b2d811
     - id: AML.T0010.001
       name: AI Software
       type: technique
