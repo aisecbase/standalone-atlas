@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 159
-        needs_review: 19
+        fully_translated: 160
+        needs_review: 18
 missing: []
 partial: []
 review:
-    - id: AML.T0043
-      name: Craft Adversarial Data
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: ccc156364b8b3d8f23ec4782033b6ef58853e131af2a7af90afa7d631f95437c
-      translation_source_sha256: 2f0984ffa792c780edad7410b090e01648535a05950cdfb513a258cc0044968b
     - id: AML.T0044
       name: Full AI Model Access
       type: technique
