@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 149
-        needs_review: 29
+        fully_translated: 150
+        needs_review: 28
 missing: []
 partial: []
 review:
-    - id: AML.T0010.005
-      name: AI Agent Tool
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: dabbe1b5d99518f314142760f1b38fcd1f204bb5b702cda2f461aa0ef0fbe5fa
-      translation_source_sha256: e0433a5dd1320c95121cfd1704de682a1020f1db497fa771f7ae5f79816c7e48
     - id: AML.T0011
       name: User Execution
       type: technique
