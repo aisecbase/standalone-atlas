@@ -12,8 +12,8 @@ totals:
         total: 37
         name_translated: 37
         body_translated: 37
-        fully_translated: 27
-        needs_review: 10
+        fully_translated: 28
+        needs_review: 9
     resource:
         total: 6
         name_translated: 6
@@ -35,18 +35,6 @@ totals:
 missing: []
 partial: []
 review:
-    - id: AML.M0003
-      name: Predictive AI Model Hardening
-      type: mitigation
-      has_name: true
-      has_body: true
-      source_field: name
-      needs_review: true
-      review_fields:
-        - name
-        - description
-      source_sha256: 057948baa86b6c4ac015c258572eba7a1edba8d822acb8714688ac8253ee1f2c
-      translation_source_sha256: 5d62e621c4dab1975cfa1e903578bcd237cb81d436bbb52615dd6ae1103311e9
     - id: AML.M0004
       name: Limit AI Service Query Volume and Rate
       type: mitigation
