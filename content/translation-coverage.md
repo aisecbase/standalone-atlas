@@ -26,8 +26,8 @@ generated_by: atlasgen
 <td data-label="Названий переведено">68</td>
 <td data-label="Описаний переведено">68</td>
 <td data-label="Процедур переведено">559/571</td>
-<td data-label="Полностью переведено">61</td>
-<td data-label="Требует проверки">3</td>
+<td data-label="Полностью переведено">62</td>
+<td data-label="Требует проверки">2</td>
 </tr>
 <tr>
 <th scope="row" data-label="Тип объектов">Меры защиты</th>
@@ -68,9 +68,8 @@ generated_by: atlasgen
 </tbody>
 </table>
 
-## Требует проверки (57)
+## Требует проверки (56)
 
-- [`AML.CS0052`](/studies/AML.CS0052/) (Кейсы): LLMSmith: RCE Vulnerabilities in LLM-Integrated Applications; название: да; описание/summary: да; процедуры: 12/12; процедуры требуют проверки: 1; требует проверки: процедуры
 - [`AML.CS0054`](/studies/AML.CS0054/) (Кейсы): Data Exfiltration via Remote Poisoned MCP Tool; название: да; описание/summary: да; процедуры: 7/11; процедуры требуют проверки: 1; требует проверки: процедуры
 - [`AML.CS0059`](/studies/AML.CS0059/) (Кейсы): EchoLeak: Zero-Click Prompt Injection Targeting M365 Copilot for Data Exfiltration; название: да; описание/summary: да; процедуры: 12/12; процедуры требуют проверки: 1; требует проверки: процедуры
 - [`AML.M0002`](/mitigations/AML.M0002/) (Меры защиты): Predictive AI Output Obfuscation; название: да; описание/summary: да; требует проверки: название, описание
