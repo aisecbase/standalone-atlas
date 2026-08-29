@@ -37,7 +37,7 @@ url: /techniques/AML.T0090/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0011/"><span class="relation-id">AML.M0011</span><strong>Ограничение загрузки библиотек</strong><p>Restrict library loading to block credential-dumping paths that inject or load malicious code into processes holding authentication material.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0011/"><span class="relation-id">AML.M0011</span><strong>Ограничение загрузки библиотек</strong><p>Ограничивайте загрузку библиотек, чтобы блокировать сценарии дампа учётных данных, при которых вредоносный код внедряется или загружается в процессы, содержащие аутентификационные данные.</p></a>
 </div>
 
 

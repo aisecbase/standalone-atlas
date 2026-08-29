@@ -39,7 +39,7 @@ url: /techniques/AML.T0050/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0011/"><span class="relation-id">AML.M0011</span><strong>Ограничение загрузки библиотек</strong><p>Restrict library loading so command and script interpreters cannot load untrusted libraries as an execution mechanism.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0011/"><span class="relation-id">AML.M0011</span><strong>Ограничение загрузки библиотек</strong><p>Ограничивайте загрузку библиотек так, чтобы интерпретаторы команд и скриптов не могли загружать недоверенные библиотеки для выполнения кода.</p></a>
 </div>
 
 

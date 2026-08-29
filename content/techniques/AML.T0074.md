@@ -37,7 +37,7 @@ url: /techniques/AML.T0074/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0011/"><span class="relation-id">AML.M0011</span><strong>Ограничение загрузки библиотек</strong><p>Restrict library loading to trusted locations and approved libraries so disguised malicious libraries cannot be loaded as legitimate dependencies.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0011/"><span class="relation-id">AML.M0011</span><strong>Ограничение загрузки библиотек</strong><p>Разрешайте загрузку только одобренных библиотек из доверенных расположений, чтобы вредоносные библиотеки, замаскированные под легитимные зависимости, не могли быть загружены.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0025/"><span class="relation-id">AML.M0025</span><strong>Поддержание происхождения наборов данных ИИ</strong><p>Record dataset sources and modification history so datasets falsely presented as trusted can be identified.</p></a>
 </div>
 
