@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 175
-        needs_review: 3
+        fully_translated: 176
+        needs_review: 2
 missing: []
 partial: []
 review:
-    - id: AML.T0102
-      name: Generate Malicious Commands
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: f6e3772a6d6b63a982fa479a2eee8bba510e4322440389bfbbd1ea0b4b56346a
-      translation_source_sha256: 7866e4c49c21854e43eae41221db81cca2584ad7e8a65fa0d688c2083008aa80
     - id: AML.T0109
       name: AI Supply Chain Rug Pull
       type: technique
