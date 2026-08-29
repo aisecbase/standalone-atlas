@@ -334,6 +334,8 @@ technique_uses:
     use: "Инструкции для модели могут предписывать ей отказываться отвечать на небезопасные входные данные."
   - source: "Model registries scan uploaded models for unsafe serialization, embedded code, malware, and known vulnerabilities before listing."
     use: "Реестры моделей сканируют загружаемые модели на признаки небезопасной сериализации, встроенный код, вредоносное ПО и известные уязвимости перед добавлением в каталог."
+  - source: "Model repositories evaluate submissions for backdoors, data leakage, adversarial influence, and unexpected behavior before listing."
+    use: "Перед публикацией в каталоге репозитории моделей проверяют поступающие материалы на наличие бэкдоров, утечек данных, признаков влияния злоумышленника и неожиданного поведения."
   - source: "Monitor queries and query patterns to the target model, block access if suspicious queries are detected."
     use: "Отслеживайте запросы и паттерны запросов к целевой модели и блокируйте доступ при обнаружении подозрительных запросов."
   - source: "Not distributing the model in software to edge devices, can limit an adversary's ability to gain full access to the model."
