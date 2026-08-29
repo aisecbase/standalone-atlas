@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 174
-        needs_review: 4
+        fully_translated: 175
+        needs_review: 3
 missing: []
 partial: []
 review:
-    - id: AML.T0099
-      name: AI Agent Tool Data Poisoning
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 72a55b6467b5fc85038f8ac0bcf9fe8a759986a106ef7f24b7933051d23f587d
-      translation_source_sha256: 4e83e73fe7cf6cc1ea0b2b6bd060dd1216244039d1662ab007a6ed24fb201824
     - id: AML.T0102
       name: Generate Malicious Commands
       type: technique
