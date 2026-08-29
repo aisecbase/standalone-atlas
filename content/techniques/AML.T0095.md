@@ -44,7 +44,7 @@ url: /techniques/AML.T0095/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0000/"><span class="relation-id">AML.M0000</span><strong>Ограничение публичного раскрытия информации</strong><p>Limit public technical and organizational information that reveals the AI stack, services, personnel, or other targeting details on websites and domains.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0000/"><span class="relation-id">AML.M0000</span><strong>Ограничение публичного раскрытия информации</strong><p>Ограничивайте размещение на веб-сайтах и доменах общедоступной технической и организационной информации, раскрывающей ИИ-стек, сервисы, сведения о сотрудниках или другие данные, полезные для выбора целей.</p></a>
 </div>
 
 

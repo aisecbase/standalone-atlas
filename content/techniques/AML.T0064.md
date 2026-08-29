@@ -38,7 +38,7 @@ url: /techniques/AML.T0064/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0000/"><span class="relation-id">AML.M0000</span><strong>Ограничение публичного раскрытия информации</strong><p>Withhold public documentation that identifies RAG data sources, indexes, and retrieval architecture.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0000/"><span class="relation-id">AML.M0000</span><strong>Ограничение публичного раскрытия информации</strong><p>Не публикуйте в открытом доступе документацию с описанием источников данных и индексов RAG-системы, а также её архитектуры извлечения.</p></a>
 </div>
 
 

@@ -51,7 +51,7 @@ url: /techniques/AML.T0084.001/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0000/"><span class="relation-id">AML.M0000</span><strong>Ограничение публичного раскрытия информации</strong><p>Avoid publicly documenting sensitive agent tool definitions and capabilities.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0000/"><span class="relation-id">AML.M0000</span><strong>Ограничение публичного раскрытия информации</strong><p>Не публикуйте в открытом доступе документацию, раскрывающую чувствительные сведения об определениях и возможностях инструментов ИИ-агента.</p></a>
 </div>
 
 

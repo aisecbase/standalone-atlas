@@ -53,7 +53,7 @@ url: /techniques/AML.T0084.002/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0000/"><span class="relation-id">AML.M0000</span><strong>Ограничение публичного раскрытия информации</strong><p>Avoid publicly disclosing agent activation keywords, events, and workflows.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0000/"><span class="relation-id">AML.M0000</span><strong>Ограничение публичного раскрытия информации</strong><p>Не раскрывайте в открытом доступе ключевые слова, события и рабочие процессы, используемые для активации ИИ-агента.</p></a>
 </div>
 
 

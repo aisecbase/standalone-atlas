@@ -37,7 +37,7 @@ url: /techniques/AML.T0001/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0000/"><span class="relation-id">AML.M0000</span><strong>Ограничение публичного раскрытия информации</strong><p>Limit disclosure of the production AI stack and system-specific technical details that let adversaries connect public vulnerability research to the deployed target.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0000/"><span class="relation-id">AML.M0000</span><strong>Ограничение публичного раскрытия информации</strong><p>Ограничивайте раскрытие сведений об ИИ-стеке, используемом в продакшене, и технических подробностей конкретной системы, которые позволяют злоумышленникам соотнести результаты общедоступных исследований уязвимостей с развёрнутой целевой системой.</p></a>
 </div>
 
 

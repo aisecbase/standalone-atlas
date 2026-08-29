@@ -53,7 +53,7 @@ url: /techniques/AML.T0084.003/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0000/"><span class="relation-id">AML.M0000</span><strong>Ограничение публичного раскрытия информации</strong><p>Limit public disclosure of agent call chains and execution-sink details.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0000/"><span class="relation-id">AML.M0000</span><strong>Ограничение публичного раскрытия информации</strong><p>Ограничивайте публичное раскрытие цепочек вызовов ИИ-агента и сведений о точках, в которых эти цепочки приводят к выполнению кода.</p></a>
 </div>
 
 
