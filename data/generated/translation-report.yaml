@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 176
-        needs_review: 2
+        fully_translated: 177
+        needs_review: 1
 missing: []
 partial: []
 review:
-    - id: AML.T0109
-      name: AI Supply Chain Rug Pull
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 5608480596a90b9b0d1a46702c7d9b4d454ec7ecd017386ce7821e6dda0a2ff4
-      translation_source_sha256: ef240bae78b62422464386dc31c69357b2b0cc26d544668504057a3951354510
     - id: AML.T0110
       name: AI Agent Tool Poisoning
       type: technique
