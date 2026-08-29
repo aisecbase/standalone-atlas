@@ -51,7 +51,7 @@ url: /techniques/AML.T0069.001/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0005/"><span class="relation-id">AML.M0005</span><strong>Контроль доступа к ИИ-моделям и хранимым данным</strong><p>Restrict access to stored system instructions and tool definitions containing privileged keywords.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0005/"><span class="relation-id">AML.M0005</span><strong>Контроль доступа к ИИ-моделям и хранимым данным</strong><p>Ограничивайте доступ к хранящимся системным инструкциям и определениям инструментов, содержащим привилегированные ключевые слова.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Гардрейлы для генеративного ИИ</strong><p>Фильтруйте ответы, раскрывающие системные ключевые слова, имена инструментов, определения функций или скрытые инструкции.</p></a>
 </div>
 

@@ -51,7 +51,7 @@ url: /techniques/AML.T0069.000/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0005/"><span class="relation-id">AML.M0005</span><strong>Контроль доступа к ИИ-моделям и хранимым данным</strong><p>Restrict access to stored prompt templates and configurations containing internal delimiters.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0005/"><span class="relation-id">AML.M0005</span><strong>Контроль доступа к ИИ-моделям и хранимым данным</strong><p>Ограничивайте доступ к хранящимся шаблонам промптов и конфигурациям, содержащим внутренние разделители.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Authenticate and monitor access to production models and prompt configuration.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Гардрейлы для генеративного ИИ</strong><p>Фильтруйте ответы, раскрывающие скрытое форматирование промпта, разделители или внутренние инструкции.</p></a>
 </div>

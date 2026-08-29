@@ -53,5 +53,5 @@ url: /techniques/AML.T0112.001/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0005/"><span class="relation-id">AML.M0005</span><strong>Контроль доступа к ИИ-моделям и хранимым данным</strong><p>Restrict write access to model registries and AI artifact stores.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0005/"><span class="relation-id">AML.M0005</span><strong>Контроль доступа к ИИ-моделям и хранимым данным</strong><p>Ограничивайте права на запись в реестры моделей и хранилища ИИ-артефактов.</p></a>
 </div>
