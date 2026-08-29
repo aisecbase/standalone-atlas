@@ -30,22 +30,11 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 173
-        needs_review: 5
+        fully_translated: 174
+        needs_review: 4
 missing: []
 partial: []
 review:
-    - id: AML.T0086
-      name: Exfiltration via AI Agent Tool Invocation
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 3dc32b5b8c2a5c453c2ba6fe843925f641ae0a3030b3d610fc04cc6620fc81de
-      translation_source_sha256: 7a44d375afeb646df17cfc6e922654ab552d0cc9fa05564a3e593e16c837c156
     - id: AML.T0099
       name: AI Agent Tool Data Poisoning
       type: technique
