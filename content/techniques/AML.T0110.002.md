@@ -45,7 +45,7 @@ url: /techniques/AML.T0110.002/
 
 <div class="relation-list">
 <a class="relation-item" href="/techniques/AML.T0110.000/"><span class="relation-id">AML.T0110.000</span><strong>Определение и инструкции</strong><span class="relation-meta">Подтехника</span></a>
-<a class="relation-item" href="/techniques/AML.T0110.001/"><span class="relation-id">AML.T0110.001</span><strong>Имплементация</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0110.001/"><span class="relation-id">AML.T0110.001</span><strong>Реализация</strong><span class="relation-meta">Подтехника</span></a>
 </div>
 
 
