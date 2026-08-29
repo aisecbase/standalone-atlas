@@ -386,6 +386,8 @@ technique_uses:
     use: "Защищайте артефакты машинного обучения с помощью шифрования."
   - source: "Published datasets can be a target for poisoning attacks."
     use: "Опубликованные наборы данных могут стать целью атак отравления."
+  - source: "Record dataset sources and modification history so datasets falsely presented as trusted can be identified."
+    use: "Фиксируйте источники наборов данных и историю их изменений, чтобы выявлять наборы данных, выдаваемые за доверенные."
   - source: "Remediating poisoned data can re-establish dataset integrity."
     use: "Устранение последствий отравленных данных может восстановить целостность набора данных."
   - source: "Require authenticated access to production AI endpoints and monitor queries to limit unauthenticated probing of exposed AI services."
