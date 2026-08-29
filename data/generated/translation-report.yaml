@@ -30,19 +30,8 @@ totals:
         total: 178
         name_translated: 178
         body_translated: 178
-        fully_translated: 177
-        needs_review: 1
+        fully_translated: 178
+        needs_review: 0
 missing: []
 partial: []
-review:
-    - id: AML.T0110
-      name: AI Agent Tool Poisoning
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 70a1c1ee5c9b39c1b86e7d217df83afd48119d0dd597e87e92411a7346e24852
-      translation_source_sha256: b169a5d165fb98157ed7615ec0082db2e14bf792d0c42bcb36486fd8ed0ff114
+review: []

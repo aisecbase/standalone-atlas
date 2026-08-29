@@ -62,15 +62,15 @@ generated_by: atlasgen
 <td data-label="Названий переведено">178</td>
 <td data-label="Описаний переведено">178</td>
 <td data-label="Процедур переведено">-</td>
-<td data-label="Полностью переведено">177</td>
-<td data-label="Требует проверки">1</td>
+<td data-label="Полностью переведено">178</td>
+<td data-label="Требует проверки">0</td>
 </tr>
 </tbody>
 </table>
 
-## Требует проверки (1)
+## Требует проверки (0)
 
-- [`AML.T0110`](/techniques/AML.T0110/) (Техники): AI Agent Tool Poisoning; название: да; описание/summary: да; требует проверки: описание
+Нет.
 
 ## Частичный перевод (0)
 
