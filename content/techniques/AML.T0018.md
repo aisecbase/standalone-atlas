@@ -51,7 +51,7 @@ url: /techniques/AML.T0018/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0005/"><span class="relation-id">AML.M0005</span><strong>Контроль доступа к ИИ-моделям и хранимым данным</strong><p>Контроль доступа может предотвращать подмену ИИ-артефактов и несанкционированное изменение.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0005/"><span class="relation-id">AML.M0005</span><strong>Контроль доступа к ИИ-моделям и хранимым данным</strong><p>Контроль доступа может предотвращать подмену ИИ-артефактов и их неавторизованное изменение.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0008/"><span class="relation-id">AML.M0008</span><strong>Валидация ИИ-модели</strong><p>Проверка ИИ-модели на широком наборе состязательных входных данных может повысить уверенность в том, что модель не подвергалась манипуляциям.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0013/"><span class="relation-id">AML.M0013</span><strong>Подписание кода</strong><p>Подписание кода дает гарантию, что модель не была изменена после подписания.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>В контролируемых условиях попытайтесь изменить или подменить модели, веса, адаптеры и связанную с ними конфигурацию. Устраните недостатки механизмов авторизации, обеспечения целостности артефактов, процедур одобрения развёртывания, мониторинга и восстановления.</p></a>
