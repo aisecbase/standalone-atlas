@@ -51,7 +51,7 @@ url: /techniques/AML.T0091.000/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Enforce authorization and monitor production AI API use for anomalous activity associated with replayed access tokens.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Обеспечивайте обязательную авторизацию и отслеживайте использование API ИИ в продакшене на предмет аномальной активности, связанной с повторным предъявлением токенов доступа.</p></a>
 </div>
 
 

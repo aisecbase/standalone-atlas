@@ -44,7 +44,7 @@ url: /techniques/AML.T0012/
 
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0005/"><span class="relation-id">AML.M0005</span><strong>Контроль доступа к ИИ-моделям и хранимым данным</strong><p>Предоставляйте доступ к реестрам моделей и обучающим данным только одобренным субъектам доступа, чтобы при компрометации учётной записи доступными оказывались лишь те ИИ-активы, доступ к которым для этой учётной записи был явно разрешён.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Authenticate production AI endpoints and monitor model queries for misuse of otherwise valid credentials.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Требуйте аутентификации при доступе к ИИ-эндпоинтам в продакшене и отслеживайте запросы к модели, чтобы выявлять неправомерное использование действительных учётных данных.</p></a>
 </div>
 
 

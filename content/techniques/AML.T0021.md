@@ -36,7 +36,7 @@ url: /techniques/AML.T0021/
 
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0005/"><span class="relation-id">AML.M0005</span><strong>Контроль доступа к ИИ-моделям и хранимым данным</strong><p>Проверяйте идентичность субъекта перед предоставлением доступа к реестрам моделей, чтобы вновь созданные учётные записи не получали автоматического доступа к защищённым ИИ-артефактам.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Verify identities before granting production AI access so newly established accounts cannot automatically access protected AI services.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Проверяйте идентичность субъекта, прежде чем предоставлять ему доступ к ИИ-системам в продакшене, чтобы вновь созданные учётные записи не получали автоматического доступа к защищённым ИИ-сервисам.</p></a>
 </div>
 
 

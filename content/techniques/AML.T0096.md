@@ -41,7 +41,7 @@ API ИИ-сервисов могут использоваться как C2-ка
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Authenticate AI service API callers and monitor queries for policy violations and misuse.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Аутентифицируйте субъектов, обращающихся к API ИИ-сервиса, и отслеживайте запросы на предмет нарушений политик и случаев неправомерного использования.</p></a>
 </div>
 
 
