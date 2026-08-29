@@ -43,7 +43,7 @@ url: /techniques/AML.T0006/
 
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Требуйте аутентификации для доступа к ИИ-эндпоинтам в продакшене и отслеживайте запросы, чтобы ограничить зондирование доступных извне ИИ-сервисов без аутентификации.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0032/"><span class="relation-id">AML.M0032</span><strong>Сегментация компонентов ИИ-агента</strong><p>Segment AI agent components so an exposed service does not reveal or provide reachability to additional internal components.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0032/"><span class="relation-id">AML.M0032</span><strong>Сегментация компонентов ИИ-агента</strong><p>Сегментируйте компоненты ИИ-агента так, чтобы доступный извне сервис не раскрывал сведения о других внутренних компонентах и не открывал к ним сетевой доступ.</p></a>
 </div>
 
 

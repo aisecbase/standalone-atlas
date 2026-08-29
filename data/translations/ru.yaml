@@ -428,6 +428,8 @@ technique_uses:
     use: "Тщательная оценка ИИ-модели может повысить уверенность в том, что модель не была отравлена."
   - source: "Seed controlled malicious or misleading content into representative ingestion sources. Improve source authorization, provenance, content validation, indexing controls, and retrieval-time filtering."
     use: "Размещайте контролируемое вредоносное или вводящее в заблуждение содержимое в репрезентативных источниках поступления данных. Совершенствуйте механизмы допуска источников, отслеживание происхождения данных, валидацию содержимого, средства контроля индексирования и фильтрацию при извлечении данных."
+  - source: "Segment AI agent components so an exposed service does not reveal or provide reachability to additional internal components."
+    use: "Сегментируйте компоненты ИИ-агента так, чтобы доступный извне сервис не раскрывал сведения о других внутренних компонентах и не открывал к ним сетевой доступ."
   - source: "Segmentation can prevent adversaries from utilizing tools in an agentic workflow to collect sensitive data from AI services."
     use: "Сегментация может помешать злоумышленникам использовать инструменты в агентном рабочем процессе для сбора чувствительных данных из ИИ-сервисов."
   - source: "Segmentation can prevent adversaries from utilizing tools in an agentic workflow to collect sensitive data from RAG databases."
