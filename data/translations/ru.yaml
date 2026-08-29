@@ -272,6 +272,8 @@ technique_uses:
     use: "Ограничивайте публичное раскрытие цепочек вызовов ИИ-агента и сведений о точках, в которых эти цепочки приводят к выполнению кода."
   - source: "Limit public disclosure of agent tools, services, configuration, and workflows."
     use: "Ограничивайте публичное раскрытие сведений об инструментах, сервисах, конфигурации и рабочих процессах ИИ-агента."
+  - source: "Limit public release of production model artifacts that adversaries could acquire and adapt as operational capabilities."
+    use: "Ограничивайте публикацию в открытом доступе артефактов моделей, используемых в продакшене: злоумышленники могут получить такие артефакты и адаптировать их для использования в своих операциях."
   - source: "Limit public technical and organizational information that reveals the AI stack, services, personnel, or other targeting details on websites and domains."
     use: "Ограничивайте размещение на веб-сайтах и доменах общедоступной технической и организационной информации, раскрывающей ИИ-стек, сервисы, сведения о сотрудниках или другие данные, полезные для выбора целей."
   - source: "Limit repeated prompts used to search for exploitable hallucinations."

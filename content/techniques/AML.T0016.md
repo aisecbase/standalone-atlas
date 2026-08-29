@@ -49,7 +49,7 @@ url: /techniques/AML.T0016/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0001/"><span class="relation-id">AML.M0001</span><strong>Ограничение публикации артефактов модели</strong><p>Limit public release of production model artifacts that adversaries could acquire and adapt as operational capabilities.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0001/"><span class="relation-id">AML.M0001</span><strong>Ограничение публикации артефактов модели</strong><p>Ограничивайте публикацию в открытом доступе артефактов моделей, используемых в продакшене: злоумышленники могут получить такие артефакты и адаптировать их для использования в своих операциях.</p></a>
 </div>
 
 

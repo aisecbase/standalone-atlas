@@ -56,7 +56,7 @@ url: /techniques/AML.T0016.002/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0001/"><span class="relation-id">AML.M0001</span><strong>Ограничение публикации артефактов модели</strong><p>Limit public release of production model artifacts that adversaries could acquire and adapt as operational capabilities.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0001/"><span class="relation-id">AML.M0001</span><strong>Ограничение публикации артефактов модели</strong><p>Ограничивайте публикацию в открытом доступе артефактов моделей, используемых в продакшене: злоумышленники могут получить такие артефакты и адаптировать их для использования в своих операциях.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Гардрейлы для генеративного ИИ</strong><p>Применяйте гардрейлы, чтобы блокировать вредоносное использование моделей или сервисов генеративного ИИ, а также попытки их джейлбрейка.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0022/"><span class="relation-id">AML.M0022</span><strong>Выравнивание модели генеративного ИИ</strong><p>Выравнивайте генеративные модели, чтобы они противостояли вредоносным запросам злоумышленника и попыткам устранить предусмотренное безопасное поведение.</p></a>
 </div>
