@@ -28,6 +28,12 @@ const (
 	generatedBy            = "atlasgen"
 )
 
+var legacyTechniqueAliases = map[string][]string{
+	"AML.T0115.000": {"/techniques/AML.T0019/"},
+	"AML.T0115.001": {"/techniques/AML.T0058/"},
+	"AML.T0115.002": {"/techniques/AML.T0104/"},
+}
+
 type Atlas struct {
 	ID          string   `yaml:"id"`
 	Name        string   `yaml:"name"`
@@ -958,6 +964,22 @@ func pageForTechnique(obj Object, catalog Catalog) Page {
 		writeProcedureExamples(&b, examples, catalog, 0)
 	}
 	writeReferences(&b, obj.References)
+	params := map[string]any{
+		"created_date":       obj.CreatedDate,
+		"modified_date":      obj.ModifiedDate,
+		"maturity":           obj.Maturity,
+		"platforms":          obj.Platforms,
+		"tactics":            obj.Tactics,
+		"subtechnique_of":    obj.SubtechniqueOf,
+		"attack_ref_id":      attackRefID(obj.AttackReference),
+		"attack_ref_url":     attackRefURL(obj.AttackReference),
+		"subtechnique_count": len(catalog.SubtechniquesByParent[obj.ID]),
+		"mitigation_count":   len(catalog.MitigationsByTechnique[obj.ID]),
+		"procedure_count":    len(catalog.ProceduresByTechnique[obj.ID]),
+	}
+	if aliases := legacyTechniqueAliases[obj.ID]; len(aliases) > 0 {
+		params["aliases"] = append([]string(nil), aliases...)
+	}
 	return Page{
 		Section:     "techniques",
 		Kind:        "technique",
@@ -966,19 +988,7 @@ func pageForTechnique(obj Object, catalog Catalog) Page {
 		Title:       catalog.objectName(obj.ID, obj.Name),
 		Description: body,
 		Body:        b.String(),
-		Params: map[string]any{
-			"created_date":       obj.CreatedDate,
-			"modified_date":      obj.ModifiedDate,
-			"maturity":           obj.Maturity,
-			"platforms":          obj.Platforms,
-			"tactics":            obj.Tactics,
-			"subtechnique_of":    obj.SubtechniqueOf,
-			"attack_ref_id":      attackRefID(obj.AttackReference),
-			"attack_ref_url":     attackRefURL(obj.AttackReference),
-			"subtechnique_count": len(catalog.SubtechniquesByParent[obj.ID]),
-			"mitigation_count":   len(catalog.MitigationsByTechnique[obj.ID]),
-			"procedure_count":    len(catalog.ProceduresByTechnique[obj.ID]),
-		},
+		Params:      params,
 	}
 }
 

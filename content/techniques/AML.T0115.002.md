@@ -1,4 +1,6 @@
 ---
+aliases:
+    - /techniques/AML.T0104/
 atlas_id: AML.T0115.002
 atlas_type: technique
 attack_ref_id: ""
