@@ -252,6 +252,8 @@ technique_uses:
     use: "Восстановление входных данных добавляет дополнительный слой неопределенности и случайности, когда злоумышленник оценивает связь между входом и выходом."
   - source: "Input restoration can help remediate adversarial inputs."
     use: "Восстановление входных данных может помогать исправлять состязательные входные данные."
+  - source: "Instruct agents to treat webpage instructions as untrusted and request approval for consequential actions."
+    use: "Предписывайте ИИ-агентам считать содержащиеся на веб-страницах инструкции недоверенными и запрашивать одобрение на выполнение действий, способных повлечь существенные последствия."
   - source: "Introduce a controlled untrusted agent tool or tool definition. Verify source authorization, integrity, review, permission boundaries, and safe activation."
     use: "Внедряйте недоверенный инструмент ИИ-агента или недоверенное определение инструмента только в контролируемую среду. Убедитесь, что источник входит в число разрешённых; проверьте целостность, факт проведения проверки, границы разрешений и безопасность активации."
   - source: "Introduce a controlled untrusted or modified model through representative acquisition and deployment paths. Verify provenance, scanning, signing, approval, isolation, and rollback."

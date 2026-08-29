@@ -36,7 +36,7 @@ url: /techniques/AML.T0100/
 
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Гардрейлы для генеративного ИИ</strong><p>Применяйте гардрейлы к недоверенному веб-содержимому и предлагаемым действиям по управлению компьютером.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0021/"><span class="relation-id">AML.M0021</span><strong>Правила и инструкции для генеративного ИИ</strong><p>Instruct agents to treat webpage instructions as untrusted and request approval for consequential actions.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0021/"><span class="relation-id">AML.M0021</span><strong>Правила и инструкции для генеративного ИИ</strong><p>Предписывайте ИИ-агентам считать содержащиеся на веб-страницах инструкции недоверенными и запрашивать одобрение на выполнение действий, способных повлечь существенные последствия.</p></a>
 </div>
 
 
