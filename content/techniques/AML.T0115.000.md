@@ -54,7 +54,7 @@ url: /techniques/AML.T0115.000/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0007/"><span class="relation-id">AML.M0007</span><strong>Санитизация обучающих данных</strong><p>Dataset repositories inspect submissions and quarantine poisoned samples, labels, annotations, or metadata before listing.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0007/"><span class="relation-id">AML.M0007</span><strong>Санитизация обучающих данных</strong><p>Репозитории наборов данных проверяют поступающие материалы и до публикации в каталоге помещают в карантин отравленные образцы данных, метки, аннотации или метаданные.</p></a>
 </div>
 
 

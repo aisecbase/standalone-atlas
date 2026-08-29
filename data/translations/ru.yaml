@@ -154,6 +154,8 @@ technique_uses:
     use: "Надлежащий контроль доступа к использованию инструментов привилегированными ИИ-агентами может ограничить способность злоумышленника злоупотреблять вызовами инструментов при компрометации агента."
   - source: "Controlling access to the model in production can help prevent adversaries from inferring information from the model outputs."
     use: "Контроль доступа к модели в продакшене может помочь помешать злоумышленникам извлекать информацию из выходных данных модели."
+  - source: "Dataset repositories inspect submissions and quarantine poisoned samples, labels, annotations, or metadata before listing."
+    use: "Репозитории наборов данных проверяют поступающие материалы и до публикации в каталоге помещают в карантин отравленные образцы данных, метки, аннотации или метаданные."
   - source: "Dataset provenance can protect against poisoning of models."
     use: "Сведения о происхождении наборов данных могут защищать от отравления моделей."
   - source: "Dataset provenance can protect against poisoning of training data"
