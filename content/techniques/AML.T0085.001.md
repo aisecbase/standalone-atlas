@@ -12,7 +12,7 @@ mitigation_count: 5
 modified_date: "2026-05-27"
 platforms:
     - Agentic AI
-procedure_count: 3
+procedure_count: 6
 source_name: AI Agent Tools
 subtechnique_count: 0
 subtechnique_of: AML.T0085
@@ -63,4 +63,7 @@ url: /techniques/AML.T0085.001/
 <a class="relation-item" href="/studies/AML.CS0037/"><span class="relation-id">AML.CS0037</span><strong>Эксфильтрация данных через инструменты ИИ-агента в Copilot Studio</strong><span class="relation-meta">Актор: Zenity / Тактика: AML.TA0009 Сбор материалов</span><p>Промпт просит агента получить все записи Salesforce с помощью инструмента `get-records`. Агент извлекает все записи из CRM организации-жертвы.</p></a>
 <a class="relation-item" href="/studies/AML.CS0038/"><span class="relation-id">AML.CS0038</span><strong>Внедрение инструкций для отложенного автоматического вызова инструмента ИИ-агента</strong><span class="relation-meta">Актор: Embrace the Red / Тактика: AML.TA0009 Сбор материалов</span><p>Расширение Workspace находило документ и помещало его содержимое в контекст чата.</p></a>
 <a class="relation-item" href="/studies/AML.CS0039/"><span class="relation-id">AML.CS0039</span><strong>Living Off AI: промпт-инъекция через Jira Service Management</strong><span class="relation-meta">Актор: Cato CTRL / Тактика: AML.TA0009 Сбор материалов</span><p>Вредоносный промпт предписывал собрать все сведения из других задач. Это вызывало инструмент Atlassian MCP, который мог обращаться к Jira-тикетам и собирать их.</p></a>
+<a class="relation-item" href="/studies/AML.CS0063/"><span class="relation-id">AML.CS0063</span><strong>Атаки на Gemini с помощью промптов в приглашениях Google Calendar</strong><span class="relation-meta">Актор: SafeBreach Research Team / Тактика: AML.TA0009 Сбор материалов</span><p>Вредоносный промпт заставил Gemini с помощью подключённых инструментов ИИ-агента извлечь заголовки событий Calendar или темы писем Gmail и поместить полученные данные в URL, подконтрольные злоумышленнику.</p></a>
+<a class="relation-item" href="/studies/AML.CS0066/"><span class="relation-id">AML.CS0066</span><strong>ZombieAgent: атака на ChatGPT с эксфильтрацией данных</strong><span class="relation-meta">Актор: Radware Security Researchers / Тактика: AML.TA0009 Сбор материалов</span><p>ChatGPT использовал инструменты подключённых сервисов для извлечения информации, доступной агенту жертвы. В ходе демонстрации были собраны содержимое почтового ящика и контактные данные из электронной почты.</p></a>
+<a class="relation-item" href="/studies/AML.CS0066/"><span class="relation-id">AML.CS0066</span><strong>ZombieAgent: атака на ChatGPT с эксфильтрацией данных</strong><span class="relation-meta">Актор: Radware Security Researchers / Тактика: AML.TA0009 Сбор материалов</span><p>ChatGPT выполнил поиск в почтовом ящике жертвы и собрал адреса электронной почты, принадлежавшие потенциальным дополнительным целям.</p></a>
 </div>

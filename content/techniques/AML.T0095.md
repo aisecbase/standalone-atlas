@@ -8,11 +8,11 @@ description: Злоумышленники могут искать на публ�
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 0
+mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:
     - Enterprise
-procedure_count: 2
+procedure_count: 3
 source_name: Search Open Websites/Domains
 subtechnique_count: 1
 subtechnique_of: ""
@@ -41,9 +41,17 @@ url: /techniques/AML.T0095/
 </div>
 
 
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0000/"><span class="relation-id">AML.M0000</span><strong>Ограничение публичного раскрытия информации</strong><p>Ограничивайте размещение на веб-сайтах и доменах общедоступной технической и организационной информации, раскрывающей ИИ-стек, сервисы, сведения о сотрудниках или другие данные, полезные для выбора целей.</p></a>
+</div>
+
+
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
 <a class="relation-item" href="/studies/AML.CS0039/"><span class="relation-id">AML.CS0039</span><strong>Living Off AI: промпт-инъекция через Jira Service Management</strong><span class="relation-meta">Актор: Cato CTRL / Тактика: AML.TA0002 Разведка</span><p>Исследователи использовали поисковый запрос `site:atlassian.net/servicedesk inurl:portal`, чтобы выявить организации, использующие сервисные порталы Atlassian как потенциальные цели.</p></a>
 <a class="relation-item" href="/studies/AML.CS0061/"><span class="relation-id">AML.CS0061</span><strong>AI in the Middle: веб-сервисы ИИ как ретрансляторы C2</strong><span class="relation-meta">Актор: Check Point Research / Тактика: AML.TA0002 Разведка</span><p>Исследователи оценили публичные ИИ-ассистенты с анонимным или неаутентифицированным веб-просмотром и поведением получения URL, чтобы выявить сервисы, способные запрашивать произвольные URL, подконтрольные злоумышленнику, без API-учетных данных. Исследователи обнаружили, что Grok и Microsoft Copilot соответствуют этим условиям.</p></a>
+<a class="relation-item" href="/studies/AML.CS0065/"><span class="relation-id">AML.CS0065</span><strong>Атака на цепочку поставок через повторное использование пространства имён модели</strong><span class="relation-meta">Актор: Unit 42 Researchers / Тактика: AML.TA0002 Разведка</span><p>Специалисты Unit 42 изучили публичные каталоги моделей, использующие Hugging Face, страницы авторов Hugging Face и репозитории проектов с открытым исходным кодом, чтобы выявить ссылки на модели, у которых исходное пространство имён автора было удалено и стало доступно для регистрации. Они выявили сохранявшиеся без обновления ссылки в облачных каталогах, исходном коде, документации, аргументах по умолчанию и ноутбуках с примерами.</p></a>
 </div>

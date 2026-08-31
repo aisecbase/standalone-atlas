@@ -56,5 +56,5 @@ url: /techniques/AML.T0048.002/
 
 <div class="relation-list procedure-relations">
 <a class="relation-item" href="/studies/AML.CS0056/"><span class="relation-id">AML.CS0056</span><strong>Кампании по дистилляции моделей, нацеленные на Anthropic Claude</strong><span class="relation-meta">Актор: DeepSeek, Moonshot AI, MiniMax / Тактика: AML.TA0011 Воздействие</span><p>У дистиллированных моделей отсутствуют защитные механизмы, поэтому их можно использовать во вредоносных целях: для наступательных киберопераций, кампаний дезинформации, массовой слежки и цензуры.</p></a>
-<a class="relation-item" href="/studies/AML.CS0057/"><span class="relation-id">AML.CS0057</span><strong>Storm-2139: обход защитных ограничений Azure OpenAI</strong><span class="relation-meta">Актор: Storm-2139 / Тактика: AML.TA0011 Воздействие</span><p>Сгенерированные изображения с противоправным содержанием могли причинить прямой вред изображенным на них людям.</p></a>
+<a class="relation-item" href="/studies/AML.CS0057/"><span class="relation-id">AML.CS0057</span><strong>Storm-2139: обход гардрейлов Azure OpenAI</strong><span class="relation-meta">Актор: Storm-2139 / Тактика: AML.TA0011 Воздействие</span><p>Сгенерированные изображения с противоправным содержанием могли причинить прямой вред изображенным на них людям.</p></a>
 </div>

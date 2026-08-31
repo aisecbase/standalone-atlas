@@ -14,7 +14,7 @@ platforms:
     - Predictive AI
     - Generative AI
     - Agentic AI
-procedure_count: 4
+procedure_count: 5
 source_name: Models
 subtechnique_count: 0
 subtechnique_of: AML.T0002
@@ -69,4 +69,5 @@ url: /techniques/AML.T0002.001/
 <a class="relation-item" href="/studies/AML.CS0007/"><span class="relation-id">AML.CS0007</span><strong>Репликация модели GPT-2</strong><span class="relation-meta">Актор: Researchers at Brown University / Тактика: AML.TA0003 Подготовка ресурсов</span><p>Исследователи получили эталонную реализацию похожей общедоступной модели под названием Grover.</p></a>
 <a class="relation-item" href="/studies/AML.CS0013/"><span class="relation-id">AML.CS0013</span><strong>Бэкдор-атака на модели глубокого обучения в мобильных приложениях</strong><span class="relation-meta">Актор: Yuanchun Li, Jiayi Hua, Haoyu Wang, Chunyang Chen, Yunxin Liu / Тактика: AML.TA0003 Подготовка ресурсов</span><p>Исследователи получили APK-файлы приложений из Google Play. Они отфильтровали список потенциальных целевых приложений, проверяя метаданные кода на ключевые слова, связанные с TensorFlow или TFLite, а также с их бинарными форматами моделей (.tf и .tflite). Модели были извлечены из APK-файлов с помощью Apktool.</p></a>
 <a class="relation-item" href="/studies/AML.CS0019/"><span class="relation-id">AML.CS0019</span><strong>PoisonGPT</strong><span class="relation-meta">Актор: Mithril Security Researchers / Тактика: AML.TA0003 Подготовка ресурсов</span><p>Исследователи загрузили модель [GPT-J-6B с Hugging Face](https://huggingface.co/EleutherAI/gpt-j-6b) с открытым исходным кодом. GPT-J-6B — это большая языковая модель, обычно используемая для генерации текста по входным промптам, например в задачах ответов на вопросы.</p></a>
+<a class="relation-item" href="/studies/AML.CS0064/"><span class="relation-id">AML.CS0064</span><strong>Отравленные шаблоны GGUF: атака на цепочку поставок во время инференса</strong><span class="relation-meta">Актор: Pillar Security, Fujitsu Research of Europe / Тактика: AML.TA0003 Подготовка ресурсов</span><p>Злоумышленник получает легитимный артефакт модели с открытыми весами, содержащий включённый в его состав шаблон чата. Злоумышленник выбирает артефакт, пользователи которого на последующих этапах с высокой вероятностью сохранят и будут использовать поставляемый вместе с ним шаблон.</p></a>
 </div>

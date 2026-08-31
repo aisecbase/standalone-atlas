@@ -15,7 +15,7 @@ ml_lifecycle:
     - AI Model Engineering
 modified_date: "2025-12-23"
 source_name: Verify AI Artifacts
-technique_count: 6
+technique_count: 5
 title: Проверка ИИ-артефактов
 url: /mitigations/AML.M0014/
 ---
@@ -31,5 +31,4 @@ url: /mitigations/AML.M0014/
 <a class="relation-item" href="/techniques/AML.T0010.002/"><span class="relation-id">AML.T0010.002</span><strong>Данные</strong><p>Внедрите надлежащую проверку подписей, чтобы небезопасные ИИ-данные не попадали в систему.</p></a>
 <a class="relation-item" href="/techniques/AML.T0011/"><span class="relation-id">AML.T0011</span><strong>Запуск пользователем</strong><p>Внедрите надлежащую проверку подписей, чтобы небезопасные ИИ-артефакты не выполнялись в системе.</p></a>
 <a class="relation-item" href="/techniques/AML.T0011.000/"><span class="relation-id">AML.T0011.000</span><strong>Небезопасные ИИ-артефакты</strong><p>Внедрите надлежащую проверку подписей, чтобы небезопасные ИИ-артефакты не выполнялись в системе.</p></a>
-<a class="relation-item" href="/techniques/AML.T0019/"><span class="relation-id">AML.T0019</span><strong>Публикация отравленных наборов данных</strong><p>Проверяйте достоверность опубликованных данных, чтобы не использовать отравленные данные, создающие уязвимости.</p></a>
 </div>

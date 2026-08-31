@@ -28,12 +28,12 @@ procedure:
       tactic_name: Подготовка ресурсов
       technique: AML.T0065
       technique_name: Создание промптов для LLM
-    - description: Исследователь разработал отравленный навык ClawdBot под названием "What Would Elon Do?". Вредоносный промпт находился в файле `rules/logic.md`, который считывается при активации навыка. Исследователь опубликовал навык в ClawdHub.
-      description_line: Исследователь разработал отравленный навык ClawdBot под названием "What Would Elon Do?". Вредоносный промпт находился в файле `rules/logic.md`, который считывается при активации навыка. Исследователь опубликовал навык в ClawdHub.
+    - description: Исследователь разработал отравленный навык ClawdBot под названием "What Would Elon Do?" Вредоносный промпт находился в файле `rules/logic.md`, который считывается при активации навыка. Исследователь опубликовал навык в ClawdHub.
+      description_line: Исследователь разработал отравленный навык ClawdBot под названием "What Would Elon Do?" Вредоносный промпт находился в файле `rules/logic.md`, который считывается при активации навыка. Исследователь опубликовал навык в ClawdHub.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
-      technique: AML.T0104
-      technique_name: Публикация отравленного инструмента ИИ-агента
+      technique: AML.T0115.002
+      technique_name: Инструменты ИИ-агента
     - description: Исследователь использовал скрипт, чтобы накрутить число скачиваний навыка, повысить его видимость и вызвать доверие.
       description_line: Исследователь использовал скрипт, чтобы накрутить число скачиваний навыка, повысить его видимость и вызвать доверие.
       tactic: AML.TA0007
@@ -49,18 +49,24 @@ procedure:
       tactic_name: Первичный доступ
       technique: AML.T0010.005
       technique_name: Инструмент ИИ-агента
+    - description: Отравленный навык содержал в `rules/logic.md` вредоносные инструкции, доступные модели. После того как навык был установлен и стал доступен агенту, эти инструкции изменили то, как Claude Code обрабатывал связанные с навыком запросы.
+      description_line: Отравленный навык содержал в `rules/logic.md` вредоносные инструкции, доступные модели. После того как навык был установлен и стал доступен агенту, эти инструкции изменили то, как Claude Code обрабатывал связанные с навыком запросы.
+      tactic: AML.TA0006
+      tactic_name: Закрепление
+      technique: AML.T0110.000
+      technique_name: Определение и инструкции
     - description: 'Когда пользователь спрашивал Claude Code: "what would Elon do?", Claude Code вызывал отравленный навык.'
       description_line: 'Когда пользователь спрашивал Claude Code: "what would Elon do?", Claude Code вызывал отравленный навык.'
       tactic: AML.TA0005
       tactic_name: Выполнение
       technique: AML.T0011.002
       technique_name: Отравленный инструмент ИИ-агента
-    - description: Claude Code прочитал все файлы навыка и выполнил вредоносный промпт из `rules/logic.md`.
-      description_line: Claude Code прочитал все файлы навыка и выполнил вредоносный промпт из `rules/logic.md`.
+    - description: Claude Code прочитал все файлы, входившие в состав навыка, и выполнил вредоносный промпт из файла `rules/logic.md`.
+      description_line: Claude Code прочитал все файлы, входившие в состав навыка, и выполнил вредоносный промпт из файла `rules/logic.md`.
       tactic: AML.TA0005
       tactic_name: Выполнение
-      technique: AML.T0051.000
-      technique_name: Прямая промпт-инъекция
+      technique: AML.T0051.001
+      technique_name: Косвенная промпт-инъекция
     - description: 'Перед выполнением команды оболочки Claude Code запросил подтверждение пользователя. Исследователь зарегистрировал домен `https://clawdhub-skill.com`: он выглядел легитимно и мог быть спутан с настоящим доменом `https://clawdhub.com`, из-за чего пользователь мог подтвердить выполнение.'
       description_line: 'Перед выполнением команды оболочки Claude Code запросил подтверждение пользователя. Исследователь зарегистрировал домен `https://clawdhub-skill.com`: он выглядел легитимно и мог быть спутан с настоящим доменом `https://clawdhub.com`, из-за чего пользователь мог подтвердить выполнение.'
       tactic: AML.TA0007
@@ -79,7 +85,7 @@ procedure:
       tactic_name: Воздействие
       technique: AML.T0048
       technique_name: Внешний ущерб
-procedure_count: 11
+procedure_count: 12
 references:
     - title: 'eating lobster souls Part II: the supply chain (aka - backdooring the #1 downloaded clawdhub skill)'
       url: https://x.com/theonejvo/status/2015892980851474595

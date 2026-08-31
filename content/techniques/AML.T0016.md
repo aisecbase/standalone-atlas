@@ -8,7 +8,7 @@ description: Злоумышленники могут искать и получ�
 generated: true
 generated_by: atlasgen
 maturity: realized
-mitigation_count: 0
+mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:
     - Predictive AI
@@ -43,6 +43,13 @@ url: /techniques/AML.T0016/
 <a class="relation-item" href="/techniques/AML.T0016.000/"><span class="relation-id">AML.T0016.000</span><strong>Готовые реализации состязательных атак на ИИ</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0016.001/"><span class="relation-id">AML.T0016.001</span><strong>Программные инструменты</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0016.002/"><span class="relation-id">AML.T0016.002</span><strong>Генеративный ИИ</strong><span class="relation-meta">Подтехника</span></a>
+</div>
+
+
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0001/"><span class="relation-id">AML.M0001</span><strong>Ограничение публикации артефактов модели</strong><p>Ограничивайте публикацию в открытом доступе артефактов моделей, используемых в продакшене: злоумышленники могут получить такие артефакты и адаптировать их для использования в своих операциях.</p></a>
 </div>
 
 

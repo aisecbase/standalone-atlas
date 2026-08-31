@@ -8,7 +8,7 @@ description: Злоумышленники могут напрямую измен
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 3
+mitigation_count: 4
 modified_date: "2026-05-27"
 platforms:
     - Predictive AI
@@ -50,15 +50,17 @@ url: /techniques/AML.T0018.001/
 <div class="relation-list">
 <a class="relation-item" href="/techniques/AML.T0018.000/"><span class="relation-id">AML.T0018.000</span><strong>Отравление ИИ-модели</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0018.002/"><span class="relation-id">AML.T0018.002</span><strong>Встраивание вредоносного ПО</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0018.003/"><span class="relation-id">AML.T0018.003</span><strong>Изменение логики формирования промпта</strong><span class="relation-meta">Подтехника</span></a>
 </div>
 
 
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0005/"><span class="relation-id">AML.M0005</span><strong>Контроль доступа к ИИ-моделям и хранимым данным</strong><p>Контроль доступа может предотвращать подмену ML-артефактов и несанкционированное копирование.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0005/"><span class="relation-id">AML.M0005</span><strong>Контроль доступа к ИИ-моделям и хранимым данным</strong><p>Контроль доступа может предотвращать подмену ML-артефактов и их неавторизованное копирование.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0008/"><span class="relation-id">AML.M0008</span><strong>Валидация ИИ-модели</strong><p>Убедитесь, что приобретенные модели не реагируют на потенциальные бэкдор-триггеры или состязательное воздействие.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0013/"><span class="relation-id">AML.M0013</span><strong>Подписание кода</strong><p>Подписание кода дает гарантию, что модель не была изменена после подписания.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>В контролируемых условиях попытайтесь внести неавторизованные изменения в архитектуру модели или в её исполняемые компоненты. Проверьте процессы рассмотрения изменений, контроля целостности, подписания и одобрения развёртывания, а также механизмы восстановления.</p></a>
 </div>
 
 

@@ -1,18 +1,18 @@
-version: "2026.06"
+version: "2026.07"
 totals:
     case-study:
-        total: 63
-        name_translated: 63
-        body_translated: 63
-        procedures_total: 504
-        procedures_translated: 504
-        fully_translated: 63
+        total: 68
+        name_translated: 68
+        body_translated: 68
+        procedures_total: 571
+        procedures_translated: 571
+        fully_translated: 68
         needs_review: 0
     mitigation:
-        total: 35
-        name_translated: 35
-        body_translated: 35
-        fully_translated: 35
+        total: 37
+        name_translated: 37
+        body_translated: 37
+        fully_translated: 37
         needs_review: 0
     resource:
         total: 6
@@ -27,10 +27,10 @@ totals:
         fully_translated: 16
         needs_review: 0
     technique:
-        total: 173
-        name_translated: 173
-        body_translated: 173
-        fully_translated: 173
+        total: 178
+        name_translated: 178
+        body_translated: 178
+        fully_translated: 178
         needs_review: 0
 missing: []
 partial: []

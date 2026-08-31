@@ -8,7 +8,7 @@ description: Злоумышленники могут добиться полно
 generated: true
 generated_by: atlasgen
 maturity: feasible
-mitigation_count: 0
+mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:
     - Predictive AI
@@ -47,4 +47,11 @@ url: /techniques/AML.T0112.001/
 
 <div class="relation-list">
 <a class="relation-item" href="/techniques/AML.T0112.000/"><span class="relation-id">AML.T0112.000</span><strong>Локальный ИИ-агент</strong><span class="relation-meta">Подтехника</span></a>
+</div>
+
+
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0005/"><span class="relation-id">AML.M0005</span><strong>Контроль доступа к ИИ-моделям и хранимым данным</strong><p>Ограничивайте права на запись в реестры моделей и хранилища ИИ-артефактов.</p></a>
 </div>

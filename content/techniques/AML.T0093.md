@@ -13,7 +13,7 @@ modified_date: "2026-05-27"
 platforms:
     - Generative AI
     - Agentic AI
-procedure_count: 11
+procedure_count: 14
 source_name: Prompt Infiltration via Public-Facing Application
 subtechnique_count: 0
 subtechnique_of: ""
@@ -53,4 +53,7 @@ url: /techniques/AML.T0093/
 <a class="relation-item" href="/studies/AML.CS0046/"><span class="relation-id">AML.CS0046</span><strong>Уничтожение данных через косвенную промпт-инъекцию, нацеленную на Claude Computer Use</strong><span class="relation-meta">Актор: HiddenLayer / Тактика: AML.TA0004 Первичный доступ</span><p>Исследователи встроили вредоносный промпт в PDF-документ. Такой документ мог попасть в систему жертвы через публично доступное приложение, например электронную почту или общее хранилище документов.</p></a>
 <a class="relation-item" href="/studies/AML.CS0059/"><span class="relation-id">AML.CS0059</span><strong>EchoLeak: промпт-инъекция нулевого клика против M365 Copilot для эксфильтрации данных</strong><span class="relation-meta">Актор: Aim Labs / Тактика: AML.TA0004 Первичный доступ</span><p>Исследователи отправили письмо в почтовый ящик пользователя Microsoft 365.</p></a>
 <a class="relation-item" href="/studies/AML.CS0060/"><span class="relation-id">AML.CS0060</span><strong>Межсайтовый скриптинг (XSS) через манипуляцию промптом в ИИ-чат-боте Lenovo</strong><span class="relation-meta">Актор: Cybernews Research Team / Тактика: AML.TA0004 Первичный доступ</span><p>Исследователи внедрили подконтрольный злоумышленнику HTML в рабочий процесс поддержки Lenovo, отправив промпт Lena через публичный чат-интерфейс. В результате сгенерированная нагрузка была сохранена в истории чата для последующего отображения.</p></a>
+<a class="relation-item" href="/studies/AML.CS0063/"><span class="relation-id">AML.CS0063</span><strong>Атаки на Gemini с помощью промптов в приглашениях Google Calendar</strong><span class="relation-meta">Актор: SafeBreach Research Team / Тактика: AML.TA0004 Первичный доступ</span><p>Исследователи отправили отравленное приглашение Calendar или электронное письмо с вредоносными инструкциями в заголовке приглашения или теме письма.</p></a>
+<a class="relation-item" href="/studies/AML.CS0066/"><span class="relation-id">AML.CS0066</span><strong>ZombieAgent: атака на ChatGPT с эксфильтрацией данных</strong><span class="relation-meta">Актор: Radware Security Researchers / Тактика: AML.TA0004 Первичный доступ</span><p>Исследователи отправили вредоносное письмо в подключённый к ChatGPT почтовый ящик либо предоставили вредоносный документ, который можно было загрузить в ChatGPT или получить через подключённый сервис. В результате промпт оказался в источнике данных, к которому имел доступ ИИ-агент жертвы.</p></a>
+<a class="relation-item" href="/studies/AML.CS0067/"><span class="relation-id">AML.CS0067</span><strong>Раскрытие секретов через Claude Code GitHub Action</strong><span class="relation-meta">Актор: Microsoft Defender Security Research Team / Тактика: AML.TA0004 Первичный доступ</span><p>Исследователи внедрили вредоносный промпт через подконтрольное злоумышленнику содержимое GitHub, которое обрабатывал лабораторный рабочий процесс. Так они смоделировали доставку через текст issue, описание pull request или комментарий, поступающие на обработку Claude Code Action.</p></a>
 </div>

@@ -8,7 +8,7 @@ description: Злоумышленник пытается собрать инфо
 generated: true
 generated_by: atlasgen
 modified_date: "2025-04-09"
-procedure_count: 25
+procedure_count: 28
 source_name: Reconnaissance
 technique_count: 16
 title: Разведка
@@ -62,4 +62,4 @@ url: /tactics/AML.TA0002/
 </div>
 
 
-Показано 12 из 25 примеров.
+Показано 12 из 28 примеров.

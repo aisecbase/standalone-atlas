@@ -513,6 +513,40 @@ func TestAdaptAtlasV6RestoresRelationshipsAndPlatforms(t *testing.T) {
 	}
 }
 
+func TestPageForTechniqueIncludesLegacyAliases(t *testing.T) {
+	tests := []struct {
+		id   string
+		want string
+	}{
+		{id: "AML.T0115.000", want: "/techniques/AML.T0019/"},
+		{id: "AML.T0115.001", want: "/techniques/AML.T0058/"},
+		{id: "AML.T0115.002", want: "/techniques/AML.T0104/"},
+		{id: "AML.T0115", want: ""},
+	}
+	catalog := Catalog{Translations: Translations{Objects: map[string]Translation{}}}
+
+	for _, test := range tests {
+		t.Run(test.id, func(t *testing.T) {
+			page := pageForTechnique(Object{ID: test.id}, catalog)
+			value, exists := page.Params["aliases"]
+			if test.want == "" {
+				if exists {
+					t.Fatalf("aliases = %#v, want none", value)
+				}
+				return
+			}
+
+			aliases, ok := value.([]string)
+			if !ok {
+				t.Fatalf("aliases type = %T, want []string", value)
+			}
+			if len(aliases) != 1 || aliases[0] != test.want {
+				t.Fatalf("aliases = %#v, want [%q]", aliases, test.want)
+			}
+		})
+	}
+}
+
 func TestSanitizeMarkdownEscapesRawHTMLAndUnsafeLinks(t *testing.T) {
 	input := `<sup>[1]</sup><br><img src=x onerror=alert(1)> [safe](/techniques/AML.T0000) [bad](javascript:alert(1)) [titled](javascript:alert(1) "bad")
 [ref]: javascript:alert(1)`

@@ -12,9 +12,9 @@ generated_by: atlasgen
 ml_lifecycle:
     - Business and Data Understanding
     - Deployment
-modified_date: "2026-03-19"
+modified_date: "2026-07-31"
 source_name: Segmentation of AI Agent Components
-technique_count: 6
+technique_count: 7
 title: Сегментация компонентов ИИ-агента
 url: /mitigations/AML.M0032/
 ---
@@ -25,6 +25,7 @@ url: /mitigations/AML.M0032/
 ## Связанные техники
 
 <div class="relation-list">
+<a class="relation-item" href="/techniques/AML.T0006/"><span class="relation-id">AML.T0006</span><strong>Активное сканирование</strong><p>Сегментируйте компоненты ИИ-агента так, чтобы доступный извне сервис не раскрывал сведения о других внутренних компонентах и не открывал к ним сетевой доступ.</p></a>
 <a class="relation-item" href="/techniques/AML.T0053/"><span class="relation-id">AML.T0053</span><strong>Вызов инструментов ИИ-агента</strong><p>Сегментация может помешать злоумышленникам использовать инструменты в агентном рабочем процессе для выполнения небезопасных действий, влияющих на другие компоненты.</p></a>
 <a class="relation-item" href="/techniques/AML.T0085/"><span class="relation-id">AML.T0085</span><strong>Данные из ИИ-сервисов</strong><p>Сегментация может помешать злоумышленникам использовать инструменты в агентном рабочем процессе для сбора чувствительных данных из ИИ-сервисов.</p></a>
 <a class="relation-item" href="/techniques/AML.T0085.000/"><span class="relation-id">AML.T0085.000</span><strong>Базы данных RAG</strong><p>Сегментация может помешать злоумышленникам использовать инструменты в агентном рабочем процессе для сбора чувствительных данных из баз данных RAG.</p></a>

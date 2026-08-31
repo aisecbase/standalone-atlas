@@ -8,7 +8,7 @@ description: Злоумышленник пытается избежать обн
 generated: true
 generated_by: atlasgen
 modified_date: "2025-04-09"
-procedure_count: 42
+procedure_count: 50
 source_name: Defense Evasion
 technique_count: 17
 title: Уклонение от защиты
@@ -54,11 +54,11 @@ url: /tactics/AML.TA0007/
 <a class="relation-item" href="/studies/AML.CS0026/"><span class="relation-id">AML.CS0026</span><strong>Перехват финансовой транзакции с использованием M365 Copilot в роли инсайдера</strong><span class="relation-meta">Актор: Zenity / Тактика: AML.TA0007 Уклонение от защиты</span><p>Исследователи добавили инструкции для манипуляции ссылками на источники в ответе, злоупотребляя доверием пользователя к Copilot. Инструкции заставляли Copilot ссылаться только на один `EmailMessage` в формате `[^1^]` и игнорировать остальные файлы.</p></a>
 <a class="relation-item" href="/studies/AML.CS0026/"><span class="relation-id">AML.CS0026</span><strong>Перехват финансовой транзакции с использованием M365 Copilot в роли инсайдера</strong><span class="relation-meta">Актор: Zenity / Тактика: AML.TA0007 Уклонение от защиты</span><p>Чтобы получатель письма не заметил атаку, исследователи обфусцировали вредоносную часть письма.</p></a>
 <a class="relation-item" href="/studies/AML.CS0026/"><span class="relation-id">AML.CS0026</span><strong>Перехват финансовой транзакции с использованием M365 Copilot в роли инсайдера</strong><span class="relation-meta">Актор: Zenity / Тактика: AML.TA0007 Уклонение от защиты</span><p>Когда пользователь ищет банковские реквизиты и извлекается отравленная RAG-запись, маркер `Actual Snippet:` заставляет LLM воспринимать извлеченный текст как фрагмент реального документа.</p></a>
-<a class="relation-item" href="/studies/AML.CS0027/"><span class="relation-id">AML.CS0027</span><strong>Путаница с организациями на Hugging Face</strong><span class="relation-meta">Актор: threlfall_hax / Тактика: AML.TA0007 Уклонение от защиты</span><p>Сотрудники целевой компании нашли поддельную организацию Hugging Face и вступили в нее. Поскольку имя учетной записи совпадало или выглядело похожим на название реальной организации, сотрудники приняли ее за официальную.</p></a>
+<a class="relation-item" href="/studies/AML.CS0027/"><span class="relation-id">AML.CS0027</span><strong>Путаница с организациями на Hugging Face</strong><span class="relation-meta">Актор: threlfall_hax / Тактика: AML.TA0007 Уклонение от защиты</span><p>Сотрудники целевой компании нашли поддельную организацию на Hugging Face и присоединились к ней. Поскольку имя учётной записи этой организации совпадало с названием реальной организации или выглядело почти так же, сотрудники приняли учётную запись за официальную.</p></a>
 <a class="relation-item" href="/studies/AML.CS0027/"><span class="relation-id">AML.CS0027</span><strong>Путаница с организациями на Hugging Face</strong><span class="relation-meta">Актор: threlfall_hax / Тактика: AML.TA0007 Уклонение от защиты</span><p>Исследователь назвал процесс Sliver `training.bin`, чтобы замаскировать его под легитимный процесс обучения модели. При этом модель продолжает работать как обычно, поэтому пользователь с меньшей вероятностью заметит проблему.</p></a>
 <a class="relation-item" href="/studies/AML.CS0031/"><span class="relation-id">AML.CS0031</span><strong>Вредоносные модели на Hugging Face</strong><span class="relation-meta">Актор: Unknown / Тактика: AML.TA0007 Уклонение от защиты</span><p>Злоумышленнику удалось избежать обнаружения [Picklescan](https://github.com/mmaitre314/picklescan), который Hugging Face использует для пометки вредоносных моделей. Это произошло потому, что модель невозможно было полностью десериализовать. В ходе анализа исследователи ReversingLabs установили, что вредоносная нагрузка при этом все равно выполнялась.</p></a>
 <a class="relation-item" href="/studies/AML.CS0032/"><span class="relation-id">AML.CS0032</span><strong>Попытка обхода ML-системы обнаружения фишинговых веб-страниц</strong><span class="relation-meta">Актор: Unknown / Тактика: AML.TA0007 Уклонение от защиты</span><p>Злоумышленникам удалось обойти модель визуального сходства, использовавшуюся для обнаружения имитации бренда. Однако другие компоненты системы обнаружения фишинга успешно выявили эти фишинговые сайты.</p></a>
 </div>
 
 
-Показано 12 из 42 примеров.
+Показано 12 из 50 примеров.

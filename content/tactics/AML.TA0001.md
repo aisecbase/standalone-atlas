@@ -8,9 +8,9 @@ description: Злоумышленник использует свои знани
 generated: true
 generated_by: atlasgen
 modified_date: "2025-04-09"
-procedure_count: 35
+procedure_count: 37
 source_name: AI Attack Staging
-technique_count: 28
+technique_count: 30
 title: Подготовка атаки на ИИ
 url: /tactics/AML.TA0001/
 ---
@@ -40,6 +40,8 @@ url: /tactics/AML.TA0001/
 <a class="relation-item" href="/techniques/AML.T0018.001/"><span class="relation-id">AML.T0018.001</span><strong>Изменение архитектуры ИИ-модели</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0018.002/"><span class="relation-id">AML.T0018.002</span><strong>Встраивание вредоносного ПО</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0018.002/"><span class="relation-id">AML.T0018.002</span><strong>Встраивание вредоносного ПО</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0018.003/"><span class="relation-id">AML.T0018.003</span><strong>Изменение логики формирования промпта</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0018.003/"><span class="relation-id">AML.T0018.003</span><strong>Изменение логики формирования промпта</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0042/"><span class="relation-id">AML.T0042</span><strong>Проверка атаки</strong></a>
 <a class="relation-item" href="/techniques/AML.T0043/"><span class="relation-id">AML.T0043</span><strong>Создание состязательных данных</strong></a>
 <a class="relation-item" href="/techniques/AML.T0043.000/"><span class="relation-id">AML.T0043.000</span><strong>Оптимизация в режиме белого ящика</strong><span class="relation-meta">Подтехника</span></a>
@@ -75,4 +77,4 @@ url: /tactics/AML.TA0001/
 </div>
 
 
-Показано 12 из 35 примеров.
+Показано 12 из 37 примеров.

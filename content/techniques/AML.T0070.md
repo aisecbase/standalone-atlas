@@ -8,7 +8,7 @@ description: Злоумышленники могут внедрять вредо
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 0
+mitigation_count: 2
 modified_date: "2026-05-27"
 platforms:
     - Generative AI
@@ -32,6 +32,14 @@ url: /techniques/AML.T0070/
 
 <div class="relation-list">
 <a class="relation-item" href="/tactics/AML.TA0006/"><span class="relation-id">AML.TA0006</span><strong>Закрепление</strong></a>
+</div>
+
+
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Гардрейлы для генеративного ИИ</strong><p>Применяйте гардрейлы для извлечения данных, чтобы отклонять недоверенное, вредоносное, нерелевантное или неподтверждённое содержимое RAG.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Размещайте контролируемое вредоносное или вводящее в заблуждение содержимое в репрезентативных источниках поступления данных. Совершенствуйте механизмы допуска источников, отслеживание происхождения данных, валидацию содержимого, средства контроля индексирования и фильтрацию при извлечении данных.</p></a>
 </div>
 
 

@@ -8,7 +8,7 @@ description: Злоумышленник пытается украсть ИИ-а�
 generated: true
 generated_by: atlasgen
 modified_date: "2025-04-09"
-procedure_count: 23
+procedure_count: 29
 source_name: Exfiltration
 technique_count: 12
 title: Эксфильтрация
@@ -47,7 +47,7 @@ url: /tactics/AML.TA0010/
 <a class="relation-item" href="/studies/AML.CS0015/"><span class="relation-id">AML.CS0015</span><strong>Компрометация цепочки зависимостей PyTorch</strong><span class="relation-meta">Актор: Unknown / Тактика: AML.TA0010 Эксфильтрация</span><p>Вся собранная информация, включая содержимое файлов, отправлялась через зашифрованные DNS-запросы на домен `*[dot]h4ck[dot]cfd` с использованием DNS-сервера `wheezy[dot]io`.</p></a>
 <a class="relation-item" href="/studies/AML.CS0018/"><span class="relation-id">AML.CS0018</span><strong>Выполнение произвольного кода через Google Colab</strong><span class="relation-meta">Актор: Tony Piazza / Тактика: AML.TA0010 Эксфильтрация</span><p>Получив доступ к Google Drive, злоумышленник может открыть сервер для эксфильтрации частных данных или артефактов ML-моделей. В примере из исходной статьи показаны загрузка, установка и использование `ngrok`, серверного приложения, чтобы открыть доступный злоумышленнику URL к Google Drive жертвы и всем его файлам.</p></a>
 <a class="relation-item" href="/studies/AML.CS0021/"><span class="relation-id">AML.CS0021</span><strong>Эксфильтрация разговоров ChatGPT</strong><span class="relation-meta">Актор: Embrace The Red / Тактика: AML.TA0010 Эксфильтрация</span><p>ChatGPT автоматически отображает изображение пользователю, из-за чего отправляет запрос на сервер злоумышленника и передает туда разговор пользователя.</p></a>
-<a class="relation-item" href="/studies/AML.CS0023/"><span class="relation-id">AML.CS0023</span><strong>ShadowRay</strong><span class="relation-meta">Актор: Ray / Тактика: AML.TA0010 Эксфильтрация</span><p>ИИ-артефакты, учетные данные и другая ценная информация могут быть эксфильтрованы киберсредствами. Исследователи обнаружили признаки reverse shell на уязвимых кластерах; такие оболочки могут использоваться для закрепления, продолжения выполнения произвольного кода и эксфильтрации данных.</p></a>
+<a class="relation-item" href="/studies/AML.CS0023/"><span class="relation-id">AML.CS0023</span><strong>ShadowRay: захват кластеров Ray, доступных из интернета</strong><span class="relation-meta">Актор: Unknown / Тактика: AML.TA0010 Эксфильтрация</span><p>ИИ-артефакты, учетные данные и другая ценная информация могут быть эксфильтрованы киберсредствами. Исследователи обнаружили признаки reverse shell на уязвимых кластерах; такие оболочки могут использоваться для закрепления, продолжения выполнения произвольного кода и эксфильтрации данных.</p></a>
 <a class="relation-item" href="/studies/AML.CS0024/"><span class="relation-id">AML.CS0024</span><strong>Червь Morris II: атака на основе RAG</strong><span class="relation-meta">Актор: Stav Cohen, Ron Bitton, Ben Nassi / Тактика: AML.TA0010 Эксфильтрация</span><p>Вредоносные инструкции в промпте заставляют сгенерированный ответ раскрывать чувствительные данные, например электронные письма, адреса и номера телефонов.</p></a>
 <a class="relation-item" href="/studies/AML.CS0027/"><span class="relation-id">AML.CS0027</span><strong>Путаница с организациями на Hugging Face</strong><span class="relation-meta">Актор: threlfall_hax / Тактика: AML.TA0010 Эксфильтрация</span><p>Обнаруженные учетные данные могли быть эксфильтрованы через имплант Sliver.</p></a>
 <a class="relation-item" href="/studies/AML.CS0029/"><span class="relation-id">AML.CS0029</span><strong>Эксфильтрация разговоров Google Bard</strong><span class="relation-meta">Актор: Embrace the Red / Тактика: AML.TA0010 Эксфильтрация</span><p>Bard автоматически отображает Markdown-разметку, отправляя запрос к Google Apps Script и тем самым эксфильтруя разговор пользователя. Content Security Policy Bard разрешает такой запрос, потому что URL размещен на домене, принадлежащем Google.</p></a>
@@ -58,4 +58,4 @@ url: /tactics/AML.TA0010/
 </div>
 
 
-Показано 12 из 23 примеров.
+Показано 12 из 29 примеров.

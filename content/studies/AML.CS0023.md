@@ -1,5 +1,5 @@
 ---
-actor: Ray
+actor: Unknown
 atlas_id: AML.CS0023
 atlas_type: case-study
 case_study_type: incident
@@ -85,9 +85,9 @@ references:
     - title: 'ShadowRay: AI Infrastructure Is Being Exploited In the Wild'
       url: https://protectai.com/threat-research/shadowray-ai-infrastructure-is-being-exploited-in-the-wild
 reporter: Oligo Research Team
-source_name: ShadowRay
-target: Multiple systems
-title: ShadowRay
+source_name: 'ShadowRay: Hijacking Exposed Ray Clusters'
+target: Exposed Ray Clusters
+title: 'ShadowRay: захват кластеров Ray, доступных из интернета'
 url: /studies/AML.CS0023/
 ---
 

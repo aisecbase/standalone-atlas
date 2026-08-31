@@ -36,7 +36,7 @@ url: /techniques/AML.T0061/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Защитные ограничения (Guardrails) для генеративного ИИ</strong><p>Защитные ограничения могут помогать предотвращать атаки репликации во входных и выходных данных модели.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Гардрейлы для генеративного ИИ</strong><p>Гардрейлы могут помогать предотвращать атаки репликации во входных и выходных данных модели.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0021/"><span class="relation-id">AML.M0021</span><strong>Правила и инструкции для генеративного ИИ</strong><p>Инструкции могут направлять модель к созданию более безопасных выходных данных и предотвращать генерацию самореплицирующихся выходных данных.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0022/"><span class="relation-id">AML.M0022</span><strong>Выравнивание модели генеративного ИИ</strong><p>Выравнивание модели может повысить защищенность моделей от атак с самореплицирующимися промптами.</p></a>
 </div>

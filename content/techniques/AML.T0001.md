@@ -8,7 +8,7 @@ description: Как и при поиске в открытых техничес�
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 0
+mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:
     - Enterprise
@@ -31,6 +31,13 @@ url: /techniques/AML.T0001/
 
 <div class="relation-list">
 <a class="relation-item" href="/tactics/AML.TA0002/"><span class="relation-id">AML.TA0002</span><strong>Разведка</strong></a>
+</div>
+
+
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0000/"><span class="relation-id">AML.M0000</span><strong>Ограничение публичного раскрытия информации</strong><p>Ограничивайте раскрытие сведений об ИИ-стеке, используемом в продакшене, и технических подробностей конкретной системы, которые позволяют злоумышленникам соотнести результаты общедоступных исследований уязвимостей с развёрнутой целевой системой.</p></a>
 </div>
 
 

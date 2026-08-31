@@ -8,7 +8,7 @@ description: Злоумышленники могут выявлять источ
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 0
+mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:
     - Generative AI
@@ -32,6 +32,13 @@ url: /techniques/AML.T0064/
 
 <div class="relation-list">
 <a class="relation-item" href="/tactics/AML.TA0002/"><span class="relation-id">AML.TA0002</span><strong>Разведка</strong></a>
+</div>
+
+
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0000/"><span class="relation-id">AML.M0000</span><strong>Ограничение публичного раскрытия информации</strong><p>Не публикуйте в открытом доступе документацию с описанием источников данных и индексов RAG-системы, а также её архитектуры извлечения.</p></a>
 </div>
 
 

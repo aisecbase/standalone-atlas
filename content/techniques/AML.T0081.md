@@ -8,7 +8,7 @@ description: Злоумышленники могут изменять конфи
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 0
+mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:
     - Agentic AI
@@ -35,6 +35,13 @@ url: /techniques/AML.T0081/
 <div class="relation-list">
 <a class="relation-item" href="/tactics/AML.TA0006/"><span class="relation-id">AML.TA0006</span><strong>Закрепление</strong></a>
 <a class="relation-item" href="/tactics/AML.TA0007/"><span class="relation-id">AML.TA0007</span><strong>Уклонение от защиты</strong></a>
+</div>
+
+
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Отрабатывайте сценарии неавторизованных изменений системных промптов, инструментов, источников знаний, настроек безопасности и требований к одобрению. Совершенствуйте средства контроля доступа, процедуры одобрения изменений, мониторинг целостности и механизмы восстановления системы на основе доверенных конфигураций.</p></a>
 </div>
 
 

@@ -4,16 +4,16 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2023-10-25"
-description: Злоумышленник может внедрять промпты косвенно через отдельный канал данных, который обрабатывает LLM, например через текст или мультимедийные данные, полученные из баз данных или с веб-сайтов. Такие вредоносные...
+description: Злоумышленник может косвенно внедрять промпты через отдельный канал данных, содержимое которого LLM принимает на обработку, например в виде текста или мультимедийных материалов, извлечённых из баз данных или с...
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 2
+mitigation_count: 3
 modified_date: "2026-05-27"
 platforms:
     - Generative AI
     - Agentic AI
-procedure_count: 13
+procedure_count: 18
 source_name: Indirect
 subtechnique_count: 0
 subtechnique_of: AML.T0051
@@ -23,9 +23,9 @@ title: Косвенная промпт-инъекция
 url: /techniques/AML.T0051.001/
 ---
 
-Злоумышленник может внедрять промпты косвенно через отдельный канал данных, который обрабатывает LLM, например через текст или мультимедийные данные, полученные из баз данных или с веб-сайтов.
+Злоумышленник может косвенно внедрять промпты через отдельный канал данных, содержимое которого LLM принимает на обработку, например в виде текста или мультимедийных материалов, извлечённых из баз данных или с веб-сайтов.
 
-Такие вредоносные промпты могут быть скрыты или обфусцированы от пользователя. Этот тип инъекции может использоваться злоумышленником для закрепления в системе или для атаки на неосведомленного пользователя системы.
+Такие вредоносные промпты могут быть скрыты от пользователя или обфусцированы таким образом, чтобы пользователь их не заметил. Злоумышленник может использовать этот тип инъекции, чтобы закрепиться в системе или нацелить атаку на ничего не подозревающего пользователя системы.
 
 
 ## Тактики
@@ -55,6 +55,7 @@ url: /techniques/AML.T0051.001/
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0024/"><span class="relation-id">AML.M0024</span><strong>Логирование телеметрии ИИ</strong><p>Логирование телеметрии может помочь выявить отправку небезопасных промптов в LLM.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0033/"><span class="relation-id">AML.M0033</span><strong>Валидация входных и выходных данных компонентов ИИ-агента</strong><p>Валидация может помешать злоумышленникам выполнять промпт-инъекции, способные повлиять на агентные рабочие процессы.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Размещайте контролируемые вредоносные инструкции во внешнем или извлечённом содержимом, которое обрабатывает система. Совершенствуйте границы доверия при обработке содержимого, средства контроля извлечения, изоляцию инструкций и ограничения на действия, выполняемые в результате.</p></a>
 </div>
 
 
@@ -71,7 +72,12 @@ url: /techniques/AML.T0051.001/
 <a class="relation-item" href="/studies/AML.CS0040/"><span class="relation-id">AML.CS0040</span><strong>Взлом памяти ChatGPT с помощью промпт-инъекции</strong><span class="relation-meta">Актор: Embrace the Red / Тактика: AML.TA0005 Выполнение</span><p>Когда пользователь ссылался на что-либо в общем документе, его содержимое добавлялось в контекст чата, и ChatGPT выполнял промпт.</p></a>
 <a class="relation-item" href="/studies/AML.CS0045/"><span class="relation-id">AML.CS0045</span><strong>Эксфильтрация данных через MCP-сервер, используемый Cursor</strong><span class="relation-meta">Актор: Backslash Security Research Team / Тактика: AML.TA0005 Выполнение</span><p>При обработке вредоносного сайта MCP-сервер вернул внедренный промпт MCP-клиенту и отравил контекст LLM в Cursor. После этого Cursor выполнил промпт, встроенный в сайт.</p></a>
 <a class="relation-item" href="/studies/AML.CS0046/"><span class="relation-id">AML.CS0046</span><strong>Уничтожение данных через косвенную промпт-инъекцию, нацеленную на Claude Computer Use</strong><span class="relation-meta">Актор: HiddenLayer / Тактика: AML.TA0005 Выполнение</span><p>Когда пользователь попросил Claude взаимодействовать с PDF-файлом, встроенный промпт был выполнен.</p></a>
-<a class="relation-item" href="/studies/AML.CS0048/"><span class="relation-id">AML.CS0048</span><strong>Публично доступные интерфейсы управления ClawdBot позволили получить учетные данные и выполнить команды</strong><span class="relation-meta">Актор: Jamieson O&#39;Reilly / Тактика: AML.TA0005 Выполнение</span><p>Исследователь смог напрямую отправлять промпты ClawdBot через интерфейс управления.</p></a>
+<a class="relation-item" href="/studies/AML.CS0048/"><span class="relation-id">AML.CS0048</span><strong>Публично доступные интерфейсы управления ClawdBot позволили получить учётные данные и выполнить команды</strong><span class="relation-meta">Актор: Jamieson O&#39;Reilly / Тактика: AML.TA0005 Выполнение</span><p>Исследователь смог напрямую отправлять промпты ClawdBot через интерфейс управления.</p></a>
+<a class="relation-item" href="/studies/AML.CS0049/"><span class="relation-id">AML.CS0049</span><strong>Компрометация цепочки поставки через отравленный навык ClawdBot</strong><span class="relation-meta">Актор: Jamieson O&#39;Reilly / Тактика: AML.TA0005 Выполнение</span><p>Claude Code прочитал все файлы, входившие в состав навыка, и выполнил вредоносный промпт из файла `rules/logic.md`.</p></a>
 <a class="relation-item" href="/studies/AML.CS0051/"><span class="relation-id">AML.CS0051</span><strong>Использование OpenClaw для командования и управления через промпт-инъекцию</strong><span class="relation-meta">Актор: HiddenLayer / Тактика: AML.TA0005 Выполнение</span><p>OpenClaw выполнил промпт-инъекцию, встроенную во вредоносный сайт.</p></a>
+<a class="relation-item" href="/studies/AML.CS0054/"><span class="relation-id">AML.CS0054</span><strong>Эксфильтрация данных через отравленный удалённый MCP-инструмент</strong><span class="relation-meta">Актор: Invariant Labs / Тактика: AML.TA0005 Выполнение</span><p>Агент обработал вредоносные инструкции и последовал им; они поступили через доступное модели определение удалённого инструмента, а не непосредственно из составленного злоумышленником пользовательского сообщения.</p></a>
 <a class="relation-item" href="/studies/AML.CS0055/"><span class="relation-id">AML.CS0055</span><strong>AI ClickFix: захват управления computer-use-агентами с помощью ClickFix</strong><span class="relation-meta">Актор: Embrace the Red / Тактика: AML.TA0005 Выполнение</span><p>Промпт инструктировал Computer Use Agent выполнить несколько действий: нажать &#34;Please see instructions to confirm&#34;, затем найти и нажать значок терминала, нажать `SHIFT+CTRL+V` и `RETURN`, после чего нажать кнопку &#34;OK&#34;.</p></a>
+<a class="relation-item" href="/studies/AML.CS0063/"><span class="relation-id">AML.CS0063</span><strong>Атаки на Gemini с помощью промптов в приглашениях Google Calendar</strong><span class="relation-meta">Актор: SafeBreach Research Team / Тактика: AML.TA0005 Выполнение</span><p>Когда жертва попросила Gemini суммаризировать события Calendar или электронные письма, Gemini извлёк подконтрольное злоумышленнику содержимое и включил его в свой контекст.</p></a>
+<a class="relation-item" href="/studies/AML.CS0066/"><span class="relation-id">AML.CS0066</span><strong>ZombieAgent: атака на ChatGPT с эксфильтрацией данных</strong><span class="relation-meta">Актор: Radware Security Researchers / Тактика: AML.TA0005 Выполнение</span><p>Последующий легитимный запрос пользователя, например просьба к ChatGPT суммаризировать содержимое почтового ящика, заставил агента извлечь вредоносное содержимое и выполнить скрытые инструкции. Пользователь не взаимодействовал с вредоносным письмом осознанно.</p></a>
+<a class="relation-item" href="/studies/AML.CS0067/"><span class="relation-id">AML.CS0067</span><strong>Раскрытие секретов через Claude Code GitHub Action</strong><span class="relation-meta">Актор: Microsoft Defender Security Research Team / Тактика: AML.TA0005 Выполнение</span><p>Claude Code Action включил вредоносное содержимое GitHub в контекст модели. Claude интерпретировал его как инструкции и выполнил их.</p></a>
 </div>

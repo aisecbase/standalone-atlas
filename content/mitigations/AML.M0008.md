@@ -14,7 +14,7 @@ ml_lifecycle:
     - Monitoring and Maintenance
 modified_date: "2025-12-23"
 source_name: Validate AI Model
-technique_count: 8
+technique_count: 10
 title: Валидация ИИ-модели
 url: /mitigations/AML.M0008/
 ---
@@ -35,4 +35,6 @@ url: /mitigations/AML.M0008/
 <a class="relation-item" href="/techniques/AML.T0043/"><span class="relation-id">AML.T0043</span><strong>Создание состязательных данных</strong><p>Проверка ИИ-модели на состязательных данных помогает убедиться, что модель работает как задумано и устойчива к состязательным входным данным.</p></a>
 <a class="relation-item" href="/techniques/AML.T0043.004/"><span class="relation-id">AML.T0043.004</span><strong>Добавление бэкдор-триггера</strong><p>Проверка того, что ИИ-модель не реагирует на бэкдор-триггеры, может повысить уверенность в том, что модель не была отравлена.</p></a>
 <a class="relation-item" href="/techniques/AML.T0057/"><span class="relation-id">AML.T0057</span><strong>Утечка данных из LLM</strong><p>Тщательная оценка ИИ-модели может использоваться для выявления рисков для конфиденциальности, утечек данных и возможности раскрытия чувствительной информации.</p></a>
+<a class="relation-item" href="/techniques/AML.T0115/"><span class="relation-id">AML.T0115</span><strong>Публикация отравленных ИИ-артефактов</strong><p>Перед публикацией в каталоге репозитории моделей проверяют поступающие материалы на наличие бэкдоров, утечек данных, состязательного воздействия и неожиданного поведения.</p></a>
+<a class="relation-item" href="/techniques/AML.T0115.001/"><span class="relation-id">AML.T0115.001</span><strong>Модели</strong><p>Перед публикацией в каталоге репозитории моделей проверяют поступающие материалы на наличие бэкдоров, утечек данных, состязательного воздействия и неожиданного поведения.</p></a>
 </div>

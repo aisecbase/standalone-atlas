@@ -8,7 +8,7 @@ description: Злоумышленники могут получить досту
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 0
+mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:
     - Enterprise
@@ -31,6 +31,13 @@ url: /techniques/AML.T0078/
 
 <div class="relation-list">
 <a class="relation-item" href="/tactics/AML.TA0004/"><span class="relation-id">AML.TA0004</span><strong>Первичный доступ</strong></a>
+</div>
+
+
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Гардрейлы для генеративного ИИ</strong><p>Применяйте гардрейлы для извлечения и входных данных, а также гардрейлы для инструментов и действий, чтобы обнаруживать и блокировать встроенные в веб-сайты вредоносные инструкции до их выполнения.</p></a>
 </div>
 
 

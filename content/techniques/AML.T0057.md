@@ -8,12 +8,12 @@ description: Злоумышленники могут создавать пром
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 4
+mitigation_count: 5
 modified_date: "2026-05-27"
 platforms:
     - Generative AI
     - Agentic AI
-procedure_count: 1
+procedure_count: 2
 source_name: LLM Data Leakage
 subtechnique_count: 0
 subtechnique_of: ""
@@ -41,9 +41,10 @@ url: /techniques/AML.T0057/
 
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0008/"><span class="relation-id">AML.M0008</span><strong>Валидация ИИ-модели</strong><p>Тщательная оценка ИИ-модели может использоваться для выявления рисков для конфиденциальности, утечек данных и возможности раскрытия чувствительной информации.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Защитные ограничения (Guardrails) для генеративного ИИ</strong><p>Защитные ограничения могут обнаруживать чувствительные данные и персональные данные в выходных данных модели.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Гардрейлы для генеративного ИИ</strong><p>Гардрейлы могут обнаруживать чувствительные данные и персональные данные в выходных данных модели.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0021/"><span class="relation-id">AML.M0021</span><strong>Правила и инструкции для генеративного ИИ</strong><p>Инструкции для модели могут предписывать ей отказываться отвечать на небезопасные входные данные.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0022/"><span class="relation-id">AML.M0022</span><strong>Выравнивание модели генеративного ИИ</strong><p>Выравнивание модели может повысить параметрическую безопасность модели, уводя ее от небезопасных промптов и ответов.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0022/"><span class="relation-id">AML.M0022</span><strong>Выравнивание модели генеративного ИИ</strong><p>Выравнивание может повысить безопасность, заложенную в параметры модели, снижая её восприимчивость к небезопасным промптам и вероятность формирования небезопасных ответов.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Размещайте синтетические секреты или записи-канарейки в репрезентативных источниках данных и пытайтесь извлечь их через промпты, механизмы извлечения данных, инструменты и отображаемые выходные данные. Совершенствуйте разграничение полномочий, фильтрацию, изоляцию тенантов и обнаружение эксфильтрации.</p></a>
 </div>
 
 
@@ -51,4 +52,5 @@ url: /techniques/AML.T0057/
 
 <div class="relation-list procedure-relations">
 <a class="relation-item" href="/studies/AML.CS0024/"><span class="relation-id">AML.CS0024</span><strong>Червь Morris II: атака на основе RAG</strong><span class="relation-meta">Актор: Stav Cohen, Ron Bitton, Ben Nassi / Тактика: AML.TA0010 Эксфильтрация</span><p>Вредоносные инструкции в промпте заставляют сгенерированный ответ раскрывать чувствительные данные, например электронные письма, адреса и номера телефонов.</p></a>
+<a class="relation-item" href="/studies/AML.CS0067/"><span class="relation-id">AML.CS0067</span><strong>Раскрытие секретов через Claude Code GitHub Action</strong><span class="relation-meta">Актор: Microsoft Defender Security Research Team / Тактика: AML.TA0010 Эксфильтрация</span><p>Claude вывел API-ключ Anthropic после удаления его префикса `sk-ant-`. Из-за этого преобразования сканер секретов GitHub не смог распознать ключ, тогда как исследователи могли восстановить исходное значение, вернув префикс.</p></a>
 </div>

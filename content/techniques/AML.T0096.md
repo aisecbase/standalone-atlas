@@ -8,7 +8,7 @@ description: Злоумышленники могут использовать AP
 generated: true
 generated_by: atlasgen
 maturity: realized
-mitigation_count: 0
+mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:
     - Predictive AI
@@ -35,6 +35,13 @@ API ИИ-сервисов могут использоваться как C2-ка
 
 <div class="relation-list">
 <a class="relation-item" href="/tactics/AML.TA0014/"><span class="relation-id">AML.TA0014</span><strong>Командование и управление</strong></a>
+</div>
+
+
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Аутентифицируйте субъектов, обращающихся к API ИИ-сервиса, и отслеживайте запросы на предмет нарушений политик и случаев неправомерного использования.</p></a>
 </div>
 
 

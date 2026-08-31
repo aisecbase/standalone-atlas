@@ -56,5 +56,5 @@ url: /techniques/AML.T0052/
 
 <div class="relation-list procedure-relations">
 <a class="relation-item" href="/studies/AML.CS0032/"><span class="relation-id">AML.CS0032</span><strong>Попытка обхода ML-системы обнаружения фишинговых веб-страниц</strong><span class="relation-meta">Актор: Unknown / Тактика: AML.TA0004 Первичный доступ</span><p>Если злоумышленнику удается успешно избежать обнаружения, он может продолжать эксплуатацию фишинговых сайтов и красть учетные данные жертвы.</p></a>
-<a class="relation-item" href="/studies/AML.CS0044/"><span class="relation-id">AML.CS0044</span><strong>LAMEHUG: вредоносное ПО, использующее динамические команды, сгенерированные ИИ</strong><span class="relation-meta">Актор: APT28 / Тактика: AML.TA0015 Латеральное перемещение</span><p>APT28 отправила с этой учетной записи фишинговое письмо с вложением, содержащим вредоносное ПО.</p></a>
+<a class="relation-item" href="/studies/AML.CS0044/"><span class="relation-id">AML.CS0044</span><strong>LAMEHUG: вредоносное ПО, использующее команды, динамически генерируемые ИИ</strong><span class="relation-meta">Актор: APT28 / Тактика: AML.TA0015 Латеральное перемещение</span><p>APT28 отправила с этой учетной записи фишинговое письмо с вложением, содержащим вредоносное ПО.</p></a>
 </div>

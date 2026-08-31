@@ -8,11 +8,11 @@ description: Злоумышленники могут выявлять ключе
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 0
+mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:
     - Agentic AI
-procedure_count: 1
+procedure_count: 2
 source_name: Activation Triggers
 subtechnique_count: 0
 subtechnique_of: AML.T0084
@@ -50,8 +50,16 @@ url: /techniques/AML.T0084.002/
 </div>
 
 
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0000/"><span class="relation-id">AML.M0000</span><strong>Ограничение публичного раскрытия информации</strong><p>Не раскрывайте в открытом доступе ключевые слова, события и рабочие процессы, используемые для активации ИИ-агента.</p></a>
+</div>
+
+
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
 <a class="relation-item" href="/studies/AML.CS0037/"><span class="relation-id">AML.CS0037</span><strong>Эксфильтрация данных через инструменты ИИ-агента в Copilot Studio</strong><span class="relation-meta">Актор: Zenity / Тактика: AML.TA0008 Выявление</span><p>Исследователи делают вывод, что ИИ-агент активируется при получении письма.</p></a>
+<a class="relation-item" href="/studies/AML.CS0067/"><span class="relation-id">AML.CS0067</span><strong>Раскрытие секретов через Claude Code GitHub Action</strong><span class="relation-meta">Актор: Microsoft Defender Security Research Team / Тактика: AML.TA0008 Выявление</span><p>Исследователи установили, что Claude Code Action мог активироваться событиями GitHub, связанными с issues, pull requests и комментариями; после срабатывания Claude Code Action загружал связанное с событием содержимое в контекст Claude.</p></a>
 </div>

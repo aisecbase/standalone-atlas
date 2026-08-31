@@ -8,7 +8,7 @@ description: Данные являются для злоумышленников
 generated: true
 generated_by: atlasgen
 maturity: realized
-mitigation_count: 4
+mitigation_count: 5
 modified_date: "2026-05-27"
 platforms:
     - Predictive AI
@@ -69,10 +69,11 @@ url: /techniques/AML.T0010.002/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0005/"><span class="relation-id">AML.M0005</span><strong>Контроль доступа к ИИ-моделям и хранимым данным</strong><p>Контроль доступа может предотвращать подмену ML-артефактов и несанкционированное копирование.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0005/"><span class="relation-id">AML.M0005</span><strong>Контроль доступа к ИИ-моделям и хранимым данным</strong><p>Контроль доступа может предотвращать подмену ML-артефактов и их неавторизованное копирование.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0007/"><span class="relation-id">AML.M0007</span><strong>Санитизация обучающих данных</strong><p>Выявляйте и удаляйте отравленные данные либо устраняйте их последствия, чтобы избежать состязательного дрейфа модели или бэкдор-атак.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0014/"><span class="relation-id">AML.M0014</span><strong>Проверка ИИ-артефактов</strong><p>Внедрите надлежащую проверку подписей, чтобы небезопасные ИИ-данные не попадали в систему.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0025/"><span class="relation-id">AML.M0025</span><strong>Поддержание происхождения наборов данных ИИ</strong><p>Сведения о происхождении наборов данных могут защищать от компрометации данных в цепочке поставок.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0035/"><span class="relation-id">AML.M0035</span><strong>Красная команда по ИИ</strong><p>Внедряйте недоверенные наборы данных только в контролируемую среду через репрезентативные пути их получения и приёма. Проверьте механизмы отслеживания происхождения, обеспечения целостности, санитизации, проверки и отбраковки данных.</p></a>
 </div>
 
 

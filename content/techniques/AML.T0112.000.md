@@ -8,7 +8,7 @@ description: Злоумышленники могут добиться полно
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 0
+mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:
     - Agentic AI
@@ -45,6 +45,13 @@ url: /techniques/AML.T0112.000/
 
 <div class="relation-list">
 <a class="relation-item" href="/techniques/AML.T0112.001/"><span class="relation-id">AML.T0112.001</span><strong>ИИ-артефакты</strong><span class="relation-meta">Подтехника</span></a>
+</div>
+
+
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0020/"><span class="relation-id">AML.M0020</span><strong>Гардрейлы для генеративного ИИ</strong><p>С помощью гардрейлов блокируйте вредоносные промпты, небезопасные выходные данные и запрещённые действия агента.</p></a>
 </div>
 
 

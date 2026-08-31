@@ -8,7 +8,7 @@ description: Злоумышленники могут получать учетн
 generated: true
 generated_by: atlasgen
 maturity: realized
-mitigation_count: 0
+mitigation_count: 2
 modified_date: "2026-05-27"
 platforms:
     - Enterprise
@@ -40,6 +40,14 @@ url: /techniques/AML.T0012/
 </div>
 
 
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0005/"><span class="relation-id">AML.M0005</span><strong>Контроль доступа к ИИ-моделям и хранимым данным</strong><p>Предоставляйте доступ к реестрам моделей и обучающим данным только одобренным субъектам доступа, чтобы при компрометации учётной записи доступными оказывались лишь те ИИ-активы, доступ к которым для этой учётной записи был явно разрешён.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Требуйте аутентификации при доступе к ИИ-эндпоинтам в продакшене и отслеживайте запросы к модели, чтобы выявлять неправомерное использование действительных учётных данных.</p></a>
+</div>
+
+
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
@@ -49,7 +57,7 @@ url: /techniques/AML.T0012/
 <a class="relation-item" href="/studies/AML.CS0030/"><span class="relation-id">AML.CS0030</span><strong>LLM-джекинг</strong><span class="relation-meta">Актор: Unknown / Тактика: AML.TA0012 Повышение привилегий</span><p>Скомпрометированные учетные данные дали злоумышленникам доступ к облачным средам, где были размещены сервисы больших языковых моделей (LLM).</p></a>
 <a class="relation-item" href="/studies/AML.CS0035/"><span class="relation-id">AML.CS0035</span><strong>Эксфильтрация данных из Slack AI через косвенную промпт-инъекцию</strong><span class="relation-meta">Актор: PromptArmor / Тактика: AML.TA0004 Первичный доступ</span><p>Исследователь создал в рабочем пространстве Slack действующую учетную запись пользователя без прав администратора.</p></a>
 <a class="relation-item" href="/studies/AML.CS0036/"><span class="relation-id">AML.CS0036</span><strong>AIKatz: атака на десктопные LLM-приложения</strong><span class="relation-meta">Актор: Lumia Security / Тактика: AML.TA0004 Первичный доступ</span><p>Для выполнения этой атаки злоумышленнику требовался первичный доступ к системе жертвы.</p></a>
-<a class="relation-item" href="/studies/AML.CS0044/"><span class="relation-id">AML.CS0044</span><strong>LAMEHUG: вредоносное ПО, использующее динамические команды, сгенерированные ИИ</strong><span class="relation-meta">Актор: APT28 / Тактика: AML.TA0004 Первичный доступ</span><p>APT28 получила доступ к скомпрометированной официальной учетной записи электронной почты.</p></a>
+<a class="relation-item" href="/studies/AML.CS0044/"><span class="relation-id">AML.CS0044</span><strong>LAMEHUG: вредоносное ПО, использующее команды, динамически генерируемые ИИ</strong><span class="relation-meta">Актор: APT28 / Тактика: AML.TA0004 Первичный доступ</span><p>APT28 получила доступ к скомпрометированной официальной учетной записи электронной почты.</p></a>
 <a class="relation-item" href="/studies/AML.CS0050/"><span class="relation-id">AML.CS0050</span><strong>Удаленное выполнение кода (RCE) в OpenClaw в один клик</strong><span class="relation-meta">Актор: DepthFirst / Тактика: AML.TA0012 Повышение привилегий</span><p>Вредоносный скрипт использовал похищенный Gateway-токен для аутентификации, что позволяло затем выполнять вызовы к OpenClaw Gateway API в системе жертвы.</p></a>
-<a class="relation-item" href="/studies/AML.CS0057/"><span class="relation-id">AML.CS0057</span><strong>Storm-2139: обход защитных ограничений Azure OpenAI</strong><span class="relation-meta">Актор: Storm-2139 / Тактика: AML.TA0004 Первичный доступ</span><p>Storm-2139 использовала оказавшиеся в открытом доступе учетные данные клиентов, собранные из публичных источников, для доступа к действительным учетным записям сервисов генеративного ИИ.</p></a>
+<a class="relation-item" href="/studies/AML.CS0057/"><span class="relation-id">AML.CS0057</span><strong>Storm-2139: обход гардрейлов Azure OpenAI</strong><span class="relation-meta">Актор: Storm-2139 / Тактика: AML.TA0004 Первичный доступ</span><p>Storm-2139 использовала оказавшиеся в открытом доступе учетные данные клиентов, собранные из публичных источников, для доступа к действительным учетным записям сервисов генеративного ИИ.</p></a>
 </div>
