@@ -16,10 +16,10 @@ procedure:
       tactic_name: Разведка
       technique: AML.T0006
       technique_name: Активное сканирование
-    - description: После выявления цели исследователи составляют промпты для проверки возможного ИИ-агента, отслеживающего почтовый ящик. Промпт должен заставить агента отправить ответное письмо на адрес, выбранный исследователями.
-      description_line: После выявления цели исследователи составляют промпты для проверки возможного ИИ-агента, отслеживающего почтовый ящик. Промпт должен заставить агента отправить ответное письмо на адрес, выбранный исследователями.
-      tactic: AML.TA0003
-      tactic_name: Подготовка ресурсов
+    - description: Once a target has been identified, the researchers craft prompts designed to probe for a potential AI agent monitoring the inbox. The prompt instructs the agent to send an email reply to an address of the researchers' choosing.
+      description_line: Once a target has been identified, the researchers craft prompts designed to probe for a potential AI agent monitoring the inbox. The prompt instructs the agent to send an email reply to an address of the researchers' choosing.
+      tactic: AML.TA0001
+      tactic_name: Подготовка атаки на ИИ
       technique: AML.T0065
       technique_name: Создание промптов для LLM
     - description: Исследователи отправляют письмо с вредоносным промптом в почтовый ящик, который, по их предположению, может управляться ИИ-агентом.
@@ -70,10 +70,10 @@ procedure:
       tactic_name: Выявление
       technique: AML.T0084.001
       technique_name: Определения инструментов
-    - description: Исследователи используют сведения об инструментах и источниках знаний ИИ-агента, чтобы составить промпт, который соберет и эксфильтрует интересующие их клиентские данные.
-      description_line: Исследователи используют сведения об инструментах и источниках знаний ИИ-агента, чтобы составить промпт, который соберет и эксфильтрует интересующие их клиентские данные.
-      tactic: AML.TA0003
-      tactic_name: Подготовка ресурсов
+    - description: The researchers put their knowledge of the AI agent's tools and knowledge sources together to craft a prompt that will collect and exfiltrate the customer data they are after.
+      description_line: The researchers put their knowledge of the AI agent's tools and knowledge sources together to craft a prompt that will collect and exfiltrate the customer data they are after.
+      tactic: AML.TA0001
+      tactic_name: Подготовка атаки на ИИ
       technique: AML.T0065
       technique_name: Создание промптов для LLM
     - description: Промпт просит агента получить все поля и строки из «Customer Support Account Owners.csv». Агент извлекает весь файл.

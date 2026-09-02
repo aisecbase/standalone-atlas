@@ -12,7 +12,7 @@ mitigation_count: 0
 modified_date: "2026-05-27"
 platforms:
     - Agentic AI
-procedure_count: 1
+procedure_count: 2
 source_name: Deploy AI Agent
 subtechnique_count: 0
 subtechnique_of: ""
@@ -40,4 +40,5 @@ url: /techniques/AML.T0103/
 
 <div class="relation-list procedure-relations">
 <a class="relation-item" href="/studies/AML.CS0047/"><span class="relation-id">AML.CS0047</span><strong>Код для развертывания деструктивного ИИ-агента обнаружен в расширении Amazon Q для VS Code</strong><span class="relation-meta">Актор: lkmanka58 (GitHub user) / Тактика: AML.TA0005 Выполнение</span><p>Вредоносное расширение Amazon Q для VS Code развернуло агента Amazon Q с вредоносным промптом: `q --trust-all-tools --no-interactive &lt;PROMPT&gt;`.</p></a>
+<a class="relation-item" href="/studies/AML.CS0069/"><span class="relation-id">AML.CS0069</span><strong>GTG-1002 Claude Code Espionage Campaign</strong><span class="relation-meta">Актор: GTG-1002 / Тактика: AML.TA0005 Выполнение</span><p>GTG-1002 configured their Claude agent within an attack framework connected to scanners, browser automation, password crackers, database tooling, and dedicated penetration-testing servers.</p></a>
 </div>

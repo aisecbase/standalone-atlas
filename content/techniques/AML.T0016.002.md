@@ -12,7 +12,7 @@ mitigation_count: 3
 modified_date: "2026-05-27"
 platforms:
     - Enterprise
-procedure_count: 3
+procedure_count: 4
 source_name: Generative AI
 subtechnique_count: 0
 subtechnique_of: AML.T0016
@@ -50,6 +50,8 @@ url: /techniques/AML.T0016.002/
 <div class="relation-list">
 <a class="relation-item" href="/techniques/AML.T0016.000/"><span class="relation-id">AML.T0016.000</span><strong>Готовые реализации состязательных атак на ИИ</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0016.001/"><span class="relation-id">AML.T0016.001</span><strong>Программные инструменты</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0016.003/"><span class="relation-id">AML.T0016.003</span><strong>Exploits</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0016.004/"><span class="relation-id">AML.T0016.004</span><strong>AI Agent Tools</strong><span class="relation-meta">Подтехника</span></a>
 </div>
 
 
@@ -68,6 +70,7 @@ url: /techniques/AML.T0016.002/
 <a class="relation-item" href="/studies/AML.CS0033/"><span class="relation-id">AML.CS0033</span><strong>Обход мобильной KYC-верификации с помощью дипфейк-изображения в реальном времени</strong><span class="relation-meta">Актор: iProov Red Team / Тактика: AML.TA0003 Подготовка ресурсов</span><p>Исследователи получили [Faceswap](https://swapface.org) — настольное приложение, способное подменять лица на видео в реальном времени.</p></a>
 <a class="relation-item" href="/studies/AML.CS0034/"><span class="relation-id">AML.CS0034</span><strong>ProKYC: дипфейк-инструмент для атак с мошенническим созданием аккаунтов</strong><span class="relation-meta">Актор: ProKYC, cybercriminal group / Тактика: AML.TA0003 Подготовка ресурсов</span><p>Злоумышленник оплатил инструмент ProKYC, создал поддельное удостоверение личности, сгенерировал дипфейк-видео с селфи и заменил видеопоток с камеры этим дипфейк-видео.</p></a>
 <a class="relation-item" href="/studies/AML.CS0055/"><span class="relation-id">AML.CS0055</span><strong>AI ClickFix: захват управления computer-use-агентами с помощью ClickFix</strong><span class="relation-meta">Актор: Embrace the Red / Тактика: AML.TA0003 Подготовка ресурсов</span><p>Исследователь получил доступ к ChatGPT.</p></a>
+<a class="relation-item" href="/studies/AML.CS0070/"><span class="relation-id">AML.CS0070</span><strong>Threat Actor Uses a DeepSeek-Powered Hermes Agent in Langflow and n8n Exploitation Attempts</strong><span class="relation-meta">Актор: Chinese-speaking threat actor using the aliases knaithe and KnYuan / Тактика: AML.TA0003 Подготовка ресурсов</span><p>The actor obtained access to several generative-AI models and services while evaluating an operational toolset. DeepSeek was selected as the primary reasoning engine for the autonomous attack activity.</p></a>
 </div>
 
 

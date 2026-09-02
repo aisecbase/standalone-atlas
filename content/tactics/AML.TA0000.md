@@ -8,7 +8,7 @@ description: Злоумышленник пытается получить нек
 generated: true
 generated_by: atlasgen
 modified_date: "2025-10-13"
-procedure_count: 30
+procedure_count: 32
 source_name: AI Model Access
 technique_count: 4
 title: Доступ к ИИ-модели
@@ -50,4 +50,4 @@ url: /tactics/AML.TA0000/
 </div>
 
 
-Показано 12 из 30 примеров.
+Показано 12 из 32 примеров.

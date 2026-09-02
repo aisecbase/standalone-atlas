@@ -1,19 +1,19 @@
 ---
 atlas_id: AML.T0075
 atlas_type: technique
-attack_ref_id: T1526
-attack_ref_url: https://attack.mitre.org/techniques/T1526/
+attack_ref_id: ""
+attack_ref_url: ""
 created_date: "2025-04-14"
 description: 'После получения доступа злоумышленники могут пытаться перечислить облачные сервисы, запущенные в системе. Эти методы могут различаться в зависимости от модели: platform-as-a-service (PaaS), infrastructure-as-a-service...'
 generated: true
 generated_by: atlasgen
 maturity: realized
 mitigation_count: 0
-modified_date: "2026-05-27"
+modified_date: "2026-08-31"
 platforms:
     - Enterprise
-procedure_count: 1
-source_name: Cloud Service Discovery
+procedure_count: 4
+source_name: Enterprise Resource Discovery
 subtechnique_count: 0
 subtechnique_of: ""
 tactics:
@@ -38,9 +38,7 @@ url: /techniques/AML.T0075/
 
 <div class="relation-list procedure-relations">
 <a class="relation-item" href="/studies/AML.CS0030/"><span class="relation-id">AML.CS0030</span><strong>LLM-джекинг</strong><span class="relation-meta">Актор: Unknown / Тактика: AML.TA0008 Выявление</span><p>Злоумышленники использовали keychecker, чтобы выяснить, какие LLM-сервисы включены в облачной среде и есть ли для этих сервисов квоты ресурсов. Затем злоумышленники проверили, дают ли украденные учетные данные доступ к LLM-ресурсам. Они использовали легитимные запросы `invokeModel` с недопустимым значением -1 для параметра `max_tokens_to_sample`: если учетные данные не давали нужного доступа для вызова модели, такой запрос вызывал ошибку `AccessDenied`. Проверка показала, что украденные учетные данные действительно предоставляли доступ к LLM-ресурсам. Злоумышленники также использовали `GetModelInvocationLoggingConfiguration`, чтобы понять, как настроена модель. Это позволяло им определить, включено ли логирование промптов, и избегать обнаружения при выполнении промптов.</p></a>
+<a class="relation-item" href="/studies/AML.CS0068/"><span class="relation-id">AML.CS0068</span><strong>Autonomous OpenAI Evaluation Agents Compromise Hugging Face Infrastructure</strong><span class="relation-meta">Актор: Autonomous OpenAI Agents / Тактика: AML.TA0008 Выявление</span><p>After obtaining root execution in an external sandbox, the agents enumerated its files, mounts, internal services, sockets, and bundled debug toolchain. Available utilities enabled customized network requests, payload transfer, result retrieval, and fallback communication.</p></a>
+<a class="relation-item" href="/studies/AML.CS0068/"><span class="relation-id">AML.CS0068</span><strong>Autonomous OpenAI Evaluation Agents Compromise Hugging Face Infrastructure</strong><span class="relation-meta">Актор: Autonomous OpenAI Agents / Тактика: AML.TA0008 Выявление</span><p>With these identities, the agents listed Kubernetes pods, nodes, service accounts, and permissions. They also replayed the node&#39;s cloud credentials externally to map cloud networks, Kubernetes clusters, secret inventory, and the container registry. They obtained a registry token, but attempts to change cloud resources were denied.</p></a>
+<a class="relation-item" href="/studies/AML.CS0069/"><span class="relation-id">AML.CS0069</span><strong>GTG-1002 Claude Code Espionage Campaign</strong><span class="relation-meta">Актор: GTG-1002 / Тактика: AML.TA0008 Выявление</span><p>GTG-1002&#39;s jailbroken Claude agent cataloged services and data on discovered endpoints, searched for sensitive files and data, and used MCP-connected browser automation to enumerate internal databases, container registries, administrative interfaces, workflow orchestration platforms, and other network services. It also queried internal database user-account tables to enumerate accounts and identify high-privilege accounts.</p></a>
 </div>
-
-
-## Источники
-
-- [LLMjacking: Stolen Cloud Credentials Used in New AI Attack | Sysdig](https://www.sysdig.com/blog/llmjacking-stolen-cloud-credentials-used-in-new-ai-attack)

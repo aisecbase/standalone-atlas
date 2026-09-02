@@ -9,7 +9,7 @@ generated: true
 generated_by: atlasgen
 maturity: realized
 mitigation_count: 0
-modified_date: "2026-05-27"
+modified_date: "2026-08-31"
 platforms:
     - Predictive AI
     - Generative AI
@@ -17,7 +17,7 @@ platforms:
     - Enterprise
 procedure_count: 10
 source_name: Develop Capabilities
-subtechnique_count: 1
+subtechnique_count: 3
 subtechnique_of: ""
 tactics:
     - AML.TA0003
@@ -39,6 +39,8 @@ url: /techniques/AML.T0017/
 
 <div class="relation-list">
 <a class="relation-item" href="/techniques/AML.T0017.000/"><span class="relation-id">AML.T0017.000</span><strong>Состязательные атаки на ИИ</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0017.001/"><span class="relation-id">AML.T0017.001</span><strong>Autonomous Exploit Development</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0017.002/"><span class="relation-id">AML.T0017.002</span><strong>AI Agent Tools</strong><span class="relation-meta">Подтехника</span></a>
 </div>
 
 

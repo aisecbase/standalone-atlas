@@ -34,10 +34,10 @@ procedure:
       tactic_name: Доступ к ИИ-модели
       technique: AML.T0047
       technique_name: Продукт или сервис с поддержкой ИИ
-    - description: Исследователи составили промпты, предписывающие ИИ-сервису получить и кратко изложить содержимое веб-сайта. Эти промпты приводили к включению данных жертвы в параметры URL, что позволяло запросу ИИ-сервиса на получение веб-ресурса передавать данные на подконтрольный злоумышленнику сервер.
-      description_line: Исследователи составили промпты, предписывающие ИИ-сервису получить и кратко изложить содержимое веб-сайта. Эти промпты приводили к включению данных жертвы в параметры URL, что позволяло запросу ИИ-сервиса на получение веб-ресурса передавать данные на подконтрольный злоумышленнику сервер.
-      tactic: AML.TA0003
-      tactic_name: Подготовка ресурсов
+    - description: The researchers crafted prompts that instruct an AI service to fetch and summarize a website. The prompts caused victim data to be included in URL parameters, allowing the AI service's fetch request to relay data to the adversary-controlled server.
+      description_line: The researchers crafted prompts that instruct an AI service to fetch and summarize a website. The prompts caused victim data to be included in URL parameters, allowing the AI service's fetch request to relay data to the adversary-controlled server.
+      tactic: AML.TA0001
+      tactic_name: Подготовка атаки на ИИ
       technique: AML.T0065
       technique_name: Создание промптов для LLM
     - description: Когда некоторые промпты блокировались защитными механизмами модели, исследователи кодировали или шифровали данные полезной нагрузки в высокоэнтропийные блоки, чтобы снизить вероятность распознавания содержимого как вредоносного.

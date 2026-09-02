@@ -10,10 +10,10 @@ incident_date: "2026-05-07"
 incident_date_granularity: Day
 incident_date_raw: "2026-05-07"
 procedure:
-    - description: Исследователи подготовили промпт, который должен был заставить агента Semantic Kernel вызвать инструмент поиска с подконтрольными злоумышленнику аргументами. Значение аргумента было составлено так, чтобы задействовать уязвимую обработку фильтра In-Memory Vector Store и привести к выполнению кода.
-      description_line: Исследователи подготовили промпт, который должен был заставить агента Semantic Kernel вызвать инструмент поиска с подконтрольными злоумышленнику аргументами. Значение аргумента было составлено так, чтобы задействовать уязвимую обработку фильтра In-Memory Vector Store и привести к выполнению кода.
-      tactic: AML.TA0003
-      tactic_name: Подготовка ресурсов
+    - description: The researchers crafted a prompt designed to instruct the Semantic Kernel agent to call the search tool with attacker-controlled arguments. The argument value was designed to trigger the vulnerable In-Memory Vector Store filter handling and lead to code execution.
+      description_line: The researchers crafted a prompt designed to instruct the Semantic Kernel agent to call the search tool with attacker-controlled arguments. The argument value was designed to trigger the vulnerable In-Memory Vector Store filter handling and lead to code execution.
+      tactic: AML.TA0001
+      tactic_name: Подготовка атаки на ИИ
       technique: AML.T0065
       technique_name: Создание промптов для LLM
     - description: Исследователи взаимодействовали с агентом на базе Semantic Kernel через его стандартный чат-интерфейс.

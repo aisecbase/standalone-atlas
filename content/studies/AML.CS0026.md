@@ -35,19 +35,16 @@ procedure:
       tactic_name: Выявление
       technique: AML.T0069.001
       technique_name: Ключевые слова системных инструкций
-    - description: Исследователи Zenity подготовили целевой контент, рассчитанный на извлечение по конкретным пользовательским запросам.
-      description_line: Исследователи Zenity подготовили целевой контент, рассчитанный на извлечение по конкретным пользовательским запросам.
-      tactic: AML.TA0003
-      tactic_name: Подготовка ресурсов
+    - description: The Zenity researchers wrote targeted content designed to be retrieved by specific user queries.
+      description_line: The Zenity researchers wrote targeted content designed to be retrieved by specific user queries.
+      tactic: AML.TA0001
+      tactic_name: Подготовка атаки на ИИ
       technique: AML.T0066
       technique_name: Подготовка содержимого для извлечения
-    - description: |-
-        Исследователи разработали вредоносные промпты, обходящие системные инструкции Copilot.
-
-        Они подбирали их методом проб и ошибок на отдельном экземпляре Copilot.
-      description_line: Исследователи разработали вредоносные промпты, обходящие системные инструкции Copilot. Они подбирали их методом проб и ошибок на отдельном экземпляре Copilot.
-      tactic: AML.TA0003
-      tactic_name: Подготовка ресурсов
+    - description: The Zenity researchers designed malicious prompts that bypassed Copilot's system instructions. This was done via trial and error on a separate instance of Copilot.
+      description_line: The Zenity researchers designed malicious prompts that bypassed Copilot's system instructions. This was done via trial and error on a separate instance of Copilot.
+      tactic: AML.TA0001
+      tactic_name: Подготовка атаки на ИИ
       technique: AML.T0065
       technique_name: Создание промптов для LLM
     - description: Исследователи отправили пользователю в организации-жертве письмо с вредоносным пейлоадом, используя знание о том, что все полученные письма попадают в RAG-базу Copilot.

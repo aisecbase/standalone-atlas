@@ -8,7 +8,7 @@ description: Злоумышленник пытается украсть паро
 generated: true
 generated_by: atlasgen
 modified_date: "2023-10-25"
-procedure_count: 16
+procedure_count: 21
 source_name: Credential Access
 technique_count: 7
 title: Доступ к учетным данным
@@ -53,4 +53,4 @@ url: /tactics/AML.TA0013/
 </div>
 
 
-Показано 12 из 16 примеров.
+Показано 12 из 21 примеров.

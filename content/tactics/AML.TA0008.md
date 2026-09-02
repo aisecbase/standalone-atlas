@@ -8,7 +8,7 @@ description: Злоумышленник пытается разобраться 
 generated: true
 generated_by: atlasgen
 modified_date: "2025-04-09"
-procedure_count: 22
+procedure_count: 28
 source_name: Discovery
 technique_count: 23
 title: Выявление
@@ -63,8 +63,8 @@ url: /tactics/AML.TA0008/
 <a class="relation-item" href="/studies/AML.CS0030/"><span class="relation-id">AML.CS0030</span><strong>LLM-джекинг</strong><span class="relation-meta">Актор: Unknown / Тактика: AML.TA0008 Выявление</span><p>Злоумышленники использовали keychecker, чтобы выяснить, какие LLM-сервисы включены в облачной среде и есть ли для этих сервисов квоты ресурсов. Затем злоумышленники проверили, дают ли украденные учетные данные доступ к LLM-ресурсам. Они использовали легитимные запросы `invokeModel` с недопустимым значением -1 для параметра `max_tokens_to_sample`: если учетные данные не давали нужного доступа для вызова модели, такой запрос вызывал ошибку `AccessDenied`. Проверка показала, что украденные учетные данные действительно предоставляли доступ к LLM-ресурсам. Злоумышленники также использовали `GetModelInvocationLoggingConfiguration`, чтобы понять, как настроена модель. Это позволяло им определить, включено ли логирование промптов, и избегать обнаружения при выполнении промптов.</p></a>
 <a class="relation-item" href="/studies/AML.CS0036/"><span class="relation-id">AML.CS0036</span><strong>AIKatz: атака на десктопные LLM-приложения</strong><span class="relation-meta">Актор: Lumia Security / Тактика: AML.TA0008 Выявление</span><p>Злоумышленник получил список всех процессов, запущенных на машине жертвы, и выявил среди них процессы десктопных LLM-приложений.</p></a>
 <a class="relation-item" href="/studies/AML.CS0037/"><span class="relation-id">AML.CS0037</span><strong>Эксфильтрация данных через инструменты ИИ-агента в Copilot Studio</strong><span class="relation-meta">Актор: Zenity / Тактика: AML.TA0008 Выявление</span><p>Исследователи обнаруживают, что ИИ-агент имеет доступ к источнику данных «Customer Support Account Owners.csv».</p></a>
-<a class="relation-item" href="/studies/AML.CS0037/"><span class="relation-id">AML.CS0037</span><strong>Эксфильтрация данных через инструменты ИИ-агента в Copilot Studio</strong><span class="relation-meta">Актор: Zenity / Тактика: AML.TA0008 Выявление</span><p>Исследователи обнаруживают, что ИИ-агент имеет доступ к инструменту Salesforce `get-records`, который можно использовать для получения записей CRM.</p></a>
+<a class="relation-item" href="/studies/AML.CS0037/"><span class="relation-id">AML.CS0037</span><strong>Эксфильтрация данных через инструменты ИИ-агента в Copilot Studio</strong><span class="relation-meta">Актор: Zenity / Тактика: AML.TA0008 Выявление</span><p>Исследователи делают вывод, что у ИИ-агента есть инструмент для отправки писем.</p></a>
 </div>
 
 
-Показано 12 из 22 примеров.
+Показано 12 из 28 примеров.

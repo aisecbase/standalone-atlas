@@ -10,10 +10,10 @@ incident_date: "2025-06-24"
 incident_date_granularity: Day
 incident_date_raw: "2025-06-24"
 procedure:
-    - description: Исследователи подготовили вредоносный промпт с инструкцией выполнить команду оболочки, которая эксфильтрирует учетные данные ИИ-агента пользователя-жертвы.
-      description_line: Исследователи подготовили вредоносный промпт с инструкцией выполнить команду оболочки, которая эксфильтрирует учетные данные ИИ-агента пользователя-жертвы.
-      tactic: AML.TA0003
-      tactic_name: Подготовка ресурсов
+    - description: The researchers crafted a malicious prompt containing an instruction to execute the malicious shell command to exfiltrate the victim's AI agent credentials.
+      description_line: The researchers crafted a malicious prompt containing an instruction to execute the malicious shell command to exfiltrate the victim's AI agent credentials.
+      tactic: AML.TA0001
+      tactic_name: Подготовка атаки на ИИ
       technique: AML.T0065
       technique_name: Создание промптов для LLM
     - description: Исследователи создали сайт, содержащий вредоносный промпт.

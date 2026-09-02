@@ -8,7 +8,7 @@ description: Злоумышленник пытается запустить вр
 generated: true
 generated_by: atlasgen
 modified_date: "2025-04-09"
-procedure_count: 61
+procedure_count: 65
 source_name: Execution
 technique_count: 20
 title: Выполнение
@@ -64,4 +64,4 @@ url: /tactics/AML.TA0005/
 </div>
 
 
-Показано 12 из 61 примеров.
+Показано 12 из 65 примеров.

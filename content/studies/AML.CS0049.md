@@ -22,10 +22,10 @@ procedure:
       tactic_name: Подготовка ресурсов
       technique: AML.T0008.002
       technique_name: Домены
-    - description: Исследователь подготовил промпт-инъекцию, которая должна была заставить Claude Code выполнить команду `curl` к домену исследователя `clawdhub-skill.com`.
-      description_line: Исследователь подготовил промпт-инъекцию, которая должна была заставить Claude Code выполнить команду `curl` к домену исследователя `clawdhub-skill.com`.
-      tactic: AML.TA0003
-      tactic_name: Подготовка ресурсов
+    - description: The researcher crafted a prompt injection designed to cause Claude Code to execute a `curl` command to the researcher's `clawdhub-skill.com` domain.
+      description_line: The researcher crafted a prompt injection designed to cause Claude Code to execute a `curl` command to the researcher's `clawdhub-skill.com` domain.
+      tactic: AML.TA0001
+      tactic_name: Подготовка атаки на ИИ
       technique: AML.T0065
       technique_name: Создание промптов для LLM
     - description: Исследователь разработал отравленный навык ClawdBot под названием "What Would Elon Do?" Вредоносный промпт находился в файле `rules/logic.md`, который считывается при активации навыка. Исследователь опубликовал навык в ClawdHub.

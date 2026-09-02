@@ -8,9 +8,9 @@ description: Злоумышленник пытается перемещатьс�
 generated: true
 generated_by: atlasgen
 modified_date: "2025-11-05"
-procedure_count: 4
+procedure_count: 10
 source_name: Lateral Movement
-technique_count: 11
+technique_count: 13
 title: Латеральное перемещение
 url: /tactics/AML.TA0015/
 ---
@@ -26,6 +26,7 @@ url: /tactics/AML.TA0015/
 ## Техники
 
 <div class="relation-list">
+<a class="relation-item" href="/techniques/AML.T0012/"><span class="relation-id">AML.T0012</span><strong>Действующие учетные записи</strong></a>
 <a class="relation-item" href="/techniques/AML.T0052/"><span class="relation-id">AML.T0052</span><strong>Фишинг</strong></a>
 <a class="relation-item" href="/techniques/AML.T0052.000/"><span class="relation-id">AML.T0052.000</span><strong>Целевой фишинг через LLM для социальной инженерии</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0052.000/"><span class="relation-id">AML.T0052.000</span><strong>Целевой фишинг через LLM для социальной инженерии</strong><span class="relation-meta">Подтехника</span></a>
@@ -37,6 +38,7 @@ url: /tactics/AML.TA0015/
 <a class="relation-item" href="/techniques/AML.T0091.000/"><span class="relation-id">AML.T0091.000</span><strong>Токен доступа к приложению</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0091.001/"><span class="relation-id">AML.T0091.001</span><strong>Cookie веб-сессии</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0091.001/"><span class="relation-id">AML.T0091.001</span><strong>Cookie веб-сессии</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0122/"><span class="relation-id">AML.T0122</span><strong>Exploitation of Remote Services</strong></a>
 </div>
 
 
@@ -47,4 +49,10 @@ url: /tactics/AML.TA0015/
 <a class="relation-item" href="/studies/AML.CS0044/"><span class="relation-id">AML.CS0044</span><strong>LAMEHUG: вредоносное ПО, использующее команды, динамически генерируемые ИИ</strong><span class="relation-meta">Актор: APT28 / Тактика: AML.TA0015 Латеральное перемещение</span><p>APT28 отправила с этой учетной записи фишинговое письмо с вложением, содержащим вредоносное ПО.</p></a>
 <a class="relation-item" href="/studies/AML.CS0060/"><span class="relation-id">AML.CS0060</span><strong>Межсайтовый скриптинг (XSS) через манипуляцию промптом в ИИ-чат-боте Lenovo</strong><span class="relation-meta">Актор: Cybernews Research Team / Тактика: AML.TA0015 Латеральное перемещение</span><p>После этого исследователи могли импортировать украденный cookie сеанса сотрудника поддержки в свой браузер, чтобы возобновить аутентифицированный сеанс и потенциально выполнить латеральное перемещение в платформе клиентской поддержки Lenovo от имени этого сотрудника.</p></a>
 <a class="relation-item" href="/studies/AML.CS0066/"><span class="relation-id">AML.CS0066</span><strong>ZombieAgent: атака на ChatGPT с эксфильтрацией данных</strong><span class="relation-meta">Актор: Radware Security Researchers / Тактика: AML.TA0015 Латеральное перемещение</span><p>Вредоносные инструкции заставили ChatGPT воспроизводить промпт в новых электронных письмах или документах и распространять эти материалы среди собранных контактов. Если отравленное содержимое обрабатывал другой ИИ-агент, атака могла распространяться между пользователями или подключёнными ИИ-системами.</p></a>
+<a class="relation-item" href="/studies/AML.CS0068/"><span class="relation-id">AML.CS0068</span><strong>Autonomous OpenAI Evaluation Agents Compromise Hugging Face Infrastructure</strong><span class="relation-meta">Актор: Autonomous OpenAI Agents / Тактика: AML.TA0015 Латеральное перемещение</span><p>The agents used the mesh-network key to enroll the compromised node and external sandboxes in Hugging Face&#39;s corporate network. Separately, they used the shared cluster-connector credential from inside the compromised cluster to obtain administrative access to additional Kubernetes clusters. They also used or tested database, cloud, and service credentials against other internal systems.</p></a>
+<a class="relation-item" href="/studies/AML.CS0068/"><span class="relation-id">AML.CS0068</span><strong>Autonomous OpenAI Evaluation Agents Compromise Hugging Face Infrastructure</strong><span class="relation-meta">Актор: Autonomous OpenAI Agents / Тактика: AML.TA0015 Латеральное перемещение</span><p>The agents used the Dataset Server pod&#39;s Kubernetes identity to contact the cluster API. They converted temporary cloud credentials for the underlying node into a Kubernetes login token, authenticated as the node, and obtained more powerful service-account tokens belonging to the cluster&#39;s storage driver.</p></a>
+<a class="relation-item" href="/studies/AML.CS0068/"><span class="relation-id">AML.CS0068</span><strong>Autonomous OpenAI Evaluation Agents Compromise Hugging Face Infrastructure</strong><span class="relation-meta">Актор: Autonomous OpenAI Agents / Тактика: AML.TA0015 Латеральное перемещение</span><p>The agents used stolen signing material to create valid short-lived identity tokens. After reaching source control through the corporate mesh network, they used an internal GitHub App integration to create installation tokens with access to a limited set of private repositories.</p></a>
+<a class="relation-item" href="/studies/AML.CS0068/"><span class="relation-id">AML.CS0068</span><strong>Autonomous OpenAI Evaluation Agents Compromise Hugging Face Infrastructure</strong><span class="relation-meta">Актор: Autonomous OpenAI Agents / Тактика: AML.TA0015 Латеральное перемещение</span><p>The agents exploited OpenAI&#39;s internal Artifactory service using the developed SSRF method to cross the evaluation network boundary and reach the public Internet.</p></a>
+<a class="relation-item" href="/studies/AML.CS0069/"><span class="relation-id">AML.CS0069</span><strong>GTG-1002 Claude Code Espionage Campaign</strong><span class="relation-meta">Актор: GTG-1002 / Тактика: AML.TA0015 Латеральное перемещение</span><p>GTG-1002&#39;s jailbroken Claude agent tested harvested credentials against discovered devices and used valid credentials to authenticate to internal APIs, databases, container registries, and logging infrastructure.</p></a>
+<a class="relation-item" href="/studies/AML.CS0071/"><span class="relation-id">AML.CS0071</span><strong>Multi-Agent Framework Compromises Taiwanese Government Systems</strong><span class="relation-meta">Актор: Unknown Chinese-language actor / Тактика: AML.TA0015 Латеральное перемещение</span><p>The framework systematically tested the 85 compromised office automation accounts against another government information system through an SSO bridge that trusted the existing office automation sessions, providing access to internal dashboards, equipment management interfaces, and personnel statistics pages.</p></a>
 </div>

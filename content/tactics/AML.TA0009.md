@@ -8,9 +8,9 @@ description: Злоумышленник пытается собрать ИИ-а�
 generated: true
 generated_by: atlasgen
 modified_date: "2025-04-09"
-procedure_count: 17
+procedure_count: 25
 source_name: Collection
-technique_count: 8
+technique_count: 10
 title: Сбор материалов
 url: /tactics/AML.TA0009/
 ---
@@ -35,6 +35,8 @@ url: /tactics/AML.TA0009/
 <a class="relation-item" href="/techniques/AML.T0085.000/"><span class="relation-id">AML.T0085.000</span><strong>Базы данных RAG</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0085.001/"><span class="relation-id">AML.T0085.001</span><strong>Инструменты ИИ-агента</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0085.001/"><span class="relation-id">AML.T0085.001</span><strong>Инструменты ИИ-агента</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0126/"><span class="relation-id">AML.T0126</span><strong>Automated Collection</strong></a>
+<a class="relation-item" href="/techniques/AML.T0127/"><span class="relation-id">AML.T0127</span><strong>Data Staged</strong></a>
 </div>
 
 
@@ -56,4 +58,4 @@ url: /tactics/AML.TA0009/
 </div>
 
 
-Показано 12 из 17 примеров.
+Показано 12 из 25 примеров.

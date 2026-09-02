@@ -12,7 +12,7 @@ generated_by: atlasgen
 ml_lifecycle:
     - Business and Data Understanding
     - Deployment
-modified_date: "2026-07-31"
+modified_date: "2026-08-31"
 source_name: Segmentation of AI Agent Components
 technique_count: 7
 title: Сегментация компонентов ИИ-агента

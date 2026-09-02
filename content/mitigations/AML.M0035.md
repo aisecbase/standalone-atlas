@@ -7,7 +7,7 @@ category:
     - Policy
     - Technical - AI
     - Technical - Cyber
-created_date: "2026-07-21"
+created_date: "2026-07-31"
 description: Создайте красную команду по ИИ, ответственную за проведение регулярных, санкционированных учений красной команды, основанных на данных об угрозах, для выявления и устранения уязвимостей в системах с поддержкой ИИ до...
 generated: true
 generated_by: atlasgen
@@ -18,7 +18,7 @@ ml_lifecycle:
     - AI Model Evaluation
     - Deployment
     - Monitoring and Maintenance
-modified_date: "2026-07-21"
+modified_date: "2026-08-31"
 source_name: AI Red Team
 technique_count: 33
 title: Красная команда по ИИ

@@ -7,7 +7,7 @@ created_date: "2025-10-27"
 description: Злоумышленники могут использовать альтернативные средства аутентификации, такие как хэши паролей, билеты Kerberos и токены доступа приложений, чтобы перемещаться латерально внутри среды и обходить штатные механизмы...
 generated: true
 generated_by: atlasgen
-maturity: demonstrated
+maturity: realized
 mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:

@@ -11,10 +11,10 @@ incident_date: "2025-06-25"
 incident_date_granularity: Day
 incident_date_raw: "2025-06-25"
 procedure:
-    - description: Злоумышленник создал вредоносный промпт, рассчитанный на обход обнаружения.
-      description_line: Злоумышленник создал вредоносный промпт, рассчитанный на обход обнаружения.
-      tactic: AML.TA0003
-      tactic_name: Подготовка ресурсов
+    - description: The bad actor crafted a malicious prompt designed to evade detection.
+      description_line: The bad actor crafted a malicious prompt designed to evade detection.
+      tactic: AML.TA0001
+      tactic_name: Подготовка атаки на ИИ
       technique: AML.T0065
       technique_name: Создание промптов для LLM
     - description: Злоумышленник встроил промпт-инъекцию в образец вредоносного ПО, названный Skynet.

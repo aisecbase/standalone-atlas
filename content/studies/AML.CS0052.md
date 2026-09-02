@@ -28,10 +28,10 @@ procedure:
       tactic_name: Выявление
       technique: AML.T0084.003
       technique_name: Цепочки вызовов
-    - description: Исследователи разработали промпты, которые вызывают инструменты и приводят к RCE.
-      description_line: Исследователи разработали промпты, которые вызывают инструменты и приводят к RCE.
-      tactic: AML.TA0003
-      tactic_name: Подготовка ресурсов
+    - description: The researchers developed prompts to trigger tool invocations that lead to RCE.
+      description_line: The researchers developed prompts to trigger tool invocations that lead to RCE.
+      tactic: AML.TA0001
+      tactic_name: Подготовка атаки на ИИ
       technique: AML.T0065
       technique_name: Создание промптов для LLM
     - description: Исследователи нацеливались на публично доступные приложения, где ИИ-агент принимает пользовательский ввод, чтобы через него выполнить свои промпты.

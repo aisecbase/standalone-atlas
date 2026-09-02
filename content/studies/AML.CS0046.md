@@ -10,10 +10,10 @@ incident_date: "2024-10-24"
 incident_date_granularity: Day
 incident_date_raw: "2024-10-24"
 procedure:
-    - description: Исследователи подготовили промпт, нацеленный на функцию Claude Computer Use. Он был предназначен для обхода средств защиты и выполнения деструктивной команды в системе жертвы.
-      description_line: Исследователи подготовили промпт, нацеленный на функцию Claude Computer Use. Он был предназначен для обхода средств защиты и выполнения деструктивной команды в системе жертвы.
-      tactic: AML.TA0003
-      tactic_name: Подготовка ресурсов
+    - description: The researchers crafted a prompt targeting Claude's Computer Use feature. It was designed to bypass and execute a destructive command on the victim's system.
+      description_line: The researchers crafted a prompt targeting Claude's Computer Use feature. It was designed to bypass and execute a destructive command on the victim's system.
+      tactic: AML.TA0001
+      tactic_name: Подготовка атаки на ИИ
       technique: AML.T0065
       technique_name: Создание промптов для LLM
     - description: Исследователи встроили вредоносный промпт в PDF-документ. Такой документ мог попасть в систему жертвы через публично доступное приложение, например электронную почту или общее хранилище документов.

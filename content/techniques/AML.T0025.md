@@ -12,7 +12,7 @@ mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:
     - Enterprise
-procedure_count: 11
+procedure_count: 14
 source_name: Exfiltration via Cyber Means
 subtechnique_count: 0
 subtechnique_of: ""
@@ -55,4 +55,7 @@ url: /techniques/AML.T0025/
 <a class="relation-item" href="/studies/AML.CS0058/"><span class="relation-id">AML.CS0058</span><strong>Извлечение ИИ-моделей из Google Photos</strong><span class="relation-meta">Актор: Skyld / Тактика: AML.TA0010 Эксфильтрация</span><p>Исследователи использовали статический анализ и инструментацию Frida для восстановления файлов моделей. Для зашифрованных моделей они перехватывали расшифрованные файлы TFLite во время выполнения, когда Google Photos загружал их для выполнения.</p></a>
 <a class="relation-item" href="/studies/AML.CS0059/"><span class="relation-id">AML.CS0059</span><strong>EchoLeak: промпт-инъекция нулевого клика против M365 Copilot для эксфильтрации данных</strong><span class="relation-meta">Актор: Aim Labs / Тактика: AML.TA0010 Эксфильтрация</span><p>Чтобы обойти ограничения CSP, исследователи направили запрос к отображенному изображению через разрешенный путь предпросмотра или прокси Microsoft Teams, который загружал контролируемый злоумышленником URL с закодированным секретом.</p></a>
 <a class="relation-item" href="/studies/AML.CS0063/"><span class="relation-id">AML.CS0063</span><strong>Атаки на Gemini с помощью промптов в приглашениях Google Calendar</strong><span class="relation-meta">Актор: SafeBreach Research Team / Тактика: AML.TA0010 Эксфильтрация</span><p>Подконтрольный злоумышленнику веб-сайт получил IP-адрес источника — устройства жертвы, что позволило приблизительно определить местоположение устройства.</p></a>
+<a class="relation-item" href="/studies/AML.CS0068/"><span class="relation-id">AML.CS0068</span><strong>Autonomous OpenAI Evaluation Agents Compromise Hugging Face Infrastructure</strong><span class="relation-meta">Актор: Autonomous OpenAI Agents / Тактика: AML.TA0010 Эксфильтрация</span><p>The agents transferred credentials, command output, environment data, selected private dataset rows, and private challenge-related archives through dataset repository and launchpad channels.</p></a>
+<a class="relation-item" href="/studies/AML.CS0069/"><span class="relation-id">AML.CS0069</span><strong>GTG-1002 Claude Code Espionage Campaign</strong><span class="relation-meta">Актор: GTG-1002 / Тактика: AML.TA0010 Эксфильтрация</span><p>After reviewing the summary, GTG-1002 approved the transfer of selected data over the Claude web service.</p></a>
+<a class="relation-item" href="/studies/AML.CS0071/"><span class="relation-id">AML.CS0071</span><strong>Multi-Agent Framework Compromises Taiwanese Government Systems</strong><span class="relation-meta">Актор: Unknown Chinese-language actor / Тактика: AML.TA0010 Эксфильтрация</span><p>Over 2,564 personnel records, a complete user database, and internal architecture details were exfiltrated.</p></a>
 </div>

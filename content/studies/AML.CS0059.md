@@ -10,16 +10,16 @@ incident_date: 2025-05
 incident_date_granularity: Month
 incident_date_raw: "2025-05-25"
 procedure:
-    - description: Исследователи подготовили вредоносные инструкции, рассчитанные на обход классификатора Microsoft для косвенных промпт-инъекций, маскировку под обычный деловой контент, скрытие связи с письмом, контролируемым злоумышленником, и принуждение Copilot включить конфиденциальные данные в отображаемый вывод.
-      description_line: Исследователи подготовили вредоносные инструкции, рассчитанные на обход классификатора Microsoft для косвенных промпт-инъекций, маскировку под обычный деловой контент, скрытие связи с письмом, контролируемым злоумышленником, и принуждение Copilot включить конфиденциальные данные в отображаемый вывод.
-      tactic: AML.TA0003
-      tactic_name: Подготовка ресурсов
+    - description: The researchers crafted malicious instructions designed to evade Microsoft's indirect prompt injection classifier, appear like ordinary business content, suppress attribution to the attacker-controlled email, and cause Copilot to include sensitive data in rendered output.
+      description_line: The researchers crafted malicious instructions designed to evade Microsoft's indirect prompt injection classifier, appear like ordinary business content, suppress attribution to the attacker-controlled email, and cause Copilot to include sensitive data in rendered output.
+      tactic: AML.TA0001
+      tactic_name: Подготовка атаки на ИИ
       technique: AML.T0065
       technique_name: Создание промптов для LLM
-    - description: Исследователи встроили промпт-инъекцию в деловое содержимое письма, которое с высокой вероятностью могло быть извлечено при последующем взаимодействии с Copilot. Контент был составлен так, чтобы выглядеть релевантным обычным корпоративным рабочим процессам и одновременно содержать скрытые инструкции.
-      description_line: Исследователи встроили промпт-инъекцию в деловое содержимое письма, которое с высокой вероятностью могло быть извлечено при последующем взаимодействии с Copilot. Контент был составлен так, чтобы выглядеть релевантным обычным корпоративным рабочим процессам и одновременно содержать скрытые инструкции.
-      tactic: AML.TA0003
-      tactic_name: Подготовка ресурсов
+    - description: The researchers embedded the prompt injection in business-like email content that was likely to be retrieved during a later Copilot interaction. The content was designed to appear relevant to ordinary enterprise workflows while carrying hidden instructions.
+      description_line: The researchers embedded the prompt injection in business-like email content that was likely to be retrieved during a later Copilot interaction. The content was designed to appear relevant to ordinary enterprise workflows while carrying hidden instructions.
+      tactic: AML.TA0001
+      tactic_name: Подготовка атаки на ИИ
       technique: AML.T0066
       technique_name: Подготовка содержимого для извлечения
     - description: Исследователи подготовили веб-эндпоинт, контролируемый злоумышленником, для приема исходящих запросов с закодированными конфиденциальными данными. Эндпоинт служил точкой сбора для канала эксфильтрации.

@@ -10,10 +10,10 @@ incident_date: 2024-02
 incident_date_granularity: Month
 incident_date_raw: "2024-02-01"
 procedure:
-    - description: Исследователь составил простой промпт, который задает контекст памяти как маркированный список неверных фактов.
-      description_line: Исследователь составил простой промпт, который задает контекст памяти как маркированный список неверных фактов.
-      tactic: AML.TA0003
-      tactic_name: Подготовка ресурсов
+    - description: The researcher crafted a basic prompt asking to set the memory context with a bulleted list of incorrect facts.
+      description_line: The researcher crafted a basic prompt asking to set the memory context with a bulleted list of incorrect facts.
+      tactic: AML.TA0001
+      tactic_name: Подготовка атаки на ИИ
       technique: AML.T0065
       technique_name: Создание промптов для LLM
     - description: Исследователь поместил промпт в Google Doc, скрыв его в заголовке мелким шрифтом, цвет которого совпадал с цветом фона документа, чтобы сделать промпт невидимым.

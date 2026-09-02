@@ -28,10 +28,10 @@ procedure:
       tactic_name: Выявление
       technique: AML.T0084.002
       technique_name: Триггеры активации
-    - description: Исследователи подготовили адаптированный для Claude Code Action промпт, оформленный как задача по проверке соблюдения требований и предписывавший Claude считать учётные данные из своего окружения и вывести полученное значение.
-      description_line: Исследователи подготовили адаптированный для Claude Code Action промпт, оформленный как задача по проверке соблюдения требований и предписывавший Claude считать учётные данные из своего окружения и вывести полученное значение.
-      tactic: AML.TA0003
-      tactic_name: Подготовка ресурсов
+    - description: The researchers crafted a prompt tailored to Claude Code Action framed as a compliance task that directed Claude to read a credential from its environment and emit it.
+      description_line: The researchers crafted a prompt tailored to Claude Code Action framed as a compliance task that directed Claude to read a credential from its environment and emit it.
+      tactic: AML.TA0001
+      tactic_name: Подготовка атаки на ИИ
       technique: AML.T0065
       technique_name: Создание промптов для LLM
     - description: Исследователи внедрили вредоносный промпт через подконтрольное злоумышленнику содержимое GitHub, которое обрабатывал лабораторный рабочий процесс. Так они смоделировали доставку через текст issue, описание pull request или комментарий, поступающие на обработку Claude Code Action.

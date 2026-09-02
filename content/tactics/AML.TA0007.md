@@ -8,9 +8,9 @@ description: Злоумышленник пытается избежать обн
 generated: true
 generated_by: atlasgen
 modified_date: "2025-04-09"
-procedure_count: 50
+procedure_count: 53
 source_name: Defense Evasion
-technique_count: 17
+technique_count: 18
 title: Уклонение от защиты
 url: /tactics/AML.TA0007/
 ---
@@ -40,6 +40,7 @@ url: /tactics/AML.TA0007/
 <a class="relation-item" href="/techniques/AML.T0107/"><span class="relation-id">AML.T0107</span><strong>Эксплуатация уязвимостей для обхода защиты</strong></a>
 <a class="relation-item" href="/techniques/AML.T0109/"><span class="relation-id">AML.T0109</span><strong>Подмена компонента после одобрения в цепочке поставок ИИ</strong></a>
 <a class="relation-item" href="/techniques/AML.T0111/"><span class="relation-id">AML.T0111</span><strong>Накрутка репутации в цепочке поставок ИИ</strong></a>
+<a class="relation-item" href="/techniques/AML.T0123/"><span class="relation-id">AML.T0123</span><strong>Obfuscated Files or Information</strong></a>
 </div>
 
 
@@ -61,4 +62,4 @@ url: /tactics/AML.TA0007/
 </div>
 
 
-Показано 12 из 50 примеров.
+Показано 12 из 53 примеров.

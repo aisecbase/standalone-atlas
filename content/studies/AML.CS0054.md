@@ -10,10 +10,10 @@ incident_date: "2025-04-01"
 incident_date_granularity: Day
 incident_date_raw: "2025-04-01"
 procedure:
-    - description: Исследователи подготовили промпт, который инструктирует ИИ-агента найти и прочитать файлы с учетными данными пользователя, а затем сохранить их в одном из входных параметров MCP-инструмента.
-      description_line: Исследователи подготовили промпт, который инструктирует ИИ-агента найти и прочитать файлы с учетными данными пользователя, а затем сохранить их в одном из входных параметров MCP-инструмента.
-      tactic: AML.TA0003
-      tactic_name: Подготовка ресурсов
+    - description: The researchers crafted a prompt that instructs an AI agent to discover and read user credentials files and store them in an input parameter of an MCP tool.
+      description_line: The researchers crafted a prompt that instructs an AI agent to discover and read user credentials files and store them in an input parameter of an MCP tool.
+      tactic: AML.TA0001
+      tactic_name: Подготовка атаки на ИИ
       technique: AML.T0065
       technique_name: Создание промптов для LLM
     - description: Исследователи разместили отравленный MCP-сервер, содержащий вредоносные инструкции, скрытые в строке документации (docstring) одного из предоставляемых инструментов.

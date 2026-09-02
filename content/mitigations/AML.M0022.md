@@ -13,7 +13,7 @@ ml_lifecycle:
     - AI Model Engineering
     - AI Model Evaluation
     - Deployment
-modified_date: "2025-07-31"
+modified_date: "2025-08-31"
 source_name: Generative AI Model Alignment
 technique_count: 9
 title: Выравнивание модели генеративного ИИ

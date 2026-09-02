@@ -7,10 +7,10 @@ created_date: "2021-05-13"
 description: Злоумышленник использует свои знания о целевой системе и доступ к ней, чтобы адаптировать атаку. Подготовка атаки на ИИ включает техники, которые злоумышленники используют для подготовки атаки на целевую ИИ-модель....
 generated: true
 generated_by: atlasgen
-modified_date: "2025-04-09"
-procedure_count: 37
-source_name: AI Attack Staging
-technique_count: 30
+modified_date: "2026-08-31"
+procedure_count: 76
+source_name: AI Attack Adaptation
+technique_count: 39
 title: Подготовка атаки на ИИ
 url: /tactics/AML.TA0001/
 ---
@@ -54,8 +54,17 @@ url: /tactics/AML.TA0001/
 <a class="relation-item" href="/techniques/AML.T0043.003/"><span class="relation-id">AML.T0043.003</span><strong>Ручная модификация</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0043.004/"><span class="relation-id">AML.T0043.004</span><strong>Добавление бэкдор-триггера</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0043.004/"><span class="relation-id">AML.T0043.004</span><strong>Добавление бэкдор-триггера</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0065/"><span class="relation-id">AML.T0065</span><strong>Создание промптов для LLM</strong></a>
+<a class="relation-item" href="/techniques/AML.T0066/"><span class="relation-id">AML.T0066</span><strong>Подготовка содержимого для извлечения</strong></a>
 <a class="relation-item" href="/techniques/AML.T0088/"><span class="relation-id">AML.T0088</span><strong>Создание дипфейков</strong></a>
 <a class="relation-item" href="/techniques/AML.T0102/"><span class="relation-id">AML.T0102</span><strong>Генерация вредоносных команд</strong></a>
+<a class="relation-item" href="/techniques/AML.T0117/"><span class="relation-id">AML.T0117</span><strong>Autonomous Attack-Path Adaptation</strong></a>
+<a class="relation-item" href="/techniques/AML.T0118/"><span class="relation-id">AML.T0118</span><strong>Autonomous AI Agent Communication</strong></a>
+<a class="relation-item" href="/techniques/AML.T0118.000/"><span class="relation-id">AML.T0118.000</span><strong>Communication via Shared Artifacts</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0118.000/"><span class="relation-id">AML.T0118.000</span><strong>Communication via Shared Artifacts</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0118.001/"><span class="relation-id">AML.T0118.001</span><strong>Direct Agent Communication</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0118.001/"><span class="relation-id">AML.T0118.001</span><strong>Direct Agent Communication</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0124/"><span class="relation-id">AML.T0124</span><strong>Autonomous Attack Orchestration</strong></a>
 </div>
 
 
@@ -77,4 +86,4 @@ url: /tactics/AML.TA0001/
 </div>
 
 
-Показано 12 из 37 примеров.
+Показано 12 из 76 примеров.

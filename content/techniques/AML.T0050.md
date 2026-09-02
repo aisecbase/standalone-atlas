@@ -7,12 +7,12 @@ created_date: "2023-02-28"
 description: Злоумышленники могут злоупотреблять командными и скриптовыми интерпретаторами для выполнения команд, сценариев или бинарных файлов. Эти интерфейсы и языки предоставляют способы взаимодействия с компьютерными системами...
 generated: true
 generated_by: atlasgen
-maturity: demonstrated
+maturity: realized
 mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:
     - Enterprise
-procedure_count: 5
+procedure_count: 7
 source_name: Command and Scripting Interpreter
 subtechnique_count: 0
 subtechnique_of: ""
@@ -51,4 +51,6 @@ url: /techniques/AML.T0050/
 <a class="relation-item" href="/studies/AML.CS0060/"><span class="relation-id">AML.CS0060</span><strong>Межсайтовый скриптинг (XSS) через манипуляцию промптом в ИИ-чат-боте Lenovo</strong><span class="relation-meta">Актор: Cybernews Research Team / Тактика: AML.TA0005 Выполнение</span><p>Сохраненный HTML включал исполняемый в браузере JavaScript, который запускался в браузере сотрудника поддержки при отображении стенограммы.</p></a>
 <a class="relation-item" href="/studies/AML.CS0061/"><span class="relation-id">AML.CS0061</span><strong>AI in the Middle: веб-сервисы ИИ как ретрансляторы C2</strong><span class="relation-meta">Актор: Check Point Research / Тактика: AML.TA0005 Выполнение</span><p>ИИ-сервис кратко излагал ответ подконтрольного злоумышленнику сайта, а имплант выполнял извлеченные команды. В демонстрационном примере команда запускала Calculator с помощью `cmd.exe /c calc.exe`; реальный имплант мог бы выполнять другие команды, загружать полезные нагрузки, переходить в режим ожидания или собирать дополнительные данные.</p></a>
 <a class="relation-item" href="/studies/AML.CS0062/"><span class="relation-id">AML.CS0062</span><strong>RCE-уязвимость в Semantic Kernel Search Plugin</strong><span class="relation-meta">Актор: Microsoft Defender Security Research Team / Тактика: AML.TA0005 Выполнение</span><p>Значение фильтра обрабатывалось как lambda-выражение Python. Из-за вредоносного форматирования в подконтрольном злоумышленнику аргументе эта обработка становилась приемником инъекции: ввод исследователей выходил за рамки предусмотренной логики сравнения и приводил к удаленному выполнению кода.</p></a>
+<a class="relation-item" href="/studies/AML.CS0068/"><span class="relation-id">AML.CS0068</span><strong>Autonomous OpenAI Evaluation Agents Compromise Hugging Face Infrastructure</strong><span class="relation-meta">Актор: Autonomous OpenAI Agents / Тактика: AML.TA0005 Выполнение</span><p>The agents executed shell commands and supplied C and Python code through the exposed harness.</p></a>
+<a class="relation-item" href="/studies/AML.CS0068/"><span class="relation-id">AML.CS0068</span><strong>Autonomous OpenAI Evaluation Agents Compromise Hugging Face Infrastructure</strong><span class="relation-meta">Актор: Autonomous OpenAI Agents / Тактика: AML.TA0005 Выполнение</span><p>The agents used the Jinja2 execution path to run staged Python and shell commands inside the production Dataset Server pod and adapted subsequent commands based on returned output.</p></a>
 </div>

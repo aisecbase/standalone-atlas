@@ -10,10 +10,10 @@ incident_date: "2025-09-25"
 incident_date_granularity: Day
 incident_date_raw: "2025-09-25"
 procedure:
-    - description: Исследователи подготовили для различных вариантов атаки вредоносные полезные нагрузки в виде промптов. Эти нагрузки содержали инструкции для доступа через коннекторы, сбора данных, кодирования посредством статических URL, манипулирования функцией Memory и распространения.
-      description_line: Исследователи подготовили для различных вариантов атаки вредоносные полезные нагрузки в виде промптов. Эти нагрузки содержали инструкции для доступа через коннекторы, сбора данных, кодирования посредством статических URL, манипулирования функцией Memory и распространения.
-      tactic: AML.TA0003
-      tactic_name: Подготовка ресурсов
+    - description: The researchers crafted malicious prompt payloads for the different attack variants. The payloads contained instructions for connector access, data collection, static-URL encoding, memory manipulation, and propagation.
+      description_line: The researchers crafted malicious prompt payloads for the different attack variants. The payloads contained instructions for connector access, data collection, static-URL encoding, memory manipulation, and propagation.
+      tactic: AML.TA0001
+      tactic_name: Подготовка атаки на ИИ
       technique: AML.T0065
       technique_name: Создание промптов для LLM
     - description: Исследователи подготовили инфраструктуру для приёма эксфильтрированных данных.

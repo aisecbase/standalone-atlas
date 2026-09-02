@@ -12,7 +12,7 @@ mitigation_count: 2
 modified_date: "2026-05-27"
 platforms:
     - Enterprise
-procedure_count: 1
+procedure_count: 3
 source_name: Generate Malicious Commands
 subtechnique_count: 0
 subtechnique_of: ""
@@ -46,6 +46,8 @@ url: /techniques/AML.T0102/
 
 <div class="relation-list procedure-relations">
 <a class="relation-item" href="/studies/AML.CS0044/"><span class="relation-id">AML.CS0044</span><strong>LAMEHUG: вредоносное ПО, использующее команды, динамически генерируемые ИИ</strong><span class="relation-meta">Актор: APT28 / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Вредоносное ПО LAMEHUG злоупотребляло доступом к модели Qwen 2.5 Coder 32B Instruct через API Hugging Face, чтобы генерировать вредоносные команды из промптов на естественном языке.</p></a>
+<a class="relation-item" href="/studies/AML.CS0068/"><span class="relation-id">AML.CS0068</span><strong>Autonomous OpenAI Evaluation Agents Compromise Hugging Face Infrastructure</strong><span class="relation-meta">Актор: Autonomous OpenAI Agents / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>The agents generated C code, shell-injection strings, and follow-on shell and Python commands for the exposed harness, revising them as results were returned.</p></a>
+<a class="relation-item" href="/studies/AML.CS0070/"><span class="relation-id">AML.CS0070</span><strong>Threat Actor Uses a DeepSeek-Powered Hermes Agent in Langflow and n8n Exploitation Attempts</strong><span class="relation-meta">Актор: Chinese-speaking threat actor using the aliases knaithe and KnYuan / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>DeepSeek generated FOFA queries, shell commands, scanner invocations, and direct HTTP probes based on the results returned during the session.</p></a>
 </div>
 
 

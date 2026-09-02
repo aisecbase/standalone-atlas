@@ -1,19 +1,19 @@
-version: "2026.07"
+version: "2026.08"
 totals:
     case-study:
-        total: 68
+        total: 72
         name_translated: 68
         body_translated: 68
-        procedures_total: 571
-        procedures_translated: 571
-        fully_translated: 68
+        procedures_total: 659
+        procedures_translated: 541
+        fully_translated: 43
         needs_review: 0
     mitigation:
-        total: 37
+        total: 39
         name_translated: 37
         body_translated: 37
-        fully_translated: 37
-        needs_review: 0
+        fully_translated: 35
+        needs_review: 2
     resource:
         total: 6
         name_translated: 6
@@ -24,14 +24,460 @@ totals:
         total: 16
         name_translated: 16
         body_translated: 16
-        fully_translated: 16
-        needs_review: 0
+        fully_translated: 15
+        needs_review: 1
     technique:
-        total: 178
+        total: 197
         name_translated: 178
         body_translated: 178
-        fully_translated: 178
-        needs_review: 0
-missing: []
-partial: []
-review: []
+        fully_translated: 173
+        needs_review: 5
+missing:
+    - id: AML.CS0068
+      name: Autonomous OpenAI Evaluation Agents Compromise Hugging Face Infrastructure
+      type: case-study
+      has_name: false
+      has_body: false
+      source_field: summary
+      total_procedures: 37
+    - id: AML.CS0069
+      name: GTG-1002 Claude Code Espionage Campaign
+      type: case-study
+      has_name: false
+      has_body: false
+      source_field: summary
+      total_procedures: 21
+    - id: AML.CS0070
+      name: Threat Actor Uses a DeepSeek-Powered Hermes Agent in Langflow and n8n Exploitation Attempts
+      type: case-study
+      has_name: false
+      has_body: false
+      source_field: summary
+      total_procedures: 18
+    - id: AML.CS0071
+      name: Multi-Agent Framework Compromises Taiwanese Government Systems
+      type: case-study
+      has_name: false
+      has_body: false
+      source_field: summary
+      total_procedures: 12
+    - id: AML.M0037
+      name: AI Agent Authority Expansion Controls
+      type: mitigation
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.M0038
+      name: AI Agent Scope Drift Detection
+      type: mitigation
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0016.003
+      name: Exploits
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0016.004
+      name: AI Agent Tools
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0017.001
+      name: Autonomous Exploit Development
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0017.002
+      name: AI Agent Tools
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0116
+      name: Autonomous Reconnaissance
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0117
+      name: Autonomous Attack-Path Adaptation
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0118
+      name: Autonomous AI Agent Communication
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0118.000
+      name: Communication via Shared Artifacts
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0118.001
+      name: Direct Agent Communication
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0119
+      name: Exploit Automated Artifact Processing Pipeline
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0120
+      name: AI Artifact Repository
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0121
+      name: AI Agent Environment Reconstruction
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0122
+      name: Exploitation of Remote Services
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0123
+      name: Obfuscated Files or Information
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0124
+      name: Autonomous Attack Orchestration
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0125
+      name: Create Account
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0126
+      name: Automated Collection
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0127
+      name: Data Staged
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0128
+      name: Compromise Infrastructure
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+partial:
+    - id: AML.CS0021
+      name: ChatGPT Conversation Exfiltration
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 7
+      translated_procedures: 6
+    - id: AML.CS0026
+      name: Financial Transaction Hijacking with M365 Copilot as an Insider
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 14
+      translated_procedures: 12
+    - id: AML.CS0029
+      name: Google Bard Conversation Exfiltration
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 7
+      translated_procedures: 6
+    - id: AML.CS0035
+      name: Data Exfiltration from Slack AI via Indirect Prompt Injection
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 8
+      translated_procedures: 6
+    - id: AML.CS0037
+      name: Data Exfiltration via Agent Tools in Copilot Studio
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 14
+      translated_procedures: 12
+    - id: AML.CS0038
+      name: Planting Instructions for Delayed Automatic AI Agent Tool Invocation
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 6
+      translated_procedures: 5
+    - id: AML.CS0039
+      name: 'Living Off AI: Prompt Injection via Jira Service Management'
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 8
+      translated_procedures: 7
+    - id: AML.CS0040
+      name: Hacking ChatGPT's Memories with Prompt Injection
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 7
+      translated_procedures: 6
+    - id: AML.CS0041
+      name: 'Rules File Backdoor: Supply Chain Attack on AI Coding Assistants'
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 9
+      translated_procedures: 8
+    - id: AML.CS0043
+      name: Malware Prototype with Embedded Prompt Injection
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 8
+      translated_procedures: 7
+    - id: AML.CS0045
+      name: Data Exfiltration via an MCP Server used by Cursor
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 11
+      translated_procedures: 10
+    - id: AML.CS0046
+      name: Data Destruction via Indirect Prompt Injection Targeting Claude Computer-Use
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 7
+      translated_procedures: 6
+    - id: AML.CS0047
+      name: Code to Deploy Destructive AI Agent Discovered in Amazon Q VS Code Extension
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 7
+      translated_procedures: 6
+    - id: AML.CS0049
+      name: Supply Chain Compromise via Poisoned ClawdBot Skill
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 12
+      translated_procedures: 11
+    - id: AML.CS0051
+      name: OpenClaw Command & Control via Prompt Injection
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 18
+      translated_procedures: 16
+    - id: AML.CS0052
+      name: 'LLMSmith: RCE Vulnerabilities in LLM-Integrated Applications'
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 12
+      translated_procedures: 11
+    - id: AML.CS0054
+      name: Data Exfiltration via Remote Poisoned MCP Tool
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 11
+      translated_procedures: 10
+    - id: AML.CS0056
+      name: Model Distillation Campaigns Targeting Anthropic Claude
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 7
+      translated_procedures: 6
+    - id: AML.CS0059
+      name: 'EchoLeak: Zero-Click Prompt Injection Targeting M365 Copilot for Data Exfiltration'
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 12
+      translated_procedures: 10
+    - id: AML.CS0060
+      name: Cross-Site Scripting via Prompt Manipulation in Lenovo AI Chatbot
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 11
+      translated_procedures: 10
+    - id: AML.CS0061
+      name: 'AI in the Middle: Web-Based AI Services as C2 Relays'
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 10
+      translated_procedures: 9
+    - id: AML.CS0062
+      name: RCE Vulnerability in Semantic Kernel Search Plugin
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 6
+      translated_procedures: 5
+    - id: AML.CS0063
+      name: Prompt-Based Attacks Against Gemini via Calendar Invitations
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 20
+      translated_procedures: 19
+    - id: AML.CS0066
+      name: 'ZombieAgent: Data Exfiltration Attack on ChatGPT'
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 12
+      translated_procedures: 11
+    - id: AML.CS0067
+      name: Claude Code GitHub Action Secret Exposure
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 11
+      translated_procedures: 10
+review:
+    - id: AML.M0022
+      name: Generative AI Model Alignment
+      type: mitigation
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 6ba683fe6d09465506117f7bdf5195a664107429e0d5cbfc324cb73564e2576a
+      translation_source_sha256: 3fea04dcb7b5e4a443e45f22fc48ed248fa789771d69adece7ef807269bcf621
+    - id: AML.M0032
+      name: Segmentation of AI Agent Components
+      type: mitigation
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: ee05a52265f1c44e1fd80e01bba21c529a81497db31bd6ec7df2db6b8908aed9
+      translation_source_sha256: 02556099e37f7050ee2245a8e3dffc0ac9888270ffc3b746464b419ba2b0a19e
+    - id: AML.T0016.002
+      name: Generative AI
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 6ecf363cb9a70cd53ac7b96f91fea60f8d1620e0eebdca04f35bba01d2abf8f5
+      translation_source_sha256: ad1b4f4799e4418946c0cbd99fa730f77e2de65c95a6d700edf694a3758d9bf9
+    - id: AML.T0017
+      name: Develop Capabilities
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 6a435ad541af8fea8d4adee14dfbcedda157a32391b98bfda73c8622539052ef
+      translation_source_sha256: 980349b154af532e749d3191b6ab1b991da02a4d3b6100c6bbddb26b44f9b780
+    - id: AML.T0072
+      name: Cyber Communication Channel
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: name
+      needs_review: true
+      review_fields:
+        - name
+        - description
+      source_sha256: 41992141c3f7f81c5215653a20b9fb1f58da00e6c37507bf11832e314e640809
+      translation_source_sha256: a21dd9e7d32f1bbf5abba8c516f0d51954166aea12b7c3a723e7b1e6c1b1031f
+    - id: AML.T0075
+      name: Enterprise Resource Discovery
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: name
+      needs_review: true
+      review_fields:
+        - name
+        - description
+      source_sha256: d5d7fa9764942a9067c03424eaf64ef5fb4a588d7927f8c42195892024a34029
+      translation_source_sha256: 58ad5619f532f0e5942a3e53bf166c17537246d6027324b2e9c23152fcfc5795
+    - id: AML.T0089
+      name: Enterprise Environment Discovery
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: name
+      needs_review: true
+      review_fields:
+        - name
+        - description
+      source_sha256: 20fc7dc54d49a8ac6ced39bb7690e702ebbf07976d76085b2fdb09317afd9860
+      translation_source_sha256: e46126a75032d04dd9ee64d37b285e7a5ffbd156f3cdfffbb04b7e5a7131dba9
+    - id: AML.TA0001
+      name: AI Attack Adaptation
+      type: tactic
+      has_name: true
+      has_body: true
+      source_field: name
+      needs_review: true
+      review_fields:
+        - name
+        - description
+      source_sha256: cb7ffea0324f8108811785879ed2413d658caa1cb70ad3fcf0eaaf0bee0a363b
+      translation_source_sha256: 430f7ff6bd070514addbf64747fb559705c69fdd65dd23c44d7e1c2eddc059a2

@@ -12,7 +12,7 @@ mitigation_count: 0
 modified_date: "2026-05-27"
 platforms:
     - Enterprise
-procedure_count: 4
+procedure_count: 6
 source_name: Software Tools
 subtechnique_count: 0
 subtechnique_of: AML.T0016
@@ -50,6 +50,8 @@ url: /techniques/AML.T0016.001/
 <div class="relation-list">
 <a class="relation-item" href="/techniques/AML.T0016.000/"><span class="relation-id">AML.T0016.000</span><strong>Готовые реализации состязательных атак на ИИ</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0016.002/"><span class="relation-id">AML.T0016.002</span><strong>Генеративный ИИ</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0016.003/"><span class="relation-id">AML.T0016.003</span><strong>Exploits</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0016.004/"><span class="relation-id">AML.T0016.004</span><strong>AI Agent Tools</strong><span class="relation-meta">Подтехника</span></a>
 </div>
 
 
@@ -60,4 +62,6 @@ url: /techniques/AML.T0016.001/
 <a class="relation-item" href="/studies/AML.CS0030/"><span class="relation-id">AML.CS0030</span><strong>LLM-джекинг</strong><span class="relation-meta">Актор: Unknown / Тактика: AML.TA0003 Подготовка ресурсов</span><p>Злоумышленники получили [keychecker](https://github.com/cunnymessiah/keychecker) — инструмент массовой проверки ключей для различных ИИ-сервисов, который может проверять действительность ключа и получать отдельные атрибуты учетной записи, например баланс аккаунта и доступные модели.</p></a>
 <a class="relation-item" href="/studies/AML.CS0030/"><span class="relation-id">AML.CS0030</span><strong>LLM-джекинг</strong><span class="relation-meta">Актор: Unknown / Тактика: AML.TA0003 Подготовка ресурсов</span><p>Затем злоумышленники использовали [OAI Reverse Proxy](https://gitgud.io/khanon/oai-reverse-proxy), чтобы развернуть обратный прокси-сервис для украденных LLM-ресурсов. Этот прокси-сервис можно было использовать для продажи доступа киберпреступникам, которые могли эксплуатировать LLM в вредоносных целях.</p></a>
 <a class="relation-item" href="/studies/AML.CS0033/"><span class="relation-id">AML.CS0033</span><strong>Обход мобильной KYC-верификации с помощью дипфейк-изображения в реальном времени</strong><span class="relation-meta">Актор: iProov Red Team / Тактика: AML.TA0003 Подготовка ресурсов</span><p>Исследователи получили [Open Broadcaster Software (OBS)](https://obsproject.com), которое может транслировать видеопоток по сети.</p></a>
+<a class="relation-item" href="/studies/AML.CS0069/"><span class="relation-id">AML.CS0069</span><strong>GTG-1002 Claude Code Espionage Campaign</strong><span class="relation-meta">Актор: GTG-1002 / Тактика: AML.TA0003 Подготовка ресурсов</span><p>GTG-1002 obtained network scanners, database exploitation frameworks, password crackers, binary-analysis utilities, and other tools made available to the jailbroken Claude agent.</p></a>
+<a class="relation-item" href="/studies/AML.CS0070/"><span class="relation-id">AML.CS0070</span><strong>Threat Actor Uses a DeepSeek-Powered Hermes Agent in Langflow and n8n Exploitation Attempts</strong><span class="relation-meta">Актор: Chinese-speaking threat actor using the aliases knaithe and KnYuan / Тактика: AML.TA0003 Подготовка ресурсов</span><p>The actor obtained and configured Hermes Agent as the offensive framework, together with scripts and conventional scanning and exploitation utilities. Hermes provided terminal access, Telegram-based operator control, and a skills system.</p></a>
 </div>
