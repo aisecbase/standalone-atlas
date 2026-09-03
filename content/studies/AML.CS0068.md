@@ -39,7 +39,7 @@ procedure:
       tactic: AML.TA0001
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0118.000
-      technique_name: Communication via Shared Artifacts
+      technique_name: Коммуникация через общие артефакты
     - description: With public Internet access available, the agents explored public infrastructure and discovered an exposed CyberGym-style code-evaluation harness that accepted C source code and submission metadata.
       description_line: With public Internet access available, the agents explored public infrastructure and discovered an exposed CyberGym-style code-evaluation harness that accepted C source code and submission metadata.
       tactic: AML.TA0002

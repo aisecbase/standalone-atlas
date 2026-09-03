@@ -47,7 +47,7 @@ Direct communication may include delegation when the sending agent formulates or
 ## Другие подтехники родителя
 
 <div class="relation-list">
-<a class="relation-item" href="/techniques/AML.T0118.000/"><span class="relation-id">AML.T0118.000</span><strong>Communication via Shared Artifacts</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0118.000/"><span class="relation-id">AML.T0118.000</span><strong>Коммуникация через общие артефакты</strong><span class="relation-meta">Подтехника</span></a>
 </div>
 
 

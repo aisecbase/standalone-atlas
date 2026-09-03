@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-08-31"
-description: Autonomous AI agents may communicate by creating or modifying artifacts in a shared resource that persists outside their individual execution contexts. Shared artifacts may convey discoveries, objectives, tasking,...
+description: Автономные ИИ-агенты могут обмениваться информацией, создавая или изменяя артефакты в общем ресурсе, сохраняющемся за пределами их отдельных контекстов выполнения. Через общие артефакты могут передаваться обнаруженные...
 generated: true
 generated_by: atlasgen
 maturity: realized
@@ -19,17 +19,15 @@ subtechnique_count: 0
 subtechnique_of: AML.T0118
 tactics:
     - AML.TA0001
-title: Communication via Shared Artifacts
+title: Коммуникация через общие артефакты
 url: /techniques/AML.T0118.000/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Автономные ИИ-агенты могут обмениваться информацией, создавая или изменяя артефакты в общем ресурсе, сохраняющемся за пределами их отдельных контекстов выполнения. Через общие артефакты могут передаваться обнаруженные сведения, цели, задания, учётные данные, возможности, правила работы, данные о ходе работы, скрипты, сведения об объектах атаки, инструкции или результаты.
 
-Autonomous AI agents may communicate by creating or modifying artifacts in a shared resource that persists outside their individual execution contexts. Shared artifacts may convey discoveries, objectives, tasking, credentials, capabilities, operating rules, progress, scripts, targeting information, instructions, or results.
+Общие артефакты позволяют осуществлять асинхронную коммуникацию, в том числе между независимыми запусками агентов. Агент может публиковать информацию для последующего получения, использовать сведения, оставленные другим агентом, или дополнять общее состояние новыми обнаруженными сведениями, данными о ходе работы или результатами. Участвующим агентам не требуется иметь общую модель, общий оркестратор или общее окно контекста, а периоды их выполнения могут не пересекаться.
 
-Shared artifacts allow communication to occur asynchronously and across independent runs. An agent may publish information for later retrieval, adopt information left by another agent, or update the shared state with new findings, progress, or results. Participating agents do not need to share a model, orchestrator, context window, or overlapping execution period.
-
-The shared resource may be established for the operation or may be an existing repository, file store, message board, database, object store, queue, or similar service repurposed by the agents.
+Общий ресурс может быть создан специально для проведения операции или представлять собой существующий репозиторий, файловое хранилище, доску сообщений, базу данных, объектное хранилище, очередь либо аналогичный сервис, приспособленный агентами для этой цели.
 
 
 ## Тактики

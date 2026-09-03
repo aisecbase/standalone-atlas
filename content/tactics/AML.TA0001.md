@@ -60,8 +60,8 @@ url: /tactics/AML.TA0001/
 <a class="relation-item" href="/techniques/AML.T0102/"><span class="relation-id">AML.T0102</span><strong>Генерация вредоносных команд</strong></a>
 <a class="relation-item" href="/techniques/AML.T0117/"><span class="relation-id">AML.T0117</span><strong>Автономная адаптация пути атаки</strong></a>
 <a class="relation-item" href="/techniques/AML.T0118/"><span class="relation-id">AML.T0118</span><strong>Коммуникация автономных ИИ-агентов</strong></a>
-<a class="relation-item" href="/techniques/AML.T0118.000/"><span class="relation-id">AML.T0118.000</span><strong>Communication via Shared Artifacts</strong><span class="relation-meta">Подтехника</span></a>
-<a class="relation-item" href="/techniques/AML.T0118.000/"><span class="relation-id">AML.T0118.000</span><strong>Communication via Shared Artifacts</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0118.000/"><span class="relation-id">AML.T0118.000</span><strong>Коммуникация через общие артефакты</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0118.000/"><span class="relation-id">AML.T0118.000</span><strong>Коммуникация через общие артефакты</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0118.001/"><span class="relation-id">AML.T0118.001</span><strong>Direct Agent Communication</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0118.001/"><span class="relation-id">AML.T0118.001</span><strong>Direct Agent Communication</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0124/"><span class="relation-id">AML.T0124</span><strong>Autonomous Attack Orchestration</strong></a>
