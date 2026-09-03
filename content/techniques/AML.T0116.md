@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-08-31"
-description: Adversaries may use autonomous AI agents to conduct Reconnaissance activities. Given an objective, target, or partial lead, an agent may autonomously determine what information to obtain and how to investigate it. It...
+description: Злоумышленники могут использовать автономных ИИ-агентов для ведения разведки. Имея заданную цель, объект разведки или лишь предварительную зацепку, агент может автономно определять, какие сведения необходимо получить...
 generated: true
 generated_by: atlasgen
 maturity: realized
@@ -21,19 +21,17 @@ subtechnique_count: 0
 subtechnique_of: ""
 tactics:
     - AML.TA0002
-title: Autonomous Reconnaissance
+title: Автономная разведка
 url: /techniques/AML.T0116/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Злоумышленники могут использовать автономных ИИ-агентов для ведения [разведки](/tactics/AML.TA0002). Имея заданную цель, объект разведки или лишь предварительную зацепку, агент может автономно определять, какие сведения необходимо получить и как их искать. Он может интерпретировать наблюдения, выявлять пробелы в своём представлении о наблюдаемой извне поверхности атаки и выбирать последующие разведывательные действия без того, чтобы человек задавал ему каждый шаг расследования.
 
-Adversaries may use autonomous AI agents to conduct [Reconnaissance](/tactics/AML.TA0002) activities. Given an objective, target, or partial lead, an agent may autonomously determine what information to obtain and how to investigate it. It may interpret observations, identify gaps in its understanding of the externally observable attack surface, and select subsequent reconnaissance actions without a human specifying each investigative step.
+Агент может формулировать вопросы или гипотезы для расследования, выбирать источники и подходы для поиска ответов или проверки гипотез и уточнять своё представление по мере получения новых сведений. Полученные результаты могут порождать дополнительные цели разведки либо менять охват, глубину или направление расследования. Так возникает рекурсивный процесс «действие — наблюдение», в котором результаты разведки влияют на то, что агент будет исследовать далее, а не просто служат выходными данными заранее заданной процедуры.
 
-The agent may formulate investigative questions or hypotheses, select sources and approaches for addressing them, and update its understanding as new information is obtained. Findings may generate additional reconnaissance objectives or change the scope, depth, or direction of the investigation. This creates a recursive action-observation process in which reconnaissance results influence what the agent investigates next rather than merely supplying output from a predefined procedure.
+Агент может сопоставлять сведения из общедоступных источников и доступных извне сервисов, отдавать приоритет перспективным системам, исследовать предполагаемые уязвимости, отказываться от безрезультатных подходов или выбирать альтернативные методы. Он также может расширять перечень целей или заменять их на основании обнаруженных имён, инфраструктуры или контекстных связей и самостоятельно заново оценивать, по-прежнему ли система представляет интерес и входит ли она в заданные границы. Из-за ошибочных предположений агент может начать исследовать посторонние системы или системы, исследование которых не разрешено, тогда как верное определение заданных границ может привести к прекращению или перенаправлению его действий.
 
-The agent may correlate information across public sources and externally accessible services, prioritize promising systems, investigate suspected vulnerabilities, abandon unsuccessful approaches, or select alternative methods. It may also expand or substitute targets based on discovered names, infrastructure, or contextual relationships and independently reassess whether a system remains relevant or in scope. Incorrect assumptions may cause unrelated or unauthorized systems to be pursued, while successful scope recognition may cause the agent to stop or redirect its activity.
-
-Autonomous AI agents can sustain reconnaissance across long-running operations, reason over multiple information sources, and test many alternative paths at a speed and volume difficult for human operators to maintain.
+Автономные ИИ-агенты способны поддерживать ведение разведки на протяжении длительных операций, анализировать сведения из множества источников и проверять большое количество альтернативных путей с такой скоростью и в таком объёме, которые людям-операторам трудно поддерживать.
 
 
 ## Тактики

@@ -41,7 +41,7 @@ url: /tactics/AML.TA0002/
 <a class="relation-item" href="/techniques/AML.T0095/"><span class="relation-id">AML.T0095</span><strong>Поиск на открытых сайтах и доменах</strong></a>
 <a class="relation-item" href="/techniques/AML.T0095.000/"><span class="relation-id">AML.T0095.000</span><strong>Репозитории кода</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0095.000/"><span class="relation-id">AML.T0095.000</span><strong>Репозитории кода</strong><span class="relation-meta">Подтехника</span></a>
-<a class="relation-item" href="/techniques/AML.T0116/"><span class="relation-id">AML.T0116</span><strong>Autonomous Reconnaissance</strong></a>
+<a class="relation-item" href="/techniques/AML.T0116/"><span class="relation-id">AML.T0116</span><strong>Автономная разведка</strong></a>
 </div>
 
 

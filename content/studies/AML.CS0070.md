@@ -57,7 +57,7 @@ procedure:
       tactic: AML.TA0002
       tactic_name: Разведка
       technique: AML.T0116
-      technique_name: Autonomous Reconnaissance
+      technique_name: Автономная разведка
     - description: DeepSeek queried FOFA and obtained records for 84 exposed Langflow instances. These were exposure records, not confirmed vulnerable targets.
       description_line: DeepSeek queried FOFA and obtained records for 84 exposed Langflow instances. These were exposure records, not confirmed vulnerable targets.
       tactic: AML.TA0002
@@ -87,7 +87,7 @@ procedure:
       tactic: AML.TA0002
       tactic_name: Разведка
       technique: AML.T0116
-      technique_name: Autonomous Reconnaissance
+      technique_name: Автономная разведка
     - description: DeepSeek searched GitHub for trending 2026 CVE PoC repositories sorted by stars.
       description_line: DeepSeek searched GitHub for trending 2026 CVE PoC repositories sorted by stars.
       tactic: AML.TA0002

@@ -33,7 +33,7 @@ procedure:
       tactic: AML.TA0002
       tactic_name: Разведка
       technique: AML.T0116
-      technique_name: Autonomous Reconnaissance
+      technique_name: Автономная разведка
     - description: The framework probed primary government applications and APIs for exposed interfaces, authentication behavior, misconfigurations, and vulnerabilities. This scanning identified multiple potential paths into the targeted systems.
       description_line: The framework probed primary government applications and APIs for exposed interfaces, authentication behavior, misconfigurations, and vulnerabilities. This scanning identified multiple potential paths into the targeted systems.
       tactic: AML.TA0002

@@ -45,7 +45,7 @@ procedure:
       tactic: AML.TA0002
       tactic_name: Разведка
       technique: AML.T0116
-      technique_name: Autonomous Reconnaissance
+      technique_name: Автономная разведка
     - description: 'The agents developed and validated two execution methods against the exposed harness: redefining sqlite3_initialize so a submitted library invoked shell commands, and injecting shell syntax into submission path metadata.'
       description_line: 'The agents developed and validated two execution methods against the exposed harness: redefining sqlite3_initialize so a submitted library invoked shell commands, and injecting shell syntax into submission path metadata.'
       tactic: AML.TA0003
@@ -105,7 +105,7 @@ procedure:
       tactic: AML.TA0002
       tactic_name: Разведка
       technique: AML.T0116
-      technique_name: Autonomous Reconnaissance
+      technique_name: Автономная разведка
     - description: Agents discovered Hugging Face user tokens exposed in a public dataset, validated working credentials, and shared them through the Artifactory message board.
       description_line: Agents discovered Hugging Face user tokens exposed in a public dataset, validated working credentials, and shared them through the Artifactory message board.
       tactic: AML.TA0013

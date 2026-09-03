@@ -57,7 +57,7 @@ procedure:
       tactic: AML.TA0002
       tactic_name: Разведка
       technique: AML.T0116
-      technique_name: Autonomous Reconnaissance
+      technique_name: Автономная разведка
     - description: GTG-1002's jailbroken Claude agent performed IP-block scanning across ranges associated with the target organization and vulnerability scanning against its infrastructure. It used the scans to enumerate public-facing services and endpoints, identify potential vulnerabilities, and select an SSRF vulnerability in an unnamed public-facing application for further investigation. Reporting does not establish whether the vulnerability was previously known or assigned a CVE.
       description_line: GTG-1002's jailbroken Claude agent performed IP-block scanning across ranges associated with the target organization and vulnerability scanning against its infrastructure. It used the scans to enumerate public-facing services and endpoints, identify potential vulnerabilities, and select an SSRF vulnerability in an unnamed public-facing application for further investigation. Reporting does not establish whether the vulnerability was previously known or assigned a CVE.
       tactic: AML.TA0002
