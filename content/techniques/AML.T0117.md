@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-08-31"
-description: Adversaries may use an AI agent to autonomously construct and repeatedly revise an attack path toward an adversary-defined objective. Given a high-level objective, the system may derive intermediate objectives,...
+description: Злоумышленники могут использовать ИИ-агента для автономного построения и многократного пересмотра пути атаки, ведущего к заданной злоумышленником цели. Получив цель высокого уровня, система может формировать...
 generated: true
 generated_by: atlasgen
 maturity: realized
@@ -21,25 +21,23 @@ subtechnique_count: 0
 subtechnique_of: ""
 tactics:
     - AML.TA0001
-title: Autonomous Attack-Path Adaptation
+title: Автономная адаптация пути атаки
 url: /techniques/AML.T0117/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Злоумышленники могут использовать ИИ-агента для автономного построения и многократного пересмотра пути атаки, ведущего к заданной злоумышленником цели. Получив цель высокого уровня, система может формировать промежуточные цели, определять необходимые условия, сравнивать возможные пути и учитывать наблюдения, полученные в результате предыдущих действий, чтобы адаптивно выстраивать последовательность техник без руководства человеком на каждом шаге.
 
-Adversaries may use an AI agent to autonomously construct and repeatedly revise an attack path toward an adversary-defined objective. Given a high-level objective, the system may derive intermediate objectives, identify prerequisites, and compare candidate paths, and incorporate observations from previous actions to adaptively sequence techniques without a human directing each step.
+Автономные ИИ-агенты могут проявлять такое поведение и при выполнении задачи, поставленной в законных, безвредных или разрешённых целях, если выбранные системой промежуточные цели или методы пересекают границы полномочий, доверия, контроля или безопасности и приводят к попытке осуществить вредоносную киберактивность либо к её фактическому осуществлению.
 
-Autonomous AI agents may also exhibit this behavior while pursuing an objective provided for a legitimate, benign, or authorized purpose when the intermediate objectives or methods selected by the system cross an authorization, trust, control, or safety boundary and result in attempted or realized harmful cyber activity.
+В ходе повторяющихся циклов «наблюдение — решение — действие» система может интерпретировать выходные данные команд, ошибки, реакцию защитных средств, изменения в доступе и вновь обнаруженные сведения. На основе этих наблюдений она может менять приоритет действий, заменять промежуточную цель, отказываться от непродуктивной ветви, отбрасывать выводы, опровергнутые дополнительными доказательствами, или следовать альтернативным путём.
 
-Through repeated observation-decision-action cycles, the system may interpret command output, errors, defensive responses, changes in access, and newly discovered information. It may use those observations to reprioritize actions, replace an intermediate objective, abandon an unproductive branch, discard findings invalidated by additional evidence, or pursue an alternative path.
+Автономная ИИ-система может формировать вспомогательные цели, основное назначение которых — расширить её будущие операционные возможности, а не непосредственно выполнить поставленную задачу. Такие цели могут включать получение новых эксплойтов (см. [Автономная разработка эксплойтов](/techniques/AML.T0017.001)), дополнительных полномочий, идентичностей, сред выполнения, каналов связи, инструментов или отношений доверия, расширяющих набор действий, доступных в последующих циклах планирования. Вновь полученные возможности сами могут стать необходимыми условиями для новых вспомогательных целей, что приводит к постепенному расширению области действий агента в ходе операции.
 
-An autonomous AI system may generate enabling objectives whose primary purpose is to increase its future operational capability rather than directly accomplishing the assigned objective. These objectives may include acquiring new exploits (See [Autonomous Exploit Development](/techniques/AML.T0017.001)), additional authorities, identities, execution environments, communication paths, tools, or trust relationships that expand the set of actions available to subsequent planning cycles. Newly acquired capabilities may themselves become prerequisites for additional enabling objectives, resulting in progressive expansion of the agent's operational reach over the course of an operation.
+Перепланирование пути атаки может происходить в рамках одного запуска агента или возникать при работе нескольких независимых агентов. Агенты могут обмениваться информацией посредством сохраняемых общих артефактов (см. [Коммуникация автономных ИИ-агентов: коммуникация через общие артефакты](/techniques/AML.T0118.000)), благодаря чему обнаруженные сведения, запросы, возможности, ограничения, состояние задачи и результаты одного агента могут влиять на последующий путь, выбранный другим. Участвующие агенты могут принимать к выполнению запросы друг друга, добровольно распределять работу, повторно использовать успешные методы, продолжать незавершённые действия или перенаправлять собственные локальные пути без централизованного планировщика, общего окна контекста или полного представления об операции в целом.
 
-Attack-path replanning may occur within one agent run or emerge across multiple independent agents. Agents may communicate persistent, shared artifacts (See [Autonomous AI Agent Communication: Communication via Shared Artifacts](/techniques/AML.T0118.000)), allowing discoveries, requests, capabilities, constraints, task state, and results produced by one agent to affect the subsequent path selected by another. Participating agents may adopt peer requests, divide work voluntarily, reuse successful methods, continue incomplete activity, or redirect their local paths without a centralized planner, shared context window, or complete view of the broader operation.
+Участие человека не исключает автономного перепланирования пути атаки. Оператор, пользователь, специалист по оценке или рабочий процесс могут выбирать цель атаки, определять задачу, устанавливать ограничения, предоставлять возможности или одобрять переходы, влекущие существенные последствия.
 
-Human involvement does not preclude autonomous attack-path replanning. A human operator, user, evaluator, or workflow may select the target, define the objective, establish constraints, provide capabilities, or approve consequential transitions.
-
-[Autonomous Attack-Path Adaptation](/techniques/AML.T0117) and [Autonomous Attack Orchestration](/techniques/AML.T0124) may occur together but describe different control functions. Attack-path adaptation captures how evidence changes the selected path. Attack orchestration captures how work is allocated, coordinated, validated, and redirected across agents.
+[Автономная адаптация пути атаки](/techniques/AML.T0117) и [Автономная оркестрация атаки](/techniques/AML.T0124) могут применяться совместно, однако описывают разные функции управления. Адаптация пути атаки отражает то, как полученные свидетельства изменяют выбранный путь. Оркестрация атаки отражает то, как работа распределяется между агентами, координируется, проверяется и перенаправляется.
 
 
 ## Тактики

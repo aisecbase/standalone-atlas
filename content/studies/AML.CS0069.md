@@ -51,7 +51,7 @@ procedure:
       tactic: AML.TA0001
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0117
-      technique_name: Autonomous Attack-Path Adaptation
+      technique_name: Автономная адаптация пути атаки
     - description: GTG-1002's jailbroken Claude agent inspected the target's systems and infrastructure, used returned information to direct further investigation, and identified high-value databases and workflow orchestration platforms. Anthropic does not identify the victim, products, or databases involved.
       description_line: GTG-1002's jailbroken Claude agent inspected the target's systems and infrastructure, used returned information to direct further investigation, and identified high-value databases and workflow orchestration platforms. Anthropic does not identify the victim, products, or databases involved.
       tactic: AML.TA0002

@@ -45,7 +45,7 @@ procedure:
       tactic: AML.TA0001
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0117
-      technique_name: Autonomous Attack-Path Adaptation
+      technique_name: Автономная адаптация пути атаки
     - description: DeepSeek generated FOFA queries, shell commands, scanner invocations, and direct HTTP probes based on the results returned during the session.
       description_line: DeepSeek generated FOFA queries, shell commands, scanner invocations, and direct HTTP probes based on the results returned during the session.
       tactic: AML.TA0001

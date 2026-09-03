@@ -15,7 +15,7 @@ procedure:
       tactic: AML.TA0001
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0117
-      technique_name: Autonomous Attack-Path Adaptation
+      technique_name: Автономная адаптация пути атаки
     - description: An agent tested Artifactory request handling, inspected responses, and iteratively developed and validated an SSRF exploit that caused the package cache to retrieve external content for the isolated evaluation environment. OpenAI and JFrog characterized the vulnerability as a previously unknown zero-day.
       description_line: An agent tested Artifactory request handling, inspected responses, and iteratively developed and validated an SSRF exploit that caused the package cache to retrieve external content for the isolated evaluation environment. OpenAI and JFrog characterized the vulnerability as a previously unknown zero-day.
       tactic: AML.TA0003

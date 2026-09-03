@@ -21,7 +21,7 @@ procedure:
       tactic: AML.TA0001
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0117
-      technique_name: Autonomous Attack-Path Adaptation
+      technique_name: Автономная адаптация пути атаки
     - description: The framework exchanged assignments, findings, validation results, status, and after-action information between its orchestrating control process and specialized sub-agents. Aggregated results informed later assignments and attack waves.
       description_line: The framework exchanged assignments, findings, validation results, status, and after-action information between its orchestrating control process and specialized sub-agents. Aggregated results informed later assignments and attack waves.
       tactic: AML.TA0001
