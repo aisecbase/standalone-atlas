@@ -37,7 +37,7 @@ url: /techniques/AML.T0119/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0016/"><span class="relation-id">AML.M0016</span><strong>Сканирование уязвимостей</strong><p>Vulnerability scanning reduces opportunities for adversaries to exploit weaknesses in artifact processing pipelines.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0016/"><span class="relation-id">AML.M0016</span><strong>Сканирование уязвимостей</strong><p>Сканирование уязвимостей сокращает возможности злоумышленников эксплуатировать недостатки в пайплайнах обработки артефактов.</p></a>
 </div>
 
 

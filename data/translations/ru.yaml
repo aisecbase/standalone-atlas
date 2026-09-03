@@ -538,6 +538,8 @@ technique_uses:
     use: "Сканирование уязвимостей может помочь выявлять вредоносные пакеты и предотвращать их выполнение пользователем."
   - source: "Vulnerability scanning identifies and remediates software flaws before they can be exploited to obtain credentials."
     use: "Сканирование уязвимостей выявляет и устраняет дефекты ПО до того, как злоумышленники смогут эксплуатировать их для получения учётных данных."
+  - source: "Vulnerability scanning reduces opportunities for adversaries to exploit weaknesses in artifact processing pipelines."
+    use: "Сканирование уязвимостей сокращает возможности злоумышленников эксплуатировать недостатки в пайплайнах обработки артефактов."
   - source: "Vulnerability scanning reduces opportunities for adversaries to exploit weaknesses that bypass security controls."
     use: "Сканирование уязвимостей сокращает возможности злоумышленников эксплуатировать недостатки, позволяющие обходить средства защиты."
   - source: "With full access to the model, an adversary could perform white-box attacks."
