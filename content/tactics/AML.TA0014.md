@@ -29,7 +29,7 @@ url: /tactics/AML.TA0014/
 <a class="relation-item" href="/techniques/AML.T0096/"><span class="relation-id">AML.T0096</span><strong>API ИИ-сервиса</strong></a>
 <a class="relation-item" href="/techniques/AML.T0108/"><span class="relation-id">AML.T0108</span><strong>ИИ-агент</strong></a>
 <a class="relation-item" href="/techniques/AML.T0114/"><span class="relation-id">AML.T0114</span><strong>Веб-интерфейс ИИ-сервиса</strong></a>
-<a class="relation-item" href="/techniques/AML.T0120/"><span class="relation-id">AML.T0120</span><strong>AI Artifact Repository</strong></a>
+<a class="relation-item" href="/techniques/AML.T0120/"><span class="relation-id">AML.T0120</span><strong>Репозиторий ИИ-артефактов</strong></a>
 </div>
 
 

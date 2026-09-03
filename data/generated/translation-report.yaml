@@ -28,9 +28,9 @@ totals:
         needs_review: 1
     technique:
         total: 197
-        name_translated: 184
-        body_translated: 184
-        fully_translated: 179
+        name_translated: 185
+        body_translated: 185
+        fully_translated: 180
         needs_review: 5
 missing:
     - id: AML.CS0068
@@ -93,12 +93,6 @@ missing:
       source_field: description
     - id: AML.T0017.002
       name: AI Agent Tools
-      type: technique
-      has_name: false
-      has_body: false
-      source_field: description
-    - id: AML.T0120
-      name: AI Artifact Repository
       type: technique
       has_name: false
       has_body: false

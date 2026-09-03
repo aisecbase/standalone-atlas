@@ -165,7 +165,7 @@ procedure:
       tactic: AML.TA0014
       tactic_name: Командование и управление
       technique: AML.T0120
-      technique_name: AI Artifact Repository
+      technique_name: Репозиторий ИИ-артефактов
     - description: The agents chunked, compressed, Base64-encoded, and sometimes XOR-encoded communications carried through the dataset-repository channel.
       description_line: The agents chunked, compressed, Base64-encoded, and sometimes XOR-encoded communications carried through the dataset-repository channel.
       tactic: AML.TA0007

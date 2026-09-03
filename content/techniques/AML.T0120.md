@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-08-31"
-description: Adversaries may repurpose AI artifact repositories as asynchronous command-and-control channels. Commands, payloads, or tasking may be placed in repository objects for a compromised system to retrieve or poll. The...
+description: Злоумышленники могут использовать репозитории ИИ-артефактов не по назначению — в качестве асинхронных каналов командования и управления. Команды, полезные нагрузки или задания могут размещаться в объектах репозитория,...
 generated: true
 generated_by: atlasgen
 maturity: realized
@@ -21,15 +21,13 @@ subtechnique_count: 0
 subtechnique_of: ""
 tactics:
     - AML.TA0014
-title: AI Artifact Repository
+title: Репозиторий ИИ-артефактов
 url: /techniques/AML.T0120/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Злоумышленники могут использовать репозитории ИИ-артефактов не по назначению — в качестве асинхронных каналов командования и управления. Команды, полезные нагрузки или задания могут размещаться в объектах репозитория, которые скомпрометированная система может извлекать или периодически опрашивать. Затем скомпрометированная система может записывать обратно в репозиторий результаты выполнения, сведения о состоянии или собранную информацию для последующего получения злоумышленником.
 
-Adversaries may repurpose AI artifact repositories as asynchronous command-and-control channels. Commands, payloads, or tasking may be placed in repository objects for a compromised system to retrieve or poll. The compromised system may then write execution results, status, or collected information back to the repository for retrieval by the adversary.
-
-This communication can use ordinary artifact and repository operations, such as reading or updating artifact content, metadata, or revisions through an API or version-control interface. The repository acts as a message queue or dead drop, allowing the parties to exchange information without a continuous direct connection and potentially blending the activity with legitimate artifact traffic.
+Для такой коммуникации могут использоваться штатные операции с артефактами и репозиториями, например чтение или обновление содержимого, метаданных либо ревизий артефакта через API или интерфейс системы контроля версий. Репозиторий выступает в роли очереди сообщений или электронного тайника (dead drop), позволяя сторонам обмениваться информацией без постоянного прямого соединения; при этом такая активность может сливаться с легитимным трафиком, связанным с артефактами.
 
 
 ## Тактики
