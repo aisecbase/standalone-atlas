@@ -42,7 +42,7 @@ The shared resource may be established for the operation or may be an existing r
 ## Родительская техника
 
 <div class="relation-list">
-<a class="relation-item" href="/techniques/AML.T0118/"><span class="relation-id">AML.T0118</span><strong>Autonomous AI Agent Communication</strong></a>
+<a class="relation-item" href="/techniques/AML.T0118/"><span class="relation-id">AML.T0118</span><strong>Коммуникация автономных ИИ-агентов</strong></a>
 </div>
 
 

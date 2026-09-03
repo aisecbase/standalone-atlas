@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-08-31"
-description: Autonomous AI agents may exchange operational information with other AI agents, sub-agents, or independent agent runs. Exchanged information may include discoveries, objectives, tasking, capabilities, credentials,...
+description: Автономные ИИ-агенты могут обмениваться информацией об операции с другими ИИ-агентами или субагентами; обмен также может происходить между независимыми запусками агентов. В ходе такого обмена могут передаваться...
 generated: true
 generated_by: atlasgen
 maturity: realized
@@ -19,17 +19,15 @@ subtechnique_count: 2
 subtechnique_of: ""
 tactics:
     - AML.TA0001
-title: Autonomous AI Agent Communication
+title: Коммуникация автономных ИИ-агентов
 url: /techniques/AML.T0118/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Автономные ИИ-агенты могут обмениваться информацией об операции с другими ИИ-агентами или субагентами; обмен также может происходить между независимыми запусками агентов. В ходе такого обмена могут передаваться обнаруженные сведения, цели, задания, возможности, учётные данные, ограничения, правила работы, состояние задачи, сведения об объектах атаки, инструкции или результаты. Коммуникация позволяет автономным ИИ-агентам координировать действия, делиться обнаруженными сведениями, делегировать работу, запрашивать помощь, проверять результаты или пересматривать дальнейшие действия, при этом человеку-оператору не требуется управлять каждым взаимодействием.
 
-Autonomous AI agents may exchange operational information with other AI agents, sub-agents, or independent agent runs. Exchanged information may include discoveries, objectives, tasking, capabilities, credentials, constraints, operating rules, task state, targeting information, instructions, or results. Communication enables autonomous AI agents to coordinate activities, share discoveries, delegate work, request assistance, validate results, or revise future actions without requiring a human operator to direct each interaction.
+Автономные ИИ-агенты могут самостоятельно определять, когда обмен информацией полезен для проведения операции, какой информацией обмениваться и как наилучшим образом использовать полученные сведения для выполнения своей задачи. Получивший информацию ИИ-агент может интерпретировать переданные сведения и использовать их, чтобы продолжить ранее начатые действия, исследовать зацепку, выполнить задачу, повторно задействовать возможность, проверить результат или скорректировать дальнейшие действия в рамках атаки.
 
-Autonomous AI agents may independently determine when communication is operationally beneficial, what information to exchange, and how to best utilize exchanged information to accomplish their task. The receiving AI agent may interpret the shared information and use it to continue prior activity, investigate a lead, perform a task, reuse a capability, validate a result, or revise subsequent attack activity.
-
-Communication may occur directly through an agent interface (See [Direct Agent Communication](/techniques/AML.T0118.001)) or indirectly via writeable shared resources (See [Communication via Shared Artifacts](/techniques/AML.T0118.000)).
+Коммуникация может осуществляться напрямую через интерфейс взаимодействия агентов (см. [Прямая коммуникация агентов](/techniques/AML.T0118.001)) или косвенно — через общие ресурсы, доступные для записи (см. [Коммуникация через общие артефакты](/techniques/AML.T0118.000)).
 
 
 ## Тактики
