@@ -8,7 +8,7 @@
 | Меры защиты | 39 | 37 | 37 | - | 35 | 2 |
 | Ресурсы | 6 | 6 | 6 | - | 6 | 0 |
 | Тактики | 16 | 16 | 16 | - | 15 | 1 |
-| Техники | 197 | 185 | 185 | - | 180 | 5 |
+| Техники | 197 | 186 | 186 | - | 181 | 5 |
 
 ## Требует проверки (8)
 
@@ -49,7 +49,7 @@
 - [`AML.CS0066`](/studies/AML.CS0066/) (Кейсы): ZombieAgent: Data Exfiltration Attack on ChatGPT; название: да; описание/summary: да; процедуры: 11/12
 - [`AML.CS0067`](/studies/AML.CS0067/) (Кейсы): Claude Code GitHub Action Secret Exposure; название: да; описание/summary: да; процедуры: 10/11
 
-## Перевод отсутствует (18)
+## Перевод отсутствует (17)
 
 - [`AML.CS0068`](/studies/AML.CS0068/) (Кейсы): Autonomous OpenAI Evaluation Agents Compromise Hugging Face Infrastructure; название: нет; описание/summary: нет; процедуры: 0/37
 - [`AML.CS0069`](/studies/AML.CS0069/) (Кейсы): GTG-1002 Claude Code Espionage Campaign; название: нет; описание/summary: нет; процедуры: 0/21
@@ -61,7 +61,6 @@
 - [`AML.T0016.004`](/techniques/AML.T0016.004/) (Техники): AI Agent Tools; название: нет; описание/summary: нет
 - [`AML.T0017.001`](/techniques/AML.T0017.001/) (Техники): Autonomous Exploit Development; название: нет; описание/summary: нет
 - [`AML.T0017.002`](/techniques/AML.T0017.002/) (Техники): AI Agent Tools; название: нет; описание/summary: нет
-- [`AML.T0121`](/techniques/AML.T0121/) (Техники): AI Agent Environment Reconstruction; название: нет; описание/summary: нет
 - [`AML.T0122`](/techniques/AML.T0122/) (Техники): Exploitation of Remote Services; название: нет; описание/summary: нет
 - [`AML.T0123`](/techniques/AML.T0123/) (Техники): Obfuscated Files or Information; название: нет; описание/summary: нет
 - [`AML.T0124`](/techniques/AML.T0124/) (Техники): Autonomous Attack Orchestration; название: нет; описание/summary: нет

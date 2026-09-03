@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-08-31"
-description: An autonomous AI agent may reconstruct the environment needed to continue an existing operation after its execution environment is lost, reset, replaced, denied, or made unusable. The agent may recover or recreate...
+description: Автономный ИИ-агент может восстановить среду, необходимую для продолжения уже начатой операции, после того как его среда выполнения была утрачена, сброшена, заменена, доступ к ней был запрещён либо она была приведена...
 generated: true
 generated_by: atlasgen
 maturity: realized
@@ -18,13 +18,11 @@ subtechnique_count: 0
 subtechnique_of: ""
 tactics:
     - AML.TA0006
-title: AI Agent Environment Reconstruction
+title: Восстановление среды ИИ-агента
 url: /techniques/AML.T0121/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
-
-An autonomous AI agent may reconstruct the environment needed to continue an existing operation after its execution environment is lost, reset, replaced, denied, or made unusable. The agent may recover or recreate tools, dependencies, configuration, credentials or access paths, communication or coordination resources, working artifacts, and externally stored operational state in order to resume the same objective.
+Автономный ИИ-агент может восстановить среду, необходимую для продолжения уже начатой операции, после того как его среда выполнения была утрачена, сброшена, заменена, доступ к ней был запрещён либо она была приведена в непригодное для использования состояние. Агент может восстановить или воссоздать инструменты, зависимости, конфигурацию, учётные данные или пути доступа, ресурсы коммуникации или координации, рабочие артефакты и состояние операции, сохранённое во внешнем хранилище, чтобы возобновить работу по достижению той же цели.
 
 
 ## Тактики

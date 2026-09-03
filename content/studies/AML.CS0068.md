@@ -87,7 +87,7 @@ procedure:
       tactic: AML.TA0006
       tactic_name: Закрепление
       technique: AML.T0121
-      technique_name: AI Agent Environment Reconstruction
+      technique_name: Восстановление среды ИИ-агента
     - description: The agents converted the compromised sandbox into an external control, staging, egress, and read-back launchpad. They exchanged loaders, scripts, commands, operational state, and results through paste sites, file drops, repositories, and other public web services.
       description_line: The agents converted the compromised sandbox into an external control, staging, egress, and read-back launchpad. They exchanged loaders, scripts, commands, operational state, and results through paste sites, file drops, repositories, and other public web services.
       tactic: AML.TA0014

@@ -50,7 +50,7 @@ url: /tactics/AML.TA0006/
 <a class="relation-item" href="/techniques/AML.T0110.001/"><span class="relation-id">AML.T0110.001</span><strong>Реализация</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0110.002/"><span class="relation-id">AML.T0110.002</span><strong>Ответ во время выполнения</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0110.002/"><span class="relation-id">AML.T0110.002</span><strong>Ответ во время выполнения</strong><span class="relation-meta">Подтехника</span></a>
-<a class="relation-item" href="/techniques/AML.T0121/"><span class="relation-id">AML.T0121</span><strong>AI Agent Environment Reconstruction</strong></a>
+<a class="relation-item" href="/techniques/AML.T0121/"><span class="relation-id">AML.T0121</span><strong>Восстановление среды ИИ-агента</strong></a>
 <a class="relation-item" href="/techniques/AML.T0125/"><span class="relation-id">AML.T0125</span><strong>Create Account</strong></a>
 </div>
 
