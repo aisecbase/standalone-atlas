@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-08-31"
-description: Adversaries may submit, publish, or modify an artifact in a way that triggers an automated processing pipeline. As the pipeline handles the artifact, adversary-controlled content or configuration may exploit a...
+description: Злоумышленники могут отправить, опубликовать или изменить артефакт таким образом, чтобы запустить автоматизированный пайплайн его обработки. Когда пайплайн обрабатывает артефакт, злоумышленник может с помощью...
 generated: true
 generated_by: atlasgen
 maturity: realized
@@ -18,15 +18,13 @@ subtechnique_count: 0
 subtechnique_of: ""
 tactics:
     - AML.TA0004
-title: Exploit Automated Artifact Processing Pipeline
+title: Эксплуатация автоматизированного пайплайна обработки артефактов
 url: /techniques/AML.T0119/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Злоумышленники могут отправить, опубликовать или изменить артефакт таким образом, чтобы запустить автоматизированный пайплайн его обработки. Когда пайплайн обрабатывает артефакт, злоумышленник может с помощью содержимого или конфигурации, находящихся под его контролем, эксплуатировать слабое место в логике обработки, в результате чего обработчик действует за рамками предусмотренного поведения, используя разрешения и доступ воркера обработки.
 
-Adversaries may submit, publish, or modify an artifact in a way that triggers an automated processing pipeline. As the pipeline handles the artifact, adversary-controlled content or configuration may exploit a weakness in the processing logic, causing the processor to act outside its intended behavior using the permissions and access of a processing worker.
-
-Exploitation may cause the worker to access local or internal resources and expose information through normal processing output or evaluate adversary-controlled content and execute code. The attack is triggered by automated backend processing and does not require a victim to open, load, or approve the artifact.
+Эксплуатация может привести к тому, что воркер обработки получит доступ к локальным или внутренним ресурсам и раскроет информацию через штатные выходные данные обработки либо интерпретирует подконтрольное злоумышленнику содержимое и выполнит код. Атака запускается автоматизированной обработкой на серверной стороне и не требует от жертвы открывать, загружать или одобрять артефакт.
 
 
 ## Тактики

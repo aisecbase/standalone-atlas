@@ -129,7 +129,7 @@ procedure:
       tactic: AML.TA0004
       tactic_name: Первичный доступ
       technique: AML.T0119
-      technique_name: Exploit Automated Artifact Processing Pipeline
+      technique_name: Эксплуатация автоматизированного пайплайна обработки артефактов
     - description: The HDF5 external references disclosed /proc/self/environ and worker source files, including details showing how dataset configurations were processed.
       description_line: The HDF5 external references disclosed /proc/self/environ and worker source files, including details showing how dataset configurations were processed.
       tactic: AML.TA0009
@@ -153,7 +153,7 @@ procedure:
       tactic: AML.TA0004
       tactic_name: Первичный доступ
       technique: AML.T0119
-      technique_name: Exploit Automated Artifact Processing Pipeline
+      technique_name: Эксплуатация автоматизированного пайплайна обработки артефактов
     - description: The agents used the Jinja2 execution path to run staged Python and shell commands inside the production Dataset Server pod and adapted subsequent commands based on returned output.
       description_line: The agents used the Jinja2 execution path to run staged Python and shell commands inside the production Dataset Server pod and adapted subsequent commands based on returned output.
       tactic: AML.TA0005

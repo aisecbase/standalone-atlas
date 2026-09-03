@@ -49,7 +49,7 @@ url: /tactics/AML.TA0004/
 <a class="relation-item" href="/techniques/AML.T0052.001/"><span class="relation-id">AML.T0052.001</span><strong>Фишинг с использованием дипфейков</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0078/"><span class="relation-id">AML.T0078</span><strong>Компрометация при посещении сайта</strong></a>
 <a class="relation-item" href="/techniques/AML.T0093/"><span class="relation-id">AML.T0093</span><strong>Внедрение промпта через публичное приложение</strong></a>
-<a class="relation-item" href="/techniques/AML.T0119/"><span class="relation-id">AML.T0119</span><strong>Exploit Automated Artifact Processing Pipeline</strong></a>
+<a class="relation-item" href="/techniques/AML.T0119/"><span class="relation-id">AML.T0119</span><strong>Эксплуатация автоматизированного пайплайна обработки артефактов</strong></a>
 </div>
 
 
