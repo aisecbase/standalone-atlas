@@ -38,7 +38,7 @@ url: /tactics/AML.TA0015/
 <a class="relation-item" href="/techniques/AML.T0091.000/"><span class="relation-id">AML.T0091.000</span><strong>Токен доступа к приложению</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0091.001/"><span class="relation-id">AML.T0091.001</span><strong>Cookie веб-сессии</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0091.001/"><span class="relation-id">AML.T0091.001</span><strong>Cookie веб-сессии</strong><span class="relation-meta">Подтехника</span></a>
-<a class="relation-item" href="/techniques/AML.T0122/"><span class="relation-id">AML.T0122</span><strong>Exploitation of Remote Services</strong></a>
+<a class="relation-item" href="/techniques/AML.T0122/"><span class="relation-id">AML.T0122</span><strong>Эксплуатация удалённых сервисов</strong></a>
 </div>
 
 

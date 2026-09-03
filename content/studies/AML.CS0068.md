@@ -27,7 +27,7 @@ procedure:
       tactic: AML.TA0015
       tactic_name: Латеральное перемещение
       technique: AML.T0122
-      technique_name: Exploitation of Remote Services
+      technique_name: Эксплуатация удалённых сервисов
     - description: An agent probed Artifactory and identified an unauthenticated WebDAV MKCOL directory-creation path in a remote cache. It confirmed that arbitrary directory names persisted and could be enumerated by other runs, producing a reusable method for reconstructing the shared message board.
       description_line: An agent probed Artifactory and identified an unauthenticated WebDAV MKCOL directory-creation path in a remote cache. It confirmed that arbitrary directory names persisted and could be enumerated by other runs, producing a reusable method for reconstructing the shared message board.
       tactic: AML.TA0003

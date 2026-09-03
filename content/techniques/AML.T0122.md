@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: T1210
 attack_ref_url: https://attack.mitre.org/techniques/T1210/
 created_date: "2026-08-31"
-description: Adversaries may exploit a software or design weakness in a service reachable from their current environment to gain unauthorized access to another system, component, network, or trust boundary. Exploitation may allow...
+description: Злоумышленники могут эксплуатировать слабое место в программной реализации или архитектуре сервиса, доступного из их текущей среды, чтобы получить неавторизованный доступ к другой системе, компоненту или сети либо...
 generated: true
 generated_by: atlasgen
 maturity: realized
@@ -18,17 +18,15 @@ subtechnique_count: 0
 subtechnique_of: ""
 tactics:
     - AML.TA0015
-title: Exploitation of Remote Services
+title: Эксплуатация удалённых сервисов
 url: /techniques/AML.T0122/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Злоумышленники могут эксплуатировать слабое место в программной реализации или архитектуре сервиса, доступного из их текущей среды, чтобы получить неавторизованный доступ к другой системе, компоненту или сети либо пересечь границу доверия. Эксплуатация может позволить злоумышленнику выполнить код, получить доступ к защищённым ресурсам, вызвать неавторизованные операции, получить привилегии сервиса либо заставить сервис отправлять сетевые запросы или выполнять действия от имени злоумышленника.
 
-Adversaries may exploit a software or design weakness in a service reachable from their current environment to gain unauthorized access to another system, component, network, or trust boundary. Exploitation may allow the adversary to execute code, access protected resources, invoke unauthorized operations, obtain the service's privileges, or cause the service to make network requests or perform actions on the adversary's behalf.
+В средах ИИ к удалённым сервисам могут относиться кэши пакетов, реестры артефактов и моделей, сервисы наборов данных, инфраструктура оценки, шлюзы инференса, системы отслеживания экспериментов, векторные базы данных, ноутбуки, пайплайны обучения, сервисы оркестрации, а также интерфейсы плоскости управления облачной средой или кластером. Эти сервисы могут быть доступны из рабочих нагрузок обучения, оценки или ИИ-агентов, в остальном остающихся изолированными, и обеспечивать транзитивный доступ к внутренней инфраструктуре или внешним сетям.
 
-In AI environments, remote services may include package caches, artifact and model registries, dataset services, evaluation infrastructure, inference gateways, experiment trackers, vector databases, notebooks, training pipelines, orchestration services, and cloud or cluster control-plane interfaces. These services may be reachable from otherwise isolated training, evaluation, or agent workloads and can provide transitive access to internal infrastructure or external networks.
-
-Exploitation does not require compromise of the remote service's underlying host. For example, an adversary may exploit a server-side request vulnerability in a shared service to cross a network-containment boundary while leaving the service host itself uncompromised. Exploitation that produces host access, privilege escalation, credential disclosure, command execution, or another effect should be mapped separately to the applicable technique.
+Эксплуатация не требует компрометации хоста, на котором работает удалённый сервис. Например, злоумышленник может эксплуатировать уязвимость серверных запросов в общем сервисе, чтобы пересечь границу сетевой изоляции, при этом не компрометируя сам хост сервиса. Если эксплуатация приводит к доступу к хосту, повышению привилегий, раскрытию учётных данных, выполнению команд или иному эффекту, такой эффект следует отдельно сопоставить с применимой техникой.
 
 
 ## Тактики
