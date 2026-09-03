@@ -47,7 +47,7 @@ url: /techniques/AML.T0118.000/
 ## Другие подтехники родителя
 
 <div class="relation-list">
-<a class="relation-item" href="/techniques/AML.T0118.001/"><span class="relation-id">AML.T0118.001</span><strong>Direct Agent Communication</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0118.001/"><span class="relation-id">AML.T0118.001</span><strong>Прямая коммуникация агентов</strong><span class="relation-meta">Подтехника</span></a>
 </div>
 
 

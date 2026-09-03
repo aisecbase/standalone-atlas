@@ -28,9 +28,9 @@ totals:
         needs_review: 1
     technique:
         total: 197
-        name_translated: 182
-        body_translated: 182
-        fully_translated: 177
+        name_translated: 183
+        body_translated: 183
+        fully_translated: 178
         needs_review: 5
 missing:
     - id: AML.CS0068
@@ -93,12 +93,6 @@ missing:
       source_field: description
     - id: AML.T0017.002
       name: AI Agent Tools
-      type: technique
-      has_name: false
-      has_body: false
-      source_field: description
-    - id: AML.T0118.001
-      name: Direct Agent Communication
       type: technique
       has_name: false
       has_body: false

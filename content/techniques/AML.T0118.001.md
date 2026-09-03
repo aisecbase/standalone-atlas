@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-08-31"
-description: Autonomous AI agents may communicate directly through agent-to-agent, sub-agent, or orchestrator interfaces. An agent may provide another agent with operational context, discoveries, objectives, tasking, capabilities,...
+description: Автономные ИИ-агенты могут напрямую обмениваться информацией через интерфейсы взаимодействия друг с другом, с субагентами или с оркестратором. Агент может передавать другому агенту контекст операции, обнаруженные...
 generated: true
 generated_by: atlasgen
 maturity: realized
@@ -19,15 +19,13 @@ subtechnique_count: 0
 subtechnique_of: AML.T0118
 tactics:
     - AML.TA0001
-title: Direct Agent Communication
+title: Прямая коммуникация агентов
 url: /techniques/AML.T0118.001/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Автономные ИИ-агенты могут напрямую обмениваться информацией через интерфейсы взаимодействия друг с другом, с субагентами или с оркестратором. Агент может передавать другому агенту контекст операции, обнаруженные сведения, цели, задания, возможности, учётные данные или ограничения, а в ответ получать сведения о состоянии, результаты или выполненную работу.
 
-Autonomous AI agents may communicate directly through agent-to-agent, sub-agent, or orchestrator interfaces. An agent may provide another agent with operational context, discoveries, objectives, tasking, capabilities, credentials, or constraints, and may receive status, findings, or completed work in response.
-
-Direct communication may include delegation when the sending agent formulates or selects an objective or subtask and the recipient retains meaningful discretion over how to perform it. Direct exchanges may also report discoveries, request independent validation, synchronize activity, transfer capabilities, or return findings without delegating a new task.
+Прямая коммуникация может включать делегирование, при котором отправляющий агент формулирует или выбирает цель либо подзадачу, а агент-получатель сохраняет существенную свободу действий при выборе способа её выполнения. При прямом обмене агенты также могут сообщать об обнаруженных сведениях, запрашивать независимую проверку, синхронизировать действия, передавать возможности или возвращать результаты, не делегируя при этом новую задачу.
 
 
 ## Тактики

@@ -59,10 +59,10 @@ generated_by: atlasgen
 <tr>
 <th scope="row" data-label="Тип объектов">Техники</th>
 <td data-label="Всего">197</td>
-<td data-label="Названий переведено">182</td>
-<td data-label="Описаний переведено">182</td>
+<td data-label="Названий переведено">183</td>
+<td data-label="Описаний переведено">183</td>
 <td data-label="Процедур переведено">-</td>
-<td data-label="Полностью переведено">177</td>
+<td data-label="Полностью переведено">178</td>
 <td data-label="Требует проверки">5</td>
 </tr>
 </tbody>
@@ -107,7 +107,7 @@ generated_by: atlasgen
 - [`AML.CS0066`](/studies/AML.CS0066/) (Кейсы): ZombieAgent: Data Exfiltration Attack on ChatGPT; название: да; описание/summary: да; процедуры: 11/12
 - [`AML.CS0067`](/studies/AML.CS0067/) (Кейсы): Claude Code GitHub Action Secret Exposure; название: да; описание/summary: да; процедуры: 10/11
 
-## Перевод отсутствует (21)
+## Перевод отсутствует (20)
 
 - [`AML.CS0068`](/studies/AML.CS0068/) (Кейсы): Autonomous OpenAI Evaluation Agents Compromise Hugging Face Infrastructure; название: нет; описание/summary: нет; процедуры: 0/37
 - [`AML.CS0069`](/studies/AML.CS0069/) (Кейсы): GTG-1002 Claude Code Espionage Campaign; название: нет; описание/summary: нет; процедуры: 0/21
@@ -119,7 +119,6 @@ generated_by: atlasgen
 - [`AML.T0016.004`](/techniques/AML.T0016.004/) (Техники): AI Agent Tools; название: нет; описание/summary: нет
 - [`AML.T0017.001`](/techniques/AML.T0017.001/) (Техники): Autonomous Exploit Development; название: нет; описание/summary: нет
 - [`AML.T0017.002`](/techniques/AML.T0017.002/) (Техники): AI Agent Tools; название: нет; описание/summary: нет
-- [`AML.T0118.001`](/techniques/AML.T0118.001/) (Техники): Direct Agent Communication; название: нет; описание/summary: нет
 - [`AML.T0119`](/techniques/AML.T0119/) (Техники): Exploit Automated Artifact Processing Pipeline; название: нет; описание/summary: нет
 - [`AML.T0120`](/techniques/AML.T0120/) (Техники): AI Artifact Repository; название: нет; описание/summary: нет
 - [`AML.T0121`](/techniques/AML.T0121/) (Техники): AI Agent Environment Reconstruction; название: нет; описание/summary: нет
