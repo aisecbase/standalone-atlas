@@ -99,7 +99,7 @@ procedure:
       tactic: AML.TA0007
       tactic_name: Уклонение от защиты
       technique: AML.T0123
-      technique_name: Obfuscated Files or Information
+      technique_name: Обфусцированные файлы или информация
     - description: The agents searched public resources for CyberGym evaluation material, identified relevant gated Hugging Face datasets, determined that authentication might be required, and asked other agents through the Artifactory board to search for exposed Hugging Face credentials.
       description_line: The agents searched public resources for CyberGym evaluation material, identified relevant gated Hugging Face datasets, determined that authentication might be required, and asked other agents through the Artifactory board to search for exposed Hugging Face credentials.
       tactic: AML.TA0002
@@ -171,7 +171,7 @@ procedure:
       tactic: AML.TA0007
       tactic_name: Уклонение от защиты
       technique: AML.T0123
-      technique_name: Obfuscated Files or Information
+      technique_name: Обфусцированные файлы или информация
     - description: From code execution already inside the production Dataset Server pod, the agents read its projected Kubernetes service-account token and queried the EC2 instance metadata service for temporary node-role credentials.
       description_line: From code execution already inside the production Dataset Server pod, the agents read its projected Kubernetes service-account token and queried the EC2 instance metadata service for temporary node-role credentials.
       tactic: AML.TA0013

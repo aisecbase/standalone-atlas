@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-08-31"
-description: Adversaries may attempt to make an executable or file difficult to discover or analyze by encrypting, encoding, or otherwise obfuscating its contents on the system or in transit. This is common behavior that can be...
+description: Злоумышленники могут попытаться затруднить обнаружение или анализ исполняемого файла либо файла другого типа, зашифровав, закодировав или иным образом обфусцировав его содержимое в системе либо при передаче. Это...
 generated: true
 generated_by: atlasgen
 maturity: realized
@@ -19,15 +19,13 @@ subtechnique_count: 0
 subtechnique_of: ""
 tactics:
     - AML.TA0007
-title: Obfuscated Files or Information
+title: Обфусцированные файлы или информация
 url: /techniques/AML.T0123/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Злоумышленники могут попытаться затруднить обнаружение или анализ исполняемого файла либо файла другого типа, зашифровав, закодировав или иным образом обфусцировав его содержимое в системе либо при передаче. Это распространённый приём, который может применяться на различных платформах и в сети для уклонения от защиты.
 
-Adversaries may attempt to make an executable or file difficult to discover or analyze by encrypting, encoding, or otherwise obfuscating its contents on the system or in transit. This is common behavior that can be used across different platforms and the network to evade defenses.
-
-Obfuscation may target AI-enabled defensive systems, including malware classifiers, content filters, secret scanners, and automated review systems. Content that appears benign or incomplete to a person or detector may be decoded, assembled, or interpreted by a downstream application, tool, or compromised system.
+Обфускация может быть направлена на защитные системы с поддержкой ИИ, включая классификаторы вредоносного ПО, фильтры содержимого, сканеры секретов и системы автоматизированной проверки. Содержимое, которое кажется человеку или средству обнаружения безвредным либо неполным, может быть декодировано, собрано воедино или интерпретировано нижестоящим приложением, инструментом либо скомпрометированной системой.
 
 
 ## Тактики
