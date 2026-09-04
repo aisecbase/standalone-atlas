@@ -6,7 +6,7 @@ attack_ref_url: ""
 category:
     - Technical - AI
 created_date: "2026-08-31"
-description: Limit an AI agent's ability to autonomously acquire, assume, or otherwise obtain additional authorities that expand its effective permissions during execution. The maximum authority available to the agent should be...
+description: Ограничивайте возможность ИИ-агента самостоятельно приобретать, принимать на себя или иным способом получать дополнительные полномочия, которые во время выполнения расширяют фактический набор его разрешений....
 generated: true
 generated_by: atlasgen
 ml_lifecycle:
@@ -15,26 +15,24 @@ ml_lifecycle:
 modified_date: "2026-08-31"
 source_name: AI Agent Authority Expansion Controls
 technique_count: 3
-title: AI Agent Authority Expansion Controls
+title: Контроль расширения полномочий ИИ-агента
 url: /mitigations/AML.M0037/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Ограничивайте возможность ИИ-агента самостоятельно приобретать, принимать на себя или иным способом получать дополнительные полномочия, которые во время выполнения расширяют фактический набор его разрешений. Предельный объём полномочий агента следует явно установить до начала выполнения. Дополнительные ресурсы, идентичности, сервисы и целевые объекты, обнаруженные во время выполнения, следует считать находящимися за пределами установленных границ полномочий, пока они не пройдут независимую проверку и не будут включены в область действий агента. Все средства контроля расширения полномочий следует реализовывать вне ИИ-агента; их работа не должна зависеть исключительно от системных промптов, выравнивания модели или способности агента распознавать действия, выходящие за установленные для него рамки. Обеспечивать соблюдение этих ограничений можно, например, с помощью следующих механизмов:
 
-Limit an AI agent's ability to autonomously acquire, assume, or otherwise obtain additional authorities that expand its effective permissions during execution. The maximum authority available to the agent should be explicitly granted prior to runtime. Additional resources, identities, services, and targets discovered during execution should be treated as outside the authorized boundary unless they are independently validated and added to scope. All authority expansion controls should be implemented outside the AI agent and should not rely solely on system prompts, model alignment, or the agent recognizing that an action is out of scope. Implementations of these controls may be achieved through enforcement mechanisms such as:
+- Механизмы применения политик
+- Списки разрешённых целевых объектов
+- Ограничения на протоколы и точки назначения
+- Контрольные точки, требующие одобрения
+- Запрет агенту использовать учётные данные, не одобренные для задачи
+- Мониторинг и аудит изменений фактических полномочий агента с течением времени
 
-- Policy engines
-- Target allowlists
-- Protocol and destination restrictions
-- Approval gates
-- Preventing the agent from using credentials that were not approved for the task
-- Monitoring and auditing changes in the agent's effective authority over time
+Контроль расширения полномочий включает ограничения на количество, область действия, срок действия и одновременное использование токенов аутентификации и/или авторизации, доступных агенту во время выполнения. К ним могут относиться токены доступа к API, токены OAuth, сеансовые учётные данные облачных систем управления идентификацией и доступом (IAM), токены сервисных учётных записей, токены Git и другие артефакты аутентификации с коротким сроком действия. Если установленные политикой пределы достигнуты или превышены, организации могут отзывать права доступа, не допускать получения дополнительных токенов, требовать одобрения человека или принудительно завершать работу агента.
 
-Authority expansion controls include placing restrictions on the number, scope, duration, and concurrent use of authentication and/or authorization tokens available during execution. Tokens may include API access tokens, OAuth tokens, cloud IAM session credentials, service account tokens, Git tokens, or other short-lived authentication artifacts. When policy limits are reached or exceeded, organizations may revoke access, prevent additional token acquisition, require human approval, or terminate the agent's execution.
+Распространяйте исходные ограничения полномочий на субагентов и делегированные задачи. Делегированный агент может быть ограничен строже, но его область действий, полномочия, круг целевых объектов и перечень разрешённых действий не должны быть шире, чем у родительского агента.
 
-Propagate the original authority constraints to sub-agents and delegated tasks. A delegated agent may receive narrower restrictions but should not expand the parent agent's scope, authority, targets, or permitted actions.
-
-Authority expansion controls should be implemented alongside permissions configurations for AI agents and tools (See [Privileged AI Agent Permissions Configuration](/mitigations/AML.M0026), [Single-User AI Agent Permissions Configuration](/mitigations/AML.M0027), [AI Agent Tools Permissions Configuration](/mitigations/AML.M0028)). Attempted changes in scope should be accompanied with [Human In-the-Loop for AI Agent Actions](/mitigations/AML.M0029). Log new resource discovery, denials, exceptions, approvals, and scope changes using [AI Telemetry Logging](/mitigations/AML.M0024).
+Контроль расширения полномочий следует внедрять вместе с настройками разрешений ИИ-агентов и их инструментов (см. [Настройка разрешений привилегированного ИИ-агента](/mitigations/AML.M0026), [Настройка разрешений ИИ-агента одного пользователя](/mitigations/AML.M0027), [Настройка разрешений инструментов ИИ-агента](/mitigations/AML.M0028)). При попытках изменить область действий обеспечивайте участие человека (см. [Участие человека в действиях ИИ-агента](/mitigations/AML.M0029)). Используйте [Логирование телеметрии ИИ](/mitigations/AML.M0024), чтобы регистрировать сведения о вновь обнаруженных ресурсах, отказах, исключениях, одобрениях и изменениях области действий.
 
 
 ## Связанные техники

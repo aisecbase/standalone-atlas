@@ -10,9 +10,9 @@ totals:
         needs_review: 0
     mitigation:
         total: 39
-        name_translated: 37
-        body_translated: 37
-        fully_translated: 35
+        name_translated: 38
+        body_translated: 38
+        fully_translated: 36
         needs_review: 2
     resource:
         total: 6
@@ -61,12 +61,6 @@ missing:
       has_body: false
       source_field: summary
       total_procedures: 12
-    - id: AML.M0037
-      name: AI Agent Authority Expansion Controls
-      type: mitigation
-      has_name: false
-      has_body: false
-      source_field: description
     - id: AML.M0038
       name: AI Agent Scope Drift Detection
       type: mitigation

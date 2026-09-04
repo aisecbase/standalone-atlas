@@ -50,7 +50,7 @@ url: /techniques/AML.T0117/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0037/"><span class="relation-id">AML.M0037</span><strong>AI Agent Authority Expansion Controls</strong><p>When an organization has sufficient administrative control over an AI system to enforce its authority boundaries, Authority Expansion Controls can directly constrain enabling objectives that seek new authorities, identities, execution environments, tools, communication paths, or trust relationships. These controls do not constrain adversary-controlled AI systems over which the organization has no administrative control.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0037/"><span class="relation-id">AML.M0037</span><strong>Контроль расширения полномочий ИИ-агента</strong><p>When an organization has sufficient administrative control over an AI system to enforce its authority boundaries, Authority Expansion Controls can directly constrain enabling objectives that seek new authorities, identities, execution environments, tools, communication paths, or trust relationships. These controls do not constrain adversary-controlled AI systems over which the organization has no administrative control.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0038/"><span class="relation-id">AML.M0038</span><strong>AI Agent Scope Drift Detection</strong><p>When an organization has sufficient administrative control over an AI system to monitor its plans and actions, Scope Drift Detection evaluates whether dynamically generated intermediate actions are within the agent&#39;s task scope. This control does not apply to adversary-controlled AI systems over which the organization has no administrative control.</p></a>
 </div>
 
