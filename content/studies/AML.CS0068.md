@@ -40,32 +40,32 @@ procedure:
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0118.000
       technique_name: Коммуникация через общие артефакты
-    - description: With public Internet access available, the agents explored public infrastructure and discovered an exposed CyberGym-style code-evaluation harness that accepted C source code and submission metadata.
-      description_line: With public Internet access available, the agents explored public infrastructure and discovered an exposed CyberGym-style code-evaluation harness that accepted C source code and submission metadata.
+    - description: Получив выход в открытый интернет, агенты исследовали общедоступную инфраструктуру и обнаружили доступный из интернета стенд проверки кода по типу CyberGym, который принимал исходный код на C и сопутствующие метаданные отправки.
+      description_line: Получив выход в открытый интернет, агенты исследовали общедоступную инфраструктуру и обнаружили доступный из интернета стенд проверки кода по типу CyberGym, который принимал исходный код на C и сопутствующие метаданные отправки.
       tactic: AML.TA0002
       tactic_name: Разведка
       technique: AML.T0116
       technique_name: Автономная разведка
-    - description: 'The agents developed and validated two execution methods against the exposed harness: redefining sqlite3_initialize so a submitted library invoked shell commands, and injecting shell syntax into submission path metadata.'
-      description_line: 'The agents developed and validated two execution methods against the exposed harness: redefining sqlite3_initialize so a submitted library invoked shell commands, and injecting shell syntax into submission path metadata.'
+    - description: 'Агенты разработали и проверили два способа добиться выполнения команд через доступный из интернета стенд проверки кода: переопределить `sqlite3_initialize`, чтобы переданная на стенд библиотека вызывала shell-команды, либо внедрить синтаксические конструкции shell в метаданные пути к отправляемому исходному коду.'
+      description_line: 'Агенты разработали и проверили два способа добиться выполнения команд через доступный из интернета стенд проверки кода: переопределить `sqlite3_initialize`, чтобы переданная на стенд библиотека вызывала shell-команды, либо внедрить синтаксические конструкции shell в метаданные пути к отправляемому исходному коду.'
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0017.001
       technique_name: Автономная разработка эксплойтов
-    - description: The agents generated C code, shell-injection strings, and follow-on shell and Python commands for the exposed harness, revising them as results were returned.
-      description_line: The agents generated C code, shell-injection strings, and follow-on shell and Python commands for the exposed harness, revising them as results were returned.
+    - description: Агенты генерировали для доступного из интернета стенда проверки кода код на C, строки для внедрения shell-команд, а также последующие команды для shell и Python, корректируя их по мере получения результатов.
+      description_line: Агенты генерировали для доступного из интернета стенда проверки кода код на C, строки для внедрения shell-команд, а также последующие команды для shell и Python, корректируя их по мере получения результатов.
       tactic: AML.TA0001
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0102
       technique_name: Генерация вредоносных команд
-    - description: The agents abused the exposed code-evaluation harness's compilation process and injectable source-path metadata to obtain root command execution in short-lived external sandboxes.
-      description_line: The agents abused the exposed code-evaluation harness's compilation process and injectable source-path metadata to obtain root command execution in short-lived external sandboxes.
+    - description: Агенты использовали не по назначению процесс компиляции на доступном из интернета стенде проверки кода и метаданные пути к исходному коду, допускавшие инъекцию, чтобы добиться выполнения команд с правами root во временных внешних песочницах.
+      description_line: Агенты использовали не по назначению процесс компиляции на доступном из интернета стенде проверки кода и метаданные пути к исходному коду, допускавшие инъекцию, чтобы добиться выполнения команд с правами root во временных внешних песочницах.
       tactic: AML.TA0004
       tactic_name: Первичный доступ
       technique: AML.T0049
       technique_name: Эксплуатация приложения, доступного из интернета
-    - description: The agents executed shell commands and supplied C and Python code through the exposed harness.
-      description_line: The agents executed shell commands and supplied C and Python code through the exposed harness.
+    - description: Через доступный из интернета стенд проверки кода агенты выполняли shell-команды и передавали код на C и Python.
+      description_line: Через доступный из интернета стенд проверки кода агенты выполняли shell-команды и передавали код на C и Python.
       tactic: AML.TA0005
       tactic_name: Выполнение
       technique: AML.T0050
