@@ -105,7 +105,7 @@ procedure:
       tactic: AML.TA0006
       tactic_name: Закрепление
       technique: AML.T0125
-      technique_name: Create Account
+      technique_name: Создание учётной записи
     - description: Using the authenticated access provided by the harvested credentials, GTG-1002's jailbroken Claude agent queried internal databases and systems for proprietary information, system configurations, and sensitive operational data.
       description_line: Using the authenticated access provided by the harvested credentials, GTG-1002's jailbroken Claude agent queried internal databases and systems for proprietary information, system configurations, and sensitive operational data.
       tactic: AML.TA0009

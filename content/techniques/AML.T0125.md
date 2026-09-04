@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: T1136
 attack_ref_url: https://attack.mitre.org/techniques/T1136/
 created_date: "2026-08-31"
-description: Adversaries may create an account to maintain access to an AI system or its supporting infrastructure. With a sufficient level of access, creating such accounts may be used to establish secondary credentialed access...
+description: Злоумышленники могут создать учётную запись, чтобы сохранять доступ к ИИ-системе или обеспечивающей её работу инфраструктуре. Имея достаточный уровень доступа, они могут создавать такие учётные записи для организации...
 generated: true
 generated_by: atlasgen
 maturity: realized
@@ -18,15 +18,13 @@ subtechnique_count: 0
 subtechnique_of: ""
 tactics:
     - AML.TA0006
-title: Create Account
+title: Создание учётной записи
 url: /techniques/AML.T0125/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Злоумышленники могут создать учётную запись, чтобы сохранять доступ к ИИ-системе или обеспечивающей её работу инфраструктуре. Имея достаточный уровень доступа, они могут создавать такие учётные записи для организации дополнительного доступа с использованием учётных данных, не требующего развёртывания в системе средств постоянного удалённого доступа.
 
-Adversaries may create an account to maintain access to an AI system or its supporting infrastructure. With a sufficient level of access, creating such accounts may be used to establish secondary credentialed access that do not require persistent remote access tools to be deployed on the system.
-
-Accounts may be created on local systems, in enterprise domains, cloud tenants, identity providers, or individual services. In AI environments, adversaries may create user, service, workload, or automation accounts in AI platforms, model or dataset repositories, development environments, experiment trackers, orchestration services, data stores, and other AI operations infrastructure.
+Учётные записи могут создаваться в локальных системах, корпоративных доменах, облачных тенантах, у поставщиков удостоверений или в отдельных сервисах. В средах ИИ злоумышленники могут создавать пользовательские учётные записи, сервисные учётные записи, учётные записи рабочих нагрузок или учётные записи автоматизации на ИИ-платформах, в репозиториях моделей или наборов данных, средах разработки, системах отслеживания экспериментов, сервисах оркестрации, хранилищах данных и прочей инфраструктуре AI Ops.
 
 
 ## Тактики
