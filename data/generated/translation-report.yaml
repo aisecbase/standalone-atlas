@@ -10,9 +10,9 @@ totals:
         needs_review: 0
     mitigation:
         total: 39
-        name_translated: 38
-        body_translated: 38
-        fully_translated: 36
+        name_translated: 39
+        body_translated: 39
+        fully_translated: 37
         needs_review: 2
     resource:
         total: 6
@@ -61,12 +61,6 @@ missing:
       has_body: false
       source_field: summary
       total_procedures: 12
-    - id: AML.M0038
-      name: AI Agent Scope Drift Detection
-      type: mitigation
-      has_name: false
-      has_body: false
-      source_field: description
 partial:
     - id: AML.CS0021
       name: ChatGPT Conversation Exfiltration

@@ -6,7 +6,7 @@ attack_ref_url: ""
 category:
     - Technical - AI
 created_date: "2026-08-31"
-description: Continuously evaluate whether an AI Agent's planned actions remain consistent with its current authorized objective throughout execution. As autonomous agents interact within a dynamic environment, they may discover...
+description: На всём протяжении работы ИИ-агента непрерывно проверяйте, соответствуют ли его запланированные действия текущей утверждённой цели. Действуя в изменяющейся среде, автономные агенты могут обнаруживать или формировать...
 generated: true
 generated_by: atlasgen
 ml_lifecycle:
@@ -14,24 +14,22 @@ ml_lifecycle:
 modified_date: "2026-08-31"
 source_name: AI Agent Scope Drift Detection
 technique_count: 3
-title: AI Agent Scope Drift Detection
+title: Выявление отклонений ИИ-агента от установленной области действий
 url: /mitigations/AML.M0038/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+На всём протяжении работы ИИ-агента непрерывно проверяйте, соответствуют ли его запланированные действия текущей утверждённой цели. Действуя в изменяющейся среде, автономные агенты могут обнаруживать или формировать промежуточные цели либо адаптировать свою стратегию с учётом обратной связи от среды. Хотя для выполнения легитимных задач может потребоваться адаптация в ограниченных пределах, существенные отклонения от исходной цели могут указывать на непредусмотренное поведение, чрезмерную автономность или попытки достичь целей, выходящих за пределы разрешённой области действий.
 
-Continuously evaluate whether an AI Agent's planned actions remain consistent with its current authorized objective throughout execution. As autonomous agents interact within a dynamic environment, they may discover or generate intermediate objectives or adapt their strategy based on environment feedback. While limited adaption may be necessary to complete legitimate tasks, substantial deviations from the original objective may indicate unintended behavior, excessive autonomy, or attempts to pursue objectives outside the authorized scope.
+Реализовать выявление таких отклонений можно с помощью механизмов применения политик во время выполнения, средств мониторинга планирования, фреймворков оркестрации или дополнительных ИИ-агентов, осуществляющих надзор. К отслеживаемым признакам могут относиться:
 
-Implementation of scope drift detection can vary through runtime policy engines, planning monitors, orchestration frameworks, or additional supervisory AI Agents. Indicators to monitor may include:
+- Существенные изменения запланированных целей или иерархии задач.
+- Формирование новых долгосрочных целей, не связанных с поставленной целью.
+- Использование инструментов, не соответствующее исходной задаче.
+- Попытки получить доступ к системам или ресурсам, не входящим в разрешённую область действий.
+- Неоднократная адаптация стратегии для достижения целей, требующих всё более широких полномочий.
+- Последовательности запланированных действий, предусматривающие закрепление, повышение привилегий или не связанное с поставленной задачей горизонтальное перемещение.
 
-- Significant changes in planned objectives or task hierarchy.
-- Generation of new long-term goals unrelated to the assigned objective.
-- Tool usage inconsistent with the original mission.
-- Attempts to access systems or resources outside the authorized scope.
-- Repeated adaptation toward objectives requiring progressively broader authority.
-- Planning sequences that introduce persistence, privilege escalation, or unrelated lateral movement.
-
-When scope drift is detected, pause execution, restrict tool access, require external approval, return the agent to a known authorized plan, or terminate the task.
+При выявлении такого отклонения приостановите работу агента, ограничьте его доступ к инструментам, потребуйте внешнего одобрения, верните агента к ранее утверждённому плану либо прекратите выполнение задачи.
 
 
 ## Связанные техники
