@@ -36,7 +36,7 @@ url: /tactics/AML.TA0009/
 <a class="relation-item" href="/techniques/AML.T0085.001/"><span class="relation-id">AML.T0085.001</span><strong>Инструменты ИИ-агента</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0085.001/"><span class="relation-id">AML.T0085.001</span><strong>Инструменты ИИ-агента</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0126/"><span class="relation-id">AML.T0126</span><strong>Автоматизированный сбор материалов</strong></a>
-<a class="relation-item" href="/techniques/AML.T0127/"><span class="relation-id">AML.T0127</span><strong>Data Staged</strong></a>
+<a class="relation-item" href="/techniques/AML.T0127/"><span class="relation-id">AML.T0127</span><strong>Промежуточное хранение данных</strong></a>
 </div>
 
 

@@ -129,7 +129,7 @@ procedure:
       tactic: AML.TA0009
       tactic_name: Сбор материалов
       technique: AML.T0127
-      technique_name: Data Staged
+      technique_name: Промежуточное хранение данных
     - description: After reviewing the summary, GTG-1002 approved the transfer of selected data over the Claude web service.
       description_line: After reviewing the summary, GTG-1002 approved the transfer of selected data over the Claude web service.
       tactic: AML.TA0010

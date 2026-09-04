@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: T1074
 attack_ref_url: https://attack.mitre.org/techniques/T1074/
 created_date: "2026-08-31"
-description: Adversaries may stage collected data in a central location before exfiltration. Staging consolidates, organizes, or prepares information obtained from one or more sources so it can be reviewed, processed, transferred,...
+description: Перед эксфильтрацией злоумышленники могут сосредоточить собранные данные в одном месте. На этом этапе сведения из одного или нескольких источников объединяют, упорядочивают или подготавливают, чтобы их можно было...
 generated: true
 generated_by: atlasgen
 maturity: realized
@@ -18,15 +18,13 @@ subtechnique_count: 0
 subtechnique_of: ""
 tactics:
     - AML.TA0009
-title: Data Staged
+title: Промежуточное хранение данных
 url: /techniques/AML.T0127/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Перед эксфильтрацией злоумышленники могут сосредоточить собранные данные в одном месте. На этом этапе сведения из одного или нескольких источников объединяют, упорядочивают или подготавливают, чтобы их можно было эффективнее просматривать, обрабатывать, передавать или извлекать.
 
-Adversaries may stage collected data in a central location before exfiltration. Staging consolidates, organizes, or prepares information obtained from one or more sources so it can be reviewed, processed, transferred, or retrieved more efficiently.
-
-Data may be staged on a compromised local system, another system in the victim environment, a cloud instance, shared storage, an application repository, or other remote infrastructure. It may remain in separate files or be combined into archives, databases, structured documents, manifests, or other collections. Adversaries may compress, encrypt, encode, split, rename, or otherwise transform staged data.
+Для такого размещения данных могут использоваться скомпрометированная локальная система, другая система в среде организации-жертвы, отдельный ресурс в облаке, общее хранилище, репозиторий приложений или иная удалённая инфраструктура. Данные могут оставаться в отдельных файлах либо объединяться в архивы, базы данных, структурированные документы, манифесты или другие наборы. На этом этапе злоумышленники могут сжимать, шифровать, кодировать, разбивать на части, переименовывать или иным образом преобразовывать данные.
 
 
 ## Тактики
