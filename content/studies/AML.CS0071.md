@@ -75,7 +75,7 @@ procedure:
       tactic: AML.TA0009
       tactic_name: Сбор материалов
       technique: AML.T0126
-      technique_name: Automated Collection
+      technique_name: Автоматизированный сбор материалов
     - description: Over 2,564 personnel records, a complete user database, and internal architecture details were exfiltrated.
       description_line: Over 2,564 personnel records, a complete user database, and internal architecture details were exfiltrated.
       tactic: AML.TA0010

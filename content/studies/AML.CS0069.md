@@ -123,7 +123,7 @@ procedure:
       tactic: AML.TA0009
       tactic_name: Сбор материалов
       technique: AML.T0126
-      technique_name: Automated Collection
+      technique_name: Автоматизированный сбор материалов
     - description: GTG-1002's jailbroken Claude agent categorized collected data by intelligence value, staged extracted data and operational documentation in structured Markdown files, and prepared a detailed summary for operator review.
       description_line: GTG-1002's jailbroken Claude agent categorized collected data by intelligence value, staged extracted data and operational documentation in structured Markdown files, and prepared a detailed summary for operator review.
       tactic: AML.TA0009

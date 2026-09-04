@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: T1119
 attack_ref_url: https://attack.mitre.org/techniques/T1119/
 created_date: "2026-08-31"
-description: Adversaries may use automated techniques to collect data from AI systems and supporting enterprise environments. Automation may use scripts, command interpreters, command-line tools, or AI agent tools to identify,...
+description: Злоумышленники могут применять автоматизированные методы для сбора данных из ИИ-систем и обеспечивающих их работу корпоративных сред. При автоматизации могут использоваться сценарии, интерпретаторы команд, инструменты...
 generated: true
 generated_by: atlasgen
 maturity: realized
@@ -18,17 +18,15 @@ subtechnique_count: 0
 subtechnique_of: ""
 tactics:
     - AML.TA0009
-title: Automated Collection
+title: Автоматизированный сбор материалов
 url: /techniques/AML.T0126/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Злоумышленники могут применять автоматизированные методы для сбора данных из ИИ-систем и обеспечивающих их работу корпоративных сред. При автоматизации могут использоваться сценарии, интерпретаторы команд, инструменты командной строки или инструменты ИИ-агентов, чтобы выявлять, извлекать, копировать или агрегировать данные без выбора каждого отдельного элемента человеком.
 
-Adversaries may use automated techniques to collect data from AI systems and supporting enterprise environments. Automation may use scripts, command interpreters, command-line tools, or AI agent tools to identify, retrieve, copy, or aggregate data without a human selecting each individual item.
+Критерии сбора могут быть фиксированными — например, имя файла, тип, расположение, владелец или дата. Автоматизация также может использоваться для многократного сбора данных, отслеживания появления новых материалов, обхода связанных ресурсов или объединения данных из локальных систем, облачных сервисов, репозиториев, баз данных, объектных хранилищ и API приложений.
 
-Collection criteria may be fixed, such as file name, type, location, owner, date. Automation may also collect repeatedly, monitor for new material, traverse related resources, or combine data from local systems, cloud services, repositories, databases, object stores, and application APIs.
-
-In AI environments, targeted material may include models, datasets, configurations, conversation histories, retrieval databases, deployment information, logs, and other operational data.
+В средах ИИ объектами сбора могут быть модели, наборы данных, конфигурации, истории диалогов, базы данных, используемые для извлечения информации, сведения о развёртывании, журналы и другие эксплуатационные данные.
 
 
 ## Тактики
