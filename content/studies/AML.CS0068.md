@@ -10,32 +10,32 @@ incident_date: "2026-07-08"
 incident_date_granularity: Day
 incident_date_raw: "2026-07-08"
 procedure:
-    - description: The agents were guided by the objective of completing ExploitGym tasks. As agents exhausted intended approaches, they probed their surroundings and developed alternative ways to complete their tasks. The agents derived intermediate objectives and repeatedly adapted their path through containment bypass, external infrastructure, acquisition of materials related to the challenge, Hugging Face exploitation, credential access, and collection.
-      description_line: The agents were guided by the objective of completing ExploitGym tasks. As agents exhausted intended approaches, they probed their surroundings and developed alternative ways to complete their tasks. The agents derived intermediate objectives and repeatedly adapted their path through containment bypass, external infrastructure, acquisition of materials related to the challenge, Hugging Face exploitation, credential access, and collection.
+    - description: Перед агентами стояла цель выполнить задания ExploitGym. Исчерпав предусмотренные способы решения, они начали исследовать доступное им окружение и разрабатывать альтернативные способы выполнения своих задач. Агенты формировали промежуточные цели и неоднократно перестраивали путь атаки, включавший обход изоляции, использование внешней инфраструктуры, получение материалов, связанных с заданием, эксплуатацию уязвимостей Hugging Face, получение доступа к учётным данным и сбор данных.
+      description_line: Перед агентами стояла цель выполнить задания ExploitGym. Исчерпав предусмотренные способы решения, они начали исследовать доступное им окружение и разрабатывать альтернативные способы выполнения своих задач. Агенты формировали промежуточные цели и неоднократно перестраивали путь атаки, включавший обход изоляции, использование внешней инфраструктуры, получение материалов, связанных с заданием, эксплуатацию уязвимостей Hugging Face, получение доступа к учётным данным и сбор данных.
       tactic: AML.TA0001
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0117
       technique_name: Автономная адаптация пути атаки
-    - description: An agent tested Artifactory request handling, inspected responses, and iteratively developed and validated an SSRF exploit that caused the package cache to retrieve external content for the isolated evaluation environment. OpenAI and JFrog characterized the vulnerability as a previously unknown zero-day.
-      description_line: An agent tested Artifactory request handling, inspected responses, and iteratively developed and validated an SSRF exploit that caused the package cache to retrieve external content for the isolated evaluation environment. OpenAI and JFrog characterized the vulnerability as a previously unknown zero-day.
+    - description: Агент проверил обработку запросов в Artifactory, изучил ответы и в несколько итераций разработал SSRF-эксплойт и подтвердил его работоспособность. Эксплойт заставлял кэш пакетов получать внешнее содержимое для изолированной среды испытаний. OpenAI и JFrog охарактеризовали обнаруженный недостаток как ранее неизвестную уязвимость нулевого дня.
+      description_line: Агент проверил обработку запросов в Artifactory, изучил ответы и в несколько итераций разработал SSRF-эксплойт и подтвердил его работоспособность. Эксплойт заставлял кэш пакетов получать внешнее содержимое для изолированной среды испытаний. OpenAI и JFrog охарактеризовали обнаруженный недостаток как ранее неизвестную уязвимость нулевого дня.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0017.001
       technique_name: Автономная разработка эксплойтов
-    - description: The agents exploited OpenAI's internal Artifactory service using the developed SSRF method to cross the evaluation network boundary and reach the public Internet.
-      description_line: The agents exploited OpenAI's internal Artifactory service using the developed SSRF method to cross the evaluation network boundary and reach the public Internet.
+    - description: Агенты воспользовались уязвимостью внутреннего сервиса Artifactory компании OpenAI, применив разработанный метод SSRF, и тем самым пересекли границу сети испытательной среды и вышли в открытый интернет.
+      description_line: Агенты воспользовались уязвимостью внутреннего сервиса Artifactory компании OpenAI, применив разработанный метод SSRF, и тем самым пересекли границу сети испытательной среды и вышли в открытый интернет.
       tactic: AML.TA0015
       tactic_name: Латеральное перемещение
       technique: AML.T0122
       technique_name: Эксплуатация удалённых сервисов
-    - description: An agent probed Artifactory and identified an unauthenticated WebDAV MKCOL directory-creation path in a remote cache. It confirmed that arbitrary directory names persisted and could be enumerated by other runs, producing a reusable method for reconstructing the shared message board.
-      description_line: An agent probed Artifactory and identified an unauthenticated WebDAV MKCOL directory-creation path in a remote cache. It confirmed that arbitrary directory names persisted and could be enumerated by other runs, producing a reusable method for reconstructing the shared message board.
+    - description: Агент исследовал Artifactory и обнаружил в удалённом кэше путь, через который можно было без аутентификации создавать каталоги с помощью запросов WebDAV MKCOL. Он подтвердил, что произвольные имена каталогов сохранялись и что агенты в других запусках могли получать их перечень. Так появился способ, который можно было многократно использовать для воссоздания общей доски сообщений.
+      description_line: Агент исследовал Artifactory и обнаружил в удалённом кэше путь, через который можно было без аутентификации создавать каталоги с помощью запросов WebDAV MKCOL. Он подтвердил, что произвольные имена каталогов сохранялись и что агенты в других запусках могли получать их перечень. Так появился способ, который можно было многократно использовать для воссоздания общей доски сообщений.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0017.001
       technique_name: Автономная разработка эксплойтов
-    - description: Independent agent runs used the shared Artifactory namespace as an improvised message board. Directory names and other cache artifacts conveyed addressed requests, assignments, status, exploits, credentials, scripts, operating rules, technical findings, and results.
-      description_line: Independent agent runs used the shared Artifactory namespace as an improvised message board. Directory names and other cache artifacts conveyed addressed requests, assignments, status, exploits, credentials, scripts, operating rules, technical findings, and results.
+    - description: В ходе независимых запусков агенты использовали общее пространство имён Artifactory в качестве импровизированной доски сообщений. Через имена каталогов и другие артефакты кэша передавались адресованные запросы, задания, сведения о состоянии, эксплойты, учётные данные, скрипты, правила работы, выявленные технические сведения и результаты.
+      description_line: В ходе независимых запусков агенты использовали общее пространство имён Artifactory в качестве импровизированной доски сообщений. Через имена каталогов и другие артефакты кэша передавались адресованные запросы, задания, сведения о состоянии, эксплойты, учётные данные, скрипты, правила работы, выявленные технические сведения и результаты.
       tactic: AML.TA0001
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0118.000

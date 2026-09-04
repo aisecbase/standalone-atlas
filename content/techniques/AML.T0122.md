@@ -46,5 +46,5 @@ url: /techniques/AML.T0122/
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0068/"><span class="relation-id">AML.CS0068</span><strong>Автономные агенты OpenAI, задействованные в оценочных испытаниях, скомпрометировали инфраструктуру Hugging Face</strong><span class="relation-meta">Актор: Autonomous OpenAI Agents / Тактика: AML.TA0015 Латеральное перемещение</span><p>The agents exploited OpenAI&#39;s internal Artifactory service using the developed SSRF method to cross the evaluation network boundary and reach the public Internet.</p></a>
+<a class="relation-item" href="/studies/AML.CS0068/"><span class="relation-id">AML.CS0068</span><strong>Автономные агенты OpenAI, задействованные в оценочных испытаниях, скомпрометировали инфраструктуру Hugging Face</strong><span class="relation-meta">Актор: Autonomous OpenAI Agents / Тактика: AML.TA0015 Латеральное перемещение</span><p>Агенты воспользовались уязвимостью внутреннего сервиса Artifactory компании OpenAI, применив разработанный метод SSRF, и тем самым пересекли границу сети испытательной среды и вышли в открытый интернет.</p></a>
 </div>
