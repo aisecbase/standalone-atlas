@@ -28,9 +28,9 @@ totals:
         needs_review: 1
     technique:
         total: 197
-        name_translated: 194
-        body_translated: 194
-        fully_translated: 189
+        name_translated: 195
+        body_translated: 195
+        fully_translated: 190
         needs_review: 5
 missing:
     - id: AML.CS0068
@@ -70,12 +70,6 @@ missing:
     - id: AML.M0038
       name: AI Agent Scope Drift Detection
       type: mitigation
-      has_name: false
-      has_body: false
-      source_field: description
-    - id: AML.T0016.004
-      name: AI Agent Tools
-      type: technique
       has_name: false
       has_body: false
       source_field: description

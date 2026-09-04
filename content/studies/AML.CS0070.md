@@ -27,7 +27,7 @@ procedure:
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0016.004
-      technique_name: AI Agent Tools
+      technique_name: Инструменты ИИ-агента
     - description: The actor created two Hermes skills. web-terminal-exploitation encoded a procedure for unauthenticated WebSocket exploitation, while fofa-cyberspace-search instructed DeepSeek to use the actor's fofoapi.py script for internet asset enumeration. The observed FOFA workflow is consistent with the latter skill; the report does not attribute an action in the recovered session to web-terminal-exploitation.
       description_line: The actor created two Hermes skills. web-terminal-exploitation encoded a procedure for unauthenticated WebSocket exploitation, while fofa-cyberspace-search instructed DeepSeek to use the actor's fofoapi.py script for internet asset enumeration. The observed FOFA workflow is consistent with the latter skill; the report does not attribute an action in the recovered session to web-terminal-exploitation.
       tactic: AML.TA0003

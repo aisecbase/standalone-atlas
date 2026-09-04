@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-08-31"
-description: Adversaries may search for and obtain tools extend the capabilities of an AI agent. These capabilities may allow an agent to interact with operating systems, browsers, networks, cloud services, data stores, software...
+description: Злоумышленники могут искать и получать инструменты, расширяющие возможности ИИ-агента. С их помощью агент может взаимодействовать с операционными системами, браузерами, сетями, облачными сервисами, хранилищами данных,...
 generated: true
 generated_by: atlasgen
 maturity: realized
@@ -21,17 +21,15 @@ subtechnique_count: 0
 subtechnique_of: AML.T0016
 tactics:
     - AML.TA0003
-title: AI Agent Tools
+title: Инструменты ИИ-агента
 url: /techniques/AML.T0016.004/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Злоумышленники могут искать и получать инструменты, расширяющие возможности ИИ-агента. С их помощью агент может взаимодействовать с операционными системами, браузерами, сетями, облачными сервисами, хранилищами данных, репозиториями ПО, системами управления идентификацией или другими внешними ресурсами.
 
-Adversaries may search for and obtain tools extend the capabilities of an AI agent. These capabilities may allow an agent to interact with operating systems, browsers, networks, cloud services, data stores, software repositories, identity systems, or other external resources.
+Инструменты ИИ-агента могут распространяться в виде серверов Model Context Protocol (MCP), плагинов, навыков, коннекторов, библиотек функций, адаптеров для управления компьютером, брокеров выполнения, удалённых API или аналогичных интеграций. Злоумышленники могут получать легитимные инструменты и настраивать их для применения во вредоносных целях, приобретать модифицированные или специально созданные инструменты либо объединять несколько интеграций в набор инструментов для проведения операций.
 
-AI agent tools may be distributed as Model Context Protocol servers, plugins, skills, connectors, function libraries, computer-use adapters, execution brokers, remote APIs, or similar integrations. Adversaries may obtain legitimate tools and configure them for malicious use, acquire modified or purpose-built tools, or combine multiple integrations into an operational toolset.
-
-Agent tools may expose model-visible descriptions and executable interfaces that influence which capabilities an agent selects and how it invokes them. Obtaining these tools may give an agent access to resources, credentials, or actions that are unavailable through model inference alone.
+Инструменты агента могут предоставлять описания, передаваемые модели, а также интерфейсы для выполнения действий. И описания, и интерфейсы влияют на то, какие возможности выбирает агент и как он их задействует. Благодаря таким инструментам агенту могут стать доступны ресурсы, учётные данные или действия, недоступные при использовании одного лишь инференса модели.
 
 
 ## Тактики
