@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: T1584
 attack_ref_url: https://attack.mitre.org/techniques/T1584/
 created_date: "2026-08-31"
-description: Adversaries may compromise third-party infrastructure and repurpose it to support attacks against AI system. Rather than buying, leasing, registering, or otherwise legitimately acquiring a resource, the adversary...
+description: Злоумышленники могут скомпрометировать стороннюю инфраструктуру и приспособить её для атак на ИИ-системы. Вместо того чтобы купить, взять в аренду, зарегистрировать или иным правомерным способом получить ресурс,...
 generated: true
 generated_by: atlasgen
 maturity: realized
@@ -18,19 +18,17 @@ subtechnique_count: 0
 subtechnique_of: ""
 tactics:
     - AML.TA0003
-title: Compromise Infrastructure
+title: Компрометация инфраструктуры
 url: /techniques/AML.T0128/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Злоумышленники могут скомпрометировать стороннюю инфраструктуру и приспособить её для атак на ИИ-системы. Вместо того чтобы купить, взять в аренду, зарегистрировать или иным правомерным способом получить ресурс, злоумышленник получает несанкционированный контроль над инфраструктурой, принадлежащей другой стороне или находящейся под её управлением.
 
-Adversaries may compromise third-party infrastructure and repurpose it to support attacks against AI system. Rather than buying, leasing, registering, or otherwise legitimately acquiring a resource, the adversary gains unauthorized control of infrastructure owned or operated by another party.
+К скомпрометированной инфраструктуре могут относиться физические или облачные серверы, домены, сетевые устройства, сторонние веб- и DNS-сервисы, репозитории ПО или артефактов, рабочие пространства для разработки, вычислительные сервисы и другие ресурсы, размещённые на сторонних площадках.
 
-Compromised infrastructure may include physical or cloud servers, domains, network devices, third-party web and DNS services, software or artifact repositories, development workspaces, compute services, and other externally hosted resources.
+В операциях, связанных с ИИ-системами, злоумышленники могут компрометировать инфраструктуру, используемую для разработки моделей, размещения артефактов, обработки наборов данных, оценки, инференса, обеспечения ИИ-агентов инструментами или эксплуатации ИИ-систем. Они могут приспособить эту инфраструктуру, чтобы размещать вредоносные артефакты, подготавливать полезные нагрузки к дальнейшему использованию, запускать инструменты или агентов, ретранслировать трафик, собирать учётные данные, обеспечивать командование и управление, обрабатывать собранные данные или проводить атаки на другие системы.
 
-In operations involving AI systems, adversaries may compromise infrastructure used for model development, artifact hosting, dataset processing, evaluation, inference, agent tooling, or AI operations. They may repurpose this infrastructure to host malicious artifacts, stage payloads, run tools or agents, relay traffic, capture credentials, provide command and control, process collected data, or launch attacks against additional systems.
-
-Compromised infrastructure may appear trustworthy because it uses a legitimate provider, established domain, valid certificate, reputable service, or expected AI development platform. It may also provide network access, compute resources, service identities, or trusted relationships that would be difficult for the adversary to establish directly.
+Скомпрометированная инфраструктура может вызывать доверие благодаря размещению у легитимного поставщика либо использованию давно существующего домена, действительного сертификата, сервиса с хорошей репутацией или привычной платформы для разработки ИИ. Кроме того, благодаря такой инфраструктуре злоумышленник может получить сетевой доступ и вычислительные ресурсы, действовать от имени сервисов или воспользоваться существующими отношениями доверия — всего этого ему было бы трудно добиться самостоятельно.
 
 
 ## Тактики

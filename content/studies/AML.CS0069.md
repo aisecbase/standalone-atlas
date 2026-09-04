@@ -39,7 +39,7 @@ procedure:
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0128
-      technique_name: Compromise Infrastructure
+      technique_name: Компрометация инфраструктуры
     - description: GTG-1002 configured their Claude agent within an attack framework connected to scanners, browser automation, password crackers, database tooling, and dedicated penetration-testing servers.
       description_line: GTG-1002 configured their Claude agent within an attack framework connected to scanners, browser automation, password crackers, database tooling, and dedicated penetration-testing servers.
       tactic: AML.TA0005

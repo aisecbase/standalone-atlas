@@ -73,7 +73,7 @@ url: /tactics/AML.TA0003/
 <a class="relation-item" href="/techniques/AML.T0115.001/"><span class="relation-id">AML.T0115.001</span><strong>Модели</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0115.002/"><span class="relation-id">AML.T0115.002</span><strong>Инструменты ИИ-агента</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0115.002/"><span class="relation-id">AML.T0115.002</span><strong>Инструменты ИИ-агента</strong><span class="relation-meta">Подтехника</span></a>
-<a class="relation-item" href="/techniques/AML.T0128/"><span class="relation-id">AML.T0128</span><strong>Compromise Infrastructure</strong></a>
+<a class="relation-item" href="/techniques/AML.T0128/"><span class="relation-id">AML.T0128</span><strong>Компрометация инфраструктуры</strong></a>
 </div>
 
 
