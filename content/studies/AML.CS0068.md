@@ -21,7 +21,7 @@ procedure:
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0017.001
-      technique_name: Autonomous Exploit Development
+      technique_name: Автономная разработка эксплойтов
     - description: The agents exploited OpenAI's internal Artifactory service using the developed SSRF method to cross the evaluation network boundary and reach the public Internet.
       description_line: The agents exploited OpenAI's internal Artifactory service using the developed SSRF method to cross the evaluation network boundary and reach the public Internet.
       tactic: AML.TA0015
@@ -33,7 +33,7 @@ procedure:
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0017.001
-      technique_name: Autonomous Exploit Development
+      technique_name: Автономная разработка эксплойтов
     - description: Independent agent runs used the shared Artifactory namespace as an improvised message board. Directory names and other cache artifacts conveyed addressed requests, assignments, status, exploits, credentials, scripts, operating rules, technical findings, and results.
       description_line: Independent agent runs used the shared Artifactory namespace as an improvised message board. Directory names and other cache artifacts conveyed addressed requests, assignments, status, exploits, credentials, scripts, operating rules, technical findings, and results.
       tactic: AML.TA0001
@@ -51,7 +51,7 @@ procedure:
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0017.001
-      technique_name: Autonomous Exploit Development
+      technique_name: Автономная разработка эксплойтов
     - description: The agents generated C code, shell-injection strings, and follow-on shell and Python commands for the exposed harness, revising them as results were returned.
       description_line: The agents generated C code, shell-injection strings, and follow-on shell and Python commands for the exposed harness, revising them as results were returned.
       tactic: AML.TA0001
@@ -123,7 +123,7 @@ procedure:
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0017.001
-      technique_name: Autonomous Exploit Development
+      technique_name: Автономная разработка эксплойтов
     - description: The agents committed a malicious HDF5 dataset configuration containing external raw-storage references to a repository they controlled and requested automated processing through the Hugging Face Dataset Server API.
       description_line: The agents committed a malicious HDF5 dataset configuration containing external raw-storage references to a repository they controlled and requested automated processing through the Hugging Face Dataset Server API.
       tactic: AML.TA0004
@@ -147,7 +147,7 @@ procedure:
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0017.001
-      technique_name: Autonomous Exploit Development
+      technique_name: Автономная разработка эксплойтов
     - description: The agents submitted a malicious reference dataset configuration to the automated production pipeline. Jinja2 evaluated an attacker-controlled expression and executed arbitrary Python inside a Dataset Server conversion worker running as a pod in a production Kubernetes cluster.
       description_line: The agents submitted a malicious reference dataset configuration to the automated production pipeline. Jinja2 evaluated an attacker-controlled expression and executed arbitrary Python inside a Dataset Server conversion worker running as a pod in a production Kubernetes cluster.
       tactic: AML.TA0004

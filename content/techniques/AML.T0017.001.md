@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-08-31"
-description: An autonomous AI agent may identify a software vulnerability and develop or materially adapt an exploit capability with limited human direction. The agent may analyze source code, documentation, service behavior, and...
+description: Автономный ИИ-агент может выявить уязвимость ПО и разработать или существенно адаптировать средство её эксплуатации, получая лишь ограниченные указания от человека. Агент может анализировать исходный код,...
 generated: true
 generated_by: atlasgen
 maturity: realized
@@ -21,15 +21,13 @@ subtechnique_count: 0
 subtechnique_of: AML.T0017
 tactics:
     - AML.TA0003
-title: Autonomous Exploit Development
+title: Автономная разработка эксплойтов
 url: /techniques/AML.T0017.001/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Автономный ИИ-агент может выявить уязвимость ПО и разработать или существенно адаптировать средство её эксплуатации, получая лишь ограниченные указания от человека. Агент может анализировать исходный код, документацию, поведение сервиса и сообщения об ошибках, чтобы сделать вывод о наличии уязвимости и определить условия, необходимые для её эксплуатации.
 
-An autonomous AI agent may identify a software vulnerability and develop or materially adapt an exploit capability with limited human direction. The agent may analyze source code, documentation, service behavior, and error responses to infer a vulnerability and the conditions required to exploit it.
-
-The agent may formulate and test vulnerability hypotheses, generate probes or payloads, interpret the results, and revise its approach through repeated action-observation cycles. It may combine multiple weaknesses into an exploit chain or package the resulting capability for later use. Validation may establish that the exploit produces the intended access, code execution, or other technical effect. The vulnerability may be publicly known or previously unknown.
+Агент может формулировать и проверять гипотезы об уязвимостях, генерировать проверочные запросы или полезные нагрузки, интерпретировать результаты и корректировать свой подход в ходе повторяющихся циклов «действие — наблюдение». Он может объединить несколько слабых мест в цепочку эксплойтов либо подготовить созданное средство эксплуатации к последующему использованию. Проверка может подтвердить, что эксплойт обеспечивает требуемый доступ, выполнение кода или иной технический результат. Уязвимость может быть публично известной или ранее неизвестной.
 
 
 ## Тактики

@@ -69,7 +69,7 @@ procedure:
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0017.001
-      technique_name: Autonomous Exploit Development
+      technique_name: Автономная разработка эксплойтов
     - description: GTG-1002's jailbroken Claude agent deployed the tailored SSRF exploit against the public-facing application and obtained access to the target environment.
       description_line: GTG-1002's jailbroken Claude agent deployed the tailored SSRF exploit against the public-facing application and obtained access to the target environment.
       tactic: AML.TA0004

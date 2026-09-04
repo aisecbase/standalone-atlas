@@ -8,7 +8,7 @@
 | Меры защиты | 39 | 37 | 37 | - | 35 | 2 |
 | Ресурсы | 6 | 6 | 6 | - | 6 | 0 |
 | Тактики | 16 | 16 | 16 | - | 15 | 1 |
-| Техники | 197 | 195 | 195 | - | 190 | 5 |
+| Техники | 197 | 196 | 196 | - | 191 | 5 |
 
 ## Требует проверки (8)
 
@@ -49,7 +49,7 @@
 - [`AML.CS0066`](/studies/AML.CS0066/) (Кейсы): ZombieAgent: Data Exfiltration Attack on ChatGPT; название: да; описание/summary: да; процедуры: 11/12
 - [`AML.CS0067`](/studies/AML.CS0067/) (Кейсы): Claude Code GitHub Action Secret Exposure; название: да; описание/summary: да; процедуры: 10/11
 
-## Перевод отсутствует (8)
+## Перевод отсутствует (7)
 
 - [`AML.CS0068`](/studies/AML.CS0068/) (Кейсы): Autonomous OpenAI Evaluation Agents Compromise Hugging Face Infrastructure; название: нет; описание/summary: нет; процедуры: 0/37
 - [`AML.CS0069`](/studies/AML.CS0069/) (Кейсы): GTG-1002 Claude Code Espionage Campaign; название: нет; описание/summary: нет; процедуры: 0/21
@@ -57,5 +57,4 @@
 - [`AML.CS0071`](/studies/AML.CS0071/) (Кейсы): Multi-Agent Framework Compromises Taiwanese Government Systems; название: нет; описание/summary: нет; процедуры: 0/12
 - [`AML.M0037`](/mitigations/AML.M0037/) (Меры защиты): AI Agent Authority Expansion Controls; название: нет; описание/summary: нет
 - [`AML.M0038`](/mitigations/AML.M0038/) (Меры защиты): AI Agent Scope Drift Detection; название: нет; описание/summary: нет
-- [`AML.T0017.001`](/techniques/AML.T0017.001/) (Техники): Autonomous Exploit Development; название: нет; описание/summary: нет
 - [`AML.T0017.002`](/techniques/AML.T0017.002/) (Техники): AI Agent Tools; название: нет; описание/summary: нет

@@ -50,7 +50,7 @@ AI agent tools may be implemented as Model Context Protocol servers, plugins, sk
 
 <div class="relation-list">
 <a class="relation-item" href="/techniques/AML.T0017.000/"><span class="relation-id">AML.T0017.000</span><strong>Состязательные атаки на ИИ</strong><span class="relation-meta">Подтехника</span></a>
-<a class="relation-item" href="/techniques/AML.T0017.001/"><span class="relation-id">AML.T0017.001</span><strong>Autonomous Exploit Development</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0017.001/"><span class="relation-id">AML.T0017.001</span><strong>Автономная разработка эксплойтов</strong><span class="relation-meta">Подтехника</span></a>
 </div>
 
 
