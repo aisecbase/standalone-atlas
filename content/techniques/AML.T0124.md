@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-08-31"
-description: Adversaries may use autonomous AI systems as an operational control layer to manage multiple distinct autonomous agents or sub-agents toward a common adversary-defined objective. The orchestrating system may create...
+description: Злоумышленники могут использовать автономные ИИ-системы в качестве уровня оперативного управления несколькими отдельными автономными агентами или субагентами, действующими для достижения общей цели, заданной...
 generated: true
 generated_by: atlasgen
 maturity: realized
@@ -21,21 +21,19 @@ subtechnique_count: 0
 subtechnique_of: ""
 tactics:
     - AML.TA0001
-title: Autonomous Attack Orchestration
+title: Автономная оркестрация атаки
 url: /techniques/AML.T0124/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Злоумышленники могут использовать автономные ИИ-системы в качестве уровня оперативного управления несколькими отдельными автономными агентами или субагентами, действующими для достижения общей цели, заданной злоумышленником. Оркестрирующая система может создавать задания, выбирать исполнителей, распределять инструменты или ресурсы, устанавливать зависимости, планировать или синхронизировать действия и отслеживать ход работы без того, чтобы человек руководил каждым заданием.
 
-Adversaries may use autonomous AI systems as an operational control layer to manage multiple distinct autonomous agents or sub-agents toward a common adversary-defined objective. The orchestrating system may create assignments, select executors, allocate tools or resources, establish dependencies, schedule or synchronize activities, and track progress without a human directing each assignment.
+Автономная система осуществляет централизованное управление распределённым выполнением: определяет, какой агент какую работу выполняет, когда он её выполняет и как результат его работы влияет на другую порученную работу. Система может агрегировать результаты и сведения о состоянии от участвующих агентов, запрашивать независимую проверку, разрешать противоречия между результатами, предотвращать или устранять дублирование работы и определять, когда результат удовлетворяет необходимому условию для другого действия. Она может перераспределять работу, выполнение которой застопорилось, увеличивать или сокращать объём ресурсов, выделенных ветви, прекращать работу, не представляющую большой ценности, либо инициировать дополнительные исследования или тестирование.
 
-The autonomous system exhibits centralized control over distributed execution including which agent performs which work, when it performs it, and how its output affects other assigned work. The system may aggregate findings and status from participating agents, request independent validation, reconcile conflicting results, prevent or resolve duplicated effort, and determine when an output satisfies a prerequisite for another activity. It may reassign stalled work, increase or reduce resources allocated to a branch, terminate low-value work, or initiate additional research or testing.
+При оркестрации для передачи заданий, сведений о состоянии и результатов могут использоваться интерфейсы прямого взаимодействия агентов (см. [Коммуникация автономных ИИ-агентов: прямая коммуникация агентов](/techniques/AML.T0118.001)).
 
-Orchestration may use direct agent interfaces (See [Autonomous AI Agent Communication: Direct Agent Communication](/techniques/AMl.T0118.001)) to transmit assignments, status, and results.
+Участие человека не исключает автономной оркестрации атаки. Оператор может определять цели кампании, выбирать объекты атаки, предоставлять инфраструктуру, устанавливать ограничения или сохранять за собой право одобрять переходы, влекущие существенные последствия.
 
-Human involvement does not preclude autonomous attack orchestration. A human operator may define campaign objectives, select targets, provide infrastructure, establish constraints, or retain approval over consequential transitions.
-
-[Autonomous Attack-Path Adaptation](/techniques/AML.T0117) and [Autonomous Attack Orchestration](/techniques/AML.T0124) may occur together but describe different control functions. Attack-path adaptation captures how evidence changes the selected path. Attack orchestration captures how work is allocated, coordinated, validated, and redirected across agents.
+[Автономная адаптация пути атаки](/techniques/AML.T0117) и [Автономная оркестрация атаки](/techniques/AML.T0124) могут применяться совместно, однако описывают разные функции управления. Адаптация пути атаки отражает то, как полученные свидетельства изменяют выбранный путь. Оркестрация атаки отражает то, как работа распределяется между агентами, координируется, проверяется и перенаправляется.
 
 
 ## Тактики

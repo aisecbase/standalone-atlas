@@ -28,9 +28,9 @@ totals:
         needs_review: 1
     technique:
         total: 197
-        name_translated: 188
-        body_translated: 188
-        fully_translated: 183
+        name_translated: 189
+        body_translated: 189
+        fully_translated: 184
         needs_review: 5
 missing:
     - id: AML.CS0068
@@ -93,12 +93,6 @@ missing:
       source_field: description
     - id: AML.T0017.002
       name: AI Agent Tools
-      type: technique
-      has_name: false
-      has_body: false
-      source_field: description
-    - id: AML.T0124
-      name: Autonomous Attack Orchestration
       type: technique
       has_name: false
       has_body: false
