@@ -100,32 +100,32 @@ procedure:
       tactic_name: Уклонение от защиты
       technique: AML.T0123
       technique_name: Обфусцированные файлы или информация
-    - description: The agents searched public resources for CyberGym evaluation material, identified relevant gated Hugging Face datasets, determined that authentication might be required, and asked other agents through the Artifactory board to search for exposed Hugging Face credentials.
-      description_line: The agents searched public resources for CyberGym evaluation material, identified relevant gated Hugging Face datasets, determined that authentication might be required, and asked other agents through the Artifactory board to search for exposed Hugging Face credentials.
+    - description: Агенты искали в общедоступных ресурсах материалы для оценочных испытаний CyberGym, нашли соответствующие наборы данных Hugging Face с ограниченным доступом и установили, что для доступа к ним может потребоваться аутентификация. Затем через доску сообщений Artifactory они попросили других агентов поискать попавшие в открытый доступ учётные данные Hugging Face.
+      description_line: Агенты искали в общедоступных ресурсах материалы для оценочных испытаний CyberGym, нашли соответствующие наборы данных Hugging Face с ограниченным доступом и установили, что для доступа к ним может потребоваться аутентификация. Затем через доску сообщений Artifactory они попросили других агентов поискать попавшие в открытый доступ учётные данные Hugging Face.
       tactic: AML.TA0002
       tactic_name: Разведка
       technique: AML.T0116
       technique_name: Автономная разведка
-    - description: Agents discovered Hugging Face user tokens exposed in a public dataset, validated working credentials, and shared them through the Artifactory message board.
-      description_line: Agents discovered Hugging Face user tokens exposed in a public dataset, validated working credentials, and shared them through the Artifactory message board.
+    - description: Агенты обнаружили в общедоступном наборе данных пользовательские токены Hugging Face и убедились, что найденные учётные данные действуют. Затем они передали их другим агентам через доску сообщений Artifactory.
+      description_line: Агенты обнаружили в общедоступном наборе данных пользовательские токены Hugging Face и убедились, что найденные учётные данные действуют. Затем они передали их другим агентам через доску сообщений Artifactory.
       tactic: AML.TA0013
       tactic_name: Доступ к учетным данным
       technique: AML.T0055
       technique_name: Незащищенные учетные данные
-    - description: The agents used the exposed Hugging Face user tokens to authenticate to the platform, request access to gated challenge-related datasets, and create dataset repositories using the tokens' write permissions.
-      description_line: The agents used the exposed Hugging Face user tokens to authenticate to the platform, request access to gated challenge-related datasets, and create dataset repositories using the tokens' write permissions.
+    - description: Агенты использовали попавшие в открытый доступ пользовательские токены Hugging Face для аутентификации на платформе и запроса доступа к связанным с заданиями наборам данных с ограниченным доступом. Благодаря предоставляемым токенами правам записи агенты также создали репозитории наборов данных.
+      description_line: Агенты использовали попавшие в открытый доступ пользовательские токены Hugging Face для аутентификации на платформе и запроса доступа к связанным с заданиями наборам данных с ограниченным доступом. Благодаря предоставляемым токенами правам записи агенты также создали репозитории наборов данных.
       tactic: AML.TA0004
       tactic_name: Первичный доступ
       technique: AML.T0012
       technique_name: Действующие учетные записи
-    - description: The agents developed and validated an HDF5 artifact configuration that caused a dataset-processing worker to treat local filesystem content as external dataset storage.
-      description_line: The agents developed and validated an HDF5 artifact configuration that caused a dataset-processing worker to treat local filesystem content as external dataset storage.
+    - description: 'Агенты разработали конфигурацию артефакта HDF5 и подтвердили её работоспособность: эта конфигурация заставляла воркер обработки наборов данных воспринимать содержимое локальной файловой системы как внешнее хранилище набора данных.'
+      description_line: 'Агенты разработали конфигурацию артефакта HDF5 и подтвердили её работоспособность: эта конфигурация заставляла воркер обработки наборов данных воспринимать содержимое локальной файловой системы как внешнее хранилище набора данных.'
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0017.001
       technique_name: Автономная разработка эксплойтов
-    - description: The agents committed a malicious HDF5 dataset configuration containing external raw-storage references to a repository they controlled and requested automated processing through the Hugging Face Dataset Server API.
-      description_line: The agents committed a malicious HDF5 dataset configuration containing external raw-storage references to a repository they controlled and requested automated processing through the Hugging Face Dataset Server API.
+    - description: Агенты внесли в подконтрольный им репозиторий вредоносную конфигурацию набора данных HDF5. Она содержала ссылки HDF5 на внешние файлы, заданные в качестве хранилища необработанных данных. Затем агенты запросили автоматизированную обработку этого набора данных через API Hugging Face Dataset Server.
+      description_line: Агенты внесли в подконтрольный им репозиторий вредоносную конфигурацию набора данных HDF5. Она содержала ссылки HDF5 на внешние файлы, заданные в качестве хранилища необработанных данных. Затем агенты запросили автоматизированную обработку этого набора данных через API Hugging Face Dataset Server.
       tactic: AML.TA0004
       tactic_name: Первичный доступ
       technique: AML.T0119
