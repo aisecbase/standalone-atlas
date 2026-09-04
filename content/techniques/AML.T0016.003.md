@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: T1588.005
 attack_ref_url: https://attack.mitre.org/techniques/T1588/005/
 created_date: "2026-08-31"
-description: Adversaries may search for and obtain exploits to support their operations. An exploit takes advantage of a bug or vulnerability in order to cause unintended or unanticipated behavior to occur on computer hardware or...
+description: Злоумышленники могут искать и получать эксплойты для использования в своих операциях. Эксплойт использует ошибку или уязвимость, чтобы вызвать непредусмотренное или непредвиденное поведение компьютерного оборудования...
 generated: true
 generated_by: atlasgen
 maturity: realized
@@ -18,13 +18,11 @@ subtechnique_count: 0
 subtechnique_of: AML.T0016
 tactics:
     - AML.TA0003
-title: Exploits
+title: Эксплойты
 url: /techniques/AML.T0016.003/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
-
-Adversaries may search for and obtain exploits to support their operations. An exploit takes advantage of a bug or vulnerability in order to cause unintended or unanticipated behavior to occur on computer hardware or software. Exploits may be downloaded from public repositories, acquired from private sources, purchased, stolen, or obtained from vulnerability research and exploit-sharing communities. An obtained exploit may be used without modification or serve as input to later adaptation or development.
+Злоумышленники могут искать и получать эксплойты для использования в своих операциях. Эксплойт использует ошибку или уязвимость, чтобы вызвать непредусмотренное или непредвиденное поведение компьютерного оборудования либо ПО. Эксплойты можно скачать из открытых репозиториев, получить из закрытых источников, купить или похитить. Их источником также могут служить сообщества, занимающиеся исследованием уязвимостей и обменом эксплойтами. Полученный эксплойт можно использовать без изменений или как основу для последующей адаптации либо разработки.
 
 
 ## Тактики

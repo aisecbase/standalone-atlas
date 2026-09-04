@@ -69,7 +69,7 @@ procedure:
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0016.003
-      technique_name: Exploits
+      technique_name: Эксплойты
     - description: DeepSeek ran the public Langflow scanner and identified a target running Langflow 1.3.4.
       description_line: DeepSeek ran the public Langflow scanner and identified a target running Langflow 1.3.4.
       tactic: AML.TA0002
@@ -99,7 +99,7 @@ procedure:
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0016.003
-      technique_name: Exploits
+      technique_name: Эксплойты
     - description: DeepSeek queried FOFA for n8n deployments. FOFA reported 647,017 global results and 25,209 in China; these were not confirmed vulnerable systems.
       description_line: DeepSeek queried FOFA for n8n deployments. FOFA reported 647,017 global results and 25,209 in China; these were not confirmed vulnerable systems.
       tactic: AML.TA0002
