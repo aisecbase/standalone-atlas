@@ -33,7 +33,7 @@ procedure:
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0017.002
-      technique_name: AI Agent Tools
+      technique_name: Инструменты ИИ-агента
     - description: Hermes accessed DeepSeek through its native API and used the model for vulnerability assessment, target selection, command generation, and operational decisions.
       description_line: Hermes accessed DeepSeek through its native API and used the model for vulnerability assessment, target selection, command generation, and operational decisions.
       tactic: AML.TA0000

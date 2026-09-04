@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-08-31"
-description: Adversaries may develop or materially adapt tools, integrations, or tool servers designed to extend the capabilities of an AI agent. These capabilities may allow an agent to interact with operating systems, browsers,...
+description: 'Злоумышленники могут разрабатывать или существенно адаптировать средства, предназначенные для расширения возможностей ИИ-агента: инструменты, интеграции или серверы, предоставляющие инструменты. С их помощью агент...'
 generated: true
 generated_by: atlasgen
 maturity: realized
@@ -21,15 +21,13 @@ subtechnique_count: 0
 subtechnique_of: AML.T0017
 tactics:
     - AML.TA0003
-title: AI Agent Tools
+title: Инструменты ИИ-агента
 url: /techniques/AML.T0017.002/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Злоумышленники могут разрабатывать или существенно адаптировать средства, предназначенные для расширения возможностей ИИ-агента: инструменты, интеграции или серверы, предоставляющие инструменты. С их помощью агент может взаимодействовать с операционными системами, браузерами, сетями, облачными сервисами, хранилищами данных, репозиториями ПО, системами управления идентификацией или другими внешними ресурсами.
 
-Adversaries may develop or materially adapt tools, integrations, or tool servers designed to extend the capabilities of an AI agent. These capabilities may allow an agent to interact with operating systems, browsers, networks, cloud services, data stores, software repositories, identity systems, or other external resources.
-
-AI agent tools may be implemented as Model Context Protocol servers, plugins, skills, connectors, function libraries, computer-use adapters, execution brokers, remote APIs, or similar model-callable interfaces. Development may include creating executable functionality, model-visible tool descriptions, procedural instructions, input schemas, authentication methods, permission handling, or packaging needed to make a capability available to an agent.
+Инструменты ИИ-агента могут быть реализованы в виде серверов Model Context Protocol (MCP), плагинов, навыков, коннекторов, библиотек функций, адаптеров для управления компьютером, брокеров выполнения, удалённых API или аналогичных интерфейсов, которые может вызывать модель. Разработка может включать создание исполняемой логики, описаний инструментов, передаваемых модели, инструкций по порядку действий, схем входных данных, методов аутентификации и механизмов управления разрешениями, а также подготовку пакета, необходимого для предоставления агенту соответствующей возможности.
 
 
 ## Тактики
