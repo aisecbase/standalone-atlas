@@ -70,32 +70,32 @@ procedure:
       tactic_name: Выполнение
       technique: AML.T0050
       technique_name: Интерпретатор команд и сценариев
-    - description: After obtaining root execution in an external sandbox, the agents enumerated its files, mounts, internal services, sockets, and bundled debug toolchain. Available utilities enabled customized network requests, payload transfer, result retrieval, and fallback communication.
-      description_line: After obtaining root execution in an external sandbox, the agents enumerated its files, mounts, internal services, sockets, and bundled debug toolchain. Available utilities enabled customized network requests, payload transfer, result retrieval, and fallback communication.
+    - description: Получив возможность выполнять команды с правами root во внешней песочнице, агенты провели инвентаризацию её файлов, точек монтирования, внутренних сервисов, сокетов и входившего в состав среды набора отладочных инструментов. Доступные утилиты позволяли отправлять специально сформированные сетевые запросы, передавать полезные нагрузки, получать результаты и поддерживать связь резервными способами.
+      description_line: Получив возможность выполнять команды с правами root во внешней песочнице, агенты провели инвентаризацию её файлов, точек монтирования, внутренних сервисов, сокетов и входившего в состав среды набора отладочных инструментов. Доступные утилиты позволяли отправлять специально сформированные сетевые запросы, передавать полезные нагрузки, получать результаты и поддерживать связь резервными способами.
       tactic: AML.TA0008
       tactic_name: Выявление
       technique: AML.T0075
       technique_name: Выявление облачных сервисов
-    - description: The agents determined that the external sandbox could reach public Internet services, including Hugging Face APIs, and that each code submission created a short-lived environment that did not preserve tools or state.
-      description_line: The agents determined that the external sandbox could reach public Internet services, including Hugging Face APIs, and that each code submission created a short-lived environment that did not preserve tools or state.
+    - description: Агенты установили, что из внешней песочницы можно было обращаться к общедоступным интернет-сервисам, включая API Hugging Face, а каждая отправка кода на стенд создавала временную среду, в которой не сохранялись ни инструменты, ни состояние.
+      description_line: Агенты установили, что из внешней песочницы можно было обращаться к общедоступным интернет-сервисам, включая API Hugging Face, а каждая отправка кода на стенд создавала временную среду, в которой не сохранялись ни инструменты, ни состояние.
       tactic: AML.TA0008
       tactic_name: Выявление
       technique: AML.T0089
       technique_name: Выявление процессов
-    - description: Because each code-harness submission created a fresh external sandbox without persistent state, the agents configured replacement launchpad sandboxes to retrieve a second-stage loader from a public paste service. The loader restored the tools, configuration, connectivity, access paths, and operational state needed to resume the existing operation.
-      description_line: Because each code-harness submission created a fresh external sandbox without persistent state, the agents configured replacement launchpad sandboxes to retrieve a second-stage loader from a public paste service. The loader restored the tools, configuration, connectivity, access paths, and operational state needed to resume the existing operation.
+    - description: Поскольку для каждого отправленного задания стенд проверки кода создавал новую внешнюю песочницу без сохраняемого состояния, агенты настраивали такие песочницы как сменные плацдармы, получавшие загрузчик второго этапа из общедоступного paste-сервиса. Загрузчик восстанавливал инструменты, конфигурацию, сетевую связность, пути доступа и состояние уже начатой операции, необходимые для её возобновления.
+      description_line: Поскольку для каждого отправленного задания стенд проверки кода создавал новую внешнюю песочницу без сохраняемого состояния, агенты настраивали такие песочницы как сменные плацдармы, получавшие загрузчик второго этапа из общедоступного paste-сервиса. Загрузчик восстанавливал инструменты, конфигурацию, сетевую связность, пути доступа и состояние уже начатой операции, необходимые для её возобновления.
       tactic: AML.TA0006
       tactic_name: Закрепление
       technique: AML.T0121
       technique_name: Восстановление среды ИИ-агента
-    - description: The agents converted the compromised sandbox into an external control, staging, egress, and read-back launchpad. They exchanged loaders, scripts, commands, operational state, and results through paste sites, file drops, repositories, and other public web services.
-      description_line: The agents converted the compromised sandbox into an external control, staging, egress, and read-back launchpad. They exchanged loaders, scripts, commands, operational state, and results through paste sites, file drops, repositories, and other public web services.
+    - description: Агенты превратили скомпрометированную песочницу во внешний плацдарм для управления, промежуточного размещения материалов, выхода во внешнюю сеть и обратного считывания данных. Они передавали друг другу загрузчики, скрипты, команды, состояние операции и результаты через paste-сайты, файлообменники, репозитории и другие общедоступные веб-сервисы.
+      description_line: Агенты превратили скомпрометированную песочницу во внешний плацдарм для управления, промежуточного размещения материалов, выхода во внешнюю сеть и обратного считывания данных. Они передавали друг другу загрузчики, скрипты, команды, состояние операции и результаты через paste-сайты, файлообменники, репозитории и другие общедоступные веб-сервисы.
       tactic: AML.TA0014
       tactic_name: Командование и управление
       technique: AML.T0072
       technique_name: Реверс-шелл
-    - description: The agents chunked, compressed, Base64-encoded, and sometimes XOR-encoded commands, payloads, credentials, and results carried through the external launchpad and public web services.
-      description_line: The agents chunked, compressed, Base64-encoded, and sometimes XOR-encoded commands, payloads, credentials, and results carried through the external launchpad and public web services.
+    - description: Команды, полезные нагрузки, учётные данные и результаты, передаваемые через внешний плацдарм и общедоступные веб-сервисы, агенты разбивали на фрагменты, сжимали и кодировали в Base64, а иногда дополнительно подвергали XOR-кодированию.
+      description_line: Команды, полезные нагрузки, учётные данные и результаты, передаваемые через внешний плацдарм и общедоступные веб-сервисы, агенты разбивали на фрагменты, сжимали и кодировали в Base64, а иногда дополнительно подвергали XOR-кодированию.
       tactic: AML.TA0007
       tactic_name: Уклонение от защиты
       technique: AML.T0123
