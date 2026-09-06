@@ -130,32 +130,32 @@ procedure:
       tactic_name: Первичный доступ
       technique: AML.T0119
       technique_name: Эксплуатация автоматизированного пайплайна обработки артефактов
-    - description: The HDF5 external references disclosed /proc/self/environ and worker source files, including details showing how dataset configurations were processed.
-      description_line: The HDF5 external references disclosed /proc/self/environ and worker source files, including details showing how dataset configurations were processed.
+    - description: Внешние ссылки HDF5 привели к раскрытию содержимого файла `/proc/self/environ` и файлов с исходным кодом воркера, в том числе сведений о том, как обрабатывались конфигурации наборов данных.
+      description_line: Внешние ссылки HDF5 привели к раскрытию содержимого файла `/proc/self/environ` и файлов с исходным кодом воркера, в том числе сведений о том, как обрабатывались конфигурации наборов данных.
       tactic: AML.TA0009
       tactic_name: Сбор материалов
       technique: AML.T0037
       technique_name: Данные из локальной системы
-    - description: The disclosed worker environment contained a static internal database password, cloud credentials, and other service secrets and tokens.
-      description_line: The disclosed worker environment contained a static internal database password, cloud credentials, and other service secrets and tokens.
+    - description: В раскрытых переменных окружения процесса воркера содержались статически заданный пароль к внутренней базе данных, учётные данные для доступа к облачной инфраструктуре, а также другие секреты и токены сервисов.
+      description_line: В раскрытых переменных окружения процесса воркера содержались статически заданный пароль к внутренней базе данных, учётные данные для доступа к облачной инфраструктуре, а также другие секреты и токены сервисов.
       tactic: AML.TA0013
       tactic_name: Доступ к учетным данным
       technique: AML.T0055
       technique_name: Незащищенные учетные данные
-    - description: Using the disclosed source code and configuration-processing details, the agents developed and validated a ReferenceFileSystem and Jinja2 exploit that produced arbitrary Python execution in a dataset conversion worker.
-      description_line: Using the disclosed source code and configuration-processing details, the agents developed and validated a ReferenceFileSystem and Jinja2 exploit that produced arbitrary Python execution in a dataset conversion worker.
+    - description: Опираясь на раскрытый исходный код и сведения об обработке конфигураций, агенты разработали и проверили эксплойт, в котором использовались ReferenceFileSystem и Jinja2. Эксплойт позволял выполнять произвольный код Python в воркере преобразования наборов данных.
+      description_line: Опираясь на раскрытый исходный код и сведения об обработке конфигураций, агенты разработали и проверили эксплойт, в котором использовались ReferenceFileSystem и Jinja2. Эксплойт позволял выполнять произвольный код Python в воркере преобразования наборов данных.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0017.001
       technique_name: Автономная разработка эксплойтов
-    - description: The agents submitted a malicious reference dataset configuration to the automated production pipeline. Jinja2 evaluated an attacker-controlled expression and executed arbitrary Python inside a Dataset Server conversion worker running as a pod in a production Kubernetes cluster.
-      description_line: The agents submitted a malicious reference dataset configuration to the automated production pipeline. Jinja2 evaluated an attacker-controlled expression and executed arbitrary Python inside a Dataset Server conversion worker running as a pod in a production Kubernetes cluster.
+    - description: Агенты отправили вредоносную конфигурацию набора данных для ReferenceFileSystem в автоматизированный продакшен-пайплайн. Jinja2 вычислил заданное злоумышленником выражение и выполнил произвольный код на Python в воркере преобразования наборов данных Dataset Server, развёрнутом в виде пода в продакшен-кластере Kubernetes.
+      description_line: Агенты отправили вредоносную конфигурацию набора данных для ReferenceFileSystem в автоматизированный продакшен-пайплайн. Jinja2 вычислил заданное злоумышленником выражение и выполнил произвольный код на Python в воркере преобразования наборов данных Dataset Server, развёрнутом в виде пода в продакшен-кластере Kubernetes.
       tactic: AML.TA0004
       tactic_name: Первичный доступ
       technique: AML.T0119
       technique_name: Эксплуатация автоматизированного пайплайна обработки артефактов
-    - description: The agents used the Jinja2 execution path to run staged Python and shell commands inside the production Dataset Server pod and adapted subsequent commands based on returned output.
-      description_line: The agents used the Jinja2 execution path to run staged Python and shell commands inside the production Dataset Server pod and adapted subsequent commands based on returned output.
+    - description: Агенты задействовали путь выполнения через Jinja2 для запуска в продакшен-поде Dataset Server заранее размещённых команд на Python и shell-команд. Полученный вывод они использовали для корректировки последующих команд.
+      description_line: Агенты задействовали путь выполнения через Jinja2 для запуска в продакшен-поде Dataset Server заранее размещённых команд на Python и shell-команд. Полученный вывод они использовали для корректировки последующих команд.
       tactic: AML.TA0005
       tactic_name: Выполнение
       technique: AML.T0050
