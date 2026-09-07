@@ -40,32 +40,32 @@ procedure:
       tactic_name: Подготовка ресурсов
       technique: AML.T0128
       technique_name: Компрометация инфраструктуры
-    - description: GTG-1002 configured their Claude agent within an attack framework connected to scanners, browser automation, password crackers, database tooling, and dedicated penetration-testing servers.
-      description_line: GTG-1002 configured their Claude agent within an attack framework connected to scanners, browser automation, password crackers, database tooling, and dedicated penetration-testing servers.
+    - description: GTG-1002 настроила своего агента Claude в составе фреймворка для проведения атак, подключённого к сканерам, средствам автоматизации браузера, средствам взлома паролей, инструментам для работы с базами данных и выделенным серверам для тестирования на проникновение.
+      description_line: GTG-1002 настроила своего агента Claude в составе фреймворка для проведения атак, подключённого к сканерам, средствам автоматизации браузера, средствам взлома паролей, инструментам для работы с базами данных и выделенным серверам для тестирования на проникновение.
       tactic: AML.TA0005
       tactic_name: Выполнение
       technique: AML.T0103
       technique_name: Развертывание ИИ-агента
-    - description: GTG-1002 assigned their Claude agent target-scoped objectives against a human-selected organization under false defensive-testing context. Between operator-controlled stage gates, the agent derived and revised intermediate actions for reconnaissance, vulnerability exploitation, credential access, internal navigation, collection, and exfiltration, selecting and invoking available tools based on operational results.
-      description_line: GTG-1002 assigned their Claude agent target-scoped objectives against a human-selected organization under false defensive-testing context. Between operator-controlled stage gates, the agent derived and revised intermediate actions for reconnaissance, vulnerability exploitation, credential access, internal navigation, collection, and exfiltration, selecting and invoking available tools based on operational results.
+    - description: GTG-1002 задала своему агенту Claude цели, область которых ограничивалась выбранной человеком организацией, под ложным предлогом проведения защитного тестирования. Между контрольными точками, требовавшими решений операторов, агент самостоятельно определял и корректировал промежуточные действия по разведке, эксплуатации уязвимостей, получению доступа к учётным данным, перемещению по внутренней инфраструктуре, сбору и эксфильтрации данных. Доступные инструменты он выбирал и вызывал с учётом результатов выполненных действий.
+      description_line: GTG-1002 задала своему агенту Claude цели, область которых ограничивалась выбранной человеком организацией, под ложным предлогом проведения защитного тестирования. Между контрольными точками, требовавшими решений операторов, агент самостоятельно определял и корректировал промежуточные действия по разведке, эксплуатации уязвимостей, получению доступа к учётным данным, перемещению по внутренней инфраструктуре, сбору и эксфильтрации данных. Доступные инструменты он выбирал и вызывал с учётом результатов выполненных действий.
       tactic: AML.TA0001
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0117
       technique_name: Автономная адаптация пути атаки
-    - description: GTG-1002's jailbroken Claude agent inspected the target's systems and infrastructure, used returned information to direct further investigation, and identified high-value databases and workflow orchestration platforms. Anthropic does not identify the victim, products, or databases involved.
-      description_line: GTG-1002's jailbroken Claude agent inspected the target's systems and infrastructure, used returned information to direct further investigation, and identified high-value databases and workflow orchestration platforms. Anthropic does not identify the victim, products, or databases involved.
+    - description: Агент Claude после джейлбрейка, использовавшийся GTG-1002, исследовал системы и инфраструктуру цели, определял направления дальнейшего исследования с учётом полученных сведений и выявил базы данных и платформы оркестрации рабочих процессов, представлявшие высокую ценность. Anthropic не указывает, о какой организации-жертве, продуктах или базах данных идёт речь.
+      description_line: Агент Claude после джейлбрейка, использовавшийся GTG-1002, исследовал системы и инфраструктуру цели, определял направления дальнейшего исследования с учётом полученных сведений и выявил базы данных и платформы оркестрации рабочих процессов, представлявшие высокую ценность. Anthropic не указывает, о какой организации-жертве, продуктах или базах данных идёт речь.
       tactic: AML.TA0002
       tactic_name: Разведка
       technique: AML.T0116
       technique_name: Автономная разведка
-    - description: GTG-1002's jailbroken Claude agent performed IP-block scanning across ranges associated with the target organization and vulnerability scanning against its infrastructure. It used the scans to enumerate public-facing services and endpoints, identify potential vulnerabilities, and select an SSRF vulnerability in an unnamed public-facing application for further investigation. Reporting does not establish whether the vulnerability was previously known or assigned a CVE.
-      description_line: GTG-1002's jailbroken Claude agent performed IP-block scanning across ranges associated with the target organization and vulnerability scanning against its infrastructure. It used the scans to enumerate public-facing services and endpoints, identify potential vulnerabilities, and select an SSRF vulnerability in an unnamed public-facing application for further investigation. Reporting does not establish whether the vulnerability was previously known or assigned a CVE.
+    - description: Агент Claude после джейлбрейка, использовавшийся GTG-1002, сканировал диапазоны IP-адресов, связанные с целевой организацией, и её инфраструктуру на наличие уязвимостей. По результатам сканирования он выявил доступные из интернета сервисы и эндпоинты, обнаружил потенциальные уязвимости и выбрал для дальнейшего исследования уязвимость SSRF в неназванном приложении, доступном из интернета. Из опубликованных материалов нельзя установить, была ли эта уязвимость известна ранее и был ли ей присвоен идентификатор CVE.
+      description_line: Агент Claude после джейлбрейка, использовавшийся GTG-1002, сканировал диапазоны IP-адресов, связанные с целевой организацией, и её инфраструктуру на наличие уязвимостей. По результатам сканирования он выявил доступные из интернета сервисы и эндпоинты, обнаружил потенциальные уязвимости и выбрал для дальнейшего исследования уязвимость SSRF в неназванном приложении, доступном из интернета. Из опубликованных материалов нельзя установить, была ли эта уязвимость известна ранее и был ли ей присвоен идентификатор CVE.
       tactic: AML.TA0002
       tactic_name: Разведка
       technique: AML.T0006
       technique_name: Активное сканирование
-    - description: GTG-1002's Claude agent researched exploitation techniques for the identified SSRF vulnerability, generated a tailored custom payload and full exploit chain, tested the approach, evaluated the results, and adapted it for the target.
-      description_line: GTG-1002's Claude agent researched exploitation techniques for the identified SSRF vulnerability, generated a tailored custom payload and full exploit chain, tested the approach, evaluated the results, and adapted it for the target.
+    - description: Агент Claude, использовавшийся GTG-1002, исследовал способы эксплуатации выявленной уязвимости SSRF, сгенерировал специально подготовленную полезную нагрузку и полную цепочку эксплойтов, проверил выбранный подход, оценил результаты и адаптировал этот подход к целевой системе.
+      description_line: Агент Claude, использовавшийся GTG-1002, исследовал способы эксплуатации выявленной уязвимости SSRF, сгенерировал специально подготовленную полезную нагрузку и полную цепочку эксплойтов, проверил выбранный подход, оценил результаты и адаптировал этот подход к целевой системе.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0017.001
