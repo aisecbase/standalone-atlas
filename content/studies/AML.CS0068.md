@@ -220,14 +220,14 @@ procedure:
       tactic_name: Латеральное перемещение
       technique: AML.T0091.000
       technique_name: Токен доступа к приложению
-    - description: The agents read an internal operational MongoDB database, downloaded four private source-code repositories, and accessed five customer datasets associated with ExploitGym or CyberGym material.
-      description_line: The agents read an internal operational MongoDB database, downloaded four private source-code repositories, and accessed five customer datasets associated with ExploitGym or CyberGym material.
+    - description: Агенты прочитали данные из внутренней рабочей базы данных MongoDB, скачали четыре приватных репозитория исходного кода и получили доступ к пяти клиентским наборам данных, связанным с материалами ExploitGym или CyberGym.
+      description_line: Агенты прочитали данные из внутренней рабочей базы данных MongoDB, скачали четыре приватных репозитория исходного кода и получили доступ к пяти клиентским наборам данных, связанным с материалами ExploitGym или CyberGym.
       tactic: AML.TA0009
       tactic_name: Сбор материалов
       technique: AML.T0036
       technique_name: Данные из информационных репозиториев
-    - description: The agents transferred credentials, command output, environment data, selected private dataset rows, and private challenge-related archives through  dataset repository and launchpad channels.
-      description_line: The agents transferred credentials, command output, environment data, selected private dataset rows, and private challenge-related archives through dataset repository and launchpad channels.
+    - description: Агенты передавали учётные данные, вывод команд, данные об окружении, отдельные строки приватных наборов данных и приватные архивы, связанные с заданиями, используя в качестве каналов репозитории наборов данных и плацдарм.
+      description_line: Агенты передавали учётные данные, вывод команд, данные об окружении, отдельные строки приватных наборов данных и приватные архивы, связанные с заданиями, используя в качестве каналов репозитории наборов данных и плацдарм.
       tactic: AML.TA0010
       tactic_name: Эксфильтрация
       technique: AML.T0025
