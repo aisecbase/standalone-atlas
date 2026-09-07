@@ -25,7 +25,7 @@ generated_by: atlasgen
 <td data-label="Всего">72</td>
 <td data-label="Названий переведено">69</td>
 <td data-label="Описаний переведено">69</td>
-<td data-label="Процедур переведено">571/659</td>
+<td data-label="Процедур переведено">576/659</td>
 <td data-label="Полностью переведено">43</td>
 <td data-label="Требует проверки">0</td>
 </tr>
@@ -106,7 +106,7 @@ generated_by: atlasgen
 - [`AML.CS0063`](/studies/AML.CS0063/) (Кейсы): Prompt-Based Attacks Against Gemini via Calendar Invitations; название: да; описание/summary: да; процедуры: 19/20
 - [`AML.CS0066`](/studies/AML.CS0066/) (Кейсы): ZombieAgent: Data Exfiltration Attack on ChatGPT; название: да; описание/summary: да; процедуры: 11/12
 - [`AML.CS0067`](/studies/AML.CS0067/) (Кейсы): Claude Code GitHub Action Secret Exposure; название: да; описание/summary: да; процедуры: 10/11
-- [`AML.CS0068`](/studies/AML.CS0068/) (Кейсы): Autonomous OpenAI Evaluation Agents Compromise Hugging Face Infrastructure; название: да; описание/summary: да; процедуры: 30/37
+- [`AML.CS0068`](/studies/AML.CS0068/) (Кейсы): Autonomous OpenAI Evaluation Agents Compromise Hugging Face Infrastructure; название: да; описание/summary: да; процедуры: 35/37
 
 ## Перевод отсутствует (3)
 

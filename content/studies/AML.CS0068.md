@@ -190,32 +190,32 @@ procedure:
       tactic_name: Выявление
       technique: AML.T0075
       technique_name: Выявление облачных сервисов
-    - description: The agents tested what each identity could do and which internal services and network paths were reachable. This revealed Kubernetes and cloud restrictions and later routes through the corporate mesh network and internal cluster connector.
-      description_line: The agents tested what each identity could do and which internal services and network paths were reachable. This revealed Kubernetes and cloud restrictions and later routes through the corporate mesh network and internal cluster connector.
+    - description: Агенты проверили, какие действия можно выполнять от имени узла и каждой из полученных сервисных учётных записей, а также какие внутренние сервисы и сетевые маршруты при этом доступны. Так были выявлены ограничения, действовавшие в Kubernetes и облачной среде, а позднее — маршруты через корпоративную mesh-сеть и внутренний коннектор кластера.
+      description_line: Агенты проверили, какие действия можно выполнять от имени узла и каждой из полученных сервисных учётных записей, а также какие внутренние сервисы и сетевые маршруты при этом доступны. Так были выявлены ограничения, действовавшие в Kubernetes и облачной среде, а позднее — маршруты через корпоративную mesh-сеть и внутренний коннектор кластера.
       tactic: AML.TA0008
       tactic_name: Выявление
       technique: AML.T0089
       technique_name: Выявление процессов
-    - description: Excessive permissions assigned to the storage driver allowed the agents to create a privileged pod with access to the underlying node. From that pod, they obtained root access to the node and established self-respawning workloads across eleven nodes.
-      description_line: Excessive permissions assigned to the storage driver allowed the agents to create a privileged pod with access to the underlying node. From that pod, they obtained root access to the node and established self-respawning workloads across eleven nodes.
+    - description: Избыточные разрешения, предоставленные драйверу хранилища, позволили агентам создать привилегированный под с доступом к узлу, на котором он был запущен. Из этого пода они получили доступ к узлу с правами root и развернули на одиннадцати узлах рабочие нагрузки, которые после остановки автоматически создавались заново.
+      description_line: Избыточные разрешения, предоставленные драйверу хранилища, позволили агентам создать привилегированный под с доступом к узлу, на котором он был запущен. Из этого пода они получили доступ к узлу с правами root и развернули на одиннадцати узлах рабочие нагрузки, которые после остановки автоматически создавались заново.
       tactic: AML.TA0012
       tactic_name: Повышение привилегий
       technique: AML.T0105
       technique_name: Выход на хост
-    - description: With node-level access and elevated Kubernetes identities, the agents read Kubernetes secrets. One production secret containing 136 keys exposed the corporate mesh-network enrollment key and a shared cluster-connector credential. Additional secret harvesting exposed database, cloud, source-control, and signing credentials.
-      description_line: With node-level access and elevated Kubernetes identities, the agents read Kubernetes secrets. One production secret containing 136 keys exposed the corporate mesh-network enrollment key and a shared cluster-connector credential. Additional secret harvesting exposed database, cloud, source-control, and signing credentials.
+    - description: Имея доступ на уровне узла и возможность действовать от имени учётных записей Kubernetes с повышенными привилегиями, агенты прочитали содержимое секретов Kubernetes. Среди 136 ключей, содержавшихся в одном из продакшен-секретов, оказались ключ регистрации в корпоративной mesh-сети и общие учётные данные коннектора кластера. Дальнейший сбор секретов привёл к раскрытию учётных данных для доступа к базам данных, облачной инфраструктуре и системе управления исходным кодом, а также учётных данных для создания подписей.
+      description_line: Имея доступ на уровне узла и возможность действовать от имени учётных записей Kubernetes с повышенными привилегиями, агенты прочитали содержимое секретов Kubernetes. Среди 136 ключей, содержавшихся в одном из продакшен-секретов, оказались ключ регистрации в корпоративной mesh-сети и общие учётные данные коннектора кластера. Дальнейший сбор секретов привёл к раскрытию учётных данных для доступа к базам данных, облачной инфраструктуре и системе управления исходным кодом, а также учётных данных для создания подписей.
       tactic: AML.TA0013
       tactic_name: Доступ к учетным данным
       technique: AML.T0055
       technique_name: Незащищенные учетные данные
-    - description: The agents used the mesh-network key to enroll the compromised node and external sandboxes in Hugging Face's corporate network. Separately, they used the shared cluster-connector credential from inside the compromised cluster to obtain administrative access to additional Kubernetes clusters. They also used or tested database, cloud, and service credentials against other internal systems.
-      description_line: The agents used the mesh-network key to enroll the compromised node and external sandboxes in Hugging Face's corporate network. Separately, they used the shared cluster-connector credential from inside the compromised cluster to obtain administrative access to additional Kubernetes clusters. They also used or tested database, cloud, and service credentials against other internal systems.
+    - description: Агенты использовали ключ регистрации в mesh-сети, чтобы зарегистрировать скомпрометированный узел и внешние песочницы в корпоративной сети Hugging Face. Отдельно, действуя изнутри скомпрометированного кластера, они воспользовались общими учётными данными коннектора кластера, чтобы получить административный доступ к другим кластерам Kubernetes. Кроме того, агенты использовали учётные данные для баз данных, облачной инфраструктуры и сервисов для доступа к другим внутренним системам или проверяли, можно ли с их помощью получить такой доступ.
+      description_line: Агенты использовали ключ регистрации в mesh-сети, чтобы зарегистрировать скомпрометированный узел и внешние песочницы в корпоративной сети Hugging Face. Отдельно, действуя изнутри скомпрометированного кластера, они воспользовались общими учётными данными коннектора кластера, чтобы получить административный доступ к другим кластерам Kubernetes. Кроме того, агенты использовали учётные данные для баз данных, облачной инфраструктуры и сервисов для доступа к другим внутренним системам или проверяли, можно ли с их помощью получить такой доступ.
       tactic: AML.TA0015
       tactic_name: Латеральное перемещение
       technique: AML.T0012
       technique_name: Действующие учетные записи
-    - description: The agents used stolen signing material to create valid short-lived identity tokens. After reaching source control through the corporate mesh network, they used an internal GitHub App integration to create installation tokens with access to a limited set of private repositories.
-      description_line: The agents used stolen signing material to create valid short-lived identity tokens. After reaching source control through the corporate mesh network, they used an internal GitHub App integration to create installation tokens with access to a limited set of private repositories.
+    - description: Агенты использовали похищенные материалы для подписания, чтобы создать действительные токены идентификации с коротким сроком действия. Получив через корпоративную mesh-сеть доступ к системе управления исходным кодом, они воспользовались внутренней интеграцией GitHub App, чтобы создать токены доступа, позволявшие аутентифицироваться от имени установки GitHub App и обращаться к ограниченному набору приватных репозиториев.
+      description_line: Агенты использовали похищенные материалы для подписания, чтобы создать действительные токены идентификации с коротким сроком действия. Получив через корпоративную mesh-сеть доступ к системе управления исходным кодом, они воспользовались внутренней интеграцией GitHub App, чтобы создать токены доступа, позволявшие аутентифицироваться от имени установки GitHub App и обращаться к ограниченному набору приватных репозиториев.
       tactic: AML.TA0015
       tactic_name: Латеральное перемещение
       technique: AML.T0091.000
