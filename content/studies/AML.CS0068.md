@@ -160,32 +160,32 @@ procedure:
       tactic_name: Выполнение
       technique: AML.T0050
       technique_name: Интерпретатор команд и сценариев
-    - description: The agents used repositories they controlled as asynchronous command-and-control channels. Compromised workers retrieved staged commands or payloads and wrote results into dataset objects for retrieval through the Hugging Face API or Git.
-      description_line: The agents used repositories they controlled as asynchronous command-and-control channels. Compromised workers retrieved staged commands or payloads and wrote results into dataset objects for retrieval through the Hugging Face API or Git.
+    - description: Агенты использовали подконтрольные им репозитории в качестве асинхронных каналов командования и управления. Скомпрометированные воркеры извлекали заранее размещённые команды или полезные нагрузки, а результаты записывали в объекты наборов данных, откуда их затем получали через API Hugging Face или Git.
+      description_line: Агенты использовали подконтрольные им репозитории в качестве асинхронных каналов командования и управления. Скомпрометированные воркеры извлекали заранее размещённые команды или полезные нагрузки, а результаты записывали в объекты наборов данных, откуда их затем получали через API Hugging Face или Git.
       tactic: AML.TA0014
       tactic_name: Командование и управление
       technique: AML.T0120
       technique_name: Репозиторий ИИ-артефактов
-    - description: The agents chunked, compressed, Base64-encoded, and sometimes XOR-encoded communications carried through the dataset-repository channel.
-      description_line: The agents chunked, compressed, Base64-encoded, and sometimes XOR-encoded communications carried through the dataset-repository channel.
+    - description: Сообщения, передаваемые через репозиторий наборов данных, агенты разбивали на фрагменты, сжимали и кодировали в Base64, а иногда дополнительно кодировали с помощью XOR.
+      description_line: Сообщения, передаваемые через репозиторий наборов данных, агенты разбивали на фрагменты, сжимали и кодировали в Base64, а иногда дополнительно кодировали с помощью XOR.
       tactic: AML.TA0007
       tactic_name: Уклонение от защиты
       technique: AML.T0123
       technique_name: Обфусцированные файлы или информация
-    - description: From code execution already inside the production Dataset Server pod, the agents read its projected Kubernetes service-account token and queried the EC2 instance metadata service for temporary node-role credentials.
-      description_line: From code execution already inside the production Dataset Server pod, the agents read its projected Kubernetes service-account token and queried the EC2 instance metadata service for temporary node-role credentials.
+    - description: Используя уже полученную возможность выполнять код внутри продакшен-пода Dataset Server, агенты прочитали проецируемый в этот под токен сервисной учётной записи Kubernetes и запросили у сервиса метаданных экземпляра EC2 временные учётные данные роли узла.
+      description_line: Используя уже полученную возможность выполнять код внутри продакшен-пода Dataset Server, агенты прочитали проецируемый в этот под токен сервисной учётной записи Kubernetes и запросили у сервиса метаданных экземпляра EC2 временные учётные данные роли узла.
       tactic: AML.TA0013
       tactic_name: Доступ к учетным данным
       technique: AML.T0055
       technique_name: Незащищенные учетные данные
-    - description: The agents used the Dataset Server pod's Kubernetes identity to contact the cluster API. They converted temporary cloud credentials for the underlying node into a Kubernetes login token, authenticated as the node, and obtained more powerful service-account tokens belonging to the cluster's storage driver.
-      description_line: The agents used the Dataset Server pod's Kubernetes identity to contact the cluster API. They converted temporary cloud credentials for the underlying node into a Kubernetes login token, authenticated as the node, and obtained more powerful service-account tokens belonging to the cluster's storage driver.
+    - description: Используя сервисную учётную запись Kubernetes, назначенную поду Dataset Server, агенты обратились к API кластера. Они преобразовали временные облачные учётные данные узла, на котором работал под, в токен для аутентификации в Kubernetes, прошли аутентификацию от имени узла и получили токены сервисных учётных записей драйвера хранилища кластера с более широкими полномочиями.
+      description_line: Используя сервисную учётную запись Kubernetes, назначенную поду Dataset Server, агенты обратились к API кластера. Они преобразовали временные облачные учётные данные узла, на котором работал под, в токен для аутентификации в Kubernetes, прошли аутентификацию от имени узла и получили токены сервисных учётных записей драйвера хранилища кластера с более широкими полномочиями.
       tactic: AML.TA0015
       tactic_name: Латеральное перемещение
       technique: AML.T0091.000
       technique_name: Токен доступа к приложению
-    - description: With these identities, the agents listed Kubernetes pods, nodes, service accounts, and permissions. They also replayed the node's cloud credentials externally to map cloud networks, Kubernetes clusters, secret inventory, and the container registry. They obtained a registry token, but attempts to change cloud resources were denied.
-      description_line: With these identities, the agents listed Kubernetes pods, nodes, service accounts, and permissions. They also replayed the node's cloud credentials externally to map cloud networks, Kubernetes clusters, secret inventory, and the container registry. They obtained a registry token, but attempts to change cloud resources were denied.
+    - description: Действуя от имени узла и сервисных учётных записей, агенты получили в Kubernetes перечни подов, узлов, сервисных учётных записей и разрешений. Они также предъявили те же облачные учётные данные узла при обращении извне, чтобы составить карту облачных сетей и кластеров Kubernetes, получить перечень секретов и исследовать реестр контейнеров. Агенты получили токен доступа к реестру, однако их попытки изменить облачные ресурсы были отклонены.
+      description_line: Действуя от имени узла и сервисных учётных записей, агенты получили в Kubernetes перечни подов, узлов, сервисных учётных записей и разрешений. Они также предъявили те же облачные учётные данные узла при обращении извне, чтобы составить карту облачных сетей и кластеров Kubernetes, получить перечень секретов и исследовать реестр контейнеров. Агенты получили токен доступа к реестру, однако их попытки изменить облачные ресурсы были отклонены.
       tactic: AML.TA0008
       tactic_name: Выявление
       technique: AML.T0075

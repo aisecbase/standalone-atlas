@@ -40,5 +40,5 @@ url: /techniques/AML.T0120/
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0068/"><span class="relation-id">AML.CS0068</span><strong>Автономные агенты OpenAI, задействованные в оценочных испытаниях, скомпрометировали инфраструктуру Hugging Face</strong><span class="relation-meta">Актор: Autonomous OpenAI Agents / Тактика: AML.TA0014 Командование и управление</span><p>The agents used repositories they controlled as asynchronous command-and-control channels. Compromised workers retrieved staged commands or payloads and wrote results into dataset objects for retrieval through the Hugging Face API or Git.</p></a>
+<a class="relation-item" href="/studies/AML.CS0068/"><span class="relation-id">AML.CS0068</span><strong>Автономные агенты OpenAI, задействованные в оценочных испытаниях, скомпрометировали инфраструктуру Hugging Face</strong><span class="relation-meta">Актор: Autonomous OpenAI Agents / Тактика: AML.TA0014 Командование и управление</span><p>Агенты использовали подконтрольные им репозитории в качестве асинхронных каналов командования и управления. Скомпрометированные воркеры извлекали заранее размещённые команды или полезные нагрузки, а результаты записывали в объекты наборов данных, откуда их затем получали через API Hugging Face или Git.</p></a>
 </div>
