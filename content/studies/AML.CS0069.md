@@ -64,38 +64,38 @@ procedure:
       tactic_name: Разведка
       technique: AML.T0006
       technique_name: Активное сканирование
-    - description: Агент Claude, использовавшийся GTG-1002, исследовал способы эксплуатации выявленной уязвимости SSRF, сгенерировал специально подготовленную полезную нагрузку и полную цепочку эксплойтов, проверил выбранный подход, оценил результаты и адаптировал этот подход к целевой системе.
-      description_line: Агент Claude, использовавшийся GTG-1002, исследовал способы эксплуатации выявленной уязвимости SSRF, сгенерировал специально подготовленную полезную нагрузку и полную цепочку эксплойтов, проверил выбранный подход, оценил результаты и адаптировал этот подход к целевой системе.
+    - description: Джейлбрейкнутый агент Claude группировки GTG-1002 исследовал способы эксплуатации выявленной уязвимости SSRF, сгенерировал специально подготовленную полезную нагрузку и полную цепочку эксплойтов, проверил выбранный подход, оценил результаты и адаптировал этот подход к целевой системе.
+      description_line: Джейлбрейкнутый агент Claude группировки GTG-1002 исследовал способы эксплуатации выявленной уязвимости SSRF, сгенерировал специально подготовленную полезную нагрузку и полную цепочку эксплойтов, проверил выбранный подход, оценил результаты и адаптировал этот подход к целевой системе.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0017.001
       technique_name: Автономная разработка эксплойтов
-    - description: GTG-1002's jailbroken Claude agent deployed the tailored SSRF exploit against the public-facing application and obtained access to the target environment.
-      description_line: GTG-1002's jailbroken Claude agent deployed the tailored SSRF exploit against the public-facing application and obtained access to the target environment.
+    - description: Джейлбрейкнутый агент Claude группировки GTG-1002 атаковал доступное из интернета приложение с помощью специально адаптированного SSRF-эксплойта и получил доступ к целевой среде.
+      description_line: Джейлбрейкнутый агент Claude группировки GTG-1002 атаковал доступное из интернета приложение с помощью специально адаптированного SSRF-эксплойта и получил доступ к целевой среде.
       tactic: AML.TA0004
       tactic_name: Первичный доступ
       technique: AML.T0049
       technique_name: Эксплуатация приложения, доступного из интернета
-    - description: GTG-1002's jailbroken Claude agent cataloged services and data on discovered endpoints, searched for sensitive files and data, and used MCP-connected browser automation to enumerate internal databases, container registries, administrative interfaces, workflow orchestration platforms, and other network services. It also queried internal database user-account tables to enumerate accounts and identify high-privilege accounts.
-      description_line: GTG-1002's jailbroken Claude agent cataloged services and data on discovered endpoints, searched for sensitive files and data, and used MCP-connected browser automation to enumerate internal databases, container registries, administrative interfaces, workflow orchestration platforms, and other network services. It also queried internal database user-account tables to enumerate accounts and identify high-privilege accounts.
+    - description: Джейлбрейкнутый агент Claude группировки GTG-1002 провёл инвентаризацию сервисов и данных на обнаруженных эндпоинтах, искал чувствительные файлы и данные и задействовал подключённые через MCP средства автоматизации браузера, чтобы получить перечень внутренних баз данных, реестров контейнеров, административных интерфейсов, платформ оркестрации рабочих процессов и других сетевых сервисов. Он также отправлял запросы к таблицам пользовательских учётных записей во внутренних базах данных, чтобы получить перечень учётных записей и выявить среди них обладавшие высокими привилегиями.
+      description_line: Джейлбрейкнутый агент Claude группировки GTG-1002 провёл инвентаризацию сервисов и данных на обнаруженных эндпоинтах, искал чувствительные файлы и данные и задействовал подключённые через MCP средства автоматизации браузера, чтобы получить перечень внутренних баз данных, реестров контейнеров, административных интерфейсов, платформ оркестрации рабочих процессов и других сетевых сервисов. Он также отправлял запросы к таблицам пользовательских учётных записей во внутренних базах данных, чтобы получить перечень учётных записей и выявить среди них обладавшие высокими привилегиями.
       tactic: AML.TA0008
       tactic_name: Выявление
       technique: AML.T0075
       technique_name: Выявление облачных сервисов
-    - description: GTG-1002's jailbroken Claude agent identified system and network configurations on discovered devices, including database types, and mapped the target's complete network topology, internal network architecture, and access relationships among systems and services.
-      description_line: GTG-1002's jailbroken Claude agent identified system and network configurations on discovered devices, including database types, and mapped the target's complete network topology, internal network architecture, and access relationships among systems and services.
+    - description: Джейлбрейкнутый агент Claude группировки GTG-1002 определил параметры системной и сетевой конфигурации обнаруженных устройств, включая типы баз данных, и составил карту, отражавшую полную топологию сети цели, её внутреннюю сетевую архитектуру и отношения доступа между системами и сервисами.
+      description_line: Джейлбрейкнутый агент Claude группировки GTG-1002 определил параметры системной и сетевой конфигурации обнаруженных устройств, включая типы баз данных, и составил карту, отражавшую полную топологию сети цели, её внутреннюю сетевую архитектуру и отношения доступа между системами и сервисами.
       tactic: AML.TA0008
       tactic_name: Выявление
       technique: AML.T0089
       technique_name: Выявление процессов
-    - description: GTG-1002's jailbroken Claude agent searched discovered system configuration files and extracted authentication certificates and other credential material. Reporting does not disclose the exact file paths, commands, hosts, or tools used.
-      description_line: GTG-1002's jailbroken Claude agent searched discovered system configuration files and extracted authentication certificates and other credential material. Reporting does not disclose the exact file paths, commands, hosts, or tools used.
+    - description: Джейлбрейкнутый агент Claude группировки GTG-1002 провёл поиск в обнаруженных конфигурационных файлах систем и извлёк сертификаты аутентификации и другие аутентификационные данные. В опубликованных материалах не раскрываются точные пути к файлам, команды, хосты и инструменты, которые использовались.
+      description_line: Джейлбрейкнутый агент Claude группировки GTG-1002 провёл поиск в обнаруженных конфигурационных файлах систем и извлёк сертификаты аутентификации и другие аутентификационные данные. В опубликованных материалах не раскрываются точные пути к файлам, команды, хосты и инструменты, которые использовались.
       tactic: AML.TA0013
       tactic_name: Доступ к учетным данным
       technique: AML.T0055
       technique_name: Незащищенные учетные данные
-    - description: GTG-1002's jailbroken Claude agent tested harvested credentials against discovered devices and used valid credentials to authenticate to internal APIs, databases, container registries, and logging infrastructure.
-      description_line: GTG-1002's jailbroken Claude agent tested harvested credentials against discovered devices and used valid credentials to authenticate to internal APIs, databases, container registries, and logging infrastructure.
+    - description: Джейлбрейкнутый агент Claude группировки GTG-1002 проверил пригодность собранных учётных данных для доступа к обнаруженным устройствам, а действующие учётные данные использовал для аутентификации при обращении к внутренним API, базам данных, реестрам контейнеров и инфраструктуре логирования.
+      description_line: Джейлбрейкнутый агент Claude группировки GTG-1002 проверил пригодность собранных учётных данных для доступа к обнаруженным устройствам, а действующие учётные данные использовал для аутентификации при обращении к внутренним API, базам данных, реестрам контейнеров и инфраструктуре логирования.
       tactic: AML.TA0015
       tactic_name: Латеральное перемещение
       technique: AML.T0012
