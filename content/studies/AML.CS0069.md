@@ -130,8 +130,8 @@ procedure:
       tactic_name: Сбор материалов
       technique: AML.T0127
       technique_name: Промежуточное хранение данных
-    - description: After reviewing the summary, GTG-1002 approved the transfer of selected data over the Claude web service.
-      description_line: After reviewing the summary, GTG-1002 approved the transfer of selected data over the Claude web service.
+    - description: Рассмотрев сводку, операторы GTG-1002 одобрили передачу отобранных данных через веб-сервис Claude.
+      description_line: Рассмотрев сводку, операторы GTG-1002 одобрили передачу отобранных данных через веб-сервис Claude.
       tactic: AML.TA0010
       tactic_name: Эксфильтрация
       technique: AML.T0025
