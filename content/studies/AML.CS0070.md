@@ -3,7 +3,7 @@ actor: Chinese-speaking threat actor using the aliases knaithe and KnYuan
 atlas_id: AML.CS0070
 atlas_type: case-study
 case_study_type: incident
-description: A Chinese-speaking threat actor operating as knaithe or KnYuan configured Hermes Agent to use DeepSeek as its reasoning engine. Hermes supplied terminal access, Telegram-based operator control, and a skills system...
+description: Китайскоязычный злоумышленник, действовавший под псевдонимами knaithe и KnYuan, настроил Hermes Agent на использование DeepSeek в качестве движка рассуждений. Hermes обеспечивал доступ к терминалу, управление со...
 generated: true
 generated_by: atlasgen
 incident_date: "2026-05-07"
@@ -125,18 +125,16 @@ references:
 reporter: Palo Alto Networks Unit 42
 source_name: Threat Actor Uses a DeepSeek-Powered Hermes Agent in Langflow and n8n Exploitation Attempts
 target: Publicly exposed Langflow and n8n systems, primarily in China
-title: Threat Actor Uses a DeepSeek-Powered Hermes Agent in Langflow and n8n Exploitation Attempts
+title: Злоумышленник использовал Hermes Agent на базе DeepSeek при попытках эксплуатации Langflow и n8n
 url: /studies/AML.CS0070/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Китайскоязычный злоумышленник, действовавший под псевдонимами knaithe и KnYuan, настроил Hermes Agent на использование DeepSeek в качестве движка рассуждений. Hermes обеспечивал доступ к терминалу, управление со стороны оператора через Telegram и систему навыков, включавшую навыки для работы красной команды — как поставляемые в составе Hermes, так и созданные злоумышленником. Злоумышленник также интегрировал MCP-сервер, предоставлявший возможности поиска через FOFA, перевода запросов и формирования заданий для сканера Nuclei.
 
-A Chinese-speaking threat actor operating as knaithe or KnYuan configured Hermes Agent to use DeepSeek as its reasoning engine. Hermes supplied terminal access, Telegram-based operator control, and a skills system containing both bundled and actor-created red-team skills. The actor also integrated an MCP server that exposed FOFA search, query translation, and Nuclei scan-generation capabilities.
+Unit 42 восстановила подробную запись сеанса Hermes Agent, датированную 7 мая 2026 года. Злоумышленник передал первоначальное задание через Telegram, однако Unit 42 не обнаружила в записи сеанса никаких дополнительных указаний оператора. После этого Hermes Agent на базе DeepSeek автономно искал цели, получал общедоступные эксплойты, проводил сканирование, оценивал результаты и корректировал свой подход.
 
-Unit 42 recovered a detailed Hermes Agent session dated May 7, 2026. The actor supplied an initial task through Telegram, but Unit 42 recovered no additional operator input during the session. The DeepSeek-powered Hermes Agent then autonomously searched for targets, obtained public exploits, ran scans, evaluated the results, and revised its approach.
+Первоначально агент нацелился на Langflow, используя общедоступный эксплойт для CVE-2026-33017. Установив, что доступные цели не соответствовали условиям, необходимым для применения эксплойта, он отказался от этого пути атаки, сравнил уязвимости в 10 семействах продуктов и выбрал n8n с учётом предполагаемой серьёзности уязвимостей, доступности систем извне и возможности их эксплуатации. Затем агент получил общедоступную цепочку эксплойтов для CVE-2026-21858 и CVE-2025-68613 и прозондировал потенциальные целевые системы, выявленные через FOFA. Хотя несколько систем, по всей видимости, работали на затронутых версиях, агент установил, что в них отсутствовала необходимая возможность загружать файлы без аутентификации. Ни одна из автономных попыток эксплуатации не привела к получению доступа.
 
-The agent initially targeted Langflow using a public exploit for CVE-2026-33017. After determining that available targets lacked the exploit's prerequisites, it abandoned that path, compared vulnerabilities across 10 product families, and selected n8n based on apparent severity, exposure, and exploitability. It then obtained a public exploit chain for CVE-2026-21858 and CVE-2025-68613 and probed candidate systems identified through FOFA. Although several systems appeared to run affected versions, the agent found that they lacked the required unauthenticated file-upload functionality. None of the autonomous exploitation attempts obtained access.
+В отдельных материалах из рабочего пространства были зафиксированы выполнявшиеся вручную действия злоумышленника: извлечение данных из Citrix NetScaler, выполнение команд в Marimo и попытки запуска обратной командной оболочки в системах Tomcat и IKE VPN.
 
-Separate workspace evidence documented manual actor activity involving Citrix NetScaler data extraction, Marimo command execution, and reverse-shell attempts against Tomcat and IKE VPN systems.
-
-Unit 42 obtained this visibility after Hermes Agent responded to a Telegram command by starting an HTTP file server from the actor's home directory, `/home/worker`, instead of an isolated staging directory. This unintentionally exposed the actor's workspace, including AI tool configurations, API keys, exploit scripts, target lists, Bash history, and autonomous exploitation session logs.
+Unit 42 получила возможность наблюдать за этой активностью после того, как Hermes Agent в ответ на команду из Telegram запустил HTTP-сервер для раздачи файлов прямо из домашнего каталога злоумышленника `/home/worker`, а не из изолированного каталога промежуточного хранения. Это непреднамеренно открыло доступ к рабочему пространству злоумышленника, в том числе к конфигурациям ИИ-инструментов, API-ключам, скриптам эксплойтов, спискам целей, истории команд Bash и журналам сеансов автономной эксплуатации.

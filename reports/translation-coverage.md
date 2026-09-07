@@ -4,7 +4,7 @@
 
 | Тип объектов | Всего | Названий переведено | Описаний переведено | Процедур переведено | Полностью переведено | Требует проверки |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Кейсы | 72 | 70 | 70 | 599/659 | 45 | 0 |
+| Кейсы | 72 | 71 | 71 | 599/659 | 45 | 0 |
 | Меры защиты | 39 | 39 | 39 | - | 37 | 2 |
 | Ресурсы | 6 | 6 | 6 | - | 6 | 0 |
 | Тактики | 16 | 16 | 16 | - | 15 | 1 |
@@ -21,7 +21,7 @@
 - [`AML.T0089`](/techniques/AML.T0089/) (Техники): Enterprise Environment Discovery; название: да; описание/summary: да; требует проверки: название, описание
 - [`AML.TA0001`](/tactics/AML.TA0001/) (Тактики): AI Attack Adaptation; название: да; описание/summary: да; требует проверки: название, описание
 
-## Частичный перевод (25)
+## Частичный перевод (26)
 
 - [`AML.CS0021`](/studies/AML.CS0021/) (Кейсы): ChatGPT Conversation Exfiltration; название: да; описание/summary: да; процедуры: 6/7
 - [`AML.CS0026`](/studies/AML.CS0026/) (Кейсы): Financial Transaction Hijacking with M365 Copilot as an Insider; название: да; описание/summary: да; процедуры: 12/14
@@ -48,8 +48,8 @@
 - [`AML.CS0063`](/studies/AML.CS0063/) (Кейсы): Prompt-Based Attacks Against Gemini via Calendar Invitations; название: да; описание/summary: да; процедуры: 19/20
 - [`AML.CS0066`](/studies/AML.CS0066/) (Кейсы): ZombieAgent: Data Exfiltration Attack on ChatGPT; название: да; описание/summary: да; процедуры: 11/12
 - [`AML.CS0067`](/studies/AML.CS0067/) (Кейсы): Claude Code GitHub Action Secret Exposure; название: да; описание/summary: да; процедуры: 10/11
+- [`AML.CS0070`](/studies/AML.CS0070/) (Кейсы): Threat Actor Uses a DeepSeek-Powered Hermes Agent in Langflow and n8n Exploitation Attempts; название: да; описание/summary: да; процедуры: 0/18
 
-## Перевод отсутствует (2)
+## Перевод отсутствует (1)
 
-- [`AML.CS0070`](/studies/AML.CS0070/) (Кейсы): Threat Actor Uses a DeepSeek-Powered Hermes Agent in Langflow and n8n Exploitation Attempts; название: нет; описание/summary: нет; процедуры: 0/18
 - [`AML.CS0071`](/studies/AML.CS0071/) (Кейсы): Multi-Agent Framework Compromises Taiwanese Government Systems; название: нет; описание/summary: нет; процедуры: 0/12
