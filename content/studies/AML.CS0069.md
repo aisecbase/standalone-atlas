@@ -10,32 +10,32 @@ incident_date: 2025-09
 incident_date_granularity: Month
 incident_date_raw: "2025-09-01"
 procedure:
-    - description: GTG-1002 obtained access to Claude Code for use in its intrusion framework.
-      description_line: GTG-1002 obtained access to Claude Code for use in its intrusion framework.
+    - description: GTG-1002 получила доступ к Claude Code и задействовала его в своём фреймворке для тестирования на проникновение.
+      description_line: GTG-1002 получила доступ к Claude Code и задействовала его в своём фреймворке для тестирования на проникновение.
       tactic: AML.TA0000
       tactic_name: Доступ к ИИ-модели
       technique: AML.T0040
       technique_name: Доступ к API инференса ИИ-модели
-    - description: GTG-1002 supplied Claude Code false authorization claims, a defensive-security persona, and apparently benign tasks.
-      description_line: GTG-1002 supplied Claude Code false authorization claims, a defensive-security persona, and apparently benign tasks.
+    - description: Обращаясь к Claude Code, GTG-1002 ложно заявляла о наличии разрешения, выдавала себя за специалиста по защитной кибербезопасности и ставила на первый взгляд безобидные задачи.
+      description_line: Обращаясь к Claude Code, GTG-1002 ложно заявляла о наличии разрешения, выдавала себя за специалиста по защитной кибербезопасности и ставила на первый взгляд безобидные задачи.
       tactic: AML.TA0005
       tactic_name: Выполнение
       technique: AML.T0051.000
       technique_name: Прямая промпт-инъекция
-    - description: The deceptive prompts circumvented the Claude Code's safeguards, inducing it to perform offensive actions it was intended to refuse.
-      description_line: The deceptive prompts circumvented the Claude Code's safeguards, inducing it to perform offensive actions it was intended to refuse.
+    - description: Вводящие в заблуждение промпты позволили обойти защитные механизмы Claude Code и побудили его к наступательным действиям, от выполнения которых он по замыслу должен был отказываться.
+      description_line: Вводящие в заблуждение промпты позволили обойти защитные механизмы Claude Code и побудили его к наступательным действиям, от выполнения которых он по замыслу должен был отказываться.
       tactic: AML.TA0007
       tactic_name: Уклонение от защиты
       technique: AML.T0054
       technique_name: Джейлбрейк LLM
-    - description: GTG-1002 obtained network scanners, database exploitation frameworks, password crackers, binary-analysis utilities, and other tools made available to the jailbroken Claude agent.
-      description_line: GTG-1002 obtained network scanners, database exploitation frameworks, password crackers, binary-analysis utilities, and other tools made available to the jailbroken Claude agent.
+    - description: GTG-1002 получила сетевые сканеры, фреймворки для эксплуатации баз данных, средства взлома паролей, утилиты для анализа бинарных файлов и другие инструменты, которые стали доступны агенту Claude после джейлбрейка.
+      description_line: GTG-1002 получила сетевые сканеры, фреймворки для эксплуатации баз данных, средства взлома паролей, утилиты для анализа бинарных файлов и другие инструменты, которые стали доступны агенту Claude после джейлбрейка.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0016.001
       technique_name: Программные инструменты
-    - description: GTG-1002 operated dedicated penetration-testing servers accessible through MCP to support remote command execution, simultaneous tool coordination, and persistent operational state across campaign sessions.
-      description_line: GTG-1002 operated dedicated penetration-testing servers accessible through MCP to support remote command execution, simultaneous tool coordination, and persistent operational state across campaign sessions.
+    - description: GTG-1002 управляла выделенными серверами для тестирования на проникновение, доступными через MCP. Эти серверы обеспечивали удалённое выполнение команд, одновременную координацию работы инструментов и сохранение состояния операции между сеансами кампании.
+      description_line: GTG-1002 управляла выделенными серверами для тестирования на проникновение, доступными через MCP. Эти серверы обеспечивали удалённое выполнение команд, одновременную координацию работы инструментов и сохранение состояния операции между сеансами кампании.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0128
