@@ -37,5 +37,5 @@ url: /techniques/AML.T0125/
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0069/"><span class="relation-id">AML.CS0069</span><strong>GTG-1002 Claude Code Espionage Campaign</strong><span class="relation-meta">Актор: GTG-1002 / Тактика: AML.TA0006 Закрепление</span><p>GTG-1002&#39;s jailbroken Claude agent created a local backdoor account to maintain access to a compromised environment.</p></a>
+<a class="relation-item" href="/studies/AML.CS0069/"><span class="relation-id">AML.CS0069</span><strong>Кибершпионская кампания GTG-1002 с использованием Claude Code</strong><span class="relation-meta">Актор: GTG-1002 / Тактика: AML.TA0006 Закрепление</span><p>GTG-1002&#39;s jailbroken Claude agent created a local backdoor account to maintain access to a compromised environment.</p></a>
 </div>
