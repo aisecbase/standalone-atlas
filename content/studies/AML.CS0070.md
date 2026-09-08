@@ -100,20 +100,20 @@ procedure:
       tactic_name: Подготовка ресурсов
       technique: AML.T0016.003
       technique_name: Эксплойты
-    - description: DeepSeek queried FOFA for n8n deployments. FOFA reported 647,017 global results and 25,209 in China; these were not confirmed vulnerable systems.
-      description_line: DeepSeek queried FOFA for n8n deployments. FOFA reported 647,017 global results and 25,209 in China; these were not confirmed vulnerable systems.
+    - description: DeepSeek выполнил в FOFA поиск развёртываний n8n. FOFA выдала 647 017 результатов по всему миру и 25 209 результатов в Китае; однако подтверждений уязвимости найденных систем не было.
+      description_line: DeepSeek выполнил в FOFA поиск развёртываний n8n. FOFA выдала 647 017 результатов по всему миру и 25 209 результатов в Китае; однако подтверждений уязвимости найденных систем не было.
       tactic: AML.TA0002
       tactic_name: Разведка
       technique: AML.T0000
       technique_name: Поиск в открытых технических базах данных
-    - description: DeepSeek sampled approximately 100 Chinese addresses, probed roughly 40 unique systems, identified three running affected versions, inspected form endpoints, and launched parallel scanning against more than 50 remaining targets.
-      description_line: DeepSeek sampled approximately 100 Chinese addresses, probed roughly 40 unique systems, identified three running affected versions, inspected form endpoints, and launched parallel scanning against more than 50 remaining targets.
+    - description: DeepSeek отобрал около 100 адресов в Китае, прозондировал примерно 40 различных систем, обнаружил три системы с затронутыми версиями, проверил эндпоинты форм и запустил параллельное сканирование более чем 50 оставшихся целей.
+      description_line: DeepSeek отобрал около 100 адресов в Китае, прозондировал примерно 40 различных систем, обнаружил три системы с затронутыми версиями, проверил эндпоинты форм и запустил параллельное сканирование более чем 50 оставшихся целей.
       tactic: AML.TA0002
       tactic_name: Разведка
       technique: AML.T0006
       technique_name: Активное сканирование
-    - description: DeepSeek attempted to find and exploit a system meeting the PoC prerequisites. All discovered forms required authentication, and no attempt produced file read, code execution, or initial access.
-      description_line: DeepSeek attempted to find and exploit a system meeting the PoC prerequisites. All discovered forms required authentication, and no attempt produced file read, code execution, or initial access.
+    - description: DeepSeek пытался найти и эксплуатировать систему, отвечающую необходимым условиям применения PoC. Все обнаруженные формы требовали аутентификации, и ни одна попытка не позволила прочитать файлы, выполнить код или получить первоначальный доступ.
+      description_line: DeepSeek пытался найти и эксплуатировать систему, отвечающую необходимым условиям применения PoC. Все обнаруженные формы требовали аутентификации, и ни одна попытка не позволила прочитать файлы, выполнить код или получить первоначальный доступ.
       tactic: AML.TA0004
       tactic_name: Первичный доступ
       technique: AML.T0049
