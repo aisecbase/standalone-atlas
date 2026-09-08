@@ -10,32 +10,32 @@ incident_date: "2026-05-07"
 incident_date_granularity: Day
 incident_date_raw: "2026-05-07"
 procedure:
-    - description: The actor obtained access to several generative-AI models and services while evaluating an operational toolset. DeepSeek was selected as the primary reasoning engine for the autonomous attack activity.
-      description_line: The actor obtained access to several generative-AI models and services while evaluating an operational toolset. DeepSeek was selected as the primary reasoning engine for the autonomous attack activity.
+    - description: Оценивая набор инструментов для проведения операций, злоумышленник получил доступ к нескольким моделям и сервисам генеративного ИИ. DeepSeek был выбран в качестве основного движка рассуждений для автономного проведения атак.
+      description_line: Оценивая набор инструментов для проведения операций, злоумышленник получил доступ к нескольким моделям и сервисам генеративного ИИ. DeepSeek был выбран в качестве основного движка рассуждений для автономного проведения атак.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0016.002
       technique_name: Генеративный ИИ
-    - description: The actor obtained and configured Hermes Agent as the offensive framework, together with scripts and conventional scanning and exploitation utilities. Hermes provided terminal access, Telegram-based operator control, and a skills system.
-      description_line: The actor obtained and configured Hermes Agent as the offensive framework, together with scripts and conventional scanning and exploitation utilities. Hermes provided terminal access, Telegram-based operator control, and a skills system.
+    - description: Злоумышленник получил и настроил Hermes Agent как фреймворк для проведения атак вместе со скриптами и обычными утилитами для сканирования и эксплуатации уязвимостей. Hermes обеспечивал доступ к терминалу, управление со стороны оператора через Telegram и систему навыков.
+      description_line: Злоумышленник получил и настроил Hermes Agent как фреймворк для проведения атак вместе со скриптами и обычными утилитами для сканирования и эксплуатации уязвимостей. Hermes обеспечивал доступ к терминалу, управление со стороны оператора через Telegram и систему навыков.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0016.001
       technique_name: Программные инструменты
-    - description: The actor obtained agent-specific capabilities, including Hermes's framework-bundled godmode skill and the open-source FofaMap MCP server. The MCP server exposed FOFA asset search, natural-language query translation, and Nuclei scan generation to DeepSeek. Unit 42 does not establish that godmode was invoked during the recovered session.
-      description_line: The actor obtained agent-specific capabilities, including Hermes's framework-bundled godmode skill and the open-source FofaMap MCP server. The MCP server exposed FOFA asset search, natural-language query translation, and Nuclei scan generation to DeepSeek. Unit 42 does not establish that godmode was invoked during the recovered session.
+    - description: Злоумышленник получил специализированные возможности для агента, включая навык godmode, поставляемый в составе фреймворка Hermes, и MCP-сервер FofaMap с открытым исходным кодом. MCP-сервер предоставлял DeepSeek возможности поиска активов через FOFA, перевода запросов, сформулированных на естественном языке, и генерации заданий для сканера Nuclei. Unit 42 не подтверждает, что навык godmode вызывался во время восстановленного сеанса.
+      description_line: Злоумышленник получил специализированные возможности для агента, включая навык godmode, поставляемый в составе фреймворка Hermes, и MCP-сервер FofaMap с открытым исходным кодом. MCP-сервер предоставлял DeepSeek возможности поиска активов через FOFA, перевода запросов, сформулированных на естественном языке, и генерации заданий для сканера Nuclei. Unit 42 не подтверждает, что навык godmode вызывался во время восстановленного сеанса.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0016.004
       technique_name: Инструменты ИИ-агента
-    - description: The actor created two Hermes skills. web-terminal-exploitation encoded a procedure for unauthenticated WebSocket exploitation, while fofa-cyberspace-search instructed DeepSeek to use the actor's fofoapi.py script for internet asset enumeration. The observed FOFA workflow is consistent with the latter skill; the report does not attribute an action in the recovered session to web-terminal-exploitation.
-      description_line: The actor created two Hermes skills. web-terminal-exploitation encoded a procedure for unauthenticated WebSocket exploitation, while fofa-cyberspace-search instructed DeepSeek to use the actor's fofoapi.py script for internet asset enumeration. The observed FOFA workflow is consistent with the latter skill; the report does not attribute an action in the recovered session to web-terminal-exploitation.
+    - description: Злоумышленник создал два навыка Hermes. Навык `web-terminal-exploitation` содержал процедуру эксплуатации WebSocket без аутентификации, а `fofa-cyberspace-search` предписывал DeepSeek использовать скрипт злоумышленника `fofoapi.py` для получения перечня интернет-активов. Наблюдавшаяся последовательность работы с FOFA согласуется с использованием второго навыка; при этом в отчёте ни одно действие из восстановленного сеанса не связывается с `web-terminal-exploitation`.
+      description_line: Злоумышленник создал два навыка Hermes. Навык `web-terminal-exploitation` содержал процедуру эксплуатации WebSocket без аутентификации, а `fofa-cyberspace-search` предписывал DeepSeek использовать скрипт злоумышленника `fofoapi.py` для получения перечня интернет-активов. Наблюдавшаяся последовательность работы с FOFA согласуется с использованием второго навыка; при этом в отчёте ни одно действие из восстановленного сеанса не связывается с `web-terminal-exploitation`.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0017.002
       technique_name: Инструменты ИИ-агента
-    - description: Hermes accessed DeepSeek through its native API and used the model for vulnerability assessment, target selection, command generation, and operational decisions.
-      description_line: Hermes accessed DeepSeek through its native API and used the model for vulnerability assessment, target selection, command generation, and operational decisions.
+    - description: Hermes обращался к DeepSeek через собственный API этой модели и использовал её для оценки уязвимостей, выбора целей, генерации команд и принятия решений по проведению операции.
+      description_line: Hermes обращался к DeepSeek через собственный API этой модели и использовал её для оценки уязвимостей, выбора целей, генерации команд и принятия решений по проведению операции.
       tactic: AML.TA0000
       tactic_name: Доступ к ИИ-модели
       technique: AML.T0040
