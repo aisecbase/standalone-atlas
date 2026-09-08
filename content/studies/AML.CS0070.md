@@ -40,32 +40,32 @@ procedure:
       tactic_name: Доступ к ИИ-модели
       technique: AML.T0040
       technique_name: Доступ к API инференса ИИ-модели
-    - description: After receiving an initial task, DeepSeek sequenced reconnaissance and exploitation actions, evaluated failed prerequisites, abandoned Langflow, compared alternative products and vulnerabilities, and selected n8n. Unit 42 recovered no additional operator input during the session.
-      description_line: After receiving an initial task, DeepSeek sequenced reconnaissance and exploitation actions, evaluated failed prerequisites, abandoned Langflow, compared alternative products and vulnerabilities, and selected n8n. Unit 42 recovered no additional operator input during the session.
+    - description: Получив первоначальное задание, DeepSeek выстроил последовательность действий по разведке и эксплуатации уязвимостей, проанализировал невыполнение необходимых условий, отказался от Langflow как цели, сравнил альтернативные продукты и уязвимости и выбрал n8n. Unit 42 не обнаружила в восстановленном сеансе никаких дополнительных указаний оператора.
+      description_line: Получив первоначальное задание, DeepSeek выстроил последовательность действий по разведке и эксплуатации уязвимостей, проанализировал невыполнение необходимых условий, отказался от Langflow как цели, сравнил альтернативные продукты и уязвимости и выбрал n8n. Unit 42 не обнаружила в восстановленном сеансе никаких дополнительных указаний оператора.
       tactic: AML.TA0001
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0117
       technique_name: Автономная адаптация пути атаки
-    - description: DeepSeek generated FOFA queries, shell commands, scanner invocations, and direct HTTP probes based on the results returned during the session.
-      description_line: DeepSeek generated FOFA queries, shell commands, scanner invocations, and direct HTTP probes based on the results returned during the session.
+    - description: С учётом результатов, получаемых во время сеанса, DeepSeek генерировал запросы FOFA, shell-команды, вызовы сканеров и прямые проверочные HTTP-запросы.
+      description_line: С учётом результатов, получаемых во время сеанса, DeepSeek генерировал запросы FOFA, shell-команды, вызовы сканеров и прямые проверочные HTTP-запросы.
       tactic: AML.TA0001
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0102
       technique_name: Генерация вредоносных команд
-    - description: DeepSeek investigated Langflow, determined what information and prerequisites were needed, and selected follow-on reconnaissance based on returned results.
-      description_line: DeepSeek investigated Langflow, determined what information and prerequisites were needed, and selected follow-on reconnaissance based on returned results.
+    - description: DeepSeek исследовал Langflow, определил, какие сведения требовалось получить и какие необходимые условия должны были выполняться, а затем с учётом полученных результатов выбрал дальнейшие действия по разведке.
+      description_line: DeepSeek исследовал Langflow, определил, какие сведения требовалось получить и какие необходимые условия должны были выполняться, а затем с учётом полученных результатов выбрал дальнейшие действия по разведке.
       tactic: AML.TA0002
       tactic_name: Разведка
       technique: AML.T0116
       technique_name: Автономная разведка
-    - description: DeepSeek queried FOFA and obtained records for 84 exposed Langflow instances. These were exposure records, not confirmed vulnerable targets.
-      description_line: DeepSeek queried FOFA and obtained records for 84 exposed Langflow instances. These were exposure records, not confirmed vulnerable targets.
+    - description: DeepSeek выполнил запрос в FOFA и получил записи о 84 экземплярах Langflow, доступных из интернета. Эти записи указывали лишь на доступность экземпляров извне и не подтверждали, что они являлись уязвимыми целями.
+      description_line: DeepSeek выполнил запрос в FOFA и получил записи о 84 экземплярах Langflow, доступных из интернета. Эти записи указывали лишь на доступность экземпляров извне и не подтверждали, что они являлись уязвимыми целями.
       tactic: AML.TA0002
       tactic_name: Разведка
       technique: AML.T0000
       technique_name: Поиск в открытых технических базах данных
-    - description: DeepSeek downloaded a public PoC for Langflow CVE-2026-33017. The report does not establish material modification.
-      description_line: DeepSeek downloaded a public PoC for Langflow CVE-2026-33017. The report does not establish material modification.
+    - description: DeepSeek скачал общедоступный PoC для уязвимости CVE-2026-33017 в Langflow. Отчёт не подтверждает, что этот PoC был существенно изменён.
+      description_line: DeepSeek скачал общедоступный PoC для уязвимости CVE-2026-33017 в Langflow. Отчёт не подтверждает, что этот PoC был существенно изменён.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0016.003
