@@ -70,32 +70,32 @@ procedure:
       tactic_name: Подготовка ресурсов
       technique: AML.T0016.003
       technique_name: Эксплойты
-    - description: DeepSeek ran the public Langflow scanner and identified a target running Langflow 1.3.4.
-      description_line: DeepSeek ran the public Langflow scanner and identified a target running Langflow 1.3.4.
+    - description: DeepSeek запустил общедоступный сканер Langflow и выявил целевую систему, на которой работал Langflow версии 1.3.4.
+      description_line: DeepSeek запустил общедоступный сканер Langflow и выявил целевую систему, на которой работал Langflow версии 1.3.4.
       tactic: AML.TA0002
       tactic_name: Разведка
       technique: AML.T0006
       technique_name: Активное сканирование
-    - description: DeepSeek attempted exploitation, but no target exposed either required prerequisite. No access was obtained.
-      description_line: DeepSeek attempted exploitation, but no target exposed either required prerequisite. No access was obtained.
+    - description: DeepSeek предпринял попытку эксплуатации, однако ни одна из целей не удовлетворяла ни одному из двух необходимых условий. Получить доступ не удалось.
+      description_line: DeepSeek предпринял попытку эксплуатации, однако ни одна из целей не удовлетворяла ни одному из двух необходимых условий. Получить доступ не удалось.
       tactic: AML.TA0004
       tactic_name: Первичный доступ
       technique: AML.T0049
       technique_name: Эксплуатация приложения, доступного из интернета
-    - description: DeepSeek assessed Langflow as low value, surveyed exposure across 10 product families, compared vulnerability severity, deployment footprint, PoC availability, and prerequisites, and selected n8n.
-      description_line: DeepSeek assessed Langflow as low value, surveyed exposure across 10 product families, compared vulnerability severity, deployment footprint, PoC availability, and prerequisites, and selected n8n.
+    - description: DeepSeek оценил Langflow как малоценную цель, изучил доступные извне развёртывания продуктов из 10 семейств, сравнил серьёзность уязвимостей, масштабы развёртывания, наличие PoC и необходимые условия эксплуатации, после чего выбрал n8n.
+      description_line: DeepSeek оценил Langflow как малоценную цель, изучил доступные извне развёртывания продуктов из 10 семейств, сравнил серьёзность уязвимостей, масштабы развёртывания, наличие PoC и необходимые условия эксплуатации, после чего выбрал n8n.
       tactic: AML.TA0002
       tactic_name: Разведка
       technique: AML.T0116
       technique_name: Автономная разведка
-    - description: DeepSeek searched GitHub for trending 2026 CVE PoC repositories sorted by stars.
-      description_line: DeepSeek searched GitHub for trending 2026 CVE PoC repositories sorted by stars.
+    - description: DeepSeek искал на GitHub набиравшие популярность репозитории с PoC для CVE 2026 года, используя сортировку по числу звёзд.
+      description_line: DeepSeek искал на GitHub набиравшие популярность репозитории с PoC для CVE 2026 года, используя сортировку по числу звёзд.
       tactic: AML.TA0002
       tactic_name: Разведка
       technique: AML.T0095.000
       technique_name: Репозитории кода
-    - description: DeepSeek downloaded the public n8n PoC chaining CVE-2026-21858 and CVE-2025-68613 and inspected its affected versions and prerequisites.
-      description_line: DeepSeek downloaded the public n8n PoC chaining CVE-2026-21858 and CVE-2025-68613 and inspected its affected versions and prerequisites.
+    - description: DeepSeek скачал общедоступный PoC для n8n, объединявший CVE-2026-21858 и CVE-2025-68613 в цепочку эксплуатации, и изучил затронутые версии и условия, необходимые для применения PoC.
+      description_line: DeepSeek скачал общедоступный PoC для n8n, объединявший CVE-2026-21858 и CVE-2025-68613 в цепочку эксплуатации, и изучил затронутые версии и условия, необходимые для применения PoC.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0016.003
