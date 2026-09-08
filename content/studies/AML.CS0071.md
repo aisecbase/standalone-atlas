@@ -3,7 +3,7 @@ actor: Unknown Chinese-language actor
 atlas_id: AML.CS0071
 atlas_type: case-study
 case_study_type: incident
-description: In early July 2026, an unknown Chinese-language operator used a multi-agent framework built on Hermes and OpenClaw against government systems that subsequent public reporting identified as...
+description: В начале июля 2026 года неизвестный китайскоязычный оператор применил мультиагентный фреймворк на базе Hermes и OpenClaw против государственных систем. В последующих открытых публикациях сообщалось, что речь шла о...
 generated: true
 generated_by: atlasgen
 incident_date: "2026-07-01"
@@ -93,16 +93,14 @@ references:
 reporter: Dream Research Labs
 source_name: Multi-Agent Framework Compromises Taiwanese Government Systems
 target: Taiwanese government agencies and connected government systems
-title: Multi-Agent Framework Compromises Taiwanese Government Systems
+title: Мультиагентный фреймворк скомпрометировал государственные системы Тайваня
 url: /studies/AML.CS0071/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+В начале июля 2026 года неизвестный китайскоязычный оператор применил мультиагентный фреймворк на базе Hermes и OpenClaw против государственных систем. В последующих открытых публикациях сообщалось, что речь шла о системах Тайваня.[[financial-times-taiwan-ai-attack]] Dream Research Labs восстановила рабочее пространство объёмом 160 MB, использовавшееся для проведения операции. Оно содержало 1 395 файлов, в которых были зафиксированы 12 волн атак, проведённых с 1 по 4 июля.[[dream-multi-agent-framework]] Министерство цифрового развития Тайваня отдельно подтвердило[[moda-ai-agent-attacks]], что в июле обнаружило аномальные атаки, сочетавшие ручное управление и действия при поддержке OpenClaw.
 
-In early July 2026, an unknown Chinese-language operator used a multi-agent framework built on Hermes and OpenClaw against government systems that subsequent public reporting identified as Taiwanese.[[financial-times-taiwan-ai-attack]] Dream Research Labs recovered a 160 MB operational workspace containing 1,395 files documenting 12 attack waves conducted from July 1 through July 4.[[dream-multi-agent-framework]] Taiwan's Ministry of Digital Affairs separately confirmed[[moda-ai-agent-attacks]] detecting abnormal attacks during July involving a hybrid of human operation and OpenClaw-assisted activity.
+Мультиагентный ИИ-фреймворк одновременно координировал работу до восьми специализированных субагентов, занимавшихся разведкой, атаками на механизмы аутентификации, тестированием API, исследованием и эксплуатацией уязвимостей. Вероятностный механизм принятия решений ранжировал выявленные сведения и 14 возможных путей атаки, направлял перспективные результаты на дополнительную проверку, отбрасывал не подтвердившиеся пути и корректировал дальнейшие действия с учётом отчётов по итогам работы.
 
-The agentic AI framework coordinated up to eight specialized sub-agents concurrently across reconnaissance, authentication attacks, API testing, vulnerability research, and exploitation. A probabilistic decision engine ranked findings and 14 candidate attack paths, allocated additional testing to promising results, discarded invalidated paths, and used after-action reports to redirect subsequent activity.
+Начав с государственного портала, доступного из интернета, фреймворк декомпилировал пакеты клиентского кода приложений и составил карту связанных систем, инфраструктуры идентификации и доступных извне API. Он получил доступ благодаря доступным извне отладочным эндпоинтам, приёму неподписанных JWT и распылению паролей с использованием идентификаторов сотрудников, собранных через API без аутентификации. Tesseract OCR автоматизировал решение CAPTCHA, что, согласно отчёту, помогло скомпрометировать 85 учётных записей. С помощью 84 из них удалось пройти аутентификацию в другой государственной системе через SSO-мост без дополнительной MFA или подтверждения со стороны пользователя.
 
-Starting from an internet-facing government portal, the framework decompiled client-side application bundles and mapped connected systems, identity infrastructure, and exposed APIs. It obtained access through exposed debug endpoints, unsigned JWT acceptance, and password spraying based on personnel identifiers collected from unauthenticated APIs. Tesseract OCR automated CAPTCHA solving, reportedly helping compromise 85 accounts, 84 of which authenticated to another government system through an SSO bridge without additional MFA or user confirmation.
-
-Dream Research Labs reported the extraction of more than 2,564 personnel records, a complete user-database export, SSO configuration and client information, database credentials, and internal network ranges.
+По данным Dream Research Labs, в ходе атаки злоумышленник извлёк более 2 564 записей о сотрудниках, полностью выгрузил базу данных пользователей и получил конфигурацию SSO, сведения о клиентах, учётные данные баз данных и диапазоны внутренних сетей.

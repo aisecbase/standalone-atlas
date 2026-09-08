@@ -23,8 +23,8 @@ generated_by: atlasgen
 <tr>
 <th scope="row" data-label="Тип объектов">Кейсы</th>
 <td data-label="Всего">72</td>
-<td data-label="Названий переведено">71</td>
-<td data-label="Описаний переведено">71</td>
+<td data-label="Названий переведено">72</td>
+<td data-label="Описаний переведено">72</td>
 <td data-label="Процедур переведено">617/659</td>
 <td data-label="Полностью переведено">46</td>
 <td data-label="Требует проверки">0</td>
@@ -79,7 +79,7 @@ generated_by: atlasgen
 - [`AML.T0089`](/techniques/AML.T0089/) (Техники): Enterprise Environment Discovery; название: да; описание/summary: да; требует проверки: название, описание
 - [`AML.TA0001`](/tactics/AML.TA0001/) (Тактики): AI Attack Adaptation; название: да; описание/summary: да; требует проверки: название, описание
 
-## Частичный перевод (25)
+## Частичный перевод (26)
 
 - [`AML.CS0021`](/studies/AML.CS0021/) (Кейсы): ChatGPT Conversation Exfiltration; название: да; описание/summary: да; процедуры: 6/7
 - [`AML.CS0026`](/studies/AML.CS0026/) (Кейсы): Financial Transaction Hijacking with M365 Copilot as an Insider; название: да; описание/summary: да; процедуры: 12/14
@@ -106,7 +106,8 @@ generated_by: atlasgen
 - [`AML.CS0063`](/studies/AML.CS0063/) (Кейсы): Prompt-Based Attacks Against Gemini via Calendar Invitations; название: да; описание/summary: да; процедуры: 19/20
 - [`AML.CS0066`](/studies/AML.CS0066/) (Кейсы): ZombieAgent: Data Exfiltration Attack on ChatGPT; название: да; описание/summary: да; процедуры: 11/12
 - [`AML.CS0067`](/studies/AML.CS0067/) (Кейсы): Claude Code GitHub Action Secret Exposure; название: да; описание/summary: да; процедуры: 10/11
+- [`AML.CS0071`](/studies/AML.CS0071/) (Кейсы): Multi-Agent Framework Compromises Taiwanese Government Systems; название: да; описание/summary: да; процедуры: 0/12
 
-## Перевод отсутствует (1)
+## Перевод отсутствует (0)
 
-- [`AML.CS0071`](/studies/AML.CS0071/) (Кейсы): Multi-Agent Framework Compromises Taiwanese Government Systems; название: нет; описание/summary: нет; процедуры: 0/12
+Нет.

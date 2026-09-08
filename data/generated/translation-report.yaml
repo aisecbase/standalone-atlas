@@ -2,8 +2,8 @@ version: "2026.08"
 totals:
     case-study:
         total: 72
-        name_translated: 71
-        body_translated: 71
+        name_translated: 72
+        body_translated: 72
         procedures_total: 659
         procedures_translated: 617
         fully_translated: 46
@@ -32,14 +32,7 @@ totals:
         body_translated: 197
         fully_translated: 192
         needs_review: 5
-missing:
-    - id: AML.CS0071
-      name: Multi-Agent Framework Compromises Taiwanese Government Systems
-      type: case-study
-      has_name: false
-      has_body: false
-      source_field: summary
-      total_procedures: 12
+missing: []
 partial:
     - id: AML.CS0021
       name: ChatGPT Conversation Exfiltration
@@ -241,6 +234,13 @@ partial:
       source_field: summary
       total_procedures: 11
       translated_procedures: 10
+    - id: AML.CS0071
+      name: Multi-Agent Framework Compromises Taiwanese Government Systems
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 12
 review:
     - id: AML.M0022
       name: Generative AI Model Alignment
