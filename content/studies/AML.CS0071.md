@@ -10,32 +10,32 @@ incident_date: "2026-07-01"
 incident_date_granularity: Day
 incident_date_raw: "2026-07-01"
 procedure:
-    - description: The framework dispatched up to eight specialized agents concurrently across 12 attack waves. It assigned separate reconnaissance, authentication, API-testing, vulnerability-research, credential, and exploitation missions; allocated additional testing to promising findings; requested independent validation; aggregated after-action reports; and redirected subsequent work based on the status of related workstreams.
-      description_line: The framework dispatched up to eight specialized agents concurrently across 12 attack waves. It assigned separate reconnaissance, authentication, API-testing, vulnerability-research, credential, and exploitation missions; allocated additional testing to promising findings; requested independent validation; aggregated after-action reports; and redirected subsequent work based on the status of related workstreams.
+    - description: В ходе 12 волн атак фреймворк параллельно задействовал до восьми специализированных агентов. Он назначал отдельные задачи по разведке, проверке аутентификации, тестированию API, исследованию уязвимостей, получению учётных данных и эксплуатации уязвимостей; направлял перспективные результаты на дополнительную проверку; запрашивал независимую проверку; объединял отчёты по итогам действий и перенаправлял последующую работу с учётом состояния связанных направлений.
+      description_line: В ходе 12 волн атак фреймворк параллельно задействовал до восьми специализированных агентов. Он назначал отдельные задачи по разведке, проверке аутентификации, тестированию API, исследованию уязвимостей, получению учётных данных и эксплуатации уязвимостей; направлял перспективные результаты на дополнительную проверку; запрашивал независимую проверку; объединял отчёты по итогам действий и перенаправлял последующую работу с учётом состояния связанных направлений.
       tactic: AML.TA0001
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0124
       technique_name: Автономная оркестрация атаки
-    - description: The framework constructed numerous candidate multi-step attack paths using confirmed prerequisites, observed blockers, and estimated success probabilities. It promoted paths supported by validated evidence, queued paths requiring additional investigation, discarded false positives and blocked paths, and initiated target-specific learning cycles when existing methods failed.
-      description_line: The framework constructed numerous candidate multi-step attack paths using confirmed prerequisites, observed blockers, and estimated success probabilities. It promoted paths supported by validated evidence, queued paths requiring additional investigation, discarded false positives and blocked paths, and initiated target-specific learning cycles when existing methods failed.
+    - description: Фреймворк сформировал множество возможных многоэтапных путей атаки с учётом подтверждённых необходимых условий, выявленных препятствий и оценок вероятности успеха. Он повышал приоритет путей, подкреплённых проверенными данными, ставил в очередь пути, требовавшие дополнительного исследования, отбрасывал ложноположительные результаты и заблокированные пути, а когда существующие методы не срабатывали — запускал циклы обучения применительно к конкретному целевому объекту.
+      description_line: Фреймворк сформировал множество возможных многоэтапных путей атаки с учётом подтверждённых необходимых условий, выявленных препятствий и оценок вероятности успеха. Он повышал приоритет путей, подкреплённых проверенными данными, ставил в очередь пути, требовавшие дополнительного исследования, отбрасывал ложноположительные результаты и заблокированные пути, а когда существующие методы не срабатывали — запускал циклы обучения применительно к конкретному целевому объекту.
       tactic: AML.TA0001
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0117
       technique_name: Автономная адаптация пути атаки
-    - description: The framework exchanged assignments, findings, validation results, status, and after-action information between its orchestrating control process and specialized sub-agents. Aggregated results informed later assignments and attack waves.
-      description_line: The framework exchanged assignments, findings, validation results, status, and after-action information between its orchestrating control process and specialized sub-agents. Aggregated results informed later assignments and attack waves.
+    - description: Управляющий процесс фреймворка, выполнявший функции оркестратора, обменивался со специализированными субагентами заданиями, обнаруженными сведениями, результатами проверки, сведениями о состоянии и информацией по итогам действий. Сводные результаты учитывались при планировании последующих заданий и волн атак.
+      description_line: Управляющий процесс фреймворка, выполнявший функции оркестратора, обменивался со специализированными субагентами заданиями, обнаруженными сведениями, результатами проверки, сведениями о состоянии и информацией по итогам действий. Сводные результаты учитывались при планировании последующих заданий и волн атак.
       tactic: AML.TA0001
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0118.001
       technique_name: Прямая коммуникация агентов
-    - description: The framework performed reconnaissance on an internet-facing Taiwanese government portal, interpreting client-side application bundles, following discovered infrastructure relationships, and generating additional reconnaissance objectives. It identified 21 connected systems, six SSO sub-realms, authentication configuration, signing-key information, and more than 36 API endpoints on one system.
-      description_line: The framework performed reconnaissance on an internet-facing Taiwanese government portal, interpreting client-side application bundles, following discovered infrastructure relationships, and generating additional reconnaissance objectives. It identified 21 connected systems, six SSO sub-realms, authentication configuration, signing-key information, and more than 36 API endpoints on one system.
+    - description: 'Фреймворк проводил разведку государственного портала Тайваня, доступного из интернета: анализировал пакеты клиентского кода приложений, прослеживал выявленные связи между элементами инфраструктуры и формировал дополнительные цели разведки. Он выявил 21 связанную систему, шесть подобластей SSO, конфигурацию аутентификации, сведения о ключах подписи и более 36 эндпоинтов API в одной системе.'
+      description_line: 'Фреймворк проводил разведку государственного портала Тайваня, доступного из интернета: анализировал пакеты клиентского кода приложений, прослеживал выявленные связи между элементами инфраструктуры и формировал дополнительные цели разведки. Он выявил 21 связанную систему, шесть подобластей SSO, конфигурацию аутентификации, сведения о ключах подписи и более 36 эндпоинтов API в одной системе.'
       tactic: AML.TA0002
       tactic_name: Разведка
       technique: AML.T0116
       technique_name: Автономная разведка
-    - description: The framework probed primary government applications and APIs for exposed interfaces, authentication behavior, misconfigurations, and vulnerabilities. This scanning identified multiple potential paths into the targeted systems.
-      description_line: The framework probed primary government applications and APIs for exposed interfaces, authentication behavior, misconfigurations, and vulnerabilities. This scanning identified multiple potential paths into the targeted systems.
+    - description: Фреймворк зондировал основные государственные приложения и API, чтобы выявить доступные извне интерфейсы, особенности аутентификации, ошибки конфигурации и уязвимости. Это сканирование выявило несколько возможных путей проникновения в целевые системы.
+      description_line: Фреймворк зондировал основные государственные приложения и API, чтобы выявить доступные извне интерфейсы, особенности аутентификации, ошибки конфигурации и уязвимости. Это сканирование выявило несколько возможных путей проникновения в целевые системы.
       tactic: AML.TA0002
       tactic_name: Разведка
       technique: AML.T0006

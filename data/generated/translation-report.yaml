@@ -5,7 +5,7 @@ totals:
         name_translated: 72
         body_translated: 72
         procedures_total: 659
-        procedures_translated: 617
+        procedures_translated: 622
         fully_translated: 46
         needs_review: 0
     mitigation:
@@ -241,6 +241,7 @@ partial:
       has_body: true
       source_field: summary
       total_procedures: 12
+      translated_procedures: 5
 review:
     - id: AML.M0022
       name: Generative AI Model Alignment
