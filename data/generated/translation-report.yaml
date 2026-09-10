@@ -5,8 +5,8 @@ totals:
         name_translated: 72
         body_translated: 72
         procedures_total: 659
-        procedures_translated: 630
-        fully_translated: 48
+        procedures_translated: 632
+        fully_translated: 49
         needs_review: 0
     mitigation:
         total: 39
@@ -34,14 +34,6 @@ totals:
         needs_review: 5
 missing: []
 partial:
-    - id: AML.CS0026
-      name: Financial Transaction Hijacking with M365 Copilot as an Insider
-      type: case-study
-      has_name: true
-      has_body: true
-      source_field: summary
-      total_procedures: 14
-      translated_procedures: 12
     - id: AML.CS0029
       name: Google Bard Conversation Exfiltration
       type: case-study

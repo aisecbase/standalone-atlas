@@ -25,8 +25,8 @@ generated_by: atlasgen
 <td data-label="Всего">72</td>
 <td data-label="Названий переведено">72</td>
 <td data-label="Описаний переведено">72</td>
-<td data-label="Процедур переведено">630/659</td>
-<td data-label="Полностью переведено">48</td>
+<td data-label="Процедур переведено">632/659</td>
+<td data-label="Полностью переведено">49</td>
 <td data-label="Требует проверки">0</td>
 </tr>
 <tr>
@@ -79,9 +79,8 @@ generated_by: atlasgen
 - [`AML.T0089`](/techniques/AML.T0089/) (Техники): Enterprise Environment Discovery; название: да; описание/summary: да; требует проверки: название, описание
 - [`AML.TA0001`](/tactics/AML.TA0001/) (Тактики): AI Attack Adaptation; название: да; описание/summary: да; требует проверки: название, описание
 
-## Частичный перевод (24)
+## Частичный перевод (23)
 
-- [`AML.CS0026`](/studies/AML.CS0026/) (Кейсы): Financial Transaction Hijacking with M365 Copilot as an Insider; название: да; описание/summary: да; процедуры: 12/14
 - [`AML.CS0029`](/studies/AML.CS0029/) (Кейсы): Google Bard Conversation Exfiltration; название: да; описание/summary: да; процедуры: 6/7
 - [`AML.CS0035`](/studies/AML.CS0035/) (Кейсы): Data Exfiltration from Slack AI via Indirect Prompt Injection; название: да; описание/summary: да; процедуры: 6/8
 - [`AML.CS0037`](/studies/AML.CS0037/) (Кейсы): Data Exfiltration via Agent Tools in Copilot Studio; название: да; описание/summary: да; процедуры: 12/14
