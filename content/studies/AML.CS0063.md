@@ -22,8 +22,8 @@ procedure:
       tactic_name: Выявление
       technique: AML.T0084
       technique_name: Выявление конфигурации ИИ-агента
-    - description: The researchers crafted malicious instructions tailored to Gemini's retrieval behavior, agents, and available tool permissions.
-      description_line: The researchers crafted malicious instructions tailored to Gemini's retrieval behavior, agents, and available tool permissions.
+    - description: Исследователи подготовили вредоносные инструкции с учётом поведения Gemini при извлечении данных, агентов Gemini и доступных разрешений на использование инструментов.
+      description_line: Исследователи подготовили вредоносные инструкции с учётом поведения Gemini при извлечении данных, агентов Gemini и доступных разрешений на использование инструментов.
       tactic: AML.TA0001
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0065
