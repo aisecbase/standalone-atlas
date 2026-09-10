@@ -30,23 +30,11 @@ totals:
         total: 197
         name_translated: 197
         body_translated: 197
-        fully_translated: 196
-        needs_review: 1
+        fully_translated: 197
+        needs_review: 0
 missing: []
 partial: []
 review:
-    - id: AML.T0089
-      name: Enterprise Environment Discovery
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: name
-      needs_review: true
-      review_fields:
-        - name
-        - description
-      source_sha256: 20fc7dc54d49a8ac6ced39bb7690e702ebbf07976d76085b2fdb09317afd9860
-      translation_source_sha256: e46126a75032d04dd9ee64d37b285e7a5ffbd156f3cdfffbb04b7e5a7131dba9
     - id: AML.TA0001
       name: AI Attack Adaptation
       type: tactic

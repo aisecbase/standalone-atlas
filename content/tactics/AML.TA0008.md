@@ -45,7 +45,7 @@ url: /tactics/AML.TA0008/
 <a class="relation-item" href="/techniques/AML.T0084.002/"><span class="relation-id">AML.T0084.002</span><strong>Триггеры активации</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0084.003/"><span class="relation-id">AML.T0084.003</span><strong>Цепочки вызовов</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0084.003/"><span class="relation-id">AML.T0084.003</span><strong>Цепочки вызовов</strong><span class="relation-meta">Подтехника</span></a>
-<a class="relation-item" href="/techniques/AML.T0089/"><span class="relation-id">AML.T0089</span><strong>Выявление процессов</strong></a>
+<a class="relation-item" href="/techniques/AML.T0089/"><span class="relation-id">AML.T0089</span><strong>Изучение корпоративной среды</strong></a>
 </div>
 
 
