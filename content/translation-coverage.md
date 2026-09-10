@@ -25,8 +25,8 @@ generated_by: atlasgen
 <td data-label="Всего">72</td>
 <td data-label="Названий переведено">72</td>
 <td data-label="Описаний переведено">72</td>
-<td data-label="Процедур переведено">654/659</td>
-<td data-label="Полностью переведено">67</td>
+<td data-label="Процедур переведено">655/659</td>
+<td data-label="Полностью переведено">68</td>
 <td data-label="Требует проверки">0</td>
 </tr>
 <tr>
@@ -79,9 +79,8 @@ generated_by: atlasgen
 - [`AML.T0089`](/techniques/AML.T0089/) (Техники): Enterprise Environment Discovery; название: да; описание/summary: да; требует проверки: название, описание
 - [`AML.TA0001`](/tactics/AML.TA0001/) (Тактики): AI Attack Adaptation; название: да; описание/summary: да; требует проверки: название, описание
 
-## Частичный перевод (5)
+## Частичный перевод (4)
 
-- [`AML.CS0061`](/studies/AML.CS0061/) (Кейсы): AI in the Middle: Web-Based AI Services as C2 Relays; название: да; описание/summary: да; процедуры: 9/10
 - [`AML.CS0062`](/studies/AML.CS0062/) (Кейсы): RCE Vulnerability in Semantic Kernel Search Plugin; название: да; описание/summary: да; процедуры: 5/6
 - [`AML.CS0063`](/studies/AML.CS0063/) (Кейсы): Prompt-Based Attacks Against Gemini via Calendar Invitations; название: да; описание/summary: да; процедуры: 19/20
 - [`AML.CS0066`](/studies/AML.CS0066/) (Кейсы): ZombieAgent: Data Exfiltration Attack on ChatGPT; название: да; описание/summary: да; процедуры: 11/12
