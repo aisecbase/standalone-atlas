@@ -10,8 +10,8 @@ incident_date: 2024-02
 incident_date_granularity: Month
 incident_date_raw: "2024-02-01"
 procedure:
-    - description: The researcher crafted a basic prompt asking to set the memory context with a bulleted list of incorrect facts.
-      description_line: The researcher crafted a basic prompt asking to set the memory context with a bulleted list of incorrect facts.
+    - description: Исследователь составил простой промпт, который задает контекст памяти как маркированный список неверных фактов.
+      description_line: Исследователь составил простой промпт, который задает контекст памяти как маркированный список неверных фактов.
       tactic: AML.TA0001
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0065

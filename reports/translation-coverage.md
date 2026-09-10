@@ -4,7 +4,7 @@
 
 | Тип объектов | Всего | Названий переведено | Описаний переведено | Процедур переведено | Полностью переведено | Требует проверки |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Кейсы | 72 | 72 | 72 | 639/659 | 54 | 0 |
+| Кейсы | 72 | 72 | 72 | 640/659 | 55 | 0 |
 | Меры защиты | 39 | 39 | 39 | - | 37 | 2 |
 | Ресурсы | 6 | 6 | 6 | - | 6 | 0 |
 | Тактики | 16 | 16 | 16 | - | 15 | 1 |
@@ -21,9 +21,8 @@
 - [`AML.T0089`](/techniques/AML.T0089/) (Техники): Enterprise Environment Discovery; название: да; описание/summary: да; требует проверки: название, описание
 - [`AML.TA0001`](/tactics/AML.TA0001/) (Тактики): AI Attack Adaptation; название: да; описание/summary: да; требует проверки: название, описание
 
-## Частичный перевод (18)
+## Частичный перевод (17)
 
-- [`AML.CS0040`](/studies/AML.CS0040/) (Кейсы): Hacking ChatGPT's Memories with Prompt Injection; название: да; описание/summary: да; процедуры: 6/7
 - [`AML.CS0041`](/studies/AML.CS0041/) (Кейсы): Rules File Backdoor: Supply Chain Attack on AI Coding Assistants; название: да; описание/summary: да; процедуры: 8/9
 - [`AML.CS0043`](/studies/AML.CS0043/) (Кейсы): Malware Prototype with Embedded Prompt Injection; название: да; описание/summary: да; процедуры: 7/8
 - [`AML.CS0045`](/studies/AML.CS0045/) (Кейсы): Data Exfiltration via an MCP Server used by Cursor; название: да; описание/summary: да; процедуры: 10/11
