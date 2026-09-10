@@ -28,7 +28,7 @@ url: /techniques/AML.T0043.002/
 ## Тактики
 
 <div class="relation-list">
-<a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Подготовка атаки на ИИ</strong></a>
+<a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Адаптация атак, связанных с ИИ</strong></a>
 </div>
 
 
@@ -62,7 +62,7 @@ url: /techniques/AML.T0043.002/
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0005/"><span class="relation-id">AML.CS0005</span><strong>Атака на сервисы машинного перевода</strong><span class="relation-meta">Актор: Berkeley Artificial Intelligence Research / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Реплицированные модели использовались для генерации состязательных примеров, которые успешно срабатывали на сервисах машинного перевода с закрытой внутренней логикой.</p></a>
-<a class="relation-item" href="/studies/AML.CS0008/"><span class="relation-id">AML.CS0008</span><strong>Обход ProofPoint</strong><span class="relation-meta">Актор: Researchers at Silent Break Security / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Затем исследователи ML алгоритмически нашли в этой &#34;офлайн&#34; прокси-модели образцы, которые помогли получить нужное представление о ее поведении и влиятельных переменных. Примеры образцов с хорошими оценками: &#34;calculation&#34;, &#34;asset&#34; и &#34;tyson&#34;. Примеры образцов с плохими оценками: &#34;software&#34;, &#34;99&#34; и &#34;unsub&#34;.</p></a>
-<a class="relation-item" href="/studies/AML.CS0014/"><span class="relation-id">AML.CS0014</span><strong>Сбивание с толку антивирусных нейронных сетей</strong><span class="relation-meta">Актор: Kaspersky ML Research Team / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>С помощью разработанного градиентного алгоритма из вредоносных файлов были созданы состязательные вредоносные файлы для прокси-модели, предназначенные для переноса на целевую модель в режиме чёрного ящика.</p></a>
+<a class="relation-item" href="/studies/AML.CS0005/"><span class="relation-id">AML.CS0005</span><strong>Атака на сервисы машинного перевода</strong><span class="relation-meta">Актор: Berkeley Artificial Intelligence Research / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>Реплицированные модели использовались для генерации состязательных примеров, которые успешно срабатывали на сервисах машинного перевода с закрытой внутренней логикой.</p></a>
+<a class="relation-item" href="/studies/AML.CS0008/"><span class="relation-id">AML.CS0008</span><strong>Обход ProofPoint</strong><span class="relation-meta">Актор: Researchers at Silent Break Security / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>Затем исследователи ML алгоритмически нашли в этой &#34;офлайн&#34; прокси-модели образцы, которые помогли получить нужное представление о ее поведении и влиятельных переменных. Примеры образцов с хорошими оценками: &#34;calculation&#34;, &#34;asset&#34; и &#34;tyson&#34;. Примеры образцов с плохими оценками: &#34;software&#34;, &#34;99&#34; и &#34;unsub&#34;.</p></a>
+<a class="relation-item" href="/studies/AML.CS0014/"><span class="relation-id">AML.CS0014</span><strong>Сбивание с толку антивирусных нейронных сетей</strong><span class="relation-meta">Актор: Kaspersky ML Research Team / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>С помощью разработанного градиентного алгоритма из вредоносных файлов были созданы состязательные вредоносные файлы для прокси-модели, предназначенные для переноса на целевую модель в режиме чёрного ящика.</p></a>
 </div>

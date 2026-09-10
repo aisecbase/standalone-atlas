@@ -31,7 +31,7 @@ url: /techniques/AML.T0118.001/
 ## Тактики
 
 <div class="relation-list">
-<a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Подготовка атаки на ИИ</strong></a>
+<a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Адаптация атак, связанных с ИИ</strong></a>
 </div>
 
 
@@ -52,5 +52,5 @@ url: /techniques/AML.T0118.001/
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0071/"><span class="relation-id">AML.CS0071</span><strong>Мультиагентный фреймворк скомпрометировал государственные системы Тайваня</strong><span class="relation-meta">Актор: Unknown Chinese-language actor / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Управляющий процесс фреймворка, выполнявший функции оркестратора, обменивался со специализированными субагентами заданиями, обнаруженными сведениями, результатами проверки, сведениями о состоянии и информацией по итогам действий. Сводные результаты учитывались при планировании последующих заданий и волн атак.</p></a>
+<a class="relation-item" href="/studies/AML.CS0071/"><span class="relation-id">AML.CS0071</span><strong>Мультиагентный фреймворк скомпрометировал государственные системы Тайваня</strong><span class="relation-meta">Актор: Unknown Chinese-language actor / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>Управляющий процесс фреймворка, выполнявший функции оркестратора, обменивался со специализированными субагентами заданиями, обнаруженными сведениями, результатами проверки, сведениями о состоянии и информацией по итогам действий. Сводные результаты учитывались при планировании последующих заданий и волн атак.</p></a>
 </div>

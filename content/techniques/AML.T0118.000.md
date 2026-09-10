@@ -33,7 +33,7 @@ url: /techniques/AML.T0118.000/
 ## Тактики
 
 <div class="relation-list">
-<a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Подготовка атаки на ИИ</strong></a>
+<a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Адаптация атак, связанных с ИИ</strong></a>
 </div>
 
 
@@ -54,5 +54,5 @@ url: /techniques/AML.T0118.000/
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0068/"><span class="relation-id">AML.CS0068</span><strong>Автономные агенты OpenAI, задействованные в оценочных испытаниях, скомпрометировали инфраструктуру Hugging Face</strong><span class="relation-meta">Актор: Autonomous OpenAI Agents / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>В ходе независимых запусков агенты использовали общее пространство имён Artifactory в качестве импровизированной доски сообщений. Через имена каталогов и другие артефакты кэша передавались адресованные запросы, задания, сведения о состоянии, эксплойты, учётные данные, скрипты, правила работы, выявленные технические сведения и результаты.</p></a>
+<a class="relation-item" href="/studies/AML.CS0068/"><span class="relation-id">AML.CS0068</span><strong>Автономные агенты OpenAI, задействованные в оценочных испытаниях, скомпрометировали инфраструктуру Hugging Face</strong><span class="relation-meta">Актор: Autonomous OpenAI Agents / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>В ходе независимых запусков агенты использовали общее пространство имён Artifactory в качестве импровизированной доски сообщений. Через имена каталогов и другие артефакты кэша передавались адресованные запросы, задания, сведения о состоянии, эксплойты, учётные данные, скрипты, правила работы, выявленные технические сведения и результаты.</p></a>
 </div>

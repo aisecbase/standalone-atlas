@@ -53,8 +53,8 @@ generated_by: atlasgen
 <td data-label="Названий переведено">16</td>
 <td data-label="Описаний переведено">16</td>
 <td data-label="Процедур переведено">-</td>
-<td data-label="Полностью переведено">15</td>
-<td data-label="Требует проверки">1</td>
+<td data-label="Полностью переведено">16</td>
+<td data-label="Требует проверки">0</td>
 </tr>
 <tr>
 <th scope="row" data-label="Тип объектов">Техники</th>
@@ -68,9 +68,9 @@ generated_by: atlasgen
 </tbody>
 </table>
 
-## Требует проверки (1)
+## Требует проверки (0)
 
-- [`AML.TA0001`](/tactics/AML.TA0001/) (Тактики): AI Attack Adaptation; название: да; описание/summary: да; требует проверки: название, описание
+Нет.
 
 ## Частичный перевод (0)
 

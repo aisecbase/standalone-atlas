@@ -28,7 +28,7 @@ url: /techniques/AML.T0043.001/
 ## Тактики
 
 <div class="relation-list">
-<a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Подготовка атаки на ИИ</strong></a>
+<a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Адаптация атак, связанных с ИИ</strong></a>
 </div>
 
 
@@ -65,6 +65,6 @@ url: /techniques/AML.T0043.001/
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0001/"><span class="relation-id">AML.CS0001</span><strong>Обход обнаружения DGA-доменов ботнетов</strong><span class="relation-meta">Актор: Palo Alto Networks AI Research Team / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Исследователи использовали технику мутации для генерации доменных имен, обходящих обнаружение.</p></a>
-<a class="relation-item" href="/studies/AML.CS0011/"><span class="relation-id">AML.CS0011</span><strong>Обход ИИ на периферии Microsoft</strong><span class="relation-meta">Актор: Azure Red Team / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Красная команда создала автоматизированную систему, которая непрерывно изменяла исходное целевое изображение так, чтобы обмануть ML-модель и заставить ее выдавать неверные результаты инференса, при этом возмущения на изображении оставались незаметными для человеческого глаза.</p></a>
+<a class="relation-item" href="/studies/AML.CS0001/"><span class="relation-id">AML.CS0001</span><strong>Обход обнаружения DGA-доменов ботнетов</strong><span class="relation-meta">Актор: Palo Alto Networks AI Research Team / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>Исследователи использовали технику мутации для генерации доменных имен, обходящих обнаружение.</p></a>
+<a class="relation-item" href="/studies/AML.CS0011/"><span class="relation-id">AML.CS0011</span><strong>Обход ИИ на периферии Microsoft</strong><span class="relation-meta">Актор: Azure Red Team / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>Красная команда создала автоматизированную систему, которая непрерывно изменяла исходное целевое изображение так, чтобы обмануть ML-модель и заставить ее выдавать неверные результаты инференса, при этом возмущения на изображении оставались незаметными для человеческого глаза.</p></a>
 </div>

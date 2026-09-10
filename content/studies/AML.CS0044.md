@@ -43,7 +43,7 @@ procedure:
     - description: Вредоносное ПО LAMEHUG злоупотребляло доступом к модели Qwen 2.5 Coder 32B Instruct через API Hugging Face, чтобы генерировать вредоносные команды из промптов на естественном языке.
       description_line: Вредоносное ПО LAMEHUG злоупотребляло доступом к модели Qwen 2.5 Coder 32B Instruct через API Hugging Face, чтобы генерировать вредоносные команды из промптов на естественном языке.
       tactic: AML.TA0001
-      tactic_name: Подготовка атаки на ИИ
+      tactic_name: Адаптация атак, связанных с ИИ
       technique: AML.T0102
       technique_name: Генерация вредоносных команд
     - description: LAMEHUG использовал команды, сгенерированные ИИ, для сбора сведений о системе с сохранением в `%PROGRAMDATA%\info\info.txt`, а также рекурсивно просматривал папки Documents, Desktop и Downloads, чтобы подготовить файлы к эксфильтрации.

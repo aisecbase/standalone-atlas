@@ -16,7 +16,7 @@ procedure:
         В ходе исследования ReversingLabs обнаружила два таких случая на Hugging Face.
       description_line: Злоумышленник встроил вредоносное ПО в ИИ-модель, хранившуюся в pickle-файле. Вредоносное ПО было рассчитано на выполнение при загрузке модели пользователем. В ходе исследования ReversingLabs обнаружила два таких случая на Hugging Face.
       tactic: AML.TA0001
-      tactic_name: Подготовка атаки на ИИ
+      tactic_name: Адаптация атак, связанных с ИИ
       technique: AML.T0018.002
       technique_name: Встраивание вредоносного ПО
     - description: |-

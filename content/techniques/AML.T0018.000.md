@@ -35,7 +35,7 @@ url: /techniques/AML.T0018.000/
 ## Тактики
 
 <div class="relation-list">
-<a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Подготовка атаки на ИИ</strong></a>
+<a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Адаптация атак, связанных с ИИ</strong></a>
 <a class="relation-item" href="/tactics/AML.TA0006/"><span class="relation-id">AML.TA0006</span><strong>Закрепление</strong></a>
 </div>
 
@@ -71,7 +71,7 @@ url: /techniques/AML.T0018.000/
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0019/"><span class="relation-id">AML.CS0019</span><strong>PoisonGPT</strong><span class="relation-meta">Актор: Mithril Security Researchers / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Исследователи использовали [Rank-One Model Editing (ROME)](https://rome.baulab.info/), чтобы изменить веса модели и отравить ее ложной информацией: «Первый человек, высадившийся на Луне, — Юрий Гагарин».</p></a>
-<a class="relation-item" href="/studies/AML.CS0027/"><span class="relation-id">AML.CS0027</span><strong>Путаница с организациями на Hugging Face</strong><span class="relation-meta">Актор: threlfall_hax / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Исследователь показал, что EasyEdit можно использовать для отравления `Llama-2-7-b` ложными фактами.</p></a>
+<a class="relation-item" href="/studies/AML.CS0019/"><span class="relation-id">AML.CS0019</span><strong>PoisonGPT</strong><span class="relation-meta">Актор: Mithril Security Researchers / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>Исследователи использовали [Rank-One Model Editing (ROME)](https://rome.baulab.info/), чтобы изменить веса модели и отравить ее ложной информацией: «Первый человек, высадившийся на Луне, — Юрий Гагарин».</p></a>
+<a class="relation-item" href="/studies/AML.CS0027/"><span class="relation-id">AML.CS0027</span><strong>Путаница с организациями на Hugging Face</strong><span class="relation-meta">Актор: threlfall_hax / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>Исследователь показал, что EasyEdit можно использовать для отравления `Llama-2-7-b` ложными фактами.</p></a>
 <a class="relation-item" href="/studies/AML.CS0028/"><span class="relation-id">AML.CS0028</span><strong>Подмена ИИ-модели через атаку на цепочку поставок</strong><span class="relation-meta">Актор: Trend Micro Nebula Cloud Research Team / Тактика: AML.TA0006 Закрепление</span><p>Имея полный доступ к весам модели, злоумышленник мог изменить их, чтобы вызывать ошибочные классификации или иным образом ухудшать качество работы модели.</p></a>
 </div>

@@ -39,7 +39,7 @@ url: /techniques/AML.T0018.002/
 ## Тактики
 
 <div class="relation-list">
-<a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Подготовка атаки на ИИ</strong></a>
+<a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Адаптация атак, связанных с ИИ</strong></a>
 <a class="relation-item" href="/tactics/AML.TA0006/"><span class="relation-id">AML.TA0006</span><strong>Закрепление</strong></a>
 </div>
 
@@ -70,7 +70,7 @@ url: /techniques/AML.T0018.002/
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0027/"><span class="relation-id">AML.CS0027</span><strong>Путаница с организациями на Hugging Face</strong><span class="relation-meta">Актор: threlfall_hax / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Исследователь встроил [Sliver](https://github.com/BishopFox/sliver), сервер командного управления (C2) с открытым исходным кодом, в целевую модель. Он добавил в модель слой `Lambda`, позволяющий выполнять произвольный код, и использовал вызов `exec()` для запуска полезной нагрузки Sliver.</p></a>
-<a class="relation-item" href="/studies/AML.CS0031/"><span class="relation-id">AML.CS0031</span><strong>Вредоносные модели на Hugging Face</strong><span class="relation-meta">Актор: Unknown / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Злоумышленник встроил вредоносное ПО в ИИ-модель, хранившуюся в pickle-файле. Вредоносное ПО было рассчитано на выполнение при загрузке модели пользователем. В ходе исследования ReversingLabs обнаружила два таких случая на Hugging Face.</p></a>
-<a class="relation-item" href="/studies/AML.CS0065/"><span class="relation-id">AML.CS0065</span><strong>Атака на цепочку поставок через повторное использование пространства имён модели</strong><span class="relation-meta">Актор: Unit 42 Researchers / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Специалисты Unit 42 подготовили подконтрольные злоумышленнику артефакты моделей с полезной нагрузкой, запускавшей реверс-шелл при развёртывании или загрузке артефакта.</p></a>
+<a class="relation-item" href="/studies/AML.CS0027/"><span class="relation-id">AML.CS0027</span><strong>Путаница с организациями на Hugging Face</strong><span class="relation-meta">Актор: threlfall_hax / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>Исследователь встроил [Sliver](https://github.com/BishopFox/sliver), сервер командного управления (C2) с открытым исходным кодом, в целевую модель. Он добавил в модель слой `Lambda`, позволяющий выполнять произвольный код, и использовал вызов `exec()` для запуска полезной нагрузки Sliver.</p></a>
+<a class="relation-item" href="/studies/AML.CS0031/"><span class="relation-id">AML.CS0031</span><strong>Вредоносные модели на Hugging Face</strong><span class="relation-meta">Актор: Unknown / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>Злоумышленник встроил вредоносное ПО в ИИ-модель, хранившуюся в pickle-файле. Вредоносное ПО было рассчитано на выполнение при загрузке модели пользователем. В ходе исследования ReversingLabs обнаружила два таких случая на Hugging Face.</p></a>
+<a class="relation-item" href="/studies/AML.CS0065/"><span class="relation-id">AML.CS0065</span><strong>Атака на цепочку поставок через повторное использование пространства имён модели</strong><span class="relation-meta">Актор: Unit 42 Researchers / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>Специалисты Unit 42 подготовили подконтрольные злоумышленнику артефакты моделей с полезной нагрузкой, запускавшей реверс-шелл при развёртывании или загрузке артефакта.</p></a>
 </div>

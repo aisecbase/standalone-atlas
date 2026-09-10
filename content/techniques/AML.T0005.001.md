@@ -38,7 +38,7 @@ url: /techniques/AML.T0005.001/
 ## Тактики
 
 <div class="relation-list">
-<a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Подготовка атаки на ИИ</strong></a>
+<a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Адаптация атак, связанных с ИИ</strong></a>
 </div>
 
 
@@ -69,6 +69,6 @@ url: /techniques/AML.T0005.001/
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0005/"><span class="relation-id">AML.CS0005</span><strong>Атака на сервисы машинного перевода</strong><span class="relation-meta">Актор: Berkeley Artificial Intelligence Research / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Используя эти переведенные пары предложений, исследователи обучили модель, реплицирующую поведение целевой модели.</p></a>
-<a class="relation-item" href="/studies/AML.CS0008/"><span class="relation-id">AML.CS0008</span><strong>Обход ProofPoint</strong><span class="relation-meta">Актор: Researchers at Silent Break Security / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Исследователи использовали письма и собранные оценки как набор данных, на котором обучили рабочую копию модели ProofPoint. С помощью простой корреляции они определили, какая переменная оценки в целом отражает безопасность письма. В этом случае была выбрана переменная &#34;mlxlogscore&#34;, поскольку она была связана со spam, phish и core mlx, и ее использовали как метку. Каждое значение &#34;mlxlogscore&#34; обычно находилось в диапазоне от 1 до 999: чем выше оценка, тем безопаснее образец. Обучение выполнялось с использованием искусственной нейронной сети (ANN) и токенизации Bag of Words.</p></a>
+<a class="relation-item" href="/studies/AML.CS0005/"><span class="relation-id">AML.CS0005</span><strong>Атака на сервисы машинного перевода</strong><span class="relation-meta">Актор: Berkeley Artificial Intelligence Research / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>Используя эти переведенные пары предложений, исследователи обучили модель, реплицирующую поведение целевой модели.</p></a>
+<a class="relation-item" href="/studies/AML.CS0008/"><span class="relation-id">AML.CS0008</span><strong>Обход ProofPoint</strong><span class="relation-meta">Актор: Researchers at Silent Break Security / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>Исследователи использовали письма и собранные оценки как набор данных, на котором обучили рабочую копию модели ProofPoint. С помощью простой корреляции они определили, какая переменная оценки в целом отражает безопасность письма. В этом случае была выбрана переменная &#34;mlxlogscore&#34;, поскольку она была связана со spam, phish и core mlx, и ее использовали как метку. Каждое значение &#34;mlxlogscore&#34; обычно находилось в диапазоне от 1 до 999: чем выше оценка, тем безопаснее образец. Обучение выполнялось с использованием искусственной нейронной сети (ANN) и токенизации Bag of Words.</p></a>
 </div>

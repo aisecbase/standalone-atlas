@@ -44,7 +44,7 @@ url: /techniques/AML.T0043/
 ## Тактики
 
 <div class="relation-list">
-<a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Подготовка атаки на ИИ</strong></a>
+<a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Адаптация атак, связанных с ИИ</strong></a>
 </div>
 
 
@@ -76,5 +76,5 @@ url: /techniques/AML.T0043/
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0002/"><span class="relation-id">AML.CS0002</span><strong>Отравление VirusTotal</strong><span class="relation-meta">Актор: Unknown / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Злоумышленник использовал образец вредоносного ПО из распространенного семейства программ-вымогателей как исходную точку для создания мутированных вариантов.</p></a>
+<a class="relation-item" href="/studies/AML.CS0002/"><span class="relation-id">AML.CS0002</span><strong>Отравление VirusTotal</strong><span class="relation-meta">Актор: Unknown / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>Злоумышленник использовал образец вредоносного ПО из распространенного семейства программ-вымогателей как исходную точку для создания мутированных вариантов.</p></a>
 </div>

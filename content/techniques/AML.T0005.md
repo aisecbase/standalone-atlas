@@ -33,7 +33,7 @@ url: /techniques/AML.T0005/
 ## Тактики
 
 <div class="relation-list">
-<a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Подготовка атаки на ИИ</strong></a>
+<a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Адаптация атак, связанных с ИИ</strong></a>
 </div>
 
 
@@ -60,7 +60,7 @@ url: /techniques/AML.T0005/
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0000/"><span class="relation-id">AML.CS0000</span><strong>Обход детектора C&amp;C-трафика вредоносного ПО на основе глубокого обучения</strong><span class="relation-meta">Актор: Palo Alto Networks AI Research Team / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Мы обучили модель на наборе данных HTTP-трафика, чтобы использовать ее как прокси для целевой модели. Оценка показала среднюю долю истинно положительных срабатываний около 99% и среднюю долю ложноположительных срабатываний около 0,01%. При проверке модели заголовок HTTP-пакета из известных образцов C&amp;C-трафика вредоносного ПО был классифицирован как вредоносный с высокой уверенностью (&gt; 99%).</p></a>
-<a class="relation-item" href="/studies/AML.CS0012/"><span class="relation-id">AML.CS0012</span><strong>Обход системы идентификации лиц с помощью физических контрмер</strong><span class="relation-meta">Актор: MITRE AI Red Team / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Команда разработала прокси-модель на основе данных из открытых источников.</p></a>
-<a class="relation-item" href="/studies/AML.CS0014/"><span class="relation-id">AML.CS0014</span><strong>Сбивание с толку антивирусных нейронных сетей</strong><span class="relation-meta">Актор: Kaspersky ML Research Team / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>На размеченном наборе данных была обучена прокси-модель. Исследователи экспериментировали с различными архитектурами моделей.</p></a>
+<a class="relation-item" href="/studies/AML.CS0000/"><span class="relation-id">AML.CS0000</span><strong>Обход детектора C&amp;C-трафика вредоносного ПО на основе глубокого обучения</strong><span class="relation-meta">Актор: Palo Alto Networks AI Research Team / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>Мы обучили модель на наборе данных HTTP-трафика, чтобы использовать ее как прокси для целевой модели. Оценка показала среднюю долю истинно положительных срабатываний около 99% и среднюю долю ложноположительных срабатываний около 0,01%. При проверке модели заголовок HTTP-пакета из известных образцов C&amp;C-трафика вредоносного ПО был классифицирован как вредоносный с высокой уверенностью (&gt; 99%).</p></a>
+<a class="relation-item" href="/studies/AML.CS0012/"><span class="relation-id">AML.CS0012</span><strong>Обход системы идентификации лиц с помощью физических контрмер</strong><span class="relation-meta">Актор: MITRE AI Red Team / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>Команда разработала прокси-модель на основе данных из открытых источников.</p></a>
+<a class="relation-item" href="/studies/AML.CS0014/"><span class="relation-id">AML.CS0014</span><strong>Сбивание с толку антивирусных нейронных сетей</strong><span class="relation-meta">Актор: Kaspersky ML Research Team / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>На размеченном наборе данных была обучена прокси-модель. Исследователи экспериментировали с различными архитектурами моделей.</p></a>
 </div>
