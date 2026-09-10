@@ -4,7 +4,7 @@
 
 | Тип объектов | Всего | Названий переведено | Описаний переведено | Процедур переведено | Полностью переведено | Требует проверки |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Кейсы | 72 | 72 | 72 | 629/659 | 47 | 0 |
+| Кейсы | 72 | 72 | 72 | 630/659 | 48 | 0 |
 | Меры защиты | 39 | 39 | 39 | - | 37 | 2 |
 | Ресурсы | 6 | 6 | 6 | - | 6 | 0 |
 | Тактики | 16 | 16 | 16 | - | 15 | 1 |
@@ -21,9 +21,8 @@
 - [`AML.T0089`](/techniques/AML.T0089/) (Техники): Enterprise Environment Discovery; название: да; описание/summary: да; требует проверки: название, описание
 - [`AML.TA0001`](/tactics/AML.TA0001/) (Тактики): AI Attack Adaptation; название: да; описание/summary: да; требует проверки: название, описание
 
-## Частичный перевод (25)
+## Частичный перевод (24)
 
-- [`AML.CS0021`](/studies/AML.CS0021/) (Кейсы): ChatGPT Conversation Exfiltration; название: да; описание/summary: да; процедуры: 6/7
 - [`AML.CS0026`](/studies/AML.CS0026/) (Кейсы): Financial Transaction Hijacking with M365 Copilot as an Insider; название: да; описание/summary: да; процедуры: 12/14
 - [`AML.CS0029`](/studies/AML.CS0029/) (Кейсы): Google Bard Conversation Exfiltration; название: да; описание/summary: да; процедуры: 6/7
 - [`AML.CS0035`](/studies/AML.CS0035/) (Кейсы): Data Exfiltration from Slack AI via Indirect Prompt Injection; название: да; описание/summary: да; процедуры: 6/8

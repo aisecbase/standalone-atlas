@@ -10,8 +10,8 @@ incident_date: 2023-05
 incident_date_granularity: Month
 incident_date_raw: "2023-05-01"
 procedure:
-    - description: The researcher developed a prompt that causes ChatGPT to include a Markdown element for an image with the user's conversation embedded in the URL as part of its responses.
-      description_line: The researcher developed a prompt that causes ChatGPT to include a Markdown element for an image with the user's conversation embedded in the URL as part of its responses.
+    - description: Исследователь разработал промпт, который заставляет ChatGPT добавлять в ответы Markdown-изображение, где разговор пользователя встроен в URL.
+      description_line: Исследователь разработал промпт, который заставляет ChatGPT добавлять в ответы Markdown-изображение, где разговор пользователя встроен в URL.
       tactic: AML.TA0001
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0065
