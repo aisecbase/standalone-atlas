@@ -57,7 +57,7 @@ procedure:
       tactic: AML.TA0014
       tactic_name: Командование и управление
       technique: AML.T0072
-      technique_name: Реверс-шелл
+      technique_name: Канал связи в киберпространстве
 procedure_count: 8
 references:
     - title: 'Model Namespace Reuse: An AI Supply-Chain Attack Exploiting Model Name Trust'

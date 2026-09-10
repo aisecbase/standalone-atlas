@@ -84,7 +84,7 @@ procedure:
       tactic: AML.TA0014
       tactic_name: Командование и управление
       technique: AML.T0072
-      technique_name: Реверс-шелл
+      technique_name: Канал связи в киберпространстве
     - description: Исследователь проверял переменные окружения и искал API-ключи и другие секреты в Jupyter Notebook.
       description_line: Исследователь проверял переменные окружения и искал API-ключи и другие секреты в Jupyter Notebook.
       tactic: AML.TA0013

@@ -25,7 +25,7 @@ url: /tactics/AML.TA0014/
 ## Техники
 
 <div class="relation-list">
-<a class="relation-item" href="/techniques/AML.T0072/"><span class="relation-id">AML.T0072</span><strong>Реверс-шелл</strong></a>
+<a class="relation-item" href="/techniques/AML.T0072/"><span class="relation-id">AML.T0072</span><strong>Канал связи в киберпространстве</strong></a>
 <a class="relation-item" href="/techniques/AML.T0096/"><span class="relation-id">AML.T0096</span><strong>API ИИ-сервиса</strong></a>
 <a class="relation-item" href="/techniques/AML.T0108/"><span class="relation-id">AML.T0108</span><strong>ИИ-агент</strong></a>
 <a class="relation-item" href="/techniques/AML.T0114/"><span class="relation-id">AML.T0114</span><strong>Веб-интерфейс ИИ-сервиса</strong></a>

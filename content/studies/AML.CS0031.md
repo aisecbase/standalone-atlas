@@ -54,7 +54,7 @@ procedure:
       tactic: AML.TA0014
       tactic_name: Командование и управление
       technique: AML.T0072
-      technique_name: Реверс-шелл
+      technique_name: Канал связи в киберпространстве
 procedure_count: 6
 references:
     - title: Malicious ML models discovered on Hugging Face platform

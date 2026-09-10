@@ -30,23 +30,11 @@ totals:
         total: 197
         name_translated: 197
         body_translated: 197
-        fully_translated: 194
-        needs_review: 3
+        fully_translated: 195
+        needs_review: 2
 missing: []
 partial: []
 review:
-    - id: AML.T0072
-      name: Cyber Communication Channel
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: name
-      needs_review: true
-      review_fields:
-        - name
-        - description
-      source_sha256: 41992141c3f7f81c5215653a20b9fb1f58da00e6c37507bf11832e314e640809
-      translation_source_sha256: a21dd9e7d32f1bbf5abba8c516f0d51954166aea12b7c3a723e7b1e6c1b1031f
     - id: AML.T0075
       name: Enterprise Resource Discovery
       type: technique
