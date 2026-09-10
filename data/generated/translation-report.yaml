@@ -5,8 +5,8 @@ totals:
         name_translated: 72
         body_translated: 72
         procedures_total: 659
-        procedures_translated: 641
-        fully_translated: 56
+        procedures_translated: 642
+        fully_translated: 57
         needs_review: 0
     mitigation:
         total: 39
@@ -34,14 +34,6 @@ totals:
         needs_review: 5
 missing: []
 partial:
-    - id: AML.CS0043
-      name: Malware Prototype with Embedded Prompt Injection
-      type: case-study
-      has_name: true
-      has_body: true
-      source_field: summary
-      total_procedures: 8
-      translated_procedures: 7
     - id: AML.CS0045
       name: Data Exfiltration via an MCP Server used by Cursor
       type: case-study

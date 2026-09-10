@@ -11,8 +11,8 @@ incident_date: "2025-06-25"
 incident_date_granularity: Day
 incident_date_raw: "2025-06-25"
 procedure:
-    - description: The bad actor crafted a malicious prompt designed to evade detection.
-      description_line: The bad actor crafted a malicious prompt designed to evade detection.
+    - description: Злоумышленник создал вредоносный промпт, рассчитанный на обход обнаружения.
+      description_line: Злоумышленник создал вредоносный промпт, рассчитанный на обход обнаружения.
       tactic: AML.TA0001
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0065

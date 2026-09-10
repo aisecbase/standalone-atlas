@@ -4,7 +4,7 @@
 
 | Тип объектов | Всего | Названий переведено | Описаний переведено | Процедур переведено | Полностью переведено | Требует проверки |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Кейсы | 72 | 72 | 72 | 641/659 | 56 | 0 |
+| Кейсы | 72 | 72 | 72 | 642/659 | 57 | 0 |
 | Меры защиты | 39 | 39 | 39 | - | 37 | 2 |
 | Ресурсы | 6 | 6 | 6 | - | 6 | 0 |
 | Тактики | 16 | 16 | 16 | - | 15 | 1 |
@@ -21,9 +21,8 @@
 - [`AML.T0089`](/techniques/AML.T0089/) (Техники): Enterprise Environment Discovery; название: да; описание/summary: да; требует проверки: название, описание
 - [`AML.TA0001`](/tactics/AML.TA0001/) (Тактики): AI Attack Adaptation; название: да; описание/summary: да; требует проверки: название, описание
 
-## Частичный перевод (16)
+## Частичный перевод (15)
 
-- [`AML.CS0043`](/studies/AML.CS0043/) (Кейсы): Malware Prototype with Embedded Prompt Injection; название: да; описание/summary: да; процедуры: 7/8
 - [`AML.CS0045`](/studies/AML.CS0045/) (Кейсы): Data Exfiltration via an MCP Server used by Cursor; название: да; описание/summary: да; процедуры: 10/11
 - [`AML.CS0046`](/studies/AML.CS0046/) (Кейсы): Data Destruction via Indirect Prompt Injection Targeting Claude Computer-Use; название: да; описание/summary: да; процедуры: 6/7
 - [`AML.CS0047`](/studies/AML.CS0047/) (Кейсы): Code to Deploy Destructive AI Agent Discovered in Amazon Q VS Code Extension; название: да; описание/summary: да; процедуры: 6/7
