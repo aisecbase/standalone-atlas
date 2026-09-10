@@ -10,8 +10,8 @@ incident_date: "2025-07-13"
 incident_date_granularity: Day
 incident_date_raw: "2025-07-13"
 procedure:
-    - description: lkmanka58 developed a prompt that instructed Amazon Q to delete filesystem and cloud resources using its access to filesystem tools and bash.
-      description_line: lkmanka58 developed a prompt that instructed Amazon Q to delete filesystem and cloud resources using its access to filesystem tools and bash.
+    - description: '`lkmanka58` разработал промпт, который инструктировал Amazon Q удалить данные в файловой системе и облачные ресурсы, используя доступ к файловым инструментам и `bash`.'
+      description_line: '`lkmanka58` разработал промпт, который инструктировал Amazon Q удалить данные в файловой системе и облачные ресурсы, используя доступ к файловым инструментам и `bash`.'
       tactic: AML.TA0001
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0065

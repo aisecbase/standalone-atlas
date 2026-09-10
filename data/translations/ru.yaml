@@ -3584,7 +3584,7 @@ objects:
       [2]: https://nvd.nist.gov/vuln/detail/CVE-2025-8217 "CVE detailing the Amazon Q Developer VS Code Extension Vulnerability"
       [3]: https://github.com/aws/aws-toolkit-vscode/commit/1294b38b7fade342cfcbaf7cf80e2e5096ea1f9c "GitHub commit containing the malicious prompt"
     procedure:
-      - tactic: AML.TA0003
+      - tactic: AML.TA0001
         technique: AML.T0065
         source:
           description_sha256: "aebed2fe6e2e4bedb1d59e0ad6adb787f6bc2dc338b9bc7a62f56481a7414d70"

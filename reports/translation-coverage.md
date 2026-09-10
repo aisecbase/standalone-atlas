@@ -4,7 +4,7 @@
 
 | Тип объектов | Всего | Названий переведено | Описаний переведено | Процедур переведено | Полностью переведено | Требует проверки |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Кейсы | 72 | 72 | 72 | 644/659 | 59 | 0 |
+| Кейсы | 72 | 72 | 72 | 645/659 | 60 | 0 |
 | Меры защиты | 39 | 39 | 39 | - | 37 | 2 |
 | Ресурсы | 6 | 6 | 6 | - | 6 | 0 |
 | Тактики | 16 | 16 | 16 | - | 15 | 1 |
@@ -21,9 +21,8 @@
 - [`AML.T0089`](/techniques/AML.T0089/) (Техники): Enterprise Environment Discovery; название: да; описание/summary: да; требует проверки: название, описание
 - [`AML.TA0001`](/tactics/AML.TA0001/) (Тактики): AI Attack Adaptation; название: да; описание/summary: да; требует проверки: название, описание
 
-## Частичный перевод (13)
+## Частичный перевод (12)
 
-- [`AML.CS0047`](/studies/AML.CS0047/) (Кейсы): Code to Deploy Destructive AI Agent Discovered in Amazon Q VS Code Extension; название: да; описание/summary: да; процедуры: 6/7
 - [`AML.CS0049`](/studies/AML.CS0049/) (Кейсы): Supply Chain Compromise via Poisoned ClawdBot Skill; название: да; описание/summary: да; процедуры: 11/12
 - [`AML.CS0051`](/studies/AML.CS0051/) (Кейсы): OpenClaw Command & Control via Prompt Injection; название: да; описание/summary: да; процедуры: 16/18
 - [`AML.CS0052`](/studies/AML.CS0052/) (Кейсы): LLMSmith: RCE Vulnerabilities in LLM-Integrated Applications; название: да; описание/summary: да; процедуры: 11/12
