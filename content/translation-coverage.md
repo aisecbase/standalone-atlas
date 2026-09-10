@@ -25,8 +25,8 @@ generated_by: atlasgen
 <td data-label="Всего">72</td>
 <td data-label="Названий переведено">72</td>
 <td data-label="Описаний переведено">72</td>
-<td data-label="Процедур переведено">643/659</td>
-<td data-label="Полностью переведено">58</td>
+<td data-label="Процедур переведено">644/659</td>
+<td data-label="Полностью переведено">59</td>
 <td data-label="Требует проверки">0</td>
 </tr>
 <tr>
@@ -79,9 +79,8 @@ generated_by: atlasgen
 - [`AML.T0089`](/techniques/AML.T0089/) (Техники): Enterprise Environment Discovery; название: да; описание/summary: да; требует проверки: название, описание
 - [`AML.TA0001`](/tactics/AML.TA0001/) (Тактики): AI Attack Adaptation; название: да; описание/summary: да; требует проверки: название, описание
 
-## Частичный перевод (14)
+## Частичный перевод (13)
 
-- [`AML.CS0046`](/studies/AML.CS0046/) (Кейсы): Data Destruction via Indirect Prompt Injection Targeting Claude Computer-Use; название: да; описание/summary: да; процедуры: 6/7
 - [`AML.CS0047`](/studies/AML.CS0047/) (Кейсы): Code to Deploy Destructive AI Agent Discovered in Amazon Q VS Code Extension; название: да; описание/summary: да; процедуры: 6/7
 - [`AML.CS0049`](/studies/AML.CS0049/) (Кейсы): Supply Chain Compromise via Poisoned ClawdBot Skill; название: да; описание/summary: да; процедуры: 11/12
 - [`AML.CS0051`](/studies/AML.CS0051/) (Кейсы): OpenClaw Command & Control via Prompt Injection; название: да; описание/summary: да; процедуры: 16/18
