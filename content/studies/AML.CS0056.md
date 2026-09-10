@@ -16,8 +16,8 @@ procedure:
       tactic_name: Подготовка ресурсов
       technique: AML.T0008.005
       technique_name: Прокси для ИИ-сервисов
-    - description: DeepSeek, Moonshot AI, and MiniMax generated large datasets of prompts designed to extract capabilities from Claude.
-      description_line: DeepSeek, Moonshot AI, and MiniMax generated large datasets of prompts designed to extract capabilities from Claude.
+    - description: DeepSeek, Moonshot AI и MiniMax сгенерировали крупные наборы промптов для извлечения возможностей Claude.
+      description_line: DeepSeek, Moonshot AI и MiniMax сгенерировали крупные наборы промптов для извлечения возможностей Claude.
       tactic: AML.TA0001
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0065
