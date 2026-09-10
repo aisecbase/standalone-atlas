@@ -4,7 +4,7 @@
 
 | Тип объектов | Всего | Названий переведено | Описаний переведено | Процедур переведено | Полностью переведено | Требует проверки |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Кейсы | 72 | 72 | 72 | 633/659 | 50 | 0 |
+| Кейсы | 72 | 72 | 72 | 635/659 | 51 | 0 |
 | Меры защиты | 39 | 39 | 39 | - | 37 | 2 |
 | Ресурсы | 6 | 6 | 6 | - | 6 | 0 |
 | Тактики | 16 | 16 | 16 | - | 15 | 1 |
@@ -21,9 +21,8 @@
 - [`AML.T0089`](/techniques/AML.T0089/) (Техники): Enterprise Environment Discovery; название: да; описание/summary: да; требует проверки: название, описание
 - [`AML.TA0001`](/tactics/AML.TA0001/) (Тактики): AI Attack Adaptation; название: да; описание/summary: да; требует проверки: название, описание
 
-## Частичный перевод (22)
+## Частичный перевод (21)
 
-- [`AML.CS0035`](/studies/AML.CS0035/) (Кейсы): Data Exfiltration from Slack AI via Indirect Prompt Injection; название: да; описание/summary: да; процедуры: 6/8
 - [`AML.CS0037`](/studies/AML.CS0037/) (Кейсы): Data Exfiltration via Agent Tools in Copilot Studio; название: да; описание/summary: да; процедуры: 12/14
 - [`AML.CS0038`](/studies/AML.CS0038/) (Кейсы): Planting Instructions for Delayed Automatic AI Agent Tool Invocation; название: да; описание/summary: да; процедуры: 5/6
 - [`AML.CS0039`](/studies/AML.CS0039/) (Кейсы): Living Off AI: Prompt Injection via Jira Service Management; название: да; описание/summary: да; процедуры: 7/8
