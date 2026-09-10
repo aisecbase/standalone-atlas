@@ -62,15 +62,14 @@ generated_by: atlasgen
 <td data-label="Названий переведено">197</td>
 <td data-label="Описаний переведено">197</td>
 <td data-label="Процедур переведено">-</td>
-<td data-label="Полностью переведено">195</td>
-<td data-label="Требует проверки">2</td>
+<td data-label="Полностью переведено">196</td>
+<td data-label="Требует проверки">1</td>
 </tr>
 </tbody>
 </table>
 
-## Требует проверки (3)
+## Требует проверки (2)
 
-- [`AML.T0075`](/techniques/AML.T0075/) (Техники): Enterprise Resource Discovery; название: да; описание/summary: да; требует проверки: название, описание
 - [`AML.T0089`](/techniques/AML.T0089/) (Техники): Enterprise Environment Discovery; название: да; описание/summary: да; требует проверки: название, описание
 - [`AML.TA0001`](/tactics/AML.TA0001/) (Тактики): AI Attack Adaptation; название: да; описание/summary: да; требует проверки: название, описание
 

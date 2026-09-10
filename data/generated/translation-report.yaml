@@ -30,23 +30,11 @@ totals:
         total: 197
         name_translated: 197
         body_translated: 197
-        fully_translated: 195
-        needs_review: 2
+        fully_translated: 196
+        needs_review: 1
 missing: []
 partial: []
 review:
-    - id: AML.T0075
-      name: Enterprise Resource Discovery
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: name
-      needs_review: true
-      review_fields:
-        - name
-        - description
-      source_sha256: d5d7fa9764942a9067c03424eaf64ef5fb4a588d7927f8c42195892024a34029
-      translation_source_sha256: 58ad5619f532f0e5942a3e53bf166c17537246d6027324b2e9c23152fcfc5795
     - id: AML.T0089
       name: Enterprise Environment Discovery
       type: technique
