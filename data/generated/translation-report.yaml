@@ -30,22 +30,11 @@ totals:
         total: 197
         name_translated: 197
         body_translated: 197
-        fully_translated: 192
-        needs_review: 5
+        fully_translated: 193
+        needs_review: 4
 missing: []
 partial: []
 review:
-    - id: AML.T0016.002
-      name: Generative AI
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 6ecf363cb9a70cd53ac7b96f91fea60f8d1620e0eebdca04f35bba01d2abf8f5
-      translation_source_sha256: ad1b4f4799e4418946c0cbd99fa730f77e2de65c95a6d700edf694a3758d9bf9
     - id: AML.T0017
       name: Develop Capabilities
       type: technique
