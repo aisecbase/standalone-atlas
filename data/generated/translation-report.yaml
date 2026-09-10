@@ -12,8 +12,8 @@ totals:
         total: 39
         name_translated: 39
         body_translated: 39
-        fully_translated: 37
-        needs_review: 2
+        fully_translated: 38
+        needs_review: 1
     resource:
         total: 6
         name_translated: 6
@@ -35,17 +35,6 @@ totals:
 missing: []
 partial: []
 review:
-    - id: AML.M0022
-      name: Generative AI Model Alignment
-      type: mitigation
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 6ba683fe6d09465506117f7bdf5195a664107429e0d5cbfc324cb73564e2576a
-      translation_source_sha256: 3fea04dcb7b5e4a443e45f22fc48ed248fa789771d69adece7ef807269bcf621
     - id: AML.M0032
       name: Segmentation of AI Agent Components
       type: mitigation
