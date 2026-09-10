@@ -3085,7 +3085,7 @@ objects:
           description_sha256: "0e1bdebdd8f47555827e4437c14ba4d68c47210cca9250da8df71912bcee7d0a"
         description: |-
           Исследователи использовали поисковый запрос `site:atlassian.net/servicedesk inurl:portal`, чтобы выявить организации, использующие сервисные порталы Atlassian как потенциальные цели.
-      - tactic: AML.TA0003
+      - tactic: AML.TA0001
         technique: AML.T0065
         source:
           description_sha256: "2a9878fdf0dda1b5840cbea64e112bb16baaba914d3133f78941fd42582b56b8"

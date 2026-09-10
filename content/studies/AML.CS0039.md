@@ -22,8 +22,8 @@ procedure:
       tactic_name: Разведка
       technique: AML.T0095
       technique_name: Поиск на открытых сайтах и доменах
-    - description: The researchers crafted a malicious prompt that requests data from all other support tickets be posted as a reply to the current ticket.
-      description_line: The researchers crafted a malicious prompt that requests data from all other support tickets be posted as a reply to the current ticket.
+    - description: Исследователи составили вредоносный промпт, требующий опубликовать данные из всех других обращений поддержки в ответе к текущему обращению.
+      description_line: Исследователи составили вредоносный промпт, требующий опубликовать данные из всех других обращений поддержки в ответе к текущему обращению.
       tactic: AML.TA0001
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0065
