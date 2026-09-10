@@ -4,7 +4,7 @@
 
 | Тип объектов | Всего | Названий переведено | Описаний переведено | Процедур переведено | Полностью переведено | Требует проверки |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Кейсы | 72 | 72 | 72 | 649/659 | 63 | 0 |
+| Кейсы | 72 | 72 | 72 | 650/659 | 64 | 0 |
 | Меры защиты | 39 | 39 | 39 | - | 37 | 2 |
 | Ресурсы | 6 | 6 | 6 | - | 6 | 0 |
 | Тактики | 16 | 16 | 16 | - | 15 | 1 |
@@ -21,9 +21,8 @@
 - [`AML.T0089`](/techniques/AML.T0089/) (Техники): Enterprise Environment Discovery; название: да; описание/summary: да; требует проверки: название, описание
 - [`AML.TA0001`](/tactics/AML.TA0001/) (Тактики): AI Attack Adaptation; название: да; описание/summary: да; требует проверки: название, описание
 
-## Частичный перевод (9)
+## Частичный перевод (8)
 
-- [`AML.CS0054`](/studies/AML.CS0054/) (Кейсы): Data Exfiltration via Remote Poisoned MCP Tool; название: да; описание/summary: да; процедуры: 10/11
 - [`AML.CS0056`](/studies/AML.CS0056/) (Кейсы): Model Distillation Campaigns Targeting Anthropic Claude; название: да; описание/summary: да; процедуры: 6/7
 - [`AML.CS0059`](/studies/AML.CS0059/) (Кейсы): EchoLeak: Zero-Click Prompt Injection Targeting M365 Copilot for Data Exfiltration; название: да; описание/summary: да; процедуры: 10/12
 - [`AML.CS0060`](/studies/AML.CS0060/) (Кейсы): Cross-Site Scripting via Prompt Manipulation in Lenovo AI Chatbot; название: да; описание/summary: да; процедуры: 10/11
