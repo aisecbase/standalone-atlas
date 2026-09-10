@@ -25,8 +25,8 @@ generated_by: atlasgen
 <td data-label="Всего">72</td>
 <td data-label="Названий переведено">72</td>
 <td data-label="Описаний переведено">72</td>
-<td data-label="Процедур переведено">637/659</td>
-<td data-label="Полностью переведено">52</td>
+<td data-label="Процедур переведено">638/659</td>
+<td data-label="Полностью переведено">53</td>
 <td data-label="Требует проверки">0</td>
 </tr>
 <tr>
@@ -79,9 +79,8 @@ generated_by: atlasgen
 - [`AML.T0089`](/techniques/AML.T0089/) (Техники): Enterprise Environment Discovery; название: да; описание/summary: да; требует проверки: название, описание
 - [`AML.TA0001`](/tactics/AML.TA0001/) (Тактики): AI Attack Adaptation; название: да; описание/summary: да; требует проверки: название, описание
 
-## Частичный перевод (20)
+## Частичный перевод (19)
 
-- [`AML.CS0038`](/studies/AML.CS0038/) (Кейсы): Planting Instructions for Delayed Automatic AI Agent Tool Invocation; название: да; описание/summary: да; процедуры: 5/6
 - [`AML.CS0039`](/studies/AML.CS0039/) (Кейсы): Living Off AI: Prompt Injection via Jira Service Management; название: да; описание/summary: да; процедуры: 7/8
 - [`AML.CS0040`](/studies/AML.CS0040/) (Кейсы): Hacking ChatGPT's Memories with Prompt Injection; название: да; описание/summary: да; процедуры: 6/7
 - [`AML.CS0041`](/studies/AML.CS0041/) (Кейсы): Rules File Backdoor: Supply Chain Attack on AI Coding Assistants; название: да; описание/summary: да; процедуры: 8/9

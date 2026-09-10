@@ -5,8 +5,8 @@ totals:
         name_translated: 72
         body_translated: 72
         procedures_total: 659
-        procedures_translated: 637
-        fully_translated: 52
+        procedures_translated: 638
+        fully_translated: 53
         needs_review: 0
     mitigation:
         total: 39
@@ -34,14 +34,6 @@ totals:
         needs_review: 5
 missing: []
 partial:
-    - id: AML.CS0038
-      name: Planting Instructions for Delayed Automatic AI Agent Tool Invocation
-      type: case-study
-      has_name: true
-      has_body: true
-      source_field: summary
-      total_procedures: 6
-      translated_procedures: 5
     - id: AML.CS0039
       name: 'Living Off AI: Prompt Injection via Jira Service Management'
       type: case-study
