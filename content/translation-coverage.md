@@ -25,8 +25,8 @@ generated_by: atlasgen
 <td data-label="Всего">72</td>
 <td data-label="Названий переведено">72</td>
 <td data-label="Описаний переведено">72</td>
-<td data-label="Процедур переведено">640/659</td>
-<td data-label="Полностью переведено">55</td>
+<td data-label="Процедур переведено">641/659</td>
+<td data-label="Полностью переведено">56</td>
 <td data-label="Требует проверки">0</td>
 </tr>
 <tr>
@@ -79,9 +79,8 @@ generated_by: atlasgen
 - [`AML.T0089`](/techniques/AML.T0089/) (Техники): Enterprise Environment Discovery; название: да; описание/summary: да; требует проверки: название, описание
 - [`AML.TA0001`](/tactics/AML.TA0001/) (Тактики): AI Attack Adaptation; название: да; описание/summary: да; требует проверки: название, описание
 
-## Частичный перевод (17)
+## Частичный перевод (16)
 
-- [`AML.CS0041`](/studies/AML.CS0041/) (Кейсы): Rules File Backdoor: Supply Chain Attack on AI Coding Assistants; название: да; описание/summary: да; процедуры: 8/9
 - [`AML.CS0043`](/studies/AML.CS0043/) (Кейсы): Malware Prototype with Embedded Prompt Injection; название: да; описание/summary: да; процедуры: 7/8
 - [`AML.CS0045`](/studies/AML.CS0045/) (Кейсы): Data Exfiltration via an MCP Server used by Cursor; название: да; описание/summary: да; процедуры: 10/11
 - [`AML.CS0046`](/studies/AML.CS0046/) (Кейсы): Data Destruction via Indirect Prompt Injection Targeting Claude Computer-Use; название: да; описание/summary: да; процедуры: 6/7

@@ -5,8 +5,8 @@ totals:
         name_translated: 72
         body_translated: 72
         procedures_total: 659
-        procedures_translated: 640
-        fully_translated: 55
+        procedures_translated: 641
+        fully_translated: 56
         needs_review: 0
     mitigation:
         total: 39
@@ -34,14 +34,6 @@ totals:
         needs_review: 5
 missing: []
 partial:
-    - id: AML.CS0041
-      name: 'Rules File Backdoor: Supply Chain Attack on AI Coding Assistants'
-      type: case-study
-      has_name: true
-      has_body: true
-      source_field: summary
-      total_procedures: 9
-      translated_procedures: 8
     - id: AML.CS0043
       name: Malware Prototype with Embedded Prompt Injection
       type: case-study
