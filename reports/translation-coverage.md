@@ -4,14 +4,15 @@
 
 | Тип объектов | Всего | Названий переведено | Описаний переведено | Процедур переведено | Полностью переведено | Требует проверки |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Кейсы | 72 | 72 | 72 | 622/659 | 46 | 0 |
+| Кейсы | 72 | 72 | 72 | 627/659 | 46 | 1 |
 | Меры защиты | 39 | 39 | 39 | - | 37 | 2 |
 | Ресурсы | 6 | 6 | 6 | - | 6 | 0 |
 | Тактики | 16 | 16 | 16 | - | 15 | 1 |
 | Техники | 197 | 197 | 197 | - | 192 | 5 |
 
-## Требует проверки (8)
+## Требует проверки (9)
 
+- [`AML.CS0071`](/studies/AML.CS0071/) (Кейсы): Multi-Agent Framework Compromises Taiwanese Government Systems; название: да; описание/summary: да; процедуры: 10/12; процедуры требуют проверки: 1; требует проверки: процедуры
 - [`AML.M0022`](/mitigations/AML.M0022/) (Меры защиты): Generative AI Model Alignment; название: да; описание/summary: да; требует проверки: описание
 - [`AML.M0032`](/mitigations/AML.M0032/) (Меры защиты): Segmentation of AI Agent Components; название: да; описание/summary: да; требует проверки: описание
 - [`AML.T0016.002`](/techniques/AML.T0016.002/) (Техники): Generative AI; название: да; описание/summary: да; требует проверки: описание
@@ -48,7 +49,7 @@
 - [`AML.CS0063`](/studies/AML.CS0063/) (Кейсы): Prompt-Based Attacks Against Gemini via Calendar Invitations; название: да; описание/summary: да; процедуры: 19/20
 - [`AML.CS0066`](/studies/AML.CS0066/) (Кейсы): ZombieAgent: Data Exfiltration Attack on ChatGPT; название: да; описание/summary: да; процедуры: 11/12
 - [`AML.CS0067`](/studies/AML.CS0067/) (Кейсы): Claude Code GitHub Action Secret Exposure; название: да; описание/summary: да; процедуры: 10/11
-- [`AML.CS0071`](/studies/AML.CS0071/) (Кейсы): Multi-Agent Framework Compromises Taiwanese Government Systems; название: да; описание/summary: да; процедуры: 5/12
+- [`AML.CS0071`](/studies/AML.CS0071/) (Кейсы): Multi-Agent Framework Compromises Taiwanese Government Systems; название: да; описание/summary: да; процедуры: 10/12; процедуры требуют проверки: 1; требует проверки: процедуры
 
 ## Перевод отсутствует (0)
 

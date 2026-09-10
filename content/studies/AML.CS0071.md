@@ -40,32 +40,32 @@ procedure:
       tactic_name: Разведка
       technique: AML.T0006
       technique_name: Активное сканирование
-    - description: The framework retrieved employee names, departments, identifiers, and SSO account information from an exposed user-database API without authentication.
-      description_line: The framework retrieved employee names, departments, identifiers, and SSO account information from an exposed user-database API without authentication.
+    - description: Без аутентификации фреймворк получил через доступный извне API базы данных пользователей имена сотрудников, сведения об их подразделениях и идентификаторы, а также сведения об учётных записях SSO.
+      description_line: Без аутентификации фреймворк получил через доступный извне API базы данных пользователей имена сотрудников, сведения об их подразделениях и идентификаторы, а также сведения об учётных записях SSO.
       tactic: AML.TA0009
       tactic_name: Сбор материалов
       technique: AML.T0036
       technique_name: Данные из информационных репозиториев
-    - description: The framework used employee identifiers obtained from the exposed API to test predictable password patterns against the office automation portal. The framework successfully authenticated to the office automation portal using the compromised employee accounts.
-      description_line: The framework used employee identifiers obtained from the exposed API to test predictable password patterns against the office automation portal. The framework successfully authenticated to the office automation portal using the compromised employee accounts.
+    - description: Используя идентификаторы сотрудников, полученные через доступный извне API, фреймворк методом распыления паролей проверил предсказуемые шаблоны паролей на портале автоматизации офисной работы. Затем фреймворк успешно прошёл аутентификацию на этом портале с помощью скомпрометированных учётных записей сотрудников.
+      description_line: Используя идентификаторы сотрудников, полученные через доступный извне API, фреймворк методом распыления паролей проверил предсказуемые шаблоны паролей на портале автоматизации офисной работы. Затем фреймворк успешно прошёл аутентификацию на этом портале с помощью скомпрометированных учётных записей сотрудников.
       tactic: AML.TA0004
       tactic_name: Первичный доступ
       technique: AML.T0012
       technique_name: Действующие учетные записи
-    - description: The framework systematically tested the 85 compromised office automation accounts against another government information system through an SSO bridge that trusted the existing office automation sessions, providing access to internal dashboards, equipment management interfaces, and personnel statistics pages.
-      description_line: The framework systematically tested the 85 compromised office automation accounts against another government information system through an SSO bridge that trusted the existing office automation sessions, providing access to internal dashboards, equipment management interfaces, and personnel statistics pages.
+    - description: Через SSO-мост фреймворк систематически проверил 85 скомпрометированных учётных записей портала автоматизации офисной работы в другой государственной информационной системе. SSO-мост доверял уже существующим сеансам этого портала, благодаря чему открывался доступ к внутренним информационным панелям, интерфейсам управления оборудованием и страницам статистики персонала.
+      description_line: Через SSO-мост фреймворк систематически проверил 85 скомпрометированных учётных записей портала автоматизации офисной работы в другой государственной информационной системе. SSO-мост доверял уже существующим сеансам этого портала, благодаря чему открывался доступ к внутренним информационным панелям, интерфейсам управления оборудованием и страницам статистики персонала.
       tactic: AML.TA0015
       tactic_name: Латеральное перемещение
       technique: AML.T0012
       technique_name: Действующие учетные записи
-    - description: The framework abused three exposed debug endpoints that accepted arbitrary request bodies and returned authenticated sessions.
-      description_line: The framework abused three exposed debug endpoints that accepted arbitrary request bodies and returned authenticated sessions.
+    - description: Фреймворк использовал не по назначению три доступных извне отладочных эндпоинта, которые принимали запросы с произвольным телом и возвращали аутентифицированные сеансы.
+      description_line: Фреймворк использовал не по назначению три доступных извне отладочных эндпоинта, которые принимали запросы с произвольным телом и возвращали аутентифицированные сеансы.
       tactic: AML.TA0004
       tactic_name: Первичный доступ
       technique: AML.T0049
       technique_name: Эксплуатация приложения, доступного из интернета
-    - description: The framework found a public-facing API that accepted unsigned JWTs with `alg=none`, allowing identity tokens to be forged without the signing key.
-      description_line: The framework found a public-facing API that accepted unsigned JWTs with `alg=none`, allowing identity tokens to be forged without the signing key.
+    - description: Фреймворк обнаружил доступный из интернета API, который принимал неподписанные JWT с `alg=none`, что позволяло подделывать токены идентификации без ключа подписи.
+      description_line: Фреймворк обнаружил доступный из интернета API, который принимал неподписанные JWT с `alg=none`, что позволяло подделывать токены идентификации без ключа подписи.
       tactic: AML.TA0004
       tactic_name: Первичный доступ
       technique: AML.T0049

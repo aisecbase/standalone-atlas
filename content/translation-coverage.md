@@ -25,9 +25,9 @@ generated_by: atlasgen
 <td data-label="Всего">72</td>
 <td data-label="Названий переведено">72</td>
 <td data-label="Описаний переведено">72</td>
-<td data-label="Процедур переведено">622/659</td>
+<td data-label="Процедур переведено">627/659</td>
 <td data-label="Полностью переведено">46</td>
-<td data-label="Требует проверки">0</td>
+<td data-label="Требует проверки">1</td>
 </tr>
 <tr>
 <th scope="row" data-label="Тип объектов">Меры защиты</th>
@@ -68,8 +68,9 @@ generated_by: atlasgen
 </tbody>
 </table>
 
-## Требует проверки (8)
+## Требует проверки (9)
 
+- [`AML.CS0071`](/studies/AML.CS0071/) (Кейсы): Multi-Agent Framework Compromises Taiwanese Government Systems; название: да; описание/summary: да; процедуры: 10/12; процедуры требуют проверки: 1; требует проверки: процедуры
 - [`AML.M0022`](/mitigations/AML.M0022/) (Меры защиты): Generative AI Model Alignment; название: да; описание/summary: да; требует проверки: описание
 - [`AML.M0032`](/mitigations/AML.M0032/) (Меры защиты): Segmentation of AI Agent Components; название: да; описание/summary: да; требует проверки: описание
 - [`AML.T0016.002`](/techniques/AML.T0016.002/) (Техники): Generative AI; название: да; описание/summary: да; требует проверки: описание
@@ -106,7 +107,7 @@ generated_by: atlasgen
 - [`AML.CS0063`](/studies/AML.CS0063/) (Кейсы): Prompt-Based Attacks Against Gemini via Calendar Invitations; название: да; описание/summary: да; процедуры: 19/20
 - [`AML.CS0066`](/studies/AML.CS0066/) (Кейсы): ZombieAgent: Data Exfiltration Attack on ChatGPT; название: да; описание/summary: да; процедуры: 11/12
 - [`AML.CS0067`](/studies/AML.CS0067/) (Кейсы): Claude Code GitHub Action Secret Exposure; название: да; описание/summary: да; процедуры: 10/11
-- [`AML.CS0071`](/studies/AML.CS0071/) (Кейсы): Multi-Agent Framework Compromises Taiwanese Government Systems; название: да; описание/summary: да; процедуры: 5/12
+- [`AML.CS0071`](/studies/AML.CS0071/) (Кейсы): Multi-Agent Framework Compromises Taiwanese Government Systems; название: да; описание/summary: да; процедуры: 10/12; процедуры требуют проверки: 1; требует проверки: процедуры
 
 ## Перевод отсутствует (0)
 
