@@ -30,22 +30,11 @@ totals:
         total: 197
         name_translated: 197
         body_translated: 197
-        fully_translated: 193
-        needs_review: 4
+        fully_translated: 194
+        needs_review: 3
 missing: []
 partial: []
 review:
-    - id: AML.T0017
-      name: Develop Capabilities
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 6a435ad541af8fea8d4adee14dfbcedda157a32391b98bfda73c8622539052ef
-      translation_source_sha256: 980349b154af532e749d3191b6ab1b991da02a4d3b6100c6bbddb26b44f9b780
     - id: AML.T0072
       name: Cyber Communication Channel
       type: technique
