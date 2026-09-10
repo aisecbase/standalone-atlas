@@ -5,8 +5,8 @@ totals:
         name_translated: 72
         body_translated: 72
         procedures_total: 659
-        procedures_translated: 658
-        fully_translated: 71
+        procedures_translated: 659
+        fully_translated: 72
         needs_review: 0
     mitigation:
         total: 39
@@ -33,15 +33,7 @@ totals:
         fully_translated: 192
         needs_review: 5
 missing: []
-partial:
-    - id: AML.CS0067
-      name: Claude Code GitHub Action Secret Exposure
-      type: case-study
-      has_name: true
-      has_body: true
-      source_field: summary
-      total_procedures: 11
-      translated_procedures: 10
+partial: []
 review:
     - id: AML.M0022
       name: Generative AI Model Alignment

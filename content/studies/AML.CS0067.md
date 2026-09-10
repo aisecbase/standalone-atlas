@@ -28,8 +28,8 @@ procedure:
       tactic_name: Выявление
       technique: AML.T0084.002
       technique_name: Триггеры активации
-    - description: The researchers crafted a prompt tailored to Claude Code Action framed as a compliance task that directed Claude to read a credential from its environment and emit it.
-      description_line: The researchers crafted a prompt tailored to Claude Code Action framed as a compliance task that directed Claude to read a credential from its environment and emit it.
+    - description: Исследователи подготовили адаптированный для Claude Code Action промпт, оформленный как задача по проверке соблюдения требований и предписывавший Claude считать учётные данные из своего окружения и вывести полученное значение.
+      description_line: Исследователи подготовили адаптированный для Claude Code Action промпт, оформленный как задача по проверке соблюдения требований и предписывавший Claude считать учётные данные из своего окружения и вывести полученное значение.
       tactic: AML.TA0001
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0065

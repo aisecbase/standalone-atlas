@@ -25,8 +25,8 @@ generated_by: atlasgen
 <td data-label="Всего">72</td>
 <td data-label="Названий переведено">72</td>
 <td data-label="Описаний переведено">72</td>
-<td data-label="Процедур переведено">658/659</td>
-<td data-label="Полностью переведено">71</td>
+<td data-label="Процедур переведено">659/659</td>
+<td data-label="Полностью переведено">72</td>
 <td data-label="Требует проверки">0</td>
 </tr>
 <tr>
@@ -79,9 +79,9 @@ generated_by: atlasgen
 - [`AML.T0089`](/techniques/AML.T0089/) (Техники): Enterprise Environment Discovery; название: да; описание/summary: да; требует проверки: название, описание
 - [`AML.TA0001`](/tactics/AML.TA0001/) (Тактики): AI Attack Adaptation; название: да; описание/summary: да; требует проверки: название, описание
 
-## Частичный перевод (1)
+## Частичный перевод (0)
 
-- [`AML.CS0067`](/studies/AML.CS0067/) (Кейсы): Claude Code GitHub Action Secret Exposure; название: да; описание/summary: да; процедуры: 10/11
+Нет.
 
 ## Перевод отсутствует (0)
 
