@@ -72,7 +72,7 @@
       </colgroup>
       <thead>
         <tr>
-          <th aria-sort="none"><button class="sort-button" type="button" data-sort-key="id">ID</button></th>
+          <th aria-sort="ascending"><button class="sort-button is-active" type="button" data-sort-key="id" data-sort-direction="asc">ID</button></th>
           <th>Название</th>
           <th>Описание</th>
           {{ if eq .Section "techniques" }}<th><button class="sort-button" type="button" data-sort-key="maturity">Зрелость</button></th>{{ end }}
