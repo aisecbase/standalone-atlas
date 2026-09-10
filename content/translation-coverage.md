@@ -25,8 +25,8 @@ generated_by: atlasgen
 <td data-label="Всего">72</td>
 <td data-label="Названий переведено">72</td>
 <td data-label="Описаний переведено">72</td>
-<td data-label="Процедур переведено">651/659</td>
-<td data-label="Полностью переведено">65</td>
+<td data-label="Процедур переведено">653/659</td>
+<td data-label="Полностью переведено">66</td>
 <td data-label="Требует проверки">0</td>
 </tr>
 <tr>
@@ -79,9 +79,8 @@ generated_by: atlasgen
 - [`AML.T0089`](/techniques/AML.T0089/) (Техники): Enterprise Environment Discovery; название: да; описание/summary: да; требует проверки: название, описание
 - [`AML.TA0001`](/tactics/AML.TA0001/) (Тактики): AI Attack Adaptation; название: да; описание/summary: да; требует проверки: название, описание
 
-## Частичный перевод (7)
+## Частичный перевод (6)
 
-- [`AML.CS0059`](/studies/AML.CS0059/) (Кейсы): EchoLeak: Zero-Click Prompt Injection Targeting M365 Copilot for Data Exfiltration; название: да; описание/summary: да; процедуры: 10/12
 - [`AML.CS0060`](/studies/AML.CS0060/) (Кейсы): Cross-Site Scripting via Prompt Manipulation in Lenovo AI Chatbot; название: да; описание/summary: да; процедуры: 10/11
 - [`AML.CS0061`](/studies/AML.CS0061/) (Кейсы): AI in the Middle: Web-Based AI Services as C2 Relays; название: да; описание/summary: да; процедуры: 9/10
 - [`AML.CS0062`](/studies/AML.CS0062/) (Кейсы): RCE Vulnerability in Semantic Kernel Search Plugin; название: да; описание/summary: да; процедуры: 5/6
