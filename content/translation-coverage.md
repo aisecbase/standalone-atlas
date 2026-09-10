@@ -35,8 +35,8 @@ generated_by: atlasgen
 <td data-label="Названий переведено">39</td>
 <td data-label="Описаний переведено">39</td>
 <td data-label="Процедур переведено">-</td>
-<td data-label="Полностью переведено">38</td>
-<td data-label="Требует проверки">1</td>
+<td data-label="Полностью переведено">39</td>
+<td data-label="Требует проверки">0</td>
 </tr>
 <tr>
 <th scope="row" data-label="Тип объектов">Ресурсы</th>
@@ -68,9 +68,8 @@ generated_by: atlasgen
 </tbody>
 </table>
 
-## Требует проверки (7)
+## Требует проверки (6)
 
-- [`AML.M0032`](/mitigations/AML.M0032/) (Меры защиты): Segmentation of AI Agent Components; название: да; описание/summary: да; требует проверки: описание
 - [`AML.T0016.002`](/techniques/AML.T0016.002/) (Техники): Generative AI; название: да; описание/summary: да; требует проверки: описание
 - [`AML.T0017`](/techniques/AML.T0017/) (Техники): Develop Capabilities; название: да; описание/summary: да; требует проверки: описание
 - [`AML.T0072`](/techniques/AML.T0072/) (Техники): Cyber Communication Channel; название: да; описание/summary: да; требует проверки: название, описание

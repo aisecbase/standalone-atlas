@@ -12,8 +12,8 @@ totals:
         total: 39
         name_translated: 39
         body_translated: 39
-        fully_translated: 38
-        needs_review: 1
+        fully_translated: 39
+        needs_review: 0
     resource:
         total: 6
         name_translated: 6
@@ -35,17 +35,6 @@ totals:
 missing: []
 partial: []
 review:
-    - id: AML.M0032
-      name: Segmentation of AI Agent Components
-      type: mitigation
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: ee05a52265f1c44e1fd80e01bba21c529a81497db31bd6ec7df2db6b8908aed9
-      translation_source_sha256: 02556099e37f7050ee2245a8e3dffc0ac9888270ffc3b746464b419ba2b0a19e
     - id: AML.T0016.002
       name: Generative AI
       type: technique
