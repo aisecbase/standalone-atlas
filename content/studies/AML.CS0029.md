@@ -10,8 +10,8 @@ incident_date: "2023-11-23"
 incident_date_granularity: Day
 incident_date_raw: "2023-11-23"
 procedure:
-    - description: The researcher developed a prompt that causes Bard to include a Markdown element for an image with the user's conversation embedded in the URL as part of its responses.
-      description_line: The researcher developed a prompt that causes Bard to include a Markdown element for an image with the user's conversation embedded in the URL as part of its responses.
+    - description: Исследователь разработал промпт, из-за которого Bard включает в ответ Markdown-элемент изображения с разговором пользователя, встроенным в URL.
+      description_line: Исследователь разработал промпт, из-за которого Bard включает в ответ Markdown-элемент изображения с разговором пользователя, встроенным в URL.
       tactic: AML.TA0001
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0065
