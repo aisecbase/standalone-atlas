@@ -5,8 +5,8 @@ totals:
         name_translated: 72
         body_translated: 72
         procedures_total: 659
-        procedures_translated: 648
-        fully_translated: 62
+        procedures_translated: 649
+        fully_translated: 63
         needs_review: 0
     mitigation:
         total: 39
@@ -34,14 +34,6 @@ totals:
         needs_review: 5
 missing: []
 partial:
-    - id: AML.CS0052
-      name: 'LLMSmith: RCE Vulnerabilities in LLM-Integrated Applications'
-      type: case-study
-      has_name: true
-      has_body: true
-      source_field: summary
-      total_procedures: 12
-      translated_procedures: 11
     - id: AML.CS0054
       name: Data Exfiltration via Remote Poisoned MCP Tool
       type: case-study

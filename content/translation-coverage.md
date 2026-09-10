@@ -25,8 +25,8 @@ generated_by: atlasgen
 <td data-label="Всего">72</td>
 <td data-label="Названий переведено">72</td>
 <td data-label="Описаний переведено">72</td>
-<td data-label="Процедур переведено">648/659</td>
-<td data-label="Полностью переведено">62</td>
+<td data-label="Процедур переведено">649/659</td>
+<td data-label="Полностью переведено">63</td>
 <td data-label="Требует проверки">0</td>
 </tr>
 <tr>
@@ -79,9 +79,8 @@ generated_by: atlasgen
 - [`AML.T0089`](/techniques/AML.T0089/) (Техники): Enterprise Environment Discovery; название: да; описание/summary: да; требует проверки: название, описание
 - [`AML.TA0001`](/tactics/AML.TA0001/) (Тактики): AI Attack Adaptation; название: да; описание/summary: да; требует проверки: название, описание
 
-## Частичный перевод (10)
+## Частичный перевод (9)
 
-- [`AML.CS0052`](/studies/AML.CS0052/) (Кейсы): LLMSmith: RCE Vulnerabilities in LLM-Integrated Applications; название: да; описание/summary: да; процедуры: 11/12
 - [`AML.CS0054`](/studies/AML.CS0054/) (Кейсы): Data Exfiltration via Remote Poisoned MCP Tool; название: да; описание/summary: да; процедуры: 10/11
 - [`AML.CS0056`](/studies/AML.CS0056/) (Кейсы): Model Distillation Campaigns Targeting Anthropic Claude; название: да; описание/summary: да; процедуры: 6/7
 - [`AML.CS0059`](/studies/AML.CS0059/) (Кейсы): EchoLeak: Zero-Click Prompt Injection Targeting M365 Copilot for Data Exfiltration; название: да; описание/summary: да; процедуры: 10/12

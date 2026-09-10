@@ -28,8 +28,8 @@ procedure:
       tactic_name: Выявление
       technique: AML.T0084.003
       technique_name: Цепочки вызовов
-    - description: The researchers developed prompts to trigger tool invocations that lead to RCE.
-      description_line: The researchers developed prompts to trigger tool invocations that lead to RCE.
+    - description: Исследователи разработали промпты, которые вызывают инструменты и приводят к RCE.
+      description_line: Исследователи разработали промпты, которые вызывают инструменты и приводят к RCE.
       tactic: AML.TA0001
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0065
