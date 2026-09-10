@@ -4590,7 +4590,7 @@ objects:
           description_sha256: "23b7b27a2e3f1dd40355cdb09238e395b1aced784dcb01495132ed8560c3d7eb"
         description: |-
           Исследователи развернули сервер для получения чувствительной информации, эксфильтрированной из уязвимого LLM-сервиса.
-      - tactic: AML.TA0003
+      - tactic: AML.TA0001
         technique: AML.T0065
         source:
           description_sha256: "54cd410e260c4464ebf978b3bb04e48c9799727d40cff860d6e443809c13f68a"

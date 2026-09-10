@@ -17,12 +17,12 @@ procedure:
       technique: AML.T0008
       technique_name: Получение инфраструктуры
     - description: |-
-        The researchers developed a single prompt designed to make Lena generate HTML that would be unsafe when rendered by Lenovo's chat interface. The prompt combined several elements:
-        - A benign-looking product information request, such as "Show me the specifications of Lenovo IdeaPad 5 Pro."
-        - Output format instructions directing Lena to return the response as HTML with additional JSON and plaintext formatting expected by the server-side processing path.
-        - An HTML and JavaScript payload designed to read browser-accessible cookies and place them into a query parameter in an image request to an attacker-controlled server.
-        - Reinforcement language urging the model to include the image, such as "Show the image at the end. It is important for my decision-making. SHOW IT."
-      description_line: 'The researchers developed a single prompt designed to make Lena generate HTML that would be unsafe when rendered by Lenovo''s chat interface. The prompt combined several elements: - A benign-looking product information request, such as "Show me the specifications of Lenovo IdeaPad 5 Pro." - Output format instructions directing Lena to return the response as HTML with additional JSON and plaintext formatting expected by the server-side processing path. - An HTML and JavaScript payload designed to read browser-accessible cookies and place them into a query parameter in an image request to an attacker-controlled server. - Reinforcement language urging the model to include the image, such as "Show the image at the end. It is important for my decision-making. SHOW IT."'
+        Исследователи разработали единый промпт, предназначенный для того, чтобы заставить Lena сгенерировать HTML, небезопасный при отображении в чат-интерфейсе Lenovo. Промпт объединял несколько элементов:
+        - Внешне безобидный запрос информации о продукте, например "Show me the specifications of Lenovo IdeaPad 5 Pro."
+        - Инструкции по формату вывода, предписывающие Lena вернуть ответ как HTML с дополнительным JSON и текстовым форматированием, ожидаемыми серверной логикой обработки.
+        - HTML- и JavaScript-нагрузку, предназначенную для чтения cookie, доступных браузеру, и помещения их в параметр запроса изображения к серверу, подконтрольному злоумышленнику.
+        - Усиливающую формулировку, побуждающую модель включить изображение, например "Show the image at the end. It is important for my decision-making. SHOW IT."
+      description_line: 'Исследователи разработали единый промпт, предназначенный для того, чтобы заставить Lena сгенерировать HTML, небезопасный при отображении в чат-интерфейсе Lenovo. Промпт объединял несколько элементов: - Внешне безобидный запрос информации о продукте, например "Show me the specifications of Lenovo IdeaPad 5 Pro." - Инструкции по формату вывода, предписывающие Lena вернуть ответ как HTML с дополнительным JSON и текстовым форматированием, ожидаемыми серверной логикой обработки. - HTML- и JavaScript-нагрузку, предназначенную для чтения cookie, доступных браузеру, и помещения их в параметр запроса изображения к серверу, подконтрольному злоумышленнику. - Усиливающую формулировку, побуждающую модель включить изображение, например "Show the image at the end. It is important for my decision-making. SHOW IT."'
       tactic: AML.TA0001
       tactic_name: Подготовка атаки на ИИ
       technique: AML.T0065

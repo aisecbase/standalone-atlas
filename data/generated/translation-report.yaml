@@ -5,8 +5,8 @@ totals:
         name_translated: 72
         body_translated: 72
         procedures_total: 659
-        procedures_translated: 653
-        fully_translated: 66
+        procedures_translated: 654
+        fully_translated: 67
         needs_review: 0
     mitigation:
         total: 39
@@ -34,14 +34,6 @@ totals:
         needs_review: 5
 missing: []
 partial:
-    - id: AML.CS0060
-      name: Cross-Site Scripting via Prompt Manipulation in Lenovo AI Chatbot
-      type: case-study
-      has_name: true
-      has_body: true
-      source_field: summary
-      total_procedures: 11
-      translated_procedures: 10
     - id: AML.CS0061
       name: 'AI in the Middle: Web-Based AI Services as C2 Relays'
       type: case-study

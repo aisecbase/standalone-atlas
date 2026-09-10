@@ -4,7 +4,7 @@
 
 | Тип объектов | Всего | Названий переведено | Описаний переведено | Процедур переведено | Полностью переведено | Требует проверки |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Кейсы | 72 | 72 | 72 | 653/659 | 66 | 0 |
+| Кейсы | 72 | 72 | 72 | 654/659 | 67 | 0 |
 | Меры защиты | 39 | 39 | 39 | - | 37 | 2 |
 | Ресурсы | 6 | 6 | 6 | - | 6 | 0 |
 | Тактики | 16 | 16 | 16 | - | 15 | 1 |
@@ -21,9 +21,8 @@
 - [`AML.T0089`](/techniques/AML.T0089/) (Техники): Enterprise Environment Discovery; название: да; описание/summary: да; требует проверки: название, описание
 - [`AML.TA0001`](/tactics/AML.TA0001/) (Тактики): AI Attack Adaptation; название: да; описание/summary: да; требует проверки: название, описание
 
-## Частичный перевод (6)
+## Частичный перевод (5)
 
-- [`AML.CS0060`](/studies/AML.CS0060/) (Кейсы): Cross-Site Scripting via Prompt Manipulation in Lenovo AI Chatbot; название: да; описание/summary: да; процедуры: 10/11
 - [`AML.CS0061`](/studies/AML.CS0061/) (Кейсы): AI in the Middle: Web-Based AI Services as C2 Relays; название: да; описание/summary: да; процедуры: 9/10
 - [`AML.CS0062`](/studies/AML.CS0062/) (Кейсы): RCE Vulnerability in Semantic Kernel Search Plugin; название: да; описание/summary: да; процедуры: 5/6
 - [`AML.CS0063`](/studies/AML.CS0063/) (Кейсы): Prompt-Based Attacks Against Gemini via Calendar Invitations; название: да; описание/summary: да; процедуры: 19/20
