@@ -70,14 +70,14 @@ procedure:
       tactic_name: Первичный доступ
       technique: AML.T0049
       technique_name: Эксплуатация приложения, доступного из интернета
-    - description: Using the acquired accesses, the framework automatically retrieved and aggregated the reported personnel, account, configuration, credential, and network information.
-      description_line: Using the acquired accesses, the framework automatically retrieved and aggregated the reported personnel, account, configuration, credential, and network information.
+    - description: Используя полученный доступ, фреймворк автоматически извлёк и агрегировал указанные в отчёте сведения о сотрудниках, учётных записях, конфигурации, учётных данных и сети.
+      description_line: Используя полученный доступ, фреймворк автоматически извлёк и агрегировал указанные в отчёте сведения о сотрудниках, учётных записях, конфигурации, учётных данных и сети.
       tactic: AML.TA0009
       tactic_name: Сбор материалов
       technique: AML.T0126
       technique_name: Автоматизированный сбор материалов
-    - description: Over 2,564 personnel records, a complete user database, and internal architecture details were exfiltrated.
-      description_line: Over 2,564 personnel records, a complete user database, and internal architecture details were exfiltrated.
+    - description: Фреймворк эксфильтрировал более 2 564 записей о сотрудниках, полную базу данных пользователей и сведения о внутренней архитектуре.
+      description_line: Фреймворк эксфильтрировал более 2 564 записей о сотрудниках, полную базу данных пользователей и сведения о внутренней архитектуре.
       tactic: AML.TA0010
       tactic_name: Эксфильтрация
       technique: AML.T0025

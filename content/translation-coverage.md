@@ -25,9 +25,9 @@ generated_by: atlasgen
 <td data-label="Всего">72</td>
 <td data-label="Названий переведено">72</td>
 <td data-label="Описаний переведено">72</td>
-<td data-label="Процедур переведено">627/659</td>
-<td data-label="Полностью переведено">46</td>
-<td data-label="Требует проверки">1</td>
+<td data-label="Процедур переведено">629/659</td>
+<td data-label="Полностью переведено">47</td>
+<td data-label="Требует проверки">0</td>
 </tr>
 <tr>
 <th scope="row" data-label="Тип объектов">Меры защиты</th>
@@ -68,9 +68,8 @@ generated_by: atlasgen
 </tbody>
 </table>
 
-## Требует проверки (9)
+## Требует проверки (8)
 
-- [`AML.CS0071`](/studies/AML.CS0071/) (Кейсы): Multi-Agent Framework Compromises Taiwanese Government Systems; название: да; описание/summary: да; процедуры: 10/12; процедуры требуют проверки: 1; требует проверки: процедуры
 - [`AML.M0022`](/mitigations/AML.M0022/) (Меры защиты): Generative AI Model Alignment; название: да; описание/summary: да; требует проверки: описание
 - [`AML.M0032`](/mitigations/AML.M0032/) (Меры защиты): Segmentation of AI Agent Components; название: да; описание/summary: да; требует проверки: описание
 - [`AML.T0016.002`](/techniques/AML.T0016.002/) (Техники): Generative AI; название: да; описание/summary: да; требует проверки: описание
@@ -80,7 +79,7 @@ generated_by: atlasgen
 - [`AML.T0089`](/techniques/AML.T0089/) (Техники): Enterprise Environment Discovery; название: да; описание/summary: да; требует проверки: название, описание
 - [`AML.TA0001`](/tactics/AML.TA0001/) (Тактики): AI Attack Adaptation; название: да; описание/summary: да; требует проверки: название, описание
 
-## Частичный перевод (26)
+## Частичный перевод (25)
 
 - [`AML.CS0021`](/studies/AML.CS0021/) (Кейсы): ChatGPT Conversation Exfiltration; название: да; описание/summary: да; процедуры: 6/7
 - [`AML.CS0026`](/studies/AML.CS0026/) (Кейсы): Financial Transaction Hijacking with M365 Copilot as an Insider; название: да; описание/summary: да; процедуры: 12/14
@@ -107,7 +106,6 @@ generated_by: atlasgen
 - [`AML.CS0063`](/studies/AML.CS0063/) (Кейсы): Prompt-Based Attacks Against Gemini via Calendar Invitations; название: да; описание/summary: да; процедуры: 19/20
 - [`AML.CS0066`](/studies/AML.CS0066/) (Кейсы): ZombieAgent: Data Exfiltration Attack on ChatGPT; название: да; описание/summary: да; процедуры: 11/12
 - [`AML.CS0067`](/studies/AML.CS0067/) (Кейсы): Claude Code GitHub Action Secret Exposure; название: да; описание/summary: да; процедуры: 10/11
-- [`AML.CS0071`](/studies/AML.CS0071/) (Кейсы): Multi-Agent Framework Compromises Taiwanese Government Systems; название: да; описание/summary: да; процедуры: 10/12; процедуры требуют проверки: 1; требует проверки: процедуры
 
 ## Перевод отсутствует (0)
 
