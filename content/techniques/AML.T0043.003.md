@@ -28,7 +28,7 @@ url: /techniques/AML.T0043.003/
 ## Тактики
 
 <div class="relation-list">
-<a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Подготовка атаки на ИИ</strong></a>
+<a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Адаптация атак, связанных с ИИ</strong></a>
 </div>
 
 
@@ -63,7 +63,7 @@ url: /techniques/AML.T0043.003/
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0000/"><span class="relation-id">AML.CS0000</span><strong>Обход детектора C&amp;C-трафика вредоносного ПО на основе глубокого обучения</strong><span class="relation-meta">Актор: Palo Alto Networks AI Research Team / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Мы создали образцы для обхода, удалив из заголовка пакета поля, которые обычно не используются для C&amp;C-коммуникации, например `cache-control`, `connection` и т. д.</p></a>
-<a class="relation-item" href="/studies/AML.CS0003/"><span class="relation-id">AML.CS0003</span><strong>Обход ИИ-детектора вредоносного ПО Cylance</strong><span class="relation-meta">Актор: Skylight Cyber / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Используя эти знания, исследователи объединили атрибуты заведомо легитимных файлов с вредоносным ПО, чтобы вручную создать состязательные образцы вредоносного ПО.</p></a>
-<a class="relation-item" href="/studies/AML.CS0032/"><span class="relation-id">AML.CS0032</span><strong>Попытка обхода ML-системы обнаружения фишинговых веб-страниц</strong><span class="relation-meta">Актор: Unknown / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Наблюдалось несколько простых, но эффективных стратегий ручного изменения логотипов: Стиль названия компании - 25; Размытый логотип - 23; Обрезка - 20; Без названия компании - 16; Без визуального логотипа - 13; Другой визуальный логотип - 12; Растягивание логотипа - 11; Несколько форм — изображения - 10; Фоновые узоры - 8; Обфускация страницы входа - 6; Маскирование - 3</p></a>
+<a class="relation-item" href="/studies/AML.CS0000/"><span class="relation-id">AML.CS0000</span><strong>Обход детектора C&amp;C-трафика вредоносного ПО на основе глубокого обучения</strong><span class="relation-meta">Актор: Palo Alto Networks AI Research Team / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>Мы создали образцы для обхода, удалив из заголовка пакета поля, которые обычно не используются для C&amp;C-коммуникации, например `cache-control`, `connection` и т. д.</p></a>
+<a class="relation-item" href="/studies/AML.CS0003/"><span class="relation-id">AML.CS0003</span><strong>Обход ИИ-детектора вредоносного ПО Cylance</strong><span class="relation-meta">Актор: Skylight Cyber / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>Используя эти знания, исследователи объединили атрибуты заведомо легитимных файлов с вредоносным ПО, чтобы вручную создать состязательные образцы вредоносного ПО.</p></a>
+<a class="relation-item" href="/studies/AML.CS0032/"><span class="relation-id">AML.CS0032</span><strong>Попытка обхода ML-системы обнаружения фишинговых веб-страниц</strong><span class="relation-meta">Актор: Unknown / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>Наблюдалось несколько простых, но эффективных стратегий ручного изменения логотипов: Стиль названия компании - 25; Размытый логотип - 23; Обрезка - 20; Без названия компании - 16; Без визуального логотипа - 13; Другой визуальный логотип - 12; Растягивание логотипа - 11; Несколько форм — изображения - 10; Фоновые узоры - 8; Обфускация страницы входа - 6; Маскирование - 3</p></a>
 </div>

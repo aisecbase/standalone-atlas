@@ -7,12 +7,12 @@ created_date: "2025-10-28"
 description: Злоумышленники могут использовать украденные токены доступа к приложениям, чтобы обходить штатный процесс аутентификации и получать доступ к ограниченным учетным записям, информации или сервисам на удаленных системах....
 generated: true
 generated_by: atlasgen
-maturity: demonstrated
+maturity: realized
 mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:
     - Enterprise
-procedure_count: 1
+procedure_count: 3
 source_name: Application Access Token
 subtechnique_count: 0
 subtechnique_of: AML.T0091
@@ -59,4 +59,6 @@ url: /techniques/AML.T0091.000/
 
 <div class="relation-list procedure-relations">
 <a class="relation-item" href="/studies/AML.CS0036/"><span class="relation-id">AML.CS0036</span><strong>AIKatz: атака на десктопные LLM-приложения</strong><span class="relation-meta">Актор: Lumia Security / Тактика: AML.TA0015 Латеральное перемещение</span><p>Злоумышленник использовал извлеченный токен, чтобы аутентифицироваться в backend-сервисе LLM.</p></a>
+<a class="relation-item" href="/studies/AML.CS0068/"><span class="relation-id">AML.CS0068</span><strong>Автономные агенты OpenAI, задействованные в оценочных испытаниях, скомпрометировали инфраструктуру Hugging Face</strong><span class="relation-meta">Актор: Autonomous OpenAI Agents / Тактика: AML.TA0015 Латеральное перемещение</span><p>Используя сервисную учётную запись Kubernetes, назначенную поду Dataset Server, агенты обратились к API кластера. Они преобразовали временные облачные учётные данные узла, на котором работал под, в токен для аутентификации в Kubernetes, прошли аутентификацию от имени узла и получили токены сервисных учётных записей драйвера хранилища кластера с более широкими полномочиями.</p></a>
+<a class="relation-item" href="/studies/AML.CS0068/"><span class="relation-id">AML.CS0068</span><strong>Автономные агенты OpenAI, задействованные в оценочных испытаниях, скомпрометировали инфраструктуру Hugging Face</strong><span class="relation-meta">Актор: Autonomous OpenAI Agents / Тактика: AML.TA0015 Латеральное перемещение</span><p>Агенты использовали похищенные материалы для подписания, чтобы создать действительные токены идентификации с коротким сроком действия. Получив через корпоративную mesh-сеть доступ к системе управления исходным кодом, они воспользовались внутренней интеграцией GitHub App, чтобы создать токены доступа, позволявшие аутентифицироваться от имени установки GitHub App и обращаться к ограниченному набору приватных репозиториев.</p></a>
 </div>

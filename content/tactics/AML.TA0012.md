@@ -8,7 +8,7 @@ description: Злоумышленник пытается получить бол
 generated: true
 generated_by: atlasgen
 modified_date: "2023-10-25"
-procedure_count: 19
+procedure_count: 20
 source_name: Privilege Escalation
 technique_count: 4
 title: Повышение привилегий
@@ -55,4 +55,4 @@ url: /tactics/AML.TA0012/
 </div>
 
 
-Показано 12 из 19 примеров.
+Показано 12 из 20 примеров.

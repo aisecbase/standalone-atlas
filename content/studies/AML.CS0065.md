@@ -31,7 +31,7 @@ procedure:
     - description: Специалисты Unit 42 подготовили подконтрольные злоумышленнику артефакты моделей с полезной нагрузкой, запускавшей реверс-шелл при развёртывании или загрузке артефакта.
       description_line: Специалисты Unit 42 подготовили подконтрольные злоумышленнику артефакты моделей с полезной нагрузкой, запускавшей реверс-шелл при развёртывании или загрузке артефакта.
       tactic: AML.TA0001
-      tactic_name: Подготовка атаки на ИИ
+      tactic_name: Адаптация атак, связанных с ИИ
       technique: AML.T0018.002
       technique_name: Встраивание вредоносного ПО
     - description: Специалисты Unit 42 загрузили вредоносную модель в повторно зарегистрированное пространство имён, используя исходный идентификатор Author/ModelName.
@@ -57,7 +57,7 @@ procedure:
       tactic: AML.TA0014
       tactic_name: Командование и управление
       technique: AML.T0072
-      technique_name: Реверс-шелл
+      technique_name: Канал связи в киберпространстве
 procedure_count: 8
 references:
     - title: 'Model Namespace Reuse: An AI Supply-Chain Attack Exploiting Model Name Trust'

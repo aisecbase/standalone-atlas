@@ -31,7 +31,7 @@ url: /techniques/AML.T0005.000/
 ## Тактики
 
 <div class="relation-list">
-<a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Подготовка атаки на ИИ</strong></a>
+<a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Адаптация атак, связанных с ИИ</strong></a>
 </div>
 
 
@@ -61,5 +61,5 @@ url: /techniques/AML.T0005.000/
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0007/"><span class="relation-id">AML.CS0007</span><strong>Репликация модели GPT-2</strong><span class="relation-meta">Актор: Researchers at Brown University / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Исследователи изменили функцию потерь Grover так, чтобы она соответствовала функции потерь GPT-2, а затем обучили модель на подготовленном ими наборе данных, используя исходные гиперпараметры Grover. Полученная модель воспроизводила поведение GPT-2 и показывала сопоставимое качество на большинстве наборов данных. Злоумышленник, повторивший действия исследователей, мог бы затем использовать такую копию GPT-2 во вредоносных целях.</p></a>
+<a class="relation-item" href="/studies/AML.CS0007/"><span class="relation-id">AML.CS0007</span><strong>Репликация модели GPT-2</strong><span class="relation-meta">Актор: Researchers at Brown University / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>Исследователи изменили функцию потерь Grover так, чтобы она соответствовала функции потерь GPT-2, а затем обучили модель на подготовленном ими наборе данных, используя исходные гиперпараметры Grover. Полученная модель воспроизводила поведение GPT-2 и показывала сопоставимое качество на большинстве наборов данных. Злоумышленник, повторивший действия исследователей, мог бы затем использовать такую копию GPT-2 во вредоносных целях.</p></a>
 </div>

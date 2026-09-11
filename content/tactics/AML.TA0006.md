@@ -8,9 +8,9 @@ description: Злоумышленник пытается сохранить за
 generated: true
 generated_by: atlasgen
 modified_date: "2025-04-09"
-procedure_count: 22
+procedure_count: 24
 source_name: Persistence
-technique_count: 27
+technique_count: 29
 title: Закрепление
 url: /tactics/AML.TA0006/
 ---
@@ -50,6 +50,8 @@ url: /tactics/AML.TA0006/
 <a class="relation-item" href="/techniques/AML.T0110.001/"><span class="relation-id">AML.T0110.001</span><strong>Реализация</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0110.002/"><span class="relation-id">AML.T0110.002</span><strong>Ответ во время выполнения</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0110.002/"><span class="relation-id">AML.T0110.002</span><strong>Ответ во время выполнения</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0121/"><span class="relation-id">AML.T0121</span><strong>Восстановление среды ИИ-агента</strong></a>
+<a class="relation-item" href="/techniques/AML.T0125/"><span class="relation-id">AML.T0125</span><strong>Создание учётной записи</strong></a>
 </div>
 
 
@@ -71,4 +73,4 @@ url: /tactics/AML.TA0006/
 </div>
 
 
-Показано 12 из 22 примеров.
+Показано 12 из 24 примеров.

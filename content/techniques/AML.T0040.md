@@ -14,7 +14,7 @@ platforms:
     - Predictive AI
     - Generative AI
     - Agentic AI
-procedure_count: 8
+procedure_count: 10
 source_name: AI Model Inference API Access
 subtechnique_count: 0
 subtechnique_of: ""
@@ -55,4 +55,6 @@ url: /techniques/AML.T0040/
 <a class="relation-item" href="/studies/AML.CS0024/"><span class="relation-id">AML.CS0024</span><strong>Червь Morris II: атака на основе RAG</strong><span class="relation-meta">Актор: Stav Cohen, Ron Bitton, Ben Nassi / Тактика: AML.TA0000 Доступ к ИИ-модели</span><p>Исследователи используют доступ к публичному API GenAI-модели, на которой работает целевая почтовая система с RAG.</p></a>
 <a class="relation-item" href="/studies/AML.CS0056/"><span class="relation-id">AML.CS0056</span><strong>Кампании по дистилляции моделей, нацеленные на Anthropic Claude</strong><span class="relation-meta">Актор: DeepSeek, Moonshot AI, MiniMax / Тактика: AML.TA0000 Доступ к ИИ-модели</span><p>ИИ-лаборатории обращались к API инференса Claude через примерно 24 000 поддельных учетных записей в совокупности.</p></a>
 <a class="relation-item" href="/studies/AML.CS0057/"><span class="relation-id">AML.CS0057</span><strong>Storm-2139: обход гардрейлов Azure OpenAI</strong><span class="relation-meta">Актор: Storm-2139 / Тактика: AML.TA0000 Доступ к ИИ-модели</span><p>Похищенные учетные данные давали доступ к Azure OpenAI Service, позволяя злоумышленникам и их клиентам отправлять промпты и генерировать контент. Инструмент Storm-2139 de3u использовался как фронтенд для этого доступа.</p></a>
+<a class="relation-item" href="/studies/AML.CS0069/"><span class="relation-id">AML.CS0069</span><strong>Кибершпионская кампания GTG-1002 с использованием Claude Code</strong><span class="relation-meta">Актор: GTG-1002 / Тактика: AML.TA0000 Доступ к ИИ-модели</span><p>GTG-1002 получила доступ к Claude Code и задействовала его в своём фреймворке для тестирования на проникновение.</p></a>
+<a class="relation-item" href="/studies/AML.CS0070/"><span class="relation-id">AML.CS0070</span><strong>Злоумышленник использовал Hermes Agent на базе DeepSeek при попытках эксплуатации Langflow и n8n</strong><span class="relation-meta">Актор: Chinese-speaking threat actor using the aliases knaithe and KnYuan / Тактика: AML.TA0000 Доступ к ИИ-модели</span><p>Hermes обращался к DeepSeek через собственный API этой модели и использовал её для оценки уязвимостей, выбора целей, генерации команд и принятия решений по проведению операции.</p></a>
 </div>

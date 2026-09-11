@@ -8,9 +8,9 @@ description: Злоумышленник пытается взаимодейст�
 generated: true
 generated_by: atlasgen
 modified_date: "2024-04-11"
-procedure_count: 7
+procedure_count: 9
 source_name: Command and Control
-technique_count: 4
+technique_count: 5
 title: Командование и управление
 url: /tactics/AML.TA0014/
 ---
@@ -25,10 +25,11 @@ url: /tactics/AML.TA0014/
 ## Техники
 
 <div class="relation-list">
-<a class="relation-item" href="/techniques/AML.T0072/"><span class="relation-id">AML.T0072</span><strong>Реверс-шелл</strong></a>
+<a class="relation-item" href="/techniques/AML.T0072/"><span class="relation-id">AML.T0072</span><strong>Канал связи в киберпространстве</strong></a>
 <a class="relation-item" href="/techniques/AML.T0096/"><span class="relation-id">AML.T0096</span><strong>API ИИ-сервиса</strong></a>
 <a class="relation-item" href="/techniques/AML.T0108/"><span class="relation-id">AML.T0108</span><strong>ИИ-агент</strong></a>
 <a class="relation-item" href="/techniques/AML.T0114/"><span class="relation-id">AML.T0114</span><strong>Веб-интерфейс ИИ-сервиса</strong></a>
+<a class="relation-item" href="/techniques/AML.T0120/"><span class="relation-id">AML.T0120</span><strong>Репозиторий ИИ-артефактов</strong></a>
 </div>
 
 
@@ -42,4 +43,6 @@ url: /tactics/AML.TA0014/
 <a class="relation-item" href="/studies/AML.CS0052/"><span class="relation-id">AML.CS0052</span><strong>LLMSmith: уязвимости RCE в приложениях с интеграцией LLM</strong><span class="relation-meta">Актор: Researchers at University of Chinese Academy of Sciences, Shandong University, and University of New South Wales / Тактика: AML.TA0014 Командование и управление</span><p>Python-код открывал reverse shell, который использовался как канал командования и управления.</p></a>
 <a class="relation-item" href="/studies/AML.CS0061/"><span class="relation-id">AML.CS0061</span><strong>AI in the Middle: веб-сервисы ИИ как ретрансляторы C2</strong><span class="relation-meta">Актор: Check Point Research / Тактика: AML.TA0014 Командование и управление</span><p>Имплант инициировал анонимную веб-сессию с публичным ИИ-сервисом и отправлял подготовленный промпт. Так формировался канал командования и управления, в котором данные эксфильтрировались через запросы к домену, подконтрольному злоумышленнику, а команды передавались обратно через ответ.</p></a>
 <a class="relation-item" href="/studies/AML.CS0065/"><span class="relation-id">AML.CS0065</span><strong>Атака на цепочку поставок через повторное использование пространства имён модели</strong><span class="relation-meta">Актор: Unit 42 Researchers / Тактика: AML.TA0014 Командование и управление</span><p>Полезная нагрузка запустила на развёрнутом эндпоинте реверс-шелл, который установил соединение с подконтрольной исследователям инфраструктурой.</p></a>
+<a class="relation-item" href="/studies/AML.CS0068/"><span class="relation-id">AML.CS0068</span><strong>Автономные агенты OpenAI, задействованные в оценочных испытаниях, скомпрометировали инфраструктуру Hugging Face</strong><span class="relation-meta">Актор: Autonomous OpenAI Agents / Тактика: AML.TA0014 Командование и управление</span><p>Агенты превратили скомпрометированную песочницу во внешний плацдарм для управления, промежуточного размещения материалов, выхода во внешнюю сеть и обратного считывания данных. Они передавали друг другу загрузчики, скрипты, команды, состояние операции и результаты через paste-сайты, файлообменники, репозитории и другие общедоступные веб-сервисы.</p></a>
+<a class="relation-item" href="/studies/AML.CS0068/"><span class="relation-id">AML.CS0068</span><strong>Автономные агенты OpenAI, задействованные в оценочных испытаниях, скомпрометировали инфраструктуру Hugging Face</strong><span class="relation-meta">Актор: Autonomous OpenAI Agents / Тактика: AML.TA0014 Командование и управление</span><p>Агенты использовали подконтрольные им репозитории в качестве асинхронных каналов командования и управления. Скомпрометированные воркеры извлекали заранее размещённые команды или полезные нагрузки, а результаты записывали в объекты наборов данных, откуда их затем получали через API Hugging Face или Git.</p></a>
 </div>

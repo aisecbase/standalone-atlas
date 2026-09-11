@@ -13,7 +13,11 @@ const subtechToggleLabel = document.querySelector("[data-subtech-toggle-label]")
 const matrixHeadingCounts = [...document.querySelectorAll("[data-matrix-heading-count]")];
 const themeToggle = document.querySelector("[data-theme-toggle]");
 const themeToggleLabel = document.querySelector("[data-theme-toggle-label]");
-const sortState = { key: "", direction: "asc" };
+const initialSortButton = sortButtons.find((button) => button.classList.contains("is-active"));
+const sortState = {
+  key: initialSortButton?.dataset.sortKey || "",
+  direction: initialSortButton?.dataset.sortDirection || "asc",
+};
 
 function setTheme(theme) {
   const nextTheme = theme === "dark" ? "dark" : "light";

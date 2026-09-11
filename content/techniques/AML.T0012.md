@@ -12,13 +12,14 @@ mitigation_count: 2
 modified_date: "2026-05-27"
 platforms:
     - Enterprise
-procedure_count: 9
+procedure_count: 14
 source_name: Valid Accounts
 subtechnique_count: 0
 subtechnique_of: ""
 tactics:
     - AML.TA0004
     - AML.TA0012
+    - AML.TA0015
 title: Действующие учетные записи
 url: /techniques/AML.T0012/
 ---
@@ -37,6 +38,7 @@ url: /techniques/AML.T0012/
 <div class="relation-list">
 <a class="relation-item" href="/tactics/AML.TA0004/"><span class="relation-id">AML.TA0004</span><strong>Первичный доступ</strong></a>
 <a class="relation-item" href="/tactics/AML.TA0012/"><span class="relation-id">AML.TA0012</span><strong>Повышение привилегий</strong></a>
+<a class="relation-item" href="/tactics/AML.TA0015/"><span class="relation-id">AML.TA0015</span><strong>Латеральное перемещение</strong></a>
 </div>
 
 
@@ -60,4 +62,9 @@ url: /techniques/AML.T0012/
 <a class="relation-item" href="/studies/AML.CS0044/"><span class="relation-id">AML.CS0044</span><strong>LAMEHUG: вредоносное ПО, использующее команды, динамически генерируемые ИИ</strong><span class="relation-meta">Актор: APT28 / Тактика: AML.TA0004 Первичный доступ</span><p>APT28 получила доступ к скомпрометированной официальной учетной записи электронной почты.</p></a>
 <a class="relation-item" href="/studies/AML.CS0050/"><span class="relation-id">AML.CS0050</span><strong>Удаленное выполнение кода (RCE) в OpenClaw в один клик</strong><span class="relation-meta">Актор: DepthFirst / Тактика: AML.TA0012 Повышение привилегий</span><p>Вредоносный скрипт использовал похищенный Gateway-токен для аутентификации, что позволяло затем выполнять вызовы к OpenClaw Gateway API в системе жертвы.</p></a>
 <a class="relation-item" href="/studies/AML.CS0057/"><span class="relation-id">AML.CS0057</span><strong>Storm-2139: обход гардрейлов Azure OpenAI</strong><span class="relation-meta">Актор: Storm-2139 / Тактика: AML.TA0004 Первичный доступ</span><p>Storm-2139 использовала оказавшиеся в открытом доступе учетные данные клиентов, собранные из публичных источников, для доступа к действительным учетным записям сервисов генеративного ИИ.</p></a>
+<a class="relation-item" href="/studies/AML.CS0068/"><span class="relation-id">AML.CS0068</span><strong>Автономные агенты OpenAI, задействованные в оценочных испытаниях, скомпрометировали инфраструктуру Hugging Face</strong><span class="relation-meta">Актор: Autonomous OpenAI Agents / Тактика: AML.TA0004 Первичный доступ</span><p>Агенты использовали попавшие в открытый доступ пользовательские токены Hugging Face для аутентификации на платформе и запроса доступа к связанным с заданиями наборам данных с ограниченным доступом. Благодаря предоставляемым токенами правам записи агенты также создали репозитории наборов данных.</p></a>
+<a class="relation-item" href="/studies/AML.CS0068/"><span class="relation-id">AML.CS0068</span><strong>Автономные агенты OpenAI, задействованные в оценочных испытаниях, скомпрометировали инфраструктуру Hugging Face</strong><span class="relation-meta">Актор: Autonomous OpenAI Agents / Тактика: AML.TA0015 Латеральное перемещение</span><p>Агенты использовали ключ регистрации в mesh-сети, чтобы зарегистрировать скомпрометированный узел и внешние песочницы в корпоративной сети Hugging Face. Отдельно, действуя изнутри скомпрометированного кластера, они воспользовались общими учётными данными коннектора кластера, чтобы получить административный доступ к другим кластерам Kubernetes. Кроме того, агенты использовали учётные данные для баз данных, облачной инфраструктуры и сервисов для доступа к другим внутренним системам или проверяли, можно ли с их помощью получить такой доступ.</p></a>
+<a class="relation-item" href="/studies/AML.CS0069/"><span class="relation-id">AML.CS0069</span><strong>Кибершпионская кампания GTG-1002 с использованием Claude Code</strong><span class="relation-meta">Актор: GTG-1002 / Тактика: AML.TA0015 Латеральное перемещение</span><p>Джейлбрейкнутый агент Claude от GTG-1002 проверил пригодность собранных учётных данных для доступа к обнаруженным устройствам, а действующие учётные данные использовал для аутентификации при обращении к внутренним API, базам данных, реестрам контейнеров и инфраструктуре логирования.</p></a>
+<a class="relation-item" href="/studies/AML.CS0071/"><span class="relation-id">AML.CS0071</span><strong>Мультиагентный фреймворк скомпрометировал государственные системы Тайваня</strong><span class="relation-meta">Актор: Unknown Chinese-language actor / Тактика: AML.TA0004 Первичный доступ</span><p>Используя идентификаторы сотрудников, полученные через доступный извне API, фреймворк методом распыления паролей проверил предсказуемые шаблоны паролей на портале автоматизации офисной работы. Затем фреймворк успешно прошёл аутентификацию на этом портале с помощью скомпрометированных учётных записей сотрудников.</p></a>
+<a class="relation-item" href="/studies/AML.CS0071/"><span class="relation-id">AML.CS0071</span><strong>Мультиагентный фреймворк скомпрометировал государственные системы Тайваня</strong><span class="relation-meta">Актор: Unknown Chinese-language actor / Тактика: AML.TA0015 Латеральное перемещение</span><p>Через SSO-мост фреймворк систематически проверил 85 скомпрометированных учётных записей портала автоматизации офисной работы в другой государственной информационной системе. SSO-мост доверял уже существующим сеансам этого портала, благодаря чему открывался доступ к внутренним информационным панелям, интерфейсам управления оборудованием и страницам статистики персонала.</p></a>
 </div>

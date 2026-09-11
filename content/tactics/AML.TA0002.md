@@ -8,9 +8,9 @@ description: Злоумышленник пытается собрать инфо
 generated: true
 generated_by: atlasgen
 modified_date: "2025-04-09"
-procedure_count: 28
+procedure_count: 41
 source_name: Reconnaissance
-technique_count: 16
+technique_count: 17
 title: Разведка
 url: /tactics/AML.TA0002/
 ---
@@ -41,6 +41,7 @@ url: /tactics/AML.TA0002/
 <a class="relation-item" href="/techniques/AML.T0095/"><span class="relation-id">AML.T0095</span><strong>Поиск на открытых сайтах и доменах</strong></a>
 <a class="relation-item" href="/techniques/AML.T0095.000/"><span class="relation-id">AML.T0095.000</span><strong>Репозитории кода</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0095.000/"><span class="relation-id">AML.T0095.000</span><strong>Репозитории кода</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0116/"><span class="relation-id">AML.T0116</span><strong>Автономная разведка</strong></a>
 </div>
 
 
@@ -62,4 +63,4 @@ url: /tactics/AML.TA0002/
 </div>
 
 
-Показано 12 из 28 примеров.
+Показано 12 из 41 примеров.

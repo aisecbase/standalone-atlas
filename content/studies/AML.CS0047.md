@@ -12,8 +12,8 @@ incident_date_raw: "2025-07-13"
 procedure:
     - description: '`lkmanka58` разработал промпт, который инструктировал Amazon Q удалить данные в файловой системе и облачные ресурсы, используя доступ к файловым инструментам и `bash`.'
       description_line: '`lkmanka58` разработал промпт, который инструктировал Amazon Q удалить данные в файловой системе и облачные ресурсы, используя доступ к файловым инструментам и `bash`.'
-      tactic: AML.TA0003
-      tactic_name: Подготовка ресурсов
+      tactic: AML.TA0001
+      tactic_name: Адаптация атак, связанных с ИИ
       technique: AML.T0065
       technique_name: Создание промптов для LLM
     - description: '`lkmanka58` получил GitHub-токен с чрезмерно широкими правами из конфигурации CodeBuild расширения Amazon Q для VS Code.'

@@ -7,7 +7,7 @@ created_date: "2025-11-05"
 description: Злоумышленники могут искать на публичных сайтах и/или доменах сведения о жертвах, которые могут использоваться при выборе цели или подготовке атаки. Информация о жертвах может быть доступна на разных онлайн-площадках,...
 generated: true
 generated_by: atlasgen
-maturity: demonstrated
+maturity: realized
 mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:

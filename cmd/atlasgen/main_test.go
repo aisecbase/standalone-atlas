@@ -316,6 +316,35 @@ func TestProcedureCoverageDoesNotReuseFallbackTranslation(t *testing.T) {
 	}
 }
 
+func TestTranslatedProcedureDescriptionDoesNotReuseFallbackTranslation(t *testing.T) {
+	translations := Translations{
+		Objects: map[string]Translation{
+			"AML.CS0001": {
+				Procedure: []ProcedureTranslation{
+					{
+						Tactic:      "AML.TA0002",
+						Technique:   "AML.T0000",
+						Description: "Описание первой процедуры.",
+						Source: Source{
+							DescriptionSHA256: sourceHash("First procedure."),
+						},
+					},
+				},
+			},
+		},
+	}
+	step := Procedure{
+		Tactic:      "AML.TA0002",
+		Technique:   "AML.T0000",
+		Description: "Second procedure.",
+	}
+
+	got := translatedProcedureDescription("AML.CS0001", 1, step, translations)
+	if got != step.Description {
+		t.Fatalf("translatedProcedureDescription = %q, want source description %q", got, step.Description)
+	}
+}
+
 func TestTranslatedTechniqueUseUsesGlobalFallback(t *testing.T) {
 	translations := Translations{
 		TechniqueUses: []TechniqueUseTextTranslation{

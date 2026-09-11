@@ -1136,7 +1136,7 @@ func procedureTranslationForStep(tr Translation, index int, step Procedure) (Pro
 		}
 	}
 	for _, candidate := range tr.Procedure {
-		if procedureTranslationMatches(candidate, step) {
+		if procedureTranslationFallbackMatches(candidate, step) {
 			return candidate, true
 		}
 	}
@@ -1154,7 +1154,7 @@ func unusedProcedureTranslationForStep(tr Translation, index int, step Procedure
 		if used[candidateIndex] {
 			continue
 		}
-		if procedureTranslationMatches(candidate, step) {
+		if procedureTranslationFallbackMatches(candidate, step) {
 			return candidateIndex, candidate, true
 		}
 	}
@@ -1194,6 +1194,14 @@ func translatedTechniqueUseBySource(source string, translations Translations) st
 func procedureTranslationMatches(tr ProcedureTranslation, step Procedure) bool {
 	return strings.TrimSpace(tr.Tactic) == strings.TrimSpace(step.Tactic) &&
 		strings.TrimSpace(tr.Technique) == strings.TrimSpace(step.Technique)
+}
+
+func procedureTranslationFallbackMatches(tr ProcedureTranslation, step Procedure) bool {
+	if !procedureTranslationMatches(tr, step) {
+		return false
+	}
+	translationHash := strings.TrimSpace(tr.Source.DescriptionSHA256)
+	return translationHash == "" || translationHash == sourceHash(step.Description)
 }
 
 func writeStatus(b *strings.Builder, translated string) {

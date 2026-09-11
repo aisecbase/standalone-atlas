@@ -9,7 +9,7 @@ generated: true
 generated_by: atlasgen
 maturity: demonstrated
 mitigation_count: 1
-modified_date: "2026-05-27"
+modified_date: "2026-08-31"
 platforms:
     - Generative AI
     - Agentic AI
@@ -18,7 +18,7 @@ source_name: Retrieval Content Crafting
 subtechnique_count: 0
 subtechnique_of: ""
 tactics:
-    - AML.TA0003
+    - AML.TA0001
 title: Подготовка содержимого для извлечения
 url: /techniques/AML.T0066/
 ---
@@ -33,7 +33,7 @@ url: /techniques/AML.T0066/
 ## Тактики
 
 <div class="relation-list">
-<a class="relation-item" href="/tactics/AML.TA0003/"><span class="relation-id">AML.TA0003</span><strong>Подготовка ресурсов</strong></a>
+<a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Адаптация атак, связанных с ИИ</strong></a>
 </div>
 
 
@@ -47,7 +47,7 @@ url: /techniques/AML.T0066/
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0026/"><span class="relation-id">AML.CS0026</span><strong>Перехват финансовой транзакции с использованием M365 Copilot в роли инсайдера</strong><span class="relation-meta">Актор: Zenity / Тактика: AML.TA0003 Подготовка ресурсов</span><p>Исследователи Zenity подготовили целевой контент, рассчитанный на извлечение по конкретным пользовательским запросам.</p></a>
-<a class="relation-item" href="/studies/AML.CS0035/"><span class="relation-id">AML.CS0035</span><strong>Эксфильтрация данных из Slack AI через косвенную промпт-инъекцию</strong><span class="relation-meta">Актор: PromptArmor / Тактика: AML.TA0003 Подготовка ресурсов</span><p>Исследователь подготовил специально подобранное сообщение, которое должно было извлекаться, когда пользователь спрашивает о своем API-ключе.</p></a>
-<a class="relation-item" href="/studies/AML.CS0059/"><span class="relation-id">AML.CS0059</span><strong>EchoLeak: промпт-инъекция нулевого клика против M365 Copilot для эксфильтрации данных</strong><span class="relation-meta">Актор: Aim Labs / Тактика: AML.TA0003 Подготовка ресурсов</span><p>Исследователи встроили промпт-инъекцию в деловое содержимое письма, которое с высокой вероятностью могло быть извлечено при последующем взаимодействии с Copilot. Контент был составлен так, чтобы выглядеть релевантным обычным корпоративным рабочим процессам и одновременно содержать скрытые инструкции.</p></a>
+<a class="relation-item" href="/studies/AML.CS0026/"><span class="relation-id">AML.CS0026</span><strong>Перехват финансовой транзакции с использованием M365 Copilot в роли инсайдера</strong><span class="relation-meta">Актор: Zenity / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>Исследователи Zenity подготовили целевой контент, рассчитанный на извлечение по конкретным пользовательским запросам.</p></a>
+<a class="relation-item" href="/studies/AML.CS0035/"><span class="relation-id">AML.CS0035</span><strong>Эксфильтрация данных из Slack AI через косвенную промпт-инъекцию</strong><span class="relation-meta">Актор: PromptArmor / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>Исследователь подготовил специально подобранное сообщение, которое должно было извлекаться, когда пользователь спрашивает о своем API-ключе.</p></a>
+<a class="relation-item" href="/studies/AML.CS0059/"><span class="relation-id">AML.CS0059</span><strong>EchoLeak: промпт-инъекция нулевого клика против M365 Copilot для эксфильтрации данных</strong><span class="relation-meta">Актор: Aim Labs / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>Исследователи встроили промпт-инъекцию в деловое содержимое письма, которое с высокой вероятностью могло быть извлечено при последующем взаимодействии с Copilot. Контент был составлен так, чтобы выглядеть релевантным обычным корпоративным рабочим процессам и одновременно содержать скрытые инструкции.</p></a>
 </div>

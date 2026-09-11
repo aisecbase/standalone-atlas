@@ -12,9 +12,9 @@ generated_by: atlasgen
 ml_lifecycle:
     - Data Preparation
     - AI Model Engineering
-modified_date: "2025-12-23"
+modified_date: "2026-08-31"
 source_name: Vulnerability Scanning
-technique_count: 8
+technique_count: 10
 title: Сканирование уязвимостей
 url: /mitigations/AML.M0016/
 ---
@@ -41,4 +41,6 @@ url: /mitigations/AML.M0016/
 <a class="relation-item" href="/techniques/AML.T0115/"><span class="relation-id">AML.T0115</span><strong>Публикация отравленных ИИ-артефактов</strong><p>Реестры моделей и инструментов ИИ-агентов сканируют загружаемые артефакты на наличие вредоносного содержимого перед добавлением в каталог.</p></a>
 <a class="relation-item" href="/techniques/AML.T0115.001/"><span class="relation-id">AML.T0115.001</span><strong>Модели</strong><p>Реестры моделей сканируют загружаемые модели на признаки небезопасной сериализации, встроенный код, вредоносное ПО и известные уязвимости перед добавлением в каталог.</p></a>
 <a class="relation-item" href="/techniques/AML.T0115.002/"><span class="relation-id">AML.T0115.002</span><strong>Инструменты ИИ-агента</strong><p>Реестры инструментов сканируют загружаемые пакеты инструментов и их зависимости на наличие вредоносного кода и уязвимостей перед добавлением в каталог.</p></a>
+<a class="relation-item" href="/techniques/AML.T0119/"><span class="relation-id">AML.T0119</span><strong>Эксплуатация автоматизированного пайплайна обработки артефактов</strong><p>Сканирование уязвимостей сокращает возможности злоумышленников эксплуатировать недостатки в пайплайнах обработки артефактов.</p></a>
+<a class="relation-item" href="/techniques/AML.T0122/"><span class="relation-id">AML.T0122</span><strong>Эксплуатация удалённых сервисов</strong><p>Сканирование уязвимостей сокращает возможности злоумышленников эксплуатировать недостатки в удалённых сервисах.</p></a>
 </div>

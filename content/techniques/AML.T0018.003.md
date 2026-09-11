@@ -30,7 +30,7 @@ url: /techniques/AML.T0018.003/
 ## Тактики
 
 <div class="relation-list">
-<a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Подготовка атаки на ИИ</strong></a>
+<a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Адаптация атак, связанных с ИИ</strong></a>
 <a class="relation-item" href="/tactics/AML.TA0006/"><span class="relation-id">AML.TA0006</span><strong>Закрепление</strong></a>
 </div>
 
@@ -54,5 +54,5 @@ url: /techniques/AML.T0018.003/
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0064/"><span class="relation-id">AML.CS0064</span><strong>Отравленные шаблоны GGUF: атака на цепочку поставок во время инференса</strong><span class="relation-meta">Актор: Pillar Security, Fujitsu Research of Europe / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Злоумышленник изменяет шаблон чата, включённый в состав артефакта модели. При наличии триггера изменённый шаблон внедряет подконтрольные злоумышленнику инструкции в контекст модели, не изменяя её весов.</p></a>
+<a class="relation-item" href="/studies/AML.CS0064/"><span class="relation-id">AML.CS0064</span><strong>Отравленные шаблоны GGUF: атака на цепочку поставок во время инференса</strong><span class="relation-meta">Актор: Pillar Security, Fujitsu Research of Europe / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>Злоумышленник изменяет шаблон чата, включённый в состав артефакта модели. При наличии триггера изменённый шаблон внедряет подконтрольные злоумышленнику инструкции в контекст модели, не изменяя её весов.</p></a>
 </div>

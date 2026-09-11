@@ -12,8 +12,8 @@ incident_date_raw: "2023-11-23"
 procedure:
     - description: Исследователь разработал промпт, из-за которого Bard включает в ответ Markdown-элемент изображения с разговором пользователя, встроенным в URL.
       description_line: Исследователь разработал промпт, из-за которого Bard включает в ответ Markdown-элемент изображения с разговором пользователя, встроенным в URL.
-      tactic: AML.TA0003
-      tactic_name: Подготовка ресурсов
+      tactic: AML.TA0001
+      tactic_name: Адаптация атак, связанных с ИИ
       technique: AML.T0065
       technique_name: Создание промптов для LLM
     - description: Исследователь установил, что Google Apps Script можно вызвать через URL на `script.google.com` или `googleusercontent.com` и настроить так, чтобы аутентификация не требовалась. Это позволяет вызвать скрипт без срабатывания Content Security Policy Bard.

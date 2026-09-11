@@ -8,7 +8,7 @@ description: Злоумышленник пытается украсть ИИ-а�
 generated: true
 generated_by: atlasgen
 modified_date: "2025-04-09"
-procedure_count: 29
+procedure_count: 32
 source_name: Exfiltration
 technique_count: 12
 title: Эксфильтрация
@@ -58,4 +58,4 @@ url: /tactics/AML.TA0010/
 </div>
 
 
-Показано 12 из 29 примеров.
+Показано 12 из 32 примеров.

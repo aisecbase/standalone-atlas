@@ -12,7 +12,7 @@ mitigation_count: 0
 modified_date: "2026-05-27"
 platforms:
     - Enterprise
-procedure_count: 1
+procedure_count: 4
 source_name: Data from Information Repositories
 subtechnique_count: 0
 subtechnique_of: ""
@@ -38,4 +38,7 @@ url: /techniques/AML.T0036/
 
 <div class="relation-list procedure-relations">
 <a class="relation-item" href="/studies/AML.CS0006/"><span class="relation-id">AML.CS0006</span><strong>Ошибочная конфигурация Clearview AI</strong><span class="relation-meta">Актор: Researchers at spiderSilk / Тактика: AML.TA0009 Сбор материалов</span><p>Приватный репозиторий кода содержал учетные данные, которые использовались для доступа к облачным хранилищам AWS S3. Это привело к обнаружению ресурсов инструмента распознавания лиц, включая:</p><ul><li>выпущенные настольные и мобильные приложения</li><li>предварительные версии приложений с новыми возможностями</li><li>токены доступа Slack</li><li>необработанные видео и другие данные</li></ul></a>
+<a class="relation-item" href="/studies/AML.CS0068/"><span class="relation-id">AML.CS0068</span><strong>Автономные агенты OpenAI, задействованные в оценочных испытаниях, скомпрометировали инфраструктуру Hugging Face</strong><span class="relation-meta">Актор: Autonomous OpenAI Agents / Тактика: AML.TA0009 Сбор материалов</span><p>Агенты прочитали данные из внутренней рабочей базы данных MongoDB, скачали четыре приватных репозитория исходного кода и получили доступ к пяти клиентским наборам данных, связанным с материалами ExploitGym или CyberGym.</p></a>
+<a class="relation-item" href="/studies/AML.CS0069/"><span class="relation-id">AML.CS0069</span><strong>Кибершпионская кампания GTG-1002 с использованием Claude Code</strong><span class="relation-meta">Актор: GTG-1002 / Тактика: AML.TA0009 Сбор материалов</span><p>Аутентифицировавшись с помощью собранных учётных данных, джейлбрейкнутый агент Claude от GTG-1002 обращался с запросами к внутренним базам данных и системам, чтобы получить проприетарную информацию, конфигурации систем и чувствительные эксплуатационные данные.</p></a>
+<a class="relation-item" href="/studies/AML.CS0071/"><span class="relation-id">AML.CS0071</span><strong>Мультиагентный фреймворк скомпрометировал государственные системы Тайваня</strong><span class="relation-meta">Актор: Unknown Chinese-language actor / Тактика: AML.TA0009 Сбор материалов</span><p>Без аутентификации фреймворк получил через доступный извне API базы данных пользователей имена сотрудников, сведения об их подразделениях и идентификаторы, а также сведения об учётных записях SSO.</p></a>
 </div>

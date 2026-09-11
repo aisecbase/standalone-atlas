@@ -72,7 +72,7 @@
       </colgroup>
       <thead>
         <tr>
-          <th>ID</th>
+          <th aria-sort="ascending"><button class="sort-button is-active" type="button" data-sort-key="id" data-sort-direction="asc">ID</button></th>
           <th>Название</th>
           <th>Описание</th>
           {{ if eq .Section "techniques" }}<th><button class="sort-button" type="button" data-sort-key="maturity">Зрелость</button></th>{{ end }}
@@ -121,6 +121,7 @@
             data-stage="{{ $stage }}"
             data-case-type="{{ .Params.case_study_type }}"
             data-maturity="{{ .Params.maturity }}"
+            data-sort-id="{{ .Params.atlas_id }}"
             data-sort-category="{{ $categoryLabel }}"
             data-sort-stage="{{ $stageLabel }}"
             data-sort-case-type="{{ $caseTypeLabel }}"

@@ -18,8 +18,8 @@ procedure:
       technique_name: Прокси для ИИ-сервисов
     - description: DeepSeek, Moonshot AI и MiniMax сгенерировали крупные наборы промптов для извлечения возможностей Claude.
       description_line: DeepSeek, Moonshot AI и MiniMax сгенерировали крупные наборы промптов для извлечения возможностей Claude.
-      tactic: AML.TA0003
-      tactic_name: Подготовка ресурсов
+      tactic: AML.TA0001
+      tactic_name: Адаптация атак, связанных с ИИ
       technique: AML.T0065
       technique_name: Создание промптов для LLM
     - description: ИИ-лаборатории обращались к API инференса Claude через примерно 24 000 поддельных учетных записей в совокупности.

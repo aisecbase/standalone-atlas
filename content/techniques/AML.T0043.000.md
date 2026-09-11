@@ -28,7 +28,7 @@ url: /techniques/AML.T0043.000/
 ## Тактики
 
 <div class="relation-list">
-<a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Подготовка атаки на ИИ</strong></a>
+<a class="relation-item" href="/tactics/AML.TA0001/"><span class="relation-id">AML.TA0001</span><strong>Адаптация атак, связанных с ИИ</strong></a>
 </div>
 
 
@@ -64,7 +64,7 @@ url: /techniques/AML.T0043.000/
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0010/"><span class="relation-id">AML.CS0010</span><strong>Нарушение работы сервиса Microsoft Azure</strong><span class="relation-meta">Актор: Microsoft AI Red Team / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Используя целевую модель и данные, красная команда в офлайн-режиме подготовила состязательные данные, рассчитанные на обход модели.</p></a>
-<a class="relation-item" href="/studies/AML.CS0012/"><span class="relation-id">AML.CS0012</span><strong>Обход системы идентификации лиц с помощью физических контрмер</strong><span class="relation-meta">Актор: MITRE AI Red Team / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Используя прокси-модель, красная команда оптимизировала состязательные визуальные паттерны для атаки с физической наклейкой на основе метода expectation over transformation.</p></a>
-<a class="relation-item" href="/studies/AML.CS0058/"><span class="relation-id">AML.CS0058</span><strong>Извлечение ИИ-моделей из Google Photos</strong><span class="relation-meta">Актор: Skyld / Тактика: AML.TA0001 Подготовка атаки на ИИ</span><p>Восстановленные модели TensorFlow Lite могли использоваться для генерации состязательных примеров в режиме белого ящика.</p></a>
+<a class="relation-item" href="/studies/AML.CS0010/"><span class="relation-id">AML.CS0010</span><strong>Нарушение работы сервиса Microsoft Azure</strong><span class="relation-meta">Актор: Microsoft AI Red Team / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>Используя целевую модель и данные, красная команда в офлайн-режиме подготовила состязательные данные, рассчитанные на обход модели.</p></a>
+<a class="relation-item" href="/studies/AML.CS0012/"><span class="relation-id">AML.CS0012</span><strong>Обход системы идентификации лиц с помощью физических контрмер</strong><span class="relation-meta">Актор: MITRE AI Red Team / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>Используя прокси-модель, красная команда оптимизировала состязательные визуальные паттерны для атаки с физической наклейкой на основе метода expectation over transformation.</p></a>
+<a class="relation-item" href="/studies/AML.CS0058/"><span class="relation-id">AML.CS0058</span><strong>Извлечение ИИ-моделей из Google Photos</strong><span class="relation-meta">Актор: Skyld / Тактика: AML.TA0001 Адаптация атак, связанных с ИИ</span><p>Восстановленные модели TensorFlow Lite могли использоваться для генерации состязательных примеров в режиме белого ящика.</p></a>
 </div>

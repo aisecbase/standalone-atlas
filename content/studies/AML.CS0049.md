@@ -24,8 +24,8 @@ procedure:
       technique_name: Домены
     - description: Исследователь подготовил промпт-инъекцию, которая должна была заставить Claude Code выполнить команду `curl` к домену исследователя `clawdhub-skill.com`.
       description_line: Исследователь подготовил промпт-инъекцию, которая должна была заставить Claude Code выполнить команду `curl` к домену исследователя `clawdhub-skill.com`.
-      tactic: AML.TA0003
-      tactic_name: Подготовка ресурсов
+      tactic: AML.TA0001
+      tactic_name: Адаптация атак, связанных с ИИ
       technique: AML.T0065
       technique_name: Создание промптов для LLM
     - description: Исследователь разработал отравленный навык ClawdBot под названием "What Would Elon Do?" Вредоносный промпт находился в файле `rules/logic.md`, который считывается при активации навыка. Исследователь опубликовал навык в ClawdHub.
