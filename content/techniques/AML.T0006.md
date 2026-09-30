@@ -8,16 +8,16 @@ description: Злоумышленник может зондировать или
 generated: true
 generated_by: atlasgen
 maturity: realized
-mitigation_count: 2
-modified_date: "2026-05-27"
+mitigation_count: 3
+modified_date: "2026-09-15"
 platforms:
     - Predictive AI
     - Generative AI
     - Agentic AI
     - Enterprise
-procedure_count: 7
+procedure_count: 6
 source_name: Active Scanning
-subtechnique_count: 0
+subtechnique_count: 4
 subtechnique_of: ""
 tactics:
     - AML.TA0002
@@ -39,11 +39,22 @@ url: /techniques/AML.T0006/
 </div>
 
 
+## Подтехники
+
+<div class="relation-list">
+<a class="relation-item" href="/techniques/AML.T0006.000/"><span class="relation-id">AML.T0006.000</span><strong>Enumerate Hosted AI Resources</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0006.001/"><span class="relation-id">AML.T0006.001</span><strong>Query Platform Metadata APIs</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0006.002/"><span class="relation-id">AML.T0006.002</span><strong>Scan for Exposed AI Infrastructure</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0006.003/"><span class="relation-id">AML.T0006.003</span><strong>Probe AI Agent Trigger Channels</strong><span class="relation-meta">Подтехника</span></a>
+</div>
+
+
 ## Меры защиты
 
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Требуйте аутентификации для доступа к ИИ-эндпоинтам в продакшене и отслеживайте запросы, чтобы ограничить зондирование доступных извне ИИ-сервисов без аутентификации.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0032/"><span class="relation-id">AML.M0032</span><strong>Сегментация компонентов ИИ-агента</strong><p>Сегментируйте компоненты ИИ-агента так, чтобы доступный извне сервис не раскрывал сведения о других внутренних компонентах и не открывал к ним сетевой доступ.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0039/"><span class="relation-id">AML.M0039</span><strong>AI Honeypots</strong><p>By capturing adversarial fingerprinting behavior, honeypots can help provide early warning of sweeping activity meant to discover exposed AI targets and attack surfaces being explored by adversaries.</p></a>
 </div>
 
 
@@ -51,7 +62,6 @@ url: /techniques/AML.T0006/
 
 <div class="relation-list procedure-relations">
 <a class="relation-item" href="/studies/AML.CS0023/"><span class="relation-id">AML.CS0023</span><strong>ShadowRay: захват кластеров Ray, доступных из интернета</strong><span class="relation-meta">Актор: Unknown / Тактика: AML.TA0002 Разведка</span><p>Злоумышленники могут сканировать публичные IP-адреса, чтобы найти системы, на которых потенциально доступны панели управления Ray. По умолчанию панели Ray работают на всех сетевых интерфейсах, поэтому без дополнительных защитных механизмов они могут оказаться доступными из интернета.</p></a>
-<a class="relation-item" href="/studies/AML.CS0037/"><span class="relation-id">AML.CS0037</span><strong>Эксфильтрация данных через инструменты ИИ-агента в Copilot Studio</strong><span class="relation-meta">Актор: Zenity / Тактика: AML.TA0002 Разведка</span><p>Исследователи ищут на сайте целевой организации адреса электронной почты службы поддержки, которые могут обслуживаться ИИ-агентом. Затем они проверяют систему: отправляют письма и ищут в автоматических ответах признаки работы ИИ-агента.</p></a>
 <a class="relation-item" href="/studies/AML.CS0063/"><span class="relation-id">AML.CS0063</span><strong>Атаки на Gemini с помощью промптов в приглашениях Google Calendar</strong><span class="relation-meta">Актор: SafeBreach Research Team / Тактика: AML.TA0002 Разведка</span><p>Исследователи напрямую тестировали интерфейсы Gemini, чтобы понять, как система выбирает и задействует агентов.</p></a>
 <a class="relation-item" href="/studies/AML.CS0069/"><span class="relation-id">AML.CS0069</span><strong>Кибершпионская кампания GTG-1002 с использованием Claude Code</strong><span class="relation-meta">Актор: GTG-1002 / Тактика: AML.TA0002 Разведка</span><p>Джейлбрейкнутый агент Claude от GTG-1002 сканировал диапазоны IP-адресов, связанные с целевой организацией, и её инфраструктуру на наличие уязвимостей. По результатам сканирования он выявил доступные из интернета сервисы и эндпоинты, обнаружил потенциальные уязвимости и выбрал для дальнейшего исследования уязвимость SSRF в неназванном приложении, доступном из интернета. Из опубликованных материалов нельзя установить, была ли эта уязвимость известна ранее и был ли ей присвоен идентификатор CVE.</p></a>
 <a class="relation-item" href="/studies/AML.CS0070/"><span class="relation-id">AML.CS0070</span><strong>Злоумышленник использовал Hermes Agent на базе DeepSeek при попытках эксплуатации Langflow и n8n</strong><span class="relation-meta">Актор: Chinese-speaking threat actor using the aliases knaithe and KnYuan / Тактика: AML.TA0002 Разведка</span><p>DeepSeek запустил общедоступный сканер Langflow и выявил целевую систему, на которой работал Langflow версии 1.3.4.</p></a>

@@ -9,7 +9,7 @@ generated: true
 generated_by: atlasgen
 maturity: demonstrated
 mitigation_count: 0
-modified_date: "2026-05-27"
+modified_date: "2026-09-15"
 platforms:
     - Generative AI
     - Agentic AI

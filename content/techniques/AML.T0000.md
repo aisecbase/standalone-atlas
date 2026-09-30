@@ -8,13 +8,13 @@ description: Злоумышленники могут искать общедос
 generated: true
 generated_by: atlasgen
 maturity: realized
-mitigation_count: 1
-modified_date: "2026-05-27"
+mitigation_count: 2
+modified_date: "2026-09-15"
 platforms:
     - Enterprise
-procedure_count: 10
+procedure_count: 8
 source_name: Search Open Technical Databases
-subtechnique_count: 3
+subtechnique_count: 4
 subtechnique_of: ""
 tactics:
     - AML.TA0002
@@ -48,6 +48,7 @@ url: /techniques/AML.T0000/
 <a class="relation-item" href="/techniques/AML.T0000.000/"><span class="relation-id">AML.T0000.000</span><strong>Журналы и материалы конференций</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0000.001/"><span class="relation-id">AML.T0000.001</span><strong>Репозитории препринтов</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0000.002/"><span class="relation-id">AML.T0000.002</span><strong>Технические блоги</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0000.003/"><span class="relation-id">AML.T0000.003</span><strong>Scan Databases</strong><span class="relation-meta">Подтехника</span></a>
 </div>
 
 
@@ -55,6 +56,7 @@ url: /techniques/AML.T0000/
 
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0000/"><span class="relation-id">AML.M0000</span><strong>Ограничение публичного раскрытия информации</strong><p>Ограничьте связь между публично раскрытыми подходами и данными, моделями и алгоритмами, используемыми в продакшене.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0039/"><span class="relation-id">AML.M0039</span><strong>AI Honeypots</strong><p>Decoy assets are catalogued by the same internet scan databases (e.g., Shodan, Censys) that adversaries query to locate exposed AI infrastructure. Adversarial engagement that originates from those platforms can grant defenders visibility into those discovery channels.</p></a>
 </div>
 
 
@@ -68,7 +70,5 @@ url: /techniques/AML.T0000/
 <a class="relation-item" href="/studies/AML.CS0010/"><span class="relation-id">AML.CS0010</span><strong>Нарушение работы сервиса Microsoft Azure</strong><span class="relation-meta">Актор: Microsoft AI Red Team / Тактика: AML.TA0002 Разведка</span><p>Команда сначала провела разведку, чтобы собрать сведения о целевой ML-модели.</p></a>
 <a class="relation-item" href="/studies/AML.CS0011/"><span class="relation-id">AML.CS0011</span><strong>Обход ИИ на периферии Microsoft</strong><span class="relation-meta">Актор: Azure Red Team / Тактика: AML.TA0002 Разведка</span><p>Команда сначала провела разведку, чтобы собрать сведения о целевой ML-модели.</p></a>
 <a class="relation-item" href="/studies/AML.CS0012/"><span class="relation-id">AML.CS0012</span><strong>Обход системы идентификации лиц с помощью физических контрмер</strong><span class="relation-meta">Актор: MITRE AI Red Team / Тактика: AML.TA0002 Разведка</span><p>Команда сначала провела разведку, чтобы собрать сведения о целевой ML-модели.</p></a>
-<a class="relation-item" href="/studies/AML.CS0048/"><span class="relation-id">AML.CS0048</span><strong>Публично доступные интерфейсы управления ClawdBot позволили получить учётные данные и выполнить команды</strong><span class="relation-meta">Актор: Jamieson O&#39;Reilly / Тактика: AML.TA0002 Разведка</span><p>Исследователь искал цели в Shodan по заголовку веб-интерфейса управления ClawdBot — `Clawdbot Control` — и обнаружил сотни интерфейсов ClawdBot, открытых в публичном интернете.</p></a>
-<a class="relation-item" href="/studies/AML.CS0070/"><span class="relation-id">AML.CS0070</span><strong>Злоумышленник использовал Hermes Agent на базе DeepSeek при попытках эксплуатации Langflow и n8n</strong><span class="relation-meta">Актор: Chinese-speaking threat actor using the aliases knaithe and KnYuan / Тактика: AML.TA0002 Разведка</span><p>DeepSeek выполнил запрос в FOFA и получил записи о 84 экземплярах Langflow, доступных из интернета. Эти записи указывали лишь на доступность экземпляров извне и не подтверждали, что они являлись уязвимыми целями.</p></a>
 <a class="relation-item" href="/studies/AML.CS0070/"><span class="relation-id">AML.CS0070</span><strong>Злоумышленник использовал Hermes Agent на базе DeepSeek при попытках эксплуатации Langflow и n8n</strong><span class="relation-meta">Актор: Chinese-speaking threat actor using the aliases knaithe and KnYuan / Тактика: AML.TA0002 Разведка</span><p>DeepSeek выполнил в FOFA поиск развёртываний n8n. FOFA выдала 647 017 результатов по всему миру и 25 209 результатов в Китае; однако подтверждений уязвимости найденных систем не было.</p></a>
 </div>

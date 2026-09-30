@@ -10,7 +10,7 @@ generated_by: atlasgen
 modified_date: "2025-04-09"
 procedure_count: 28
 source_name: Discovery
-technique_count: 23
+technique_count: 24
 title: Выявление
 url: /tactics/AML.TA0008/
 ---
@@ -46,6 +46,7 @@ url: /tactics/AML.TA0008/
 <a class="relation-item" href="/techniques/AML.T0084.003/"><span class="relation-id">AML.T0084.003</span><strong>Цепочки вызовов</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0084.003/"><span class="relation-id">AML.T0084.003</span><strong>Цепочки вызовов</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0089/"><span class="relation-id">AML.T0089</span><strong>Изучение корпоративной среды</strong></a>
+<a class="relation-item" href="/techniques/AML.T0133/"><span class="relation-id">AML.T0133</span><strong>Discover AI Agent Runtime Capabilities</strong></a>
 </div>
 
 

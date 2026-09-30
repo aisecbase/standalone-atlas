@@ -8,7 +8,7 @@ description: Злоумышленник пытается подготовить 
 generated: true
 generated_by: atlasgen
 modified_date: "2025-04-09"
-procedure_count: 93
+procedure_count: 95
 source_name: Resource Development
 technique_count: 49
 title: Подготовка ресурсов
@@ -95,4 +95,4 @@ url: /tactics/AML.TA0003/
 </div>
 
 
-Показано 12 из 93 примеров.
+Показано 12 из 95 примеров.

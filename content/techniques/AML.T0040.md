@@ -8,7 +8,7 @@ description: Злоумышленники могут получить досту
 generated: true
 generated_by: atlasgen
 maturity: realized
-mitigation_count: 2
+mitigation_count: 3
 modified_date: "2026-05-27"
 platforms:
     - Predictive AI
@@ -41,6 +41,7 @@ url: /techniques/AML.T0040/
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Злоумышленники могут использовать неограниченный доступ к API, чтобы получить сведения о продакшен-системе, подготовить атаки и внедрить в систему вредоносные данные.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0024/"><span class="relation-id">AML.M0024</span><strong>Логирование телеметрии ИИ</strong><p>Логирование телеметрии может помогать аудировать использование API модели.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0039/"><span class="relation-id">AML.M0039</span><strong>AI Honeypots</strong><p>Honeypots capture which endpoints adversaries are targeting and how they use discovered inference APIs: the models they&#39;re interested in, the parameters they use, and the payloads they submit once they reach a live endpoint.</p></a>
 </div>
 
 

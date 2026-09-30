@@ -9,7 +9,7 @@ generated: true
 generated_by: atlasgen
 maturity: demonstrated
 mitigation_count: 3
-modified_date: "2026-05-27"
+modified_date: "2026-09-15"
 platforms:
     - Generative AI
     - Agentic AI
@@ -81,3 +81,8 @@ url: /techniques/AML.T0051.001/
 <a class="relation-item" href="/studies/AML.CS0066/"><span class="relation-id">AML.CS0066</span><strong>ZombieAgent: атака на ChatGPT с эксфильтрацией данных</strong><span class="relation-meta">Актор: Radware Security Researchers / Тактика: AML.TA0005 Выполнение</span><p>Последующий легитимный запрос пользователя, например просьба к ChatGPT суммаризировать содержимое почтового ящика, заставил агента извлечь вредоносное содержимое и выполнить скрытые инструкции. Пользователь не взаимодействовал с вредоносным письмом осознанно.</p></a>
 <a class="relation-item" href="/studies/AML.CS0067/"><span class="relation-id">AML.CS0067</span><strong>Раскрытие секретов через Claude Code GitHub Action</strong><span class="relation-meta">Актор: Microsoft Defender Security Research Team / Тактика: AML.TA0005 Выполнение</span><p>Claude Code Action включил вредоносное содержимое GitHub в контекст модели. Claude интерпретировал его как инструкции и выполнил их.</p></a>
 </div>
+
+
+## Источники
+
+- [AI threats in the wild: The current state of prompt injections on the web](https://blog.google/security/prompt-injections-web/)

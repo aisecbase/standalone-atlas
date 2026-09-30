@@ -1,8 +1,8 @@
 ---
 atlas_id: AML.T0089
 atlas_type: technique
-attack_ref_id: T1057
-attack_ref_url: https://attack.mitre.org/techniques/T1057/
+attack_ref_id: ""
+attack_ref_url: ""
 created_date: "2025-10-27"
 description: Злоумышленники могут выявлять конфигурации, условия функционирования, взаимосвязи, активность и другие характеристики корпоративной среды. Сюда могут относиться конфигурация систем и сети; активные соединения,...
 generated: true

@@ -8,7 +8,7 @@ description: Злоумышленник может внедрять вредон
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 0
+mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:
     - Generative AI
@@ -36,6 +36,13 @@ url: /techniques/AML.T0093/
 <div class="relation-list">
 <a class="relation-item" href="/tactics/AML.TA0004/"><span class="relation-id">AML.TA0004</span><strong>Первичный доступ</strong></a>
 <a class="relation-item" href="/tactics/AML.TA0006/"><span class="relation-id">AML.TA0006</span><strong>Закрепление</strong></a>
+</div>
+
+
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0039/"><span class="relation-id">AML.M0039</span><strong>AI Honeypots</strong><p>Since honeypots capture real input, they can provide visibility into attacks and prompt payloads that are target-specific.</p></a>
 </div>
 
 

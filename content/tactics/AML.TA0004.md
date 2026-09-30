@@ -8,9 +8,9 @@ description: Злоумышленник пытается получить дос
 generated: true
 generated_by: atlasgen
 modified_date: "2025-04-09"
-procedure_count: 63
+procedure_count: 64
 source_name: Initial Access
-technique_count: 24
+technique_count: 26
 title: Первичный доступ
 url: /tactics/AML.TA0004/
 ---
@@ -50,6 +50,8 @@ url: /tactics/AML.TA0004/
 <a class="relation-item" href="/techniques/AML.T0078/"><span class="relation-id">AML.T0078</span><strong>Компрометация при посещении сайта</strong></a>
 <a class="relation-item" href="/techniques/AML.T0093/"><span class="relation-id">AML.T0093</span><strong>Внедрение промпта через публичное приложение</strong></a>
 <a class="relation-item" href="/techniques/AML.T0119/"><span class="relation-id">AML.T0119</span><strong>Эксплуатация автоматизированного пайплайна обработки артефактов</strong></a>
+<a class="relation-item" href="/techniques/AML.T0131/"><span class="relation-id">AML.T0131</span><strong>Crafted AI Assistant Links</strong></a>
+<a class="relation-item" href="/techniques/AML.T0132/"><span class="relation-id">AML.T0132</span><strong>Misconfigured or Publicly Exposed AI Services</strong></a>
 </div>
 
 
@@ -71,4 +73,4 @@ url: /tactics/AML.TA0004/
 </div>
 
 
-Показано 12 из 63 примеров.
+Показано 12 из 64 примеров.

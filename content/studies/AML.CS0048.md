@@ -10,18 +10,18 @@ incident_date: "2026-01-25"
 incident_date_granularity: Day
 incident_date_raw: "2026-01-25"
 procedure:
-    - description: Исследователь искал цели в Shodan по заголовку веб-интерфейса управления ClawdBot — `Clawdbot Control` — и обнаружил сотни интерфейсов ClawdBot, открытых в публичном интернете.
-      description_line: Исследователь искал цели в Shodan по заголовку веб-интерфейса управления ClawdBot — `Clawdbot Control` — и обнаружил сотни интерфейсов ClawdBot, открытых в публичном интернете.
+    - description: The researcher performed targeting by searching for the title tag of ClawdBot's web-based control interface, "Clawdbot Control" on Shodan, identifying hundreds of ClawdBot control interfaces exposed on the public internet.
+      description_line: The researcher performed targeting by searching for the title tag of ClawdBot's web-based control interface, "Clawdbot Control" on Shodan, identifying hundreds of ClawdBot control interfaces exposed on the public internet.
       tactic: AML.TA0002
       tactic_name: Разведка
-      technique: AML.T0000
-      technique_name: Поиск в открытых технических базах данных
-    - description: Исследователь воспользовался ошибочной конфигурацией прокси на сервере управления ClawdBot и получил доступ к интерфейсам управления с включенной аутентификацией.
-      description_line: Исследователь воспользовался ошибочной конфигурацией прокси на сервере управления ClawdBot и получил доступ к интерфейсам управления с включенной аутентификацией.
+      technique: AML.T0000.003
+      technique_name: Scan Databases
+    - description: The researcher exploited a proxy misconfiguration present in ClawdBot's control server to gain access to control interfaces that had authentication enabled.
+      description_line: The researcher exploited a proxy misconfiguration present in ClawdBot's control server to gain access to control interfaces that had authentication enabled.
       tactic: AML.TA0004
       tactic_name: Первичный доступ
-      technique: AML.T0049
-      technique_name: Эксплуатация приложения, доступного из интернета
+      technique: AML.T0132
+      technique_name: Misconfigured or Publicly Exposed AI Services
     - description: Исследователь получил доступ к учетным данным разных сервисов, которые хранились в открытом виде в конфигурационном файле ClawdBot `~/.clawdbot/clawdbot.json`; этот файл виден в панели управления ClawdBot. В разных открытых экземплярах ClawdBot он обнаружил ключи API Anthropic, токены Telegram-ботов, учетные данные Slack OAuth и URI привязки устройств Signal.
       description_line: Исследователь получил доступ к учетным данным разных сервисов, которые хранились в открытом виде в конфигурационном файле ClawdBot `~/.clawdbot/clawdbot.json`; этот файл виден в панели управления ClawdBot. В разных открытых экземплярах ClawdBot он обнаружил ключи API Anthropic, токены Telegram-ботов, учетные данные Slack OAuth и URI привязки устройств Signal.
       tactic: AML.TA0013

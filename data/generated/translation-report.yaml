@@ -1,15 +1,15 @@
-version: "2026.08"
+version: "2026.09"
 totals:
     case-study:
-        total: 72
+        total: 73
         name_translated: 72
         body_translated: 72
-        procedures_total: 659
-        procedures_translated: 659
-        fully_translated: 72
+        procedures_total: 665
+        procedures_translated: 655
+        fully_translated: 69
         needs_review: 0
     mitigation:
-        total: 39
+        total: 40
         name_translated: 39
         body_translated: 39
         fully_translated: 39
@@ -24,14 +24,227 @@ totals:
         total: 16
         name_translated: 16
         body_translated: 16
-        fully_translated: 16
-        needs_review: 0
+        fully_translated: 15
+        needs_review: 1
     technique:
-        total: 197
+        total: 208
         name_translated: 197
         body_translated: 197
-        fully_translated: 197
-        needs_review: 0
-missing: []
-partial: []
-review: []
+        fully_translated: 188
+        needs_review: 9
+missing:
+    - id: AML.CS0072
+      name: AI Recommendation Poisoning via Crafted AI Assistant Links
+      type: case-study
+      has_name: false
+      has_body: false
+      source_field: summary
+      total_procedures: 6
+    - id: AML.M0039
+      name: AI Honeypots
+      type: mitigation
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0000.003
+      name: Scan Databases
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0006.000
+      name: Enumerate Hosted AI Resources
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0006.001
+      name: Query Platform Metadata APIs
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0006.002
+      name: Scan for Exposed AI Infrastructure
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0006.003
+      name: Probe AI Agent Trigger Channels
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0129
+      name: Triggers in Multimodal Inputs
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0130
+      name: AI Agent Response Biasing
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0131
+      name: Crafted AI Assistant Links
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0132
+      name: Misconfigured or Publicly Exposed AI Services
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0133
+      name: Discover AI Agent Runtime Capabilities
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+    - id: AML.T0134
+      name: AI Targeted Cloaking
+      type: technique
+      has_name: false
+      has_body: false
+      source_field: description
+partial:
+    - id: AML.CS0037
+      name: Data Exfiltration via Agent Tools in Copilot Studio
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 14
+      translated_procedures: 13
+    - id: AML.CS0048
+      name: Exposed ClawdBot Control Interfaces Leads to Credential Access and Execution
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 10
+      translated_procedures: 8
+    - id: AML.CS0070
+      name: Threat Actor Uses a DeepSeek-Powered Hermes Agent in Langflow and n8n Exploitation Attempts
+      type: case-study
+      has_name: true
+      has_body: true
+      source_field: summary
+      total_procedures: 18
+      translated_procedures: 17
+review:
+    - id: AML.T0000
+      name: Search Open Technical Databases
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: d55a4475425fb52b9befb920a276562a05aa04d4c6ebd076cec173113df11643
+      translation_source_sha256: 04189ab1641220c910c41fed59bbf9df66ab07b3fd726c770b132f66a7643ea1
+    - id: AML.T0006
+      name: Active Scanning
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: dc3fa1e25d6912f00bde80909175d1385cd6e6872ac4e1016e503731732662dc
+      translation_source_sha256: ed627bd344eefa49bb9478712b661000f84553f57f21af1410aa8fb771016761
+    - id: AML.T0051.001
+      name: Indirect
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: a4b51be33ca441e10b1fb88b1a10e5ffcf829d7bb6b29b90c16b08d5ea93a2cb
+      translation_source_sha256: 05578e7ca56474276bee209c776b5465fd0a93db3ae1c2716651857dda9e380b
+    - id: AML.T0054
+      name: LLM Jailbreak
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 75685c705600698ffb783d925321c24c76ecdcb415288221a8b06dbb5ba47929
+      translation_source_sha256: faba473952f9c11af4233eecde1a2555fc68470010d9fb09decddfa28ccc7489
+    - id: AML.T0068
+      name: LLM Prompt Obfuscation
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: c23765870b784a6e069623586762c00f92aecc91cd3b9213300dc327771dea63
+      translation_source_sha256: 811b0ce9540174984fec89578d23b8ae3623390eb6ac995ebcb9ad2827c81a9f
+    - id: AML.T0077
+      name: LLM Response Rendering
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 9d4a77c47bcc49a0df8ac79c949e5e166b8f9c5bb5148fec0964bd22d6080a01
+      translation_source_sha256: 555e0427480902e27c3943dddc0141f2a4333c78f720773fd3020062800cffe8
+    - id: AML.T0095
+      name: Search Open Websites/Domains
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 460486f6e40ba7ad075e72f9e916596cd6eecd2bf2d14957e4793f241d20458d
+      translation_source_sha256: 33560e5d534139310644110b656cc3f0e5fc656ca295be810b04a70d39c6fc80
+    - id: AML.T0100
+      name: AI Agent Clickbait
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: a7c33c4e876acac9d10abff509cebfd4d22a0059e7741b0243dd43afa0c37b2e
+      translation_source_sha256: 467d685705e44a30acf6430ae22cc8cc3eb23f3ec3cc6de5570a642e523ae497
+    - id: AML.T0124
+      name: Autonomous Attack Orchestration
+      type: technique
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: 91366319f34d7759c4e2d2d36b87e07d3f1c9d861e3a5f8afa0866a3cae34470
+      translation_source_sha256: 260e91e7ffdc818c130686f07e01c14aad90c38859694363c3994222be3065f0
+    - id: AML.TA0001
+      name: AI Attack Adaptation
+      type: tactic
+      has_name: true
+      has_body: true
+      source_field: description
+      needs_review: true
+      review_fields:
+        - description
+      source_sha256: d8398e70114c6a169ace496e75c8928cd6c081f2df66f99b45df0bb55bd79775
+      translation_source_sha256: 5b57efa07f1b359d7a3c177ef6315bbc4af61acb0eedbe43483243ead70559cb

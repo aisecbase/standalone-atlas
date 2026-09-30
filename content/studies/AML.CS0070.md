@@ -58,12 +58,12 @@ procedure:
       tactic_name: Разведка
       technique: AML.T0116
       technique_name: Автономная разведка
-    - description: DeepSeek выполнил запрос в FOFA и получил записи о 84 экземплярах Langflow, доступных из интернета. Эти записи указывали лишь на доступность экземпляров извне и не подтверждали, что они являлись уязвимыми целями.
-      description_line: DeepSeek выполнил запрос в FOFA и получил записи о 84 экземплярах Langflow, доступных из интернета. Эти записи указывали лишь на доступность экземпляров извне и не подтверждали, что они являлись уязвимыми целями.
+    - description: DeepSeek queried FOFA and obtained records for 84 exposed Langflow instances. These were exposure records, not confirmed vulnerable targets.
+      description_line: DeepSeek queried FOFA and obtained records for 84 exposed Langflow instances. These were exposure records, not confirmed vulnerable targets.
       tactic: AML.TA0002
       tactic_name: Разведка
-      technique: AML.T0000
-      technique_name: Поиск в открытых технических базах данных
+      technique: AML.T0000.003
+      technique_name: Scan Databases
     - description: DeepSeek скачал общедоступный PoC для уязвимости CVE-2026-33017 в Langflow. Отчёт не подтверждает, что этот PoC был существенно изменён.
       description_line: DeepSeek скачал общедоступный PoC для уязвимости CVE-2026-33017 в Langflow. Отчёт не подтверждает, что этот PoC был существенно изменён.
       tactic: AML.TA0003

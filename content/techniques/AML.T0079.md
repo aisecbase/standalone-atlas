@@ -12,7 +12,7 @@ mitigation_count: 0
 modified_date: "2026-05-27"
 platforms:
     - Enterprise
-procedure_count: 11
+procedure_count: 12
 source_name: Stage Capabilities
 subtechnique_count: 0
 subtechnique_of: ""
@@ -48,4 +48,5 @@ url: /techniques/AML.T0079/
 <a class="relation-item" href="/studies/AML.CS0059/"><span class="relation-id">AML.CS0059</span><strong>EchoLeak: промпт-инъекция нулевого клика против M365 Copilot для эксфильтрации данных</strong><span class="relation-meta">Актор: Aim Labs / Тактика: AML.TA0003 Подготовка ресурсов</span><p>Исследователи подготовили веб-эндпоинт, контролируемый злоумышленником, для приема исходящих запросов с закодированными конфиденциальными данными. Эндпоинт служил точкой сбора для канала эксфильтрации.</p></a>
 <a class="relation-item" href="/studies/AML.CS0061/"><span class="relation-id">AML.CS0061</span><strong>AI in the Middle: веб-сервисы ИИ как ретрансляторы C2</strong><span class="relation-meta">Актор: Check Point Research / Тактика: AML.TA0003 Подготовка ресурсов</span><p>Исследователи разместили внешне безобидное содержимое, одновременно возвращая данные, которые имплант мог интерпретировать как C2-инструкции.</p></a>
 <a class="relation-item" href="/studies/AML.CS0066/"><span class="relation-id">AML.CS0066</span><strong>ZombieAgent: атака на ChatGPT с эксфильтрацией данных</strong><span class="relation-meta">Актор: Radware Security Researchers / Тактика: AML.TA0003 Подготовка ресурсов</span><p>Исследователи подготовили инфраструктуру для приёма эксфильтрированных данных.</p></a>
+<a class="relation-item" href="/studies/AML.CS0072/"><span class="relation-id">AML.CS0072</span><strong>AI Recommendation Poisoning via Crafted AI Assistant Links</strong><span class="relation-meta">Актор: Multiple commercial entities; 31 distinct companies identified / Тактика: AML.TA0003 Подготовка ресурсов</span><p>Operators embedded the crafted link into their own web properties as a &#34;Summarize with AI&#34; button or share widget. In some cases, the same links were distributed through email.</p></a>
 </div>

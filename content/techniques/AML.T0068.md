@@ -7,13 +7,13 @@ created_date: "2025-03-12"
 description: Злоумышленники могут скрывать или иным образом обфусцировать промпт-инъекции либо содержимое для извлечения, чтобы избежать обнаружения людьми, гардрейлами большой языковой модели (LLM) или другими механизмами...
 generated: true
 generated_by: atlasgen
-maturity: demonstrated
+maturity: realized
 mitigation_count: 2
-modified_date: "2026-05-27"
+modified_date: "2026-09-15"
 platforms:
     - Generative AI
     - Agentic AI
-procedure_count: 10
+procedure_count: 11
 source_name: LLM Prompt Obfuscation
 subtechnique_count: 0
 subtechnique_of: ""
@@ -58,4 +58,5 @@ url: /techniques/AML.T0068/
 <a class="relation-item" href="/studies/AML.CS0059/"><span class="relation-id">AML.CS0059</span><strong>EchoLeak: промпт-инъекция нулевого клика против M365 Copilot для эксфильтрации данных</strong><span class="relation-meta">Актор: Aim Labs / Тактика: AML.TA0007 Уклонение от защиты</span><p>Промпт был сформулирован как безобидный деловой текст, а не как очевидно вредоносная инструкция, чтобы не вызвать подозрений у пользователя.</p></a>
 <a class="relation-item" href="/studies/AML.CS0061/"><span class="relation-id">AML.CS0061</span><strong>AI in the Middle: веб-сервисы ИИ как ретрансляторы C2</strong><span class="relation-meta">Актор: Check Point Research / Тактика: AML.TA0007 Уклонение от защиты</span><p>Когда некоторые промпты блокировались защитными механизмами модели, исследователи кодировали или шифровали данные полезной нагрузки в высокоэнтропийные блоки, чтобы снизить вероятность распознавания содержимого как вредоносного.</p></a>
 <a class="relation-item" href="/studies/AML.CS0066/"><span class="relation-id">AML.CS0066</span><strong>ZombieAgent: атака на ChatGPT с эксфильтрацией данных</strong><span class="relation-meta">Актор: Radware Security Researchers / Тактика: AML.TA0007 Уклонение от защиты</span><p>Промпт-инъекция была визуально скрыта в содержимом, контролируемом внешней стороной, с помощью таких приёмов, как белый текст на белом фоне или микроскопический размер шрифта. ChatGPT мог обрабатывать инструкции, хотя они были незаметны пользователю.</p></a>
+<a class="relation-item" href="/studies/AML.CS0072/"><span class="relation-id">AML.CS0072</span><strong>AI Recommendation Poisoning via Crafted AI Assistant Links</strong><span class="relation-meta">Актор: Multiple commercial entities; 31 distinct companies identified / Тактика: AML.TA0007 Уклонение от защиты</span><p>The instruction was concealed from the user behind a benign interface label, with the prompt text visible only in the URL. Bundling it with a genuine summarization request made the resulting assistant behavior appear expected.</p></a>
 </div>

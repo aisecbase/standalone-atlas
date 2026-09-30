@@ -9,7 +9,7 @@ generated: true
 generated_by: atlasgen
 maturity: realized
 mitigation_count: 4
-modified_date: "2026-05-27"
+modified_date: "2026-09-15"
 platforms:
     - Generative AI
     - Agentic AI
@@ -104,3 +104,4 @@ url: /techniques/AML.T0054/
 - [Refusal in Language Models Is Mediated by a Single Direction](https://arxiv.org/abs/2406.11717)
 - [Universal and Transferable Adversarial Attacks on Aligned Language Models](https://arxiv.org/abs/2307.15043)
 - [GitHub Copilot Jailbreak Vulnerability Let Attackers Train Malicious Models](https://cybersecuritynews.com/github-copilot-jailbreak-vulnerability)
+- [Data-Structure Injection (DSI) in AI Agents](https://labs.zenity.io/p/data-structure-injection-dsi-in-ai-agents)

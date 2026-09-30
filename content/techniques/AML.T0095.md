@@ -8,8 +8,8 @@ description: Злоумышленники могут искать на публ�
 generated: true
 generated_by: atlasgen
 maturity: realized
-mitigation_count: 1
-modified_date: "2026-05-27"
+mitigation_count: 2
+modified_date: "2026-09-15"
 platforms:
     - Enterprise
 procedure_count: 3
@@ -45,6 +45,7 @@ url: /techniques/AML.T0095/
 
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0000/"><span class="relation-id">AML.M0000</span><strong>Ограничение публичного раскрытия информации</strong><p>Ограничивайте размещение на веб-сайтах и доменах общедоступной технической и организационной информации, раскрывающей ИИ-стек, сервисы, сведения о сотрудниках или другие данные, полезные для выбора целей.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0039/"><span class="relation-id">AML.M0039</span><strong>AI Honeypots</strong><p>Decoy assets, such as honeypots, can act as a first contact for adversarial activity and reveal discovery channels that attackers are using to find web AI assets for targeting.</p></a>
 </div>
 
 

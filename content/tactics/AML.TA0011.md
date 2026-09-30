@@ -8,9 +8,9 @@ description: Злоумышленник пытается манипулиров�
 generated: true
 generated_by: atlasgen
 modified_date: "2025-04-09"
-procedure_count: 67
+procedure_count: 68
 source_name: Impact
-technique_count: 29
+technique_count: 30
 title: Воздействие
 url: /tactics/AML.TA0011/
 ---
@@ -55,6 +55,7 @@ url: /tactics/AML.TA0011/
 <a class="relation-item" href="/techniques/AML.T0112.000/"><span class="relation-id">AML.T0112.000</span><strong>Локальный ИИ-агент</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0112.001/"><span class="relation-id">AML.T0112.001</span><strong>ИИ-артефакты</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0112.001/"><span class="relation-id">AML.T0112.001</span><strong>ИИ-артефакты</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0130/"><span class="relation-id">AML.T0130</span><strong>AI Agent Response Biasing</strong></a>
 </div>
 
 
@@ -76,4 +77,4 @@ url: /tactics/AML.TA0011/
 </div>
 
 
-Показано 12 из 67 примеров.
+Показано 12 из 68 примеров.

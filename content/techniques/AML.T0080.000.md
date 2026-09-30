@@ -7,13 +7,13 @@ created_date: "2025-09-30"
 description: Злоумышленники могут манипулировать памятью большой языковой модели (LLM), чтобы изменения в LLM сохранялись в последующих чат-сессиях. Память — распространённая функция LLM, позволяющая запоминать информацию между...
 generated: true
 generated_by: atlasgen
-maturity: demonstrated
+maturity: realized
 mitigation_count: 2
 modified_date: "2026-05-27"
 platforms:
     - Generative AI
     - Agentic AI
-procedure_count: 3
+procedure_count: 4
 source_name: Memory
 subtechnique_count: 0
 subtechnique_of: AML.T0080
@@ -63,4 +63,5 @@ url: /techniques/AML.T0080.000/
 <a class="relation-item" href="/studies/AML.CS0036/"><span class="relation-id">AML.CS0036</span><strong>AIKatz: атака на десктопные LLM-приложения</strong><span class="relation-meta">Актор: Lumia Security / Тактика: AML.TA0006 Закрепление</span><p>Затем злоумышленник мог создавать вредоносные промпты, манипулирующие памятью LLM для достижения устойчивого эффекта. Любое изменение в памяти также распространялось бы на новые цепочки сообщений.</p></a>
 <a class="relation-item" href="/studies/AML.CS0040/"><span class="relation-id">AML.CS0040</span><strong>Взлом памяти ChatGPT с помощью промпт-инъекции</strong><span class="relation-meta">Актор: Embrace the Red / Тактика: AML.TA0006 Закрепление</span><p>Промпт добавлял новые воспоминания и изменял поведение ChatGPT. Окно чата показывало, что память задана, хотя проверки или вмешательства со стороны человека не было. Все будущие сессии чата будут использовать отравленное хранилище памяти.</p></a>
 <a class="relation-item" href="/studies/AML.CS0066/"><span class="relation-id">AML.CS0066</span><strong>ZombieAgent: атака на ChatGPT с эксфильтрацией данных</strong><span class="relation-meta">Актор: Radware Security Researchers / Тактика: AML.TA0006 Закрепление</span><p>Вредоносные инструкции заставили ChatGPT создавать или изменять записи в функции Memory. Отравленные записи памяти предписывали ChatGPT сохранять чувствительную информацию из разговоров и выполнять заданные злоумышленником действия во время последующих взаимодействий.</p></a>
+<a class="relation-item" href="/studies/AML.CS0072/"><span class="relation-id">AML.CS0072</span><strong>AI Recommendation Poisoning via Crafted AI Assistant Links</strong><span class="relation-meta">Актор: Multiple commercial entities; 31 distinct companies identified / Тактика: AML.TA0006 Закрепление</span><p>The persistence clause caused the assistant to write a durable memory entry designating the operator&#39;s domain, product, or marketing copy as an authoritative source. The entry survived beyond its originating session.</p></a>
 </div>
