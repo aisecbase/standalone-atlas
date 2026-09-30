@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: T1596.005
 attack_ref_url: https://attack.mitre.org/techniques/T1596/005/
 created_date: "2026-09-15"
-description: Adversaries may search public internet-scan services to identify a victim's exposed AI infrastructure. These services, such as Shodan and Censys, continuously scan the internet and publish the active IP addresses,...
+description: Злоумышленники могут искать сведения в общедоступных сервисах сканирования интернета, чтобы выявить доступную из интернета инфраструктуру ИИ жертвы. Такие сервисы, как Shodan и Censys, непрерывно сканируют интернет и...
 generated: true
 generated_by: atlasgen
 maturity: realized
@@ -18,15 +18,13 @@ subtechnique_count: 0
 subtechnique_of: AML.T0000
 tactics:
     - AML.TA0002
-title: Scan Databases
+title: Базы данных с результатами сканирований
 url: /techniques/AML.T0000.003/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Злоумышленники могут искать сведения в общедоступных сервисах сканирования интернета, чтобы выявить доступную из интернета инфраструктуру ИИ жертвы. Такие сервисы, как Shodan и Censys, непрерывно сканируют интернет и публикуют активные IP-адреса, имена хостов, открытые порты и баннеры сервисов. Злоумышленники могут выполнять поиск по этим данным без прямого взаимодействия с целью.
 
-Adversaries may search public internet-scan services to identify a victim's exposed AI infrastructure. These services, such as Shodan and Censys, continuously scan the internet and publish the active IP addresses, hostnames, open ports, and service banners, which adversaries can query without interacting with the target directly.
-
-Information gathered this way may also reveal candidates for follow-on [Active Scanning](/techniques/AML.T0006) to confirm that services remain reachable, to probe for misconfigurations or unauthorized endpoints. It may also inform later initial access attempts such as [Exploit Public-Facing Application](/techniques/AML.T0049). Unlike [Active Scanning](/techniques/AML.T0006), this technique relies on third-party scan data and involves no direct interaction with the victim system.
+Собранные таким образом сведения также могут помочь выявить потенциальные цели для последующего применения техники [Активное сканирование](/techniques/AML.T0006), чтобы подтвердить, что сервисы по-прежнему доступны, и проверить наличие ошибок конфигурации или несанкционированных конечных точек. Эти сведения также могут использоваться при подготовке последующих попыток первоначального доступа, например с помощью техники [Эксплуатация приложения, доступного из интернета](/techniques/AML.T0049). В отличие от техники [Активное сканирование](/techniques/AML.T0006), эта техника использует результаты сканирования, полученные третьими сторонами, и не предполагает прямого взаимодействия с системой жертвы.
 
 
 ## Тактики

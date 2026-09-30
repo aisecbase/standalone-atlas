@@ -63,7 +63,7 @@ procedure:
       tactic: AML.TA0002
       tactic_name: Разведка
       technique: AML.T0000.003
-      technique_name: Scan Databases
+      technique_name: Базы данных с результатами сканирований
     - description: DeepSeek скачал общедоступный PoC для уязвимости CVE-2026-33017 в Langflow. Отчёт не подтверждает, что этот PoC был существенно изменён.
       description_line: DeepSeek скачал общедоступный PoC для уязвимости CVE-2026-33017 в Langflow. Отчёт не подтверждает, что этот PoC был существенно изменён.
       tactic: AML.TA0003

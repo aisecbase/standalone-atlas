@@ -28,9 +28,9 @@ totals:
         needs_review: 1
     technique:
         total: 208
-        name_translated: 197
-        body_translated: 197
-        fully_translated: 188
+        name_translated: 198
+        body_translated: 198
+        fully_translated: 189
         needs_review: 9
 missing:
     - id: AML.CS0072
@@ -43,12 +43,6 @@ missing:
     - id: AML.M0039
       name: AI Honeypots
       type: mitigation
-      has_name: false
-      has_body: false
-      source_field: description
-    - id: AML.T0000.003
-      name: Scan Databases
-      type: technique
       has_name: false
       has_body: false
       source_field: description

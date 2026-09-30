@@ -32,8 +32,8 @@ url: /tactics/AML.TA0002/
 <a class="relation-item" href="/techniques/AML.T0000.001/"><span class="relation-id">AML.T0000.001</span><strong>Репозитории препринтов</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0000.002/"><span class="relation-id">AML.T0000.002</span><strong>Технические блоги</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0000.002/"><span class="relation-id">AML.T0000.002</span><strong>Технические блоги</strong><span class="relation-meta">Подтехника</span></a>
-<a class="relation-item" href="/techniques/AML.T0000.003/"><span class="relation-id">AML.T0000.003</span><strong>Scan Databases</strong><span class="relation-meta">Подтехника</span></a>
-<a class="relation-item" href="/techniques/AML.T0000.003/"><span class="relation-id">AML.T0000.003</span><strong>Scan Databases</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0000.003/"><span class="relation-id">AML.T0000.003</span><strong>Базы данных с результатами сканирований</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0000.003/"><span class="relation-id">AML.T0000.003</span><strong>Базы данных с результатами сканирований</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0001/"><span class="relation-id">AML.T0001</span><strong>Поиск открытых материалов по анализу уязвимостей ИИ</strong></a>
 <a class="relation-item" href="/techniques/AML.T0003/"><span class="relation-id">AML.T0003</span><strong>Поиск на сайтах организации-жертвы</strong></a>
 <a class="relation-item" href="/techniques/AML.T0004/"><span class="relation-id">AML.T0004</span><strong>Поиск в репозиториях приложений</strong></a>

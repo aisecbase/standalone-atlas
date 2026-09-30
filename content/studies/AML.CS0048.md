@@ -15,7 +15,7 @@ procedure:
       tactic: AML.TA0002
       tactic_name: Разведка
       technique: AML.T0000.003
-      technique_name: Scan Databases
+      technique_name: Базы данных с результатами сканирований
     - description: The researcher exploited a proxy misconfiguration present in ClawdBot's control server to gain access to control interfaces that had authentication enabled.
       description_line: The researcher exploited a proxy misconfiguration present in ClawdBot's control server to gain access to control interfaces that had authentication enabled.
       tactic: AML.TA0004
