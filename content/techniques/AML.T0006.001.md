@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-09-15"
-description: Adversaries may query documented or undocumented APIs in agentic SaaS hosting platforms to uncover agentic targets. SaaS and agentic platforms can expose provider control-plane or identity APIs that return tenant,...
+description: Злоумышленники могут обращаться к документированным или недокументированным API SaaS-платформ для размещения ИИ-агентов, чтобы выявлять цели для атак на ИИ-агентов. SaaS-платформы и платформы ИИ-агентов могут...
 generated: true
 generated_by: atlasgen
 maturity: feasible
@@ -21,15 +21,13 @@ subtechnique_count: 0
 subtechnique_of: AML.T0006
 tactics:
     - AML.TA0002
-title: Query Platform Metadata APIs
+title: Запросы к API метаданных платформ
 url: /techniques/AML.T0006.001/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Злоумышленники могут обращаться к документированным или недокументированным API SaaS-платформ для размещения ИИ-агентов, чтобы выявлять цели для атак на ИИ-агентов. SaaS-платформы и платформы ИИ-агентов могут открывать доступ к API поставщика для управления платформой или работы со службами идентификации. Эти API возвращают идентификаторы тенантов, сред или развёртываний, в том числе для ресурсов с ошибками конфигурации или ресурсов, непреднамеренно доступных пользователям без аутентификации.
 
-Adversaries may query documented or undocumented APIs in agentic SaaS hosting platforms to uncover agentic targets. SaaS and agentic platforms can expose provider control-plane or identity APIs that return tenant, environment, or deployment information IDs, including for resources that are misconfigured or unintentionally accessible by unauthenticated users.
-
-Attackers have been seen abusing this type of functionality to perform information gathering on SaaS platforms, for example via AADInternals' OSINT page,[[aadinternals]] an OSINT online tool showcasing an undocumented API reconnaissance method for Entra ID. This undocumented Power Platform API could be used to uncover environment IDs, which may subsequently be used to scan for public agents. Following the identified abuse, required authentication was added to the tool.
+Зафиксированы случаи, когда злоумышленники использовали такую функциональность для сбора информации о SaaS-платформах, например через OSINT-страницу AADInternals,[[aadinternals]] — онлайн-инструмент OSINT, демонстрирующий метод разведки Entra ID с помощью недокументированного API. Этот недокументированный API Power Platform мог использоваться для выявления идентификаторов сред, которые затем могут применяться при сканировании для поиска общедоступных агентов. После выявления такого злоупотребления в инструменте ввели обязательную аутентификацию.
 
 
 ## Тактики
