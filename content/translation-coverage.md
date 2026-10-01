@@ -59,10 +59,10 @@ generated_by: atlasgen
 <tr>
 <th scope="row" data-label="Тип объектов">Техники</th>
 <td data-label="Всего">208</td>
-<td data-label="Названий переведено">198</td>
-<td data-label="Описаний переведено">198</td>
+<td data-label="Названий переведено">199</td>
+<td data-label="Описаний переведено">199</td>
 <td data-label="Процедур переведено">-</td>
-<td data-label="Полностью переведено">189</td>
+<td data-label="Полностью переведено">190</td>
 <td data-label="Требует проверки">9</td>
 </tr>
 </tbody>
@@ -87,11 +87,10 @@ generated_by: atlasgen
 - [`AML.CS0048`](/studies/AML.CS0048/) (Кейсы): Exposed ClawdBot Control Interfaces Leads to Credential Access and Execution; название: да; описание/summary: да; процедуры: 8/10
 - [`AML.CS0070`](/studies/AML.CS0070/) (Кейсы): Threat Actor Uses a DeepSeek-Powered Hermes Agent in Langflow and n8n Exploitation Attempts; название: да; описание/summary: да; процедуры: 17/18
 
-## Перевод отсутствует (12)
+## Перевод отсутствует (11)
 
 - [`AML.CS0072`](/studies/AML.CS0072/) (Кейсы): AI Recommendation Poisoning via Crafted AI Assistant Links; название: нет; описание/summary: нет; процедуры: 0/6
 - [`AML.M0039`](/mitigations/AML.M0039/) (Меры защиты): AI Honeypots; название: нет; описание/summary: нет
-- [`AML.T0006.000`](/techniques/AML.T0006.000/) (Техники): Enumerate Hosted AI Resources; название: нет; описание/summary: нет
 - [`AML.T0006.001`](/techniques/AML.T0006.001/) (Техники): Query Platform Metadata APIs; название: нет; описание/summary: нет
 - [`AML.T0006.002`](/techniques/AML.T0006.002/) (Техники): Scan for Exposed AI Infrastructure; название: нет; описание/summary: нет
 - [`AML.T0006.003`](/techniques/AML.T0006.003/) (Техники): Probe AI Agent Trigger Channels; название: нет; описание/summary: нет

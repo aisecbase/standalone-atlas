@@ -45,7 +45,7 @@ Adversaries may send crafted inputs to potential public triggers, such as email 
 ## Другие подтехники родителя
 
 <div class="relation-list">
-<a class="relation-item" href="/techniques/AML.T0006.000/"><span class="relation-id">AML.T0006.000</span><strong>Enumerate Hosted AI Resources</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0006.000/"><span class="relation-id">AML.T0006.000</span><strong>Получение списка размещённых ресурсов ИИ</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0006.001/"><span class="relation-id">AML.T0006.001</span><strong>Query Platform Metadata APIs</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0006.002/"><span class="relation-id">AML.T0006.002</span><strong>Scan for Exposed AI Infrastructure</strong><span class="relation-meta">Подтехника</span></a>
 </div>

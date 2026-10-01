@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-09-15"
-description: Adversaries may directly probe an agentic or SaaS platform to enumerate the resources a specific victim has deployed on it. Platforms frequently host AI agents behind predictable URL structures derived from...
+description: Злоумышленники могут напрямую зондировать платформу ИИ-агентов или SaaS-платформу, чтобы получить список ресурсов, которые конкретная жертва разместила на ней. На таких платформах ИИ-агенты часто размещаются по URL с...
 generated: true
 generated_by: atlasgen
 maturity: feasible
@@ -21,13 +21,11 @@ subtechnique_count: 0
 subtechnique_of: AML.T0006
 tactics:
     - AML.TA0002
-title: Enumerate Hosted AI Resources
+title: Получение списка размещённых ресурсов ИИ
 url: /techniques/AML.T0006.000/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
-
-Adversaries may directly probe an agentic or SaaS platform to enumerate the resources a specific victim has deployed on it. Platforms frequently host AI agents behind predictable URL structures derived from identifiers such as environment, tenant, resource-group, or agent names, and default out-of-the-box deployment configurations keep these conventions consistent across victims. Adversaries can learn these conventions from public sources such as vendor documentation, code repositories and actual hosted resources, then fuzz or brute-force the derived namespace to discover live AI agents, endpoints, and associated metadata. Discovered resources can be used to identify targets for further access, collection, or attack adaptation.
+Злоумышленники могут напрямую зондировать платформу ИИ-агентов или SaaS-платформу, чтобы получить список ресурсов, которые конкретная жертва разместила на ней. На таких платформах ИИ-агенты часто размещаются по URL с предсказуемой структурой, построенной на основе идентификаторов, например имён среды, тенанта, группы ресурсов или агента. Готовые конфигурации развёртывания по умолчанию обеспечивают единообразие этих правил именования у разных жертв. Злоумышленники могут изучить эти правила по открытым источникам, таким как документация поставщика, репозитории кода и фактически размещённые ресурсы, а затем применять фаззинг или перебор построенного на их основе пространства имён, чтобы выявить работающих ИИ-агентов, конечные точки и связанные метаданные. Выявленные ресурсы могут использоваться для определения целей дальнейшего доступа, сбора данных или адаптации атаки.
 
 
 ## Тактики
