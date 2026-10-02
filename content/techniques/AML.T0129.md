@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-09-15"
-description: Adversaries may place instructions or triggers in one part of a multimodal input to influence the model while staying unnoticed by human reviewers and by defenses that do not inspect all input modalities. Multimodal...
+description: Злоумышленники могут размещать инструкции или триггеры в одной из частей мультимодальных входных данных, чтобы воздействовать на модель, оставаясь незамеченными как для людей, проверяющих эти данные, так и для средств...
 generated: true
 generated_by: atlasgen
 maturity: feasible
@@ -19,17 +19,15 @@ subtechnique_count: 0
 subtechnique_of: ""
 tactics:
     - AML.TA0007
-title: Triggers in Multimodal Inputs
+title: Триггеры в мультимодальных входных данных
 url: /techniques/AML.T0129/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Злоумышленники могут размещать инструкции или триггеры в одной из частей мультимодальных входных данных, чтобы воздействовать на модель, оставаясь незамеченными как для людей, проверяющих эти данные, так и для средств защиты, которые не проверяют все модальности входных данных.
 
-Adversaries may place instructions or triggers in one part of a multimodal input to influence the model while staying unnoticed by human reviewers and by defenses that do not inspect all input modalities.
+Мультимодальные системы совместно обрабатывают текст и данные других модальностей, однако многие средства модерации и фильтрации работают преимущественно с текстовым каналом. Полезная нагрузка, размещённая в данных модальности, которая не проверяется или проверяется иначе, чем текст, всё равно разбирается моделью, но может остаться необнаруженной. Это позволяет такой нагрузке изменять выходные данные модели или реализовать межмодальную промпт-инъекцию.
 
-Multimodal systems jointly process text alongside other modalities, yet many moderation and filtering controls operate mainly on the textual channel. A payload placed in a modality that is not inspected, or is inspected differently from text, is still parsed by the model but can escape detection, allowing it to alter model output or carry a cross-modal prompt injection.
-
-Examples include instructions placed in an image, audio, or video channel, or carried in file metadata (e.g. EXIF for images, ID3 tags for audio, or document metadata).
+Примеры включают инструкции, размещённые в канале изображений, аудио или видео либо в метаданных файлов (например, в EXIF для изображений, ID3-тегах для аудио или метаданных документов).
 
 
 ## Тактики

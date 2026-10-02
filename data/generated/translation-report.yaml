@@ -28,9 +28,9 @@ totals:
         needs_review: 1
     technique:
         total: 208
-        name_translated: 202
-        body_translated: 202
-        fully_translated: 193
+        name_translated: 203
+        body_translated: 203
+        fully_translated: 194
         needs_review: 9
 missing:
     - id: AML.CS0072
@@ -43,12 +43,6 @@ missing:
     - id: AML.M0039
       name: AI Honeypots
       type: mitigation
-      has_name: false
-      has_body: false
-      source_field: description
-    - id: AML.T0129
-      name: Triggers in Multimodal Inputs
-      type: technique
       has_name: false
       has_body: false
       source_field: description

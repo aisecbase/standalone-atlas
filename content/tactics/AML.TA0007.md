@@ -41,7 +41,7 @@ url: /tactics/AML.TA0007/
 <a class="relation-item" href="/techniques/AML.T0109/"><span class="relation-id">AML.T0109</span><strong>Подмена компонента после одобрения в цепочке поставок ИИ</strong></a>
 <a class="relation-item" href="/techniques/AML.T0111/"><span class="relation-id">AML.T0111</span><strong>Накрутка репутации в цепочке поставок ИИ</strong></a>
 <a class="relation-item" href="/techniques/AML.T0123/"><span class="relation-id">AML.T0123</span><strong>Обфусцированные файлы или информация</strong></a>
-<a class="relation-item" href="/techniques/AML.T0129/"><span class="relation-id">AML.T0129</span><strong>Triggers in Multimodal Inputs</strong></a>
+<a class="relation-item" href="/techniques/AML.T0129/"><span class="relation-id">AML.T0129</span><strong>Триггеры в мультимодальных входных данных</strong></a>
 <a class="relation-item" href="/techniques/AML.T0134/"><span class="relation-id">AML.T0134</span><strong>AI Targeted Cloaking</strong></a>
 </div>
 
