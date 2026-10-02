@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-09-15"
-description: Adversaries may craft links that open an AI assistant or agent with attacker-controlled input already supplied, so that opening the link initiates an interaction the adversary defines rather than one the target...
+description: Злоумышленники могут создавать ссылки, которые открывают ИИ-ассистента или агента с уже подставленными входными данными, контролируемыми злоумышленником. При открытии такой ссылки начинается взаимодействие, заданное...
 generated: true
 generated_by: atlasgen
 maturity: realized
@@ -19,15 +19,13 @@ subtechnique_count: 0
 subtechnique_of: ""
 tactics:
     - AML.TA0004
-title: Crafted AI Assistant Links
+title: Специально сформированные ссылки на ИИ-ассистента
 url: /techniques/AML.T0131/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Злоумышленники могут создавать ссылки, которые открывают ИИ-ассистента или агента с уже подставленными входными данными, контролируемыми злоумышленником. При открытии такой ссылки начинается взаимодействие, заданное злоумышленником, а не сформулированное самой жертвой. Многие ИИ-ассистенты принимают промпт через параметры URL (например, `?q=` или `?prompt=`): при открытии ссылки этот промпт автоматически подставляется, а в некоторых случаях и отправляется. Закодировав выбранный промпт в такой ссылке, злоумышленник может заставить ассистента жертвы выполнять заданные инструкции сразу после открытия ссылки.
 
-Adversaries may craft links that open an AI assistant or agent with attacker-controlled input already supplied, so that opening the link initiates an interaction the adversary defines rather than one the target composed. Many AI assistants accept a prompt through URL parameters (for example `?q=` or `?prompt=`) that is automatically populated, and in some cases submitted, when the link is opened. By encoding a chosen prompt into such a link, an adversary can cause the target's assistant to act on supplied instructions as soon as the link is opened.
-
-These links are frequently disguised as helpful actions, such as a "Summarize with AI" button or a share link, and distributed through web pages, emails, documents, or messages. Because the resulting interaction runs in the target's own assistant session, a crafted link can drive a range of downstream impacts depending on the supplied instructions, such as exfiltrating data the assistant can access or for [AI Recommendation Poisoning](/techniques/AML.T0131).
+Такие ссылки часто маскируют под полезные действия, например кнопку «Summarize with AI» или ссылку для обмена материалами, и распространяют через веб-страницы, электронные письма, документы или сообщения. Поскольку вызванное ссылкой взаимодействие происходит в сессии ИИ-ассистента самой жертвы, специально сформированная ссылка может приводить к различным последствиям в зависимости от заданных инструкций, например к эксфильтрации данных, доступных ассистенту, или к [формированию предвзятых ответов ИИ-агента](/techniques/AML.T0130).
 
 
 ## Тактики

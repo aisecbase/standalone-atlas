@@ -27,7 +27,7 @@ procedure:
       tactic: AML.TA0004
       tactic_name: Первичный доступ
       technique: AML.T0131
-      technique_name: Crafted AI Assistant Links
+      technique_name: Специально сформированные ссылки на ИИ-ассистента
     - description: The instruction was concealed from the user behind a benign interface label, with the prompt text visible only in the URL. Bundling it with a genuine summarization request made the resulting assistant behavior appear expected.
       description_line: The instruction was concealed from the user behind a benign interface label, with the prompt text visible only in the URL. Bundling it with a genuine summarization request made the resulting assistant behavior appear expected.
       tactic: AML.TA0007
