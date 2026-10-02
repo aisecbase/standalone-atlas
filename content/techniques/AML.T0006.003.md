@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: T1595
 attack_ref_url: https://attack.mitre.org/techniques/T1595/
 created_date: "2026-09-15"
-description: Adversaries may send crafted inputs to potential public triggers, such as email addresses, webhooks, or messaging channels, to elicit a response that indicates an invocation of agentic activity. The nature of the...
+description: Злоумышленники могут отправлять специально сформированные входные данные в потенциальные общедоступные точки запуска, такие как адреса электронной почты, вебхуки или каналы обмена сообщениями, чтобы вызвать ответ,...
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
@@ -19,13 +19,11 @@ subtechnique_count: 0
 subtechnique_of: AML.T0006
 tactics:
     - AML.TA0002
-title: Probe AI Agent Trigger Channels
+title: Зондирование каналов запуска ИИ-агента
 url: /techniques/AML.T0006.003/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
-
-Adversaries may send crafted inputs to potential public triggers, such as email addresses, webhooks, or messaging channels, to elicit a response that indicates an invocation of agentic activity. The nature of the response and its content can often reveal agent-managed accounts and expose the additional agentic attack surface. Identified triggers can be used to directly attack the agent.
+Злоумышленники могут отправлять специально сформированные входные данные в потенциальные общедоступные точки запуска, такие как адреса электронной почты, вебхуки или каналы обмена сообщениями, чтобы вызвать ответ, указывающий на запуск работы ИИ-агента. Характер и содержание ответа часто позволяют выявить учётные записи, которыми управляют ИИ-агенты, и дополнительную поверхность атак на ИИ-агентов. Выявленные точки запуска могут использоваться для прямой атаки на агента.
 
 
 ## Тактики
