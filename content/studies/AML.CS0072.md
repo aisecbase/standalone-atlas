@@ -45,7 +45,7 @@ procedure:
       tactic: AML.TA0011
       tactic_name: Воздействие
       technique: AML.T0130
-      technique_name: AI Agent Response Biasing
+      technique_name: Формирование предвзятых ответов ИИ-агента
 procedure_count: 6
 references:
     - title: 'Manipulating AI memory for profit: The rise of AI Recommendation Poisoning'

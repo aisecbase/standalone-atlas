@@ -59,10 +59,10 @@ generated_by: atlasgen
 <tr>
 <th scope="row" data-label="Тип объектов">Техники</th>
 <td data-label="Всего">208</td>
-<td data-label="Названий переведено">203</td>
-<td data-label="Описаний переведено">203</td>
+<td data-label="Названий переведено">204</td>
+<td data-label="Описаний переведено">204</td>
 <td data-label="Процедур переведено">-</td>
-<td data-label="Полностью переведено">194</td>
+<td data-label="Полностью переведено">195</td>
 <td data-label="Требует проверки">9</td>
 </tr>
 </tbody>
@@ -87,11 +87,10 @@ generated_by: atlasgen
 - [`AML.CS0048`](/studies/AML.CS0048/) (Кейсы): Exposed ClawdBot Control Interfaces Leads to Credential Access and Execution; название: да; описание/summary: да; процедуры: 8/10
 - [`AML.CS0070`](/studies/AML.CS0070/) (Кейсы): Threat Actor Uses a DeepSeek-Powered Hermes Agent in Langflow and n8n Exploitation Attempts; название: да; описание/summary: да; процедуры: 17/18
 
-## Перевод отсутствует (7)
+## Перевод отсутствует (6)
 
 - [`AML.CS0072`](/studies/AML.CS0072/) (Кейсы): AI Recommendation Poisoning via Crafted AI Assistant Links; название: нет; описание/summary: нет; процедуры: 0/6
 - [`AML.M0039`](/mitigations/AML.M0039/) (Меры защиты): AI Honeypots; название: нет; описание/summary: нет
-- [`AML.T0130`](/techniques/AML.T0130/) (Техники): AI Agent Response Biasing; название: нет; описание/summary: нет
 - [`AML.T0131`](/techniques/AML.T0131/) (Техники): Crafted AI Assistant Links; название: нет; описание/summary: нет
 - [`AML.T0132`](/techniques/AML.T0132/) (Техники): Misconfigured or Publicly Exposed AI Services; название: нет; описание/summary: нет
 - [`AML.T0133`](/techniques/AML.T0133/) (Техники): Discover AI Agent Runtime Capabilities; название: нет; описание/summary: нет

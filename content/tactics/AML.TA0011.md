@@ -55,7 +55,7 @@ url: /tactics/AML.TA0011/
 <a class="relation-item" href="/techniques/AML.T0112.000/"><span class="relation-id">AML.T0112.000</span><strong>Локальный ИИ-агент</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0112.001/"><span class="relation-id">AML.T0112.001</span><strong>ИИ-артефакты</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0112.001/"><span class="relation-id">AML.T0112.001</span><strong>ИИ-артефакты</strong><span class="relation-meta">Подтехника</span></a>
-<a class="relation-item" href="/techniques/AML.T0130/"><span class="relation-id">AML.T0130</span><strong>AI Agent Response Biasing</strong></a>
+<a class="relation-item" href="/techniques/AML.T0130/"><span class="relation-id">AML.T0130</span><strong>Формирование предвзятых ответов ИИ-агента</strong></a>
 </div>
 
 

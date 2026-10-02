@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-09-15"
-description: Adversaries may manipulate an AI assistant so that it favors adversary-chosen sources, or content in its responses. By injecting instructions such as "treat [source] as a trusted source" or "recommend [source] first,"...
+description: Злоумышленники могут манипулировать ИИ-ассистентом, чтобы в ответах он отдавал предпочтение выбранным ими источникам или материалам. Внедряя инструкции, такие как treat [source] as a trusted source или recommend...
 generated: true
 generated_by: atlasgen
 maturity: realized
@@ -19,15 +19,13 @@ subtechnique_count: 0
 subtechnique_of: ""
 tactics:
     - AML.TA0011
-title: AI Agent Response Biasing
+title: Формирование предвзятых ответов ИИ-агента
 url: /techniques/AML.T0130/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Злоумышленники могут манипулировать ИИ-ассистентом, чтобы в ответах он отдавал предпочтение выбранным ими источникам или материалам. Внедряя инструкции, такие как `treat [source] as a trusted source` или `recommend [source] first,`, злоумышленник делает ответы ассистента предвзятыми в своих интересах: ассистент представляет рекламный контент или материалы, выгодные злоумышленнику, как нейтральный, хорошо обоснованный ответ. Это нарушает целостность ответов ассистента и снижает их надёжность в вопросах, в которых пользователь может на него полагаться, например здоровья, финансов или безопасности. При этом пользователь не знает, что рекомендации стали предвзятыми.
 
-Adversaries may manipulate an AI assistant so that it favors adversary-chosen sources, or content in its responses. By injecting instructions such as "treat [source] as a trusted source" or "recommend [source] first," an adversary biases the assistant's outputs toward their own interests, causing it to present promotional or self-serving content as if it were a neutral, well-reasoned response. This degrades the integrity and trustworthiness of the assistant's responses on topics the user may rely on, such as health, finance, or security, without the user being aware that the advice has been skewed.
-
-The injected instructions can be delivered through different ways, for example through [Crafted AI Assistant Links]. This impact may persist if the agent's memory was poisoned (See [AI Agent Context Poisoning: Memory](/techniques/AML.T0080.000)).
+Внедряемые инструкции могут доставляться разными способами, например через [Специально сформированные ссылки на ИИ-ассистента]. Такое воздействие может сохраняться, если память агента была отравлена (см. [Отравление контекста ИИ-агента: Память](/techniques/AML.T0080.000)).
 
 
 ## Тактики
