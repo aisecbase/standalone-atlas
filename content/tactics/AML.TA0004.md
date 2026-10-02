@@ -51,7 +51,7 @@ url: /tactics/AML.TA0004/
 <a class="relation-item" href="/techniques/AML.T0093/"><span class="relation-id">AML.T0093</span><strong>Внедрение промпта через публичное приложение</strong></a>
 <a class="relation-item" href="/techniques/AML.T0119/"><span class="relation-id">AML.T0119</span><strong>Эксплуатация автоматизированного пайплайна обработки артефактов</strong></a>
 <a class="relation-item" href="/techniques/AML.T0131/"><span class="relation-id">AML.T0131</span><strong>Специально сформированные ссылки на ИИ-ассистента</strong></a>
-<a class="relation-item" href="/techniques/AML.T0132/"><span class="relation-id">AML.T0132</span><strong>Misconfigured or Publicly Exposed AI Services</strong></a>
+<a class="relation-item" href="/techniques/AML.T0132/"><span class="relation-id">AML.T0132</span><strong>ИИ-сервисы с ошибками конфигурации или публичным доступом</strong></a>
 </div>
 
 

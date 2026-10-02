@@ -21,7 +21,7 @@ procedure:
       tactic: AML.TA0004
       tactic_name: Первичный доступ
       technique: AML.T0132
-      technique_name: Misconfigured or Publicly Exposed AI Services
+      technique_name: ИИ-сервисы с ошибками конфигурации или публичным доступом
     - description: Исследователь получил доступ к учетным данным разных сервисов, которые хранились в открытом виде в конфигурационном файле ClawdBot `~/.clawdbot/clawdbot.json`; этот файл виден в панели управления ClawdBot. В разных открытых экземплярах ClawdBot он обнаружил ключи API Anthropic, токены Telegram-ботов, учетные данные Slack OAuth и URI привязки устройств Signal.
       description_line: Исследователь получил доступ к учетным данным разных сервисов, которые хранились в открытом виде в конфигурационном файле ClawdBot `~/.clawdbot/clawdbot.json`; этот файл виден в панели управления ClawdBot. В разных открытых экземплярах ClawdBot он обнаружил ключи API Anthropic, токены Telegram-ботов, учетные данные Slack OAuth и URI привязки устройств Signal.
       tactic: AML.TA0013

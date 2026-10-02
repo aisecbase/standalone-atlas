@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-09-15"
-description: AI agents and LLM platforms are deployed across diverse architectures, including standalone servers, SaaS platforms, and low-code builders. All of these often have misconfigured access controls, ranging from missing...
+description: ИИ-агенты и LLM-платформы развёртываются с использованием разных архитектур, в том числе на отдельных серверах, SaaS-платформах и в low-code-конструкторах. Во всех этих вариантах часто встречаются ошибки настройки...
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
@@ -20,17 +20,15 @@ subtechnique_count: 0
 subtechnique_of: ""
 tactics:
     - AML.TA0004
-title: Misconfigured or Publicly Exposed AI Services
+title: ИИ-сервисы с ошибками конфигурации или публичным доступом
 url: /techniques/AML.T0132/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+ИИ-агенты и LLM-платформы развёртываются с использованием разных архитектур, в том числе на отдельных серверах, SaaS-платформах и в low-code-конструкторах. Во всех этих вариантах часто встречаются ошибки настройки контроля доступа — от отсутствия аутентификации в средах выполнения LLM до настроек, предоставляющих широкий публичный доступ. Такие ошибки значительно расширяют поверхность атак.
 
-AI agents and LLM platforms are deployed across diverse architectures, including standalone servers, SaaS platforms, and low-code builders. All of these often have misconfigured access controls, ranging from missing authentication in LLM runtimes to permissive public access settings, that significantly expand their attack surface.
+Уровень защищённости ИИ-агента влияет на возможности злоумышленников по исследованию доступной им поверхности атак на ИИ-агентов и напрямую расширяет или ограничивает их возможности выявлять ИИ-агентов жертвы и взаимодействовать с ними. Например, один доступный из интернета ИИ-сервис может быть проще выявить любому пользователю без аутентификации, тогда как для выявления другого могут потребоваться скомпрометированные учётные данные.
 
-AI agent's security posture affects how attackers are able to explore which agentic attack surface is available to them and directly either expands or limits an adversary's ability to discover and interact with a target's AI agents. For example, one internet-facing AI service could be more easily discoverable by any unauthenticated user, while another may require compromised credentials to even be discovered.
-
-Adversaries may discover and interact with AI agents and LLM services as unauthenticated users via a combination of various OSINT and active scanning methods. These could include using search engines to discover accessible agentic deployments (See [Search Open Technical Databases](/techniques/AML.T0000)), search backlinks which could indicate existing or open agents which have been embedded to frontends (See [Search Open Website/Domains](/techniques/AML.T0095)), or directly scanning a target's AI infrastructure (See [Active Scanning](/techniques/AML.T0006)).
+Злоумышленники могут выявлять ИИ-агентов и LLM-сервисы и взаимодействовать с ними без аутентификации, сочетая различные методы OSINT и активного сканирования. К таким методам относятся использование поисковых систем для выявления доступных развёрнутых ИИ-агентов (см. [Поиск в открытых технических базах данных](/techniques/AML.T0000)), поиск обратных ссылок, которые могут указывать на существующих или общедоступных агентов, встроенных в пользовательские интерфейсы (см. [Поиск на открытых сайтах и доменах](/techniques/AML.T0095)), либо непосредственное сканирование инфраструктуры ИИ жертвы (см. [Активное сканирование](/techniques/AML.T0006)).
 
 
 ## Тактики
