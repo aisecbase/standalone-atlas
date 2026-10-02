@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-09-15"
-description: Adversaries may interact with an AI agent at runtime to reveal the capabilities available to it, without requiring access to its underlying configuration. Direct interaction with the agent can surface its registered...
+description: Злоумышленники могут взаимодействовать с ИИ-агентом во время его работы, чтобы выявить доступные ему возможности. Для этого им не требуется доступ к конфигурации агента. Прямое взаимодействие с агентом может раскрыть...
 generated: true
 generated_by: atlasgen
 maturity: feasible
@@ -18,17 +18,15 @@ subtechnique_count: 0
 subtechnique_of: ""
 tactics:
     - AML.TA0008
-title: Discover AI Agent Runtime Capabilities
+title: Выявление возможностей ИИ-агента во время работы
 url: /techniques/AML.T0133/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Злоумышленники могут взаимодействовать с ИИ-агентом во время его работы, чтобы выявить доступные ему возможности. Для этого им не требуется доступ к конфигурации агента. Прямое взаимодействие с агентом может раскрыть зарегистрированные у него инструменты и принимаемые ими параметры, действия, которые он может выполнять, доступные ему ресурсы, а также то, от чьего имени и с какими правами он действует. О возможностях агента также можно судить косвенно: отправлять различные запросы и наблюдать, какие выполнены успешно, какие завершились ошибкой, а какие агент отказался выполнять.
 
-Adversaries may interact with an AI agent at runtime to reveal the capabilities available to it, without requiring access to its underlying configuration. Direct interaction with the agent can surface its registered tools and their accepted parameters, the actions it can take, the resources it can reach, and the identity and permission scope it acts under. Capabilities can also be inferred indirectly by issuing varied requests and observing which succeeded, failed, or refused.
+ИИ-агенты часто подключены к корпоративным ресурсам, инструментам и базам данных либо встроены в SaaS-платформы и для выполнения своих функций имеют разрешения действовать от имени пользователей. Выявив работающего агента, к которому у них есть доступ, злоумышленники могут исследовать его поверхность атак: проверять его функциональность, выявлять его инструменты и возможности, доступные ему знания, а также встроенные учётные данные и разрешения.
 
-AI agents are often interconnected with enterprise resources, tools and databases, or embedded within SaaS platforms and have permissions to act on behalf of users in order to facilitate functionality. Once adversaries identify a functional agent that they have access to, they could map the attack surface within that agent, by testing its functionality, enumerating tools, capabilities, knowledge, and embedded credentials and permissions.
-
-This mapping process often reveals the AI agent's full toolset and configuration details and exposes additional exploitation, as enabled by [AI Agent Tool Invocation](/techniques/AML.T0053). The resulting intelligence facilitates follow-on exploitation, including [Initial Access](/tactics/AML.TA0004), [Persistence](/tactics/AML.TA0006), [Privilege Escalation](/tactics/AML.TA0012), and [Exfiltration](/tactics/AML.TA0010).
+Такое исследование часто раскрывает полный набор инструментов ИИ-агента и сведения о его конфигурации, открывая дополнительные возможности эксплуатации с помощью техники [Вызов инструментов ИИ-агента](/techniques/AML.T0053). Полученные сведения облегчают дальнейшую эксплуатацию, включая [Первичный доступ](/tactics/AML.TA0004), [Закрепление](/tactics/AML.TA0006), [Повышение привилегий](/tactics/AML.TA0012) и [Эксфильтрацию](/tactics/AML.TA0010).
 
 
 ## Тактики

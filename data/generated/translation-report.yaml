@@ -28,9 +28,9 @@ totals:
         needs_review: 1
     technique:
         total: 208
-        name_translated: 206
-        body_translated: 206
-        fully_translated: 197
+        name_translated: 207
+        body_translated: 207
+        fully_translated: 198
         needs_review: 9
 missing:
     - id: AML.CS0072
@@ -43,12 +43,6 @@ missing:
     - id: AML.M0039
       name: AI Honeypots
       type: mitigation
-      has_name: false
-      has_body: false
-      source_field: description
-    - id: AML.T0133
-      name: Discover AI Agent Runtime Capabilities
-      type: technique
       has_name: false
       has_body: false
       source_field: description

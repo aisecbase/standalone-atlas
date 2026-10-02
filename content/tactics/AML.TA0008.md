@@ -46,7 +46,7 @@ url: /tactics/AML.TA0008/
 <a class="relation-item" href="/techniques/AML.T0084.003/"><span class="relation-id">AML.T0084.003</span><strong>Цепочки вызовов</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0084.003/"><span class="relation-id">AML.T0084.003</span><strong>Цепочки вызовов</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0089/"><span class="relation-id">AML.T0089</span><strong>Изучение корпоративной среды</strong></a>
-<a class="relation-item" href="/techniques/AML.T0133/"><span class="relation-id">AML.T0133</span><strong>Discover AI Agent Runtime Capabilities</strong></a>
+<a class="relation-item" href="/techniques/AML.T0133/"><span class="relation-id">AML.T0133</span><strong>Выявление возможностей ИИ-агента во время работы</strong></a>
 </div>
 
 
