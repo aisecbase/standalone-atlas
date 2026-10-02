@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: T1595
 attack_ref_url: https://attack.mitre.org/techniques/T1595/
 created_date: "2026-09-15"
-description: Adversaries may scan network ports and services to identify deployed AI backends, model-serving endpoints, and AI agent infrastructure reachable over the internet. Self-hosted AI runtimes typically listen on...
+description: Злоумышленники могут сканировать сетевые порты и сервисы, чтобы выявлять развёрнутые серверные компоненты ИИ, конечные точки сервисов инференса моделей и инфраструктуру ИИ-агентов, доступные из интернета....
 generated: true
 generated_by: atlasgen
 maturity: feasible
@@ -21,15 +21,13 @@ subtechnique_count: 0
 subtechnique_of: AML.T0006
 tactics:
     - AML.TA0002
-title: Scan for Exposed AI Infrastructure
+title: Сканирование для поиска доступной из интернета инфраструктуры ИИ
 url: /techniques/AML.T0006.002/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Злоумышленники могут сканировать сетевые порты и сервисы, чтобы выявлять развёрнутые серверные компоненты ИИ, конечные точки сервисов инференса моделей и инфраструктуру ИИ-агентов, доступные из интернета. Самостоятельно развёрнутые среды выполнения ИИ обычно принимают соединения на предсказуемых, широко известных портах и предоставляют стандартные пути API. Это позволяет злоумышленникам эффективно находить хосты для дальнейшей проверки и предполагать, какая платформа на них работает.
 
-Adversaries may scan network ports and services to identify deployed AI backends, model-serving endpoints, and AI agent infrastructure reachable over the internet. Self-hosted AI runtimes typically listen on predictable, well-known ports and expose standard API paths, allowing adversaries to efficiently locate candidate hosts and infer the platform running on them.
-
-After identifying candidate hosts, adversaries can interact with them directly to confirm live AI services, fingerprint the software stack, and determine version and configuration details. This information can be used to select exploitable targets and tailor subsequent access attempts.
+Найдя хосты для дальнейшей проверки, злоумышленники могут напрямую взаимодействовать с ними, чтобы подтвердить наличие работающих ИИ-сервисов, распознать используемый программный стек и получить сведения о версиях и конфигурации. Эта информация может использоваться для выбора целей, уязвимости которых можно эксплуатировать, и адаптации последующих попыток доступа.
 
 
 ## Тактики

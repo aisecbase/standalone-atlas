@@ -28,9 +28,9 @@ totals:
         needs_review: 1
     technique:
         total: 208
-        name_translated: 200
-        body_translated: 200
-        fully_translated: 191
+        name_translated: 201
+        body_translated: 201
+        fully_translated: 192
         needs_review: 9
 missing:
     - id: AML.CS0072
@@ -43,12 +43,6 @@ missing:
     - id: AML.M0039
       name: AI Honeypots
       type: mitigation
-      has_name: false
-      has_body: false
-      source_field: description
-    - id: AML.T0006.002
-      name: Scan for Exposed AI Infrastructure
-      type: technique
       has_name: false
       has_body: false
       source_field: description

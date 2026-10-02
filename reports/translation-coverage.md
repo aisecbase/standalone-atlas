@@ -8,7 +8,7 @@
 | Меры защиты | 40 | 39 | 39 | - | 39 | 0 |
 | Ресурсы | 6 | 6 | 6 | - | 6 | 0 |
 | Тактики | 16 | 16 | 16 | - | 15 | 1 |
-| Техники | 208 | 200 | 200 | - | 191 | 9 |
+| Техники | 208 | 201 | 201 | - | 192 | 9 |
 
 ## Требует проверки (10)
 
@@ -29,11 +29,10 @@
 - [`AML.CS0048`](/studies/AML.CS0048/) (Кейсы): Exposed ClawdBot Control Interfaces Leads to Credential Access and Execution; название: да; описание/summary: да; процедуры: 8/10
 - [`AML.CS0070`](/studies/AML.CS0070/) (Кейсы): Threat Actor Uses a DeepSeek-Powered Hermes Agent in Langflow and n8n Exploitation Attempts; название: да; описание/summary: да; процедуры: 17/18
 
-## Перевод отсутствует (10)
+## Перевод отсутствует (9)
 
 - [`AML.CS0072`](/studies/AML.CS0072/) (Кейсы): AI Recommendation Poisoning via Crafted AI Assistant Links; название: нет; описание/summary: нет; процедуры: 0/6
 - [`AML.M0039`](/mitigations/AML.M0039/) (Меры защиты): AI Honeypots; название: нет; описание/summary: нет
-- [`AML.T0006.002`](/techniques/AML.T0006.002/) (Техники): Scan for Exposed AI Infrastructure; название: нет; описание/summary: нет
 - [`AML.T0006.003`](/techniques/AML.T0006.003/) (Техники): Probe AI Agent Trigger Channels; название: нет; описание/summary: нет
 - [`AML.T0129`](/techniques/AML.T0129/) (Техники): Triggers in Multimodal Inputs; название: нет; описание/summary: нет
 - [`AML.T0130`](/techniques/AML.T0130/) (Техники): AI Agent Response Biasing; название: нет; описание/summary: нет
