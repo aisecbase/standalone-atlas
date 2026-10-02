@@ -8,7 +8,7 @@
 | Меры защиты | 40 | 39 | 39 | - | 39 | 0 |
 | Ресурсы | 6 | 6 | 6 | - | 6 | 0 |
 | Тактики | 16 | 16 | 16 | - | 15 | 1 |
-| Техники | 208 | 207 | 207 | - | 198 | 9 |
+| Техники | 208 | 208 | 208 | - | 199 | 9 |
 
 ## Требует проверки (10)
 
@@ -29,8 +29,7 @@
 - [`AML.CS0048`](/studies/AML.CS0048/) (Кейсы): Exposed ClawdBot Control Interfaces Leads to Credential Access and Execution; название: да; описание/summary: да; процедуры: 8/10
 - [`AML.CS0070`](/studies/AML.CS0070/) (Кейсы): Threat Actor Uses a DeepSeek-Powered Hermes Agent in Langflow and n8n Exploitation Attempts; название: да; описание/summary: да; процедуры: 17/18
 
-## Перевод отсутствует (3)
+## Перевод отсутствует (2)
 
 - [`AML.CS0072`](/studies/AML.CS0072/) (Кейсы): AI Recommendation Poisoning via Crafted AI Assistant Links; название: нет; описание/summary: нет; процедуры: 0/6
 - [`AML.M0039`](/mitigations/AML.M0039/) (Меры защиты): AI Honeypots; название: нет; описание/summary: нет
-- [`AML.T0134`](/techniques/AML.T0134/) (Техники): AI Targeted Cloaking; название: нет; описание/summary: нет

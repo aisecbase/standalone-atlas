@@ -4,7 +4,7 @@ atlas_type: technique
 attack_ref_id: ""
 attack_ref_url: ""
 created_date: "2026-09-15"
-description: Adversaries may selectively deliver malicious or manipulated content to AI systems, while presenting different benign content to human users, web crawlers, or security detection mechanisms. They may identify AI...
+description: Злоумышленники могут выборочно предоставлять ИИ-системам вредоносный или искажённый контент, одновременно показывая пользователям, веб-роботам или средствам обнаружения угроз другой, безвредный контент. Они могут...
 generated: true
 generated_by: atlasgen
 maturity: feasible
@@ -18,15 +18,13 @@ subtechnique_count: 0
 subtechnique_of: ""
 tactics:
     - AML.TA0007
-title: AI Targeted Cloaking
+title: Клоакинг, нацеленный на ИИ
 url: /techniques/AML.T0134/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+Злоумышленники могут выборочно предоставлять ИИ-системам вредоносный или искажённый контент, одновременно показывая пользователям, веб-роботам или средствам обнаружения угроз другой, безвредный контент. Они могут определять ИИ-браузеры или агентов по строкам user-agent и выбирать содержимое ответа сервера так, чтобы клиенты на основе ИИ получали промпт-инъекции или вводящий в заблуждение контент.
 
-Adversaries may selectively deliver malicious or manipulated content to AI systems, while presenting different benign content to human users, web crawlers, or security detection mechanisms. They may identify AI browsers or agents via user-agent strings and condition the server response so that AI-based clients receive prompt injections or misleading content.
-
-Preventing human visitors, conventional web crawlers, and security tools from observing the same content allows adversaries to make malicious input more difficult to detect. [AI Targeted Cloaking](/techniques/AML.T0134) may be combined with [Drive-by Compromise](/techniques/AML.T0078) to deliver an [LLM Prompt Injection](/techniques/AML.T0051).
+Не позволяя посетителям сайта, обычным веб-роботам и средствам защиты видеть тот же контент, злоумышленники затрудняют обнаружение вредоносных входных данных. Техника [Клоакинг, нацеленный на ИИ](/techniques/AML.T0134) может применяться совместно с техникой [Компрометация при посещении сайта](/techniques/AML.T0078) для доставки [промпт-инъекции в LLM](/techniques/AML.T0051).
 
 
 ## Тактики
