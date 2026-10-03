@@ -2,11 +2,11 @@ version: "2026.09"
 totals:
     case-study:
         total: 73
-        name_translated: 72
-        body_translated: 72
+        name_translated: 73
+        body_translated: 73
         procedures_total: 665
-        procedures_translated: 655
-        fully_translated: 69
+        procedures_translated: 661
+        fully_translated: 70
         needs_review: 0
     mitigation:
         total: 40
@@ -32,14 +32,7 @@ totals:
         body_translated: 208
         fully_translated: 199
         needs_review: 9
-missing:
-    - id: AML.CS0072
-      name: AI Recommendation Poisoning via Crafted AI Assistant Links
-      type: case-study
-      has_name: false
-      has_body: false
-      source_field: summary
-      total_procedures: 6
+missing: []
 partial:
     - id: AML.CS0037
       name: Data Exfiltration via Agent Tools in Copilot Studio

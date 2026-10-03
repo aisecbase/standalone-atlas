@@ -38,7 +38,7 @@ url: /techniques/AML.T0130/
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0072/"><span class="relation-id">AML.CS0072</span><strong>AI Recommendation Poisoning via Crafted AI Assistant Links</strong><span class="relation-meta">Актор: Multiple commercial entities; 31 distinct companies identified / Тактика: AML.TA0011 Воздействие</span><p>In subsequent unrelated conversations, the assistant preferentially surfaced the operator&#39;s domain or product and presented the result as a neutral recommendation. Observed targeting included health and financial topics, where skewed recommendations carry elevated consequences.</p></a>
+<a class="relation-item" href="/studies/AML.CS0072/"><span class="relation-id">AML.CS0072</span><strong>Отравление рекомендаций ИИ через специально сформированные ссылки на ИИ-ассистента</strong><span class="relation-meta">Актор: Несколько коммерческих организаций; выявлена 31 отдельная компания / Тактика: AML.TA0011 Воздействие</span><p>В последующих разговорах, не связанных с исходным, ассистент отдавал предпочтение домену или продукту оператора и представлял результат как нейтральную рекомендацию. Среди наблюдавшихся целевых тем были здоровье и финансы, где предвзятые рекомендации имеют более серьёзные последствия.</p></a>
 </div>
 
 

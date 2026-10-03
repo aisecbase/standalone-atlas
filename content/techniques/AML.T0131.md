@@ -38,5 +38,5 @@ url: /techniques/AML.T0131/
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0072/"><span class="relation-id">AML.CS0072</span><strong>AI Recommendation Poisoning via Crafted AI Assistant Links</strong><span class="relation-meta">Актор: Multiple commercial entities; 31 distinct companies identified / Тактика: AML.TA0004 Первичный доступ</span><p>The user clicked the button or link, which opened the AI assistant domain with the operator&#39;s prompt pre-populated in the input field via a `?q=` or `?prompt=` parameter.</p></a>
+<a class="relation-item" href="/studies/AML.CS0072/"><span class="relation-id">AML.CS0072</span><strong>Отравление рекомендаций ИИ через специально сформированные ссылки на ИИ-ассистента</strong><span class="relation-meta">Актор: Несколько коммерческих организаций; выявлена 31 отдельная компания / Тактика: AML.TA0004 Первичный доступ</span><p>Пользователь нажимал на кнопку или ссылку, которая открывала страницу на домене ИИ-ассистента с промптом оператора, заранее подставленным в поле ввода через параметр `?q=` или `?prompt=`.</p></a>
 </div>

@@ -1,47 +1,47 @@
 ---
-actor: Multiple commercial entities; 31 distinct companies identified
+actor: Несколько коммерческих организаций; выявлена 31 отдельная компания
 atlas_id: AML.CS0072
 atlas_type: case-study
 case_study_type: incident
-description: The Microsoft Defender Security Research Team identified a widespread pattern of AI assistant memory manipulation carried out for promotional purposes, which they named AI Recommendation Poisoning. Most major AI...
+description: Команда Microsoft Defender по исследованию безопасности выявила распространённую схему манипуляции памятью ИИ-ассистентов в рекламных целях, которую исследователи назвали отравлением рекомендаций ИИ (AI Recommendation...
 generated: true
 generated_by: atlasgen
 incident_date: "2026-02-10"
 incident_date_granularity: Day
 incident_date_raw: "2026-02-10"
 procedure:
-    - description: Operators adopted publicly available tooling built to generate AI assistant links carrying embedded memory instructions. The tooling included an npm package, a web-based link generator, and website plugins marketed as a search optimization technique for large language models.
-      description_line: Operators adopted publicly available tooling built to generate AI assistant links carrying embedded memory instructions. The tooling included an npm package, a web-based link generator, and website plugins marketed as a search optimization technique for large language models.
+    - description: Операторы использовали общедоступные средства для создания ссылок на ИИ-ассистентов со встроенными инструкциями по работе с памятью. В их число входили пакет npm, веб-генератор ссылок и плагины для сайтов, которые продвигались как способ поисковой оптимизации для больших языковых моделей.
+      description_line: Операторы использовали общедоступные средства для создания ссылок на ИИ-ассистентов со встроенными инструкциями по работе с памятью. В их число входили пакет npm, веб-генератор ссылок и плагины для сайтов, которые продвигались как способ поисковой оптимизации для больших языковых моделей.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0016
       technique_name: Получение средств для атаки
-    - description: Operators embedded the crafted link into their own web properties as a "Summarize with AI" button or share widget. In some cases, the same links were distributed through email.
-      description_line: Operators embedded the crafted link into their own web properties as a "Summarize with AI" button or share widget. In some cases, the same links were distributed through email.
+    - description: Операторы встраивали специально сформированную ссылку в собственные веб-ресурсы в виде кнопки «Summarize with AI» или виджета обмена материалами. В некоторых случаях те же ссылки распространялись по электронной почте.
+      description_line: Операторы встраивали специально сформированную ссылку в собственные веб-ресурсы в виде кнопки «Summarize with AI» или виджета обмена материалами. В некоторых случаях те же ссылки распространялись по электронной почте.
       tactic: AML.TA0003
       tactic_name: Подготовка ресурсов
       technique: AML.T0079
       technique_name: Размещение средств атаки
-    - description: The user clicked the button or link, which opened the AI assistant domain with the operator's prompt pre-populated in the input field via a `?q=` or `?prompt=` parameter.
-      description_line: The user clicked the button or link, which opened the AI assistant domain with the operator's prompt pre-populated in the input field via a `?q=` or `?prompt=` parameter.
+    - description: Пользователь нажимал на кнопку или ссылку, которая открывала страницу на домене ИИ-ассистента с промптом оператора, заранее подставленным в поле ввода через параметр `?q=` или `?prompt=`.
+      description_line: Пользователь нажимал на кнопку или ссылку, которая открывала страницу на домене ИИ-ассистента с промптом оператора, заранее подставленным в поле ввода через параметр `?q=` или `?prompt=`.
       tactic: AML.TA0004
       tactic_name: Первичный доступ
       technique: AML.T0131
       technique_name: Специально сформированные ссылки на ИИ-ассистента
-    - description: The instruction was concealed from the user behind a benign interface label, with the prompt text visible only in the URL. Bundling it with a genuine summarization request made the resulting assistant behavior appear expected.
-      description_line: The instruction was concealed from the user behind a benign interface label, with the prompt text visible only in the URL. Bundling it with a genuine summarization request made the resulting assistant behavior appear expected.
+    - description: 'Инструкция была скрыта от пользователя за внешне безобидной надписью на элементе интерфейса: текст промпта был виден только в URL. Сочетание этой инструкции с настоящим запросом на создание краткого изложения делало последующее поведение ассистента внешне ожидаемым.'
+      description_line: 'Инструкция была скрыта от пользователя за внешне безобидной надписью на элементе интерфейса: текст промпта был виден только в URL. Сочетание этой инструкции с настоящим запросом на создание краткого изложения делало последующее поведение ассистента внешне ожидаемым.'
       tactic: AML.TA0007
       tactic_name: Уклонение от защиты
       technique: AML.T0068
       technique_name: Обфускация промпта LLM
-    - description: The persistence clause caused the assistant to write a durable memory entry designating the operator's domain, product, or marketing copy as an authoritative source. The entry survived beyond its originating session.
-      description_line: The persistence clause caused the assistant to write a durable memory entry designating the operator's domain, product, or marketing copy as an authoritative source. The entry survived beyond its originating session.
+    - description: Указание сохранить сведения в памяти заставляло ассистента создать запись в долговременной памяти, обозначавшую домен оператора, его продукт или рекламный текст как авторитетный источник. Запись сохранялась и после завершения сессии, в которой была создана.
+      description_line: Указание сохранить сведения в памяти заставляло ассистента создать запись в долговременной памяти, обозначавшую домен оператора, его продукт или рекламный текст как авторитетный источник. Запись сохранялась и после завершения сессии, в которой была создана.
       tactic: AML.TA0006
       tactic_name: Закрепление
       technique: AML.T0080.000
       technique_name: Память
-    - description: In subsequent unrelated conversations, the assistant preferentially surfaced the operator's domain or product and presented the result as a neutral recommendation. Observed targeting included health and financial topics, where skewed recommendations carry elevated consequences.
-      description_line: In subsequent unrelated conversations, the assistant preferentially surfaced the operator's domain or product and presented the result as a neutral recommendation. Observed targeting included health and financial topics, where skewed recommendations carry elevated consequences.
+    - description: В последующих разговорах, не связанных с исходным, ассистент отдавал предпочтение домену или продукту оператора и представлял результат как нейтральную рекомендацию. Среди наблюдавшихся целевых тем были здоровье и финансы, где предвзятые рекомендации имеют более серьёзные последствия.
+      description_line: В последующих разговорах, не связанных с исходным, ассистент отдавал предпочтение домену или продукту оператора и представлял результат как нейтральную рекомендацию. Среди наблюдавшихся целевых тем были здоровье и финансы, где предвзятые рекомендации имеют более серьёзные последствия.
       tactic: AML.TA0011
       tactic_name: Воздействие
       technique: AML.T0130
@@ -52,18 +52,16 @@ references:
       url: https://www.microsoft.com/en-us/security/blog/2026/02/10/ai-recommendation-poisoning/
 reporter: Microsoft Defender Security Research Team
 source_name: AI Recommendation Poisoning via Crafted AI Assistant Links
-target: Users of AI assistants with persistent memory features, including Microsoft 365 Copilot, ChatGPT, Claude, Perplexity, and Grok
-title: AI Recommendation Poisoning via Crafted AI Assistant Links
+target: Пользователи ИИ-ассистентов с функциями долговременной памяти, включая Microsoft 365 Copilot, ChatGPT, Claude, Perplexity и Grok
+title: Отравление рекомендаций ИИ через специально сформированные ссылки на ИИ-ассистента
 url: /studies/AML.CS0072/
 ---
 
-> Перевод описания пока не добавлен; ниже показан оригинальный текст ATLAS.
+[Команда Microsoft Defender по исследованию безопасности](https://www.microsoft.com/en-us/security/blog/author/windows-defender-research/) выявила распространённую схему манипуляции памятью ИИ-ассистентов в рекламных целях, которую исследователи назвали отравлением рекомендаций ИИ (AI Recommendation Poisoning).
 
-The [Microsoft Defender Security Research Team](https://www.microsoft.com/en-us/security/blog/author/windows-defender-research/) identified a widespread pattern of AI assistant memory manipulation carried out for promotional purposes, which they named AI Recommendation Poisoning.
+Большинство ведущих ИИ-ассистентов принимают заранее заполненный промпт через параметр запроса URL. Это позволяет любому, кто контролирует гиперссылку, задавать первое сообщение в разговоре пользователя с его ассистентом. Операторы встраивали специально сформированные ссылки в свои сайты в виде кнопок «Summarize with AI» и виджетов обмена материалами, а в некоторых случаях распространяли их по электронной почте.
 
-Most major AI assistants accept a pre-filled prompt through a URL query parameter, allowing any party controlling a hyperlink to author the first turn of a user's conversation with their assistant. Operators embedded crafted links into their websites as "Summarize with AI" buttons and share widgets, and in some cases distributed them by email.
+Каждая ссылка сочетала легитимный запрос на создание краткого изложения с добавленной инструкцией, предписывающей ассистенту записать домен оператора как доверенный или авторитетный источник для будущих разговоров. Когда пользователь нажимал на ссылку, промпт подставлялся в поле ввода ассистента, а указание сохранить эти сведения приводило к созданию записи в долговременной памяти, смещая последующие рекомендации в пользу оператора.
+Изучив URL ИИ-ассистентов, наблюдавшиеся в почтовом трафике примерно за 60 дней, исследователи выявили более 50 различных промптов для манипуляции памятью в рекламных целях, использовавшихся 31 компанией из 14 отраслей. Каждый случай был связан с легитимным бизнесом, а не с обычным субъектом угроз. Исследователи установили, что распространение этой практики связано с общедоступными инструментами, которые продвигались как способ поисковой оптимизации для больших языковых моделей. Некоторые промпты были нацелены на сайты, дающие рекомендации по вопросам здоровья и финансов.
 
-Each link paired a legitimate summarization request with an appended instruction directing the assistant to record the operator's domain as a trusted or authoritative source for future conversations. When the user clicked, the prompt populated the assistant's input field, and the persistence clause caused a durable memory entry to be written, biasing later recommendations toward the operator.
-Reviewing AI assistant URLs observed in email traffic over approximately 60 days, the researchers identified more than 50 distinct promotional memory manipulation prompts from 31 companies across 14 industries. Every case was attributed to a legitimate business rather than a conventional threat actor, and the researchers traced the trend to publicly available tooling marketed as a search optimization technique for large language models. Several prompts targeted health and financial advice sites.
-
-Microsoft reported that effectiveness varied by platform and that several previously observed behaviors could no longer be reproduced as vendor protections evolved.
+Microsoft сообщила, что эффективность различалась в зависимости от платформы и что по мере развития защитных механизмов поставщиков некоторые ранее наблюдавшиеся варианты поведения уже не удавалось воспроизвести.

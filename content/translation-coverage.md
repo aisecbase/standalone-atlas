@@ -23,10 +23,10 @@ generated_by: atlasgen
 <tr>
 <th scope="row" data-label="Тип объектов">Кейсы</th>
 <td data-label="Всего">73</td>
-<td data-label="Названий переведено">72</td>
-<td data-label="Описаний переведено">72</td>
-<td data-label="Процедур переведено">655/665</td>
-<td data-label="Полностью переведено">69</td>
+<td data-label="Названий переведено">73</td>
+<td data-label="Описаний переведено">73</td>
+<td data-label="Процедур переведено">661/665</td>
+<td data-label="Полностью переведено">70</td>
 <td data-label="Требует проверки">0</td>
 </tr>
 <tr>
@@ -87,6 +87,6 @@ generated_by: atlasgen
 - [`AML.CS0048`](/studies/AML.CS0048/) (Кейсы): Exposed ClawdBot Control Interfaces Leads to Credential Access and Execution; название: да; описание/summary: да; процедуры: 8/10
 - [`AML.CS0070`](/studies/AML.CS0070/) (Кейсы): Threat Actor Uses a DeepSeek-Powered Hermes Agent in Langflow and n8n Exploitation Attempts; название: да; описание/summary: да; процедуры: 17/18
 
-## Перевод отсутствует (1)
+## Перевод отсутствует (0)
 
-- [`AML.CS0072`](/studies/AML.CS0072/) (Кейсы): AI Recommendation Poisoning via Crafted AI Assistant Links; название: нет; описание/summary: нет; процедуры: 0/6
+Нет.
