@@ -30,8 +30,8 @@ totals:
         total: 208
         name_translated: 208
         body_translated: 208
-        fully_translated: 200
-        needs_review: 8
+        fully_translated: 201
+        needs_review: 7
 missing: []
 partial:
     - id: AML.CS0037
@@ -59,17 +59,6 @@ partial:
       total_procedures: 18
       translated_procedures: 17
 review:
-    - id: AML.T0006
-      name: Active Scanning
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: dc3fa1e25d6912f00bde80909175d1385cd6e6872ac4e1016e503731732662dc
-      translation_source_sha256: ed627bd344eefa49bb9478712b661000f84553f57f21af1410aa8fb771016761
     - id: AML.T0051.001
       name: Indirect
       type: technique
