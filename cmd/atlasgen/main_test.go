@@ -221,6 +221,98 @@ func TestCoverageCountsTranslatedCaseStudyProcedures(t *testing.T) {
 	}
 }
 
+func TestCaseStudyMetadataTranslation(t *testing.T) {
+	study := Study{
+		ID:       "AML.CS.TEST",
+		Name:     "Case",
+		Actor:    "Original actor",
+		Target:   "Original target",
+		Reporter: "Research Team",
+		Procedure: []Procedure{
+			{Tactic: "AML.TA0003", Technique: "AML.T0016", Description: "Step"},
+		},
+	}
+	path := filepath.Join(t.TempDir(), "overlay.yaml")
+	if err := os.WriteFile(path, []byte("objects:\n  AML.CS.TEST:\n    actor: Участники\n    target: Целевые пользователи\n"), 0o600); err != nil {
+		t.Fatal(err)
+	}
+	translations, err := readYAML[Translations](path)
+	if err != nil {
+		t.Fatal(err)
+	}
+	for _, test := range []struct {
+		name         string
+		translations Translations
+		actor        string
+		target       string
+	}{
+		{"translated", translations, "Участники", "Целевые пользователи"},
+		{"missing", Translations{}, study.Actor, study.Target},
+		{"blank", Translations{Objects: map[string]Translation{study.ID: {Actor: " \t", Target: " \n"}}}, study.Actor, study.Target},
+	} {
+		t.Run(test.name, func(t *testing.T) {
+			catalog := Catalog{Translations: test.translations}
+			page := pageForStudy(study, catalog)
+			if page.Params["actor"] != test.actor || page.Params["target"] != test.target {
+				t.Fatalf("actor/target = %q/%q, want %q/%q", page.Params["actor"], page.Params["target"], test.actor, test.target)
+			}
+			if page.Params["reporter"] != study.Reporter {
+				t.Fatalf("reporter = %q, want %q", page.Params["reporter"], study.Reporter)
+			}
+			var body strings.Builder
+			writeProcedureExamples(&body, []ProcedureExample{{Study: study, Procedure: study.Procedure[0]}}, catalog, 0)
+			if !strings.Contains(body.String(), "Актор: "+test.actor) {
+				t.Fatalf("procedure relation does not contain expected actor: %s", body.String())
+			}
+			if test.actor != study.Actor && strings.Contains(body.String(), study.Actor) {
+				t.Fatalf("procedure relation leaked untranslated actor: %s", body.String())
+			}
+		})
+	}
+}
+
+func TestCoverageChecksCaseStudyMetadataSourceHashes(t *testing.T) {
+	study := Study{ID: "AML.CS.TEST", Name: "Case", Summary: "Summary", Actor: "Current actor", Target: "Current target"}
+	for _, field := range []string{"fresh", "actor", "target", "untranslated"} {
+		t.Run(field, func(t *testing.T) {
+			tr := Translation{
+				Name: "Кейс", Summary: "Описание", Actor: "Участники", Target: "Целевые пользователи",
+				Source: Source{
+					NameSHA256: sourceHash(study.Name), SummarySHA256: sourceHash(study.Summary),
+					ActorSHA256: sourceHash(study.Actor), TargetSHA256: sourceHash(study.Target),
+				},
+			}
+			switch field {
+			case "actor":
+				tr.Source.ActorSHA256 = sourceHash("Previous actor")
+			case "target":
+				tr.Source.TargetSHA256 = sourceHash("Previous target")
+			case "untranslated":
+				tr.Actor, tr.Target = "", ""
+				tr.Source.ActorSHA256, tr.Source.TargetSHA256 = sourceHash("Previous actor"), sourceHash("Previous target")
+			}
+			coverage := newCoverage("test")
+			coverage.addCaseStudy(study, tr)
+			if field == "fresh" || field == "untranslated" {
+				if len(coverage.Review) != 0 || coverage.Totals["case-study"].FullyTranslated != 1 {
+					t.Fatalf("unexpected metadata review: %#v", coverage)
+				}
+				return
+			}
+			if len(coverage.Review) != 1 || coverage.Totals["case-study"].FullyTranslated != 0 {
+				t.Fatalf("stale metadata not flagged: %#v", coverage)
+			}
+			item := coverage.Review[0]
+			if item.SourceField != field || len(item.ReviewFields) != 1 || item.ReviewFields[0] != field {
+				t.Fatalf("review fields = %#v, want %q", item, field)
+			}
+			if item.SourceSHA256 == "" || item.TranslationSourceSHA256 != translationSourceHash(tr, field) {
+				t.Fatalf("metadata source hashes missing or incorrect: %#v", item)
+			}
+		})
+	}
+}
+
 func TestCoverageCountsTranslatedResourcePage(t *testing.T) {
 	dir := t.TempDir()
 	page := []byte(`---
