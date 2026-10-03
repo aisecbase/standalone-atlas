@@ -30,8 +30,8 @@ totals:
         total: 208
         name_translated: 208
         body_translated: 208
-        fully_translated: 201
-        needs_review: 7
+        fully_translated: 202
+        needs_review: 6
 missing: []
 partial:
     - id: AML.CS0037
@@ -59,17 +59,6 @@ partial:
       total_procedures: 18
       translated_procedures: 17
 review:
-    - id: AML.T0051.001
-      name: Indirect
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: a4b51be33ca441e10b1fb88b1a10e5ffcf829d7bb6b29b90c16b08d5ea93a2cb
-      translation_source_sha256: 05578e7ca56474276bee209c776b5465fd0a93db3ae1c2716651857dda9e380b
     - id: AML.T0054
       name: LLM Jailbreak
       type: technique
