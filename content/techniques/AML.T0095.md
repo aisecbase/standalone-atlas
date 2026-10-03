@@ -45,7 +45,7 @@ url: /techniques/AML.T0095/
 
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0000/"><span class="relation-id">AML.M0000</span><strong>Ограничение публичного раскрытия информации</strong><p>Ограничивайте размещение на веб-сайтах и доменах общедоступной технической и организационной информации, раскрывающей ИИ-стек, сервисы, сведения о сотрудниках или другие данные, полезные для выбора целей.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0039/"><span class="relation-id">AML.M0039</span><strong>AI Honeypots</strong><p>Decoy assets, such as honeypots, can act as a first contact for adversarial activity and reveal discovery channels that attackers are using to find web AI assets for targeting.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0039/"><span class="relation-id">AML.M0039</span><strong>ИИ-ханипоты</strong><p>Ресурсы-приманки, такие как ханипоты, могут служить первой точкой контакта со злоумышленниками и раскрывать каналы выявления ресурсов, которые те используют для поиска ИИ-ресурсов в веб-среде и выбора целей.</p></a>
 </div>
 
 

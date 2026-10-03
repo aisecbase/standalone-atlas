@@ -53,7 +53,7 @@ url: /techniques/AML.T0000.003/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0039/"><span class="relation-id">AML.M0039</span><strong>AI Honeypots</strong><p>Decoy assets are catalogued by the same internet scan databases (e.g., Shodan, Censys) that adversaries query to locate exposed AI infrastructure. Adversarial engagement that originates from those platforms can grant defenders visibility into those discovery channels.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0039/"><span class="relation-id">AML.M0039</span><strong>ИИ-ханипоты</strong><p>Ресурсы-приманки попадают в те же базы данных с результатами сканирований интернета (например, Shodan и Censys), в которых злоумышленники ищут доступную из интернета инфраструктуру ИИ. Взаимодействие с приманками, найденными злоумышленниками через эти платформы, может дать защитникам сведения об используемых каналах выявления ресурсов.</p></a>
 </div>
 
 

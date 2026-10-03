@@ -35,7 +35,7 @@ url: /techniques/AML.T0049/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0039/"><span class="relation-id">AML.M0039</span><strong>AI Honeypots</strong><p>Honeypots can safely absorb real attacks and exploit attempts, turning payloads into mapped defensive signatures for a potential target without risking real assets.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0039/"><span class="relation-id">AML.M0039</span><strong>ИИ-ханипоты</strong><p>Ханипоты могут безопасно принимать реальные атаки и попытки эксплуатации, превращая полезные нагрузки в соответствующие защитные сигнатуры для потенциальной цели, без риска для реальных ресурсов.</p></a>
 </div>
 
 

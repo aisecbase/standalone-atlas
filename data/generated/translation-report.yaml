@@ -10,9 +10,9 @@ totals:
         needs_review: 0
     mitigation:
         total: 40
-        name_translated: 39
-        body_translated: 39
-        fully_translated: 39
+        name_translated: 40
+        body_translated: 40
+        fully_translated: 40
         needs_review: 0
     resource:
         total: 6
@@ -40,12 +40,6 @@ missing:
       has_body: false
       source_field: summary
       total_procedures: 6
-    - id: AML.M0039
-      name: AI Honeypots
-      type: mitigation
-      has_name: false
-      has_body: false
-      source_field: description
 partial:
     - id: AML.CS0037
       name: Data Exfiltration via Agent Tools in Copilot Studio

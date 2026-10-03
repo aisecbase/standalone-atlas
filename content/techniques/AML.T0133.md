@@ -39,5 +39,5 @@ url: /techniques/AML.T0133/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0039/"><span class="relation-id">AML.M0039</span><strong>AI Honeypots</strong><p>Interactive agentic decoys can present a plausible but fake toolset and capabilities. When an adversary enumerates the agent&#39;s capabilities at runtime, the honeypot can capture which tools and privileges they probe for and how they attempt to exploit it, while planted decoy credentials can also be used as canary tokens.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0039/"><span class="relation-id">AML.M0039</span><strong>ИИ-ханипоты</strong><p>Интерактивные ИИ-агенты-приманки могут представлять правдоподобный, но фиктивный набор инструментов и возможностей. Когда злоумышленник выясняет возможности агента во время его работы, ханипот может фиксировать, какие инструменты и привилегии он пытается обнаружить и как он пытается эксплуатировать агента. Размещённые учётные данные-приманки также могут использоваться как токены-канарейки.</p></a>
 </div>

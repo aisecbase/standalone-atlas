@@ -42,7 +42,7 @@ url: /techniques/AML.T0093/
 ## Меры защиты
 
 <div class="relation-list">
-<a class="relation-item" href="/mitigations/AML.M0039/"><span class="relation-id">AML.M0039</span><strong>AI Honeypots</strong><p>Since honeypots capture real input, they can provide visibility into attacks and prompt payloads that are target-specific.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0039/"><span class="relation-id">AML.M0039</span><strong>ИИ-ханипоты</strong><p>Поскольку ханипоты фиксируют реальные входные данные, они могут давать сведения об атаках и полезных нагрузках в промптах, подготовленных с учётом конкретной цели.</p></a>
 </div>
 
 

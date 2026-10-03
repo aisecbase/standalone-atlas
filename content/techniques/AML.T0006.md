@@ -54,7 +54,7 @@ url: /techniques/AML.T0006/
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0019/"><span class="relation-id">AML.M0019</span><strong>Контроль доступа к ИИ-моделям и данным в продакшене</strong><p>Требуйте аутентификации для доступа к ИИ-эндпоинтам в продакшене и отслеживайте запросы, чтобы ограничить зондирование доступных извне ИИ-сервисов без аутентификации.</p></a>
 <a class="relation-item" href="/mitigations/AML.M0032/"><span class="relation-id">AML.M0032</span><strong>Сегментация компонентов ИИ-агента</strong><p>Сегментируйте компоненты ИИ-агента так, чтобы доступный извне сервис не раскрывал сведения о других внутренних компонентах и не открывал к ним сетевой доступ.</p></a>
-<a class="relation-item" href="/mitigations/AML.M0039/"><span class="relation-id">AML.M0039</span><strong>AI Honeypots</strong><p>By capturing adversarial fingerprinting behavior, honeypots can help provide early warning of sweeping activity meant to discover exposed AI targets and attack surfaces being explored by adversaries.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0039/"><span class="relation-id">AML.M0039</span><strong>ИИ-ханипоты</strong><p>Фиксируя действия злоумышленников по распознаванию систем и сервисов, ханипоты могут помогать на раннем этапе сигнализировать о массовом поиске доступных извне ИИ-целей и выявлять поверхности атак, которые исследуют злоумышленники.</p></a>
 </div>
 
 
