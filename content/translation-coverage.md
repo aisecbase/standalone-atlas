@@ -62,15 +62,14 @@ generated_by: atlasgen
 <td data-label="Названий переведено">208</td>
 <td data-label="Описаний переведено">208</td>
 <td data-label="Процедур переведено">-</td>
-<td data-label="Полностью переведено">199</td>
-<td data-label="Требует проверки">9</td>
+<td data-label="Полностью переведено">200</td>
+<td data-label="Требует проверки">8</td>
 </tr>
 </tbody>
 </table>
 
-## Требует проверки (10)
+## Требует проверки (9)
 
-- [`AML.T0000`](/techniques/AML.T0000/) (Техники): Search Open Technical Databases; название: да; описание/summary: да; требует проверки: описание
 - [`AML.T0006`](/techniques/AML.T0006/) (Техники): Active Scanning; название: да; описание/summary: да; требует проверки: описание
 - [`AML.T0051.001`](/techniques/AML.T0051.001/) (Техники): Indirect; название: да; описание/summary: да; требует проверки: описание
 - [`AML.T0054`](/techniques/AML.T0054/) (Техники): LLM Jailbreak; название: да; описание/summary: да; требует проверки: описание

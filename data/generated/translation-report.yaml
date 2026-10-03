@@ -30,8 +30,8 @@ totals:
         total: 208
         name_translated: 208
         body_translated: 208
-        fully_translated: 199
-        needs_review: 9
+        fully_translated: 200
+        needs_review: 8
 missing: []
 partial:
     - id: AML.CS0037
@@ -59,17 +59,6 @@ partial:
       total_procedures: 18
       translated_procedures: 17
 review:
-    - id: AML.T0000
-      name: Search Open Technical Databases
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: d55a4475425fb52b9befb920a276562a05aa04d4c6ebd076cec173113df11643
-      translation_source_sha256: 04189ab1641220c910c41fed59bbf9df66ab07b3fd726c770b132f66a7643ea1
     - id: AML.T0006
       name: Active Scanning
       type: technique
