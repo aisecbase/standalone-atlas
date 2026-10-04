@@ -30,8 +30,8 @@ totals:
         total: 208
         name_translated: 208
         body_translated: 208
-        fully_translated: 205
-        needs_review: 3
+        fully_translated: 206
+        needs_review: 2
 missing: []
 partial:
     - id: AML.CS0037
@@ -59,17 +59,6 @@ partial:
       total_procedures: 18
       translated_procedures: 17
 review:
-    - id: AML.T0095
-      name: Search Open Websites/Domains
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 460486f6e40ba7ad075e72f9e916596cd6eecd2bf2d14957e4793f241d20458d
-      translation_source_sha256: 33560e5d534139310644110b656cc3f0e5fc656ca295be810b04a70d39c6fc80
     - id: AML.T0100
       name: AI Agent Clickbait
       type: technique
