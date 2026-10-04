@@ -30,8 +30,8 @@ totals:
         total: 208
         name_translated: 208
         body_translated: 208
-        fully_translated: 203
-        needs_review: 5
+        fully_translated: 204
+        needs_review: 4
 missing: []
 partial:
     - id: AML.CS0037
@@ -59,17 +59,6 @@ partial:
       total_procedures: 18
       translated_procedures: 17
 review:
-    - id: AML.T0068
-      name: LLM Prompt Obfuscation
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: c23765870b784a6e069623586762c00f92aecc91cd3b9213300dc327771dea63
-      translation_source_sha256: 811b0ce9540174984fec89578d23b8ae3623390eb6ac995ebcb9ad2827c81a9f
     - id: AML.T0077
       name: LLM Response Rendering
       type: technique
