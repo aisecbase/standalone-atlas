@@ -30,8 +30,8 @@ totals:
         total: 208
         name_translated: 208
         body_translated: 208
-        fully_translated: 206
-        needs_review: 2
+        fully_translated: 207
+        needs_review: 1
 missing: []
 partial:
     - id: AML.CS0037
@@ -59,17 +59,6 @@ partial:
       total_procedures: 18
       translated_procedures: 17
 review:
-    - id: AML.T0100
-      name: AI Agent Clickbait
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: a7c33c4e876acac9d10abff509cebfd4d22a0059e7741b0243dd43afa0c37b2e
-      translation_source_sha256: 467d685705e44a30acf6430ae22cc8cc3eb23f3ec3cc6de5570a642e523ae497
     - id: AML.T0124
       name: Autonomous Attack Orchestration
       type: technique

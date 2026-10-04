@@ -62,15 +62,14 @@ generated_by: atlasgen
 <td data-label="Названий переведено">208</td>
 <td data-label="Описаний переведено">208</td>
 <td data-label="Процедур переведено">-</td>
-<td data-label="Полностью переведено">206</td>
-<td data-label="Требует проверки">2</td>
+<td data-label="Полностью переведено">207</td>
+<td data-label="Требует проверки">1</td>
 </tr>
 </tbody>
 </table>
 
-## Требует проверки (3)
+## Требует проверки (2)
 
-- [`AML.T0100`](/techniques/AML.T0100/) (Техники): AI Agent Clickbait; название: да; описание/summary: да; требует проверки: описание
 - [`AML.T0124`](/techniques/AML.T0124/) (Техники): Autonomous Attack Orchestration; название: да; описание/summary: да; требует проверки: описание
 - [`AML.TA0001`](/tactics/AML.TA0001/) (Тактики): AI Attack Adaptation; название: да; описание/summary: да; требует проверки: описание
 
