@@ -2927,7 +2927,7 @@ objects:
       Ответ поставщика: Microsoft быстро подтвердила проблему и устранила ее. Промпты, использованные исследователями Zenity в этом упражнении, больше не работают, однако другие промпты все еще могут оставаться эффективными.
     procedure:
       - tactic: AML.TA0002
-        technique: AML.T0006
+        technique: AML.T0006.003
         source:
           description_sha256: "233bc16f0927786c54aff025f4c0bfafbf80d036dbb9f0caab7992693ef7ea6a"
         description: |-

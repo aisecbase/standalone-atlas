@@ -59,5 +59,5 @@ url: /techniques/AML.T0006.003/
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
-<a class="relation-item" href="/studies/AML.CS0037/"><span class="relation-id">AML.CS0037</span><strong>Эксфильтрация данных через инструменты ИИ-агента в Copilot Studio</strong><span class="relation-meta">Актор: Zenity / Тактика: AML.TA0002 Разведка</span><p>The researchers look for support email addresses on the target organization&#39;s website which may be managed by an AI agent. Then, they probe the system by sending emails and looking for indications of agentic AI in automatic replies.</p></a>
+<a class="relation-item" href="/studies/AML.CS0037/"><span class="relation-id">AML.CS0037</span><strong>Эксфильтрация данных через инструменты ИИ-агента в Copilot Studio</strong><span class="relation-meta">Актор: Zenity / Тактика: AML.TA0002 Разведка</span><p>Исследователи ищут на сайте целевой организации адреса электронной почты службы поддержки, которые могут обслуживаться ИИ-агентом. Затем они проверяют систему: отправляют письма и ищут в автоматических ответах признаки работы ИИ-агента.</p></a>
 </div>

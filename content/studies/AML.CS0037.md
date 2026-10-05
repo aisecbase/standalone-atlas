@@ -10,8 +10,8 @@ incident_date: 2025-06
 incident_date_granularity: Month
 incident_date_raw: "2025-06-01"
 procedure:
-    - description: The researchers look for support email addresses on the target organization's website which may be managed by an AI agent. Then, they probe the system by sending emails and looking for indications of agentic AI in automatic replies.
-      description_line: The researchers look for support email addresses on the target organization's website which may be managed by an AI agent. Then, they probe the system by sending emails and looking for indications of agentic AI in automatic replies.
+    - description: 'Исследователи ищут на сайте целевой организации адреса электронной почты службы поддержки, которые могут обслуживаться ИИ-агентом. Затем они проверяют систему: отправляют письма и ищут в автоматических ответах признаки работы ИИ-агента.'
+      description_line: 'Исследователи ищут на сайте целевой организации адреса электронной почты службы поддержки, которые могут обслуживаться ИИ-агентом. Затем они проверяют систему: отправляют письма и ищут в автоматических ответах признаки работы ИИ-агента.'
       tactic: AML.TA0002
       tactic_name: Разведка
       technique: AML.T0006.003

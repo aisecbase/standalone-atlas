@@ -4,7 +4,7 @@
 
 | Тип объектов | Всего | Названий переведено | Описаний переведено | Процедур переведено | Полностью переведено | Требует проверки |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Кейсы | 73 | 73 | 73 | 661/665 | 70 | 0 |
+| Кейсы | 73 | 73 | 73 | 662/665 | 71 | 0 |
 | Меры защиты | 40 | 40 | 40 | - | 40 | 0 |
 | Ресурсы | 6 | 6 | 6 | - | 6 | 0 |
 | Тактики | 16 | 16 | 16 | - | 16 | 0 |
@@ -14,9 +14,8 @@
 
 Нет.
 
-## Частичный перевод (3)
+## Частичный перевод (2)
 
-- [`AML.CS0037`](/studies/AML.CS0037/) (Кейсы): Data Exfiltration via Agent Tools in Copilot Studio; название: да; описание/summary: да; процедуры: 13/14
 - [`AML.CS0048`](/studies/AML.CS0048/) (Кейсы): Exposed ClawdBot Control Interfaces Leads to Credential Access and Execution; название: да; описание/summary: да; процедуры: 8/10
 - [`AML.CS0070`](/studies/AML.CS0070/) (Кейсы): Threat Actor Uses a DeepSeek-Powered Hermes Agent in Langflow and n8n Exploitation Attempts; название: да; описание/summary: да; процедуры: 17/18
 

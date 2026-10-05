@@ -25,8 +25,8 @@ generated_by: atlasgen
 <td data-label="Всего">73</td>
 <td data-label="Названий переведено">73</td>
 <td data-label="Описаний переведено">73</td>
-<td data-label="Процедур переведено">661/665</td>
-<td data-label="Полностью переведено">70</td>
+<td data-label="Процедур переведено">662/665</td>
+<td data-label="Полностью переведено">71</td>
 <td data-label="Требует проверки">0</td>
 </tr>
 <tr>
@@ -72,9 +72,8 @@ generated_by: atlasgen
 
 Нет.
 
-## Частичный перевод (3)
+## Частичный перевод (2)
 
-- [`AML.CS0037`](/studies/AML.CS0037/) (Кейсы): Data Exfiltration via Agent Tools in Copilot Studio; название: да; описание/summary: да; процедуры: 13/14
 - [`AML.CS0048`](/studies/AML.CS0048/) (Кейсы): Exposed ClawdBot Control Interfaces Leads to Credential Access and Execution; название: да; описание/summary: да; процедуры: 8/10
 - [`AML.CS0070`](/studies/AML.CS0070/) (Кейсы): Threat Actor Uses a DeepSeek-Powered Hermes Agent in Langflow and n8n Exploitation Attempts; название: да; описание/summary: да; процедуры: 17/18
 
