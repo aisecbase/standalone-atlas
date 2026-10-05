@@ -10,14 +10,14 @@ incident_date: "2026-01-25"
 incident_date_granularity: Day
 incident_date_raw: "2026-01-25"
 procedure:
-    - description: The researcher performed targeting by searching for the title tag of ClawdBot's web-based control interface, "Clawdbot Control" on Shodan, identifying hundreds of ClawdBot control interfaces exposed on the public internet.
-      description_line: The researcher performed targeting by searching for the title tag of ClawdBot's web-based control interface, "Clawdbot Control" on Shodan, identifying hundreds of ClawdBot control interfaces exposed on the public internet.
+    - description: Исследователь искал цели в Shodan по содержимому тега `title` веб-интерфейса управления ClawdBot — `Clawdbot Control` — и обнаружил сотни интерфейсов ClawdBot, открытых в публичном интернете.
+      description_line: Исследователь искал цели в Shodan по содержимому тега `title` веб-интерфейса управления ClawdBot — `Clawdbot Control` — и обнаружил сотни интерфейсов ClawdBot, открытых в публичном интернете.
       tactic: AML.TA0002
       tactic_name: Разведка
       technique: AML.T0000.003
       technique_name: Базы данных с результатами сканирований
-    - description: The researcher exploited a proxy misconfiguration present in ClawdBot's control server to gain access to control interfaces that had authentication enabled.
-      description_line: The researcher exploited a proxy misconfiguration present in ClawdBot's control server to gain access to control interfaces that had authentication enabled.
+    - description: Исследователь воспользовался ошибочной конфигурацией прокси на сервере управления ClawdBot и получил доступ к интерфейсам управления с включенной аутентификацией.
+      description_line: Исследователь воспользовался ошибочной конфигурацией прокси на сервере управления ClawdBot и получил доступ к интерфейсам управления с включенной аутентификацией.
       tactic: AML.TA0004
       tactic_name: Первичный доступ
       technique: AML.T0132

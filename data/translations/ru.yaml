@@ -3666,13 +3666,13 @@ objects:
       - выдачу себя за пользователей путём отправки сообщений от их имени через подключённые сервисы обмена сообщениями.
     procedure:
       - tactic: AML.TA0002
-        technique: AML.T0000
+        technique: AML.T0000.003
         source:
           description_sha256: "3b555adff6b2ee5ac489b6a8e569681eaeeeeaaa923e79626431c674ae69d841"
         description: |-
-          Исследователь искал цели в Shodan по заголовку веб-интерфейса управления ClawdBot — `Clawdbot Control` — и обнаружил сотни интерфейсов ClawdBot, открытых в публичном интернете.
+          Исследователь искал цели в Shodan по содержимому тега `title` веб-интерфейса управления ClawdBot — `Clawdbot Control` — и обнаружил сотни интерфейсов ClawdBot, открытых в публичном интернете.
       - tactic: AML.TA0004
-        technique: AML.T0049
+        technique: AML.T0132
         source:
           description_sha256: "398fa7eafa1615ecc8ec8177f95e77aeebfbe61ff7ddc0e936e50eefb9840601"
         description: |-
