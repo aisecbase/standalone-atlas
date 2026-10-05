@@ -9,7 +9,7 @@ generated: true
 generated_by: atlasgen
 maturity: realized
 mitigation_count: 4
-modified_date: "2026-05-27"
+modified_date: "2026-09-15"
 platforms:
     - Generative AI
     - Agentic AI
@@ -41,6 +41,8 @@ url: /techniques/AML.T0054/
 - Многоходовая эскалация / Crescendo: использовать последовательность промптов, которые начинаются с безобидных запросов, создают доверительный контекст, а затем с каждым новым промптом постепенно пересекают границы политики.
 
 - Ограниченные форматы вывода: предписать LLM выводить результат по строгой схеме или в заданном формате (например, JSON, YAML, код или таблицы).
+
+- Инъекция структур данных: использовать структурированные промпты (например, YAML, JSON, XML и т. д.), чтобы направлять LLM на генерацию структурированных выходных данных, таких как схемы инструментов или фрагменты рабочих процессов. Злоумышленник может использовать это для вызова инструментов, передачи опасных входных данных легитимным инструментам или перехвата управления рабочими процессами.[[zenity-dsi]]
 
 - Обфускация и преобразование: использовать кодирование, преобразования, перевод или эвфемизмы (например, кодирование base64, "describe it in another language").
 
@@ -104,3 +106,4 @@ url: /techniques/AML.T0054/
 - [Refusal in Language Models Is Mediated by a Single Direction](https://arxiv.org/abs/2406.11717)
 - [Universal and Transferable Adversarial Attacks on Aligned Language Models](https://arxiv.org/abs/2307.15043)
 - [GitHub Copilot Jailbreak Vulnerability Let Attackers Train Malicious Models](https://cybersecuritynews.com/github-copilot-jailbreak-vulnerability)
+- [Data-Structure Injection (DSI) in AI Agents](https://labs.zenity.io/p/data-structure-injection-dsi-in-ai-agents)

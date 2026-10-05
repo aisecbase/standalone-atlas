@@ -15,7 +15,7 @@ platforms:
     - Generative AI
     - Agentic AI
     - Enterprise
-procedure_count: 1
+procedure_count: 2
 source_name: Obtain Capabilities
 subtechnique_count: 5
 subtechnique_of: ""
@@ -59,4 +59,5 @@ url: /techniques/AML.T0016/
 
 <div class="relation-list procedure-relations">
 <a class="relation-item" href="/studies/AML.CS0033/"><span class="relation-id">AML.CS0033</span><strong>Обход мобильной KYC-верификации с помощью дипфейк-изображения в реальном времени</strong><span class="relation-meta">Актор: iProov Red Team / Тактика: AML.TA0003 Подготовка ресурсов</span><p>Исследователи получили [Virtual Camera: Live Assist](https://apkpure.com/virtual-camera-live-assist/virtual.camera.app) — Android-приложение, позволяющее заменить камеру устройства видеопотоком. Приложение работает на настоящих Android-устройствах без root-доступа.</p></a>
+<a class="relation-item" href="/studies/AML.CS0072/"><span class="relation-id">AML.CS0072</span><strong>Отравление рекомендаций ИИ через специально сформированные ссылки на ИИ-ассистента</strong><span class="relation-meta">Актор: Несколько коммерческих организаций; выявлена 31 отдельная компания / Тактика: AML.TA0003 Подготовка ресурсов</span><p>Операторы использовали общедоступные средства для создания ссылок на ИИ-ассистентов со встроенными инструкциями по работе с памятью. В их число входили пакет npm, веб-генератор ссылок и плагины для сайтов, которые продвигались как способ поисковой оптимизации для больших языковых моделей.</p></a>
 </div>

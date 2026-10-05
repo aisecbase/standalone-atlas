@@ -54,4 +54,5 @@ url: /techniques/AML.T0000.002/
 <div class="relation-list">
 <a class="relation-item" href="/techniques/AML.T0000.000/"><span class="relation-id">AML.T0000.000</span><strong>Журналы и материалы конференций</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0000.001/"><span class="relation-id">AML.T0000.001</span><strong>Репозитории препринтов</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0000.003/"><span class="relation-id">AML.T0000.003</span><strong>Базы данных с результатами сканирований</strong><span class="relation-meta">Подтехника</span></a>
 </div>

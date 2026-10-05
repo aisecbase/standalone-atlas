@@ -8,7 +8,7 @@ description: Злоумышленники могут искать в публи�
 generated: true
 generated_by: atlasgen
 maturity: realized
-mitigation_count: 0
+mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:
     - Enterprise
@@ -38,6 +38,13 @@ url: /techniques/AML.T0095.000/
 
 <div class="relation-list">
 <a class="relation-item" href="/techniques/AML.T0095/"><span class="relation-id">AML.T0095</span><strong>Поиск на открытых сайтах и доменах</strong></a>
+</div>
+
+
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0039/"><span class="relation-id">AML.M0039</span><strong>ИИ-ханипоты</strong><p>Ресурсы-приманки, такие как ханипоты, могут служить первой точкой контакта со злоумышленниками и раскрывать каналы выявления ресурсов, которые те используют для поиска ИИ-ресурсов в веб-среде и выбора целей.</p></a>
 </div>
 
 

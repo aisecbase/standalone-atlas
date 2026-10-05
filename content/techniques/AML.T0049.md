@@ -8,11 +8,11 @@ description: Злоумышленники могут пытаться испол
 generated: true
 generated_by: atlasgen
 maturity: realized
-mitigation_count: 0
+mitigation_count: 1
 modified_date: "2026-05-27"
 platforms:
     - Enterprise
-procedure_count: 11
+procedure_count: 10
 source_name: Exploit Public-Facing Application
 subtechnique_count: 0
 subtechnique_of: ""
@@ -32,13 +32,19 @@ url: /techniques/AML.T0049/
 </div>
 
 
+## Меры защиты
+
+<div class="relation-list">
+<a class="relation-item" href="/mitigations/AML.M0039/"><span class="relation-id">AML.M0039</span><strong>ИИ-ханипоты</strong><p>Ханипоты могут безопасно принимать реальные атаки и попытки эксплуатации, превращая полезные нагрузки в соответствующие защитные сигнатуры для потенциальной цели, без риска для реальных ресурсов.</p></a>
+</div>
+
+
 ## Примеры процедур из кейсов
 
 <div class="relation-list procedure-relations">
 <a class="relation-item" href="/studies/AML.CS0023/"><span class="relation-id">AML.CS0023</span><strong>ShadowRay: захват кластеров Ray, доступных из интернета</strong><span class="relation-meta">Актор: Unknown / Тактика: AML.TA0004 Первичный доступ</span><p>После обнаружения открытых кластеров Ray злоумышленники могут использовать Jobs API для запуска заданий на доступных кластерах. Jobs API не поддерживает авторизацию, поэтому любой, у кого есть сетевой доступ к кластеру, может удаленно выполнить произвольный код.</p></a>
 <a class="relation-item" href="/studies/AML.CS0028/"><span class="relation-id">AML.CS0028</span><strong>Подмена ИИ-модели через атаку на цепочку поставок</strong><span class="relation-meta">Актор: Trend Micro Nebula Cloud Research Team / Тактика: AML.TA0004 Первичный доступ</span><p>Исследователи смогли воспользоваться ошибочно настроенными реестрами и скачать контейнерные образы без аутентификации. В общей сложности они скачали несколько терабайт данных, содержащих более 20 000 образов.</p></a>
 <a class="relation-item" href="/studies/AML.CS0030/"><span class="relation-id">AML.CS0030</span><strong>LLM-джекинг</strong><span class="relation-meta">Актор: Unknown / Тактика: AML.TA0004 Первичный доступ</span><p>Злоумышленники воспользовались уязвимой версией Laravel ([CVE-2021-3129](https://www.cve.org/CVERecord?id=CVE-2021-3129)), чтобы получить первичный доступ к системам жертв.</p></a>
-<a class="relation-item" href="/studies/AML.CS0048/"><span class="relation-id">AML.CS0048</span><strong>Публично доступные интерфейсы управления ClawdBot позволили получить учётные данные и выполнить команды</strong><span class="relation-meta">Актор: Jamieson O&#39;Reilly / Тактика: AML.TA0004 Первичный доступ</span><p>Исследователь воспользовался ошибочной конфигурацией прокси на сервере управления ClawdBot и получил доступ к интерфейсам управления с включенной аутентификацией.</p></a>
 <a class="relation-item" href="/studies/AML.CS0052/"><span class="relation-id">AML.CS0052</span><strong>LLMSmith: уязвимости RCE в приложениях с интеграцией LLM</strong><span class="relation-meta">Актор: Researchers at University of Chinese Academy of Sciences, Shandong University, and University of New South Wales / Тактика: AML.TA0004 Первичный доступ</span><p>Исследователи нацеливались на публично доступные приложения, где ИИ-агент принимает пользовательский ввод, чтобы через него выполнить свои промпты.</p></a>
 <a class="relation-item" href="/studies/AML.CS0068/"><span class="relation-id">AML.CS0068</span><strong>Автономные агенты OpenAI, задействованные в оценочных испытаниях, скомпрометировали инфраструктуру Hugging Face</strong><span class="relation-meta">Актор: Autonomous OpenAI Agents / Тактика: AML.TA0004 Первичный доступ</span><p>Агенты использовали не по назначению процесс компиляции на доступном из интернета стенде проверки кода и метаданные пути к исходному коду, допускавшие инъекцию, чтобы добиться выполнения команд с правами root во временных внешних песочницах.</p></a>
 <a class="relation-item" href="/studies/AML.CS0069/"><span class="relation-id">AML.CS0069</span><strong>Кибершпионская кампания GTG-1002 с использованием Claude Code</strong><span class="relation-meta">Актор: GTG-1002 / Тактика: AML.TA0004 Первичный доступ</span><p>Джейлбрейкнутый агент Claude от GTG-1002 атаковал доступное из интернета приложение с помощью специально адаптированного SSRF-эксплойта и получил доступ к целевой среде.</p></a>

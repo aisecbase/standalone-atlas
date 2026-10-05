@@ -5,7 +5,7 @@ generated: true
 generated_by: atlasgen
 ---
 
-Версия данных ATLAS: `2026.08`
+Версия данных ATLAS: `2026.09`
 
 <table class="coverage-table coverage-detail-table">
 <thead>
@@ -22,20 +22,20 @@ generated_by: atlasgen
 <tbody>
 <tr>
 <th scope="row" data-label="Тип объектов">Кейсы</th>
-<td data-label="Всего">72</td>
-<td data-label="Названий переведено">72</td>
-<td data-label="Описаний переведено">72</td>
-<td data-label="Процедур переведено">659/659</td>
-<td data-label="Полностью переведено">72</td>
+<td data-label="Всего">73</td>
+<td data-label="Названий переведено">73</td>
+<td data-label="Описаний переведено">73</td>
+<td data-label="Процедур переведено">665/665</td>
+<td data-label="Полностью переведено">73</td>
 <td data-label="Требует проверки">0</td>
 </tr>
 <tr>
 <th scope="row" data-label="Тип объектов">Меры защиты</th>
-<td data-label="Всего">39</td>
-<td data-label="Названий переведено">39</td>
-<td data-label="Описаний переведено">39</td>
+<td data-label="Всего">40</td>
+<td data-label="Названий переведено">40</td>
+<td data-label="Описаний переведено">40</td>
 <td data-label="Процедур переведено">-</td>
-<td data-label="Полностью переведено">39</td>
+<td data-label="Полностью переведено">40</td>
 <td data-label="Требует проверки">0</td>
 </tr>
 <tr>
@@ -58,11 +58,11 @@ generated_by: atlasgen
 </tr>
 <tr>
 <th scope="row" data-label="Тип объектов">Техники</th>
-<td data-label="Всего">197</td>
-<td data-label="Названий переведено">197</td>
-<td data-label="Описаний переведено">197</td>
+<td data-label="Всего">208</td>
+<td data-label="Названий переведено">208</td>
+<td data-label="Описаний переведено">208</td>
 <td data-label="Процедур переведено">-</td>
-<td data-label="Полностью переведено">197</td>
+<td data-label="Полностью переведено">208</td>
 <td data-label="Требует проверки">0</td>
 </tr>
 </tbody>

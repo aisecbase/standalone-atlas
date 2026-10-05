@@ -7,7 +7,7 @@ created_date: "2025-09-30"
 description: Злоумышленники могут пытаться манипулировать контекстом, который использует большая языковая модель (LLM) ИИ-агента, чтобы повлиять на генерируемые ею ответы или выполняемые действия. Это позволяет злоумышленнику...
 generated: true
 generated_by: atlasgen
-maturity: demonstrated
+maturity: realized
 mitigation_count: 2
 modified_date: "2026-05-27"
 platforms:

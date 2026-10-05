@@ -8,7 +8,7 @@ description: Злоумышленник пытается сохранить за
 generated: true
 generated_by: atlasgen
 modified_date: "2025-04-09"
-procedure_count: 24
+procedure_count: 25
 source_name: Persistence
 technique_count: 29
 title: Закрепление
@@ -73,4 +73,4 @@ url: /tactics/AML.TA0006/
 </div>
 
 
-Показано 12 из 24 примеров.
+Показано 12 из 25 примеров.

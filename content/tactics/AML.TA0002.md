@@ -10,7 +10,7 @@ generated_by: atlasgen
 modified_date: "2025-04-09"
 procedure_count: 41
 source_name: Reconnaissance
-technique_count: 17
+technique_count: 27
 title: Разведка
 url: /tactics/AML.TA0002/
 ---
@@ -32,10 +32,20 @@ url: /tactics/AML.TA0002/
 <a class="relation-item" href="/techniques/AML.T0000.001/"><span class="relation-id">AML.T0000.001</span><strong>Репозитории препринтов</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0000.002/"><span class="relation-id">AML.T0000.002</span><strong>Технические блоги</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0000.002/"><span class="relation-id">AML.T0000.002</span><strong>Технические блоги</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0000.003/"><span class="relation-id">AML.T0000.003</span><strong>Базы данных с результатами сканирований</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0000.003/"><span class="relation-id">AML.T0000.003</span><strong>Базы данных с результатами сканирований</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0001/"><span class="relation-id">AML.T0001</span><strong>Поиск открытых материалов по анализу уязвимостей ИИ</strong></a>
 <a class="relation-item" href="/techniques/AML.T0003/"><span class="relation-id">AML.T0003</span><strong>Поиск на сайтах организации-жертвы</strong></a>
 <a class="relation-item" href="/techniques/AML.T0004/"><span class="relation-id">AML.T0004</span><strong>Поиск в репозиториях приложений</strong></a>
 <a class="relation-item" href="/techniques/AML.T0006/"><span class="relation-id">AML.T0006</span><strong>Активное сканирование</strong></a>
+<a class="relation-item" href="/techniques/AML.T0006.000/"><span class="relation-id">AML.T0006.000</span><strong>Получение списка размещённых ресурсов ИИ</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0006.000/"><span class="relation-id">AML.T0006.000</span><strong>Получение списка размещённых ресурсов ИИ</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0006.001/"><span class="relation-id">AML.T0006.001</span><strong>Запросы к API метаданных платформ</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0006.001/"><span class="relation-id">AML.T0006.001</span><strong>Запросы к API метаданных платформ</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0006.002/"><span class="relation-id">AML.T0006.002</span><strong>Сканирование для поиска доступной из интернета инфраструктуры ИИ</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0006.002/"><span class="relation-id">AML.T0006.002</span><strong>Сканирование для поиска доступной из интернета инфраструктуры ИИ</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0006.003/"><span class="relation-id">AML.T0006.003</span><strong>Зондирование каналов запуска ИИ-агента</strong><span class="relation-meta">Подтехника</span></a>
+<a class="relation-item" href="/techniques/AML.T0006.003/"><span class="relation-id">AML.T0006.003</span><strong>Зондирование каналов запуска ИИ-агента</strong><span class="relation-meta">Подтехника</span></a>
 <a class="relation-item" href="/techniques/AML.T0064/"><span class="relation-id">AML.T0064</span><strong>Сбор целей, индексируемых RAG</strong></a>
 <a class="relation-item" href="/techniques/AML.T0087/"><span class="relation-id">AML.T0087</span><strong>Сбор сведений о личности жертвы</strong></a>
 <a class="relation-item" href="/techniques/AML.T0095/"><span class="relation-id">AML.T0095</span><strong>Поиск на открытых сайтах и доменах</strong></a>

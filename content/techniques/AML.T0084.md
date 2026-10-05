@@ -8,7 +8,7 @@ description: Злоумышленники могут пытаться выяви
 generated: true
 generated_by: atlasgen
 maturity: demonstrated
-mitigation_count: 1
+mitigation_count: 2
 modified_date: "2026-05-27"
 platforms:
     - Agentic AI
@@ -50,6 +50,7 @@ url: /techniques/AML.T0084/
 
 <div class="relation-list">
 <a class="relation-item" href="/mitigations/AML.M0000/"><span class="relation-id">AML.M0000</span><strong>Ограничение публичного раскрытия информации</strong><p>Ограничивайте публичное раскрытие сведений об инструментах, сервисах, конфигурации и рабочих процессах ИИ-агента.</p></a>
+<a class="relation-item" href="/mitigations/AML.M0039/"><span class="relation-id">AML.M0039</span><strong>ИИ-ханипоты</strong><p>Ханипоты могут выявлять, какую конфигурацию агента и связанные с ней ресурсы ищут злоумышленники, раскрывать разведку, предшествующую атакам на агентов, и служить одновременно токенами-канарейками и приманками.</p></a>
 </div>
 
 

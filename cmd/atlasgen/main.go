@@ -301,6 +301,8 @@ type Translation struct {
 	Name        string                 `yaml:"name"`
 	Description string                 `yaml:"description"`
 	Summary     string                 `yaml:"summary"`
+	Actor       string                 `yaml:"actor"`
+	Target      string                 `yaml:"target"`
 	Procedure   []ProcedureTranslation `yaml:"procedure"`
 	Techniques  []TechniqueTranslation `yaml:"techniques"`
 	Source      Source                 `yaml:"source"`
@@ -328,6 +330,8 @@ type Source struct {
 	NameSHA256        string `yaml:"name_sha256"`
 	DescriptionSHA256 string `yaml:"description_sha256"`
 	SummarySHA256     string `yaml:"summary_sha256"`
+	ActorSHA256       string `yaml:"actor_sha256"`
+	TargetSHA256      string `yaml:"target_sha256"`
 	UseSHA256         string `yaml:"use_sha256"`
 }
 
@@ -495,6 +499,7 @@ func translationFilePath() string {
 }
 
 func printSourceHash(id string) error {
+	id = strings.TrimSpace(id)
 	atlas, err := readAtlas(atlasPath)
 	if err != nil {
 		return err
@@ -504,6 +509,18 @@ func printSourceHash(id string) error {
 		return err
 	}
 	fmt.Printf("source:\n  name_sha256: %q\n  %s_sha256: %q\n", nameHash, field, hash)
+	for _, study := range atlas.CaseStudies {
+		if study.ID != id {
+			continue
+		}
+		if hash := sourceHash(study.Actor); hash != "" {
+			fmt.Printf("  actor_sha256: %q\n", hash)
+		}
+		if hash := sourceHash(study.Target); hash != "" {
+			fmt.Printf("  target_sha256: %q\n", hash)
+		}
+		break
+	}
 	return nil
 }
 
@@ -1052,8 +1069,8 @@ func pageForStudy(obj Study, catalog Catalog) Page {
 		"incident_date":             formatIncidentDate(obj.IncidentDate, obj.IncidentDateGranularity),
 		"incident_date_raw":         obj.IncidentDate,
 		"incident_date_granularity": obj.IncidentDateGranularity,
-		"target":                    obj.Target,
-		"actor":                     obj.Actor,
+		"target":                    translatedBody(obj.Target, tr.Target),
+		"actor":                     translatedBody(obj.Actor, tr.Actor),
 		"reporter":                  obj.Reporter,
 		"case_study_type":           obj.CaseStudyType,
 		"procedure_count":           len(obj.Procedure),
@@ -1360,8 +1377,9 @@ func writeProcedureExamples(b *strings.Builder, examples []ProcedureExample, cat
 	for _, example := range examples[:count] {
 		tactic := catalog.Tactics[example.Procedure.Tactic]
 		meta := ""
-		if strings.TrimSpace(example.Study.Actor) != "" {
-			meta = "Актор: " + example.Study.Actor
+		actor := translatedBody(example.Study.Actor, catalog.Translations.Objects[example.Study.ID].Actor)
+		if actor != "" {
+			meta = "Актор: " + actor
 		}
 		if example.Procedure.Tactic != "" {
 			if meta != "" {
@@ -1603,6 +1621,29 @@ func (c *CoverageSummary) addCaseStudy(study Study, tr Translation) {
 	if procedureNeedsReview > 0 {
 		item.ReviewFields = append(item.ReviewFields, "procedure")
 	}
+	for _, field := range []struct {
+		name       string
+		source     string
+		translated string
+	}{
+		{"actor", study.Actor, tr.Actor},
+		{"target", study.Target, tr.Target},
+	} {
+		if strings.TrimSpace(field.translated) == "" {
+			continue
+		}
+		needsReview, currentHash, storedHash := sourceNeedsReview(field.source, translationSourceHash(tr, field.name))
+		if !needsReview {
+			continue
+		}
+		item.NeedsReview = true
+		item.ReviewFields = append(item.ReviewFields, field.name)
+		if item.SourceSHA256 == "" {
+			item.SourceField = field.name
+			item.SourceSHA256 = currentHash
+			item.TranslationSourceSHA256 = storedHash
+		}
+	}
 	total := c.Totals[item.Type]
 	total.Total++
 	if item.HasName {
@@ -1779,6 +1820,10 @@ func translationSourceHash(tr Translation, field string) string {
 		return strings.TrimSpace(tr.Source.NameSHA256)
 	case "summary":
 		return strings.TrimSpace(tr.Source.SummarySHA256)
+	case "actor":
+		return strings.TrimSpace(tr.Source.ActorSHA256)
+	case "target":
+		return strings.TrimSpace(tr.Source.TargetSHA256)
 	default:
 		return strings.TrimSpace(tr.Source.DescriptionSHA256)
 	}
@@ -1965,6 +2010,10 @@ func reviewFieldLabel(field string) string {
 		return "summary"
 	case "procedure":
 		return "процедуры"
+	case "actor":
+		return "актор"
+	case "target":
+		return "цель"
 	default:
 		return field
 	}
