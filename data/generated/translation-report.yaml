@@ -24,8 +24,8 @@ totals:
         total: 16
         name_translated: 16
         body_translated: 16
-        fully_translated: 15
-        needs_review: 1
+        fully_translated: 16
+        needs_review: 0
     technique:
         total: 208
         name_translated: 208
@@ -58,15 +58,4 @@ partial:
       source_field: summary
       total_procedures: 18
       translated_procedures: 17
-review:
-    - id: AML.TA0001
-      name: AI Attack Adaptation
-      type: tactic
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: d8398e70114c6a169ace496e75c8928cd6c081f2df66f99b45df0bb55bd79775
-      translation_source_sha256: 5b57efa07f1b359d7a3c177ef6315bbc4af61acb0eedbe43483243ead70559cb
+review: []
