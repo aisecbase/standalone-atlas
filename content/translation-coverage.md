@@ -25,8 +25,8 @@ generated_by: atlasgen
 <td data-label="Всего">73</td>
 <td data-label="Названий переведено">73</td>
 <td data-label="Описаний переведено">73</td>
-<td data-label="Процедур переведено">664/665</td>
-<td data-label="Полностью переведено">72</td>
+<td data-label="Процедур переведено">665/665</td>
+<td data-label="Полностью переведено">73</td>
 <td data-label="Требует проверки">0</td>
 </tr>
 <tr>
@@ -72,9 +72,9 @@ generated_by: atlasgen
 
 Нет.
 
-## Частичный перевод (1)
+## Частичный перевод (0)
 
-- [`AML.CS0070`](/studies/AML.CS0070/) (Кейсы): Threat Actor Uses a DeepSeek-Powered Hermes Agent in Langflow and n8n Exploitation Attempts; название: да; описание/summary: да; процедуры: 17/18
+Нет.
 
 ## Перевод отсутствует (0)
 

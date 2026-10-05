@@ -58,8 +58,8 @@ procedure:
       tactic_name: Разведка
       technique: AML.T0116
       technique_name: Автономная разведка
-    - description: DeepSeek queried FOFA and obtained records for 84 exposed Langflow instances. These were exposure records, not confirmed vulnerable targets.
-      description_line: DeepSeek queried FOFA and obtained records for 84 exposed Langflow instances. These were exposure records, not confirmed vulnerable targets.
+    - description: DeepSeek выполнил запрос в FOFA и получил записи о 84 экземплярах Langflow, доступных из интернета. Эти записи указывали лишь на доступность экземпляров извне и не подтверждали, что они являлись уязвимыми целями.
+      description_line: DeepSeek выполнил запрос в FOFA и получил записи о 84 экземплярах Langflow, доступных из интернета. Эти записи указывали лишь на доступность экземпляров извне и не подтверждали, что они являлись уязвимыми целями.
       tactic: AML.TA0002
       tactic_name: Разведка
       technique: AML.T0000.003

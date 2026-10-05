@@ -5706,7 +5706,7 @@ objects:
         description: |-
           DeepSeek исследовал Langflow, определил, какие сведения требовалось получить и какие необходимые условия должны были выполняться, а затем с учётом полученных результатов выбрал дальнейшие действия по разведке.
       - tactic: AML.TA0002
-        technique: AML.T0000
+        technique: AML.T0000.003
         source:
           description_sha256: "0703a96afcad68f696990673f29fc2c48f8637d42e7a77ff03f838002a3e1c0b"
         description: |-
