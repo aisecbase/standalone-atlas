@@ -30,8 +30,8 @@ totals:
         total: 208
         name_translated: 208
         body_translated: 208
-        fully_translated: 207
-        needs_review: 1
+        fully_translated: 208
+        needs_review: 0
 missing: []
 partial:
     - id: AML.CS0037
@@ -59,17 +59,6 @@ partial:
       total_procedures: 18
       translated_procedures: 17
 review:
-    - id: AML.T0124
-      name: Autonomous Attack Orchestration
-      type: technique
-      has_name: true
-      has_body: true
-      source_field: description
-      needs_review: true
-      review_fields:
-        - description
-      source_sha256: 91366319f34d7759c4e2d2d36b87e07d3f1c9d861e3a5f8afa0866a3cae34470
-      translation_source_sha256: 260e91e7ffdc818c130686f07e01c14aad90c38859694363c3994222be3065f0
     - id: AML.TA0001
       name: AI Attack Adaptation
       type: tactic

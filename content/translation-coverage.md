@@ -62,15 +62,14 @@ generated_by: atlasgen
 <td data-label="Названий переведено">208</td>
 <td data-label="Описаний переведено">208</td>
 <td data-label="Процедур переведено">-</td>
-<td data-label="Полностью переведено">207</td>
-<td data-label="Требует проверки">1</td>
+<td data-label="Полностью переведено">208</td>
+<td data-label="Требует проверки">0</td>
 </tr>
 </tbody>
 </table>
 
-## Требует проверки (2)
+## Требует проверки (1)
 
-- [`AML.T0124`](/techniques/AML.T0124/) (Техники): Autonomous Attack Orchestration; название: да; описание/summary: да; требует проверки: описание
 - [`AML.TA0001`](/tactics/AML.TA0001/) (Тактики): AI Attack Adaptation; название: да; описание/summary: да; требует проверки: описание
 
 ## Частичный перевод (3)
